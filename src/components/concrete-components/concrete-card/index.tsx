@@ -1,0 +1,1 @@
+export {ConcreteCard} from './concrete-card';

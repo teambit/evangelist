@@ -1,0 +1,19 @@
+
+@import '../../../themes/box-shadow.module.scss';
+
+.card {
+    border: 1px solid grey;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.elevation-low {
+    box-shadow: $elevation-low;
+}
+.elevation-medium {
+    box-shadow: $elevation-medium;
+}
+.elevation-high {
+    box-shadow: $elevation-high;
+}

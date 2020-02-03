@@ -1,0 +1,30 @@
+// font sizes only!
+
+.xxs {
+    // font-size: 18px; // default values
+    font-size: var(--h-xxs);
+}
+.xs {
+    // font-size: 26px; // default values
+    font-size: var(--h-xs);
+}
+.sm {
+    // font-size: 36px; // default values
+    font-size: var(--h-sm);
+}
+.md {
+    // font-size: 40px; // default values
+    font-size: var(--h-md);
+}
+.lg {
+    // font-size: 50px; // default values
+    font-size: var(--h-lg);
+}
+.xl {
+    // font-size: 60px; // default values
+    font-size: var(--h-xl);
+}
+.xxl {
+    // font-size: 80px; // default values
+    font-size: var(--h-xxl);
+}
