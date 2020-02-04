@@ -1,0 +1,13 @@
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: var(--github-bg);
+  color: var(--brand-text);
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.icon {
+  margin-right: 10px;
+}

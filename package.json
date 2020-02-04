@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@bit/bit.gui.atoms.base-icon": "^0.0.1",
+    "@bit/bit.gui.base.button": "^0.0.8",
     "@bit/bit.web.components.comment-carousel": "^0.0.8",
     "@stylable/cli": "^3.1.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/classnames": "^2.2.9",
-    "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.x.x",
     "@types/react-dom": "^16.x.x",
@@ -46,10 +47,46 @@
   },
   "bit": {
     "env": {
-      "compiler": "bit.envs/compilers/react-typescript@3.1.43"
+      "compiler": "bit.envs/compilers/react-typescript@3.1.43",
+      "tester": "bit.envs/testers/mocha@5.0.2"
     },
     "componentsDefaultDirectory": "src/bit-components/{name}",
     "packageManager": "npm",
-    "defaultScope": "bit.marketing"
+    "defaultScope": "bit.marketing",
+    "overrides": {
+      "*": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript": {
+              "rawConfig": {
+                "tsconfig": {
+                  "compilerOptions": {
+                    "target": "ES5",
+                    "module": "CommonJS"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.8",
+    "@types/mocha": "^5",
+    "@types/sinon": "^7.5.1",
+    "chai": "^4.2.0",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "mocha": "^7.0.1",
+    "sinon": "^8.1.1"
   }
 }

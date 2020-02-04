@@ -6,7 +6,7 @@ import styles from './paragraph.module.scss';
 
 export type ParagraphProps = {
   /**
-   * @param {"xxs" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl"} size - heading font size.
+   * heading font size.
    */
   size: PossibleSizes;
 } & React.HTMLAttributes<HTMLParagraphElement>;

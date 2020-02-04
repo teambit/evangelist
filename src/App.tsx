@@ -4,19 +4,21 @@ import classNames from "classnames";
 // import {CommentCarousel, carouselContent} from "@bit/bit.web.components.comment-carousel";
 import "./App.css";
 
-import { Paragraph } from "./components/base-components/paragraph";
-import { ConcreteCard } from "./components/concrete-components/concrete-card";
-// import { Separator } from "./components/base-components/separator";
+import { Paragraph } from "./components/base/paragraph";
+import { ConcreteCard } from "./components/concrete/concrete-card";
+// import { Separator } from "./components/base/separator";
 import {Theme} from './themes/theme-provider';
 import {PossibleSizes} from './themes/sizes';
-import {H1, H2, H5} from './concrete-components/heading';
-// import '../../../themes/box-shadow.module.css';
+import {H1, H2, H5} from './components/concrete/heading';
+// import {GithubLink} from './components/concrete/community-links';
+import {EmbedIconSet} from './components/concrete/icon';
 import styles from "./app-concrete.module.scss";
 
 const App = () => {
   return (
     <Theme>
-      <div className={styles.page}>
+      <EmbedIconSet query='aqq93z' />
+      {/* <div className={styles.page}> */}
         <div className={styles.fold1}>
           <div className={styles.maxWidth}>
             <div className={styles.first}>
@@ -29,8 +31,9 @@ const App = () => {
                   independent teams, continuous delivery, infinite reuse and so
                   much more.
                 </Paragraph>
+                {/* <GithubLink href="ss" className={styles.communityLink}></GithubLink> */}
               </div>
-              <img src="https://static.bit.dev/homepage/collaborate.svg" />
+              <img src="https://static.bit.dev/homepage-bit/1-illustration.svg" className={styles.img1} />
             </div>
           </div>
         </div>
@@ -72,7 +75,7 @@ const App = () => {
               codebase, reduce complexity and deliver faster.
             </Paragraph>
         </div>
-      </div>
+      {/* </div> */}
     </Theme>
     
   );

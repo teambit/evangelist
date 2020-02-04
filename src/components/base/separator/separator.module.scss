@@ -1,6 +1,6 @@
 
 .separator {
-    border-bottom: 1px solid #BABEC9;
+    border-bottom: 1px solid var(--separator-color);
     width: 100%;
 }
 
@@ -8,5 +8,5 @@
     width: 1px;
     height: 100%;
     border-bottom-width: 0px;
-    border-right: 1px solid #BABEC9;
+    border-right: 1px solid var(--separator-color);
 }

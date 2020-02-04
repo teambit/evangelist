@@ -1,9 +1,9 @@
 import React from "react";
 import classNames from "classnames";
-import { Card } from "../../base-components/card";
-import { Heading } from "../../base-components/heading";
-import { Paragraph } from "../../base-components/paragraph";
-import {sizes, PossibleSizes} from '../../../themes/sizes';
+import { Card } from "../../base/card";
+import { Heading } from "../../base/heading";
+import { Paragraph } from "../../base/paragraph";
+import {PossibleSizes} from '../../../themes/sizes';
 import styles from "./concrete-card.module.css";
 
 // export const ConcreteCard = (props: any) => {
@@ -27,7 +27,7 @@ export const ConcreteCard = (props: any) => {
 
   const classes = toClasses(className);
   return (
-    <Card elevation="medium" className={classNames(styles.card, classes.root)}>
+    <Card elevation="none" className={classNames(styles.card, classes.root)}>
       <div className={styles.bla}></div>
       <Heading
         element="h5"

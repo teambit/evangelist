@@ -3,7 +3,7 @@ import classNames from "classnames";
 import {
   HeadingProps,
   Heading
-} from "../../components/base-components/heading/heading";
+} from "../../base/heading";
 import sizeStyles from "./heading-sizes.module.scss";
 
 export function H1(props: HeadingProps) {
