@@ -15,6 +15,7 @@ import { H1, H2, H5 } from "./components/concrete/heading";
 import { EmbedIconSet } from "./components/concrete/icon";
 import { Fold1 } from "./folds/fold1";
 import { Fold3 } from "./folds/fold3";
+import { Fold4 } from "./folds/fold4";
 import styles from "./app-concrete.module.scss";
 
 const App = () => {
@@ -33,11 +34,7 @@ const App = () => {
       {/* <div className={styles.bla}>
         <Separator layout='vertical' />
         </div> */}
-      <div className={styles.fold4}>
-        <div className={classNames(styles.maxWidth)}></div>
-      </div>
-
-      {/* </div> */}
+      <Fold4 />
     </Theme>
   );
 };

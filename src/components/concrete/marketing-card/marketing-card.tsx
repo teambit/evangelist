@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, CSSProperties } from "react";
 import classNames from "classnames";
 import { Card } from "../../base/card";
 import { H1 } from "../heading";
@@ -7,7 +7,7 @@ import { Label } from "../../base/label";
 import { PossibleSizes } from "../../../themes/sizes";
 import { CommunityLink } from "../../base/community-link";
 import styles from "./marketing-card.module.css";
-import { CSSProperties } from "styled-components";
+
 
 type MarketingCardProps = {
   title: ReactNode;
@@ -21,7 +21,7 @@ type MarketingCardProps = {
 export const MarketingCard = (props: MarketingCardProps) => {
   const { title, children, className, ctaColor, label, to, linkText } = props;
   const accentColor = { [styles.accentVar]: ctaColor } as CSSProperties;
-  
+
   return (
     <Card
       elevation="none"

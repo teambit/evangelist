@@ -1,11 +1,8 @@
-.fold3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  // background-color: #e2e2e2;
-  background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
-  background-position: center -400px;
+.fold4 {
+  height: 450px;
+  background-image: url('http://static.bit.dev/homepage-bit/2-quote white background.svg');
+  background-color: #f7f9fc;
+  background-position: center -250px;
   background-repeat: no-repeat;
 }
 
@@ -16,11 +13,15 @@
 }
 
 
-.splitCard {
+.textBoxesSection {
   
   display: flex;
   align-items: center;
   justify-content: space-between;
+  > div {
+    max-width: 400px;
+    margin: 0 20px;
+  }
 }
 
 

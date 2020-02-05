@@ -85,6 +85,29 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/base/label@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/base/label/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            },
+            {
+                "relativePath": "src/components/base/label/label.module.scss",
+                "test": false,
+                "name": "label.module.scss"
+            },
+            {
+                "relativePath": "src/components/base/label/label.tsx",
+                "test": false,
+                "name": "label.tsx"
+            }
+        ],
+        "mainFile": "src/components/base/label/index.tsx",
+        "trackDir": "src/components/base/label",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/base/paragraph@0.0.4": {
         "files": [
             {
@@ -105,6 +128,29 @@
         ],
         "mainFile": "src/components/base/paragraph/index.tsx",
         "trackDir": "src/components/base/paragraph",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/base/primary-button@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/base/primary-button/button.module.scss",
+                "test": false,
+                "name": "button.module.scss"
+            },
+            {
+                "relativePath": "src/components/base/primary-button/button.tsx",
+                "test": false,
+                "name": "button.tsx"
+            },
+            {
+                "relativePath": "src/components/base/primary-button/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/components/base/primary-button/index.tsx",
+        "trackDir": "src/components/base/primary-button",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -131,7 +177,30 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/heading@0.0.4": {
+    "bit.marketing/concrete/cta-button@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/cta-button/cta-button.module.scss",
+                "test": false,
+                "name": "cta-button.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/cta-button/cta-button.tsx",
+                "test": false,
+                "name": "cta-button.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/cta-button/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/components/concrete/cta-button/index.tsx",
+        "trackDir": "src/components/concrete/cta-button",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/concrete/heading@0.0.5": {
         "files": [
             {
                 "relativePath": "src/components/concrete/heading/heading-sizes.module.scss",
@@ -154,6 +223,65 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/concrete/marketing-card@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/marketing-card/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/marketing-card/marketing-card.module.css",
+                "test": false,
+                "name": "marketing-card.module.css"
+            },
+            {
+                "relativePath": "src/components/concrete/marketing-card/marketing-card.tsx",
+                "test": false,
+                "name": "marketing-card.tsx"
+            }
+        ],
+        "mainFile": "src/components/concrete/marketing-card/index.tsx",
+        "trackDir": "src/components/concrete/marketing-card",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/theme/brand-colorsmodule@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/themes/brand-colors.module.scss",
+                "test": false,
+                "name": "brand-colors.module.scss"
+            }
+        ],
+        "mainFile": "src/themes/brand-colors.module.scss",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/theme/brand-definitionmodule@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/themes/brand-definition.module.scss",
+                "test": false,
+                "name": "brand-definition.module.scss"
+            }
+        ],
+        "mainFile": "src/themes/brand-definition.module.scss",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/theme/color-definition@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/themes/color-definition.module.scss",
+                "test": false,
+                "name": "color-definition.module.scss"
+            }
+        ],
+        "mainFile": "src/themes/color-definition.module.scss",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/theme/colors@0.0.1": {
         "files": [
             {
@@ -166,6 +294,30 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/theme/shadow-definitionmodule@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/themes/shadow-definition.module.scss",
+                "test": false,
+                "name": "shadow-definition.module.scss"
+            }
+        ],
+        "mainFile": "src/themes/shadow-definition.module.scss",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/theme/size-definitionmodule@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/themes/size-definition.module.scss",
+                "test": false,
+                "name": "size-definition.module.scss"
+            }
+        ],
+        "mainFile": "src/themes/size-definition.module.scss",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/theme/sizes@0.0.2": {
         "files": [
             {
@@ -175,6 +327,24 @@
             }
         ],
         "mainFile": "src/themes/sizes.tsx",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/theme/theme-provider@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/themes/theme-provider/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            },
+            {
+                "relativePath": "src/themes/theme-provider/theme-provider.tsx",
+                "test": false,
+                "name": "theme-provider.tsx"
+            }
+        ],
+        "mainFile": "src/themes/theme-provider/index.tsx",
+        "trackDir": "src/themes/theme-provider",
         "origin": "AUTHORED",
         "exported": true
     },

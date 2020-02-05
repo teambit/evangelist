@@ -1,4 +1,4 @@
-import React from "react";
+import React, {CSSProperties} from "react";
 import classNames from "classnames";
 
 
@@ -13,11 +13,12 @@ import { CtaButton } from "../../components/concrete/cta-button";
 
 
 export function Fold3() {
-
+  const accentColor = { [styles.accentVar]: 'purple' } as CSSProperties;
   return (
-    <div className={classNames(styles.fold3)}>
+    <div className={classNames(styles.fold3)} style={accentColor}>
         <div className={classNames(styles.maxWidth)}>
-          <Label>Develop</Label>
+          
+          <Label className={styles.ctaLabel}>Develop</Label>
           <H2 size={PossibleSizes.xs}>
             Build UI apps in simple decoupled codebases
           </H2>
