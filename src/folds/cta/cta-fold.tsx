@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import styles from './cta-fold.module.scss';
 import { H2 } from '../../components/concrete/heading';
-import { PossibleSizes } from '../../themes/sizes';
+import { PossibleSizes } from '../../constants/sizes';
 import { CtaButton } from '../../components/concrete/cta-button';
 
 export function CtaFold() {

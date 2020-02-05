@@ -4,7 +4,7 @@ import { Card } from "../../base/card";
 import { H1 } from "../heading";
 import { Paragraph } from "../../base/paragraph";
 import { Label } from "../../base/label";
-import { PossibleSizes } from "../../../themes/sizes";
+import { PossibleSizes } from "../../../constants/sizes";
 import { CommunityLink } from "../../base/community-link";
 import styles from "./marketing-card.module.css";
 

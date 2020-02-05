@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 import { Paragraph } from "../../components/base/paragraph";
 
-import { PossibleSizes } from "../../themes/sizes";
+import { PossibleSizes } from "../../constants/sizes";
 import { H1, H2, H5 } from "../../components/concrete/heading";
 import {PrimaryButton} from '../../components/base/primary-button';
 import styles from "./fold1.module.scss";

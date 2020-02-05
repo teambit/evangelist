@@ -1,5 +1,5 @@
 import React from "react";
-import { PossibleSizes } from "../../../themes/sizes";
+import { PossibleSizes } from "../../../constants/sizes";
 
 export type HeadingProps = {
   /**

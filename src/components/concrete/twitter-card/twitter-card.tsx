@@ -1,7 +1,7 @@
 import React, { ReactNode, ReactChild } from 'react';
 
-import { staticStorageUrl } from '../../../themes/storage';
-import { PossibleSizes } from '../../../themes/sizes';
+import { staticStorageUrl } from '../../../constants/storage';
+import { PossibleSizes } from '../../../constants/sizes';
 
 import { Paragraph } from '../../base/paragraph';
 import { Card } from '../../base/card';

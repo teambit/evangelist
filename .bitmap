@@ -321,12 +321,12 @@
     "bit.marketing/theme/sizes@0.0.2": {
         "files": [
             {
-                "relativePath": "src/themes/sizes.tsx",
+                "relativePath": "src/constants/sizes.ts",
                 "test": false,
                 "name": "sizes.tsx"
             }
         ],
-        "mainFile": "src/themes/sizes.tsx",
+        "mainFile": "src/constants/sizes.tsx",
         "origin": "AUTHORED",
         "exported": true
     },

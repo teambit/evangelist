@@ -7,10 +7,10 @@ import { singleColumn } from '../../components/layout/grid';
 import styles from './community-fold.module.scss';
 import { SlackLink } from '../../components/concrete/community-links/slack-link';
 import { H2 } from '../../components/concrete/heading';
-import { PossibleSizes } from '../../themes/sizes';
+import { PossibleSizes } from '../../constants/sizes';
 import { TwitterLink } from '../../components/concrete/community-links/twitter-link';
 import { TwitterCard } from '../../components/concrete/twitter-card';
-import { staticStorageUrl } from '../../themes/storage';
+import { staticStorageUrl } from '../../constants/storage';
 
 export function CommunityFold() {
 	return (
