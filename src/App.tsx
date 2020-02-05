@@ -20,6 +20,7 @@ import { Fold5 } from './folds/fold5';
 import styles from './app-concrete.module.scss';
 import { CommunityFold } from './folds/community';
 import { CtaFold } from './folds/cta';
+import { ReuseFold } from './folds/reuse';
 
 const App = () => {
 	return (
@@ -39,6 +40,7 @@ const App = () => {
         </div> */}
 			<Fold4 />
 			<Fold5 />
+			<ReuseFold />
 			<CommunityFold />
 			<CtaFold />
 		</Theme>
