@@ -24,6 +24,7 @@ import { CtaFold } from './folds/cta';
 import { ReuseFold } from './folds/reuse';
 import { SummaryCards } from './folds/summary-cards';
 import { centerColumn, wideColumn } from './components/layout/grid';
+import { Separator } from './components/base/separator';
 const App = () => {
 	return (
 		<Theme>
@@ -35,16 +36,22 @@ const App = () => {
 			<div className={styles.whiteBackground}>
 				<Fold2 className={centerColumn} />
 			</div>
-      <div className={styles.greyBackground}>
-			  <Fold3 className={centerColumn} />
-      </div>
+			<div className={styles.greyBackground}>
+				<Fold3 className={centerColumn} />
+			</div>
 
-			<Fold4 />
-			<Fold5 />
-			<Fold6 />
-			<ReuseFold />
-			<CommunityFold />
-			<CtaFold />
+			<div className={styles.whiteBackground}>
+				<Fold4 className={centerColumn} />
+        <CtaFold className={centerColumn} />
+			</div>
+			<div className={styles.greyBackground}>
+				<Fold5 className={centerColumn} />
+        <Separator className={classNames(styles.separator, centerColumn)} />
+				<Fold6 className={centerColumn} />
+			</div>
+			<ReuseFold className={centerColumn} />
+			<CommunityFold className={centerColumn} />
+			<CtaFold className={centerColumn} />
 		</Theme>
 	);
 };

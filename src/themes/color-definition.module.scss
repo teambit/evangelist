@@ -1,8 +1,9 @@
 @import './colors.module.scss';
-
+// todo - rename all colors!!!
 .primary {
     color: $d50;
-    
+    --base-color: #{$p50};
+
     --border-color: #{$w20};
     --bg-color: #{$w10};
     --separator-color: #{$d20};
@@ -19,7 +20,25 @@
     --primary-label-text: #{$w10};
     --primary-label-width: 50px;
     // --primary-label-height: 20px;
+    --green: #{$g50};
+    --blue: #{$b50};
+    --pink: #{$pink};
 }
+
+// .win {
+//     color: $d50;
+//     --base-color: #{$g50};
+// }
+
+// .tbd1 {//todo - blue rename
+//     color: $d50;
+//     --base-color: #{$b50};
+// }
+
+// .tbd2 { //todo - pink rename
+//     color: $d50;
+//     --base-color: #{$pink};
+// }
 
 .secondary {
     --border-color: $d20;

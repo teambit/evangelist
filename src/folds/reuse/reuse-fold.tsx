@@ -7,12 +7,11 @@ import { Paragraph } from '../../components/base/paragraph';
 import { Label } from '../../components/base/label';
 
 import styles from './reuse-fold.module.scss';
-import { centerColumn } from '../../components/layout/grid';
 import { staticStorageUrl } from '../../constants/storage';
 
 export function ReuseFold(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classnames(centerColumn, styles.reuseFold, props.className)}>
+		<div {...props} className={classnames(styles.reuseFold, props.className)}>
 			<Label className={styles.ctaLabel} color="hotpink">
 				Reuse
 			</Label>

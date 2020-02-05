@@ -4,22 +4,17 @@
 	justify-content: center;
   text-align: center;
   align-items: center;
-
 }
 
-.buildImg {
-  max-width: 1000px;
-}
 
 .splitCard {
 	display: flex;
 	align-items: center;
   justify-content: space-between;
   text-align: start;
-  width: 1000px;
 
   > div, img {
-    max-width: 400px;
+    width: 50%;
   }
 }
 

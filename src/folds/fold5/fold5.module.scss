@@ -1,16 +1,11 @@
 .fold5 {
-  height: 1000px;
+  // height: 1000px;
 
-  background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
-  background-position: center -1230px;
-  background-repeat: no-repeat;
+  // background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
+  // background-position: center -1230px;
+  // background-repeat: no-repeat;
 }
 
-
-.maxWidth {
-  max-width: 1200px;
-  margin: auto;
-}
 
 
 .textBoxesSection {
@@ -19,6 +14,7 @@
   align-items: center;
   justify-content: space-between;
   > div {
+    text-align: left;
     max-width: 400px;
     margin: 0 20px;
   }
@@ -26,5 +22,5 @@
 
 
 .ctaLabel {
-  background-color: green;
+  background-color: var(--green);
 }

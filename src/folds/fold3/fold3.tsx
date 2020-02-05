@@ -4,10 +4,10 @@ import classNames from 'classnames';
 import { Paragraph } from '../../components/base/paragraph';
 
 import { PossibleSizes } from '../../constants/sizes';
-import { H1, H2, H5 } from '../../components/concrete/heading';
+import { H2, H3 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import styles from './fold3.module.scss';
-
+// TODO - use label color through class instead of accentColor
 export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 	const accentColor = { [styles.accentVar]: '#6c5ce7' } as CSSProperties;
 	return (
@@ -23,13 +23,13 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 					and deploy components. Make it easier to maintain each codebase, reduce
 					complexity and deliver faster.
 				</Paragraph>
-				<img alt='bit' src="https://static.bit.dev/homepage-bit/2-build.png" className={classNames(styles.margin, styles.buildImg)} />
+				<img alt='bit' src="https://static.bit.dev/homepage-bit/2-build.png" className={classNames(styles.margin)} />
 
 				<div className={classNames(styles.margin, styles.splitCard)}>
 					<div>
-						<H2 size={PossibleSizes.xs}>
+						<H3 size={PossibleSizes.sm}>
 							Simple yet scalable semantic versioning.
-						</H2>
+						</H3>
 						<Paragraph>
 							Leverage semantic versioning to control the development of each
 							component. Deploy, update, or rollback specific components across
@@ -38,10 +38,10 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 					</div>
 					<img alt='bit' src="https://static.bit.dev/homepage-bit/2-simple.png" />
 				</div>
-				<div className={classNames(styles.margin, styles.splitCard)}>
+				<div className={classNames(styles.splitCard)}>
 					<img alt='bit' src="https://static.bit.dev/homepage-bit/2-per.png" />
 					<div>
-						<H2 size={PossibleSizes.xs}>Per component development environment.</H2>
+						<H3 size={PossibleSizes.sm}>Per component development environment.</H3>
 						<Paragraph>
 							When writing a component, Bit spawns an development environment that
 							lets you build, test and render modular components in isolation. It
