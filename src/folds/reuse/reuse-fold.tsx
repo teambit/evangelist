@@ -10,9 +10,9 @@ import styles from './reuse-fold.module.scss';
 import { singleColumn } from '../../components/layout/grid';
 import { staticStorageUrl } from '../../constants/storage';
 
-export function ReuseFold() {
+export function ReuseFold(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div className={classnames(singleColumn, styles.reuseFold)}>
+		<div {...props} className={classnames(singleColumn, styles.reuseFold, props.className)}>
 			<Label className={styles.ctaLabel} color="hotpink">
 				Reuse
 			</Label>

@@ -12,9 +12,12 @@ import { TwitterLink } from '../../components/concrete/community-links/twitter-l
 import { TwitterCard } from '../../components/concrete/twitter-card';
 import { staticStorageUrl } from '../../constants/storage';
 
-export function CommunityFold() {
+export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div className={classnames(singleColumn, styles.communityFold)}>
+		<div
+			{...props}
+			className={classnames(singleColumn, styles.communityFold, props.className)}
+		>
 			<div>
 				<H2 size={PossibleSizes.sm}>Join the community!</H2>
 				<div>
