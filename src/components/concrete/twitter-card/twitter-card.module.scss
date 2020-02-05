@@ -1,0 +1,62 @@
+.twitterCard {
+	display: flex;
+	border-radius: 6px;
+	background-color: var(--bg-color);
+	justify-content: start;
+	align-items: center;
+	text-align: start;
+	// padding: 20px;
+	// max-width: 472px;
+	// width: unset;
+	// height: 120px;
+	// margin-bottom: 20px;
+
+	// @media screen and (max-width: $br-md) {
+	// 	width: unset;
+	// }
+
+	// @media screen and (max-width: $br-sm) {
+	// 	flex-direction: column;
+	// 	height: unset;
+	// 	// width: 100%;
+	// 	text-align: center;
+	// 	align-items: center;
+	// }
+}
+
+.avatar {
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	// margin: 0 14px 0 22px;
+
+	// @media screen and (max-width: $br-sm) {
+	// 	margin: 20px auto;
+	// }
+}
+
+.title {
+	font-weight: bold;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+
+	// @media screen and (max-width: $br-sm) {
+	// 	justify-content: center;
+	// }
+
+	.icon {
+		width: 18px;
+		height: 18px;
+		margin: 0 10px;
+	}
+}
+
+.text {
+	color: gray;
+	font-size: 16px;
+
+	// @media screen and (max-width: $br-sm) {
+	// 	margin: 20px;
+	// }
+}

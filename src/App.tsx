@@ -17,6 +17,8 @@ import { Fold1 } from "./folds/fold1";
 import { Fold3 } from "./folds/fold3";
 import { Fold4 } from "./folds/fold4";
 import styles from "./app-concrete.module.scss";
+import { CommunityFold } from "./folds/community";
+import { CtaFold } from "./folds/cta";
 
 const App = () => {
   return (
@@ -35,6 +37,8 @@ const App = () => {
         <Separator layout='vertical' />
         </div> */}
       <Fold4 />
+	  <CommunityFold />
+	  <CtaFold />
     </Theme>
   );
 };

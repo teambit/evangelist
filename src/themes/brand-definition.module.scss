@@ -2,7 +2,7 @@
 
 .brands {
   --github-bg: #2b2b2b;
-  --brand-text: $w10;
+  --brand-text: #{$w10};
   --slack-bg: #4a154b;
   --twitter-bg: #1da1f2;
 }
