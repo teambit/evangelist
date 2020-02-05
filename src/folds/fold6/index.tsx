@@ -1,0 +1,1 @@
+export {Fold6} from './fold6';

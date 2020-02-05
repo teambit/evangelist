@@ -1,67 +1,52 @@
-import React, { CSSProperties } from "react";
-import classNames from "classnames";
+import React from 'react';
+import classNames from 'classnames';
 
-import { Paragraph } from "../../components/base/paragraph";
+import { Paragraph } from '../../components/base/paragraph';
 
-import { PossibleSizes } from "../../constants/sizes";
-import { H1, H2, H5 } from "../../components/concrete/heading";
-import { PrimaryButton } from "../../components/base/primary-button";
+import { PossibleSizes } from '../../constants/sizes';
+import { H1, H2, H5 } from '../../components/concrete/heading';
 
-import styles from "./fold4.module.scss";
-import { CtaButton } from "../../components/concrete/cta-button";
+import styles from './fold4.module.scss';
+import { CtaFold } from '../cta';
 
 export function Fold4() {
-  return (
-    <div className={classNames(styles.fold4)}>
-      <div className={classNames(styles.maxWidth)}>
-        <H2 size={PossibleSizes.xs}>
-          Build UI apps in simple decoupled codebases
-        </H2>
-        <Paragraph>
-          Split the development of your frontend applications into components.
-          Decouple team codebases by giving each the power to build, test,
-          integrate and deploy components. Make it easier to maintain each
-          codebase, reduce complexity and deliver faster.
-        </Paragraph>
-        <img src="https://static.bit.dev/homepage-bit/3-empower.png" />
-      <div className={styles.textBoxesSection}>
+	return (
+		<div className={classNames(styles.fold4)}>
+			<div className={classNames(styles.maxWidth)}>
+				<H2 size={PossibleSizes.xs}>Empower autonomous teams to build together</H2>
+				<Paragraph>
+					Empower teams to own, build and deliver frontends end-to-end….
+				</Paragraph>
+				<img src="https://static.bit.dev/homepage-bit/3-empower.png" />
+				<div className={styles.textBoxesSection}>
+					<div>
+						<H5 size={PossibleSizes.xxs}>Assign team ownerships.</H5>
+						<Paragraph>
+							Distribute frontends between teams though scopes of components. Each
+							team and build, own and maintain their components from idea to
+							production.
+						</Paragraph>
+					</div>
 
-        <div>
-          <H5 size={PossibleSizes.xxs}>
-            Build UI apps in simple decoupled codebases
-          </H5>
-          <Paragraph>
-            Split the development of your frontend applications into components.
-            Decouple team codebases by giving each the power to build, test,
-            integrate and deploy components. Make it easier to maintain each
-            codebase, reduce complexity and deliver faster.
-          </Paragraph>
-        </div>
-
-        <div>
-          <H5 size={PossibleSizes.xxs}>
-            Build UI apps in simple decoupled codebases
-          </H5>
-          <Paragraph>
-            Split the development of your frontend applications into components.
-            Decouple team codebases by giving each the power to build, test,
-            integrate and deploy components. Make it easier to maintain each
-            codebase, reduce complexity and deliver faster.
-          </Paragraph>
-        </div>
-        <div>
-          <H5 size={PossibleSizes.xxs}>
-            Build UI apps in simple decoupled codebases
-          </H5>
-          <Paragraph>
-            Split the development of your frontend applications into components.
-            Decouple team codebases by giving each the power to build, test,
-            integrate and deploy components. Make it easier to maintain each
-            codebase, reduce complexity and deliver faster.
-          </Paragraph>
-        </div>
-      </div>
-      </div>
-    </div>
-  );
+					<div>
+						<H5 size={PossibleSizes.xxs}>Empower independent delivery.</H5>
+						<Paragraph>
+							Empower each team to innovate in fast-paced delivery cycles. Let
+							smaller teams make decisions and relentlessly drive towards their
+							goals to deliver better results.
+						</Paragraph>
+					</div>
+					<div>
+						<H5 size={PossibleSizes.xxs}>Make it easy to collaborate.</H5>
+						<Paragraph>
+							Make it easy for every developer to harvest and share their
+							components. Increase usage and adoption of components in a
+							collaborative ecosystem to gain UI consistency.
+						</Paragraph>
+					</div>
+				</div>
+        <CtaFold />
+			</div>
+		</div>
+	);
 }

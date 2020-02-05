@@ -1,0 +1,32 @@
+.fold6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
+  background-position: center -400px;
+  background-repeat: no-repeat;
+}
+
+
+.maxWidth {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.splitCard {
+  text-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.ctaLabel {
+  background-color: var(--marketingTemplateAccent);
+}
+
+:export {
+  accentVar: --marketingTemplateAccent;
+}

@@ -6,12 +6,12 @@ import { Paragraph } from '../../components/base/paragraph';
 import { PossibleSizes } from '../../constants/sizes';
 import { H1, H2, H5 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
-import styles from './fold3.module.scss';
+import styles from './fold6.module.scss';
 
-export function Fold3() {
+export function Fold6() {
 	const accentColor = { [styles.accentVar]: 'purple' } as CSSProperties;
 	return (
-		<div className={classNames(styles.fold3)} style={accentColor}>
+		<div className={classNames(styles.fold6)} style={accentColor}>
 			<div className={classNames(styles.maxWidth)}>
 				<Label className={styles.ctaLabel}>Develop</Label>
 				<H2 size={PossibleSizes.xs}>
@@ -23,7 +23,7 @@ export function Fold3() {
 					and deploy components. Make it easier to maintain each codebase, reduce
 					complexity and deliver faster.
 				</Paragraph>
-				<img src="https://static.bit.dev/homepage-bit/2-build.png" />
+				
 
 				<div className={styles.splitCard}>
 					<div>

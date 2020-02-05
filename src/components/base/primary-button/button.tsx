@@ -9,13 +9,9 @@ import {default as BaseButton, ButtonProps as BaseProps} from '@bit/bit.gui.base
  */
 export type ButtonProps = {
   /**
-   * override styles.
-   */
-  className?: ReactNode;
-  /**
    * to control the shadow effect of a button.
    */
-  elevation: "none" | "low" | "medium" | "high";
+  elevation?: "none" | "low" | "medium" | "high";
 } & BaseProps;
 
 
