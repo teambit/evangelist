@@ -3,7 +3,7 @@ import { GithubLink } from '../../components/concrete/community-links';
 import classnames from 'classnames';
 //@ts-ignore
 import { links } from '@bit/bit.web.config.links';
-import { singleColumn } from '../../components/layout/grid';
+import { centerColumn } from '../../components/layout/grid';
 import styles from './community-fold.module.scss';
 import { SlackLink } from '../../components/concrete/community-links/slack-link';
 import { H2 } from '../../components/concrete/heading';
@@ -16,7 +16,7 @@ export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
-			className={classnames(singleColumn, styles.communityFold, props.className)}
+			className={classnames(centerColumn, styles.communityFold, props.className)}
 		>
 			<div>
 				<H2 size={PossibleSizes.sm}>Join the community!</H2>

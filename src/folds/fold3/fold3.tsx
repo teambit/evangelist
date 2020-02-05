@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react';
+import React, { CSSProperties, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import { Paragraph } from '../../components/base/paragraph';
@@ -8,24 +8,24 @@ import { H1, H2, H5 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import styles from './fold3.module.scss';
 
-export function Fold3() {
-	const accentColor = { [styles.accentVar]: 'purple' } as CSSProperties;
+export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
+	const accentColor = { [styles.accentVar]: '#6c5ce7' } as CSSProperties;
 	return (
-		<div className={classNames(styles.fold3)} style={accentColor}>
-			<div className={classNames(styles.maxWidth)}>
+		<div {...props} className={classNames(styles.fold3, props.className)} style={accentColor}>
+			
 				<Label className={styles.ctaLabel}>Develop</Label>
-				<H2 size={PossibleSizes.xs}>
+				<H2 size={PossibleSizes.md}>
 					Develop components in simple decoupled codebases
 				</H2>
-				<Paragraph>
+				<Paragraph size={PossibleSizes.xl} className={styles.margin}>
 					Split the development of your frontend applications into components.
 					Decouple team codebases by giving each the power to build, test, integrate
 					and deploy components. Make it easier to maintain each codebase, reduce
 					complexity and deliver faster.
 				</Paragraph>
-				<img src="https://static.bit.dev/homepage-bit/2-build.png" />
+				<img alt='bit' src="https://static.bit.dev/homepage-bit/2-build.png" className={classNames(styles.margin, styles.buildImg)} />
 
-				<div className={styles.splitCard}>
+				<div className={classNames(styles.margin, styles.splitCard)}>
 					<div>
 						<H2 size={PossibleSizes.xs}>
 							Simple yet scalable semantic versioning.
@@ -36,10 +36,10 @@ export function Fold3() {
 							different screens, features and apps.
 						</Paragraph>
 					</div>
-					<img src="https://static.bit.dev/homepage-bit/2-simple.png" />
+					<img alt='bit' src="https://static.bit.dev/homepage-bit/2-simple.png" />
 				</div>
-				<div className={styles.splitCard}>
-					<img src="https://static.bit.dev/homepage-bit/2-per.png" />
+				<div className={classNames(styles.margin, styles.splitCard)}>
+					<img alt='bit' src="https://static.bit.dev/homepage-bit/2-per.png" />
 					<div>
 						<H2 size={PossibleSizes.xs}>Per component development environment.</H2>
 						<Paragraph>
@@ -50,7 +50,7 @@ export function Fold3() {
 						</Paragraph>
 					</div>
 				</div>
-			</div>
+			
 		</div>
 	);
 }

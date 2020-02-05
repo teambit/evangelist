@@ -1,5 +1,5 @@
 import React from 'react';
-import { singleColumn } from '../../components/layout/grid';
+import { centerColumn } from '../../components/layout/grid';
 import classnames from 'classnames';
 
 import styles from './cta-fold.module.scss';
@@ -9,7 +9,7 @@ import { CtaButton } from '../../components/concrete/cta-button';
 
 export function CtaFold(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classnames(singleColumn, styles.ctaFold, props.className)}>
+		<div {...props} className={classnames(centerColumn, styles.ctaFold, props.className)}>
 			<H2 size={PossibleSizes.sm}>Ready to try Bit?</H2>
 			Add your first component in minutes.
 			<CtaButton>Get Started for free</CtaButton>

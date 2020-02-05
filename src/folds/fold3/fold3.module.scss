@@ -1,33 +1,37 @@
 .fold3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
   text-align: center;
-  // background-color: #e2e2e2;
-  background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
-  background-position: center -400px;
-  background-repeat: no-repeat;
+  align-items: center;
+
 }
 
-
-.maxWidth {
-  max-width: 1200px;
-  margin: auto;
+.buildImg {
+  max-width: 1000px;
 }
-
 
 .splitCard {
-  
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
   justify-content: space-between;
+  text-align: start;
+  width: 1000px;
+
+  > div, img {
+    max-width: 400px;
+  }
+}
+
+.margin {
+  margin-bottom: 100px;
 }
 
 
 .ctaLabel {
-  background-color: var(--marketingTemplateAccent);
+	background-color: var(--marketingTemplateAccent);
 }
 
 :export {
-  accentVar: --marketingTemplateAccent;
+	accentVar: --marketingTemplateAccent;
 }

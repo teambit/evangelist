@@ -1,28 +1,11 @@
 
-.fold1 {
-    height: 600px;
-    // background-image: linear-gradient(303deg, #6623A5 105%, #5227B7);
-    // background: linear-gradient(90deg, rgba(82,39,183,1) 28%, rgba(102,35,165,1) 58%, rgba(82,39,183,1) 89%);
-    // background: linear-gradient(90deg, #6E1F9E 28%, #6721A4 58%, #6E1F9E 89%);
-    background-image: url('https://static.bit.dev/homepage-bit/1-background.svg');
-    color: white;
-    background-position: center -400px;
-    background-repeat: no-repeat;
-    // clip-path: ellipse(41% 150px at 36% -26%);
-    // clip-path: circle(50.0% at 50% 50%);
-    // clip-path: ellipse(100% 350px at center 42%);
-  }
 
-  .first {
+  .layout {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .maxWidth {
-    max-width: 1200px;
-    margin: auto;
-  }
 
   .asset {
       height: 300px;

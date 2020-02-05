@@ -1,67 +1,63 @@
-.appCard {
-  // text-decoration: underline;
-  // color: blue;
-  min-width: 200px;
-}
-.appCard:nth-child(1n) {
-  break-after: always;
+
+.whiteBackground {
+	height: 450px;
+	background-image: url('http://static.bit.dev/homepage-bit/2-quote white background.svg');
+	background-color: #f7f9fc;
+  background-position: center -1370px;
+	background-repeat: no-repeat;
 }
 
-.boxes {
+.greyBackground {
   display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  max-width: 1480px;
-  flex-wrap: wrap;
-  transform: translateY(-50px);
-}
-
-.fold2 {
-  height: 450px;
-  background-image: url("http://static.bit.dev/homepage-bit/2-quote white background.svg");
-  background-color: #f7f9fc;
-  background-position: center -1230px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  // background-color: #e2e2e2;
+  background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
 .centerTitle {
-  text-align: center;
-  margin-bottom: 50px;
+	text-align: center;
+	margin-bottom: 50px;
 }
-
 
 img {
-  max-width: 600px;
-}
-
-.bla {
-  height: 200px;
+	max-width: 600px;
 }
 
 
 .img1 {
-  max-width: 420px;
+	max-width: 420px;
 }
 
 .splitCard {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .maxWidth {
-  max-width: 1200px;
-  margin: auto;
+	max-width: 1200px;
+	margin: auto;
 }
 .marketingCard {
-  --marketingTemplateAccent: blue;
+	--marketingTemplateAccent: blue;
 }
 
 
-.greyBackground {
-  height: 1000px;
-
-  background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
-  background-position: center -1230px;
+.purpleBackground {
+	// height: 600px;
+	
+	background-image: url('https://static.bit.dev/homepage-bit/1-background.svg');
+	color: white;
+	background-position: center -150px;
   background-repeat: no-repeat;
+  padding: 200px 0 150px 0;
+}
+
+.summaryCards {
+  transform: translateY(-150px);
+  margin-bottom: -50px;
 }

@@ -1,3 +1,4 @@
 import styles from './grid.module.scss';
 
-export const singleColumn = styles.singleColumn;
+export const centerColumn = styles.centerColumn;
+export const wideColumn = styles.wideColumn;
