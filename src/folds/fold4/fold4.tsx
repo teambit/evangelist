@@ -23,7 +23,7 @@ export function Fold4() {
           integrate and deploy components. Make it easier to maintain each
           codebase, reduce complexity and deliver faster.
         </Paragraph>
-        <img src="https://static.bit.dev/homepage/collaborate.svg" />
+        <img src="https://static.bit.dev/homepage-bit/3-empower.png" />
       <div className={styles.textBoxesSection}>
 
         <div>
