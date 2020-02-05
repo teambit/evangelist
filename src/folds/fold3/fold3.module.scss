@@ -1,0 +1,24 @@
+.fold3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  // background-color: #e2e2e2;
+  background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
+  background-position: center -400px;
+  background-repeat: no-repeat;
+}
+
+
+.maxWidth {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.splitCard {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,14 @@
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    // background-color: var(--primary-label-bg);
+    color: var(--primary-label-text);
+    border-radius: 6px;
+    width: 100%;
+    max-width: var(--primary-label-width); 
+    height: var(--primary-label-height, 30px);
+    font-size: 12px;
+    font-weight: bold;
+}

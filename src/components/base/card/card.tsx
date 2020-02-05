@@ -10,7 +10,7 @@ export type CardProps = {
   /**
    * override styles.
    */
-  className?: ReactNode;
+  className?: string;
   /**
    * to control the shadow effect of a card.
    */

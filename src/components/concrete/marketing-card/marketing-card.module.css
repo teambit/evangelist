@@ -1,0 +1,26 @@
+.card {
+    /* border: 1px solid #ededed; */
+    background-color: white;
+    max-width: 300px;
+}
+
+.title {
+    /* color: yellow; */
+}
+
+.text {
+    /* color: saddlebrown; */
+}
+
+.ctaLink {
+    text-decoration: none;
+    color: var(--marketingTemplateAccent);
+}
+
+.ctaLabel {
+    background-color: var(--marketingTemplateAccent);
+}
+
+:export {
+    accentVar: --marketingTemplateAccent;
+}
