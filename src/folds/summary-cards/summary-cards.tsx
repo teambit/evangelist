@@ -2,10 +2,11 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import { MarketingCard } from '../../components/concrete/marketing-card';
 import styles from './summary-cards.module.scss';
+import { brL, brMd, brLg } from '../../components/layout/grid-templates';
 
 export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 	return (
-		<div {...props} className={classNames(styles.summaryCards, props.className)}>
+		<div {...props} className={classNames(brL.col2, brLg.col4, props.className)}>
 			<MarketingCard
 				ctaColor={'#6c5ce7'}
 				linkText="learn more"

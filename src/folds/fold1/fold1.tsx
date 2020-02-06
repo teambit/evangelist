@@ -8,10 +8,11 @@ import { H1, H2, H5 } from '../../components/concrete/heading';
 import { PrimaryButton } from '../../components/base/primary-button';
 import styles from './fold1.module.scss';
 import { CtaButton } from '../../components/concrete/cta-button';
+import { brL } from '../../components/layout/grid-templates';
 
 export function Fold1(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.layout, props.className)}>
+		<div {...props} className={classNames(brL.col2, props.className)}>
 			<div>
 				<H1 size={PossibleSizes.md}>
 					A scalable way to build modern frontend applications.
@@ -24,11 +25,13 @@ export function Fold1(props: HTMLAttributes<HTMLDivElement>) {
 				<PrimaryButton>Learn more</PrimaryButton>
 				{/* <GithubLink href="ss" className={styles.communityLink}></GithubLink> */}
 			</div>
+
 			<img
 				src="https://static.bit.dev/homepage-bit/1-illustration.svg"
 				className={styles.img1}
 				alt="bit illustration"
 			/>
+
 			{/* <span className={styles.asset}></span> */}
 		</div>
 	);

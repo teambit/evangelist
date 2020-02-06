@@ -1,0 +1,44 @@
+$br-xs: 360px;
+$br-sm: 480px; //mobile
+$br-md: 768px;
+$br-l: 920px; //tablet
+// $br-lg: 1080px; //this will be phased out
+$br-lg-new: 1200px; //this will replace $br-lg
+$br-xl: 1440px;
+$br-xxl: 1920px;
+
+
+$breakpoints: //name | min-size
+xs $br-xs,
+sm $br-sm,
+md $br-md,
+l $br-l,
+lg $br-lg-new,
+// lg $br-lg,
+xl $br-xl;
+
+
+
+@each $breakpoint in $breakpoints {
+	$brName: nth($breakpoint, 1);
+	$brVal: nth($breakpoint, 2);
+
+	@for $i from 1 through 12 {
+		@media only screen and (min-width: $brVal) {
+			// .columns {
+				.--#{$brName}-#{$i} {
+					grid-template-columns: repeat($i, 1fr);
+				}
+			// }
+		}
+	}
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 16px 16px;
+}
+
+.fullWidth {
+	width: 100%;
+}

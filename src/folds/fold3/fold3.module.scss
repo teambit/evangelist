@@ -2,24 +2,24 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-
-.splitCard {
-	display: flex;
+	text-align: center;
 	align-items: center;
-  justify-content: space-between;
-  text-align: start;
-
-  > div, img {
-    width: 50%;
-  }
 }
+
+
+// .splitCard {
+// 	display: flex;
+// 	align-items: center;
+//   justify-content: space-between;
+//   text-align: start;
+
+//   > div, img {
+//     width: 50%;
+//   }
+// }
 
 .margin {
-  margin-bottom: 100px;
+	margin-bottom: 100px;
 }
 
 
