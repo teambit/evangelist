@@ -62,7 +62,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/base/heading@0.0.5": {
+    "bit.marketing/base/heading@0.0.6": {
         "files": [
             {
                 "relativePath": "src/components/base/heading/heading.spec.tsx",
@@ -85,7 +85,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/base/label@0.0.1": {
+    "bit.marketing/base/label@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/base/label/index.tsx",
@@ -108,7 +108,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/base/paragraph@0.0.4": {
+    "bit.marketing/base/paragraph@0.0.5": {
         "files": [
             {
                 "relativePath": "src/components/base/paragraph/index.tsx",
@@ -131,7 +131,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/base/primary-button@0.0.1": {
+    "bit.marketing/base/primary-button@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/base/primary-button/button.module.scss",
@@ -177,7 +177,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/cta-button@0.0.1": {
+    "bit.marketing/concrete/cta-button@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/cta-button/cta-button.module.scss",
@@ -200,7 +200,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/heading@0.0.5": {
+    "bit.marketing/concrete/heading@0.0.6": {
         "files": [
             {
                 "relativePath": "src/components/concrete/heading/heading-sizes.module.scss",
@@ -223,7 +223,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/marketing-card@0.0.1": {
+    "bit.marketing/concrete/marketing-card@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/marketing-card/index.tsx",
@@ -258,7 +258,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/brand-definitionmodule@0.0.1": {
+    "bit.marketing/theme/brand-definitionmodule@0.0.2": {
         "files": [
             {
                 "relativePath": "src/themes/brand-definition.module.scss",
@@ -270,7 +270,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/color-definition@0.0.1": {
+    "bit.marketing/theme/color-definition@0.0.2": {
         "files": [
             {
                 "relativePath": "src/themes/color-definition.module.scss",
@@ -282,7 +282,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/colors@0.0.1": {
+    "bit.marketing/theme/colors@0.0.2": {
         "files": [
             {
                 "relativePath": "src/themes/colors.module.scss",
@@ -318,19 +318,19 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/sizes@0.0.2": {
+    "bit.marketing/theme/sizes@0.0.3": {
         "files": [
             {
                 "relativePath": "src/constants/sizes.ts",
                 "test": false,
-                "name": "sizes.tsx"
+                "name": "sizes.ts"
             }
         ],
-        "mainFile": "src/constants/sizes.tsx",
+        "mainFile": "src/constants/sizes.ts",
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/theme-provider@0.0.1": {
+    "bit.marketing/theme/theme-provider@0.0.2": {
         "files": [
             {
                 "relativePath": "src/themes/theme-provider/index.tsx",
