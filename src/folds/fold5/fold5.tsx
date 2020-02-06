@@ -8,6 +8,8 @@ import { H2, H5 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import { fullWidth } from '../../components/layout/grid';
 import styles from './fold5.module.scss';
+import { textLeft } from '../../components/layout/align';
+import { brL } from '../../components/layout/grid-templates';
 
 export function Fold5(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -21,7 +23,8 @@ export function Fold5(props: HTMLAttributes<HTMLDivElement>) {
 				Deliver faster.
 			</Paragraph>
 			<img src="https://static.bit.dev/homepage-bit/4-integrate.png" className={fullWidth} />
-			<div className={styles.textBoxesSection}>
+			{/* <div className={styles.textBoxesSection}> */}
+			<div className={classNames(brL.col3, textLeft)}>
 				<div>
 					<H5 size={PossibleSizes.xxs}>Automatically propagate liability updates</H5>
 					<Paragraph>

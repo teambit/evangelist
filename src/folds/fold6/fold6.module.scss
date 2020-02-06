@@ -1,31 +1,72 @@
-.fold6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
-  background-position: center -400px;
-  background-repeat: no-repeat;
-}
+// .fold6 {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	text-align: center;
+// 	background-image: url('https://static.bit.dev/homepage-bit/3-build-ui-qpps-Background.svg');
+// 	background-position: center -400px;
+// 	background-repeat: no-repeat;
+// }
 
 
-.maxWidth {
-  max-width: 1200px;
-  margin: auto;
-}
+// .maxWidth {
+// 	max-width: 1200px;
+// 	margin: auto;
+// }
 
 
-.splitCard {
-  text-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  > div, img {
-    width: 50%;
-  }
-}
+// .splitCard {
+// 	text-align: start;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-between;
+
+// 	>div,
+// 	img {
+// 		width: 50%;
+// 	}
+// }
 
 
 .ctaLabel {
-  background-color: var(--blue);
+	background-color: var(--blue);
+	margin: 0 auto;
+}
+
+// .content {
+// 	max-width: 61%;
+// }
+
+.grid {
+	grid-template-columns: repeat(2, 1/2 * 100%);
+	grid-template-rows: repeat(2, 1/2 * 100%);
+	grid-template-areas:
+		"item1"
+		"image1"
+		"item2"
+		"image2";
+
+	@media (min-width: 800px) {
+		grid-template-columns: repeat(6, 1/6 * 100%);
+		// grid-template-rows: repeat(2, 1/2 * 100%);
+		grid-template-areas:
+			"item1 item1 . image1 image1 image1"
+			"image2 image2 image2  . item2 item2";
+	}
+
+	:first-child {
+		grid-area: item1;
+	}
+
+	:nth-child(2) {
+		grid-area: image1;
+	}
+
+	:nth-child(3) {
+		grid-area: item2;
+	}
+
+	:nth-child(4) {
+		grid-area: image2;
+	}
 }

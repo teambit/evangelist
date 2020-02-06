@@ -2,9 +2,9 @@
 // 	max-width: 38%;
 // }
 
-// .primary {
-// 	max-width: 61%;
-// }
+.primary {
+	max-width: 61%;
+}
 
 .center {
 	justify-self: center;
@@ -32,7 +32,7 @@
 }
 
 .grid-12-container {
-	grid-gap: 16px 16px;
+	// grid-gap: 16px 16px;
 	justify-items: center;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);

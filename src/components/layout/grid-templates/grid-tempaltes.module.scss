@@ -23,13 +23,21 @@ xl $br-xl;
 	$brName: nth($breakpoint, 1);
 	$brVal: nth($breakpoint, 2);
 
-	@for $i from 1 through 12 {
-		@media only screen and (min-width: $brVal) {
-			// .columns {
+	@for $r from 1 through 2 {
+		@for $i from 1 through 12 {
+			@media only screen and (min-width: $brVal) {
+
 				.--#{$brName}-#{$i} {
-					grid-template-columns: repeat($i, 1fr);
+					grid-template-columns: repeat($i, 1/$i * 100%);
 				}
-			// }
+
+				.grid {
+					&--#{$brName}-#{$i}-#{$r} {
+						grid-template-columns: repeat($i, 1/$i * 100%);
+						grid-template-rows: repeat($r, 1/$i * 100%);
+					}
+				}
+			}
 		}
 	}
 }
@@ -37,6 +45,10 @@ xl $br-xl;
 .grid-container {
 	display: grid;
 	grid-gap: 16px 16px;
+
+	//TODO - @DRAFT - should we move to commons.scss or leave here?
+	align-items: center;
+	justify-items: center;
 }
 
 .fullWidth {

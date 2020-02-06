@@ -8,10 +8,11 @@ import { H1, H2, H5 } from '../../components/concrete/heading';
 import { fullWidth } from '../../components/layout/grid';
 import styles from './fold4.module.scss';
 import { brL } from '../../components/layout/grid-templates';
+import { textLeft, textCenter } from '../../components/layout/align';
 
 export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.fold4, props.className)}>
+		<div {...props} className={classNames(styles.fold4, textLeft, props.className)}>
 			<H2 size={PossibleSizes.xs}>Empower autonomous teams to build together</H2>
 			<Paragraph>
 				Empower teams to own, build and deliver frontends end-to-end….
@@ -24,7 +25,7 @@ export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
 			/>
 
 			{/* <div className={styles.textBoxesSection}> */}
-			<div className={brL.col3}>
+			<div className={classNames(brL.col3, textCenter)}>
 				<div>
 					<H5 size={PossibleSizes.xxs}>Assign team ownerships.</H5>
 					<Paragraph>

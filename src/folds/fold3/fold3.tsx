@@ -9,7 +9,7 @@ import { Label } from '../../components/base/label';
 import styles from './fold3.module.scss';
 // import { col12, col6, gridContainer } from '../../components/layout/grid';
 import { brL } from '../../components/layout/grid-templates';
-import { alignLeft, alignCenter } from '../../components/layout/common-styles';
+import { textLeft, textCenter } from '../../components/layout/align';
 // TODO - use label color through class instead of accentColor
 
 export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
@@ -17,7 +17,7 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
-			className={classNames(styles.fold3, alignCenter, props.className)}
+			className={classNames(styles.fold3, textCenter, props.className)}
 			style={accentColor}
 		>
 			<Label className={classNames(styles.ctaLabel)}>Develop</Label>
@@ -37,7 +37,7 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 			/>
 
 			<div className={classNames(brL.col2, styles.margin)}>
-				<div className={alignLeft}>
+				<div className={textLeft}>
 					<H3 size={PossibleSizes.sm}>Simple yet scalable semantic versioning.</H3>
 					<Paragraph>
 						Leverage semantic versioning to control the development of each
@@ -51,7 +51,7 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 
 			<div className={classNames(brL.col2)}>
 				<img alt="bit" src="https://static.bit.dev/homepage-bit/2-per.png" />
-				<div className={alignLeft}>
+				<div className={textLeft}>
 					<H3 size={PossibleSizes.sm}>Per component development environment.</H3>
 					<Paragraph>
 						When writing a component, Bit spawns an development environment that

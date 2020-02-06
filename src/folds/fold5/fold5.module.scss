@@ -8,19 +8,20 @@
 
 
 
-.textBoxesSection {
+// .textBoxesSection {
   
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  > div {
-    text-align: left;
-    max-width: 400px;
-    margin: 0 20px;
-  }
-}
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   > div {
+//     text-align: left;
+//     max-width: 400px;
+//     margin: 0 20px;
+//   }
+// }
 
 
 .ctaLabel {
+  margin: 0 auto;
   background-color: var(--green);
 }
