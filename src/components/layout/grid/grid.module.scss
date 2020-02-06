@@ -6,8 +6,16 @@
 // 	max-width: 61%;
 // }
 
-.fullWidth {
-	width: 100%;
+.center {
+	justify-self: center;
+}
+
+@for $i from 1 through 12 {
+	.col {
+		&-#{$i} {
+			grid-column-end: span $i;
+		}
+	}
 }
 
 .centerColumn {
@@ -20,4 +28,11 @@
 .wideColumn {
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+.grid-12-container {
+	grid-gap: 16px 16px;
+	justify-items: center;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
 }
