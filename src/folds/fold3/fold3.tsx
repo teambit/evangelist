@@ -7,6 +7,7 @@ import { PossibleSizes } from '../../constants/sizes';
 import { H2, H3 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import styles from './fold3.module.scss';
+import { fullWidth } from '../../components/layout/grid';
 // TODO - use label color through class instead of accentColor
 export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 	const accentColor = { [styles.accentVar]: '#6c5ce7' } as CSSProperties;
@@ -23,7 +24,7 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 					and deploy components. Make it easier to maintain each codebase, reduce
 					complexity and deliver faster.
 				</Paragraph>
-				<img alt='bit' src="https://static.bit.dev/homepage-bit/2-build.png" className={classNames(styles.margin)} />
+				<img alt='bit' src="https://static.bit.dev/homepage-bit/2-build.png" className={classNames(fullWidth, styles.margin)} />
 
 				<div className={classNames(styles.margin, styles.splitCard)}>
 					<div>

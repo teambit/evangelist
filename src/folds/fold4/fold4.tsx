@@ -5,7 +5,7 @@ import { Paragraph } from '../../components/base/paragraph';
 
 import { PossibleSizes } from '../../constants/sizes';
 import { H1, H2, H5 } from '../../components/concrete/heading';
-
+import { fullWidth } from '../../components/layout/grid';
 import styles from './fold4.module.scss';
 
 export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
@@ -15,7 +15,7 @@ export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
 			<Paragraph>
 				Empower teams to own, build and deliver frontends end-to-end….
 			</Paragraph>
-			<img src="https://static.bit.dev/homepage-bit/3-empower.png" />
+			<img src="https://static.bit.dev/homepage-bit/3-empower.png" className={fullWidth} />
 			<div className={styles.textBoxesSection}>
 				<div>
 					<H5 size={PossibleSizes.xxs}>Assign team ownerships.</H5>

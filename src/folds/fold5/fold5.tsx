@@ -6,6 +6,7 @@ import { Paragraph } from '../../components/base/paragraph';
 import { PossibleSizes } from '../../constants/sizes';
 import { H2, H5 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
+import { fullWidth } from '../../components/layout/grid';
 import styles from './fold5.module.scss';
 
 export function Fold5(props: HTMLAttributes<HTMLDivElement>) {
@@ -19,7 +20,7 @@ export function Fold5(props: HTMLAttributes<HTMLDivElement>) {
 				integrate, deploy and deliver new component versions from concept to production.
 				Deliver faster.
 			</Paragraph>
-			<img src="https://static.bit.dev/homepage-bit/4-integrate.png" />
+			<img src="https://static.bit.dev/homepage-bit/4-integrate.png" className={fullWidth} />
 			<div className={styles.textBoxesSection}>
 				<div>
 					<H5 size={PossibleSizes.xxs}>Automatically propagate liability updates</H5>
