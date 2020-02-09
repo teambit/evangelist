@@ -14,11 +14,11 @@ export type CardProps = {
   /**
    * to control the shadow effect of a card.
    */
-  elevation: "none" | "low" | "medium" | "high";
+  elevation?: "none" | "low" | "medium" | "high";
 } & React.HTMLAttributes<HTMLDivElement>;
 
 
-export function Card({ className, elevation, ...rest }: CardProps) {
+export function Card({ className, elevation = "low", ...rest }: CardProps) {
 
   return (
     <div
@@ -32,6 +32,3 @@ export function Card({ className, elevation, ...rest }: CardProps) {
   );
 }
 
-Card.defaultProps = {
-  elevation: "low",
-};

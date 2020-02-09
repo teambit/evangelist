@@ -2,6 +2,6 @@
     overflow: hidden; // for zoom in
     border: 1px solid var(--border-color);
     padding: 20px;
-    width: fit-content;
     border-radius: 5px;
+    box-sizing: border-box;
 }

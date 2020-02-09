@@ -10,27 +10,36 @@ import { PossibleSizes } from '../../constants/sizes';
 import { TwitterLink } from '../../components/concrete/community-links/twitter-link';
 import { TwitterCard } from '../../components/concrete/twitter-card';
 import { staticStorageUrl } from '../../constants/storage';
+import { brLg } from '../../components/layout/grid-templates';
+import { Paragraph } from '../../components/base/paragraph';
 
 export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
-			className={classnames(styles.communityFold, props.className)}
+			className={classnames(styles.communityFold, brLg.col2, props.className)}
 		>
-			<div>
-				<H2 size={PossibleSizes.sm}>Join the community!</H2>
-				<div>
+			<div className={styles.cta}>
+				<H2 className={styles.title} size={PossibleSizes.md}>
+					Join the community!
+				</H2>
+				<Paragraph className={styles.text} size={PossibleSizes.xl}>
 					Join over 100,000 developers in the Bit community to share, discover and
 					collaborate over frontend building blocks. Share your components with the
 					world to get usage, feedback and contributions from people around the world.
+				</Paragraph>
+				<div className={styles.topLinks}>
+					<GithubLink href={links.github} className={styles.githubLink} />
 				</div>
-				<GithubLink href={links.github} />
-				<SlackLink href={links.slack} />
-				<TwitterLink href={links.twitter} />
+				<div className={styles.botLinks}>
+					<SlackLink href={links.slack} className={styles.linkMargin} />
+					<TwitterLink href={links.twitter} />
+				</div>
 			</div>
 
 			<div>
 				<TwitterCard
+					className={styles.tweet}
 					title="@TheNextWeb"
 					image={`${staticStorageUrl}/homepage/join-fold/tnw.png`}
 					verified
@@ -40,6 +49,7 @@ export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 					Build software like Lego with this smart new developer tool.
 				</TwitterCard>
 				<TwitterCard
+					className={styles.tweet}
 					title="@smashingmag"
 					image={`${staticStorageUrl}/homepage/join-fold/smashing.png`}
 					verified
@@ -50,6 +60,7 @@ export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 					modular way.
 				</TwitterCard>
 				<TwitterCard
+					className={styles.tweet}
 					title="@ncthis"
 					image={`${staticStorageUrl}/homepage/join-fold/ncthis.jpg`}
 					verified

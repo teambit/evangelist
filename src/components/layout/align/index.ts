@@ -2,11 +2,11 @@ import styles from './align.module.scss';
 const {
 	textLeft,
 	textCenter,
-	alignCenter,
-	alignRight,
+	// alignCenter,
+	// alignRight,
 	contentLeft,
 	contentRight,
 	marginCenter,
 } = styles;
 
-export { textLeft, textCenter, alignCenter, alignRight, contentLeft, contentRight, marginCenter };
+export { textLeft, textCenter, contentLeft, contentRight, marginCenter };

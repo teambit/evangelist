@@ -23,8 +23,8 @@ export function GithubLink({ className, href, ...rest }: GithubLinkProps) {
 	return (
 		<BaseCommunityLink
 			href={href}
-			className={classNames(baseStyles.communityLink, styles.githubLink, className)}
 			{...rest}
+			className={classNames(baseStyles.communityLink, styles.githubLink, className)}
 		>
 			<Icon of="github-logo" className={styles.icon} />
 			<span>teambit/bit</span>

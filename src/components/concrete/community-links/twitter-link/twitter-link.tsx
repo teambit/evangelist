@@ -22,9 +22,9 @@ export type GithubLinkProps = {
 export function TwitterLink({ className, href, ...rest }: GithubLinkProps) {
 	return (
 		<BaseCommunityLink
+			{...rest}
 			href={href}
 			className={classNames(baseStyles.communityLink, styles.twitterLink, className)}
-			{...rest}
 		>
 			<Icon of="twitter-logo" className={classNames(styles.icon)} />
 			<span>@bitdev_</span>

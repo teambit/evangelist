@@ -28,11 +28,11 @@ export function CommunityLink({
 }: CommunityLinkProps) {
   return (
     <a
+      {...rest}
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       className={classNames(styles.communityLink, className)}
-      {...rest}
     >
       {children}
     </a>

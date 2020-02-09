@@ -22,9 +22,9 @@ export type GithubLinkProps = {
 export function SlackLink({ className, href, ...rest }: GithubLinkProps) {
 	return (
 		<BaseCommunityLink
+			{...rest}
 			href={href}
 			className={classNames(baseStyles.communityLink, styles.slackLink, className)}
-			{...rest}
 		>
 			<Icon of="slack" className={classNames(styles.icon)} />
 			<span>bit-dev-community</span>
