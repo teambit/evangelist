@@ -41,7 +41,29 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 				<img src="https://static.bit.dev/homepage-bit/2-per.png" />
 			</div>
-			<div>
+			<div className={classNames(brL.col3)}>
+				<div>
+					<img
+						src="https://static.bit.dev/homepage-bit/icn-1.svg"
+						className={styles.icon}
+					/>
+					<H2 size={PossibleSizes.xs}>First-class static hosting</H2>
+					<Paragraph>
+						Empower frontend teams to deliver and innovate in short effective
+						cycles.
+					</Paragraph>
+				</div>
+				<div>
+					<img
+						src="https://static.bit.dev/homepage-bit/icn-1.svg"
+						className={styles.icon}
+					/>
+					<H2 size={PossibleSizes.xs}>First-class static hosting</H2>
+					<Paragraph>
+						Empower frontend teams to deliver and innovate in short effective
+						cycles.
+					</Paragraph>
+				</div>
 				<div>
 					<img
 						src="https://static.bit.dev/homepage-bit/icn-1.svg"
