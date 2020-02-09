@@ -4,7 +4,7 @@ import classNames from 'classnames';
 console.log('columns', columns);
 
 //@HACK!
-export const grid22 = classNames(columns['grid-container'], columns['grid--md-2-2']);
+// export const grid22 = classNames(columns['grid-container'], columns['grid--md-2-2']);
 
 export const brXs = {
 	col1: columns['grid-container'] + ' ' + columns['--xs-1'],

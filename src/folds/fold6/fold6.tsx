@@ -4,10 +4,10 @@ import classNames from 'classnames';
 import { Paragraph } from '../../components/base/paragraph';
 
 import { PossibleSizes } from '../../constants/sizes';
-import { H1, H2, H5 } from '../../components/concrete/heading';
+import { H2 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import styles from './fold6.module.scss';
-import { brL, grid22 } from '../../components/layout/grid-templates';
+import { brL, brMd } from '../../components/layout/grid-templates';
 import { textLeft, contentLeft, contentRight } from '../../components/layout/align';
 
 export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
@@ -17,7 +17,7 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 			<H2 size={PossibleSizes.md}>
 				Incremental deployments with first class static hosting
 			</H2>
-			<div className={classNames(grid22, textLeft, styles.grid)}>
+			<div className={classNames(brMd.col12, textLeft, styles.zGrid)}>
 				<div className={classNames(styles.contentLeft, contentLeft)}>
 					<H2 size={PossibleSizes.xs}>Continuously deploy components.</H2>
 					<Paragraph>
@@ -27,7 +27,10 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 
-				<img src="https://static.bit.dev/homepage-bit/2-simple.png" />
+				<img
+					src="https://static.bit.dev/homepage-bit/2-simple.png"
+					alt="illustration"
+				/>
 
 				<div className={classNames(/* styles.content, */ contentRight)}>
 					<H2 size={PossibleSizes.xs}>
@@ -39,13 +42,15 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 						rollback any part of your UI on its own.
 					</Paragraph>
 				</div>
-				<img src="https://static.bit.dev/homepage-bit/2-per.png" />
+				<img src="https://static.bit.dev/homepage-bit/2-per.png" alt="illustration" />
 			</div>
+
 			<div className={classNames(brL.col3)}>
 				<div>
 					<img
 						src="https://static.bit.dev/homepage-bit/icn-1.svg"
 						className={styles.icon}
+						alt="safe"
 					/>
 					<H2 size={PossibleSizes.xs}>First-class static hosting</H2>
 					<Paragraph>
@@ -57,6 +62,7 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 					<img
 						src="https://static.bit.dev/homepage-bit/icn-1.svg"
 						className={styles.icon}
+						alt="cloud"
 					/>
 					<H2 size={PossibleSizes.xs}>First-class static hosting</H2>
 					<Paragraph>
@@ -68,6 +74,7 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 					<img
 						src="https://static.bit.dev/homepage-bit/icn-1.svg"
 						className={styles.icon}
+						alt="globe"
 					/>
 					<H2 size={PossibleSizes.xs}>First-class static hosting</H2>
 					<Paragraph>
