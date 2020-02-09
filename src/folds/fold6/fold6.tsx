@@ -46,38 +46,38 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 			</div>
 
 			<div className={classNames(brL.col3)}>
-				<div>
+				<div className={styles.iconBlock}>
 					<img
 						src="https://static.bit.dev/homepage-bit/icn-1.svg"
 						className={styles.icon}
 						alt="safe"
 					/>
-					<H2 size={PossibleSizes.xs}>First-class static hosting</H2>
-					<Paragraph>
+					<H2 size={PossibleSizes.xxs}>First-class static hosting</H2>
+					<Paragraph size={PossibleSizes.xs}>
 						Empower frontend teams to deliver and innovate in short effective
 						cycles.
 					</Paragraph>
 				</div>
-				<div>
+				<div className={styles.iconBlock}>
 					<img
-						src="https://static.bit.dev/homepage-bit/icn-1.svg"
+						src="https://static.bit.dev/homepage-bit/icn-2.svg"
 						className={styles.icon}
 						alt="cloud"
 					/>
-					<H2 size={PossibleSizes.xs}>First-class static hosting</H2>
-					<Paragraph>
+					<H2 size={PossibleSizes.xxs}>Hyper-fast component CDN</H2>
+					<Paragraph size={PossibleSizes.xs}>
 						Empower frontend teams to deliver and innovate in short effective
 						cycles.
 					</Paragraph>
 				</div>
-				<div>
+				<div className={styles.iconBlock}>
 					<img
-						src="https://static.bit.dev/homepage-bit/icn-1.svg"
+						src="https://static.bit.dev/homepage-bit/icn-3.svg"
 						className={styles.icon}
 						alt="globe"
 					/>
-					<H2 size={PossibleSizes.xs}>First-class static hosting</H2>
-					<Paragraph>
+					<H2 size={PossibleSizes.xxs}>SSL and everything else built-in</H2>
+					<Paragraph size={PossibleSizes.xs}>
 						Empower frontend teams to deliver and innovate in short effective
 						cycles.
 					</Paragraph>

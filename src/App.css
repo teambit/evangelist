@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+
+@font-face {
+  font-family: "CircularProBook";
+  src: url('http://static.bit.dev/bitdev-fonts/CircularPro-Book.otf');
 }
 
-
+body {
+  font-family: 'CircularProBook';
+}

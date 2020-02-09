@@ -1,4 +1,5 @@
 import React from 'react';
+import 'reset-css';
 import classNames from 'classnames';
 //@ts-ignore
 // import {CommentCarousel, carouselContent} from "@bit/bit.web.components.comment-carousel";
