@@ -9,7 +9,7 @@ export type HeadingProps = {
   /**
    * heading font size.
    */
-  size: PossibleSizes;
+  size?: PossibleSizes;
 } & React.HTMLAttributes<HTMLHeadingElement>;
 
 /**
