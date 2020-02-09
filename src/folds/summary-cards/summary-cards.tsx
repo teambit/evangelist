@@ -2,11 +2,11 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import { MarketingCard } from '../../components/concrete/marketing-card';
 import styles from './summary-cards.module.scss';
-import { brL, brMd, brLg } from '../../components/layout/grid-templates';
+import { brLg, brXl } from '../../components/layout/grid-templates';
 
 export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 	return (
-		<div {...props} className={classNames(brL.col2, brLg.col4, props.className)}>
+		<div {...props} className={classNames(brLg.col2, brXl.col4, props.className)}>
 			<MarketingCard
             className={styles.marketingCard}
 				ctaColor={'#6c5ce7'}
