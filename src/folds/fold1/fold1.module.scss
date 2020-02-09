@@ -1,4 +1,22 @@
+.fold1 {
+  margin-bottom: 40px;
+}
 
-  .ctaButton {
-    margin-right: 20px;
-  }
+.ctaButton {
+	margin-right: 20px;
+}
+
+.fold1Content {
+	text-align: center;
+	@media screen and (min-width: 920px) {
+		text-align: unset;
+	}
+}
+
+.paragraph {
+	margin-bottom: 40px;
+}
+
+.buttons {
+	margin-bottom: 40px;
+}
