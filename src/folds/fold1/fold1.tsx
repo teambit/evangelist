@@ -11,7 +11,7 @@ import { CtaButton } from '../../components/concrete/cta-button';
 import { brL } from '../../components/layout/grid-templates';
 import { marginCenter } from '../../components/layout/align';
 
-const iconsArray = ['react', 'vue', 'angular', 'web-components', 'node'];
+const iconsArray = ['react', 'vue1', 'angular', 'web-components', 'node'];
 
 export function Fold1(props: HTMLAttributes<HTMLDivElement>) {
 	return (
