@@ -8,8 +8,8 @@ import { H2, H3 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import styles from './fold3.module.scss';
 // import { col12, col6, gridContainer } from '../../components/layout/grid';
-import { brL } from '../../components/layout/grid-templates';
-import { textLeft, textCenter } from '../../components/layout/align';
+import { brL, brMd } from '../../components/layout/grid-templates';
+import { textLeft, textCenter, marginCenter } from '../../components/layout/align';
 // TODO - use label color through class instead of accentColor
 
 export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
@@ -17,10 +17,10 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
-			className={classNames(styles.fold3, textCenter, props.className)}
+			className={classNames(textCenter, props.className)}
 			style={accentColor}
 		>
-			<Label className={classNames(styles.ctaLabel)}>Develop</Label>
+			<Label className={classNames(styles.ctaLabel, marginCenter)}>Develop</Label>
 			<H2 size={PossibleSizes.md} className={'col12'}>
 				Develop components in simple decoupled codebases
 			</H2>
@@ -36,7 +36,7 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 				className={classNames(styles.margin)}
 			/>
 
-			<div className={classNames(brL.col2, styles.margin)}>
+			<div className={classNames(brMd.col12, textLeft, styles.zGrid)}>
 				<div className={textLeft}>
 					<H3 size={PossibleSizes.sm}>Simple yet scalable semantic versioning.</H3>
 					<Paragraph>
@@ -46,11 +46,7 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 				<img alt="bit" src="https://static.bit.dev/homepage-bit/2-simple.png" />
-			</div>
-			{/* <div className={classNames(fullWidth, styles.splitCard)}> */}
 
-			<div className={classNames(brL.col2)}>
-				<img alt="bit" src="https://static.bit.dev/homepage-bit/2-per.png" />
 				<div className={textLeft}>
 					<H3 size={PossibleSizes.sm}>Per component development environment.</H3>
 					<Paragraph>
@@ -60,6 +56,7 @@ export function Fold3(props: HTMLAttributes<HTMLDivElement>) {
 						configurations to save you time. Best practices included.
 					</Paragraph>
 				</div>
+				<img alt="bit" src="https://static.bit.dev/homepage-bit/2-per.png" />
 			</div>
 		</div>
 	);

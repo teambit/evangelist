@@ -1,22 +1,46 @@
-.fold3 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
+@import "../../components/layout/breakpoints.scss";
+
+.zGrid {
+	grid-template-areas:
+		"it1"
+		"im1"
+		"it2"
+		"im2";
+
+	:first-child {
+		grid-area: it1;
+	}
+
+	:nth-child(2) {
+		grid-area: im1;
+	}
+
+	:nth-child(3) {
+		grid-area: it2;
+	}
+
+	:nth-child(4) {
+		grid-area: im2;
+	}
+
+	@media (min-width: $br-md) {
+		grid-template-areas:
+			"it1 it1 it1 it1 it1 . im1 im1 im1 im1 im1 im1"
+			"im2 im2 im2 im2 im2 im2 . it2 it2 it2 it2 it2";
+
+		grid-row-gap: 50px;
+		margin-bottom: 50px;
+	}
+
+	@media (min-width: $br-lg-new) {
+		grid-template-areas:
+			"it1 it1 it1 it1 . . im1 im1 im1 im1 im1 im1"
+			"im2 im2 im2 im2 im2 im2 . . it2 it2 it2 it2";
+
+		grid-row-gap: 130px;
+		margin-bottom: 80px;
+	}
 }
-
-
-// .splitCard {
-// 	display: flex;
-// 	align-items: center;
-//   justify-content: space-between;
-//   text-align: start;
-
-//   > div, img {
-//     width: 50%;
-//   }
-// }
 
 .margin {
 	margin-bottom: 100px;
