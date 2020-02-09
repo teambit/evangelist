@@ -36,15 +36,15 @@ const App = () => {
 			<div className={styles.whiteBackground}>
 				<Fold2 className={centerColumn} />
 			</div>
-			<div className={styles.greyBackground}>
+			<div className={classNames(styles.greyBackground, styles.padding80)}>
 				<Fold3 className={centerColumn} />
 			</div>
 
-			<div className={styles.whiteBackground}>
+			<div className={classNames(styles.whiteBackground, styles.padding80)}>
 				<Fold4 className={centerColumn} />
         <CtaFold className={centerColumn} />
 			</div>
-			<div className={styles.greyBackground}>
+			<div className={classNames(styles.greyBackground, styles.padding80)}>
 				<Fold5 className={centerColumn} />
         <Separator className={classNames(styles.separator, centerColumn)} />
 				<Fold6 className={centerColumn} />

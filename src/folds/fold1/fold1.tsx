@@ -23,7 +23,6 @@ export function Fold1(props: HTMLAttributes<HTMLDivElement>) {
 				</Paragraph>
 				<CtaButton className={styles.ctaButton}>Get started</CtaButton>
 				<PrimaryButton>Learn more</PrimaryButton>
-				{/* <GithubLink href="ss" className={styles.communityLink}></GithubLink> */}
 			</div>
 
 			<img
@@ -32,7 +31,6 @@ export function Fold1(props: HTMLAttributes<HTMLDivElement>) {
 				alt="bit illustration"
 			/>
 
-			{/* <span className={styles.asset}></span> */}
 		</div>
 	);
 }

@@ -12,8 +12,8 @@ import { textLeft, textCenter } from '../../components/layout/align';
 
 export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.fold4, textLeft, props.className)}>
-			<H2 size={PossibleSizes.xs}>Empower autonomous teams to build together</H2>
+		<div {...props} className={classNames(styles.fold4, textCenter, props.className)}>
+			<H2 size={PossibleSizes.md}>Empower autonomous teams to build together</H2>
 			<Paragraph>
 				Empower teams to own, build and deliver frontends end-to-end….
 			</Paragraph>
@@ -25,7 +25,7 @@ export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
 			/>
 
 			{/* <div className={styles.textBoxesSection}> */}
-			<div className={classNames(brL.col3, textCenter)}>
+			<div className={classNames(brL.col3, textLeft)}>
 				<div>
 					<H5 size={PossibleSizes.xxs}>Assign team ownerships.</H5>
 					<Paragraph>
