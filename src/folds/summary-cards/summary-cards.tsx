@@ -8,6 +8,7 @@ export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 	return (
 		<div {...props} className={classNames(brL.col2, brLg.col4, props.className)}>
 			<MarketingCard
+            className={styles.marketingCard}
 				ctaColor={'#6c5ce7'}
 				linkText="learn more"
 				label="Develop"
@@ -17,6 +18,7 @@ export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 				build, test and maintain
 			</MarketingCard>
 			<MarketingCard
+            className={styles.marketingCard}
 				ctaColor={'#37b26c'}
 				linkText="learn more"
 				label="Build"
@@ -26,6 +28,7 @@ export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 				codebase. Let each team integrate and deploy components
 			</MarketingCard>
 			<MarketingCard
+            className={styles.marketingCard}
 				ctaColor={'#0984e3'}
 				linkText="learn more"
 				label="Deploy"
@@ -35,6 +38,7 @@ export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 				CI/CD for a faster release cycle
 			</MarketingCard>
 			<MarketingCard
+            className={styles.marketingCard}
 				ctaColor={'#ff0281'}
 				linkText="learn more"
 				label="Reuse"

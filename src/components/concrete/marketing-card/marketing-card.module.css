@@ -1,16 +1,23 @@
 .card {
-    /* border: 1px solid #ededed; */
     background-color: white;
+    position: relative;
 }
 
 
 .ctaLink {
     text-decoration: none;
     color: var(--marketingTemplateAccent);
+    position: absolute;
+    bottom: 30px;
 }
 
 .ctaLabel {
     background-color: var(--marketingTemplateAccent);
+}
+
+.icon {
+    color: var(--marketingTemplateAccent);
+    font-size: 12px;
 }
 
 :export {
