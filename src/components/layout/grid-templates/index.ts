@@ -6,6 +6,8 @@ console.log('columns', columns);
 //@HACK!
 // export const grid22 = classNames(columns['grid-container'], columns['grid--md-2-2']);
 
+export const gridContainer = columns['grid-container'];
+
 export const brXs = {
 	col1: columns['grid-container'] + ' ' + columns['--xs-1'],
 	col2: columns['grid-container'] + ' ' + columns['--xs-2'],
