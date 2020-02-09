@@ -13,7 +13,7 @@ import { textLeft, contentLeft, contentRight } from '../../components/layout/ali
 export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div {...props} className={classNames(styles.fold6, props.className)}>
-			<Label className={styles.ctaLabel}>Develop</Label>
+			<Label className={styles.ctaLabel}>Deploy</Label>
 			<H2 size={PossibleSizes.md}>
 				Incremental deployments with first class static hosting
 			</H2>
@@ -40,6 +40,19 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 				<img src="https://static.bit.dev/homepage-bit/2-per.png" />
+			</div>
+			<div>
+				<div>
+					<img
+						src="https://static.bit.dev/homepage-bit/icn-1.svg"
+						className={styles.icon}
+					/>
+					<H2 size={PossibleSizes.xs}>First-class static hosting</H2>
+					<Paragraph>
+						Empower frontend teams to deliver and innovate in short effective
+						cycles.
+					</Paragraph>
+				</div>
 			</div>
 		</div>
 	);
