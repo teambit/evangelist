@@ -56,9 +56,10 @@ img {
 	
 	background-image: url('https://static.bit.dev/homepage-bit/1-background.svg');
 	color: white;
-	background-position: center -150px;
-  background-repeat: no-repeat;
-  padding: 200px 0 150px 0;
+  background-position: center bottom;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 200px 0 150px 0;
 }
 
 .summaryCards {
