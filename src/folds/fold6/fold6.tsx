@@ -7,7 +7,7 @@ import { PossibleSizes } from '../../constants/sizes';
 import { H2 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import styles from './fold6.module.scss';
-import { brL, brMd } from '../../components/layout/grid-templates';
+import { brL, brXs } from '../../components/layout/grid-templates';
 import { textLeft } from '../../components/layout/align';
 
 export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
@@ -17,7 +17,7 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 			<H2 size={PossibleSizes.md}>
 				Incremental deployments with first class static hosting
 			</H2>
-			<div className={classNames(brMd.col12, textLeft, styles.zGrid)}>
+			<div className={classNames(brXs.col12, textLeft, styles.zGrid)}>
 				<div>
 					<H2 size={PossibleSizes.xs}>Continuously deploy components.</H2>
 					<Paragraph>

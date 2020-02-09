@@ -1,34 +1,8 @@
 .fold4 {
-  // height: 850px;
-  // background-image: url('http://static.bit.dev/homepage-bit/2-quote white background.svg');
-  // background-color: #f7f9fc;
-  // background-position: center -850px;
-  // background-repeat: no-repeat;
+  margin-bottom: 100px;
 }
 
-
-.maxWidth {
-  max-width: 1200px;
-  margin: auto;
-}
-
-
-// .textBoxesSection {
-  
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   > div {
-//     max-width: 400px;
-//     margin: 0 20px;
-//   }
-// }
-
-
-.ctaLabel {
-  background-color: var(--marketingTemplateAccent);
-}
-
-:export {
-  accentVar: --marketingTemplateAccent;
+.centerImage {
+  padding-top: 50px;
+  margin-bottom: 90px;
 }

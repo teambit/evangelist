@@ -1,3 +1,4 @@
+// TODO - remove this. use css vas instead!
 @import "../../components/layout/breakpoints.scss";
 
 .subHeader {
@@ -9,6 +10,11 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+.ctaLabel {
+	margin-bottom: 25px;
+}
+
 
 .grid {
 	display: grid;
@@ -65,7 +71,7 @@
 			"img4 txt4"
 	}
 
-	@media (min-width: $br-lg-new) {
+	@media (min-width: $br-l) {
 		grid-template-areas:
 			"img1	img2"
 			"txt1	txt2"

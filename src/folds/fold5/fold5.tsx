@@ -22,7 +22,7 @@ export function Fold5(props: HTMLAttributes<HTMLDivElement>) {
 				integrate, deploy and deliver new component versions from concept to production.
 				Deliver faster.
 			</Paragraph>
-			<img src="https://static.bit.dev/homepage-bit/4-integrate.png" className={fullWidth} />
+			<img src="https://static.bit.dev/homepage-bit/4-integrate.png" className={classNames(fullWidth, styles.centerImg)} />
 			{/* <div className={styles.textBoxesSection}> */}
 			<div className={classNames(brL.col3, textLeft)}>
 				<div>

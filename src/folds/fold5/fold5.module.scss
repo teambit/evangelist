@@ -6,22 +6,14 @@
   // background-repeat: no-repeat;
 }
 
-
-
-// .textBoxesSection {
-  
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   > div {
-//     text-align: left;
-//     max-width: 400px;
-//     margin: 0 20px;
-//   }
-// }
+.centerImg {
+  padding-top: 50px;
+  margin-bottom: 90px;
+}
 
 
 .ctaLabel {
   margin: 0 auto;
   background-color: var(--green);
+  margin-bottom: 25px;
 }

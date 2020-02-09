@@ -20,7 +20,7 @@ export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
 
 			<img
 				src="https://static.bit.dev/homepage-bit/3-empower.png"
-				className={fullWidth}
+				className={classNames(fullWidth, styles.centerImage)}
 				alt="illustration"
 			/>
 
