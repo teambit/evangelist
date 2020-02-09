@@ -24,7 +24,7 @@ export const MarketingCard = (props: MarketingCardProps) => {
   
 	return (
 		<Card
-			elevation="none"
+			elevation="low"
 			className={classNames(styles.card, className)}
 			style={accentColor}
 		>
