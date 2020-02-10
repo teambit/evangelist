@@ -28,7 +28,7 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 
 				<img
-					src="https://static.bit.dev/homepage-bit/2-simple.png"
+					src="https://static.bit.dev/homepage-bit/4-deploy.png"
 					alt="illustration"
 				/>
 
@@ -42,7 +42,7 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 						rollback any part of your UI on its own.
 					</Paragraph>
 				</div>
-				<img src="https://static.bit.dev/homepage-bit/2-per.png" alt="illustration" />
+				<img src="https://static.bit.dev/homepage-bit/4-deliver.png" alt="illustration" />
 			</div>
 
 			<div className={classNames(brMd.col3)}>
