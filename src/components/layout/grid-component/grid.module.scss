@@ -1,0 +1,9 @@
+.gridContainer {
+	display: grid;
+	grid-gap: 16px 16px; //not sure about this..
+
+	//TODO - @DRAFT - should we move to commons.scss or leave here?
+	//	align-items: center;
+	//	justify-items: center;
+}
+

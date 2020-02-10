@@ -8,14 +8,14 @@ import { H1 } from '../../components/concrete/heading';
 import { PrimaryButton } from '../../components/base/primary-button';
 import styles from './fold1.module.scss';
 import { CtaButton } from '../../components/concrete/cta-button';
-import { brL } from '../../components/layout/grid-templates';
 import { marginCenter } from '../../components/layout/align';
+import { Grid } from '../../components/layout/grid-component';
 
 const iconsArray = ['react', 'vue1', 'angular', 'web-components', 'node'];
 
 export function Fold1(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.fold1, brL.col2, props.className)}>
+		<Grid {...props} colL={2} className={classNames(styles.fold1, props.className)}>
 			<div className={classNames(styles.fold1Content, marginCenter)}>
 				<H1 size={PossibleSizes.md}>
 					A scalable way to build modern frontend applications.
@@ -36,6 +36,6 @@ export function Fold1(props: HTMLAttributes<HTMLDivElement>) {
 				className={styles.img1}
 				alt="bit illustration"
 			/>
-		</div>
+		</Grid>
 	);
 }

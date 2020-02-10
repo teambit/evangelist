@@ -8,8 +8,8 @@ import { H2, H5 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import { fullWidth } from '../../components/layout/grid';
 import styles from './fold5.module.scss';
-import { textLeft } from '../../components/layout/align';
-import { brL } from '../../components/layout/grid-templates';
+import { text, justifyItems } from '../../components/layout/align';
+import { Grid } from '../../components/layout/grid-component';
 
 export function Fold5(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -22,9 +22,12 @@ export function Fold5(props: HTMLAttributes<HTMLDivElement>) {
 				integrate, deploy and deliver new component versions from concept to production.
 				Deliver faster.
 			</Paragraph>
-			<img src="https://static.bit.dev/homepage-bit/4-integrate.png" className={classNames(fullWidth, styles.centerImg)} />
-			{/* <div className={styles.textBoxesSection}> */}
-			<div className={classNames(brL.col3, textLeft)}>
+			<img
+				src="https://static.bit.dev/homepage-bit/4-integrate.png"
+				alt="illustration"
+				className={classNames(fullWidth, styles.centerImg)}
+			/>
+			<Grid colL={3} className={classNames(text.left, justifyItems.center)}>
 				<div>
 					<H5 size={PossibleSizes.xxs}>Automatically propagate liability updates</H5>
 					<Paragraph>
@@ -50,8 +53,7 @@ export function Fold5(props: HTMLAttributes<HTMLDivElement>) {
 						to gain UI consistency.
 					</Paragraph>
 				</div>
-			</div>
-			
+			</Grid>
 		</div>
 	);
 }

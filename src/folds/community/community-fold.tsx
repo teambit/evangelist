@@ -10,14 +10,16 @@ import { PossibleSizes } from '../../constants/sizes';
 import { TwitterLink } from '../../components/concrete/community-links/twitter-link';
 import { TwitterCard } from '../../components/concrete/twitter-card';
 import { staticStorageUrl } from '../../constants/storage';
-import { brLg } from '../../components/layout/grid-templates';
 import { Paragraph } from '../../components/base/paragraph';
+import { Grid } from '../../components/layout/grid-component';
+import { alignItems } from '../../components/layout/align';
 
 export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div
+		<Grid
 			{...props}
-			className={classnames(styles.communityFold, brLg.col2, props.className)}
+			colLg={2}
+			className={classnames(props.className, styles.communityFold, alignItems.center)}
 		>
 			<div className={styles.cta}>
 				<H2 className={styles.title} size={PossibleSizes.md}>
@@ -70,6 +72,6 @@ export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 					modular way.
 				</TwitterCard>
 			</div>
-		</div>
+		</Grid>
 	);
 }

@@ -8,7 +8,7 @@ import { Label } from '../../components/base/label';
 
 import styles from './reuse-fold.module.scss';
 import { staticStorageUrl } from '../../constants/storage';
-import { gridContainer } from '../../components/layout/grid-templates';
+import { Grid } from '../../components/layout/grid-component';
 
 export function ReuseFold(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -24,7 +24,7 @@ export function ReuseFold(props: React.HTMLAttributes<HTMLDivElement>) {
 				focus on building great apps.
 			</Paragraph>
 
-			<div className={classnames(styles.grid, gridContainer)}>
+			<Grid className={styles.grid}>
 				<Details title="Organize and discover components">
 					Keep components organized and segmented using labels and namespaces. Easily
 					discover components using smart search and powerful filters.
@@ -57,7 +57,7 @@ export function ReuseFold(props: React.HTMLAttributes<HTMLDivElement>) {
 					src={`${staticStorageUrl}/homepage-bit/5-onboard.png`}
 					alt="visualization"
 				/>
-			</div>
+			</Grid>
 		</div>
 	);
 }

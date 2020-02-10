@@ -48,9 +48,11 @@
 }
 
 .icon {
-	max-width: 120px;
+	display: block;
+	margin: 0 auto;
+	width: 120px;
 }
 
 .iconBlock {
-  max-width: 200px;
+	  max-width: 260px;
 }

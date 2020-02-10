@@ -7,8 +7,8 @@ import { PossibleSizes } from '../../constants/sizes';
 import { H2 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import styles from './fold6.module.scss';
-import { brMd } from '../../components/layout/grid-templates';
-import { textLeft } from '../../components/layout/align';
+import { text, justifyItems, alignItems } from '../../components/layout/align';
+import { Grid } from '../../components/layout/grid-component';
 
 export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -17,7 +17,7 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 			<H2 size={PossibleSizes.md}>
 				Incremental deployments with first class static hosting
 			</H2>
-			<div className={classNames(brMd.col12, textLeft, styles.zGrid)}>
+			<Grid colMd={12} className={classNames(text.left, styles.zGrid, alignItems.center)}>
 				<div>
 					<H2 size={PossibleSizes.xs}>Continuously deploy components.</H2>
 					<Paragraph>
@@ -42,10 +42,13 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 						rollback any part of your UI on its own.
 					</Paragraph>
 				</div>
-				<img src="https://static.bit.dev/homepage-bit/4-deliver.png" alt="illustration" />
-			</div>
+				<img
+					src="https://static.bit.dev/homepage-bit/4-deliver.png"
+					alt="illustration"
+				/>
+			</Grid>
 
-			<div className={classNames(brMd.col3)}>
+			<Grid colMd={3} className={classNames(text.left, justifyItems.center)}>
 				<div className={styles.iconBlock}>
 					<img
 						src="https://static.bit.dev/homepage-bit/icn-1.svg"
@@ -82,7 +85,7 @@ export function Fold6(props: HTMLAttributes<HTMLDivElement>) {
 						cycles.
 					</Paragraph>
 				</div>
-			</div>
+			</Grid>
 		</div>
 	);
 }

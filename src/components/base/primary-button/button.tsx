@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import classNames from "classnames";
 import styles from "./button.module.scss";
 import {default as BaseButton, ButtonProps as BaseProps} from '@bit/bit.gui.base.button';

@@ -4,15 +4,15 @@ import classNames from 'classnames';
 import { Paragraph } from '../../components/base/paragraph';
 
 import { PossibleSizes } from '../../constants/sizes';
-import { H1, H2, H5 } from '../../components/concrete/heading';
+import { H2, H5 } from '../../components/concrete/heading';
 import { fullWidth } from '../../components/layout/grid';
 import styles from './fold4.module.scss';
-import { brL } from '../../components/layout/grid-templates';
-import { textLeft, textCenter } from '../../components/layout/align';
+import { text } from '../../components/layout/align';
+import { Grid } from '../../components/layout/grid-component';
 
 export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.fold4, textCenter, props.className)}>
+		<div {...props} className={classNames(styles.fold4, text.center, props.className)}>
 			<H2 size={PossibleSizes.md}>Empower autonomous teams to build together</H2>
 			<Paragraph>
 				Empower teams to own, build and deliver frontends end-to-end….
@@ -24,8 +24,7 @@ export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
 				alt="illustration"
 			/>
 
-			{/* <div className={styles.textBoxesSection}> */}
-			<div className={classNames(brL.col3, textLeft)}>
+			<Grid colL={3} className={text.left}>
 				<div>
 					<H5 size={PossibleSizes.xxs}>Assign team ownerships.</H5>
 					<Paragraph>
@@ -52,7 +51,7 @@ export function Fold4(props: HTMLAttributes<HTMLDivElement>) {
 						to gain UI consistency.
 					</Paragraph>
 				</div>
-			</div>
+			</Grid>
 		</div>
 	);
 }

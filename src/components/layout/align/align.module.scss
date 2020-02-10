@@ -1,24 +1,60 @@
-.textLeft {
-	text-align: left;
+.text {
+	&-left {
+		text-align: left;
+	}
+
+	&-center {
+		text-align: center;
+	}
+
+	&-right {
+		text-align: right;
+	}
 }
 
-.textCenter {
-	text-align: center;
+.justifyItems {
+	&-left {
+		justify-items: left;
+	}
+
+	&-center {
+		justify-items: center;
+	}
+
+	&-right {
+		justify-items: right;
+	}
 }
 
-.textRight {
-	text-align: right;
+.alignItems {
+	&-start {
+		align-items: start;
+	}
+
+	&-center {
+		align-items: center;
+	}
+
+	&-end {
+		align-items: end;
+	}
+}
+
+.self {
+	&-left {
+		justify-self: left;
+	}
+
+	&-center {
+		justify-self: center;
+	}
+
+	&-right {
+		justify-self: right;
+	}
 }
 
 .marginCenter {
 	margin-right: auto;
 	margin-left: auto;
-}
-
-.contentLeft {
-	justify-self: left;
-}
-
-.contentRight {
-	justify-self: right;
 }

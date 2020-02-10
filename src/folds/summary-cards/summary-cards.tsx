@@ -1,14 +1,13 @@
 import React, { HTMLAttributes } from 'react';
-import classNames from 'classnames';
 import { MarketingCard } from '../../components/concrete/marketing-card';
 import styles from './summary-cards.module.scss';
-import { brXl, brMd } from '../../components/layout/grid-templates';
+import { Grid } from '../../components/layout/grid-component';
 
 export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 	return (
-		<div {...props} className={classNames(brMd.col2, brXl.col4, props.className)}>
+		<Grid {...props} colMd={2} colXl={4}>
 			<MarketingCard
-            className={styles.marketingCard}
+				className={styles.marketingCard}
 				ctaColor={'#6c5ce7'}
 				linkText="learn more"
 				label="Develop"
@@ -18,7 +17,7 @@ export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 				build, test and maintain
 			</MarketingCard>
 			<MarketingCard
-            className={styles.marketingCard}
+				className={styles.marketingCard}
 				ctaColor={'#37b26c'}
 				linkText="learn more"
 				label="Build"
@@ -28,7 +27,7 @@ export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 				codebase. Let each team integrate and deploy components
 			</MarketingCard>
 			<MarketingCard
-            className={styles.marketingCard}
+				className={styles.marketingCard}
 				ctaColor={'#0984e3'}
 				linkText="learn more"
 				label="Deploy"
@@ -38,7 +37,7 @@ export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 				CI/CD for a faster release cycle
 			</MarketingCard>
 			<MarketingCard
-            className={styles.marketingCard}
+				className={styles.marketingCard}
 				ctaColor={'#ff0281'}
 				linkText="learn more"
 				label="Reuse"
@@ -47,6 +46,6 @@ export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 				Make all your components reusable in a collaborative ecosystem. Make it easy for
 				everyone to share, discover and use every
 			</MarketingCard>
-		</div>
+		</Grid>
 	);
 };
