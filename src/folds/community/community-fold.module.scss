@@ -15,42 +15,45 @@
 
 .cta {
 	margin-bottom: 50px;
-}
-
-@media screen and (min-width: $br-lg-new) {
-	.tweet {
-		width: 80%;
-	}
+	text-align: center;
 }
 
 .text {
 	margin-bottom: 40px;
 }
 
-.topLinks {
-	display: flex;
-	margin-bottom: 28px;
-	justify-content: center;
-
-	@media (min-width: $br-sm) {
-		display: inline;
-		margin-right: 10px;
-	}
-}
-
-.botLinks {
-	display: flex;
-	justify-content: space-between;
-	
-	@media (min-width: $br-sm) {
-		display: inline;
-	}
-}
-
-.githubLink {
+.links {
+	width: fit-content;
 	margin: 0 auto;
+	
+	>* {
+		display: flex;
+		margin: 10px 0;
+	}
 }
 
-.linkMargin {
-	margin-right: 10px;
+@media screen and (min-width: $br-md) {
+	.links {
+		width: fit-content;
+		margin: 0 auto;
+
+		>* {
+			display: inline-flex;
+			margin: 0 10px 0 0;
+		}
+	}
+}
+
+@media screen and (min-width: $br-lg-new) {
+	.cta {
+		text-align: left;
+	}
+
+	.tweet {
+		width: 80%;
+	}
+
+	.links {
+		margin: 0 auto 0 0;
+	}
 }

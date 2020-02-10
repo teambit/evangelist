@@ -28,16 +28,26 @@ export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 					collaborate over frontend building blocks. Share your components with the
 					world to get usage, feedback and contributions from people around the world.
 				</Paragraph>
-				<div className={styles.topLinks}>
-					<GithubLink href={links.github} className={styles.githubLink} />
-				</div>
-				<div className={styles.botLinks}>
-					<SlackLink href={links.slack} className={styles.linkMargin} />
+
+				<div className={styles.links}>
+					<GithubLink href={links.github} />
+					<SlackLink href={links.slack} />
 					<TwitterLink href={links.twitter} />
 				</div>
 			</div>
 
 			<div>
+				<TwitterCard
+					className={styles.tweet}
+					title="@Sketch2R"
+					image={`${staticStorageUrl}/homepage-bit/tweets/sketch2r.jpg`}
+					verified
+					titleId="twitterTitle0"
+					textId="twitterText0"
+				>
+					Great news! We just published our first Stratos components to
+					http://bit.dev!
+				</TwitterCard>
 				<TwitterCard
 					className={styles.tweet}
 					title="@TheNextWeb"
@@ -59,7 +69,7 @@ export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 					Bit, a distributed virtual component repository for projects built in a
 					modular way.
 				</TwitterCard>
-				<TwitterCard
+				{/* <TwitterCard
 					className={styles.tweet}
 					title="@ncthis"
 					image={`${staticStorageUrl}/homepage/join-fold/ncthis.jpg`}
@@ -70,7 +80,7 @@ export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 					I've been looking at @bitdev_ for a few days in my quest to make "micro
 					front-ends" out of a big monolith. So far, I've been having a blast. Much
 					better than using git submodules or rolling your own with NPM.
-				</TwitterCard>
+				</TwitterCard> */}
 			</div>
 		</div>
 	);
