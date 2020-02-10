@@ -48,9 +48,10 @@ const App = () => {
 			<div className={styles.reuseFold}>
 				<ReuseFold className={centerColumn} />
 			</div>
-			<CommunityFold className={centerColumn} />
-			<div className={styles.ctaFold}>
-				<CtaFold className={centerColumn} />
+			<Separator className={classNames(styles.separator, centerColumn)} />
+			<div className={styles.communityBackground}>
+				<CommunityFold className={centerColumn} />
+				<CtaFold className={classNames(centerColumn, styles.ctaFold)} />
 			</div>
 		</Theme>
 	);
