@@ -69,18 +69,6 @@ export function CommunityFold(props: React.HTMLAttributes<HTMLDivElement>) {
 					Bit, a distributed virtual component repository for projects built in a
 					modular way.
 				</TwitterCard>
-				{/* <TwitterCard
-					className={styles.tweet}
-					title="@ncthis"
-					image={`${staticStorageUrl}/homepage/join-fold/ncthis.jpg`}
-					verified
-					titleId="twitterTitle0"
-					textId="twitterText0"
-				>
-					I've been looking at @bitdev_ for a few days in my quest to make "micro
-					front-ends" out of a big monolith. So far, I've been having a blast. Much
-					better than using git submodules or rolling your own with NPM.
-				</TwitterCard> */}
 			</div>
 		</div>
 	);

@@ -18,6 +18,7 @@
     "@types/react-slick": "^0.23.4",
     "classnames": "^2.2.6",
     "node-sass": "^4.13.1",
+    "number-abbreviate": "^2.0.0",
     "react": "^16.x.x",
     "react-dom": "^16.x.x",
     "react-scripts": "3.3.0",
