@@ -25,11 +25,11 @@ const App = () => {
 	return (
 		<Theme>
 			<EmbedIconSet query="aqq93z" />
-			<div className={styles.purpleBackground}>
-				<Fold1 className={centerColumn} />
-			</div>
-			<SummaryCards className={classNames(styles.summaryCards, wideColumn)} />
 			<div className={styles.whiteBackground}>
+				<div className={styles.purpleBackground}>
+					<Fold1 className={centerColumn} />
+				</div>
+				<SummaryCards className={classNames(styles.summaryCards, wideColumn)} />
 				<Fold2 />
 			</div>
 			<div className={classNames(styles.greyBackground, styles.padding80)}>
