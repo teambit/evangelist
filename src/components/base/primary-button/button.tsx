@@ -2,10 +2,10 @@ import React, { ReactNode } from "react";
 import classNames from "classnames";
 import styles from "./button.module.scss";
 import {default as BaseButton, ButtonProps as BaseProps} from '@bit/bit.gui.base.button';
-// import elevations from './elevations.module.scss';
+import elevations from './elevations.module.scss';
 
 /**
- * Card component - distinguishes a group of elements from the surrounding context to improve readability
+ * Button component 
  */
 export type ButtonProps = {
   /**
@@ -15,13 +15,13 @@ export type ButtonProps = {
 } & BaseProps;
 
 
-export function PrimaryButton({ className, elevation, ...rest }: ButtonProps) {
+export function PrimaryButton({ className, elevation = "none", ...rest }: ButtonProps) {
 
   return (
     <BaseButton
       className={classNames(
         styles.button,
-        // elevations[elevation],
+        elevations[elevation],
         className
         
       )}
@@ -32,5 +32,5 @@ export function PrimaryButton({ className, elevation, ...rest }: ButtonProps) {
 }
 
 PrimaryButton.defaultProps = {
-  elevation: "low",
+  elevation: "none",
 };
