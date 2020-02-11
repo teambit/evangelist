@@ -2,13 +2,11 @@
   margin-bottom: 40px;
 }
 
-.ctaButton {
-	margin-right: 20px;
-}
 
 .fold1Content {
 	text-align: center;
 	@media screen and (min-width: 920px) {
+		align-self: center;
 		text-align: unset;
 	}
 }
@@ -19,4 +17,14 @@
 
 .buttons {
 	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	@media screen and (min-width: 360px) {
+		flex-direction: unset;
+	}
+	@media screen and (min-width: 920px) {
+		justify-content: start;
+	}
 }

@@ -154,7 +154,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/base/primary-button@0.0.3": {
+    "bit.marketing/base/primary-button@0.0.4": {
         "files": [
             {
                 "relativePath": "src/components/base/primary-button/button.module.scss",
@@ -205,7 +205,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/cta-button@0.0.3": {
+    "bit.marketing/concrete/cta-button@0.0.4": {
         "files": [
             {
                 "relativePath": "src/components/concrete/cta-button/cta-button.module.scss",

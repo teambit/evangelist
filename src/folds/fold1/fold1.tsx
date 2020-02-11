@@ -25,7 +25,8 @@ export function Fold1(props: HTMLAttributes<HTMLDivElement>) {
 					continuous delivery, infinite reuse and so much more.
 				</Paragraph>
 				<div className={styles.buttons}>
-					<CtaButton className={styles.ctaButton}>Get started</CtaButton>
+					<CtaButton>Get started</CtaButton>
+					<div style={{height: '20px', width: '20px'}} />
 					<PrimaryButton>Learn more</PrimaryButton>
 				</div>
 				<IconLine icons={iconsArray} />
