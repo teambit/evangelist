@@ -1,0 +1,30 @@
+.section1 {
+  margin-bottom: 40px;
+}
+
+
+.section1Content {
+	text-align: center;
+	@media screen and (min-width: 920px) {
+		align-self: center;
+		text-align: unset;
+	}
+}
+
+.paragraph {
+	margin-bottom: 40px;
+}
+
+.buttons {
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	@media screen and (min-width: 360px) {
+		flex-direction: unset;
+	}
+	@media screen and (min-width: 920px) {
+		justify-content: start;
+	}
+}

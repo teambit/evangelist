@@ -1,0 +1,1 @@
+export {Section2} from './section2';
