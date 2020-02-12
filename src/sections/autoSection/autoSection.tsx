@@ -6,13 +6,13 @@ import { Paragraph } from '../../components/base/paragraph';
 import { PossibleSizes } from '../../constants/sizes';
 import { H2, H5 } from '../../components/concrete/heading';
 import { fullWidth } from '../../components/layout/grid';
-import styles from './section4.module.scss';
+import styles from './autoSection.module.scss';
 import { text } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
-export function Section4(props: HTMLAttributes<HTMLDivElement>) {
+export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.section4, text.center, props.className)}>
+		<div {...props} className={classNames(styles.autoSection, text.center, props.className)}>
 			<H2 size={PossibleSizes.md}>Empower autonomous teams to build together</H2>
 			<Paragraph>
 				Empower teams to own, build and deliver frontends end-to-end….

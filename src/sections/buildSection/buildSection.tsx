@@ -7,13 +7,13 @@ import { PossibleSizes } from '../../constants/sizes';
 import { H2, H5 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import { fullWidth } from '../../components/layout/grid';
-import styles from './section5.module.scss';
+import styles from './buildSection.module.scss';
 import { text, justifyItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
-export function Section5(props: HTMLAttributes<HTMLDivElement>) {
+export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.section5, props.className)}>
+		<div {...props} className={classNames(styles.buildSection, props.className)}>
 			<Label className={styles.ctaLabel}>Build</Label>
 			<H2 size={PossibleSizes.md}>Hyper fast Incrementall component builds</H2>
 			<Paragraph>

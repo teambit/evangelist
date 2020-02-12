@@ -6,12 +6,12 @@ import { Paragraph } from '../../components/base/paragraph';
 import { PossibleSizes } from '../../constants/sizes';
 import { H2, H3 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
-import styles from './section3.module.scss';
+import styles from './devSection.module.scss';
 import { marginCenter, text } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 // TODO - use label color through class instead of accentColor
 
-export function Section3(props: HTMLAttributes<HTMLDivElement>) {
+export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 	const accentColor = { [styles.accentVar]: '#6c5ce7' } as CSSProperties;
 	return (
 		<div {...props} className={classNames(text.center, props.className)} style={accentColor}>

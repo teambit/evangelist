@@ -6,13 +6,13 @@ import { Paragraph } from '../../components/base/paragraph';
 import { PossibleSizes } from '../../constants/sizes';
 import { H2 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
-import styles from './section6.module.scss';
+import styles from './deploySection.module.scss';
 import { text, justifyItems, alignItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
-export function Section6(props: HTMLAttributes<HTMLDivElement>) {
+export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.section6, props.className)}>
+		<div {...props} className={classNames(styles.deploySection, props.className)}>
 			<Label className={styles.ctaLabel}>Deploy</Label>
 			<H2 size={PossibleSizes.md}>
 				Incremental deployments with first class static hosting

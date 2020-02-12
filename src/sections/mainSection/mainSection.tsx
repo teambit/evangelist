@@ -6,17 +6,17 @@ import { IconLine } from '../../components/concrete/icon-line';
 import { PossibleSizes } from '../../constants/sizes';
 import { H1 } from '../../components/concrete/heading';
 import { PrimaryButton } from '../../components/base/primary-button';
-import styles from './section1.module.scss';
+import styles from './mainSection.module.scss';
 import { CtaButton } from '../../components/concrete/cta-button';
 import { marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
 const iconsArray = ['react', 'vue1', 'angular', 'web-components', 'node'];
 
-export function Section1(props: HTMLAttributes<HTMLDivElement>) {
+export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<Grid {...props} colL={2} className={classNames(styles.section1, props.className)}>
-			<div className={classNames(styles.section1Content, marginCenter)}>
+		<Grid {...props} colL={2} className={classNames(styles.mainSection, props.className)}>
+			<div className={classNames(styles.mainSectionContent, marginCenter)}>
 				<H1 size={PossibleSizes.md}>
 					A scalable way to build modern frontend applications.
 				</H1>

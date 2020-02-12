@@ -6,12 +6,12 @@ import './App.css';
 import { Theme } from './themes/theme-provider';
 
 import { EmbedIconSet } from './components/concrete/icon';
-import { Section1 } from './sections/section1';
-import { Section2 } from './sections/section2';
-import { Section3 } from './sections/section3';
-import { Section4 } from './sections/section4';
-import { Section5 } from './sections/section5';
-import { Section6 } from './sections/section6';
+import { MainSection } from './sections/mainSection';
+import { CarouselSection } from './sections/carouselSection';
+import { DevSection } from './sections/devSection';
+import { AutoSection } from './sections/autoSection';
+import { BuildSection } from './sections/buildSection';
+import { DeploySection } from './sections/deploySection';
 import { CommunitySection } from './sections/community';
 import { CtaSection } from './sections/cta';
 import { ReuseSection } from './sections/reuse';
@@ -27,23 +27,23 @@ const App = () => {
 			<EmbedIconSet query="aqq93z" />
 			<div className={styles.whiteBackground}>
 				<div className={styles.purpleBackground}>
-					<Section1 className={centerColumn} />
+					<MainSection className={centerColumn} />
 				</div>
 				<SummaryCards className={classNames(styles.summaryCards, wideColumn)} />
-				<Section2 />
+				<CarouselSection />
 			</div>
 			<div className={classNames(styles.greyBackground, styles.padding80)}>
-				<Section3 className={centerColumn} />
+				<DevSection className={centerColumn} />
 			</div>
 
 			<div className={classNames(styles.whiteBackground, styles.padding80)}>
-				<Section4 className={centerColumn} />
+				<AutoSection className={centerColumn} />
 				<CtaSection className={classNames(centerColumn, styles.padding80)} />
 			</div>
 			<div className={classNames(styles.greyBackground, styles.padding80)}>
-				<Section5 className={centerColumn} />
+				<BuildSection className={centerColumn} />
 				<Separator className={classNames(styles.separator, centerColumn)} />
-				<Section6 className={centerColumn} />
+				<DeploySection className={centerColumn} />
 			</div>
 			<div className={styles.reuseSection}>
 				<ReuseSection className={centerColumn} />

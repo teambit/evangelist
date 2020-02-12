@@ -1,1 +1,0 @@
-export {Section3} from './section3';
