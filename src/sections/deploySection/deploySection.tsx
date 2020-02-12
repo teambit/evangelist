@@ -9,6 +9,7 @@ import { Label } from '../../components/base/label';
 import styles from './deploySection.module.scss';
 import { text, justifyItems, alignItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
+import { zGrid } from '../../components/layout/grid-definitions/z-grid';
 
 export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -17,7 +18,7 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 			<H2 size={PossibleSizes.md}>
 				Incremental deployments with first class static hosting
 			</H2>
-			<Grid colMd={12} className={classNames(text.left, styles.zGrid, alignItems.center)}>
+			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
 				<div>
 					<H2 size={PossibleSizes.xs}>Continuously deploy components.</H2>
 					<Paragraph>
