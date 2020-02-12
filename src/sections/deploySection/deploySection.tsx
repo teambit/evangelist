@@ -9,7 +9,7 @@ import { Label } from '../../components/base/label';
 import styles from './deploySection.module.scss';
 import { text, justifyItems, alignItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
-import { zGrid } from '../../components/layout/grid-definitions/z-grid';
+import { zGrid } from '../../components/layout/grid-definition/z-grid';
 
 export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 	return (

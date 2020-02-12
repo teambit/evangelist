@@ -9,7 +9,7 @@ import { Label } from '../../components/base/label';
 import styles from './devSection.module.scss';
 import { marginCenter, text } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
-import { zGrid } from '../../components/layout/grid-definitions/z-grid';
+import { zGrid } from '../../components/layout/grid-definition/z-grid';
 // TODO - use label color through class instead of accentColor
 
 export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
