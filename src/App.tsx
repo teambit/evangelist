@@ -1,7 +1,7 @@
 import React from 'react';
 import 'reset-css';
 import classNames from 'classnames';
-import './App.css';
+import './themes/book-font.scss';
 
 import { Theme } from './themes/theme-provider';
 

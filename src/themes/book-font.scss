@@ -1,0 +1,32 @@
+@import "../constants/storage.module.scss";
+
+//@HACK - fonts don't work with storage.cloud.google.com
+$staticStorageUrl: 'https://static.bit.dev';
+
+@font-face {
+	font-family: "CircularProBook";
+	src: url($staticStorageUrl + '/fonts/CircularPro-Book.otf');
+}
+
+@font-face {
+	font-family: "CircularProBook";
+	src: url($staticStorageUrl + '/fonts/CircularPro-Bold.otf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "CircularProBook";
+	src: url($staticStorageUrl + '/fonts/CircularPro-BookItalic.otf');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "CircularProBook";
+	src: url($staticStorageUrl + '/fonts/CircularPro-BlackItalic.otf');
+	font-style: italic;
+	font-weight: bold;
+}
+
+body {
+	font-family: 'CircularProBook';
+}
