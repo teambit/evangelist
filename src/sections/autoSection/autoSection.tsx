@@ -6,9 +6,10 @@ import { Paragraph } from '../../components/base/paragraph';
 import { PossibleSizes } from '../../constants/sizes';
 import { H2, H5 } from '../../components/concrete/heading';
 import { fullWidth } from '../../components/layout/grid';
-import styles from './autoSection.module.scss';
 import { text } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
+import {Image} from '../../components/concrete/image';
+import styles from './autoSection.module.scss';
 
 export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -18,8 +19,8 @@ export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 				Empower teams to own, build and deliver frontends end-to-end….
 			</Paragraph>
 
-			<img
-				src="https://static.bit.dev/homepage-bit/3-empower.png"
+			<Image
+				src="homepage-bit/3-empower.png"
 				className={classNames(fullWidth, styles.centerImage)}
 				alt="illustration"
 			/>

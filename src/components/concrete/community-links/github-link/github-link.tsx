@@ -3,10 +3,9 @@ import classNames from 'classnames';
 //@ts-ignore
 import numberAbbreviate from 'number-abbreviate';
 
-import { staticStorageUrl } from '../../../../constants/storage';
 import { PrimaryLink } from '../primary-link';
 import { Icon } from '../../icon';
-
+import {Image} from '../../../concrete/image';
 import styles from './github-link.module.scss';
 
 const ENABLE_STAR_COUNT = false;
@@ -70,9 +69,9 @@ export class GithubLink extends PureComponent<GithubLinkProps, GithubLinkState> 
 				<Icon of="github-logo" className={styles.icon} />
 				<span>teambit/bit</span>
 				{starCount && (
-					<img
+					<Image
 						alt="star"
-						src={`${staticStorageUrl}/homepage/star.svg`}
+						src='homepage/star.svg'
 						className={styles.star}
 					/>
 				)}

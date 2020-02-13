@@ -33,7 +33,7 @@ const App = () => {
 				<CarouselSection />
 			</div>
 			<div className={classNames(styles.greyBackground, styles.padding80)}>
-				<DevSection className={centerColumn} />
+				<DevSection className={classNames(centerColumn, styles.padding80)} />
 			</div>
 
 			<div className={classNames(styles.whiteBackground, styles.padding80)}>
@@ -41,7 +41,7 @@ const App = () => {
 				<CtaSection className={classNames(centerColumn, styles.padding80)} />
 			</div>
 			<div className={classNames(styles.greyBackground, styles.padding80)}>
-				<BuildSection className={centerColumn} />
+				<BuildSection className={classNames(centerColumn, styles.padding80)} />
 				<Separator className={classNames(styles.separator, centerColumn)} />
 				<DeploySection className={centerColumn} />
 			</div>

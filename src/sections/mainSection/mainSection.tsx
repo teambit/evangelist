@@ -1,15 +1,18 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
+import { PossibleSizes } from '../../constants/sizes';
 
 import { Paragraph } from '../../components/base/paragraph';
+import {Image} from '../../components/concrete/image';
 import { IconLine } from '../../components/concrete/icon-line';
-import { PossibleSizes } from '../../constants/sizes';
 import { H1 } from '../../components/concrete/heading';
 import { PrimaryButton } from '../../components/base/primary-button';
-import styles from './mainSection.module.scss';
 import { CtaButton } from '../../components/concrete/cta-button';
+
 import { marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
+
+import styles from './mainSection.module.scss';
 
 const iconsArray = ['react', 'vue1', 'angular', 'web-components', 'node'];
 
@@ -32,8 +35,8 @@ export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 				<IconLine icons={iconsArray} />
 			</div>
 
-			<img
-				src="https://static.bit.dev/homepage-bit/1-illustration.svg"
+			<Image
+				src="homepage-bit/1-illustration.svg"
 				className={styles.img1}
 				alt="bit illustration"
 			/>

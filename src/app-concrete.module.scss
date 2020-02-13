@@ -3,7 +3,6 @@
 
 .whiteBackground {
 	background-image: url($staticStorageUrl + '/homepage-bit/2-quote white background.svg');
-	background-color: #f7f9fc;
   background-position: center bottom;
   background-repeat: no-repeat;
   padding-bottom: 100px;
@@ -72,10 +71,6 @@
 	--marketingTemplateAccent: blue;
 }
 
-img {
-	//@hack todo- remove
-	width: 100%;
-}
 
 
 .purpleBackground {

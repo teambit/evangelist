@@ -1,15 +1,17 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
+import { PossibleSizes } from '../../constants/sizes';
 
 import { Paragraph } from '../../components/base/paragraph';
-
-import { PossibleSizes } from '../../constants/sizes';
 import { H2 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
-import styles from './deploySection.module.scss';
-import { text, justifyItems, alignItems } from '../../components/layout/align';
+import {Image} from '../../components/concrete/image';
+
 import { Grid } from '../../components/layout/grid-component';
 import { zGrid } from '../../components/layout/grid-definition/z-grid';
+import { text, justifyItems, alignItems } from '../../components/layout/align';
+
+import styles from './deploySection.module.scss';
 
 export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -28,8 +30,8 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 
-				<img
-					src="https://static.bit.dev/homepage-bit/4-deploy.png"
+				<Image
+					src="homepage-bit/4-deploy.png"
 					alt="illustration"
 				/>
 
@@ -43,16 +45,16 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 						rollback any part of your UI on its own.
 					</Paragraph>
 				</div>
-				<img
-					src="https://static.bit.dev/homepage-bit/4-deliver.png"
+				<Image
+					src="homepage-bit/4-deliver.png"
 					alt="illustration"
 				/>
 			</Grid>
 
 			<Grid colMd={3} className={classNames(text.left, justifyItems.center)}>
 				<div className={styles.iconBlock}>
-					<img
-						src="https://static.bit.dev/homepage-bit/icn-1.svg"
+					<Image
+						src="homepage-bit/icn-1.svg"
 						className={styles.icon}
 						alt="safe"
 					/>
@@ -63,8 +65,8 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 				<div className={styles.iconBlock}>
-					<img
-						src="https://static.bit.dev/homepage-bit/icn-2.svg"
+					<Image
+						src="homepage-bit/icn-2.svg"
 						className={styles.icon}
 						alt="cloud"
 					/>
@@ -75,8 +77,8 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 				<div className={styles.iconBlock}>
-					<img
-						src="https://static.bit.dev/homepage-bit/icn-3.svg"
+					<Image
+						src="homepage-bit/icn-3.svg"
 						className={styles.icon}
 						alt="globe"
 					/>

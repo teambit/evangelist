@@ -9,7 +9,6 @@ import { H2 } from '../../components/concrete/heading';
 import { PossibleSizes } from '../../constants/sizes';
 import { TwitterLink } from '../../components/concrete/community-links/twitter-link';
 import { TwitterCard } from '../../components/concrete/twitter-card';
-import { staticStorageUrl } from '../../constants/storage';
 import { Paragraph } from '../../components/base/paragraph';
 import { Grid } from '../../components/layout/grid-component';
 import { alignItems } from '../../components/layout/align';
@@ -42,7 +41,7 @@ export function CommunitySection(props: React.HTMLAttributes<HTMLDivElement>) {
 				<TwitterCard
 					className={styles.tweet}
 					title="@Sketch2R"
-					image={`${staticStorageUrl}/homepage-bit/tweets/sketch2r.jpg`}
+					image={'homepage-bit/tweets/sketch2r.jpg'}
 					verified
 					titleId="twitterTitle0"
 					textId="twitterText0"
@@ -53,7 +52,7 @@ export function CommunitySection(props: React.HTMLAttributes<HTMLDivElement>) {
 				<TwitterCard
 					className={styles.tweet}
 					title="@TheNextWeb"
-					image={`${staticStorageUrl}/homepage/join-fold/tnw.png`}
+					image={'homepage/join-fold/tnw.png'}
 					verified
 					titleId="twitterTitle0"
 					textId="twitterText0"
@@ -63,7 +62,7 @@ export function CommunitySection(props: React.HTMLAttributes<HTMLDivElement>) {
 				<TwitterCard
 					className={styles.tweet}
 					title="@smashingmag"
-					image={`${staticStorageUrl}/homepage/join-fold/smashing.png`}
+					image={'homepage/join-fold/smashing.png'}
 					verified
 					titleId="twitterTitle1"
 					textId="twitterText2"

@@ -7,9 +7,12 @@ import { PossibleSizes } from '../../constants/sizes';
 import { H2, H5 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import { fullWidth } from '../../components/layout/grid';
-import styles from './buildSection.module.scss';
 import { text, justifyItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
+import {Image} from '../../components/concrete/image';
+
+import styles from './buildSection.module.scss';
+
 
 export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -22,8 +25,8 @@ export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 				integrate, deploy and deliver new component versions from concept to production.
 				Deliver faster.
 			</Paragraph>
-			<img
-				src="https://static.bit.dev/homepage-bit/4-integrate.png"
+			<Image
+				src="homepage-bit/4-integrate.png"
 				alt="illustration"
 				className={classNames(fullWidth, styles.centerImg)}
 			/>

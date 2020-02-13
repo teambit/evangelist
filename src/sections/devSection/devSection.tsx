@@ -1,15 +1,17 @@
 import React, { CSSProperties, HTMLAttributes } from 'react';
 import classNames from 'classnames';
-
+import { PossibleSizes } from '../../constants/sizes';
+import {Image} from '../../components/concrete/image';
 import { Paragraph } from '../../components/base/paragraph';
 
-import { PossibleSizes } from '../../constants/sizes';
 import { H2, H3 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
-import styles from './devSection.module.scss';
+
 import { marginCenter, text, alignItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 import { zGrid } from '../../components/layout/grid-definition/z-grid';
+
+import styles from './devSection.module.scss';
 // TODO - use label color through class instead of accentColor
 
 export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
@@ -26,9 +28,9 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 				components. Make it easier to maintain each codebase, reduce complexity and
 				deliver faster.
 			</Paragraph>
-			<img
+			<Image
 				alt="bit"
-				src="https://static.bit.dev/homepage-bit/2-build.png"
+				src="homepage-bit/2-build.png"
 				className={classNames(styles.margin)}
 			/>
 
@@ -41,7 +43,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 						different screens, features and apps.
 					</Paragraph>
 				</div>
-				<img alt="bit" src="https://static.bit.dev/homepage-bit/2-simple.png" />
+				<Image alt="bit" src="homepage-bit/2-simple.png" />
 
 				<div className={text.left}>
 					<H3 size={PossibleSizes.sm}>Per component development environment.</H3>
@@ -52,7 +54,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 						configurations to save you time. Best practices included.
 					</Paragraph>
 				</div>
-				<img alt="bit" src="https://static.bit.dev/homepage-bit/2-per.png" />
+				<Image alt="bit" src="homepage-bit/2-per.png" />
 			</Grid>
 		</div>
 	);

@@ -1,14 +1,15 @@
 import React, { ReactNode } from 'react';
 import classnames from 'classnames';
+import { PossibleSizes } from '../../constants/sizes';
 
 import { H2, H3 } from '../../components/concrete/heading';
-import { PossibleSizes } from '../../constants/sizes';
 import { Paragraph } from '../../components/base/paragraph';
 import { Label } from '../../components/base/label';
+import {Image} from '../../components/concrete/image';
+
+import { Grid } from '../../components/layout/grid-component';
 
 import styles from './reuse-section.module.scss';
-import { staticStorageUrl } from '../../constants/storage';
-import { Grid } from '../../components/layout/grid-component';
 
 export function ReuseSection(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -29,8 +30,8 @@ export function ReuseSection(props: React.HTMLAttributes<HTMLDivElement>) {
 					Keep components organized and segmented using labels and namespaces. Easily
 					discover components using smart search and powerful filters.
 				</Details>
-				<img
-					src={`${staticStorageUrl}/homepage-bit/5-orginze.png`}
+				<Image
+					src='homepage-bit/5-orginze.png'
 					alt="visualization"
 				/>
 
@@ -39,22 +40,22 @@ export function ReuseSection(props: React.HTMLAttributes<HTMLDivElement>) {
 					tables and more. Enjoy a live, editable component sandbox to visually
 					explore components.
 				</Details>
-				<img src={`${staticStorageUrl}/homepage-bit/5-write.png`} alt="visualization" />
+				<Image src='homepage-bit/5-write.png' alt="visualization" />
 
 				<Details title="Reuse any component, any way you like">
 					Install any component from the Bit.dev registry using yarn or npm. Or, use
 					Bit to fork any component into your local project to quickly edit and debug.
 					Updated a new version? Share it with your team!
 				</Details>
-				<img src={`${staticStorageUrl}/homepage-bit/5-reuse.png`} alt="visualization" />
+				<Image src='homepage-bit/5-reuse.png' alt="visualization" />
 
 				<Details title="Easily on board new team members">
 					Make it easy for every team member to learn what you already have. Make it
 					easy for new people to find and use every component you have, with their own
 					eyes.
 				</Details>
-				<img
-					src={`${staticStorageUrl}/homepage-bit/5-onboard.png`}
+				<Image
+					src='homepage-bit/5-onboard.png'
 					alt="visualization"
 				/>
 			</Grid>
