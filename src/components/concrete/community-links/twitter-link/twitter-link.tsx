@@ -1,14 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
-import { CommunityLink as BaseCommunityLink } from '../../../base/community-link';
-import styles from './twitter-link.module.scss';
-import baseStyles from '../community-link.module.scss';
+import { PrimaryLink } from '../primary-link';
 import { Icon } from '../../icon';
+import styles from './twitter-link.module.scss';
 
 /**
  * concrete community link component - pill flavor for base link component
  */
-export type GithubLinkProps = {
+export type TwitterLinkProps = {
 	/**
 	 * override className for styling
 	 */
@@ -19,15 +18,15 @@ export type GithubLinkProps = {
 	href: string;
 } & React.HTMLAttributes<HTMLAnchorElement>;
 
-export function TwitterLink({ className, href, ...rest }: GithubLinkProps) {
+export function TwitterLink({ className, href, ...rest }: TwitterLinkProps) {
 	return (
-		<BaseCommunityLink
+		<PrimaryLink
 			{...rest}
 			href={href}
-			className={classNames(baseStyles.communityLink, styles.twitterLink, className)}
+			className={classNames(styles.twitterLink, className)}
 		>
 			<Icon of="twitter-logo" className={classNames(styles.icon)} />
 			<span>@bitdev_</span>
-		</BaseCommunityLink>
+		</PrimaryLink>
 	);
 }

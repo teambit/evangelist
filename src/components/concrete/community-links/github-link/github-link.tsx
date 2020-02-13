@@ -4,10 +4,9 @@ import classNames from 'classnames';
 import numberAbbreviate from 'number-abbreviate';
 
 import { staticStorageUrl } from '../../../../constants/storage';
-import { CommunityLink as BaseCommunityLink } from '../../../base/community-link';
+import { PrimaryLink } from '../primary-link';
 import { Icon } from '../../icon';
 
-import baseStyles from '../community-link.module.scss';
 import styles from './github-link.module.scss';
 
 const ENABLE_STAR_COUNT = false;
@@ -63,10 +62,10 @@ export class GithubLink extends PureComponent<GithubLinkProps, GithubLinkState> 
 		const { starCount } = this.state;
 
 		return (
-			<BaseCommunityLink
+			<PrimaryLink
 				href={href}
 				{...rest}
-				className={classNames(baseStyles.communityLink, styles.githubLink, className)}
+				className={classNames(styles.githubLink, className)}
 			>
 				<Icon of="github-logo" className={styles.icon} />
 				<span>teambit/bit</span>
@@ -78,7 +77,7 @@ export class GithubLink extends PureComponent<GithubLinkProps, GithubLinkState> 
 					/>
 				)}
 				{starCount && <span>{numberAbbreviate(starCount)}</span>}
-			</BaseCommunityLink>
+			</PrimaryLink>
 		);
 	}
 }

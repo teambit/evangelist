@@ -1,5 +1,5 @@
 import React from 'react';
-import { GithubLink } from '../../components/concrete/community-links';
+import { GithubLink } from '../../components/concrete/community-links/github-link';
 import classnames from 'classnames';
 //@ts-ignore
 import { links } from '@bit/bit.web.config.links';

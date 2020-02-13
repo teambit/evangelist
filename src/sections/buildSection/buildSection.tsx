@@ -13,7 +13,7 @@ import { Grid } from '../../components/layout/grid-component';
 
 export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.buildSection, props.className)}>
+		<div {...props} className={classNames(props.className)}>
 			<Label className={styles.ctaLabel}>Build</Label>
 			<H2 size={PossibleSizes.md}>Hyper fast Incrementall component builds</H2>
 			<Paragraph>

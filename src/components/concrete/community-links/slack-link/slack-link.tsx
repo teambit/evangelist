@@ -1,14 +1,13 @@
 import React from 'react';
 import classNames from 'classnames';
-import { CommunityLink as BaseCommunityLink } from '../../../base/community-link';
-import styles from './slack-link.module.scss';
-import baseStyles from '../community-link.module.scss';
+import { PrimaryLink } from '../primary-link';
 import { Icon } from '../../icon';
+import styles from './slack-link.module.scss';
 
 /**
  * concrete community link component - pill flavor for base link component
  */
-export type GithubLinkProps = {
+export type SlackLinkProps = {
 	/**
 	 * override className for styling
 	 */
@@ -19,15 +18,15 @@ export type GithubLinkProps = {
 	href: string;
 } & React.HTMLAttributes<HTMLAnchorElement>;
 
-export function SlackLink({ className, href, ...rest }: GithubLinkProps) {
+export function SlackLink({ className, href, ...rest }: SlackLinkProps) {
 	return (
-		<BaseCommunityLink
+		<PrimaryLink
 			{...rest}
 			href={href}
-			className={classNames(baseStyles.communityLink, styles.slackLink, className)}
+			className={classNames(styles.slackLink, className)}
 		>
 			<Icon of="slack" className={classNames(styles.icon)} />
 			<span>bit-dev-community</span>
-		</BaseCommunityLink>
+		</PrimaryLink>
 	);
 }

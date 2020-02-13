@@ -205,6 +205,98 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/community-links/github-link@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/community-links/github-link/github-link.module.scss",
+                "test": false,
+                "name": "github-link.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/community-links/github-link/github-link.tsx",
+                "test": false,
+                "name": "github-link.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/community-links/github-link/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/components/concrete/community-links/github-link/index.ts",
+        "trackDir": "src/components/concrete/community-links/github-link",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/community-links/primary-link@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/community-links/primary-link/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/community-links/primary-link/primary-link.module.scss",
+                "test": false,
+                "name": "primary-link.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/community-links/primary-link/primary-link.tsx",
+                "test": false,
+                "name": "primary-link.tsx"
+            }
+        ],
+        "mainFile": "src/components/concrete/community-links/primary-link/index.ts",
+        "trackDir": "src/components/concrete/community-links/primary-link",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/community-links/slack-link@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/community-links/slack-link/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/community-links/slack-link/slack-link.module.scss",
+                "test": false,
+                "name": "slack-link.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/community-links/slack-link/slack-link.tsx",
+                "test": false,
+                "name": "slack-link.tsx"
+            }
+        ],
+        "mainFile": "src/components/concrete/community-links/slack-link/index.ts",
+        "trackDir": "src/components/concrete/community-links/slack-link",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/community-links/twitter-link@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/community-links/twitter-link/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/community-links/twitter-link/twitter-link.module.scss",
+                "test": false,
+                "name": "twitter-link.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/community-links/twitter-link/twitter-link.tsx",
+                "test": false,
+                "name": "twitter-link.tsx"
+            }
+        ],
+        "mainFile": "src/components/concrete/community-links/twitter-link/index.ts",
+        "trackDir": "src/components/concrete/community-links/twitter-link",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/concrete/cta-button@0.0.4": {
         "files": [
             {
@@ -304,6 +396,428 @@
         ],
         "mainFile": "src/components/concrete/marketing-card/index.tsx",
         "trackDir": "src/components/concrete/marketing-card",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/concrete/twitter-card@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/twitter-card/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/twitter-card/twitter-card.module.scss",
+                "test": false,
+                "name": "twitter-card.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/twitter-card/twitter-card.tsx",
+                "test": false,
+                "name": "twitter-card.tsx"
+            }
+        ],
+        "mainFile": "src/components/concrete/twitter-card/index.ts",
+        "trackDir": "src/components/concrete/twitter-card",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/constants/_storagemodule@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/constants/_storage.module.scss",
+                "test": false,
+                "name": "_storage.module.scss"
+            }
+        ],
+        "mainFile": "src/constants/_storage.module.scss",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/constants/storage@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/constants/storage.ts",
+                "test": false,
+                "name": "storage.ts"
+            }
+        ],
+        "mainFile": "src/constants/storage.ts",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/layout/align@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/layout/align/align.module.scss",
+                "test": false,
+                "name": "align.module.scss"
+            },
+            {
+                "relativePath": "src/components/layout/align/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/components/layout/align/index.ts",
+        "trackDir": "src/components/layout/align",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/layout/breakpoints@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/layout/_breakpoints.scss",
+                "test": false,
+                "name": "_breakpoints.scss"
+            }
+        ],
+        "mainFile": "src/components/layout/_breakpoints.scss",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/layout/col-span@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/layout/col-span/col-span.module.scss",
+                "test": false,
+                "name": "col-span.module.scss"
+            },
+            {
+                "relativePath": "src/components/layout/col-span/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/layout/col-span/make-spans.ts",
+                "test": false,
+                "name": "make-spans.ts"
+            }
+        ],
+        "mainFile": "src/components/layout/col-span/index.ts",
+        "trackDir": "src/components/layout/col-span",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/layout/grid-component@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/layout/grid-component/grid-template/grid-template.module.scss",
+                "test": false,
+                "name": "grid-template.module.scss"
+            },
+            {
+                "relativePath": "src/components/layout/grid-component/grid-template/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/layout/grid-component/grid.module.scss",
+                "test": false,
+                "name": "grid.module.scss"
+            },
+            {
+                "relativePath": "src/components/layout/grid-component/grid.tsx",
+                "test": false,
+                "name": "grid.tsx"
+            },
+            {
+                "relativePath": "src/components/layout/grid-component/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/components/layout/grid-component/index.ts",
+        "trackDir": "src/components/layout/grid-component",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/layout/grid-definition@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/layout/grid-definition/four-way-grid/four-way-grid.module.scss",
+                "test": false,
+                "name": "four-way-grid.module.scss"
+            },
+            {
+                "relativePath": "src/components/layout/grid-definition/four-way-grid/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/layout/grid-definition/z-grid/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/layout/grid-definition/z-grid/z-grid.module.scss",
+                "test": false,
+                "name": "z-grid.module.scss"
+            }
+        ],
+        "mainFile": "src/components/layout/grid-definition/four-way-grid/index.ts",
+        "trackDir": "src/components/layout/grid-definition",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/layout/grid-templates@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/layout/grid-templates/grid-tempaltes.module.scss",
+                "test": false,
+                "name": "grid-tempaltes.module.scss"
+            },
+            {
+                "relativePath": "src/components/layout/grid-templates/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/components/layout/grid-templates/index.ts",
+        "trackDir": "src/components/layout/grid-templates",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/layout/grid@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/layout/grid/grid.module.scss",
+                "test": false,
+                "name": "grid.module.scss"
+            },
+            {
+                "relativePath": "src/components/layout/grid/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/components/layout/grid/index.ts",
+        "trackDir": "src/components/layout/grid",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/auto-section@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/autoSection/autoSection.module.scss",
+                "test": false,
+                "name": "autoSection.module.scss"
+            },
+            {
+                "relativePath": "src/sections/autoSection/autoSection.tsx",
+                "test": false,
+                "name": "autoSection.tsx"
+            },
+            {
+                "relativePath": "src/sections/autoSection/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/sections/autoSection/index.tsx",
+        "trackDir": "src/sections/autoSection",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/build-section@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/buildSection/buildSection.module.scss",
+                "test": false,
+                "name": "buildSection.module.scss"
+            },
+            {
+                "relativePath": "src/sections/buildSection/buildSection.tsx",
+                "test": false,
+                "name": "buildSection.tsx"
+            },
+            {
+                "relativePath": "src/sections/buildSection/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/sections/buildSection/index.tsx",
+        "trackDir": "src/sections/buildSection",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/carousel-section@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/carouselSection/carouselSection.module.scss",
+                "test": false,
+                "name": "carouselSection.module.scss"
+            },
+            {
+                "relativePath": "src/sections/carouselSection/carouselSection.tsx",
+                "test": false,
+                "name": "carouselSection.tsx"
+            },
+            {
+                "relativePath": "src/sections/carouselSection/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/sections/carouselSection/index.tsx",
+        "trackDir": "src/sections/carouselSection",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/community@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/community/community-section.module.scss",
+                "test": false,
+                "name": "community-section.module.scss"
+            },
+            {
+                "relativePath": "src/sections/community/community-section.tsx",
+                "test": false,
+                "name": "community-section.tsx"
+            },
+            {
+                "relativePath": "src/sections/community/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/sections/community/index.ts",
+        "trackDir": "src/sections/community",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/cta@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/cta/cta-section.tsx",
+                "test": false,
+                "name": "cta-section.tsx"
+            },
+            {
+                "relativePath": "src/sections/cta/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/sections/cta/index.ts",
+        "trackDir": "src/sections/cta",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/deploy-section@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/deploySection/deploySection.module.scss",
+                "test": false,
+                "name": "deploySection.module.scss"
+            },
+            {
+                "relativePath": "src/sections/deploySection/deploySection.tsx",
+                "test": false,
+                "name": "deploySection.tsx"
+            },
+            {
+                "relativePath": "src/sections/deploySection/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/sections/deploySection/index.tsx",
+        "trackDir": "src/sections/deploySection",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/dev-section@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/devSection/devSection.module.scss",
+                "test": false,
+                "name": "devSection.module.scss"
+            },
+            {
+                "relativePath": "src/sections/devSection/devSection.tsx",
+                "test": false,
+                "name": "devSection.tsx"
+            },
+            {
+                "relativePath": "src/sections/devSection/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/sections/devSection/index.tsx",
+        "trackDir": "src/sections/devSection",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/main-section@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/mainSection/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            },
+            {
+                "relativePath": "src/sections/mainSection/mainSection.module.scss",
+                "test": false,
+                "name": "mainSection.module.scss"
+            },
+            {
+                "relativePath": "src/sections/mainSection/mainSection.tsx",
+                "test": false,
+                "name": "mainSection.tsx"
+            }
+        ],
+        "mainFile": "src/sections/mainSection/index.tsx",
+        "trackDir": "src/sections/mainSection",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/reuse@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/reuse/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/sections/reuse/reuse-section.module.scss",
+                "test": false,
+                "name": "reuse-section.module.scss"
+            },
+            {
+                "relativePath": "src/sections/reuse/reuse-section.tsx",
+                "test": false,
+                "name": "reuse-section.tsx"
+            }
+        ],
+        "mainFile": "src/sections/reuse/index.ts",
+        "trackDir": "src/sections/reuse",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/summary-cards@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/summary-cards/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/sections/summary-cards/summary-cards.module.scss",
+                "test": false,
+                "name": "summary-cards.module.scss"
+            },
+            {
+                "relativePath": "src/sections/summary-cards/summary-cards.tsx",
+                "test": false,
+                "name": "summary-cards.tsx"
+            }
+        ],
+        "mainFile": "src/sections/summary-cards/index.ts",
+        "trackDir": "src/sections/summary-cards",
         "origin": "AUTHORED",
         "exported": true
     },
