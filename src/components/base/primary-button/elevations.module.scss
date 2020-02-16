@@ -1,10 +1,27 @@
 // elevations only
 .low {
-    box-shadow: var(--elevation-low);
+	box-shadow: var(--elevation-low);
+
+	&:active {
+		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+		transform: translateY(2px);
+	}
 }
+
 .medium {
-    box-shadow: var(--elevation-medium);
+	box-shadow: var(--elevation-medium);
+
+	&:active {
+		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+		transform: translateY(2px);
+	}
 }
+
 .high {
-    box-shadow: var(--elevation-high);
+	box-shadow: var(--elevation-high);
+
+	&:active {
+		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+		transform: translateY(11px);
+	}
 }

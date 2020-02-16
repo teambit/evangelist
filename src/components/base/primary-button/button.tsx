@@ -32,5 +32,5 @@ export function PrimaryButton({ className, elevation = "none", ...rest }: Button
 }
 
 PrimaryButton.defaultProps = {
-  elevation: "none",
+  elevation: "low",
 };

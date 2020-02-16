@@ -25,9 +25,9 @@ export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 					continuous delivery, infinite reuse and so much more.
 				</Paragraph>
 				<div className={styles.buttons}>
-					<CtaButton>Get started</CtaButton>
-					<div style={{height: '20px', width: '20px'}} />
-					<PrimaryButton>Learn more</PrimaryButton>
+					<CtaButton elevation="medium">Get started</CtaButton>
+					<div style={{ height: '20px', width: '20px' }} />
+					<PrimaryButton elevation="medium">Learn more</PrimaryButton>
 				</div>
 				<IconLine icons={iconsArray} />
 			</div>

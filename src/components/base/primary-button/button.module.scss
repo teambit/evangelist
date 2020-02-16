@@ -1,12 +1,14 @@
 .button {
-    border: 1px solid var(--primary-button-bg);
-    background-color: var(--primary-button-bg);
-    color: var(--primary-button-text);
-    border-radius: 5px;
-    border: unset;
-    width: 100%;
-    max-width: var(--primary-button-width); //176px;
-    height: var(--primary-button-height); //46px;
-    font-size: 16px;
-    // border: 1px solid var(--primary-button-border);
+	border: 1px solid var(--primary-button-bg);
+	background-color: var(--primary-button-bg);
+	color: var(--primary-button-text);
+	border-radius: 5px;
+	border: unset;
+	width: 100%;
+	max-width: var(--primary-button-width); //176px;
+	height: var(--primary-button-height); //46px;
+	font-size: 16px;
+
+	transition: 300ms all;
+	// border: 1px solid var(--primary-button-border);
 }
