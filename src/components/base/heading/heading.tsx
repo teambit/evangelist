@@ -18,6 +18,7 @@ export type HeadingProps = {
 export function Heading(props: HeadingProps) {
   const { element, className, size, ...rest } = props;
   const Element = element || "h1";
+
   return <Element {...rest} className={className} />;
 }
 

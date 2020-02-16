@@ -43,7 +43,7 @@
             },
             {
                 "relativePath": "src/components/base/community-link/community-link.spec.tsx",
-                "test": false,
+                "test": true,
                 "name": "community-link.spec.tsx"
             },
             {
@@ -121,6 +121,11 @@
                 "name": "label.module.scss"
             },
             {
+                "relativePath": "src/components/base/label/label.spec.tsx",
+                "test": true,
+                "name": "label.spec.tsx"
+            },
+            {
                 "relativePath": "src/components/base/label/label.tsx",
                 "test": false,
                 "name": "label.tsx"
@@ -142,6 +147,11 @@
                 "relativePath": "src/components/base/paragraph/paragraph.module.scss",
                 "test": false,
                 "name": "paragraph.module.scss"
+            },
+            {
+                "relativePath": "src/components/base/paragraph/paragraph.spec.tsx",
+                "test": true,
+                "name": "paragraph.spec.tsx"
             },
             {
                 "relativePath": "src/components/base/paragraph/paragraph.tsx",
