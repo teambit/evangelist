@@ -108,6 +108,29 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/base/image@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/base/image/image.module.scss",
+                "test": false,
+                "name": "image.module.scss"
+            },
+            {
+                "relativePath": "src/components/base/image/image.tsx",
+                "test": false,
+                "name": "image.tsx"
+            },
+            {
+                "relativePath": "src/components/base/image/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/components/base/image/index.ts",
+        "trackDir": "src/components/base/image",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/base/label@0.0.2": {
         "files": [
             {
@@ -215,7 +238,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/community-links/github-link@0.0.1": {
+    "bit.marketing/community-links/github-link@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/community-links/github-link/github-link.module.scss",
@@ -238,7 +261,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/community-links/primary-link@0.0.1": {
+    "bit.marketing/community-links/primary-link@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/community-links/primary-link/index.ts",
@@ -261,7 +284,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/community-links/slack-link@0.0.1": {
+    "bit.marketing/community-links/slack-link@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/community-links/slack-link/index.ts",
@@ -284,7 +307,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/community-links/twitter-link@0.0.1": {
+    "bit.marketing/community-links/twitter-link@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/community-links/twitter-link/index.ts",
@@ -363,7 +386,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/icon-line@0.0.1": {
+    "bit.marketing/concrete/icon-line@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/icon-line/icon-line.module.scss",
@@ -383,6 +406,29 @@
         ],
         "mainFile": "src/components/concrete/icon-line/index.ts",
         "trackDir": "src/components/concrete/icon-line",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/concrete/image@0.0.2": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/image/image.module.scss",
+                "test": false,
+                "name": "image.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/image/image.tsx",
+                "test": false,
+                "name": "image.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/image/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/components/concrete/image/index.ts",
+        "trackDir": "src/components/concrete/image",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -409,7 +455,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/twitter-card@0.0.1": {
+    "bit.marketing/concrete/twitter-card@0.0.3": {
         "files": [
             {
                 "relativePath": "src/components/concrete/twitter-card/index.ts",
@@ -606,7 +652,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/auto-section@0.0.1": {
+    "bit.marketing/sections/auto-section@0.0.3": {
         "files": [
             {
                 "relativePath": "src/sections/autoSection/autoSection.module.scss",
@@ -629,7 +675,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/build-section@0.0.1": {
+    "bit.marketing/sections/build-section@0.0.3": {
         "files": [
             {
                 "relativePath": "src/sections/buildSection/buildSection.module.scss",
@@ -675,7 +721,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/community@0.0.1": {
+    "bit.marketing/sections/community@0.0.5": {
         "files": [
             {
                 "relativePath": "src/sections/community/community-section.module.scss",
@@ -716,7 +762,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/deploy-section@0.0.1": {
+    "bit.marketing/sections/deploy-section@0.0.3": {
         "files": [
             {
                 "relativePath": "src/sections/deploySection/deploySection.module.scss",
@@ -739,7 +785,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/dev-section@0.0.1": {
+    "bit.marketing/sections/dev-section@0.0.3": {
         "files": [
             {
                 "relativePath": "src/sections/devSection/devSection.module.scss",
@@ -762,7 +808,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/main-section@0.0.1": {
+    "bit.marketing/sections/main-section@0.0.4": {
         "files": [
             {
                 "relativePath": "src/sections/mainSection/index.tsx",
@@ -785,7 +831,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/reuse@0.0.1": {
+    "bit.marketing/sections/reuse@0.0.3": {
         "files": [
             {
                 "relativePath": "src/sections/reuse/index.ts",
@@ -944,5 +990,5 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "version": "14.7.4"
+    "version": "14.7.5-dev.1"
 }

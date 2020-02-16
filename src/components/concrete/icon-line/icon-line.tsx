@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import styles from './icon-line.module.scss';
-import {Image} from '../../concrete/image';
+import {Image} from '../image';
 
 const staticPrefix = 'homepage-bit';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './image.module.scss';
 import { staticStorageUrl } from '../../../constants/storage';
-import {BaseImage, BaseImageProps} from '../../base/image'
+import {BaseImage, BaseImageProps} from '../../base/image';
 
 export type ImageProps = {
     /**

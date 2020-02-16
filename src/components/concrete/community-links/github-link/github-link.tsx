@@ -5,7 +5,7 @@ import numberAbbreviate from 'number-abbreviate';
 
 import { PrimaryLink } from '../primary-link';
 import { Icon } from '../../icon';
-import {Image} from '../../../concrete/image';
+import { Image } from '../../image';
 import styles from './github-link.module.scss';
 
 const ENABLE_STAR_COUNT = false;
@@ -69,11 +69,7 @@ export class GithubLink extends PureComponent<GithubLinkProps, GithubLinkState> 
 				<Icon of="github-logo" className={styles.icon} />
 				<span>teambit/bit</span>
 				{starCount && (
-					<Image
-						alt="star"
-						src='homepage/star.svg'
-						className={styles.star}
-					/>
+					<Image alt="star" src="homepage/star.svg" className={styles.star} />
 				)}
 				{starCount && <span>{numberAbbreviate(starCount)}</span>}
 			</PrimaryLink>
