@@ -30,6 +30,7 @@ export function TwitterCard(props: TwitterCardProps) {
 			{...rest}
 			className={classNames(styles.twitterCard, className)}
 			elevation="medium"
+			data-bit-id="twitterCard"
 		>
 			<Image src={image} className={styles.avatar} alt="twitter avatar" />
 			<div>

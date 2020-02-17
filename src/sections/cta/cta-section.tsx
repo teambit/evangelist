@@ -14,6 +14,7 @@ export function CtaSection(props: React.HTMLAttributes<HTMLDivElement>) {
 			{...props}
 			colSm={2}
 			className={classNames(props.className, justifyItems.center, alignItems.center)}
+			data-bit-id="ctaSection"
 		>
 			<div>
 				<H2 size={PossibleSizes.xs}>Ready to try Bit?</H2>

@@ -13,7 +13,9 @@ export function CarouselSection(props: HTMLAttributes<HTMLDivElement>) {
 			<H2 size={PossibleSizes.md} className={styles.heading}>
 				Trusted by over 100,000 developers
 			</H2>
-			<CommentCarousel content={carouselContent} />
+			<div data-bit-id="commentCarousel">
+				<CommentCarousel content={carouselContent} />
+			</div>
 		</div>
 	);
 }

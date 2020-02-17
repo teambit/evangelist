@@ -65,6 +65,7 @@ export class GithubLink extends PureComponent<GithubLinkProps, GithubLinkState> 
 				href={href}
 				{...rest}
 				className={classNames(styles.githubLink, className)}
+				data-bit-id="githubLink"
 			>
 				<Icon of="github-logo" className={styles.icon} />
 				<span>teambit/bit</span>

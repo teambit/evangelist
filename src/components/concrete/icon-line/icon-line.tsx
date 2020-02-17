@@ -14,7 +14,7 @@ type IconLineProps = {
 export function IconLine({icons, className}: IconLineProps) {
 	if (!icons) return null;
 	return (
-		<div className={classNames(styles.iconLine, className)}>
+		<div className={classNames(styles.iconLine, className)} data-bit-id="iconLine">
 			BUILT WITH
 			{icons.map((icon: string, index: number) => (
 				<Image

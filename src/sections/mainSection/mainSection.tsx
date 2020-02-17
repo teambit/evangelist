@@ -18,7 +18,7 @@ const iconsArray = ['react', 'vue1', 'angular', 'web-components', 'node'];
 
 export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<Grid {...props} colL={2} className={classNames(styles.mainSection, props.className)}>
+		<Grid {...props} colL={2} className={classNames(styles.mainSection, props.className)} data-bit-id="mainSection">
 			<div className={classNames(styles.mainSectionContent, marginCenter)}>
 				<H1 size={PossibleSizes.md}>
 					A scalable way to build modern frontend applications.

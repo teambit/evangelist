@@ -9,14 +9,14 @@ import { Label } from '../../components/base/label';
 import { fullWidth } from '../../components/layout/grid';
 import { text, justifyItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
-import {Image} from '../../components/concrete/image';
+import { Image } from '../../components/concrete/image';
 
 import styles from './buildSection.module.scss';
 
 
 export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(props.className)}>
+		<div {...props} className={classNames(props.className)} data-bit-id="buildSection">
 			<Label className={styles.ctaLabel}>Build</Label>
 			<H2 size={PossibleSizes.md}>Hyper fast Incrementall component builds</H2>
 			<Paragraph>

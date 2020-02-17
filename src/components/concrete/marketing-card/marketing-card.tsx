@@ -27,6 +27,7 @@ export const MarketingCard = (props: MarketingCardProps) => {
 			elevation="low"
 			className={classNames(styles.card, className)}
 			style={accentColor}
+			data-bit-id="marketingCard"
 		>
 			<Label className={styles.ctaLabel}>{label}</Label>
 			<H1 element="h5" size={PossibleSizes.xs}>

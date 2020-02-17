@@ -5,7 +5,7 @@ import { Grid } from '../../components/layout/grid-component';
 
 export const SummaryCards = (props: HTMLAttributes<HTMLDivElement>) => {
 	return (
-		<Grid {...props} colMd={2} colXl={4}>
+		<Grid {...props} colMd={2} colXl={4} data-bit-id="summaryCards">
 			<MarketingCard
 				className={styles.marketingCard}
 				ctaColor={'#6c5ce7'}

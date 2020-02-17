@@ -1,7 +1,7 @@
 import React, { CSSProperties, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import { PossibleSizes } from '../../constants/sizes';
-import {Image} from '../../components/concrete/image';
+import { Image } from '../../components/concrete/image';
 import { Paragraph } from '../../components/base/paragraph';
 
 import { H2, H3 } from '../../components/concrete/heading';
@@ -17,7 +17,12 @@ import styles from './devSection.module.scss';
 export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 	const accentColor = { [styles.accentVar]: '#6c5ce7' } as CSSProperties;
 	return (
-		<div {...props} className={classNames(text.center, props.className)} style={accentColor}>
+		<div
+			{...props}
+			className={classNames(text.center, props.className)}
+			style={accentColor}
+			data-bit-id="devSection"
+		>
 			<Label className={classNames(styles.ctaLabel, marginCenter)}>Develop</Label>
 			<H2 size={PossibleSizes.md} className={'col12'}>
 				Develop components in simple decoupled codebases

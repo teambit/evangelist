@@ -19,6 +19,7 @@ export function CommunitySection(props: React.HTMLAttributes<HTMLDivElement>) {
 			{...props}
 			colLg={2}
 			className={classnames(props.className, styles.communitySection, alignItems.center)}
+			data-bit-id="communitySection"
 		>
 			<div className={styles.cta}>
 				<H2 className={styles.title} size={PossibleSizes.md}>

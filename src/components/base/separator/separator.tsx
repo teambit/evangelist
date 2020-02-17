@@ -19,7 +19,7 @@ export type SeparatorProps = {
  */
 export function Separator({ layout, className }: SeparatorProps) {
   return (
-    <div className={classNames(styles.separator, styles[layout], className)}>
+    <div className={classNames(styles.separator, styles[layout], className)} data-bit-id="separator">
     </div>
   );
 }

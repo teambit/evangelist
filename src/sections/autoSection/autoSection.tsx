@@ -8,12 +8,16 @@ import { H2, H5 } from '../../components/concrete/heading';
 import { fullWidth } from '../../components/layout/grid';
 import { text } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
-import {Image} from '../../components/concrete/image';
+import { Image } from '../../components/concrete/image';
 import styles from './autoSection.module.scss';
 
 export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(styles.autoSection, text.center, props.className)}>
+		<div
+			{...props}
+			className={classNames(styles.autoSection, text.center, props.className)}
+			data-bit-id="autoSection"
+		>
 			<H2 size={PossibleSizes.md}>Empower autonomous teams to build together</H2>
 			<Paragraph>
 				Empower teams to own, build and deliver frontends end-to-end….

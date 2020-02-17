@@ -16,7 +16,7 @@ export type ParagraphProps = {
  */
 export function Paragraph({ className, size, ...rest }: ParagraphProps) {
   return (
-    <p className={classNames(styles[size], className)} {...rest} />
+    <p className={classNames(styles[size], className)} data-bit-id="paragraph" {...rest} />
   );
 }
 
