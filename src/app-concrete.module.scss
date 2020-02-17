@@ -4,7 +4,7 @@
 
 
 .whiteBackground {
-	background-image: url($staticStorageUrl + '/homepage-bit/2-quote white background.svg');
+	background-image: url($staticStorageUrl + '/homepage-bit/2-background.svg');
   background-position: center bottom;
   background-repeat: no-repeat;
   padding-bottom: 100px;
@@ -22,7 +22,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  // background-color: #e2e2e2;
   background-image: url($staticStorageUrl + '/homepage-bit/3-background.svg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -35,6 +34,22 @@
     background-size: 100%;
   }
 }
+
+.purpleBackground {
+	background-image: url($staticStorageUrl + '/homepage-bit/1-background.svg');
+	color: white;
+  background-position: center bottom;
+	background-repeat: no-repeat;
+  padding: 150px 0;
+  background-size: auto 100%;
+  @media screen and (min-width: $br-l) {
+    background-size: unset;
+  }
+  @media screen and (min-width: $br-xxl) {
+    background-size: 100%;
+  }
+}
+
 
 .centerTitle {
 	text-align: center;
@@ -71,25 +86,6 @@
 
 .marketingCard {
 	--marketingTemplateAccent: blue;
-}
-
-
-
-.purpleBackground {
-	// height: 600px;
-
-	background-image: url($staticStorageUrl + '/homepage-bit/1-background.svg');
-	color: white;
-  background-position: center bottom;
-	background-repeat: no-repeat;
-  padding: 150px 0;
-  background-size: auto 100%;
-  @media screen and (min-width: $br-l) {
-    background-size: unset;
-  }
-  @media screen and (min-width: $br-xxl) {
-    background-size: 100%;
-  }
 }
 
 .summaryCards {
