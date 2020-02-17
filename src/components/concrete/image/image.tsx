@@ -17,19 +17,20 @@ export type ImageProps = {
 	 * className for styles overrides
 	 */
 	className?: string;
+	fullWidth?: boolean;
 } & BaseImageProps;
 
 /**
  *
  * Image component - base image
  */
-export function Image({ alt, src, className, ...rest }: ImageProps) {
+export function Image({ alt, src, fullWidth, className, ...rest }: ImageProps) {
 	return (
 		<BaseImage
 			{...rest}
 			alt={alt}
 			src={`${staticStorageUrl}/${src}`}
-			className={classNames(styles.image, className)}
+			className={classNames(fullWidth && styles.fullWidth, className)}
 			data-bit-id="image"
 		/>
 	);

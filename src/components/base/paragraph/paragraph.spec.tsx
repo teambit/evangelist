@@ -18,7 +18,7 @@ it('should render with different size', () => {
 
 	const rendered = getByText('test text');
 	// cannot test classnames with Mocha
-	// expect(rendered.classList.toString()).to.equal('xs');
+	// expect(rendered.className).to.include('xs');
 
 	expect(rendered).to.exist;
 });
