@@ -67,7 +67,7 @@
         },
         "env": {
           "compiler": {
-            "bit.envs/compilers/react-typescript": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
               "rawConfig": {
                 "tsconfig": {
                   "compilerOptions": {
@@ -78,6 +78,2004 @@
               }
             }
           }
+        }
+      },
+      "bit.marketing/base/heading": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/base/label": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/base/paragraph": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/base/primary-button": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/base/separator": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/community-links/github-link": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/community-links/primary-link": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/mocha": "^7.0.1",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/community-links/slack-link": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/community-links/twitter-link": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/concrete/cta-button": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/concrete/heading": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/mocha": "^7.0.1",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/concrete/icon-line": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/concrete/image": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/concrete/marketing-card": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/concrete/twitter-card": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/constants/storage": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/mocha": "^7.0.1",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/layout/align": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/auto-section": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/build-section": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/carousel-section": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/community": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/cta": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/deploy-section": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/dev-section": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/main-section": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/reuse": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
+        }
+      },
+      "bit.marketing/sections/summary-cards": {
+        "devDependencies": {
+          "@types/chai": "^4.2.8",
+          "@types/sinon": "^7.5.1",
+          "chai": "^4.2.0",
+          "eslint-plugin-chai-friendly": "^0.5.0",
+          "sinon": "^8.1.1",
+          "@types/mocha": "^7.0.1"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "compilerPath": "typescript/bin/tsc",
+                "compilerArguments": [
+                  "--declaration"
+                ],
+                "compiledFileTypes": [
+                  ".ts",
+                  ".tsx"
+                ],
+                "configFileName": "tsconfig.json",
+                "tsconfig": {
+                  "compilerOptions": {
+                    "outDir": "dist",
+                    "target": "ES5",
+                    "sourceMap": false,
+                    "moduleResolution": "Node",
+                    "esModuleInterop": true,
+                    "module": "CommonJS",
+                    "allowSyntheticDefaultImports": true,
+                    "resolveJsonModule": true,
+                    "declaration": true,
+                    "experimentalDecorators": true,
+                    "inlineSourceMap": false,
+                    "inlineSources": false,
+                    "lib": [
+                      "dom",
+                      "es2015"
+                    ],
+                    "jsx": "react",
+                    "rootDir": "./",
+                    "removeComments": true,
+                    "typeRoots": [
+                      "./node_modules/@types"
+                    ],
+                    "importHelpers": false
+                  },
+                  "include": [
+                    "./**/*"
+                  ],
+                  "exclude": [
+                    "node_modules",
+                    ".dependencies",
+                    "dist"
+                  ]
+                },
+                "development": false,
+                "copyPolicy": {
+                  "ignorePatterns": [
+                    "package.json",
+                    "package-lock.json",
+                    "tsconfig.json"
+                  ],
+                  "disable": false
+                }
+              },
+              "options": {},
+              "files": {}
+            }
+          },
+          "tester": "bit.envs/testers/mocha@5.0.2"
         }
       }
     }
