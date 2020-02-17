@@ -5,7 +5,7 @@ import './themes/book-font.scss';
 
 import { Theme } from './themes/theme-provider';
 
-import { getTooltip } from './utils/getTooltip';
+import { getTooltip } from './utils/get-tooltip';
 
 import { EmbedIconSet } from './components/concrete/icon';
 import { MainSection } from './sections/mainSection';
@@ -25,7 +25,7 @@ import styles from './app-concrete.module.scss';
 
 class App extends PureComponent {
 	componentDidMount() {
-		getTooltip(styles.toolip);
+		getTooltip();
 	}
 	render() {
 		return (

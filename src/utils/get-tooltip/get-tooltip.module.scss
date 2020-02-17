@@ -1,0 +1,20 @@
+[data-bit-id] {
+	transition: outline-color 500ms ease-in-out;
+	outline-color: transparent;
+	outline-width: 1px;
+	outline-style: solid;
+	&:hover {
+		transition: outline-color 500ms ease-in-out;
+		outline-color: red;
+	}
+}
+.tooltip:global(-theme) {
+	position: absolute;
+	background-color: pink;
+	padding: 5px 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	transform: translate3d(10px, -105%, 0);
+	cursor: pointer;
+    text-decoration: none;
+}

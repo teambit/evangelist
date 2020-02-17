@@ -1,28 +1,6 @@
 @import "./components/layout/_breakpoints.scss";
 @import './constants/storage.module';
 
-[data-bit-id] {
-  transition: outline-color 500ms ease-in-out;
-  outline-color: transparent;
-  outline-width: 1px;
-  outline-style: solid;
-  &:hover {
-    transition: outline-color 500ms ease-in-out;
-    outline-color: red;
-  }
-}
-
-.toolip {
-	position: absolute;
-	background-color: pink;
-	padding: 5px 20px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	content: attr(data-border);
-  transform: translateY(-105%);
-  cursor: pointer;
-  text-decoration: none;
-}
 
 
 .whiteBackground {
