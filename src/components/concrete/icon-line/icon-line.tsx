@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import styles from './icon-line.module.scss';
 import {Image} from '../image';
 
-const staticPrefix = 'homepage-bit';
+const staticPrefix = 'brands';
 
 type IconLineProps = {
     icons?: string[],
