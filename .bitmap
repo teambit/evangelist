@@ -605,6 +605,16 @@
     "bit.marketing/layout/grid-definition@0.0.1": {
         "files": [
             {
+                "relativePath": "src/components/layout/grid-definition/four-grid/four-grid.module.scss",
+                "test": false,
+                "name": "four-grid.module.scss"
+            },
+            {
+                "relativePath": "src/components/layout/grid-definition/four-grid/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
                 "relativePath": "src/components/layout/grid-definition/four-way-grid/four-way-grid.module.scss",
                 "test": false,
                 "name": "four-way-grid.module.scss"

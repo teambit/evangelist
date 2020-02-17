@@ -26,9 +26,9 @@
   background-position: center center;
   background-repeat: no-repeat;
   padding-bottom: 100px;
-  background-size: auto 100%;
+  background-size: cover;
   @media screen and (min-width: $br-l) {
-    background-size: unset;
+    background-size: auto 100%;
   }
   @media screen and (min-width: $br-xxl) {
     background-size: 100%;

@@ -48,32 +48,17 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 				<Image src="homepage-bit/4-deliver.png" alt="illustration" fullWidth />
 			</Grid>
+			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center, styles.singleGrid)}>
+				<div>
+					<H2 size={PossibleSizes.xs}>Continuously deploy components.</H2>
+					<Paragraph>
+						Leverage per-component CD to independently deploy components to
+						production. Empower teams to consistently deliver new features and
+						upgrades, end-to-end.
+					</Paragraph>
+				</div>
 
-			<Grid colMd={3} className={classNames(text.left, justifyItems.center)}>
-				<div className={styles.iconBlock}>
-					<Image src="homepage-bit/icn-1.svg" className={styles.icon} alt="safe" />
-					<H2 size={PossibleSizes.xxs}>First-class static hosting</H2>
-					<Paragraph size={PossibleSizes.xs}>
-						Empower frontend teams to deliver and innovate in short effective
-						cycles.
-					</Paragraph>
-				</div>
-				<div className={styles.iconBlock}>
-					<Image src="homepage-bit/icn-2.svg" className={styles.icon} alt="cloud" />
-					<H2 size={PossibleSizes.xxs}>Hyper-fast component CDN</H2>
-					<Paragraph size={PossibleSizes.xs}>
-						Empower frontend teams to deliver and innovate in short effective
-						cycles.
-					</Paragraph>
-				</div>
-				<div className={styles.iconBlock}>
-					<Image src="homepage-bit/icn-3.svg" className={styles.icon} alt="global" />
-					<H2 size={PossibleSizes.xxs}>SSL and everything else built-in</H2>
-					<Paragraph size={PossibleSizes.xs}>
-						Empower frontend teams to deliver and innovate in short effective
-						cycles.
-					</Paragraph>
-				</div>
+				<Image src="homepage-bit/4-deploy.png" alt="illustration" fullWidth />
 			</Grid>
 		</div>
 	);

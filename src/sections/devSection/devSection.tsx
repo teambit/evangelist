@@ -12,6 +12,7 @@ import { Grid } from '../../components/layout/grid-component';
 import { zGrid } from '../../components/layout/grid-definition/z-grid';
 
 import styles from './devSection.module.scss';
+import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
 // TODO - use label color through class instead of accentColor
 
 export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
@@ -40,8 +41,8 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 				fullWidth
 			/>
 
-			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
-				<div className={text.left}>
+			<Grid colMd={12} className={classNames(text.center, text.md.left, fourWayGrid, alignItems.center)}>
+				<div>
 					<H3 size={PossibleSizes.sm}>Simple yet scalable semantic versioning.</H3>
 					<Paragraph>
 						Leverage semantic versioning to control the development of each
@@ -51,7 +52,27 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 				<Image alt="bit" src="homepage-bit/2-simple.png" fullWidth />
 
-				<div className={text.left}>
+				<div>
+					<H3 size={PossibleSizes.sm}>Per component development environment.</H3>
+					<Paragraph>
+						When writing a component, Bit spawns an development environment that
+						lets you build, test and render modular components in isolation. It
+						works with your favorite tools, and, it uses pre-made reusable
+						configurations to save you time. Best practices included.
+					</Paragraph>
+				</div>
+				<Image alt="bit" src="homepage-bit/2-per.png" fullWidth />
+				<div>
+					<H3 size={PossibleSizes.sm}>Simple yet scalable semantic versioning.</H3>
+					<Paragraph>
+						Leverage semantic versioning to control the development of each
+						component. Deploy, update, or rollback specific components across
+						different screens, features and apps.
+					</Paragraph>
+				</div>
+				<Image alt="bit" src="homepage-bit/2-simple.png" fullWidth />
+
+				<div>
 					<H3 size={PossibleSizes.sm}>Per component development environment.</H3>
 					<Paragraph>
 						When writing a component, Bit spawns an development environment that

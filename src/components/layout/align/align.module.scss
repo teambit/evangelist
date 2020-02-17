@@ -1,3 +1,15 @@
+@import '../breakpoints.scss';
+
+$breakpoints: //name val
+xs $br-xs,
+sm $br-sm,
+md $br-md,
+l $br-l,
+lg $br-lg-new,
+// lg $br-lg,
+xl $br-xl;
+
+
 .text {
 	&-left {
 		text-align: left;
@@ -10,7 +22,28 @@
 	&-right {
 		text-align: right;
 	}
+	@each $breakpoint in $breakpoints {
+		$brName: nth($breakpoint, 1);
+		$brVal: nth($breakpoint, 2);
+		@media only screen and (min-width: $brVal) {
+				&-#{$brName} {
+					&-left {
+						text-align: left;
+					}
+				
+					&-center {
+						text-align: center;
+					}
+				
+					&-right {
+						text-align: right;
+					}
+				}
+				
+		}
+	}
 }
+
 
 .justifyItems {
 	&-left {

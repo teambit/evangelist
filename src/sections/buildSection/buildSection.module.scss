@@ -1,4 +1,4 @@
-
+@import '../../components/layout/breakpoints';
 
 .centerImg {
   padding-top: 50px;
@@ -10,4 +10,25 @@
   margin: 0 auto;
   background-color: var(--green);
   margin-bottom: 25px;
+}
+
+.iconBox {
+  max-width: 500px;
+  margin: 0 0 40px 0;
+  text-align: center;
+  @media screen and (min-width: $br-md) {
+    text-align: left;
+    margin: 0 25px 100px 25px;
+  }
+}
+
+.icon {
+  width: unset;
+  min-height: 30px;
+  max-height: 30px;
+  margin-bottom: 30px;
+}
+
+.grid {
+  grid-gap: 20px;
 }

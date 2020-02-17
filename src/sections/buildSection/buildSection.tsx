@@ -8,10 +8,10 @@ import { H2, H5 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import { text, justifyItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
+import { fourGrid } from '../../components/layout/grid-definition/four-grid';
 import { Image } from '../../components/concrete/image';
 
 import styles from './buildSection.module.scss';
-
 
 export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -30,8 +30,9 @@ export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 				className={classNames(styles.centerImg)}
 				fullWidth
 			/>
-			<Grid colL={3} className={classNames(text.left, justifyItems.center)}>
-				<div>
+			<Grid colL={4} className={classNames(text.left, justifyItems.center, fourGrid, styles.grid)}>
+				<div className={styles.iconBox}>
+					<Image src="homepage-bit/icn-x-faster.svg" alt="illustration" className={styles.icon} />
 					<H5 size={PossibleSizes.xxs}>Automatically propagate liability updates</H5>
 					<Paragraph>
 						Distribute frontends between teams though scopes of components. Each
@@ -40,7 +41,18 @@ export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 
-				<div>
+				<div className={styles.iconBox}>
+				<Image src="homepage-bit/icn-integration.svg" alt="illustration" className={styles.icon} />
+					<H5 size={PossibleSizes.xxs}>Automatically propagate liability updates</H5>
+					<Paragraph>
+						Distribute frontends between teams though scopes of components. Each
+						team and build, own and maintain their components from idea to
+						production.
+					</Paragraph>
+				</div>
+
+				<div className={styles.iconBox}>
+				<Image src="homepage-bit/icn-updates.svg" alt="illustration" className={styles.icon} />
 					<H5 size={PossibleSizes.xxs}>Pinpoint issues to components</H5>
 					<Paragraph>
 						Empower each team to innovate in fast-paced delivery cycles. Let smaller
@@ -48,7 +60,8 @@ export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 						deliver better results.
 					</Paragraph>
 				</div>
-				<div>
+				<div className={styles.iconBox}>
+				<Image src="homepage-bit/icn-control.svg" alt="illustration" className={styles.icon} />
 					<H5 size={PossibleSizes.xxs}>Hyper-fast build time</H5>
 					<Paragraph>
 						Make it easy for every developer to harvest and share their components.

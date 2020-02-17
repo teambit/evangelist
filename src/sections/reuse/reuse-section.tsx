@@ -57,6 +57,20 @@ export function ReuseSection(props: React.HTMLAttributes<HTMLDivElement>) {
 				</Details>
 				<Image src="homepage-bit/5-onboard.png" alt="visualization" fullWidth />
 			</Grid>
+			<Grid className={styles.grid}>
+				<Details title="Organize and discover components">
+					Keep components organized and segmented using labels and namespaces. Easily
+					discover components using smart search and powerful filters.
+				</Details>
+				<Image src="homepage-bit/5-orginze.png" alt="visualization" fullWidth />
+
+				<Details title="Write code, generate stunning docs">
+					Focus on writing code and let Bit generate your API documentation, prop
+					tables and more. Enjoy a live, editable component sandbox to visually
+					explore components.
+				</Details>
+				<Image src="homepage-bit/5-write.png" alt="visualization" fullWidth />
+			</Grid>
 		</div>
 	);
 }
