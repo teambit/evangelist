@@ -1,20 +1,3 @@
-
-.primary {
-	max-width: 61%;
-}
-
-.center {
-	justify-self: center;
-}
-
-@for $i from 1 through 12 {
-	.col {
-		&-#{$i} {
-			grid-column-end: span $i;
-		}
-	}
-}
-
 .centerColumn {
 	width: 85%;
 	max-width: 1244px;
@@ -26,11 +9,4 @@
 	max-width: 1440px;
 	width: 85%;
 	margin: 0 auto;
-}
-
-.grid-12-container {
-	// grid-gap: 16px 16px;
-	justify-items: center;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
 }

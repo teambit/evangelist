@@ -34,7 +34,7 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 
-				<Image src="homepage-bit/4-deploy.png" alt="illustration" />
+				<Image src="homepage-bit/4-deploy.png" alt="illustration" fullWidth />
 
 				<div>
 					<H2 size={PossibleSizes.xs}>
@@ -46,7 +46,7 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 						rollback any part of your UI on its own.
 					</Paragraph>
 				</div>
-				<Image src="homepage-bit/4-deliver.png" alt="illustration" />
+				<Image src="homepage-bit/4-deliver.png" alt="illustration" fullWidth />
 			</Grid>
 
 			<Grid colMd={3} className={classNames(text.left, justifyItems.center)}>
@@ -67,7 +67,7 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 				<div className={styles.iconBlock}>
-					<Image src="homepage-bit/icn-3.svg" className={styles.icon} alt="globe" />
+					<Image src="homepage-bit/icn-3.svg" className={styles.icon} alt="global" />
 					<H2 size={PossibleSizes.xxs}>SSL and everything else built-in</H2>
 					<Paragraph size={PossibleSizes.xs}>
 						Empower frontend teams to deliver and innovate in short effective

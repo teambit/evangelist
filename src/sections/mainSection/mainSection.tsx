@@ -39,6 +39,7 @@ export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 				src="homepage-bit/1-illustration.svg"
 				className={styles.img1}
 				alt="bit illustration"
+				fullWidth
 			/>
 		</Grid>
 	);

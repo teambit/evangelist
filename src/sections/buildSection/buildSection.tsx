@@ -6,7 +6,6 @@ import { Paragraph } from '../../components/base/paragraph';
 import { PossibleSizes } from '../../constants/sizes';
 import { H2, H5 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
-import { fullWidth } from '../../components/layout/grid';
 import { text, justifyItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
@@ -28,7 +27,8 @@ export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 			<Image
 				src="homepage-bit/4-integrate.png"
 				alt="illustration"
-				className={classNames(fullWidth, styles.centerImg)}
+				className={classNames(styles.centerImg)}
+				fullWidth
 			/>
 			<Grid colL={3} className={classNames(text.left, justifyItems.center)}>
 				<div>

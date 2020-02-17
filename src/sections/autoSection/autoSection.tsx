@@ -5,7 +5,6 @@ import { Paragraph } from '../../components/base/paragraph';
 
 import { PossibleSizes } from '../../constants/sizes';
 import { H2, H5 } from '../../components/concrete/heading';
-import { fullWidth } from '../../components/layout/grid';
 import { text } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
@@ -25,8 +24,9 @@ export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 
 			<Image
 				src="homepage-bit/3-empower.png"
-				className={classNames(fullWidth, styles.centerImage)}
+				className={classNames(styles.centerImage)}
 				alt="illustration"
+				fullWidth
 			/>
 
 			<Grid colL={3} className={text.left}>

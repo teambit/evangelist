@@ -616,24 +616,6 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/layout/grid-templates@0.0.1": {
-        "files": [
-            {
-                "relativePath": "src/components/layout/grid-templates/grid-tempaltes.module.scss",
-                "test": false,
-                "name": "grid-tempaltes.module.scss"
-            },
-            {
-                "relativePath": "src/components/layout/grid-templates/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "src/components/layout/grid-templates/index.ts",
-        "trackDir": "src/components/layout/grid-templates",
-        "origin": "AUTHORED",
-        "exported": true
-    },
     "bit.marketing/layout/grid@0.0.1": {
         "files": [
             {

@@ -37,6 +37,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 				alt="bit"
 				src="homepage-bit/2-build.png"
 				className={classNames(styles.margin)}
+				fullWidth
 			/>
 
 			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
@@ -48,7 +49,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 						different screens, features and apps.
 					</Paragraph>
 				</div>
-				<Image alt="bit" src="homepage-bit/2-simple.png" />
+				<Image alt="bit" src="homepage-bit/2-simple.png" fullWidth />
 
 				<div className={text.left}>
 					<H3 size={PossibleSizes.sm}>Per component development environment.</H3>
@@ -59,7 +60,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 						configurations to save you time. Best practices included.
 					</Paragraph>
 				</div>
-				<Image alt="bit" src="homepage-bit/2-per.png" />
+				<Image alt="bit" src="homepage-bit/2-per.png" fullWidth />
 			</Grid>
 		</div>
 	);
