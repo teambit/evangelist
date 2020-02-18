@@ -11,22 +11,26 @@ enum BreakPoints {
 	xl = 'xl',
 }
 
-type bla = 'xs'| 'sm'| 'md'| 'l'| 'lg'| 'xl';
-
 type TextOptions = {
 	left: string;
 	center: string;
 	right: string;
 };
 type TextProps = {
-	[key in BreakPoints]: TextOptions;
-	// left: string;
-	// center: string;
-	// right: string;
+	left: string;
+	center: string;
+	right: string;
+
+	xs: TextOptions;
+	sm: TextOptions;
+	md: TextOptions;
+	l: TextOptions;
+	lg: TextOptions;
+	xl: TextOptions;
 };
 
 const breakpoints = ['xs', 'sm', 'md', 'l', 'lg', 'xl'];
-export const text = ((): any => {
+export const text = ((): TextProps => {
 	const medias = breakpoints
 		.map(br => {
 			const obj = {
@@ -44,7 +48,7 @@ export const text = ((): any => {
 		center: styles['text-center'],
 		right: styles['text-right'],
 		...medias,
-	};
+	} as TextProps;
 })();
 
 export const marginCenter = styles.marginCenter;
