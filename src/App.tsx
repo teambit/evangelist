@@ -4,21 +4,23 @@ import './themes/book-font.scss';
 
 import { Theme } from './themes/theme-provider';
 
-import { getTooltip } from './utils/get-tooltip';
+// import { getTooltip } from './utils/get-tooltip';
 
-import { Homepage } from './pages/homepage';
 import { EmbedIconSet } from './components/concrete/icon';
 
+import { Homepage } from './pages/homepage';
+import { ReusePage } from './pages/reuse';
+
 class App extends PureComponent {
-	componentDidMount() {
-		getTooltip();
-	}
+	// componentDidMount() {
+	// 	getTooltip();
+	// }
 	render() {
-		
 		return (
 			<Theme>
 				<EmbedIconSet query="aqq93z" />
-				<Homepage />		
+				<ReusePage />
+				<Homepage />
 			</Theme>
 		);
 	}
