@@ -658,6 +658,29 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/pages/hoepage@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/homepage/homepage.module.scss",
+                "test": false,
+                "name": "homepage.module.scss"
+            },
+            {
+                "relativePath": "src/homepage/homepage.tsx",
+                "test": false,
+                "name": "homepage.tsx"
+            },
+            {
+                "relativePath": "src/homepage/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/homepage/index.ts",
+        "trackDir": "src/homepage",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/sections/auto-section@0.0.7": {
         "files": [
             {
@@ -768,7 +791,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/deploy-section@0.0.7": {
+    "bit.marketing/sections/deploy-section@0.0.8": {
         "files": [
             {
                 "name": "deploySection.module.scss",
@@ -791,7 +814,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/dev-section@0.0.7": {
+    "bit.marketing/sections/dev-section@0.0.8": {
         "files": [
             {
                 "name": "devSection.module.scss",
@@ -814,7 +837,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/main-section@0.0.8": {
+    "bit.marketing/sections/main-section@0.0.9": {
         "files": [
             {
                 "name": "index.tsx",
@@ -837,7 +860,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/reuse@0.0.7": {
+    "bit.marketing/sections/reuse@0.0.8": {
         "files": [
             {
                 "name": "index.ts",
