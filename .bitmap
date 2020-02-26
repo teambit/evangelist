@@ -658,7 +658,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hoepage@0.0.1": {
+    "bit.marketing/pages/hoepage@0.0.2": {
         "files": [
             {
                 "relativePath": "src/homepage/homepage.module.scss",
@@ -860,7 +860,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/reuse@0.0.8": {
+    "bit.marketing/sections/reuse@0.0.9": {
         "files": [
             {
                 "name": "index.ts",
