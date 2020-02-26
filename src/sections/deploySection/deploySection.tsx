@@ -34,7 +34,7 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 
-				<Image src="homepage-bit/4-deploy.png" alt="illustration" fullWidth />
+				<Image src="homepage-bit/deploy-independently.png" alt="illustration" fullWidth />
 
 				<div>
 					<H2 size={PossibleSizes.xs}>
@@ -46,7 +46,7 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 						rollback any part of your UI on its own.
 					</Paragraph>
 				</div>
-				<Image src="homepage-bit/4-deliver.png" alt="illustration" fullWidth />
+				<Image src="homepage-bit/fearlessly-deploy.png" alt="illustration" fullWidth />
 			</Grid>
 			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center, styles.singleGrid)}>
 				<div>
@@ -58,7 +58,7 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 
-				<Image src="homepage-bit/4-deploy.png" alt="illustration" fullWidth />
+				<Image src="homepage-bit/map.png" alt="illustration" fullWidth />
 			</Grid>
 		</div>
 	);

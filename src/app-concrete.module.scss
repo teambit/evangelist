@@ -1,8 +1,6 @@
 @import "./components/layout/_breakpoints.scss";
 @import './constants/storage/storage.module.scss';
 
-
-
 .whiteBackground {
 	background-image: url($staticStorageUrl + '/homepage-bit/2-background.svg');
   background-position: center bottom;
@@ -26,13 +24,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   padding-bottom: 100px;
-  background-size: cover;
-  @media screen and (min-width: $br-l) {
-    background-size: auto 100%;
-  }
-  @media screen and (min-width: $br-xxl) {
-    background-size: 100%;
-  }
+  background-size: 100% 100%;
 }
 
 .purpleBackground {

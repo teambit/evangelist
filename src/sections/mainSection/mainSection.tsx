@@ -14,7 +14,7 @@ import { Grid } from '../../components/layout/grid-component';
 
 import styles from './mainSection.module.scss';
 
-const iconsArray = ['logo-react', 'logo-vue', 'logo-angular', 'logo-web-components', 'logo-node'];
+const iconsArray = ['logo-react', 'logo-vue', 'logo-angular', 'logo-web-components', 'logo-ts', 'logo-js'];
 
 export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (

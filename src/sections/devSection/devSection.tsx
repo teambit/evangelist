@@ -49,7 +49,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 						different screens, features and apps.
 					</Paragraph>
 				</div>
-				<Image alt="bit" src="homepage-bit/2-simple.png" fullWidth />
+				<Image alt="bit" src="homepage-bit/reusable-dev-environments.png" fullWidth />
 
 				<div>
 					<H3 size={PossibleSizes.sm}>Per component development environment.</H3>
@@ -60,7 +60,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 						configurations to save you time. Best practices included.
 					</Paragraph>
 				</div>
-				<Image alt="bit" src="homepage-bit/2-per.png" fullWidth />
+				<Image alt="bit" src="homepage-bit/simple-scalable-versioning.png" fullWidth />
 				<div>
 					<H3 size={PossibleSizes.sm}>Simple yet scalable semantic versioning.</H3>
 					<Paragraph>
@@ -80,7 +80,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 						configurations to save you time. Best practices included.
 					</Paragraph>
 				</div>
-				<Image alt="bit" src="homepage-bit/2-per.png" fullWidth />
+				<Image alt="bit" src="homepage-bit/goodbye-configuration-files.png" fullWidth />
 			</Grid>
 		</div>
 	);
