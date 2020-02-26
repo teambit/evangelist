@@ -1,14 +1,12 @@
 import React, { PureComponent } from 'react';
 import 'reset-css';
-import classNames from 'classnames';
 import './themes/book-font.scss';
 
 import { Theme } from './themes/theme-provider';
 
 import { getTooltip } from './utils/get-tooltip';
 
-import styles from './app-concrete.module.scss';
-import { Homepage } from './homepage';
+import { Homepage } from './pages/homepage';
 import { EmbedIconSet } from './components/concrete/icon';
 
 class App extends PureComponent {
