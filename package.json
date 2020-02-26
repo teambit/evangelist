@@ -2,37 +2,11 @@
   "name": "base-components",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@bit/bit.gui.atoms.base-icon": "^0.0.1",
-    "@bit/bit.gui.base.button": "^0.0.8",
-    "@bit/bit.web.components.comment-carousel": "^0.0.10",
-    "@bit/bit.web.config.links": "^0.0.2",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/classnames": "^2.2.9",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.x.x",
-    "@types/react-dom": "^16.x.x",
-    "@types/react-slick": "^0.23.4",
-    "classnames": "^2.2.6",
-    "node-sass": "^4.13.1",
-    "number-abbreviate": "^2.0.0",
-    "react": "^16.x.x",
-    "react-dom": "^16.x.x",
-    "react-scripts": "3.3.0",
-    "reset-css": "^5.0.1",
-    "tippy.js": "^5.2.1",
-    "typescript": "~3.7.2"
-  },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "browserslist": {
     "production": [
@@ -45,6 +19,41 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "@bit/bit.gui.atoms.base-icon": "^0.0.1",
+    "@bit/bit.gui.base.button": "^0.0.8",
+    "@bit/bit.web.components.comment-carousel": "^0.0.10",
+    "@bit/bit.web.config.links": "^0.0.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "classnames": "^2.2.6",
+    "node-sass": "^4.13.1",
+    "number-abbreviate": "^2.0.0",
+    "react": "^16.x.x",
+    "react-dom": "^16.x.x",
+    "react-scripts": "3.4.0",
+    "reset-css": "^5.0.1",
+    "tippy.js": "^5.2.1",
+    "typescript": "~3.7.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.8",
+    "@types/classnames": "^2.2.9",
+    "@types/mocha": "^5",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.x.x",
+    "@types/react-dom": "^16.x.x",
+    "@types/react-slick": "^0.23.4",
+    "@types/sinon": "^7.5.1",
+    "chai": "^4.2.0",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "mocha": "^7.0.1",
+    "sinon": "^8.1.1"
   },
   "bit": {
     "env": {
@@ -80,14 +89,5 @@
         }
       }
     }
-  },
-  "devDependencies": {
-    "@types/chai": "^4.2.8",
-    "@types/mocha": "^5",
-    "@types/sinon": "^7.5.1",
-    "chai": "^4.2.0",
-    "eslint-plugin-chai-friendly": "^0.5.0",
-    "mocha": "^7.0.1",
-    "sinon": "^8.1.1"
   }
 }
