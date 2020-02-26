@@ -1,5 +1,5 @@
-@import "../components/layout/_breakpoints.scss";
-@import '../constants/storage/storage.module.scss';
+@import "../../components/layout/_breakpoints.scss";
+@import '../../constants/storage/_storage.module.scss';
 
 .whiteBackground {
 	background-image: url($staticStorageUrl + '/homepage-bit/2-background.svg');

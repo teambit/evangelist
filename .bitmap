@@ -658,26 +658,26 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hoepage@0.0.2": {
+    "bit.marketing/pages/homepage@0.0.1": {
         "files": [
             {
-                "relativePath": "src/homepage/homepage.module.scss",
+                "relativePath": "src/pages/homepage/homepage.module.scss",
                 "test": false,
                 "name": "homepage.module.scss"
             },
             {
-                "relativePath": "src/homepage/homepage.tsx",
+                "relativePath": "src/pages/homepage/homepage.tsx",
                 "test": false,
                 "name": "homepage.tsx"
             },
             {
-                "relativePath": "src/homepage/index.ts",
+                "relativePath": "src/pages/homepage/index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/homepage/index.ts",
-        "trackDir": "src/homepage",
+        "mainFile": "src/pages/homepage/index.ts",
+        "trackDir": "src/pages/homepage",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -1019,5 +1019,5 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "version": "14.7.5-dev.1"
+    "version": "14.7.6"
 }

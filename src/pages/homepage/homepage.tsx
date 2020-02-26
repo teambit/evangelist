@@ -1,18 +1,18 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
-import { MainSection } from '../sections/mainSection';
-import { CarouselSection } from '../sections/carouselSection';
-import { DevSection } from '../sections/devSection';
-import { AutoSection } from '../sections/autoSection';
-import { BuildSection } from '../sections/buildSection';
-import { DeploySection } from '../sections/deploySection';
-import { CommunitySection } from '../sections/community';
-import { CtaSection } from '../sections/cta';
-import { ReuseSection } from '../sections/reuse';
-import { SummaryCards } from '../sections/summary-cards';
-import { centerColumn, wideColumn } from '../components/layout/grid';
-import { Separator } from '../components/base/separator';
+import { MainSection } from '../../sections/mainSection';
+import { CarouselSection } from '../../sections/carouselSection';
+import { DevSection } from '../../sections/devSection';
+import { AutoSection } from '../../sections/autoSection';
+import { BuildSection } from '../../sections/buildSection';
+import { DeploySection } from '../../sections/deploySection';
+import { CommunitySection } from '../../sections/community';
+import { CtaSection } from '../../sections/cta';
+import { ReuseSection } from '../../sections/reuse';
+import { SummaryCards } from '../../sections/summary-cards';
+import { centerColumn, wideColumn } from '../../components/layout/grid';
+import { Separator } from '../../components/base/separator';
 
 import styles from './homepage.module.scss';
 
