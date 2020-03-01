@@ -2,6 +2,8 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import { PossibleSizes } from '../../constants/sizes';
 
+import styles from './independent-teams.module.scss';
+
 import { Paragraph } from '../../components/base/paragraph';
 import { H2, H5 } from '../../components/concrete/heading';
 import { Image } from '../../components/concrete/image';
@@ -15,11 +17,17 @@ export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 			<H2 size={PossibleSizes.sm} className={text.center}>
 				Scale for independent teams building together.
 			</H2>
-			<Paragraph className={text.center}>
+			<Paragraph className={classNames(text.center, styles.subtitle)}>
 				Create a truly scalable infrastructure for every team to build and integrate
 				components. Empower teams to independently deliver while building together.
 			</Paragraph>
-			<Image alt="teams breakdown" src="homepage-bit/3-empower.png" fullWidth />
+
+			<Image
+				alt="teams breakdown"
+				src="homepage-bit/3-empower.png"
+				fullWidth
+				className={styles.mainImage}
+			/>
 
 			<Grid colL={3} className={text.left}>
 				<div>

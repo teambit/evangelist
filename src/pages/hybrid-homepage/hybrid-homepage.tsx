@@ -16,12 +16,13 @@ import { ComponentsAdvantages } from '../../sections/component-advantages';
 import { HybridPerfectSync } from '../../sections/hybrid-perferct-sync';
 import { AutoDocs } from '../../sections/auto-docs';
 import { IndependentTeams } from '../../sections/independent-teams';
+import { TalkToExperts } from '../../sections/talk-to-experts';
 
 export class HybridHomage extends PureComponent {
 	render() {
 		return (
 			<div>
-				<div className={styles.purpleBackground}>
+				<div className={classNames(styles.purpleBackground, styles.purpleFold)}>
 					<ReuseLandingSection
 						className={classNames(styles.landingSection, centerColumn)}
 					/>
@@ -32,40 +33,35 @@ export class HybridHomage extends PureComponent {
 					</div>
 				</div>
 
-				<EnterpriseSection className={classNames(centerColumn, styles.padding80)} />
+				<EnterpriseSection className={classNames(centerColumn, styles.margin130)} />
 
-				<CarouselSection className={classNames(styles.padding80)} />
+				<CarouselSection />
 
-				<div className={classNames(styles.greyBackground)}>
-					<BookingBreakdown className={classNames(centerColumn, styles.padding80)} />
+				<div className={classNames(styles.greyBackground, styles.margin130)}>
+					<BookingBreakdown className={classNames(centerColumn, styles.margin130)} />
 
 					<ComponentsAdvantages
-						className={classNames(centerColumn, styles.padding80)}
+						className={classNames(centerColumn, styles.margin130)}
 					/>
 				</div>
 
-				<SyncSection className={centerColumn} />
-				<CtaSection
-					className={classNames(centerColumn, styles.ctaSection)}
-					title="Exploring component reuse? Talk to world experts"
-				>
-					We help the best teams reuse components together. Get in touch with our
-					expert architects to find the best solution for your team!
-				</CtaSection>
+				<SyncSection className={classNames(centerColumn, styles.margin180)} />
+
+				<TalkToExperts className={classNames(centerColumn, styles.margin80)} />ƒ
 
 				<div className={classNames(styles.greyBackground)}>
-					<HybridPerfectSync className={classNames(centerColumn, styles.padding80)} />
+					<HybridPerfectSync className={classNames(centerColumn, styles.margin130)} />
 				</div>
 
-				<AutoDocs className={classNames(centerColumn, styles.padding80)} />
+				<AutoDocs className={classNames(centerColumn, styles.topSpace130)} />
 
-				<div className={classNames(styles.greyBackground)}>
-					<IndependentTeams className={classNames(centerColumn, styles.padding80)} />
+				<div className={classNames(styles.greyBackground, styles.topSpace180)}>
+					<IndependentTeams className={classNames(centerColumn, styles.margin80)} />
 				</div>
 
-				<CommunitySection className={classNames(centerColumn)} />
+				<CommunitySection className={classNames(centerColumn, styles.topSpace130, styles.margin130)} />
 
-				<CtaSection className={classNames(centerColumn, styles.ctaSection)} />
+				<CtaSection className={classNames(centerColumn, styles.margin130)} />
 			</div>
 		);
 	}

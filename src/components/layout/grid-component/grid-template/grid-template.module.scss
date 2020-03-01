@@ -23,10 +23,4 @@ xl $br-xl;
 			}
 		}
 	}
-
-	.colTemplate {
-		&---#{i} {
-			grid-template-columns: repeat($i, 1fr);
-		}
-	}
 }

@@ -1,5 +1,8 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
+
+import styles from './auto-docs.module.scss';
+
 import { PossibleSizes } from '../../constants/sizes';
 
 import { Paragraph } from '../../components/base/paragraph';
@@ -13,19 +16,21 @@ import { text, alignItems } from '../../components/layout/align';
 export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div {...props} className={classNames(props.className)}>
-			<H2 size={PossibleSizes.md} className={text.center}>
+			<H2 size={PossibleSizes.sm} className={text.center}>
 				Let Bit maintain your docs.
 				<br />
 				Easily organize and discover components.
 			</H2>
-			<Paragraph className={text.center}>
-				Forget about maintaing additional docs, websites, wikis, and tools. Bit makes
-				sure every single component is documneted, organized and discoverable at any
-				scale. Let Bit Maintain your docs. Easily Organize and discover components.
+
+			<Paragraph size={PossibleSizes.lg} className={classNames(text.center, styles.subtitle)}>
+				Forget about maintaining additional docs, websites, wikis, and tools. Bit makes
+				sure every single component is documented, organized and discoverable at any
+				scale.
 			</Paragraph>
+
 			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
 				<div>
-					<H2 size={PossibleSizes.xs}>Meet the best component explorer ever</H2>
+					<H2 size={PossibleSizes.sm}>Meet the best component explorer ever</H2>
 					<Paragraph>
 						Looking for a React button component with up to 30kb bundle-size, styled
 						with styled-components, and tested with Jest? No problem.
@@ -35,7 +40,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 				<Image src="homepage-bit/5-orginze.png" alt="components search" fullWidth />
 
 				<div>
-					<H2 size={PossibleSizes.xs}>Write code, get stunning docs</H2>
+					<H2 size={PossibleSizes.sm}>Write code, get stunning docs</H2>
 					<Paragraph>
 						With Bit, you can focus on writing code and watch how every compoent’s
 						documentation is generated, updated and maintained automatically. Have a
@@ -46,7 +51,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 			</Grid>
 			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
 				<div>
-					<H2 size={PossibleSizes.xs}>
+					<H2 size={PossibleSizes.sm}>
 						Try components in a hot-reloading playground
 					</H2>
 					<Paragraph>

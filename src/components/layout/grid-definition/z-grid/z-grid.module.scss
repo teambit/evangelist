@@ -34,10 +34,10 @@
 
 	@media (min-width: $br-lg-new) {
 		grid-template-areas:
-			"it1 it1 it1 it1 . . im1 im1 im1 im1 im1 im1"
-			"im2 im2 im2 im2 im2 im2 . . it2 it2 it2 it2";
+			"it1 it1 it1 it1 . im1 im1 im1 im1 im1 im1 im1"
+			"im2 im2 im2 im2 im2 im2 im2 . it2 it2 it2 it2";
 
-		grid-row-gap: 130px;
-		margin-bottom: 80px;
+		grid-row-gap: 50px;
+		margin-bottom: 50px;
 	}
 }

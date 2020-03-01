@@ -1,6 +1,8 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
+import styles from './hybrid-perferct-sync.module.scss';
+
 import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
 
 import { PossibleSizes } from '../../constants/sizes';
@@ -16,11 +18,13 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div {...props} className={classNames(props.className, text.center)}>
 			<H2 size={PossibleSizes.sm}>Keep apps and teams in perfect sync.</H2>
-			<Paragraph>
+
+			<Paragraph size={PossibleSizes.lg} className={styles.subtitle}>
 				Bit helps your team collaborate to make sure every application and every
 				teammate can effortlessly get and adopt the latest updates. And, it integrates
 				with tools you love like GitHub and Slack to keep everyone in perfect sync.
 			</Paragraph>
+
 			<Grid
 				colMd={12}
 				className={classNames(
@@ -50,11 +54,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 						isolation to ensure it’s safe to use and integrate.
 					</Paragraph>
 				</div>
-				<Image
-					alt="cloud code"
-					src="homepage-bit/comp-build-flow.png"
-					fullWidth
-				/>
+				<Image alt="cloud code" src="homepage-bit/comp-build-flow.png" fullWidth />
 				<div>
 					<H3 size={PossibleSizes.xs}>Keep repos synced with GitHub integrations</H3>
 					<Paragraph>

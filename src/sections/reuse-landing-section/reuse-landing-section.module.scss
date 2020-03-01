@@ -12,20 +12,24 @@
 	}
 }
 
+.headline {
+	margin-bottom: 40px;
+}
+
 .paragraph {
 	margin-bottom: 40px;
 }
 
 .buttons {
 	margin-bottom: 40px;
-	display: flex;
-	justify-content: center;
-	// align-items: center;
-	// flex-direction: column;
-	// @media screen and (min-width: 360px) {
-	// 	flex-direction: unset;
-	// }
-	// @media screen and (min-width: 920px) {
-	// 	justify-content: start;
-	// }
+	font-size: 14px;
+
+	@media screen and (min-width: 920px) {
+		display: flex;
+		justify-content: center;
+	}
+
+	button {
+		width: 199px;
+	}
 }

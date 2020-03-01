@@ -25,7 +25,7 @@ xl $br-xl;
 	}
 
 	.colSpan {
-		&---#{i} {
+		&---#{$i} {
 			grid-column-end: span $i;
 		}
 	}

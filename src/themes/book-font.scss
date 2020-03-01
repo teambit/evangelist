@@ -2,29 +2,36 @@
 $staticStorageUrl: 'https://static.bit.dev';
 
 @font-face {
-	font-family: "CircularProBook";
+	font-family: "CircularPro";
 	src: url($staticStorageUrl + '/fonts/CircularPro-Book.otf');
 }
 
 @font-face {
-	font-family: "CircularProBook";
+	font-family: "CircularPro";
 	src: url($staticStorageUrl + '/fonts/CircularPro-Bold.otf');
 	font-weight: bold;
 }
 
 @font-face {
-	font-family: "CircularProBook";
+	font-family: "CircularPro";
 	src: url($staticStorageUrl + '/fonts/CircularPro-BookItalic.otf');
 	font-style: italic;
 }
 
 @font-face {
-	font-family: "CircularProBook";
+	font-family: "CircularPro";
 	src: url($staticStorageUrl + '/fonts/CircularPro-BlackItalic.otf');
 	font-style: italic;
 	font-weight: bold;
 }
 
+//@HACK - legacy fonts:
+@font-face {
+	font-family: "circularProBold";
+	src: url($staticStorageUrl + '/fonts/CircularPro-Bold.otf');
+	font-weight: bold;
+}
+
 body {
-	font-family: 'CircularProBook';
+	font-family: 'CircularPro';
 }

@@ -1,0 +1,15 @@
+.talkToExperts {
+	display: flex;
+
+	>:first-child {
+		width: 61%;
+	}
+
+	>:nth-child(2) {
+		margin: 0 auto;
+	}
+
+	button {
+		width: 180px;
+	}
+}

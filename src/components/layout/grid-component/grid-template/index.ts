@@ -23,14 +23,6 @@ export const colGridL = makePreset('l');
 export const colGridLg = makePreset('lg');
 export const colGridXl = makePreset('xl');
 
-export const colSpan = makePreset();
-export const colSpanXs = makePreset('xs');
-export const colSpanSm = makePreset('sm');
-export const colSpanMd = makePreset('md');
-export const colSpanL = makePreset('l');
-export const colSpanLg = makePreset('lg');
-export const colSpanXl = makePreset('xl');
-
 function makePreset(breakPoints: string = ''): ColumnPreset {
 	const obj: any = {};
 

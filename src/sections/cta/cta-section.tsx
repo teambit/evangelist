@@ -1,6 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import styles from './cta-section.module.scss';
+
 import { H2 } from '../../components/concrete/heading';
 import { PossibleSizes } from '../../constants/sizes';
 import { CtaButton } from '../../components/concrete/cta-button';
@@ -16,26 +18,28 @@ type CtaProps = {
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function CtaSection(props: CtaProps) {
-	const {
-		children = 'Add your first component in minutes.',
-		title = 'Ready to try Bit?',
-		buttonText = 'Get Started for free',
-		...rest
-	} = props;
+	const { ...rest } = props;
 
 	return (
 		<Grid
 			{...rest}
 			colSm={2}
-			className={classNames(props.className, justifyItems.center, alignItems.center)}
+			className={classNames(
+				props.className,
+				styles.ctaSection,
+				justifyItems.center,
+				alignItems.center
+			)}
 			data-bit-id="ctaSection"
 		>
 			<div>
-				<H2 size={PossibleSizes.xs}>{title}</H2>
-				<Paragraph size={PossibleSizes.xl}>{children}</Paragraph>
+				<H2 size={PossibleSizes.xs}>Ready to try Bit?</H2>
+				<Paragraph size={PossibleSizes.xl}>
+					Add your first component in minutes.
+				</Paragraph>
 			</div>
 			<Link href="https://bit.dev/signup">
-				<CtaButton>{buttonText}</CtaButton>
+				<CtaButton>Get Started for free</CtaButton>
 			</Link>
 		</Grid>
 	);
