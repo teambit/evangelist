@@ -12,10 +12,13 @@ import { H2, H3 } from '../../components/concrete/heading';
 import { text, alignItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
-
 export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(props.className, text.center)}>
+		<div
+			{...props}
+			className={classNames(props.className, text.center)}
+			data-bit-id="sections/sync-section"
+		>
 			<H2 size={PossibleSizes.sm}>
 				Reuse any component off the cloud.
 				<br />

@@ -10,7 +10,7 @@ export function Link(props: LinkProps) {
 	const externalProps = external ? { rel: 'noopener', target: '_blank' } : {};
 
 	return (
-		<a {...externalProps} {...rest}>
+		<a {...externalProps} {...rest} data-bit-id="base/link">
 			{children}
 		</a>
 	);

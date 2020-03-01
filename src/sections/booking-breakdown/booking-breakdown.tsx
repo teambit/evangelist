@@ -9,7 +9,7 @@ import styles from './booking-breakdown.module.scss';
 
 export function BookingBreakdown(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props}>
+		<div {...props} data-bit-id="sections/booking-breakdown">
 			<H2 size={PossibleSizes.sm}>
 				Enjoy the most advanced tools to develop reusable components.
 			</H2>

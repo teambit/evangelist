@@ -8,7 +8,7 @@ import { Icon } from '../../icon';
 import { Image } from '../../image';
 import styles from './github-link.module.scss';
 
-const ENABLE_STAR_COUNT = false;
+const ENABLE_STAR_COUNT = true;
 
 /**
  * concrete community link component - pill flavor for base link component

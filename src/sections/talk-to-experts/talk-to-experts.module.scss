@@ -1,8 +1,11 @@
+@import '../../components/layout/_breakpoints.scss';
+
 .talkToExperts {
 	display: flex;
-
+	flex-direction: column;
+	
 	>:first-child {
-		width: 61%;
+		margin-bottom: 50px;
 	}
 
 	>:nth-child(2) {
@@ -11,5 +14,14 @@
 
 	button {
 		width: 180px;
+	}
+
+	@media (min-width: $br-l) {
+		flex-direction: row;
+
+		>:first-child {
+			width: 61%;
+			margin-bottom: unset;
+		}
 	}
 }

@@ -5,5 +5,11 @@ import styles from './themed-text.module.scss';
 export type ThemedTextProps = HTMLAttributes<HTMLSpanElement>;
 
 export function ThemedText(props: ThemedTextProps) {
-	return <span {...props} className={classNames(props.className, styles.themedText)} />;
+	return (
+		<span
+			{...props}
+			className={classNames(props.className, styles.themedText)}
+			data-bit-id="base/themed-text"
+		/>
+	);
 }

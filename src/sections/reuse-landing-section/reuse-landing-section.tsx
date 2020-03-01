@@ -12,7 +12,6 @@ import { CtaButton } from '../../components/concrete/cta-button';
 import { text, marginCenter } from '../../components/layout/align';
 
 import styles from './reuse-landing-section.module.scss';
-import { ThemedText } from '../../components/base/themed-text';
 import { IconLine } from '../../components/concrete/icon-line';
 import { Link } from '../../components/base/link';
 
@@ -30,6 +29,7 @@ export function ReuseLandingSection(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(styles.reuseLandingSection, text.center, props.className)}
+			data-bit-id="sections/reuse-landing-section"
 		>
 			<H1 size={PossibleSizes.sm} className={styles.headline}>
 				The reusable component ecosystem <br />

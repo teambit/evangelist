@@ -13,7 +13,7 @@ import { SyncSection } from '../../sections/sync-section';
 import { BookingBreakdown } from '../../sections/booking-breakdown';
 import { CommunitySection } from '../../sections/community';
 import { ComponentsAdvantages } from '../../sections/component-advantages';
-import { HybridPerfectSync } from '../../sections/hybrid-perferct-sync';
+import { HybridPerfectSync } from '../../sections/hybrid-perfect-sync';
 import { AutoDocs } from '../../sections/auto-docs';
 import { IndependentTeams } from '../../sections/independent-teams';
 import { TalkToExperts } from '../../sections/talk-to-experts';

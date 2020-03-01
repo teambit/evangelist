@@ -13,7 +13,11 @@ import { text } from '../../components/layout/align';
 
 export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(props.className)}>
+		<div
+			{...props}
+			className={classNames(props.className)}
+			data-bit-id="sections/independent-teams"
+		>
 			<H2 size={PossibleSizes.sm} className={text.center}>
 				Scale for independent teams building together.
 			</H2>

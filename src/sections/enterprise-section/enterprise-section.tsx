@@ -14,16 +14,21 @@ import { Grid } from '../../components/layout/grid-component';
 
 import { Icon } from '../../components/concrete/icon';
 import { CommunityLink } from '../../components/base/community-link';
-import { colSpan } from '../../components/layout/col-span';
+import { colSpanL } from '../../components/layout/col-span';
 
 export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(text.center, props.className)}>
+		<div
+			{...props}
+			className={classNames(text.center, props.className)}
+			data-bit-id="sections/enterprise-section"
+		>
 			<Grid
-				colSm={12}
+				col={1}
+				colL={12}
 				className={classNames(text.left, alignItems.center, styles.content)}
 			>
-				<div className={colSpan[5]}>
+				<div className={colSpanL[5]}>
 					<H2 size={PossibleSizes.sm}>
 						Get your own <br /> enterprise-grade <br />
 						component cloud.
@@ -43,7 +48,7 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 						</CommunityLink>
 					</div>
 				</div>
-				<div className={colSpan[7]}>
+				<div className={colSpanL[7]}>
 					<Image
 						fullWidth
 						alt="cloud components"

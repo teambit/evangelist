@@ -15,7 +15,11 @@ import { fourWayGrid } from '../../components/layout/grid-definition/four-way-gr
 
 export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(props.className)}>
+		<div
+			{...props}
+			className={classNames(props.className)}
+			data-bit-id="sections/component-advantages"
+		>
 			<Grid
 				colMd={12}
 				className={classNames(
@@ -45,11 +49,7 @@ export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 						automatic dependency definitions and management.
 					</Paragraph>
 				</div>
-				<Image
-					alt="smart versioning"
-					src="homepage-bit/2-simple.png"
-					fullWidth
-				/>
+				<Image alt="smart versioning" src="homepage-bit/2-simple.png" fullWidth />
 				<div>
 					<H3 size={PossibleSizes.xs}>Reusable dev environments</H3>
 					<Paragraph>
@@ -57,11 +57,7 @@ export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 						each component in full isolation. Best practices included.
 					</Paragraph>
 				</div>
-				<Image
-					alt="dev tools integrations"
-					src="homepage-bit/devtools.png"
-					fullWidth
-				/>
+				<Image alt="dev tools integrations" src="homepage-bit/devtools.png" fullWidth />
 
 				<div>
 					<H3 size={PossibleSizes.xs}>Goodbye configuration files</H3>

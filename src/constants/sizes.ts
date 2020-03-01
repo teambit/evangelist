@@ -9,4 +9,3 @@ export enum PossibleSizes {
   xxl = "xxl"
 }
 
-

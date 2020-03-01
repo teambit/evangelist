@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import styles from './hybrid-perferct-sync.module.scss';
+import styles from './hybrid-perfect-sync.module.scss';
 
 import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
 
@@ -16,7 +16,11 @@ import { Grid } from '../../components/layout/grid-component';
 
 export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(props.className, text.center)}>
+		<div
+			{...props}
+			className={classNames(props.className, text.center)}
+			data-bit-id="sections/hybrid-perfect-syncs"
+		>
 			<H2 size={PossibleSizes.sm}>Keep apps and teams in perfect sync.</H2>
 
 			<Paragraph size={PossibleSizes.lg} className={styles.subtitle}>

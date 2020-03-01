@@ -1,1 +1,1 @@
-export * from './themeed-text';
+export * from './themed-text';

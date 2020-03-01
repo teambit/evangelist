@@ -15,14 +15,21 @@ import { text, alignItems } from '../../components/layout/align';
 
 export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(props.className)}>
+		<div
+			{...props}
+			className={classNames(props.className)}
+			data-bit-id="sections/auto-docs"
+		>
 			<H2 size={PossibleSizes.sm} className={text.center}>
 				Let Bit maintain your docs.
 				<br />
 				Easily organize and discover components.
 			</H2>
 
-			<Paragraph size={PossibleSizes.lg} className={classNames(text.center, styles.subtitle)}>
+			<Paragraph
+				size={PossibleSizes.lg}
+				className={classNames(text.center, styles.subtitle)}
+			>
 				Forget about maintaining additional docs, websites, wikis, and tools. Bit makes
 				sure every single component is documented, organized and discoverable at any
 				scale.
