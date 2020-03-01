@@ -17,22 +17,26 @@ import { CommunityLink } from '../../components/base/community-link';
 
 export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div
-			{...props}
-			className={classNames(text.center, props.className)}
-		>
-			<Grid colSm={2} className={classNames(text.left, alignItems.center, styles.content)}>
+		<div {...props} className={classNames(text.center, props.className)}>
+			<Grid
+				colSm={2}
+				className={classNames(text.left, alignItems.center, styles.content)}
+			>
 				<div>
 					<H2 size={PossibleSizes.sm}>
 						Get your own enterprise-grade component cloud.
 					</H2>
-					<Paragraph>
-						Bit lets you version and export components in minutes without having to
-						setup complex libraries, define dependencies.
+					<Paragraph className={styles.paragraph}>
+						Empower your team with one hub to reuse and collaborate on all your
+						components. Enjoy the most scalable, collaborative system for reusable
+						components. Try it for free.
 					</Paragraph>
 					<div>
-						<CommunityLink className={styles.ctaLink} href={'pricing'}>
-							see plans and pricing {' '}
+						<CommunityLink
+							className={styles.ctaLink}
+							href="https://bit.dev/pricing"
+						>
+							see plans and pricing{' '}
 							<Icon of="right_arrow" className={styles.linkArrow} />
 						</CommunityLink>
 					</div>

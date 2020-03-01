@@ -20,10 +20,10 @@ export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<Grid {...props} colL={2} className={classNames(styles.mainSection, props.className)} data-bit-id="mainSection">
 			<div className={classNames(styles.mainSectionContent, marginCenter)}>
-				<H1 size={PossibleSizes.md}>
+				<H1 size={PossibleSizes.sm}>
 					A scalable way to build modern frontend applications.
 				</H1>
-				<Paragraph size={PossibleSizes.xxl} className={styles.paragraph}>
+				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 					Bit helps you build frontends with decoupled codebases, independent teams,
 					continuous delivery, infinite reuse and so much more.
 				</Paragraph>
@@ -32,7 +32,7 @@ export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 					<div style={{ height: '20px', width: '20px' }} />
 					<PrimaryButton elevation="medium">Learn more</PrimaryButton>
 				</div>
-				<IconLine icons={iconsArray} />
+				<IconLine icons={iconsArray} className={marginCenter} pre="BUILT WITH" />
 			</div>
 
 			<Image

@@ -1,0 +1,49 @@
+@import "../../components/layout/_breakpoints.scss";
+@import '../../constants/storage/_storage.module.scss';
+
+//folds:
+
+.purpleBackground {
+	background-image: url($staticStorageUrl + '/homepage-bit/backgrounds/01-purple-gradient.svg');
+	color: white;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.hotpinkBackground {
+	background-image: url($staticStorageUrl + '/homepage-bit/backgrounds/01-hotpink.svg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.greyBackground {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-image: url($staticStorageUrl + '/homepage-bit/3-background.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-bottom: 100px;
+	background-size: 100% 100%;
+}
+
+//sections:
+.landingSection {
+	padding: 80px 0;
+}
+
+.ctaSection {
+	margin: 130px auto;
+}
+
+.separator {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.padding80 {
+	padding: 80px 0;
+}

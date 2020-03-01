@@ -10,6 +10,7 @@ import { EmbedIconSet } from './components/concrete/icon';
 
 import { Homepage } from './pages/homepage';
 import { ReusePage } from './pages/reuse';
+import { HybridHomage } from './pages/hybrid-homepage';
 
 class App extends PureComponent {
 	// componentDidMount() {
@@ -19,8 +20,8 @@ class App extends PureComponent {
 		return (
 			<Theme>
 				<EmbedIconSet query="aqq93z" />
-				<ReusePage />
-				<Homepage />
+				<HybridHomage />
+				{/* <Homepage/> */}
 			</Theme>
 		);
 	}

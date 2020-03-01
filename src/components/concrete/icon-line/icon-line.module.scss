@@ -1,19 +1,14 @@
+.iconLine {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-  .iconLine {
-    font-size: 12px;
-    max-width: 350px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    margin: 0 auto 40px auto;
-    @media screen and (min-width: 920px) {
-        // text-align: unset;
-        margin: unset;
-      }
-  }
+	min-height: 32px; //preserve height while loading images
+	max-width: 323px;
+	font-size: 12px;
+	font-weight: bold;
+}
 
-  .icon {
-    width: 30px;
-  }
+.icon {
+	width: 30px;
+}

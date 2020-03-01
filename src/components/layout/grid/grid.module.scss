@@ -1,12 +1,12 @@
 .centerColumn {
-	width: 85%;
-	max-width: 1244px;
+	width: calc(100% - 40px);
+	max-width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 .wideColumn {
+	width: calc(100% - 40px);
 	max-width: 1440px;
-	width: 85%;
 	margin: 0 auto;
 }
