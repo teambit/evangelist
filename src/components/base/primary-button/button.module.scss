@@ -1,7 +1,8 @@
 .button {
 	border: 1px solid var(--primary-button-bg);
 	background-color: var(--primary-button-bg);
-	color: var(--primary-button-text);
+	color: var(--primary-button-text, var(--base-color));
+
 	border-radius: 5px;
 	border: unset;
 	width: 100%;
@@ -10,5 +11,4 @@
 	font-size: inherit;
 
 	transition: 300ms all;
-	// border: 1px solid var(--primary-button-border);
 }

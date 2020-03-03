@@ -7,19 +7,17 @@
     --border-color: #{$w20};
     --bg-color: #{$w10};
     --separator-color: #{$d20};
-    // --asset: url('https://static.bit.dev/homepage-bit/1-illustration.svg');
     --primary-button-bg: #{$w10};
-    --primary-button-text: #{$p50};
+    // --primary-button-text: #{$p50};
     --primary-button-width: 199px;
     --primary-button-height: 46px;
     
-    --cta-button-bg: #{$p50};
+    // --cta-button-bg: #{$p50};
     --cta-button-text: #{$w10};
     
     --primary-label-bg: #{$p50};
     --primary-label-text: #{$w10};
     --primary-label-width: 50px;
-    // --primary-label-height: 20px;
     --green: #{$g50};
     --blue: #{$b50};
     --pink: #{$pink};
@@ -28,6 +26,7 @@
 // .win {
 //     color: $d50;
 //     --base-color: #{$g50};
+//     --cta-button-bg: #{$g50};
 // }
 
 // .tbd1 {//todo - blue rename
