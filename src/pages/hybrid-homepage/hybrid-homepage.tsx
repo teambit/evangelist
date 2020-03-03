@@ -1,4 +1,4 @@
-import React, { PureComponent, CSSProperties } from 'react';
+import React, { PureComponent, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import styles from './hybrid-homepage.module.scss';
@@ -18,11 +18,13 @@ import { AutoDocs } from '../../sections/auto-docs';
 import { IndependentTeams } from '../../sections/independent-teams';
 import { TalkToExperts } from '../../sections/talk-to-experts';
 
-export class HybridHomage extends PureComponent {
+type HybridHomepageProps = HTMLAttributes<HTMLDivElement>;
+
+export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 	render() {
 		return (
-			<div>
-				<div className={classNames(styles.purpleBackground, styles.purpleFold)}>
+			<div {...this.props}>
+				<div className={classNames(styles.purpleBackground, styles.purpleFold, styles.margin80)}>
 					<ReuseLandingSection
 						className={classNames(styles.landingSection, centerColumn)}
 					/>
@@ -47,7 +49,7 @@ export class HybridHomage extends PureComponent {
 
 				<SyncSection className={classNames(centerColumn, styles.margin180)} />
 
-				<TalkToExperts className={classNames(centerColumn, styles.margin80)} />ƒ
+				<TalkToExperts className={classNames(centerColumn, styles.margin80)} />
 
 				<div className={classNames(styles.greyBackground)}>
 					<HybridPerfectSync className={classNames(centerColumn, styles.margin130)} />
@@ -59,7 +61,9 @@ export class HybridHomage extends PureComponent {
 					<IndependentTeams className={classNames(centerColumn, styles.margin80)} />
 				</div>
 
-				<CommunitySection className={classNames(centerColumn, styles.topSpace130, styles.margin130)} />
+				<CommunitySection
+					className={classNames(centerColumn, styles.topSpace130, styles.margin130)}
+				/>
 
 				<CtaSection className={classNames(centerColumn, styles.margin130)} />
 			</div>

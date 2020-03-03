@@ -34,7 +34,7 @@ export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 			<div>
 				<Link href="https://bit.dev/support">
 					{/* pending final texts from Yoni */}
-					<CtaButton>Get in touch 😉</CtaButton>
+					<CtaButton>Get in touch</CtaButton>
 				</Link>
 			</div>
 		</div>
