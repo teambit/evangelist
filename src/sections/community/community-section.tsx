@@ -17,15 +17,15 @@ export function CommunitySection(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
 		<Grid
 			{...props}
-			colLg={2}
+			colL={2}
 			className={classnames(props.className, styles.communitySection, alignItems.center)}
 			data-bit-id="communitySection"
 		>
 			<div className={styles.cta}>
-				<H2 className={styles.title} size={PossibleSizes.md}>
+				<H2 className={styles.title} size={PossibleSizes.sm}>
 					Join the community!
 				</H2>
-				<Paragraph className={styles.text} size={PossibleSizes.xl}>
+				<Paragraph className={styles.text} size={PossibleSizes.md}>
 					Join over 100,000 developers in the Bit community to share, discover and
 					collaborate over frontend building blocks. Share your components with the
 					world to get usage, feedback and contributions from people around the world.
@@ -38,7 +38,7 @@ export function CommunitySection(props: React.HTMLAttributes<HTMLDivElement>) {
 				</div>
 			</div>
 
-			<div>
+			<div className={styles.tweets}>
 				<TwitterCard
 					className={styles.tweet}
 					title="@Sketch2R"

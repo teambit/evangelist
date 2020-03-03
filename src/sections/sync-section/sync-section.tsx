@@ -1,6 +1,8 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
+import styles from './sync-section.module.scss';
+
 import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
 
 import { PossibleSizes } from '../../constants/sizes';
@@ -33,7 +35,7 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 					alignItems.center
 				)}
 			>
-				<div>
+				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>World-class package registry</H3>
 					<Paragraph>
 						Use npm or yarn to Install any component from a blazing-fast private
@@ -47,7 +49,7 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 					fullWidth
 				/>
 
-				<div>
+				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Reuse components, stay independent</H3>
 					<Paragraph>
 						Bit lets you tag every component with a semantic version. Unlock the mix
@@ -61,7 +63,7 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 					src="homepage-bit/reuse-page/cloud-code.png"
 					fullWidth
 				/>
-				<div>
+				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Sync repos with GitHub integrations</H3>
 					<Paragraph>
 						Bit lets everyone isolate and export components right from any project
@@ -75,7 +77,7 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 					fullWidth
 				/>
 
-				<div>
+				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Sync people with Slack integrations</H3>
 					<Paragraph>
 						Giving feedback on single components is much easier than diving into a

@@ -37,7 +37,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 
 			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
 				<div>
-					<H2 size={PossibleSizes.sm}>Meet the best component explorer ever</H2>
+					<H2 size={PossibleSizes.xs}>Meet the best component explorer ever</H2>
 					<Paragraph>
 						Looking for a React button component with up to 30kb bundle-size, styled
 						with styled-components, and tested with Jest? No problem.
@@ -47,7 +47,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 				<Image src="homepage-bit/5-orginze.png" alt="components search" fullWidth />
 
 				<div>
-					<H2 size={PossibleSizes.sm}>Write code, get stunning docs</H2>
+					<H2 size={PossibleSizes.xs}>Write code, get stunning docs</H2>
 					<Paragraph>
 						With Bit, you can focus on writing code and watch how every compoent’s
 						documentation is generated, updated and maintained automatically. Have a
@@ -58,7 +58,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 			</Grid>
 			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
 				<div>
-					<H2 size={PossibleSizes.sm}>
+					<H2 size={PossibleSizes.xs}>
 						Try components in a hot-reloading playground
 					</H2>
 					<Paragraph>

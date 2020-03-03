@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 	external?: boolean;
 }
 

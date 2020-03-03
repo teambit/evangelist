@@ -47,7 +47,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 				<Image
 					alt="multi packagers"
-					src="homepage-bit/fearlessly-deploy.png"
+					src="homepage-bit/example-010.png"
 					fullWidth
 				/>
 

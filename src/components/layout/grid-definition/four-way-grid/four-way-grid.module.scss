@@ -4,15 +4,18 @@
 	display: grid;
 
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
+	grid-template-rows: repeat(3, auto auto 80px) auto auto;
 
 	grid-template-areas:
 		"txt1"
 		"img1"
+		"."
 		"txt2"
 		"img2"
+		"."
 		"txt3"
 		"img3"
+		"."
 		"txt4"
 		"img4";
 
@@ -48,8 +51,9 @@
 		grid-area: img4;
 	}
 
-	@media (min-width: $br-md) {
+	@media (min-width: $br-sm) {
 		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(4, 1fr);
 		grid-template-areas:
 			"img1 txt1"
 			"img2 txt2"
@@ -58,9 +62,12 @@
 	}
 
 	@media (min-width: $br-l) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto 80px auto auto;
 		grid-template-areas:
 			"img1	img2"
 			"txt1	txt2"
+			".		."
 			"img3	img4"
 			"txt3	txt4";
 	}

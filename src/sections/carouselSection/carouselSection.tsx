@@ -10,7 +10,7 @@ import styles from './carouselSection.module.scss';
 export function CarouselSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div {...props} className={classNames(styles.carouselSection, props.className)}>
-			<H2 size={PossibleSizes.md} className={styles.heading}>
+			<H2 size={PossibleSizes.sm} className={styles.heading}>
 				Trusted by over 100,000 developers
 			</H2>
 			<div data-bit-id="commentCarousel">

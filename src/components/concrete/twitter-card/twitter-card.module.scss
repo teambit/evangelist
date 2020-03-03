@@ -5,6 +5,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	text-align: start;
+	min-height: 123px;
 }
 
 .avatar {
@@ -13,6 +14,8 @@
 	height: 80px;
 	width: 80px;
 	margin-right: 16px;
+	
+	border: 1px solid var(--border-color)
 }
 
 .title {
@@ -27,6 +30,5 @@
 }
 
 .text {
-	color: gray;
 	font-size: 16px;
 }

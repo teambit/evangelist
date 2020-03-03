@@ -34,21 +34,21 @@ export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 			/>
 
 			<Grid colL={3} className={text.left}>
-				<div>
+				<div className={styles.benefit}>
 					<H5 size={PossibleSizes.xxs}>Own your components.</H5>
 					<Paragraph>
 						Autonomously maintain your team’s independent scope of components.
 					</Paragraph>
 				</div>
 
-				<div>
+				<div className={styles.benefit}>
 					<H5 size={PossibleSizes.xxs}>Integrate with everyone.</H5>
 					<Paragraph>
 						Expose and adopt shared component APIs to build frontends together.
 					</Paragraph>
 				</div>
 
-				<div>
+				<div className={styles.benefit}>
 					<H5 size={PossibleSizes.xxs}>Stay independent.</H5>
 					<Paragraph>
 						Keep your team fully autonomous to independently deliver new things.

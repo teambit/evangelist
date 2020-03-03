@@ -8,7 +8,7 @@ import { PossibleSizes } from '../../constants/sizes';
 import { CtaButton } from '../../components/concrete/cta-button';
 import { Paragraph } from '../../components/base/paragraph';
 import { justifyItems, alignItems } from '../../components/layout/align';
-import { Link } from '../../components/base/link';
+import { PrimaryLink } from '../../components/concrete/primary-link';
 
 export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -32,10 +32,10 @@ export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 				</Paragraph>
 			</div>
 			<div>
-				<Link href="https://bit.dev/support">
+				<PrimaryLink href="https://bit.dev/contact-sales">
 					{/* pending final texts from Yoni */}
 					<CtaButton>Get in touch</CtaButton>
-				</Link>
+				</PrimaryLink>
 			</div>
 		</div>
 	);

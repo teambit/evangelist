@@ -13,7 +13,7 @@ import { text, marginCenter } from '../../components/layout/align';
 
 import styles from './reuse-landing-section.module.scss';
 import { IconLine } from '../../components/concrete/icon-line';
-import { Link } from '../../components/base/link';
+import { PrimaryLink } from '../../components/concrete/primary-link';
 
 const iconsArray = [
 	'logo-react',
@@ -41,13 +41,13 @@ export function ReuseLandingSection(props: HTMLAttributes<HTMLDivElement>) {
 				need from local development to cross-project collaboration. Try it for free.
 			</Paragraph>
 			<div className={classNames(styles.buttons)}>
-				<Link href="https://bit.dev/signup">
+				<PrimaryLink href="https://bit.dev/signup">
 					<CtaButton elevation="medium">Reuse your components</CtaButton>
-				</Link>
+				</PrimaryLink>
 				<div style={{ height: '20px', width: '20px' }} />
-				<Link external href="https://docs.bit.dev/docs/quick-start">
+				<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">
 					<PrimaryButton elevation="medium">Learn more</PrimaryButton>
-				</Link>
+				</PrimaryLink>
 			</div>
 			<IconLine icons={iconsArray} className={marginCenter} />
 		</div>

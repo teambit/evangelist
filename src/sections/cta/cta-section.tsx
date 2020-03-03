@@ -9,7 +9,7 @@ import { CtaButton } from '../../components/concrete/cta-button';
 import { Paragraph } from '../../components/base/paragraph';
 import { Grid } from '../../components/layout/grid-component';
 import { justifyItems, alignItems } from '../../components/layout/align';
-import { Link } from '../../components/base/link';
+import { PrimaryLink } from '../../components/concrete/community-links/primary-link';
 
 //don't abuse!! fork this component if you need to much customizations
 type CtaProps = {
@@ -34,13 +34,13 @@ export function CtaSection(props: CtaProps) {
 		>
 			<div>
 				<H2 size={PossibleSizes.xs}>Ready to try Bit?</H2>
-				<Paragraph size={PossibleSizes.xl}>
+				<Paragraph size={PossibleSizes.lg}>
 					Add your first component in minutes.
 				</Paragraph>
 			</div>
-			<Link href="https://bit.dev/signup">
+			<PrimaryLink href="https://bit.dev/signup">
 				<CtaButton>Get Started for free</CtaButton>
-			</Link>
+			</PrimaryLink>
 		</Grid>
 	);
 }

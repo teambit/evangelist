@@ -13,8 +13,8 @@ import { text, alignItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
 import { Icon } from '../../components/concrete/icon';
-import { CommunityLink } from '../../components/base/community-link';
-import { colSpanL } from '../../components/layout/col-span';
+import { colSpanMd } from '../../components/layout/col-span';
+import { PrimaryLink } from '../../components/concrete/primary-link';
 
 export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -25,30 +25,29 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 		>
 			<Grid
 				col={1}
-				colL={12}
+				colMd={12}
 				className={classNames(text.left, alignItems.center, styles.content)}
 			>
-				<div className={colSpanL[5]}>
+				<div className={colSpanMd[7]}>
 					<H2 size={PossibleSizes.sm}>
-						Get your own <br /> enterprise-grade <br />
-						component cloud.
+						Get your own enterprise-grade component cloud.
 					</H2>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 						Empower your team with one hub to reuse and collaborate on all your
 						components. Enjoy the most scalable, collaborative system for reusable
 						components. Try it for free.
 					</Paragraph>
-					<div>
-						<CommunityLink
+					<Paragraph size={PossibleSizes.sm}>
+						<PrimaryLink
 							className={styles.ctaLink}
 							href="https://bit.dev/pricing"
 						>
-							see plans and pricing{' '}
+							See plans and pricing
 							<Icon of="right_arrow" className={styles.linkArrow} />
-						</CommunityLink>
-					</div>
+						</PrimaryLink>
+					</Paragraph>
 				</div>
-				<div className={colSpanL[7]}>
+				<div className={colSpanMd[5]}>
 					<Image
 						fullWidth
 						alt="cloud components"
@@ -57,7 +56,7 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 			</Grid>
 
-			<Grid colL={3} className={text.left}>
+			<Grid colMd={3} className={classNames(text.md.left, text.center, styles.benefits)}>
 				<div>
 					<Image
 						className={styles.icon}

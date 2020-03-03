@@ -2,4 +2,9 @@
 	border: 1px solid var(--cta-color, var(--base-color));
 	background-color: var(--cta-color, var(--base-color));
 	color: var(--cta-button-text);
+	
+	&:hover {
+		border: 1px solid var(--cta-highlight, var(--base-highlight));
+		background-color: var(--cta-highlight, var(--base-highlight));
+	}
 }
