@@ -1,13 +1,13 @@
 .button {
 	border: 1px solid var(--primary-button-bg);
+	height: var(--primary-button-height);
 	background-color: var(--primary-button-bg);
 	color: var(--primary-button-text, var(--base-color));
 
 	border-radius: 5px;
-	border: unset;
-	height: var(--primary-button-height); //46px;
 	font-size: inherit;
 	font-family: inherit;
-
+	
+	text-align: center;
 	transition: 300ms all;
 }

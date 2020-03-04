@@ -1,3 +1,5 @@
+@import "../../components/layout/_breakpoints.scss";
+
 .reuseLandingSection {
 	margin-bottom: 40px;
 }
@@ -12,6 +14,11 @@
 	}
 }
 
+.spacer {
+	width: 20px;
+	height: 20px;
+}
+
 .headline {
 	margin-bottom: 40px;
 }
@@ -23,13 +30,12 @@
 .buttons {
 	margin-bottom: 40px;
 
-	@media screen and (min-width: 920px) {
+	@media screen and (min-width: $br-sm) {
 		display: flex;
 		justify-content: center;
 	}
 
 	button {
 		width: 199px;
-		padding: 0 20px;
 	}
 }
