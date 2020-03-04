@@ -39,7 +39,9 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 
 				<CarouselSection />
 
-				<div className={classNames(styles.greyBackground, styles.margin130)}>
+				<div className={styles.uEllipse}></div>
+
+				<div className={classNames(styles.greyBackground, styles.topSpace180, styles.margin180)}>
 					<BookingBreakdown className={classNames(centerColumn, styles.margin130)} />
 
 					<ComponentsAdvantages
@@ -52,13 +54,13 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 				<TalkToExperts className={classNames(centerColumn, styles.margin80)} />
 
 				<div className={classNames(styles.greyBackground)}>
-					<HybridPerfectSync className={classNames(centerColumn, styles.margin130)} />
+					<HybridPerfectSync className={classNames(centerColumn, styles.topSpace180, styles.margin130)} />
 				</div>
 
 				<AutoDocs className={classNames(centerColumn, styles.topSpace130)} />
 
-				<div className={classNames(styles.greyBackground, styles.topSpace180)}>
-					<IndependentTeams className={classNames(centerColumn, styles.margin80)} />
+				<div className={classNames(styles.greyBackground)}>
+					<IndependentTeams className={classNames(centerColumn, styles.topSpace180, styles.margin80)} />
 				</div>
 
 				<CommunitySection

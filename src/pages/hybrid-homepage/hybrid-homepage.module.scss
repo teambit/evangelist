@@ -8,7 +8,7 @@
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: 200% 100%;
-	
+
 	@media (min-width: $br-md) {
 		background-size: 100% 100%;
 	}
@@ -21,19 +21,35 @@
 	background-size: 100% auto;
 }
 
+.uEllipse {
+	display: none;
+	background: url($staticStorageUrl + '/homepage-bit/backgrounds/grey-curve-U.svg') no-repeat;
+	background-size: 100% 100%;
+
+	width: 100%;
+	
+	@media screen and (min-width: $br-sm) {
+		height: 50px;
+		display: block;
+	}
+	
+	@media screen and (min-width: $br-l) {
+		height: 100px;
+	}
+}
+
 .greyBackground {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 
-	background-image: url($staticStorageUrl + '/homepage-bit/3-background.svg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background:
+		url($staticStorageUrl + '/homepage-bit/backgrounds/grey-bg-flat-strips.svg'),
+		url($staticStorageUrl + '/homepage-bit/backgrounds/grey-bg.svg');
 
-	padding-top: 180px;
-	padding-bottom: 80px;
+	background-size: 100% 100%, 100% 100%;
+	background-repeat: no-repeat;
 }
 
 //sections:
@@ -59,7 +75,7 @@
 	padding-top: 180px
 }
 
-.margin80 { 
+.margin80 {
 	margin-bottom: 80px;
 }
 
@@ -67,6 +83,6 @@
 	margin-bottom: 130px;
 }
 
-.margin180{
+.margin180 {
 	margin-bottom: 180px;
 }
