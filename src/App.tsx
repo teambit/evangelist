@@ -1,6 +1,6 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent, /* CSSProperties */ } from 'react';
 import 'reset-css';
-import './themes/book-font.scss';
+import './App.css';
 
 import { Theme } from './themes/theme-provider';
 
