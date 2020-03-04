@@ -22,7 +22,6 @@
 
 .buttons {
 	margin-bottom: 40px;
-	font-size: 14px;
 
 	@media screen and (min-width: 920px) {
 		display: flex;
@@ -31,5 +30,6 @@
 
 	button {
 		width: 199px;
+		padding: 0 20px;
 	}
 }

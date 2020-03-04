@@ -40,7 +40,7 @@ export function ReuseLandingSection(props: HTMLAttributes<HTMLDivElement>) {
 				<br />
 				need from local development to cross-project collaboration. Try it for free.
 			</Paragraph>
-			<div className={classNames(styles.buttons)}>
+			<Paragraph size={PossibleSizes.sm} className={classNames(styles.buttons)}>				
 				<PrimaryLink href="https://bit.dev/signup">
 					<CtaButton elevation="medium">Reuse your components</CtaButton>
 				</PrimaryLink>
@@ -48,7 +48,7 @@ export function ReuseLandingSection(props: HTMLAttributes<HTMLDivElement>) {
 				<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">
 					<PrimaryButton elevation="medium">Learn more</PrimaryButton>
 				</PrimaryLink>
-			</div>
+			</Paragraph>
 			<IconLine icons={iconsArray} className={marginCenter} />
 		</div>
 	);
