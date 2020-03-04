@@ -1,3 +1,12 @@
+@import "../../components/layout/_breakpoints.scss";
+
 .subtitle {
 	margin-bottom: 130px;
+}
+
+.text {
+	@media screen and (min-width: $br-l) {
+		width: 80%;
+		margin: 0 auto;
+	}
 }

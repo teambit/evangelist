@@ -33,12 +33,12 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				colMd={12}
 				className={classNames(
 					text.center,
-					text.md.left,
+					text.sm.left,
 					fourWayGrid,
 					alignItems.center
 				)}
 			>
-				<div>
+				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Get frequent relevant updates</H3>
 					<Paragraph>
 						No more bloated or irrelevant updates. Constantly get focused and
@@ -51,7 +51,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 					fullWidth
 				/>
 
-				<div>
+				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Run every component through isolated CI</H3>
 					<Paragraph>
 						Let Bit.dev build and test every new component or version in full
@@ -59,7 +59,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 					</Paragraph>
 				</div>
 				<Image alt="cloud code" src="homepage-bit/comp-build-flow.png" fullWidth />
-				<div>
+				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Keep repos synced with GitHub integrations</H3>
 					<Paragraph>
 						Automatically get GitHub PRs with all the latest component updates, to
@@ -72,7 +72,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 					fullWidth
 				/>
 
-				<div>
+				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Keep people synced with Slack integrations</H3>
 					<Paragraph>
 						Get automated Slack notifications on new components, version and

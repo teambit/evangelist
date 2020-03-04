@@ -53,12 +53,15 @@
 
 	@media (min-width: $br-sm) {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr 50px) 1fr;
 		grid-template-areas:
-			"img1 txt1"
-			"img2 txt2"
-			"img3 txt3"
-			"img4 txt4"
+			"img1	txt1"
+			".		."
+			"img2	txt2"
+			".		."
+			"img3	txt3"
+			".		."
+			"img4	txt4";
 	}
 
 	@media (min-width: $br-l) {

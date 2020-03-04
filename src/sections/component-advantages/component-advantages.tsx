@@ -26,7 +26,7 @@ export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 				colMd={12}
 				className={classNames(
 					text.center,
-					text.md.left,
+					text.sm.left,
 					fourWayGrid,
 					alignItems.center
 				)}

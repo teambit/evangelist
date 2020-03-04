@@ -40,7 +40,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 				fullWidth
 			/>
 
-			<Grid colMd={12} className={classNames(text.center, text.md.left, fourWayGrid, alignItems.center)}>
+			<Grid colMd={12} className={classNames(text.center, text.sm.left, fourWayGrid, alignItems.center)}>
 				<div>
 					<H3 size={PossibleSizes.sm}>Simple yet scalable semantic versioning.</H3>
 					<Paragraph>
