@@ -722,6 +722,52 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/pages/hybrid-homepage@0.0.4": {
+        "files": [
+            {
+                "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.module.scss",
+                "test": false,
+                "name": "hybrid-homepage.module.scss"
+            },
+            {
+                "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.tsx",
+                "test": false,
+                "name": "hybrid-homepage.tsx"
+            },
+            {
+                "relativePath": "src/pages/hybrid-homepage/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/pages/hybrid-homepage/index.ts",
+        "trackDir": "src/pages/hybrid-homepage",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/auto-docs@0.0.4": {
+        "files": [
+            {
+                "relativePath": "src/sections/auto-docs/auto-docs.module.scss",
+                "test": false,
+                "name": "auto-docs.module.scss"
+            },
+            {
+                "relativePath": "src/sections/auto-docs/auto-docs.tsx",
+                "test": false,
+                "name": "auto-docs.tsx"
+            },
+            {
+                "relativePath": "src/sections/auto-docs/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/sections/auto-docs/index.tsx",
+        "trackDir": "src/sections/auto-docs",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/sections/auto-section@0.0.12": {
         "files": [
             {
@@ -742,6 +788,29 @@
         ],
         "mainFile": "src/sections/autoSection/index.tsx",
         "trackDir": "src/sections/autoSection",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/booking-breakdown@0.0.4": {
+        "files": [
+            {
+                "relativePath": "src/sections/booking-breakdown/booking-breakdown.module.scss",
+                "test": false,
+                "name": "booking-breakdown.module.scss"
+            },
+            {
+                "relativePath": "src/sections/booking-breakdown/booking-breakdown.tsx",
+                "test": false,
+                "name": "booking-breakdown.tsx"
+            },
+            {
+                "relativePath": "src/sections/booking-breakdown/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/sections/booking-breakdown/index.ts",
+        "trackDir": "src/sections/booking-breakdown",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -814,6 +883,29 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/sections/component-advantages@0.0.4": {
+        "files": [
+            {
+                "relativePath": "src/sections/component-advantages/component-advantages.module.scss",
+                "test": false,
+                "name": "component-advantages.module.scss"
+            },
+            {
+                "relativePath": "src/sections/component-advantages/component-advantages.tsx",
+                "test": false,
+                "name": "component-advantages.tsx"
+            },
+            {
+                "relativePath": "src/sections/component-advantages/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/sections/component-advantages/index.ts",
+        "trackDir": "src/sections/component-advantages",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/sections/cta@0.0.10": {
         "files": [
             {
@@ -883,6 +975,75 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/sections/enterprise-section@0.0.4": {
+        "files": [
+            {
+                "relativePath": "src/sections/enterprise-section/enterprise-section.module.scss",
+                "test": false,
+                "name": "enterprise-section.module.scss"
+            },
+            {
+                "relativePath": "src/sections/enterprise-section/enterprise-section.tsx",
+                "test": false,
+                "name": "enterprise-section.tsx"
+            },
+            {
+                "relativePath": "src/sections/enterprise-section/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/sections/enterprise-section/index.ts",
+        "trackDir": "src/sections/enterprise-section",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/hybrid-perfect-sync@0.0.4": {
+        "files": [
+            {
+                "relativePath": "src/sections/hybrid-perfect-sync/hybrid-perfect-sync.module.scss",
+                "test": false,
+                "name": "hybrid-perfect-sync.module.scss"
+            },
+            {
+                "relativePath": "src/sections/hybrid-perfect-sync/hybrid-perfect-sync.tsx",
+                "test": false,
+                "name": "hybrid-perfect-sync.tsx"
+            },
+            {
+                "relativePath": "src/sections/hybrid-perfect-sync/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/sections/hybrid-perfect-sync/index.ts",
+        "trackDir": "src/sections/hybrid-perfect-sync",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/independent-teams@0.0.4": {
+        "files": [
+            {
+                "relativePath": "src/sections/independent-teams/independent-teams.module.scss",
+                "test": false,
+                "name": "independent-teams.module.scss"
+            },
+            {
+                "relativePath": "src/sections/independent-teams/independent-teams.tsx",
+                "test": false,
+                "name": "independent-teams.tsx"
+            },
+            {
+                "relativePath": "src/sections/independent-teams/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/sections/independent-teams/index.tsx",
+        "trackDir": "src/sections/independent-teams",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/sections/main-section@0.0.15": {
         "files": [
             {
@@ -903,6 +1064,29 @@
         ],
         "mainFile": "src/sections/mainSection/index.tsx",
         "trackDir": "src/sections/mainSection",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/reuse-landing-section@0.0.5": {
+        "files": [
+            {
+                "relativePath": "src/sections/reuse-landing-section/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            },
+            {
+                "relativePath": "src/sections/reuse-landing-section/reuse-landing-section.module.scss",
+                "test": false,
+                "name": "reuse-landing-section.module.scss"
+            },
+            {
+                "relativePath": "src/sections/reuse-landing-section/reuse-landing-section.tsx",
+                "test": false,
+                "name": "reuse-landing-section.tsx"
+            }
+        ],
+        "mainFile": "src/sections/reuse-landing-section/index.tsx",
+        "trackDir": "src/sections/reuse-landing-section",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -949,6 +1133,52 @@
         ],
         "mainFile": "src/sections/summary-cards/index.ts",
         "trackDir": "src/sections/summary-cards",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/sync-section@0.0.4": {
+        "files": [
+            {
+                "relativePath": "src/sections/sync-section/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/sections/sync-section/sync-section.module.scss",
+                "test": false,
+                "name": "sync-section.module.scss"
+            },
+            {
+                "relativePath": "src/sections/sync-section/sync-section.tsx",
+                "test": false,
+                "name": "sync-section.tsx"
+            }
+        ],
+        "mainFile": "src/sections/sync-section/index.ts",
+        "trackDir": "src/sections/sync-section",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/sections/talk-to-experts@0.0.3": {
+        "files": [
+            {
+                "relativePath": "src/sections/talk-to-experts/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/sections/talk-to-experts/talk-to-experts.module.scss",
+                "test": false,
+                "name": "talk-to-experts.module.scss"
+            },
+            {
+                "relativePath": "src/sections/talk-to-experts/talk-to-experts.tsx",
+                "test": false,
+                "name": "talk-to-experts.tsx"
+            }
+        ],
+        "mainFile": "src/sections/talk-to-experts/index.ts",
+        "trackDir": "src/sections/talk-to-experts",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -1067,236 +1297,6 @@
             }
         ],
         "mainFile": "src/themes/theme-provider/index.tsx",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/pages/hybrid-homepage@0.0.3": {
-        "files": [
-            {
-                "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.module.scss",
-                "test": false,
-                "name": "hybrid-homepage.module.scss"
-            },
-            {
-                "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.tsx",
-                "test": false,
-                "name": "hybrid-homepage.tsx"
-            },
-            {
-                "relativePath": "src/pages/hybrid-homepage/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "src/pages/hybrid-homepage/index.ts",
-        "trackDir": "src/pages/hybrid-homepage",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/sections/auto-docs@0.0.3": {
-        "files": [
-            {
-                "relativePath": "src/sections/auto-docs/auto-docs.module.scss",
-                "test": false,
-                "name": "auto-docs.module.scss"
-            },
-            {
-                "relativePath": "src/sections/auto-docs/auto-docs.tsx",
-                "test": false,
-                "name": "auto-docs.tsx"
-            },
-            {
-                "relativePath": "src/sections/auto-docs/index.tsx",
-                "test": false,
-                "name": "index.tsx"
-            }
-        ],
-        "mainFile": "src/sections/auto-docs/index.tsx",
-        "trackDir": "src/sections/auto-docs",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/sections/booking-breakdown@0.0.3": {
-        "files": [
-            {
-                "relativePath": "src/sections/booking-breakdown/booking-breakdown.module.scss",
-                "test": false,
-                "name": "booking-breakdown.module.scss"
-            },
-            {
-                "relativePath": "src/sections/booking-breakdown/booking-breakdown.tsx",
-                "test": false,
-                "name": "booking-breakdown.tsx"
-            },
-            {
-                "relativePath": "src/sections/booking-breakdown/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "src/sections/booking-breakdown/index.ts",
-        "trackDir": "src/sections/booking-breakdown",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/sections/component-advantages@0.0.3": {
-        "files": [
-            {
-                "relativePath": "src/sections/component-advantages/component-advantages.module.scss",
-                "test": false,
-                "name": "component-advantages.module.scss"
-            },
-            {
-                "relativePath": "src/sections/component-advantages/component-advantages.tsx",
-                "test": false,
-                "name": "component-advantages.tsx"
-            },
-            {
-                "relativePath": "src/sections/component-advantages/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "src/sections/component-advantages/index.ts",
-        "trackDir": "src/sections/component-advantages",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/sections/enterprise-section@0.0.3": {
-        "files": [
-            {
-                "relativePath": "src/sections/enterprise-section/enterprise-section.module.scss",
-                "test": false,
-                "name": "enterprise-section.module.scss"
-            },
-            {
-                "relativePath": "src/sections/enterprise-section/enterprise-section.tsx",
-                "test": false,
-                "name": "enterprise-section.tsx"
-            },
-            {
-                "relativePath": "src/sections/enterprise-section/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "src/sections/enterprise-section/index.ts",
-        "trackDir": "src/sections/enterprise-section",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/sections/hybrid-perfect-sync@0.0.3": {
-        "files": [
-            {
-                "relativePath": "src/sections/hybrid-perfect-sync/hybrid-perfect-sync.module.scss",
-                "test": false,
-                "name": "hybrid-perfect-sync.module.scss"
-            },
-            {
-                "relativePath": "src/sections/hybrid-perfect-sync/hybrid-perfect-sync.tsx",
-                "test": false,
-                "name": "hybrid-perfect-sync.tsx"
-            },
-            {
-                "relativePath": "src/sections/hybrid-perfect-sync/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "src/sections/hybrid-perfect-sync/index.ts",
-        "trackDir": "src/sections/hybrid-perfect-sync",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/sections/independent-teams@0.0.3": {
-        "files": [
-            {
-                "relativePath": "src/sections/independent-teams/independent-teams.module.scss",
-                "test": false,
-                "name": "independent-teams.module.scss"
-            },
-            {
-                "relativePath": "src/sections/independent-teams/independent-teams.tsx",
-                "test": false,
-                "name": "independent-teams.tsx"
-            },
-            {
-                "relativePath": "src/sections/independent-teams/index.tsx",
-                "test": false,
-                "name": "index.tsx"
-            }
-        ],
-        "mainFile": "src/sections/independent-teams/index.tsx",
-        "trackDir": "src/sections/independent-teams",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/sections/reuse-landing-section@0.0.4": {
-        "files": [
-            {
-                "relativePath": "src/sections/reuse-landing-section/index.tsx",
-                "test": false,
-                "name": "index.tsx"
-            },
-            {
-                "relativePath": "src/sections/reuse-landing-section/reuse-landing-section.module.scss",
-                "test": false,
-                "name": "reuse-landing-section.module.scss"
-            },
-            {
-                "relativePath": "src/sections/reuse-landing-section/reuse-landing-section.tsx",
-                "test": false,
-                "name": "reuse-landing-section.tsx"
-            }
-        ],
-        "mainFile": "src/sections/reuse-landing-section/index.tsx",
-        "trackDir": "src/sections/reuse-landing-section",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/sections/sync-section@0.0.3": {
-        "files": [
-            {
-                "relativePath": "src/sections/sync-section/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "src/sections/sync-section/sync-section.module.scss",
-                "test": false,
-                "name": "sync-section.module.scss"
-            },
-            {
-                "relativePath": "src/sections/sync-section/sync-section.tsx",
-                "test": false,
-                "name": "sync-section.tsx"
-            }
-        ],
-        "mainFile": "src/sections/sync-section/index.ts",
-        "trackDir": "src/sections/sync-section",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.marketing/sections/talk-to-experts@0.0.2": {
-        "files": [
-            {
-                "relativePath": "src/sections/talk-to-experts/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "src/sections/talk-to-experts/talk-to-experts.module.scss",
-                "test": false,
-                "name": "talk-to-experts.module.scss"
-            },
-            {
-                "relativePath": "src/sections/talk-to-experts/talk-to-experts.tsx",
-                "test": false,
-                "name": "talk-to-experts.tsx"
-            }
-        ],
-        "mainFile": "src/sections/talk-to-experts/index.ts",
-        "trackDir": "src/sections/talk-to-experts",
         "origin": "AUTHORED",
         "exported": true
     },
