@@ -85,7 +85,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/base/icon@0.0.4": {
+    "bit.marketing/base/icon@0.0.5": {
         "files": [
             {
                 "name": "bit-dev-icons-link.tsx",
@@ -271,7 +271,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/community-links/github-link@0.0.12": {
+    "bit.marketing/community-links/github-link@0.0.13": {
         "files": [
             {
                 "name": "github-link.module.scss",
@@ -317,7 +317,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/community-links/slack-link@0.0.6": {
+    "bit.marketing/community-links/slack-link@0.0.7": {
         "files": [
             {
                 "name": "index.ts",
@@ -340,7 +340,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/community-links/twitter-link@0.0.6": {
+    "bit.marketing/community-links/twitter-link@0.0.7": {
         "files": [
             {
                 "name": "index.ts",
@@ -470,7 +470,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/marketing-card@0.0.10": {
+    "bit.marketing/concrete/marketing-card@0.0.11": {
         "files": [
             {
                 "name": "index.tsx",
@@ -699,7 +699,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/homepage@0.0.7": {
+    "bit.marketing/pages/homepage@0.0.8": {
         "files": [
             {
                 "name": "homepage.module.scss",
@@ -722,7 +722,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.4": {
+    "bit.marketing/pages/hybrid-homepage@0.0.5": {
         "files": [
             {
                 "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.module.scss",
@@ -860,7 +860,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/community@0.0.15": {
+    "bit.marketing/sections/community@0.0.16": {
         "files": [
             {
                 "name": "community-section.module.scss",
@@ -975,7 +975,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/enterprise-section@0.0.4": {
+    "bit.marketing/sections/enterprise-section@0.0.5": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-section/enterprise-section.module.scss",
@@ -1113,7 +1113,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/summary-cards@0.0.9": {
+    "bit.marketing/sections/summary-cards@0.0.10": {
         "files": [
             {
                 "name": "index.ts",
