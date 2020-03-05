@@ -1,8 +1,8 @@
 .button {
-	border: 1px solid var(--primary-button-bg);
-	height: var(--primary-button-height);
-	background-color: var(--primary-button-bg);
-	color: var(--primary-button-text, var(--base-color));
+	border: 1px solid var(--primary-button-bg, white);
+	height: var(--primary-button-height, 46px);
+	background-color: var(--primary-button-bg, white);
+	color: var(--primary-button-text, var(--base-color, #6c5ce7));
 
 	border-radius: 5px;
 	font-size: inherit;

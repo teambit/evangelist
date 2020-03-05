@@ -1,31 +1,24 @@
 // font sizes only!
 
 .h1 {
-    // margin-bottom: 20px
-    margin-bottom: var(--h1Margin);
+    margin-bottom: var(--h1Margin, 20px);
 }
 .h2 {
-    // margin-bottom: 20px
-    margin-bottom: var(--h2Margin);
+    margin-bottom: var(--h2Margin, 20px);
 }
 .h3 {
-    // margin-bottom: 20px
-    margin-bottom: var(--h3Margin);
+    margin-bottom: var(--h3Margin, 20px);
 }
 .h4 {
-    // margin-bottom: 20px
-    margin-bottom: var(--h4Margin);
+    margin-bottom: var(--h4Margin, 8px);
 }
 .h5 {
-    // margin-bottom: 20px
-    margin-bottom: var(--h5Margin);
+    margin-bottom: var(--h5Margin, 8px);
 }
 .h6 {
-    // margin-bottom: 20px
-    margin-bottom: var(--h6Margin);
+    margin-bottom: var(--h6Margin, 8px);
 }
 .j7 {
-    // margin-bottom: 20px
-    margin-bottom: var(--h7Margin);
+    margin-bottom: var(--h7Margin, 8px);
 }
 

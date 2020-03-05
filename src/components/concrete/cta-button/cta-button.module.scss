@@ -1,10 +1,10 @@
 .ctaButton {
-	border: 1px solid var(--cta-color, var(--base-color));
-	background-color: var(--cta-color, var(--base-color));
-	color: var(--cta-button-text);
+	border: 1px solid var(--cta-color, var(--base-color, #6c5ce7));
+	background-color: var(--cta-color, var(--base-color, #6c5ce7));
+	color: var(--cta-button-text, white);
 	
 	&:hover {
-		border: 1px solid var(--cta-highlight, var(--base-highlight));
-		background-color: var(--cta-highlight, var(--base-highlight));
+		border: 1px solid var(--cta-highlight, var(--base-highlight, #5d4aec));
+		background-color: var(--cta-highlight, var(--base-highlight, #5d4aec));
 	}
 }

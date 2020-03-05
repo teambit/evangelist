@@ -1,6 +1,6 @@
 .slackLink {
-	background-color: var(--slack-bg);
-	color: var(--brand-text);
+	background-color: var(--slack-bg, #4a154b);
+	color: var(--brand-text, white);
 }
 
 .icon {

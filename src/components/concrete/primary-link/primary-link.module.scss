@@ -1,7 +1,7 @@
 .primaryLink {
-	color: var(--primary-link-color, var(--base-color));
+	color: var(--primary-link-color, var(--base-color, #6c5ce7));
 	
 	&:hover {
-		color: var(--primary-link-highlight, var(--base-highlight));
+		color: var(--primary-link-highlight, var(--base-highlight, #5d4aec));
 	}
 }

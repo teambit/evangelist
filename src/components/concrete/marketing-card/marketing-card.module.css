@@ -6,18 +6,18 @@
 
 .ctaLink {
     text-decoration: none;
-    color: var(--marketingTemplateAccent);
+    color: var(--marketingTemplateAccent, #6c5ce7);
     position: absolute;
     bottom: 30px;
 }
 
 .ctaLabel {
-    background-color: var(--marketingTemplateAccent);
+    background-color: var(--marketingTemplateAccent, #6c5ce7);
     margin-bottom: 20px;
 }
 
 .icon {
-    color: var(--marketingTemplateAccent);
+    color: var(--marketingTemplateAccent, #6c5ce7);
     font-size: 12px;
 }
 

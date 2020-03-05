@@ -1,6 +1,6 @@
 .twitterLink {
-	background-color: var(--twitter-bg);
-	color: var(--brand-text);
+	background-color: var(--twitter-bg, #1da1f2);
+	color: var(--brand-text, white);
 }
 
 .icon {

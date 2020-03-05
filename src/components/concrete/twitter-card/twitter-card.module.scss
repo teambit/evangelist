@@ -1,7 +1,7 @@
 .twitterCard {
 	display: flex;
 	border-radius: 6px;
-	background-color: var(--bg-color);
+	background-color: var(--bg-color, white);
 	justify-content: flex-start;
 	align-items: center;
 	text-align: start;
@@ -15,7 +15,7 @@
 	width: 80px;
 	margin-right: 16px;
 	
-	border: 1px solid var(--border-color)
+	border: 1px solid var(--border-color, #ededed)
 }
 
 .title {

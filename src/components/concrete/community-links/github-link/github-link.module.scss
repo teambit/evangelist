@@ -1,6 +1,6 @@
 .githubLink {
-	background-color: var(--github-bg);
-	color: var(--brand-text);
+	background-color: var(--github-bg, #2b2b2b);
+	color: var(--brand-text, white);
 }
 
 .star {
