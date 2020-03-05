@@ -699,7 +699,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/homepage@0.0.9": {
+    "bit.marketing/pages/homepage@0.0.10": {
         "files": [
             {
                 "name": "homepage.module.scss",
@@ -722,7 +722,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.6": {
+    "bit.marketing/pages/hybrid-homepage@0.0.7": {
         "files": [
             {
                 "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.module.scss",
@@ -837,7 +837,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/carousel-section@0.0.4": {
+    "bit.marketing/sections/carousel-section@0.0.5": {
         "files": [
             {
                 "name": "carouselSection.module.scss",
