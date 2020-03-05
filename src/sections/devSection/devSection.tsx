@@ -12,6 +12,7 @@ import { Grid } from '../../components/layout/grid-component';
 
 import styles from './devSection.module.scss';
 import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
+import { textColumn } from '../../components/layout/grid';
 // TODO - use label color through class instead of accentColor
 
 export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
@@ -24,15 +25,18 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 			data-bit-id="devSection"
 		>
 			<Label className={classNames(styles.ctaLabel, marginCenter)}>Develop</Label>
-			<H2 size={PossibleSizes.md} className={'col12'}>
-				Develop components in simple decoupled codebases
-			</H2>
-			<Paragraph size={PossibleSizes.xl} className={classNames(styles.margin)}>
-				Split the development of your frontend applications into components. Decouple
-				team codebases by giving each the power to build, test, integrate and deploy
-				components. Make it easier to maintain each codebase, reduce complexity and
-				deliver faster.
-			</Paragraph>
+			<div className={classNames(textColumn, marginCenter)}>
+				<H2 size={PossibleSizes.md} className={'col12'}>
+					Develop components in simple decoupled codebases
+				</H2>
+				<Paragraph size={PossibleSizes.xl} className={classNames(styles.margin)}>
+					Split the development of your frontend applications into components.
+					Decouple team codebases by giving each the power to build, test, integrate
+					and deploy components. Make it easier to maintain each codebase, reduce
+					complexity and deliver faster.
+				</Paragraph>
+			</div>
+
 			<Image
 				alt="bit"
 				src="homepage-bit/2-build.png"
@@ -40,7 +44,15 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 				fullWidth
 			/>
 
-			<Grid colMd={12} className={classNames(text.center, text.sm.left, fourWayGrid, alignItems.center)}>
+			<Grid
+				colMd={12}
+				className={classNames(
+					text.center,
+					text.sm.left,
+					fourWayGrid,
+					alignItems.center
+				)}
+			>
 				<div>
 					<H3 size={PossibleSizes.sm}>Simple yet scalable semantic versioning.</H3>
 					<Paragraph>

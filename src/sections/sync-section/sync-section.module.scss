@@ -1,5 +1,9 @@
 @import '../../components/layout/_breakpoints.scss';
 
+.title {
+	margin-bottom: 80px;
+}
+
 .text {
 	@media screen and (min-width: $br-l) {
 		width: 80%;

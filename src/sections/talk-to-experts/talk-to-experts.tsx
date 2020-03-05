@@ -7,7 +7,7 @@ import { H2 } from '../../components/concrete/heading';
 import { PossibleSizes } from '../../constants/sizes';
 import { CtaButton } from '../../components/concrete/cta-button';
 import { Paragraph } from '../../components/base/paragraph';
-import { justifyItems, alignItems } from '../../components/layout/align';
+import { justifyItems, alignItems, text } from '../../components/layout/align';
 import { PrimaryLink } from '../../components/concrete/primary-link';
 
 export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
@@ -18,7 +18,9 @@ export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 				props.className,
 				styles.talkToExperts,
 				justifyItems.center,
-				alignItems.center
+				alignItems.center,
+				text.center,
+				text.sm.left
 			)}
 			data-bit-id="sections/talk-to-experts"
 		>

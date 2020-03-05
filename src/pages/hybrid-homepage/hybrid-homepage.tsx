@@ -20,12 +20,14 @@ import { TalkToExperts } from '../../sections/talk-to-experts';
 
 interface HybridHomepageProps extends HTMLAttributes<HTMLDivElement> {
 	communityCollections?: ReactNode;
+	mainCta?: ReactNode;
+	githubStars?: number;
 }
 
 export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 	render() {
-		const { communityCollections = null, ...rest} = this.props;
-		
+		const { communityCollections = null, mainCta, githubStars, ...rest } = this.props;
+
 		return (
 			<div {...rest}>
 				<div
@@ -37,12 +39,13 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 				>
 					<ReuseLandingSection
 						className={classNames(styles.landingSection, centerColumn)}
+						mainCta={mainCta}
 					/>
 
 					{communityCollections}
 				</div>
 
-				<EnterpriseSection className={classNames(centerColumn, styles.margin80)} />
+				<EnterpriseSection className={classNames(centerColumn, styles.margin130)} />
 
 				<CarouselSection className={styles.margin80} />
 
@@ -82,7 +85,7 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 					<IndependentTeams
 						className={classNames(
 							centerColumn,
-							styles.topSpace180,
+							styles.topSpace130,
 							styles.margin80
 						)}
 					/>
@@ -90,6 +93,7 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 
 				<CommunitySection
 					className={classNames(centerColumn, styles.topSpace130, styles.margin130)}
+					githubStars={githubStars}
 				/>
 
 				<CtaSection className={classNames(centerColumn, styles.margin130)} />

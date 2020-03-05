@@ -11,8 +11,9 @@ import { Paragraph } from '../../components/base/paragraph';
 
 import { H2, H3 } from '../../components/concrete/heading';
 
-import { text, alignItems } from '../../components/layout/align';
+import { text, alignItems, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
+import { textColumn } from '../../components/layout/grid';
 
 export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -21,13 +22,16 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 			className={classNames(props.className, text.center)}
 			data-bit-id="sections/hybrid-perfect-syncs"
 		>
-			<H2 size={PossibleSizes.sm}>Keep apps and teams in perfect sync.</H2>
+			<div className={classNames(textColumn, marginCenter)}>
+				<H2 size={PossibleSizes.sm}>Keep apps and teams in perfect sync.</H2>
 
-			<Paragraph size={PossibleSizes.lg} className={styles.subtitle}>
-				Bit helps your team collaborate to make sure every application and every
-				teammate can effortlessly get and adopt the latest updates. And, it integrates
-				with tools you love like GitHub and Slack to keep everyone in perfect sync.
-			</Paragraph>
+				<Paragraph size={PossibleSizes.lg} className={styles.subtitle}>
+					Bit helps your team collaborate to make sure every application and every
+					teammate can effortlessly get and adopt the latest updates. And, it
+					integrates with tools you love like GitHub and Slack to keep everyone in
+					perfect sync.
+				</Paragraph>
+			</div>
 
 			<Grid
 				colMd={12}
@@ -45,11 +49,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 						meaningful updates only for components you use in your apps.
 					</Paragraph>
 				</div>
-				<Image
-					alt="multi packagers"
-					src="homepage-bit/example-010.png"
-					fullWidth
-				/>
+				<Image alt="multi packagers" src="homepage-bit/example-010.png" fullWidth />
 
 				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Run every component through isolated CI</H3>

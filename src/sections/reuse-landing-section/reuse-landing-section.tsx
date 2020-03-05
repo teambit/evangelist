@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 import { PossibleSizes } from '../../constants/sizes';
 
@@ -24,32 +24,47 @@ const iconsArray = [
 	'logo-js',
 ];
 
-export function ReuseLandingSection(props: HTMLAttributes<HTMLDivElement>) {
+interface ReuseLandingProps extends HTMLAttributes<HTMLDivElement> {
+	mainCta?: ReactNode;
+}
+
+export function ReuseLandingSection(props: ReuseLandingProps) {
+	const { mainCta = null, ...rest } = props;
+	
 	return (
 		<div
-			{...props}
+			{...rest}
 			className={classNames(styles.reuseLandingSection, text.center, props.className)}
 			data-bit-id="sections/reuse-landing-section"
 		>
-			<H1 size={PossibleSizes.sm} className={styles.headline}>
-				The reusable component ecosystem <br />
-				for modern applications
-			</H1>
-			<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
-				Bit is a scalable and collaborative way to reuse components. It’s everything you{' '}
-				<br />
-				need from local development to cross-project collaboration. Try it for free.
-			</Paragraph>
-			<Paragraph size={PossibleSizes.sm} element="div" className={classNames(styles.buttons)}>				
-				<PrimaryLink href="https://bit.dev/signup">
-					<CtaButton elevation="medium">Reuse your components</CtaButton>
-				</PrimaryLink>
-				<div className={styles.spacer} />
-				<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">
-					<PrimaryButton elevation="medium">Learn more</PrimaryButton>
-				</PrimaryLink>
-			</Paragraph>
-			<IconLine icons={iconsArray} className={marginCenter} />
+			<div>
+				<H1 size={PossibleSizes.sm} className={styles.headline}>
+					The reusable component ecosystem <br />
+					for modern applications
+				</H1>
+				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
+					Bit is a scalable and collaborative way to reuse components. It’s everything
+					you <br />
+					need from local development to cross-project collaboration. Try it for free.
+				</Paragraph>
+				<Paragraph
+					size={PossibleSizes.sm}
+					element="div"
+					className={classNames(styles.buttons)}
+				>
+					<PrimaryLink href="https://bit.dev/signup">
+						<CtaButton elevation="medium">Reuse your components</CtaButton>
+					</PrimaryLink>
+					<div className={styles.spacer} />
+					<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">
+						<PrimaryButton elevation="medium">Learn more</PrimaryButton>
+					</PrimaryLink>
+				</Paragraph>
+				<IconLine icons={iconsArray} className={marginCenter} />
+			</div>
+			<div>
+				{mainCta}
+			</div>
 		</div>
 	);
 }

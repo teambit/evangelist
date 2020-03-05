@@ -9,7 +9,8 @@ import { H2, H5 } from '../../components/concrete/heading';
 import { Image } from '../../components/concrete/image';
 
 import { Grid } from '../../components/layout/grid-component';
-import { text } from '../../components/layout/align';
+import { text, marginCenter } from '../../components/layout/align';
+import { textColumn } from '../../components/layout/grid';
 
 export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -18,13 +19,15 @@ export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 			className={classNames(props.className)}
 			data-bit-id="sections/independent-teams"
 		>
-			<H2 size={PossibleSizes.sm} className={text.center}>
-				Scale for independent teams building together.
-			</H2>
-			<Paragraph className={classNames(text.center, styles.subtitle)}>
-				Create a truly scalable infrastructure for every team to build and integrate
-				components. Empower teams to independently deliver while building together.
-			</Paragraph>
+			<div className={classNames(textColumn, marginCenter)}>
+				<H2 size={PossibleSizes.sm} className={text.center}>
+					Scale for independent teams building together.
+				</H2>
+				<Paragraph className={classNames(text.center, styles.subtitle)}>
+					Create a truly scalable infrastructure for every team to build and integrate
+					components. Empower teams to independently deliver while building together.
+				</Paragraph>
+			</div>
 
 			<Image
 				alt="teams breakdown"
@@ -33,7 +36,7 @@ export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 				className={styles.mainImage}
 			/>
 
-			<Grid colL={3} className={text.left}>
+			<Grid colL={3} className={classNames(text.left, styles.benefitsGrid)}>
 				<div className={styles.benefit}>
 					<H5 size={PossibleSizes.xxs}>Own your components.</H5>
 					<Paragraph>

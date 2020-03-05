@@ -11,8 +11,9 @@ import { Paragraph } from '../../components/base/paragraph';
 
 import { H2, H3 } from '../../components/concrete/heading';
 
-import { text, alignItems } from '../../components/layout/align';
+import { text, alignItems, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
+import { textColumn } from '../../components/layout/grid';
 
 export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -21,11 +22,14 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 			className={classNames(props.className, text.center)}
 			data-bit-id="sections/sync-section"
 		>
-			<H2 size={PossibleSizes.sm}>
-				Reuse any component off the cloud.
-				<br />
-				Package or code, it’s your choice.
-			</H2>
+			<div className={classNames(textColumn, marginCenter)}>
+				<H2 size={PossibleSizes.sm} className={styles.title}>
+					Reuse any component off the cloud.
+					<br />
+					Package or code, it’s your choice.
+				</H2>
+			</div>
+
 			<Grid
 				colMd={12}
 				className={classNames(

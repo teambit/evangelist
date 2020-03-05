@@ -8,7 +8,7 @@ import { PossibleSizes } from '../../constants/sizes';
 import { CtaButton } from '../../components/concrete/cta-button';
 import { Paragraph } from '../../components/base/paragraph';
 import { Grid } from '../../components/layout/grid-component';
-import { justifyItems, alignItems } from '../../components/layout/align';
+import { justifyItems, alignItems, text } from '../../components/layout/align';
 import { PrimaryLink } from '../../components/concrete/community-links/primary-link';
 
 //don't abuse!! fork this component if you need to much customizations
@@ -28,7 +28,9 @@ export function CtaSection(props: CtaProps) {
 				props.className,
 				styles.ctaSection,
 				justifyItems.center,
-				alignItems.center
+				alignItems.center,
+				text.center,
+				text.sm.left
 			)}
 			data-bit-id="ctaSection"
 		>

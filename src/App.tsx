@@ -1,4 +1,4 @@
-import React, { PureComponent, /* CSSProperties */ } from 'react';
+import React, { PureComponent /* CSSProperties */ } from 'react';
 import 'reset-css';
 import './App.css';
 
@@ -8,9 +8,9 @@ import { Theme } from './themes/theme-provider';
 
 import { EmbedIconSet } from './components/concrete/icon';
 
-import { Homepage } from './pages/homepage';
-import { ReusePage } from './pages/reuse';
-import { HybridHomage } from './pages/hybrid-homepage';
+// import { Homepage } from './pages/homepage';
+// import { ReusePage } from './pages/reuse';
+import { HybridHomepage } from './pages/hybrid-homepage';
 
 class App extends PureComponent {
 	// componentDidMount() {
@@ -20,8 +20,7 @@ class App extends PureComponent {
 		return (
 			<Theme>
 				<EmbedIconSet query="aqq93z" />
-				<HybridHomage />
-				{/* <Homepage/> */}
+				<HybridHomepage githubStars={10000} />
 			</Theme>
 		);
 	}

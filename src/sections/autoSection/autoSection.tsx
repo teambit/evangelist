@@ -5,10 +5,11 @@ import { Paragraph } from '../../components/base/paragraph';
 
 import { PossibleSizes } from '../../constants/sizes';
 import { H2, H5 } from '../../components/concrete/heading';
-import { text } from '../../components/layout/align';
+import { text, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
 import styles from './autoSection.module.scss';
+import { textColumn } from '../../components/layout/grid';
 
 export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -17,17 +18,19 @@ export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 			className={classNames(styles.autoSection, text.center, props.className)}
 			data-bit-id="autoSection"
 		>
-			<H2 size={PossibleSizes.md}>Empower autonomous teams to build together</H2>
-			<Paragraph>
-				Empower teams to own, build and deliver frontends end-to-end….
-			</Paragraph>
+			<div className={classNames(textColumn, marginCenter)}>
+				<H2 size={PossibleSizes.md}>Empower autonomous teams to build together</H2>
+				<Paragraph>
+					Empower teams to own, build and deliver frontends end-to-end….
+				</Paragraph>
 
-			<Image
-				src="homepage-bit/3-empower.png"
-				className={classNames(styles.centerImage)}
-				alt="illustration"
-				fullWidth
-			/>
+				<Image
+					src="homepage-bit/3-empower.png"
+					className={classNames(styles.centerImage)}
+					alt="illustration"
+					fullWidth
+				/>
+			</div>
 
 			<Grid colL={3} className={text.left}>
 				<div>

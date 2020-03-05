@@ -7,7 +7,7 @@
 		"it2"
 		"im2";
 
-	:first-child {
+	:nth-child(1) {
 		grid-area: it1;
 	}
 
@@ -28,8 +28,8 @@
 			"it1 it1 it1 it1 it1 it1 im1 im1 im1 im1 im1 im1"
 			"im2 im2 im2 im2 im2 im2 it2 it2 it2 it2 it2 it2";
 
-		grid-row-gap: 50px;
-		margin-bottom: 50px;
+		grid-row-gap: 80px;
+		margin-bottom: 80px;
 	}
 
 	@media (min-width: $br-lg-new) {
@@ -37,7 +37,7 @@
 			"it1 it1 it1 it1 it1 im1 im1 im1 im1 im1 im1 im1"
 			"im2 im2 im2 im2 im2 im2 im2 it2 it2 it2 it2 it2";
 
-		grid-row-gap: 50px;
-		margin-bottom: 50px;
+		grid-row-gap: 80px;
+		margin-bottom: 80px;
 	}
 }

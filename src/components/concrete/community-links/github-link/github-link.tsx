@@ -7,62 +7,23 @@ import { PrimaryLink } from '../primary-link';
 import { Icon } from '../../icon';
 import { Image } from '../../image';
 import styles from './github-link.module.scss';
+import { CommunityLinkProps } from '../../../base/community-link/community-link';
 
-const ENABLE_STAR_COUNT = true;
+// const ENABLE_STAR_COUNT = true;
 
 /**
  * concrete community link component - pill flavor for base link component
  */
-export type GithubLinkProps = {
-	/**
-	 * override className for styling
-	 */
-	className?: string;
-	/**
-	 * the link to refer to
-	 */
-	href: string;
-} & React.HTMLAttributes<HTMLAnchorElement>;
-
-type GithubLinkState = {
+export interface GithubLinkProps extends CommunityLinkProps {
 	starCount?: number;
-};
+}
 
-type StarsResponse = {
-	code?: number;
-	message?: string;
-	payload?: {
-		stars?: number;
-	};
-	//hope this is the correct Response
-} & Response;
-
-export class GithubLink extends PureComponent<GithubLinkProps, GithubLinkState> {
-	state: GithubLinkState = {
-		starCount: undefined,
-	};
-
-	componentDidMount() {
-		if (ENABLE_STAR_COUNT) {
-			fetch('https://api.bit.dev/social/stars')
-				.then((starsData: StarsResponse) => {
-					if (!starsData || !starsData.payload || !starsData.payload.stars) return;
-
-					this.setState({ starCount: starsData.payload.stars });
-				})
-				.catch(e => {
-					this.setState({ starCount: undefined });
-				});
-		}
-	}
-
+export class GithubLink extends PureComponent<GithubLinkProps> {
 	render() {
-		const { className, href, ...rest } = this.props;
-		const { starCount } = this.state;
+		const { className, starCount, ...rest } = this.props;
 
 		return (
 			<PrimaryLink
-				href={href}
 				{...rest}
 				className={classNames(styles.githubLink, className)}
 				data-bit-id="githubLink"

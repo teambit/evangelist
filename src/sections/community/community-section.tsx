@@ -11,30 +11,40 @@ import { TwitterLink } from '../../components/concrete/community-links/twitter-l
 import { TwitterCard } from '../../components/concrete/twitter-card';
 import { Paragraph } from '../../components/base/paragraph';
 import { Grid } from '../../components/layout/grid-component';
-import { alignItems } from '../../components/layout/align';
+import { alignItems, marginCenter } from '../../components/layout/align';
+import { textColumn } from '../../components/layout/grid';
 
-export function CommunitySection(props: React.HTMLAttributes<HTMLDivElement>) {
+interface CommunitySectionProps extends React.HTMLAttributes<HTMLDivElement> {
+	githubStars?: number;
+}
+
+export function CommunitySection(props: CommunitySectionProps) {
+	const { githubStars, ...rest } = props;
+
 	return (
 		<Grid
-			{...props}
+			{...rest}
 			colL={2}
 			className={classnames(props.className, styles.communitySection, alignItems.center)}
 			data-bit-id="communitySection"
 		>
 			<div className={styles.cta}>
-				<H2 className={styles.title} size={PossibleSizes.sm}>
-					Join the community!
-				</H2>
-				<Paragraph className={styles.text} size={PossibleSizes.md}>
-					Join over 100,000 developers in the Bit community to share, discover and
-					collaborate over frontend building blocks. Share your components with the
-					world to get usage, feedback and contributions from people around the world.
-				</Paragraph>
+				<div className={classnames(textColumn, marginCenter)}>
+					<H2 className={styles.title} size={PossibleSizes.sm}>
+						Join the community!
+					</H2>
+					<Paragraph className={styles.text} size={PossibleSizes.md}>
+						Join over 100,000 developers in the Bit community to share, discover and
+						collaborate over frontend building blocks. Share your components with
+						the world to get usage, feedback and contributions from people around
+						the world.
+					</Paragraph>
 
-				<div className={styles.links}>
-					<GithubLink href={links.github} />
-					<SlackLink href={links.slack} />
-					<TwitterLink href={links.twitter} />
+					<div className={styles.links}>
+						<GithubLink href={links.github} starCount={githubStars} />
+						<SlackLink href={links.slack} />
+						<TwitterLink href={links.twitter} />
+					</div>
 				</div>
 			</div>
 
