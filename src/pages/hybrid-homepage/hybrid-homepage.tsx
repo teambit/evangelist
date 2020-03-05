@@ -33,11 +33,10 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 						From the community
 						{/* components carousel.. */}
 					</div>
-				</div>
 
 				<EnterpriseSection className={classNames(centerColumn, styles.margin80)} />
 
-				<CarouselSection />
+				<CarouselSection className={styles.margin80} />
 
 				<div className={styles.uEllipse}></div>
 

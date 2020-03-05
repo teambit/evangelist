@@ -26,7 +26,7 @@
   "dependencies": {
     "@bit/bit.gui.atoms.base-icon": "^0.0.3",
     "@bit/bit.gui.base.button": "^0.0.8",
-    "@bit/bit.web.components.comment-carousel": "^0.0.10",
+    "@bit/bit.web.components.comment-carousel": "^0.1.0",
     "@bit/bit.web.config.links": "^0.0.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
