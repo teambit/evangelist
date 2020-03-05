@@ -1,4 +1,4 @@
-import React, { PureComponent, HTMLAttributes } from 'react';
+import React, { PureComponent, HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
 import styles from './hybrid-homepage.module.scss';
@@ -18,21 +18,29 @@ import { AutoDocs } from '../../sections/auto-docs';
 import { IndependentTeams } from '../../sections/independent-teams';
 import { TalkToExperts } from '../../sections/talk-to-experts';
 
-type HybridHomepageProps = HTMLAttributes<HTMLDivElement>;
+interface HybridHomepageProps extends HTMLAttributes<HTMLDivElement> {
+	communityCollections?: ReactNode;
+}
 
 export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 	render() {
+		const { communityCollections = null, ...rest} = this.props;
+		
 		return (
-			<div {...this.props}>
-				<div className={classNames(styles.purpleBackground, styles.purpleFold, styles.margin80)}>
+			<div {...rest}>
+				<div
+					className={classNames(
+						styles.purpleBackground,
+						styles.purpleFold,
+						styles.margin180
+					)}
+				>
 					<ReuseLandingSection
 						className={classNames(styles.landingSection, centerColumn)}
 					/>
 
-					<div className={classNames(centerColumn, styles.padding80)}>
-						From the community
-						{/* components carousel.. */}
-					</div>
+					{communityCollections}
+				</div>
 
 				<EnterpriseSection className={classNames(centerColumn, styles.margin80)} />
 
@@ -40,7 +48,13 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 
 				<div className={styles.uEllipse}></div>
 
-				<div className={classNames(styles.greyBackground, styles.topSpace180, styles.margin180)}>
+				<div
+					className={classNames(
+						styles.greyBackground,
+						styles.topSpace180,
+						styles.margin180
+					)}
+				>
 					<BookingBreakdown className={classNames(centerColumn, styles.margin130)} />
 
 					<ComponentsAdvantages
@@ -53,13 +67,25 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 				<TalkToExperts className={classNames(centerColumn, styles.margin80)} />
 
 				<div className={classNames(styles.greyBackground)}>
-					<HybridPerfectSync className={classNames(centerColumn, styles.topSpace180, styles.margin130)} />
+					<HybridPerfectSync
+						className={classNames(
+							centerColumn,
+							styles.topSpace180,
+							styles.margin130
+						)}
+					/>
 				</div>
 
 				<AutoDocs className={classNames(centerColumn, styles.topSpace130)} />
 
 				<div className={classNames(styles.greyBackground)}>
-					<IndependentTeams className={classNames(centerColumn, styles.topSpace180, styles.margin80)} />
+					<IndependentTeams
+						className={classNames(
+							centerColumn,
+							styles.topSpace180,
+							styles.margin80
+						)}
+					/>
 				</div>
 
 				<CommunitySection

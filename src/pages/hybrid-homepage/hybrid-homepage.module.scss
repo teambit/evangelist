@@ -3,11 +3,13 @@
 
 //backgrounds:
 .purpleBackground {
-	background-image: url($staticStorageUrl + '/homepage-bit/backgrounds/01-purple-gradient.svg');
 	color: white;
+	background-image: url($staticStorageUrl + '/homepage-bit/backgrounds/01-purple-gradient.svg');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: 200% 100%;
+	
+	padding-bottom: 180px;
 
 	@media (min-width: $br-md) {
 		background-size: 100% 100%;
