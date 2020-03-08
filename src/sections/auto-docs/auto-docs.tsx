@@ -10,7 +10,7 @@ import { H2, H3 } from '../../components/concrete/heading';
 import { Image } from '../../components/concrete/image';
 
 import { Grid } from '../../components/layout/grid-component';
-import { zGrid } from '../../components/layout/grid-definition/z-grid';
+import { zGrid, halfZGrid } from '../../components/layout/grid-definition/z-grid';
 import { text, alignItems, marginCenter } from '../../components/layout/align';
 import { textColumn } from '../../components/layout/grid';
 
@@ -59,7 +59,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 				<Image src="homepage-bit/button-docs.png" alt="generated docs" fullWidth />
 			</Grid>
-			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center, styles.singleGrid)}>
+			<Grid colMd={12} className={classNames(text.left, halfZGrid, alignItems.center, styles.singleGrid)}>
 				<div>
 					<H3 size={PossibleSizes.xs}>Play with examples hands-on</H3>
 					<Paragraph>

@@ -54,9 +54,9 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Per-component propagating CI.</H3>
 					<Paragraph>
-						{/* TODO! get final texts */}
-						Let Bit.dev build and test every new component or version in full
-						isolation to ensure it’s safe to use and integrate.
+						Enjoy bulletproof updates with per-component CI that runs every
+						component in full isolation. And, it propagates to dependent components,
+						impacted by every change.
 					</Paragraph>
 				</div>
 				<Image alt="cloud code" src="homepage-bit/comp-build-flow.png" fullWidth />
