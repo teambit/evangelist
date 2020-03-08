@@ -41,7 +41,7 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 			<div>
 				<div className={classNames(textColumn, marginCenter)}>
 					<H1 size={PossibleSizes.sm} className={styles.headline}>
-						Build better UI through indepdenent components.
+						Build better UI through indepdenent components
 					</H1>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 						Bit is a better way to build and scale frontend applications through independent components.
