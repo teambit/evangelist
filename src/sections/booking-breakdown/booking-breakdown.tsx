@@ -16,15 +16,11 @@ export function BookingBreakdown(props: HTMLAttributes<HTMLDivElement>) {
 		<div {...props} data-bit-id="sections/booking-breakdown">
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>
-					Enjoy the most advanced tools to develop reusable components.
+					Enjoy the best tools to build and distribute components.
 				</H2>
-				<Paragraph
-					size={PossibleSizes.lg}
-					className={classNames(styles.subtitle)}
-				>
-					Bit’s popular open-source tools give you a powerful experience for
-					developing truly reusable components, that your team can use and build
-					anywhere. Take a look.
+				<Paragraph size={PossibleSizes.lg} className={classNames(styles.subtitle)}>
+					Bit provides the most powerful tools and experience to develop, build, test,
+					version and export truly reusable components. And, it makes it more fun.
 				</Paragraph>
 			</div>
 			<Image alt="bit" src="homepage-bit/2-build.png" fullWidth />

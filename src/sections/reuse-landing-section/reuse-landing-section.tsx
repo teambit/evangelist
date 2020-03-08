@@ -14,6 +14,7 @@ import { text, marginCenter } from '../../components/layout/align';
 import styles from './reuse-landing-section.module.scss';
 import { IconLine } from '../../components/concrete/icon-line';
 import { PrimaryLink } from '../../components/concrete/primary-link';
+import { textColumn } from '../../components/layout/grid';
 
 const iconsArray = [
 	'logo-react',
@@ -30,7 +31,7 @@ interface ReuseLandingProps extends HTMLAttributes<HTMLDivElement> {
 
 export function ReuseLandingSection(props: ReuseLandingProps) {
 	const { mainCta = null, ...rest } = props;
-	
+
 	return (
 		<div
 			{...rest}
@@ -38,15 +39,19 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 			data-bit-id="sections/reuse-landing-section"
 		>
 			<div>
-				<H1 size={PossibleSizes.sm} className={styles.headline}>
-					The reusable component ecosystem <br />
-					for modern applications
-				</H1>
-				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
-					Bit is a scalable and collaborative way to reuse components. It’s everything
-					you <br />
-					need from local development to cross-project collaboration. Try it for free.
-				</Paragraph>
+				<div className={classNames(textColumn, marginCenter)}>
+					<H1 size={PossibleSizes.sm} className={styles.headline}>
+						A better way to reuse components.
+						<br />
+						Scalable and collaborative
+					</H1>
+					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
+						Bit is a scalable and collaborative way to reuse components. It’s
+						everything you need from local development to cross-project
+						collaboration. Try it for free.
+					</Paragraph>
+				</div>
+
 				<Paragraph
 					size={PossibleSizes.sm}
 					element="div"
@@ -62,9 +67,7 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 				</Paragraph>
 				<IconLine icons={iconsArray} className={marginCenter} />
 			</div>
-			<div>
-				{mainCta}
-			</div>
+			<div>{mainCta}</div>
 		</div>
 	);
 }

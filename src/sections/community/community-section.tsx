@@ -31,13 +31,13 @@ export function CommunitySection(props: CommunitySectionProps) {
 			<div className={styles.cta}>
 				<div className={classnames(textColumn, marginCenter)}>
 					<H2 className={styles.title} size={PossibleSizes.sm}>
-						Join the community!
+						Join the community
 					</H2>
 					<Paragraph className={styles.text} size={PossibleSizes.md}>
-						Join over 100,000 developers in the Bit community to share, discover and
-						collaborate over frontend building blocks. Share your components with
-						the world to get usage, feedback and contributions from people around
-						the world.
+						Join over 100,000 developers around the world to share and build
+						components together. Bit is home to the world’s largest component
+						community in the world with over 60,000 open-source components and
+						growing. Come join us.
 					</Paragraph>
 
 					<div className={styles.links}>

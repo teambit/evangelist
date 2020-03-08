@@ -27,9 +27,8 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 
 				<Paragraph size={PossibleSizes.lg} className={styles.subtitle}>
 					Bit helps your team collaborate to make sure every application and every
-					teammate can effortlessly get and adopt the latest updates. And, it
-					integrates with tools you love like GitHub and Slack to keep everyone in
-					perfect sync.
+					teammate is always in sync and always up to date. And, it integrates to the
+					tools you love.
 				</Paragraph>
 			</div>
 
@@ -43,17 +42,19 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				)}
 			>
 				<div className={styles.text}>
-					<H3 size={PossibleSizes.xs}>Get frequent relevant updates</H3>
+					<H3 size={PossibleSizes.xs}>Focused relevant updates.</H3>
 					<Paragraph>
-						No more bloated or irrelevant updates. Constantly get focused and
-						meaningful updates only for components you use in your apps.
+						No more bloated or irrelevant library updates. Constantly get and
+						deliver meaningful updates for components you actually use in your apps,
+						nothing else.
 					</Paragraph>
 				</div>
 				<Image alt="multi packagers" src="homepage-bit/example-010.png" fullWidth />
 
 				<div className={styles.text}>
-					<H3 size={PossibleSizes.xs}>Run every component through isolated CI</H3>
+					<H3 size={PossibleSizes.xs}>Per-component propagating CI.</H3>
 					<Paragraph>
+						{/* TODO! get final texts */}
 						Let Bit.dev build and test every new component or version in full
 						isolation to ensure it’s safe to use and integrate.
 					</Paragraph>
@@ -62,8 +63,9 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Keep repos synced with GitHub integrations</H3>
 					<Paragraph>
-						Automatically get GitHub PRs with all the latest component updates, to
-						all your repos. Make sure all your projects are always in sync.
+						Connect your team to GitHub to get automatic PRs for every new component
+						update. Effortlessly keep every project in perfect sync, and learn who
+						adopted what and where.
 					</Paragraph>
 				</div>
 				<Image
@@ -75,8 +77,9 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Keep people synced with Slack integrations</H3>
 					<Paragraph>
-						Get automated Slack notifications on new components, version and
-						updates. Make it easy for everyone on your team to stay synced.
+						Connect your team to Slack to get automatic updates on important stuff
+						like new component versions. Create relevant discussions with instant
+						feedback.
 					</Paragraph>
 				</div>
 				<Image

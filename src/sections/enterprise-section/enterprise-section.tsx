@@ -30,18 +30,15 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 			>
 				<div className={colSpanMd[7]}>
 					<H2 size={PossibleSizes.sm}>
-						Get your own enterprise-grade component cloud.
+						Enjoy your enterprise-grade component cloud.
 					</H2>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
-						Empower your team with one hub to reuse and collaborate on all your
-						components. Enjoy the most scalable, collaborative system for reusable
-						components. Try it for free.
+						Meet the component cloud: where your team can host, share and
+						collaborate on all your components in one place. It’s everything you
+						need and more. Try it for free.
 					</Paragraph>
 					<Paragraph size={PossibleSizes.sm}>
-						<PrimaryLink
-							className={styles.ctaLink}
-							href="https://bit.dev/pricing"
-						>
+						<PrimaryLink className={styles.ctaLink} href="https://bit.dev/pricing">
 							See plans and pricing
 							<Icon of="right_arrow" className={styles.linkArrow} />
 						</PrimaryLink>
@@ -65,7 +62,7 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 					/>
 					<H4 size={PossibleSizes.xxs}>Private and secured</H4>
 					<Paragraph>
-						Keep your code private and secured with highest standards.
+						Keep your code private and secured with the highest standards.
 					</Paragraph>
 				</div>
 
@@ -77,7 +74,7 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 					/>
 					<H4 size={PossibleSizes.xxs}>Zero setup overhead</H4>
 					<Paragraph>
-						Create a cloud workspace in seconds and start exporting.
+						Create a cloud workspace in seconds and start working.
 					</Paragraph>
 				</div>
 
@@ -88,7 +85,9 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 						src="homepage-bit/reuse-page/vendor.svg"
 					/>
 					<H4 size={PossibleSizes.xxs}>No vendor locking</H4>
-					<Paragraph>Move components to your own server at any moment.</Paragraph>
+					<Paragraph>
+						Move components to any other server any time you choose.
+					</Paragraph>
 				</div>
 			</Grid>
 		</div>

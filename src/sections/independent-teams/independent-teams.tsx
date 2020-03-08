@@ -21,11 +21,12 @@ export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm} className={text.center}>
-					Scale for independent teams building together.
+					Build together. Stay independent.
 				</H2>
 				<Paragraph className={classNames(text.center, styles.subtitle)}>
-					Create a truly scalable infrastructure for every team to build and integrate
-					components. Empower teams to independently deliver while building together.
+					Create a truly scalable infrastructure for everyone to build, adopt and
+					integrate components. Empower teams to independently deliver while building
+					together.
 				</Paragraph>
 			</div>
 

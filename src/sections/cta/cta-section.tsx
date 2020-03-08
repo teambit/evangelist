@@ -37,11 +37,11 @@ export function CtaSection(props: CtaProps) {
 			<div>
 				<H2 size={PossibleSizes.xs}>Ready to try Bit?</H2>
 				<Paragraph size={PossibleSizes.lg}>
-					Add your first component in minutes.
+					Empower your team to build faster together.
 				</Paragraph>
 			</div>
 			<PrimaryLink href="https://bit.dev/signup">
-				<CtaButton>Get Started for free</CtaButton>
+				<CtaButton>Start for free</CtaButton>
 			</PrimaryLink>
 		</Grid>
 	);

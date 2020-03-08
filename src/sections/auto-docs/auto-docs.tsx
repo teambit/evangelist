@@ -23,9 +23,9 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm} className={text.center}>
-					Let Bit maintain your docs.
+					Keep everything organized.
 					<br />
-					Easily organize and discover components.
+					Documentation? Don’t sweat it.
 				</H2>
 
 				<Paragraph
@@ -40,10 +40,10 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 
 			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
 				<div>
-					<H3 size={PossibleSizes.xs}>Meet the best component explorer ever</H3>
+					<H3 size={PossibleSizes.xs}>The most advanced component explorer ever</H3>
 					<Paragraph>
 						Looking for a React button component with up to 30kb bundle-size, styled
-						with styled-components, and tested with Jest? No problem.
+						with styled-components, and tested with Jest? Easy, just hit "search".
 					</Paragraph>
 				</div>
 
@@ -52,7 +52,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 				<div>
 					<H3 size={PossibleSizes.xs}>Write code, get stunning docs</H3>
 					<Paragraph>
-						With Bit, you can focus on writing code and watch how every compoent’s
+						With Bit, you can focus on writing code and watch how every component’s
 						documentation is generated, updated and maintained automatically. Have a
 						coffee.
 					</Paragraph>
@@ -61,13 +61,11 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 			</Grid>
 			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
 				<div>
-					<H3 size={PossibleSizes.xs}>
-						Try components in a hot-reloading playground
-					</H3>
+					<H3 size={PossibleSizes.xs}>Play with examples hands-on</H3>
 					<Paragraph>
-						The best way to learn code works is to try it hands-on. Bit’s
-						hot-reloading playground lets you quickly learn how any component works,
-						save examples and more.
+						The best way to experience a component is to try it hands-on. Bit’s
+						hot-reloading playground lets you quickly learn how components work and
+						save examples.
 					</Paragraph>
 				</div>
 

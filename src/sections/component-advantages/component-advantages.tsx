@@ -34,8 +34,8 @@ export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Dynamic component workspace</H3>
 					<Paragraph>
-						Get a dynamic modular workspace where you can develop, add and remove
-						components to compose your apps.
+						Get a modular workspace where you can dynamically develop, add and
+						remove components to compose your apps.
 					</Paragraph>
 				</div>
 				<Image
@@ -48,7 +48,7 @@ export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Smart per-component versioning</H3>
 					<Paragraph>
-						Enjoy simple yet scalable semantic versioning per component, with
+						Enjoy simple yet scalable semantic versioning per component, with smart
 						automatic dependency definitions and management.
 					</Paragraph>
 				</div>
@@ -76,9 +76,9 @@ export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Goodbye configuration files</H3>
 					<Paragraph>
-						Say goodbye to tons of configuration files, and let Bit handle
-						configuration management for you. Use overrides to quickly apply changes
-						across components.
+						Say goodbye to painful config files, and let Bit handle them for you.
+						Want control? Use overrides to quickly apply changes across many
+						components.
 					</Paragraph>
 				</div>
 				<Image
