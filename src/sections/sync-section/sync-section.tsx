@@ -24,10 +24,10 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>
-					Easily adopt components in new projects.
+					Increase component reuse and consistency
 				</H2>
 				<Paragraph size={PossibleSizes.xl} className={classNames(styles.subtitle)}>
-					Package or code, it’s your choice.
+					Keep components up-to-date across your codebase and drive component adoption.
 				</Paragraph>
 			</div>
 
