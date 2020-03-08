@@ -41,9 +41,9 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 						className={classNames(styles.landingSection, centerColumn)}
 						mainCta={mainCta}
 					/>
-
-					{communityCollections}
 				</div>
+				
+				{communityCollections}
 
 				<EnterpriseSection className={classNames(centerColumn, styles.margin180)} />
 
