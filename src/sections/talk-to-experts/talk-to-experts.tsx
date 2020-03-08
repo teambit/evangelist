@@ -7,7 +7,7 @@ import { H2 } from '../../components/concrete/heading';
 import { PossibleSizes } from '../../constants/sizes';
 import { CtaButton } from '../../components/concrete/cta-button';
 import { Paragraph } from '../../components/base/paragraph';
-import { justifyItems, alignItems, text } from '../../components/layout/align';
+import { justifyItems, alignItems, text, marginCenter } from '../../components/layout/align';
 import { PrimaryLink } from '../../components/concrete/primary-link';
 
 export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
@@ -24,7 +24,7 @@ export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 			)}
 			data-bit-id="sections/talk-to-experts"
 		>
-			<div>
+			<div className={marginCenter}>
 				<H2 size={PossibleSizes.xs}>
 					Exploring component reuse? Talk to world experts
 				</H2>

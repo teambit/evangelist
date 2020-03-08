@@ -18,7 +18,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
-			className={classNames(props.className)}
+			className={classNames(props.className, styles.autoDocs)}
 			data-bit-id="sections/auto-docs"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
@@ -59,7 +59,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 				<Image src="homepage-bit/button-docs.png" alt="generated docs" fullWidth />
 			</Grid>
-			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center)}>
+			<Grid colMd={12} className={classNames(text.left, zGrid, alignItems.center, styles.singleGrid)}>
 				<div>
 					<H3 size={PossibleSizes.xs}>Play with examples hands-on</H3>
 					<Paragraph>

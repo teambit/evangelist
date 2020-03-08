@@ -1,3 +1,11 @@
 .subtitle {
-	margin-bottom: 130px;
+	margin-bottom: 80px;
+}
+
+// does not seem like the right way to do this
+.autoDocs {
+	.singleGrid {
+		grid-row-gap: unset;
+		margin-bottom: 0px;
+	}
 }
