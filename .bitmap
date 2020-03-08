@@ -643,7 +643,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/layout/grid-definition@0.0.7": {
+    "bit.marketing/layout/grid-definition@0.0.8": {
         "files": [
             {
                 "name": "four-grid.module.scss",
@@ -699,7 +699,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/homepage@0.0.15": {
+    "bit.marketing/pages/homepage@0.0.16": {
         "files": [
             {
                 "name": "homepage.module.scss",
@@ -722,7 +722,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.12": {
+    "bit.marketing/pages/hybrid-homepage@0.0.13": {
         "files": [
             {
                 "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.module.scss",
@@ -745,7 +745,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/auto-docs@0.0.9": {
+    "bit.marketing/sections/auto-docs@0.0.10": {
         "files": [
             {
                 "relativePath": "src/sections/auto-docs/auto-docs.module.scss",
@@ -814,7 +814,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/build-section@0.0.17": {
+    "bit.marketing/sections/build-section@0.0.18": {
         "files": [
             {
                 "name": "buildSection.module.scss",
@@ -883,7 +883,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/component-advantages@0.0.9": {
+    "bit.marketing/sections/component-advantages@0.0.10": {
         "files": [
             {
                 "relativePath": "src/sections/component-advantages/component-advantages.module.scss",
@@ -929,7 +929,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/deploy-section@0.0.18": {
+    "bit.marketing/sections/deploy-section@0.0.19": {
         "files": [
             {
                 "name": "deploySection.module.scss",
@@ -952,7 +952,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/dev-section@0.0.18": {
+    "bit.marketing/sections/dev-section@0.0.19": {
         "files": [
             {
                 "name": "devSection.module.scss",
@@ -975,7 +975,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/enterprise-section@0.0.9": {
+    "bit.marketing/sections/enterprise-section@0.0.10": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-section/enterprise-section.module.scss",
@@ -998,7 +998,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/hybrid-perfect-sync@0.0.9": {
+    "bit.marketing/sections/hybrid-perfect-sync@0.0.10": {
         "files": [
             {
                 "relativePath": "src/sections/hybrid-perfect-sync/hybrid-perfect-sync.module.scss",
@@ -1021,7 +1021,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/independent-teams@0.0.9": {
+    "bit.marketing/sections/independent-teams@0.0.10": {
         "files": [
             {
                 "relativePath": "src/sections/independent-teams/independent-teams.module.scss",
@@ -1136,7 +1136,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/sync-section@0.0.9": {
+    "bit.marketing/sections/sync-section@0.0.10": {
         "files": [
             {
                 "relativePath": "src/sections/sync-section/index.ts",
@@ -1159,7 +1159,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/talk-to-experts@0.0.6": {
+    "bit.marketing/sections/talk-to-experts@0.0.7": {
         "files": [
             {
                 "relativePath": "src/sections/talk-to-experts/index.ts",
