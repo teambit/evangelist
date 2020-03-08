@@ -8,7 +8,7 @@
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: 200% 100%;
-	
+
 	padding-bottom: 180px;
 
 	@media (min-width: $br-md) {
@@ -32,12 +32,12 @@
 
 	width: 100%;
 	height: 30px;
-	
+
 	@media screen and (min-width: $br-sm) {
 		height: 50px;
 		display: block;
 	}
-	
+
 	@media screen and (min-width: $br-l) {
 		height: 100px;
 	}
@@ -57,6 +57,24 @@
 	background-repeat: no-repeat;
 }
 
+.greyBgPadding {
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+	@media screen and (min-width: $br-l) {
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+}
+
+.foldMargin {
+	margin-bottom: 80px;
+
+	@media screen and (min-width: $br-l) {
+		margin-bottom: 130px;
+	}
+}
+
 //sections:
 .landingSection {
 	padding-top: 135px;
@@ -67,29 +85,8 @@
 	margin-bottom: 80px;
 }
 
-//lazy but useful..?
-.topSpace80 {
-	padding-top: 80px;
-}
-
-.topSpace130 {
-	padding-top: 130px;
-}
-
-.topSpace180 {
-	padding-top: 180px
-}
-
 .margin30 {
-	margin-bottom: 30px;	
-}
-
-.margin80 {
-	margin-bottom: 80px;
-}
-
-.margin130 {
-	margin-bottom: 130px;
+	margin-bottom: 30px;
 }
 
 .margin180 {

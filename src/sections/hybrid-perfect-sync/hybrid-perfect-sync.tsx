@@ -23,7 +23,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 			data-bit-id="sections/hybrid-perfect-syncs"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
-				<H2 size={PossibleSizes.sm}>Keep apps and teams in perfect sync.</H2>
+				<H2 size={PossibleSizes.sm}>Keep your apps and teams in perfect sync.</H2>
 
 				<Paragraph size={PossibleSizes.lg} className={styles.subtitle}>
 					Bit helps your team collaborate to make sure every application and every
@@ -42,7 +42,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				)}
 			>
 				<div className={styles.text}>
-					<H3 size={PossibleSizes.xs}>Focused relevant updates.</H3>
+					<H3 size={PossibleSizes.xs}>Focused relevant updates</H3>
 					<Paragraph>
 						No more bloated or irrelevant library updates. Constantly get and
 						deliver meaningful updates for components you actually use in your apps,
@@ -52,7 +52,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				<Image alt="multi packagers" src="homepage-bit/example-010.png" fullWidth />
 
 				<div className={styles.text}>
-					<H3 size={PossibleSizes.xs}>Per-component propagating CI.</H3>
+					<H3 size={PossibleSizes.xs}>Per-component propagating CI</H3>
 					<Paragraph>
 						Enjoy bulletproof updates with per-component CI that runs every
 						component in full isolation. And, it propagates to dependent components,

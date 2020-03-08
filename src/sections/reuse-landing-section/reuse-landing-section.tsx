@@ -43,7 +43,7 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 					<H1 size={PossibleSizes.sm} className={styles.headline}>
 						A better way to reuse components.
 						<br />
-						Scalable and collaborative
+						Scalable and collaborative.
 					</H1>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 						Bit is a scalable and collaborative way to reuse components. It’s

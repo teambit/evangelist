@@ -4,7 +4,7 @@
 	display: grid;
 
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(3, auto auto 80px) auto auto;
+	grid-template-rows: repeat(3, auto auto 50px) auto auto;
 
 	grid-template-areas:
 		"txt1"

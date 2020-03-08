@@ -42,61 +42,59 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 						mainCta={mainCta}
 					/>
 				</div>
-				
+
 				{communityCollections}
 
-				<EnterpriseSection className={classNames(centerColumn, styles.margin180)} />
+				<EnterpriseSection className={classNames(centerColumn, styles.foldMargin)} />
 
-				<CarouselSection className={styles.margin30}/>
+				<CarouselSection className={styles.margin30} />
 
 				<div className={styles.uEllipse}></div>
 
 				<div
 					className={classNames(
 						styles.greyBackground,
-						styles.topSpace130,
-						styles.margin130
+						styles.greyBgPadding,
+						styles.foldMargin
 					)}
 				>
-					<BookingBreakdown className={classNames(centerColumn, styles.margin130)} />
+					<BookingBreakdown className={classNames(centerColumn, styles.foldMargin)} />
 
-					<ComponentsAdvantages
-						className={classNames(centerColumn, styles.margin130)}
-					/>
+					<ComponentsAdvantages className={classNames(centerColumn)} />
 				</div>
 
-				<SyncSection className={classNames(centerColumn, styles.margin130)} />
+				<SyncSection className={classNames(centerColumn, styles.foldMargin)} />
 
-				<TalkToExperts className={classNames(centerColumn, styles.margin130)} />
+				<TalkToExperts className={classNames(centerColumn, styles.foldMargin)} />
 
-				<div className={classNames(styles.greyBackground)}>
-					<HybridPerfectSync
-						className={classNames(
-							centerColumn,
-							styles.topSpace130,
-							styles.margin130
-						)}
-					/>
+				<div
+					className={classNames(
+						styles.greyBackground,
+						styles.greyBgPadding,
+						styles.foldMargin
+					)}
+				>
+					<HybridPerfectSync className={classNames(centerColumn)} />
 				</div>
 
-				<AutoDocs className={classNames(centerColumn, styles.topSpace130, styles.margin130)} />
+				<AutoDocs className={classNames(centerColumn, styles.foldMargin)} />
 
-				<div className={classNames(styles.greyBackground)}>
-					<IndependentTeams
-						className={classNames(
-							centerColumn,
-							styles.topSpace130,
-							styles.margin130
-						)}
-					/>
+				<div
+					className={classNames(
+						styles.greyBackground,
+						styles.greyBgPadding,
+						styles.foldMargin
+					)}
+				>
+					<IndependentTeams className={classNames(centerColumn)} />
 				</div>
 
 				<CommunitySection
-					className={classNames(centerColumn, styles.topSpace130, styles.margin130)}
+					className={classNames(centerColumn, styles.foldMargin)}
 					githubStars={githubStars}
 				/>
 
-				<CtaSection className={classNames(centerColumn, styles.margin130)} />
+				<CtaSection className={classNames(centerColumn, styles.foldMargin)} />
 			</div>
 		);
 	}
