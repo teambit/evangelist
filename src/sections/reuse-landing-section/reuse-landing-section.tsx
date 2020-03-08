@@ -58,7 +58,7 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 					className={classNames(styles.buttons)}
 				>
 					<PrimaryLink href="https://bit.dev/signup">
-						<CtaButton elevation="medium">Reuse your components</CtaButton>
+						<CtaButton elevation="medium">Get Started</CtaButton>
 					</PrimaryLink>
 					<div className={styles.spacer} />
 					<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">

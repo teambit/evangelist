@@ -9,8 +9,6 @@ import { Image } from '../../image';
 import styles from './github-link.module.scss';
 import { CommunityLinkProps } from '../../../base/community-link/community-link';
 
-// const ENABLE_STAR_COUNT = true;
-
 /**
  * concrete community link component - pill flavor for base link component
  */

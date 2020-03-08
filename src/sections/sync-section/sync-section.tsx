@@ -23,11 +23,12 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 			data-bit-id="sections/sync-section"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
-				<H2 size={PossibleSizes.sm} className={styles.title}>
-					Reuse any component off the cloud.
-					<br />
-					Package or code, it’s your choice.
+				<H2 size={PossibleSizes.sm}>
+					Easily adopt components in new projects.
 				</H2>
+				<Paragraph size={PossibleSizes.xl} className={classNames(styles.subtitle)}>
+					Package or code, it’s your choice.
+				</Paragraph>
 			</div>
 
 			<Grid
@@ -42,9 +43,9 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>World-class package registry</H3>
 					<Paragraph>
-						Use npm or yarn to Install any component from a blazing-fast private
-						registry. Only install and get updates for the components you actually
-						need.
+						Use npm or yarn to Install any component from your very own blazing-fast
+						private registry. Only install and get updates for the components you
+						actually need.
 					</Paragraph>
 				</div>
 				<Image
@@ -54,12 +55,11 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 				/>
 
 				<div className={styles.text}>
-					<H3 size={PossibleSizes.xs}>Reuse components, stay independent</H3>
+					<H3 size={PossibleSizes.xs}>Bring in the code, stay independent</H3>
 					<Paragraph>
-						Bit lets you tag every component with a semantic version. Unlock the mix
-						composition of components, release meaningful component updates, and
-						take modular control over changes to components and their dependents
-						across screens and applications.
+						Use Bit to bring any component’s files and setup into your local
+						project. Edit, debug and change the code any way you like. Keep getting
+						updates on top to stay synced.
 					</Paragraph>
 				</div>
 				<Image
@@ -68,11 +68,11 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 					fullWidth
 				/>
 				<div className={styles.text}>
-					<H3 size={PossibleSizes.xs}>Sync repos with GitHub integrations</H3>
+					<H3 size={PossibleSizes.xs}>Empower everyone to share code</H3>
 					<Paragraph>
-						Bit lets everyone isolate and export components right from any project
-						they’re working on. Creating a new component? Share it with your team as
-						part of your workflow.
+						Bit makes it easy for every developer to share their components with
+						your entire team. Create a collaborative workflow for reusing components
+						as part of your workflow.
 					</Paragraph>
 				</div>
 				<Image
@@ -82,11 +82,11 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 				/>
 
 				<div className={styles.text}>
-					<H3 size={PossibleSizes.xs}>Sync people with Slack integrations</H3>
+					<H3 size={PossibleSizes.xs}>Easily contribute code and feedback</H3>
 					<Paragraph>
 						Giving feedback on single components is much easier than diving into a
 						large codebase. Suggesting changes right from your local workspace is
-						even simpler.
+						even better.
 					</Paragraph>
 				</div>
 				<Image
