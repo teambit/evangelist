@@ -50,7 +50,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 				<Image src="homepage-bit/5-orginze.png" alt="components search" fullWidth />
 
 				<div>
-					<H3 size={PossibleSizes.xs}>Write code, get stunning docs</H3>
+					<H3 size={PossibleSizes.xs}>Write code, generate stunning docs</H3>
 					<Paragraph>
 						With Bit, you can focus on writing code and watch how every component’s
 						documentation is generated, updated and maintained automatically. Have a

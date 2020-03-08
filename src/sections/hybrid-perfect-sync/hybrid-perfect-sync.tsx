@@ -52,11 +52,11 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				<Image alt="multi packagers" src="homepage-bit/example-010.png" fullWidth />
 
 				<div className={styles.text}>
-					<H3 size={PossibleSizes.xs}>Per-component propagating CI</H3>
+					<H3 size={PossibleSizes.xs}>Per-component CI</H3>
 					<Paragraph>
 						Enjoy bulletproof updates with per-component CI that runs every
-						component in full isolation. And, it propagates to dependent components,
-						impacted by every change.
+						component in full isolation. Reduce build and CI time by building and testing
+						only your changed components.
 					</Paragraph>
 				</div>
 				<Image alt="cloud code" src="homepage-bit/comp-build-flow.png" fullWidth />
