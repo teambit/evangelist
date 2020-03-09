@@ -14,6 +14,7 @@ import { IconLine } from '../../components/concrete/icon-line';
 import { PrimaryLink } from '../../components/concrete/primary-link';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
+import { textColumn } from '../../components/layout/grid';
 
 const iconsArray = [
 	'logo-react',
@@ -45,7 +46,7 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 				<div>
 					<H1 size={PossibleSizes.sm} className={styles.headline}>
 						A better way to build
-            <br />
+						<br />
 						with modern components
 					</H1>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
