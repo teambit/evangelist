@@ -1,1 +1,0 @@
-export {getTooltip} from './get-tooltip';
