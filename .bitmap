@@ -760,7 +760,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.17": {
+    "bit.marketing/pages/hybrid-homepage@0.0.18": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -1105,7 +1105,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/reuse-landing-section@0.0.13": {
+    "bit.marketing/sections/reuse-landing-section@0.0.14": {
         "files": [
             {
                 "name": "index.tsx",
