@@ -5,7 +5,7 @@ import styles from './hybrid-homepage.module.scss';
 
 import { CarouselSection } from '../../sections/carouselSection';
 import { CtaSection } from '../../sections/cta';
-import { centerColumn } from '../../components/layout/grid';
+import { centerColumn, wideColumn } from '../../components/layout/grid';
 
 import { ReuseLandingSection } from '../../sections/reuse-landing-section';
 import { EnterpriseSection } from '../../sections/enterprise-section/enterprise-section';
@@ -48,7 +48,7 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 
 				<EnterpriseSection className={classNames(centerColumn, styles.foldMargin)} />
 
-				<CarouselSection className={styles.margin30} />
+				<CarouselSection className={classNames(styles.margin30, wideColumn)} />
 
 				<div className={styles.uEllipse}></div>
 

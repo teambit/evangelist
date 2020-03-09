@@ -15,7 +15,7 @@ class App extends PureComponent {
 	render() {
 		return (
 			<Theme>
-				<ComponentHighlighter active>
+				<ComponentHighlighter>
 					<EmbedIconSet query="aqq93z" />
 					<HybridHomepage githubStars={10000} />
 				</ComponentHighlighter>
