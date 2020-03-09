@@ -722,22 +722,22 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.15": {
+    "bit.marketing/pages/hybrid-homepage@0.0.16": {
         "files": [
             {
+                "name": "hybrid-homepage.module.scss",
                 "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.module.scss",
-                "test": false,
-                "name": "hybrid-homepage.module.scss"
+                "test": false
             },
             {
+                "name": "hybrid-homepage.tsx",
                 "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.tsx",
-                "test": false,
-                "name": "hybrid-homepage.tsx"
+                "test": false
             },
             {
+                "name": "index.ts",
                 "relativePath": "src/pages/hybrid-homepage/index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             }
         ],
         "mainFile": "src/pages/hybrid-homepage/index.ts",
@@ -745,22 +745,22 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/auto-docs@0.0.11": {
+    "bit.marketing/sections/auto-docs@0.0.12": {
         "files": [
             {
+                "name": "auto-docs.module.scss",
                 "relativePath": "src/sections/auto-docs/auto-docs.module.scss",
-                "test": false,
-                "name": "auto-docs.module.scss"
+                "test": false
             },
             {
+                "name": "auto-docs.tsx",
                 "relativePath": "src/sections/auto-docs/auto-docs.tsx",
-                "test": false,
-                "name": "auto-docs.tsx"
+                "test": false
             },
             {
+                "name": "index.tsx",
                 "relativePath": "src/sections/auto-docs/index.tsx",
-                "test": false,
-                "name": "index.tsx"
+                "test": false
             }
         ],
         "mainFile": "src/sections/auto-docs/index.tsx",
@@ -791,22 +791,22 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/booking-breakdown@0.0.9": {
+    "bit.marketing/sections/booking-breakdown@0.0.10": {
         "files": [
             {
+                "name": "booking-breakdown.module.scss",
                 "relativePath": "src/sections/booking-breakdown/booking-breakdown.module.scss",
-                "test": false,
-                "name": "booking-breakdown.module.scss"
+                "test": false
             },
             {
+                "name": "booking-breakdown.tsx",
                 "relativePath": "src/sections/booking-breakdown/booking-breakdown.tsx",
-                "test": false,
-                "name": "booking-breakdown.tsx"
+                "test": false
             },
             {
+                "name": "index.ts",
                 "relativePath": "src/sections/booking-breakdown/index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             }
         ],
         "mainFile": "src/sections/booking-breakdown/index.ts",
@@ -998,22 +998,22 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/hybrid-perfect-sync@0.0.11": {
+    "bit.marketing/sections/hybrid-perfect-sync@0.0.12": {
         "files": [
             {
+                "name": "hybrid-perfect-sync.module.scss",
                 "relativePath": "src/sections/hybrid-perfect-sync/hybrid-perfect-sync.module.scss",
-                "test": false,
-                "name": "hybrid-perfect-sync.module.scss"
+                "test": false
             },
             {
+                "name": "hybrid-perfect-sync.tsx",
                 "relativePath": "src/sections/hybrid-perfect-sync/hybrid-perfect-sync.tsx",
-                "test": false,
-                "name": "hybrid-perfect-sync.tsx"
+                "test": false
             },
             {
+                "name": "index.ts",
                 "relativePath": "src/sections/hybrid-perfect-sync/index.ts",
-                "test": false,
-                "name": "index.ts"
+                "test": false
             }
         ],
         "mainFile": "src/sections/hybrid-perfect-sync/index.ts",
@@ -1067,22 +1067,22 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/reuse-landing-section@0.0.11": {
+    "bit.marketing/sections/reuse-landing-section@0.0.12": {
         "files": [
             {
+                "name": "index.tsx",
                 "relativePath": "src/sections/reuse-landing-section/index.tsx",
-                "test": false,
-                "name": "index.tsx"
+                "test": false
             },
             {
+                "name": "reuse-landing-section.module.scss",
                 "relativePath": "src/sections/reuse-landing-section/reuse-landing-section.module.scss",
-                "test": false,
-                "name": "reuse-landing-section.module.scss"
+                "test": false
             },
             {
+                "name": "reuse-landing-section.tsx",
                 "relativePath": "src/sections/reuse-landing-section/reuse-landing-section.tsx",
-                "test": false,
-                "name": "reuse-landing-section.tsx"
+                "test": false
             }
         ],
         "mainFile": "src/sections/reuse-landing-section/index.tsx",
