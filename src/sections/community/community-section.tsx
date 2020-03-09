@@ -35,9 +35,8 @@ export function CommunitySection(props: CommunitySectionProps) {
 					</H2>
 					<Paragraph className={styles.text} size={PossibleSizes.md}>
 						Join over 100,000 developers around the world to share and build
-						components together. Bit is home to the world’s largest component
-						community in the world with over 60,000 open-source components and
-						growing. Come join us.
+						components together. Enjoy the world’s largest open-source component
+						community with over 60,000 components and growing. Come join us.
 					</Paragraph>
 
 					<div className={styles.links}>

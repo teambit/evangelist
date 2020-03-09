@@ -699,7 +699,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/homepage@0.0.17": {
+    "bit.marketing/pages/homepage@0.0.18": {
         "files": [
             {
                 "name": "homepage.module.scss",
@@ -722,7 +722,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.14": {
+    "bit.marketing/pages/hybrid-homepage@0.0.15": {
         "files": [
             {
                 "relativePath": "src/pages/hybrid-homepage/hybrid-homepage.module.scss",
@@ -860,7 +860,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/community@0.0.22": {
+    "bit.marketing/sections/community@0.0.23": {
         "files": [
             {
                 "name": "community-section.module.scss",
