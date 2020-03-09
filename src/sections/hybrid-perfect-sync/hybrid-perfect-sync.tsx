@@ -23,7 +23,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 			data-bit-id="sections/hybrid-perfect-syncs"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
-				<H2 size={PossibleSizes.sm}>Keep your apps and teams in perfect sync.</H2>
+				<H2 size={PossibleSizes.sm}>Keep apps and teams in perfect sync.</H2>
 
 				<Paragraph size={PossibleSizes.lg} className={styles.subtitle}>
 					Bit helps your team collaborate to make sure every application and every
