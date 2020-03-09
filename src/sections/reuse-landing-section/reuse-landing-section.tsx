@@ -44,12 +44,14 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 			<div>
 				<div>
 					<H1 size={PossibleSizes.sm} className={styles.headline}>
-						Build better UI through indepdenent components
+						A better way to build
+            <br />
+						with modern components
 					</H1>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
-						Bit is a better way to build and scale frontend applications through
-						independent components. Increase quality, reliability, and consistency
-						across your screens and apps.
+						Bit is a scalable and collaborative way to build with components. It’s
+            everything you need from local development to cross-project
+            collaboration. Try it for free.
 					</Paragraph>
 				</div>
 
