@@ -49,10 +49,13 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 						<br />
 						with modern components
 					</H1>
-					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
+					<Paragraph
+						size={PossibleSizes.lg}
+						className={classNames(styles.paragraph, textColumn, marginCenter)}
+					>
 						Bit helps to build and scale modern frontend applications through
-            independent components. Increase quality, reliability, and consistency
-            across your screens and apps. Try it for free.
+						independent components. Increase quality, reliability, and consistency
+						across your screens and apps. Try it for free.
 					</Paragraph>
 				</div>
 
