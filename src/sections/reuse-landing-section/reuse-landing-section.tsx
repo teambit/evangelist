@@ -14,6 +14,7 @@ import { IconLine } from '../../components/concrete/icon-line';
 import { PrimaryLink } from '../../components/concrete/primary-link';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
+import { textColumn } from '../../components/layout/grid';
 
 const iconsArray = [
 	'logo-react',
@@ -45,13 +46,16 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 				<div>
 					<H1 size={PossibleSizes.sm} className={styles.headline}>
 						A better way to build
-            <br />
+						<br />
 						with modern components
 					</H1>
-					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
+					<Paragraph
+						size={PossibleSizes.lg}
+						className={classNames(styles.paragraph, textColumn, marginCenter)}
+					>
 						Bit is a scalable and collaborative way to build with components. It’s
-            everything you need from local development to cross-project
-            collaboration. Try it for free.
+						everything you need from local development to cross-project
+						collaboration. Try it for free.
 					</Paragraph>
 				</div>
 
