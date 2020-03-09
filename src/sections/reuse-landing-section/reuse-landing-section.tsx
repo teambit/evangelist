@@ -49,7 +49,7 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 						with modern components
 					</H1>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
-						Bit is a better way to build and scale frontend applications through
+						Bit helps to build and scale frontend applications through
             independent components. Increase quality, reliability, and consistency
             across your screens and apps. Try it for free.
 					</Paragraph>
