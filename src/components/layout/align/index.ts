@@ -1,7 +1,5 @@
 import styles from './align.module.scss';
 
-
-// TODO - fix types!!!
 enum BreakPoints {
 	xs = 'xs',
 	sm = 'sm',
@@ -16,6 +14,7 @@ type TextOptions = {
 	center: string;
 	right: string;
 };
+
 type TextProps = {
 	left: string;
 	center: string;
@@ -29,24 +28,25 @@ type TextProps = {
 	xl: TextOptions;
 };
 
-const breakpoints = ['xs', 'sm', 'md', 'l', 'lg', 'xl'];
-export const text = ((): TextProps => {
-	const medias = breakpoints
-		.map(br => {
-			const obj = {
-				[br]: {
-					left: styles[`text-${br}-left`],
-					center: styles[`text-${br}-center`],
-					right: styles[`text-${br}-right`],
-				},
-			};
-			return obj;
-		})
-		.reduce((prev, next) => Object.assign(prev, next), {});
-	return {
+export const text = (() => {
+	const baseStyle = {
 		left: styles['text-left'],
 		center: styles['text-center'],
 		right: styles['text-right'],
+	};
+
+	const medias = Object.values(BreakPoints)
+		.map(br => ({
+			[br]: {
+				left: styles[`text-${br}-left`],
+				center: styles[`text-${br}-center`],
+				right: styles[`text-${br}-right`],
+			},
+		}))
+		.reduce((prev, next) => Object.assign(prev, next), {});
+
+	return {
+		...baseStyle,
 		...medias,
 	} as TextProps;
 })();

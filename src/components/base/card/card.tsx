@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import classNames from "classnames";
 import styles from "./card.module.scss";
 import elevations from './elevations.module.scss';
