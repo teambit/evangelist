@@ -42,7 +42,6 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 			data-bit-id="sections/reuse-landing-section"
 		>
 			<div>
-				{/* <div className={classNames(textColumn, marginCenter)}> */}
 				<div>
 					<H1 size={PossibleSizes.sm} className={styles.headline}>
 						Build better UI through indepdenent components
@@ -71,8 +70,8 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 			</div>
 
 			<Image
-				src="homepage-bit/flying-man.svg"
-				className={classNames(styles.illustration, marginCenter)}
+				src="homepage-bit/flying-man-01.svg"
+				className={marginCenter}
 				alt="illustration"
 				fullWidth
 			/>
