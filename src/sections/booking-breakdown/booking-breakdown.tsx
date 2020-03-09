@@ -16,7 +16,7 @@ export function BookingBreakdown(props: HTMLAttributes<HTMLDivElement>) {
 		<div {...props} data-bit-id="sections/booking-breakdown">
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>
-					Enjoy the best tools to build and distribute components.
+					Everything you need to build independent and reusable components
 				</H2>
 				<Paragraph size={PossibleSizes.lg} className={classNames(styles.subtitle)}>
 					Bit provides the most powerful tools and experience to develop, build, test
