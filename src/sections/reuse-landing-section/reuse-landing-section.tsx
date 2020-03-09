@@ -14,7 +14,6 @@ import { IconLine } from '../../components/concrete/icon-line';
 import { PrimaryLink } from '../../components/concrete/primary-link';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
-import { textColumn } from '../../components/layout/grid';
 
 const iconsArray = [
 	'logo-react',
@@ -46,13 +45,12 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 				<div>
 					<H1 size={PossibleSizes.sm} className={styles.headline}>
 						A better way to build
-						<br />
+            <br />
 						with modern components
 					</H1>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
-						Bit helps to build and scale modern frontend applications through
-            independent components. Increase quality, reliability, and consistency
-            across your screens and apps. Try it for free.
+						Bit helps frontend teams to build modern web applications 
+						through independent and reusable components.
 					</Paragraph>
 				</div>
 
