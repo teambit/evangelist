@@ -39,8 +39,9 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 				>
 					<ReuseLandingSection
 						className={classNames(styles.landingSection, centerColumn)}
-						mainCta={mainCta}
 					/>
+
+					{mainCta}
 				</div>
 
 				{communityCollections}

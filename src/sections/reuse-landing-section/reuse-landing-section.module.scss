@@ -1,17 +1,11 @@
 @import "../../components/layout/_breakpoints.scss";
 
 .reuseLandingSection {
-	margin-bottom: 40px;
+	gap: 76px;
 }
 
-
-.mainSectionContent {
-	text-align: center;
-
-	@media screen and (min-width: 920px) {
-		align-self: center;
-		text-align: unset;
-	}
+.illustration {
+	max-width: 420px;
 }
 
 .spacer {
@@ -28,14 +22,26 @@
 }
 
 .buttons {
-	margin-bottom: 46px;
+	margin: 0 auto 46px;
 
 	@media screen and (min-width: $br-sm) {
 		display: flex;
 		justify-content: center;
 	}
 
+	@media screen and (min-width: $br-l) {
+		justify-content: left;
+	}
+
 	button {
 		width: 199px;
+	}
+}
+
+.icons {
+	margin: 0 auto;
+
+	@media screen and (min-width: $br-l) {
+		margin: 0 0 auto 0;
 	}
 }

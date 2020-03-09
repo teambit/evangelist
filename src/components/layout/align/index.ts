@@ -35,7 +35,7 @@ export const text = (() => {
 		right: styles['text-right'],
 	};
 
-	const medias = Object.values(BreakPoints)
+	const medias = Object.keys(BreakPoints)
 		.map(br => ({
 			[br]: {
 				left: styles[`text-${br}-left`],
