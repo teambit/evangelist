@@ -363,7 +363,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/component-highlighter@0.0.1": {
+    "bit.marketing/concrete/component-highlighter@0.0.3": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -760,7 +760,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.21": {
+    "bit.marketing/pages/hybrid-homepage@0.0.24": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -829,7 +829,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/booking-breakdown@0.0.11": {
+    "bit.marketing/sections/booking-breakdown@0.0.13": {
         "files": [
             {
                 "name": "booking-breakdown.module.scss",
@@ -1013,7 +1013,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/enterprise-section@0.0.11": {
+    "bit.marketing/sections/enterprise-section@0.0.12": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-section/enterprise-section.module.scss",
@@ -1036,7 +1036,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/hybrid-perfect-sync@0.0.13": {
+    "bit.marketing/sections/hybrid-perfect-sync@0.0.14": {
         "files": [
             {
                 "name": "hybrid-perfect-sync.module.scss",
@@ -1105,7 +1105,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/reuse-landing-section@0.0.16": {
+    "bit.marketing/sections/reuse-landing-section@0.0.18": {
         "files": [
             {
                 "name": "index.tsx",
@@ -1174,7 +1174,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/sync-section@0.0.12": {
+    "bit.marketing/sections/sync-section@0.0.14": {
         "files": [
             {
                 "relativePath": "src/sections/sync-section/index.ts",
