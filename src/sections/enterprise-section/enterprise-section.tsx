@@ -30,7 +30,7 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 			>
 				<div className={colSpanMd[7]}>
 					<H2 size={PossibleSizes.sm}>
-						Enjoy your enterprise-grade component cloud.
+						Get your enterprise-grade component cloud
 					</H2>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 						Meet the component cloud: where your team can host, share and
