@@ -49,16 +49,24 @@ export function activateHighlighterTooltip(context?: HTMLDivElement) {
 	const elements = (context || document).querySelectorAll(`[data-bit-id]`);
 
 	return tippy(elements, {
+		theme: styles.tooltip,
+
 		content(reference) {
-			const id: string = reference.getAttribute('data-bit-id') || ''; // TODO - handle when it is undefined
+			const id = reference.getAttribute('data-bit-id') || ''; // TODO - handle when it is undefined
 			return `<a allowHTML id=${id} target="_blank" href=${componentDictionary[id]}>${id}</a>`;
 		},
-		delay: [200, 0],
+
 		placement: 'left-start',
-		interactive: true,
-		hideOnClick: false,
 		ignoreAttributes: true,
-		theme: styles.tooltip,
+		hideOnClick: false,
+		lazy: true,
+		interactive: true,
 		interactiveBorder: 20,
+
+		maxWidth: 'none',
+		delay: [200, 0],
+		distance: 0,
+
+		// boundary: 'viewport',
 	});
 }

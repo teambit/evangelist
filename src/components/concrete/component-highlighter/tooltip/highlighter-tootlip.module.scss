@@ -1,10 +1,20 @@
 .tooltip:global(-theme) {
 	position: absolute;
-	background-color: pink;
 	padding: 5px 20px;
+	box-sizing: border-box;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	transform: translate3d(10px, -105%, 0);
+	transform: translate3d(-1px, -100%, 0);
+
+	background-color: var(--component-highlighter-bg, #ff0281);
+	color: var(--component-highlighter-text, white);
+
 	cursor: pointer;
 	text-decoration: none;
+
+	a {
+		color: inherit;
+		text-decoration: inherit;
+		white-space: nowrap;
+	}
 }
