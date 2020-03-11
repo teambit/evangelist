@@ -401,6 +401,24 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/concrete/components-highlight-dictionary@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/components-highlight-dictionary/components-dictionary.ts",
+                "test": false,
+                "name": "components-dictionary.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/components-highlight-dictionary/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/components/concrete/components-highlight-dictionary/index.ts",
+        "trackDir": "src/components/concrete/components-highlight-dictionary",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/concrete/cta-button@0.0.14": {
         "files": [
             {
