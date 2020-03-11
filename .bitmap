@@ -363,7 +363,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/component-highlighter@0.0.3": {
+    "bit.marketing/concrete/component-highlighter@0.0.4": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -381,14 +381,14 @@
                 "name": "index.ts"
             },
             {
-                "relativePath": "src/components/concrete/component-highlighter/tooltip/highlighter-tootlip.module.scss",
+                "relativePath": "src/components/concrete/component-highlighter/tooltip/component-tooltip.module.scss",
                 "test": false,
-                "name": "highlighter-tootlip.module.scss"
+                "name": "component-tooltip.module.scss"
             },
             {
-                "relativePath": "src/components/concrete/component-highlighter/tooltip/highlighter-tootlip.tsx",
+                "relativePath": "src/components/concrete/component-highlighter/tooltip/component-tooltip.tsx",
                 "test": false,
-                "name": "highlighter-tootlip.tsx"
+                "name": "component-tooltip.tsx"
             },
             {
                 "relativePath": "src/components/concrete/component-highlighter/tooltip/index.ts",
@@ -719,7 +719,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/layout/grid@0.0.6": {
+    "bit.marketing/layout/grid@0.0.7": {
         "files": [
             {
                 "name": "grid.module.scss",
@@ -737,7 +737,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/homepage@0.0.20": {
+    "bit.marketing/pages/homepage@0.0.21": {
         "files": [
             {
                 "name": "homepage.module.scss",
@@ -760,7 +760,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.24": {
+    "bit.marketing/pages/hybrid-homepage@0.0.25": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -783,7 +783,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/auto-docs@0.0.13": {
+    "bit.marketing/sections/auto-docs@0.0.14": {
         "files": [
             {
                 "name": "auto-docs.module.scss",
@@ -806,7 +806,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/auto-section@0.0.18": {
+    "bit.marketing/sections/auto-section@0.0.19": {
         "files": [
             {
                 "name": "autoSection.module.scss",
@@ -829,7 +829,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/booking-breakdown@0.0.13": {
+    "bit.marketing/sections/booking-breakdown@0.0.14": {
         "files": [
             {
                 "name": "booking-breakdown.module.scss",
@@ -852,7 +852,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/build-section@0.0.20": {
+    "bit.marketing/sections/build-section@0.0.21": {
         "files": [
             {
                 "name": "buildSection.module.scss",
@@ -875,7 +875,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/carousel-section@0.0.11": {
+    "bit.marketing/sections/carousel-section@0.0.12": {
         "files": [
             {
                 "name": "carouselSection.module.scss",
@@ -898,7 +898,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/community@0.0.24": {
+    "bit.marketing/sections/community@0.0.25": {
         "files": [
             {
                 "name": "community-section.module.scss",
@@ -967,7 +967,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/deploy-section@0.0.21": {
+    "bit.marketing/sections/deploy-section@0.0.22": {
         "files": [
             {
                 "name": "deploySection.module.scss",
@@ -990,7 +990,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/dev-section@0.0.21": {
+    "bit.marketing/sections/dev-section@0.0.22": {
         "files": [
             {
                 "name": "devSection.module.scss",
@@ -1036,7 +1036,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/hybrid-perfect-sync@0.0.14": {
+    "bit.marketing/sections/hybrid-perfect-sync@0.0.15": {
         "files": [
             {
                 "name": "hybrid-perfect-sync.module.scss",
@@ -1059,7 +1059,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/independent-teams@0.0.12": {
+    "bit.marketing/sections/independent-teams@0.0.13": {
         "files": [
             {
                 "relativePath": "src/sections/independent-teams/independent-teams.module.scss",
@@ -1105,7 +1105,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/reuse-landing-section@0.0.18": {
+    "bit.marketing/sections/reuse-landing-section@0.0.19": {
         "files": [
             {
                 "name": "index.tsx",
@@ -1128,7 +1128,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/reuse@0.0.20": {
+    "bit.marketing/sections/reuse@0.0.21": {
         "files": [
             {
                 "name": "index.ts",
@@ -1174,7 +1174,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/sync-section@0.0.14": {
+    "bit.marketing/sections/sync-section@0.0.15": {
         "files": [
             {
                 "relativePath": "src/sections/sync-section/index.ts",
@@ -1349,6 +1349,24 @@
         "mainFile": "src/themes/theme-provider/index.tsx",
         "origin": "AUTHORED",
         "exported": true
+    },
+    "concrete/components-highlight-dictionary@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/components-highlight-dictionary/components-dictionary.ts",
+                "test": false,
+                "name": "components-dictionary.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/components-highlight-dictionary/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/components/concrete/components-highlight-dictionary/index.ts",
+        "trackDir": "src/components/concrete/components-highlight-dictionary",
+        "origin": "AUTHORED",
+        "exported": false
     },
     "version": "14.7.6"
 }
