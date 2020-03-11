@@ -2,7 +2,9 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 //@ts-ignore
-import { CommentCarousel, carouselContent } from '@bit/bit.web.components.comment-carousel';
+import { CommentCarousel } from '@bit/bit.web.components.comment-carousel';
+//@ts-ignore
+import { bitTestimonials } from '@bit/bit.web.content.testimonials';
 import { PossibleSizes } from '../../constants/sizes';
 import { H2 } from '../../components/concrete/heading';
 import styles from './carouselSection.module.scss';
@@ -18,7 +20,7 @@ export function CarouselSection(props: HTMLAttributes<HTMLDivElement>) {
 				</H2>
 			</div>
 			<div data-bit-id="commentCarousel">
-				<CommentCarousel content={carouselContent} />
+				<CommentCarousel content={bitTestimonials} />
 			</div>
 		</div>
 	);
