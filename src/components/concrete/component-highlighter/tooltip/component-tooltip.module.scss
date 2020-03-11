@@ -1,0 +1,13 @@
+.componentTooltip {
+	display: block;
+
+	box-sizing: border-box;
+	border-radius: 11px;
+	padding: 4px 11px;
+	cursor: pointer;
+	text-decoration: none;
+
+	font-size: 12px;
+	background-color: var(--component-highlighter-bg, #ff0281);
+	color: var(--component-highlighter-text, white);
+}

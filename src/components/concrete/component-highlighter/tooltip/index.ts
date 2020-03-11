@@ -1,1 +1,1 @@
-export * from './highlighter-tootlip';
+export * from './component-tooltip';

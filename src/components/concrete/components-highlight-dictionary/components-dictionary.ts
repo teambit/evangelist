@@ -1,13 +1,9 @@
-import tippy from 'tippy.js';
-
-import styles from './highlighter-tootlip.module.scss';
-
 const scopeUrl = 'https://bit.dev/bit/marketing';
 
-type DictionaryOptions = {
+export type DictionaryOptions = {
 	[key: string]: string;
 };
-const componentDictionary: DictionaryOptions = {
+export const componentDictionary: DictionaryOptions = {
 	heading: `${scopeUrl}/concrete/heading`,
 	paragraph: `${scopeUrl}/base/paragraph`,
 	mainSection: `${scopeUrl}/sections/main-section`,
@@ -43,30 +39,3 @@ const componentDictionary: DictionaryOptions = {
 	'sections/sync-section': `${scopeUrl}/sections/sync-section`,
 	'sections/talk-to-experts': `${scopeUrl}/sections/talk-to-experts`,
 };
-
-export function activateHighlighterTooltip(context?: HTMLDivElement) {
-	//falling back to document in run time, to avoid any serverside problems
-	const elements = (context || document).querySelectorAll(`[data-bit-id]`);
-
-	return tippy(elements, {
-		theme: styles.tooltip,
-
-		content(reference) {
-			const id = reference.getAttribute('data-bit-id') || ''; // TODO - handle when it is undefined
-			return `<a allowHTML id=${id} target="_blank" href=${componentDictionary[id]}>${id}</a>`;
-		},
-
-		placement: 'left-start',
-		ignoreAttributes: true,
-		hideOnClick: false,
-		lazy: true,
-		interactive: true,
-		interactiveBorder: 20,
-
-		maxWidth: 'none',
-		delay: [200, 0],
-		distance: 0,
-
-		// boundary: 'viewport',
-	});
-}

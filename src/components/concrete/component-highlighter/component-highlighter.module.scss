@@ -1,12 +1,20 @@
 .componentHighlighter {
 	&.active {
 		[data-bit-id] {
-			transition: outline-color 300ms ease-in-out;
 			outline-color: transparent;
 
 			&:hover {
 				outline: 1px solid var(--component-highlighter-bg, #ff0281);
 			}
 		}
+
+		.tooltipWrapper.visible {
+			display: block;
+		}
+	}
+
+
+	.tooltipWrapper {
+		display: none;
 	}
 }

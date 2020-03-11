@@ -10,12 +10,13 @@ import { EmbedIconSet } from './components/concrete/icon';
 // import { ReusePage } from './pages/reuse';
 import { HybridHomepage } from './pages/hybrid-homepage';
 import { ComponentHighlighter } from './components/concrete/component-highlighter';
+import { componentDictionary } from './components/concrete/components-highlight-dictionary';
 
 class App extends PureComponent {
 	render() {
 		return (
 			<Theme>
-				<ComponentHighlighter>
+				<ComponentHighlighter active componentsDictionary={componentDictionary}>
 					<EmbedIconSet query="aqq93z" />
 					<HybridHomepage githubStars={10000} />
 				</ComponentHighlighter>
