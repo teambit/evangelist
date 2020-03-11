@@ -48,7 +48,7 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 
 				<EnterpriseSection className={classNames(centerColumn, styles.foldMargin)} />
 
-				<CarouselSection className={classNames(styles.margin30, wideColumn)} />
+				<CarouselSection className={classNames(wideColumn)} />
 
 				<div className={styles.uEllipse}></div>
 
