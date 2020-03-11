@@ -12,6 +12,7 @@ export function ComponentTooltip(props: ComponentTooltipProps) {
 			{...rest}
 			rel="noopener"
 			target="_blank"
+			data-ignore-component-highlight
 			className={classNames(props.className, styles.componentTooltip)}
 		>
 			{children}

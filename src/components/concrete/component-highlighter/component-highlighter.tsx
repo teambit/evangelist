@@ -2,12 +2,12 @@ import React, { Component, HTMLAttributes } from 'react';
 //@ts-ignore
 import createRef from 'react-create-ref';
 import classNames from 'classnames';
-import { createPopper } from '@popperjs/core';
+import { createPopper, Instance } from '@popperjs/core';
 
 import debounce from 'lodash.debounce';
 
 import styles from './component-highlighter.module.scss';
-import { ComponentTooltip } from './tooltip/component-tooltip'
+import { ComponentTooltip } from './tooltip/component-tooltip';
 
 export interface ComponentHighlighterProps extends HTMLAttributes<HTMLDivElement> {
 	active?: boolean;
@@ -22,42 +22,51 @@ export class ComponentHighlighter extends Component<
 	ComponentHighlighterProps,
 	ComponentHighlighterState
 > {
-	ref?: HTMLDivElement = undefined;
+	private popperJsInstance?: Instance;
+	private popperRef = createRef();
 
 	state: ComponentHighlighterState = {
 		highlighting: undefined,
 	};
 
-	_highlight = (targetElement: HTMLElement, value: string) => {
+	componentDidUpdate(prevProps: ComponentHighlighterProps) {
+		const nextProps = this.props;
+
+		if (prevProps.active !== nextProps.active && !nextProps.active) {
+			//triggers state change, but should not change props.active
+			this.destroyPopper();
+		}
+	}
+
+	_highlight = (targetElement: HTMLElement, value?: string) => {
 		const { componentsDictionary } = this.props;
-		const tooltip = this.popperRef.current;
-		if (!tooltip || !componentsDictionary[value]) return;
+		const tooltip: HTMLElement = this.popperRef.current;
+		if (!tooltip) return;
+
+		if (targetElement.hasAttribute('data-ignore-component-highlight')) return;
+
+		if (!value || !componentsDictionary[value]) {
+			this.destroyPopper();
+			return;
+		}
 
 		this.setState({ highlighting: value });
-		// this.currentTarget = targetElement;
 
-		createPopper(targetElement, tooltip, {
+		this.popperJsInstance = createPopper(targetElement, tooltip, {
 			placement: 'top',
-			modifiers: [],
+			modifiers: [
+				{
+					name: 'flip',
+					enabled: false,
+				},
+			],
 		});
 	};
 
-	// //performance is ok, and I'd rather not have a race-condition with highlight()
-	// //so no debounce
-	// unHighlight = (element: HTMLElement) => {
-	// 	const { popperInstance } = this;
-
-	// 	if (!popperInstance || element !== this.currentTarget) return;
-
-	// 	popperInstance.destroy();
-	// 	this.currentTarget = undefined;
-	// 	this.popperInstance = undefined;
-	// 	this.setState({ highlighting: undefined });
-	// };
-
-	highlight = debounce(this._highlight, 80, {
-		maxWait: 80,
+	highlight = debounce(this._highlight, 180, {
+		maxWait: 180,
 	});
+
 
 	handleEnter = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 		const { target } = event;
@@ -65,23 +74,16 @@ export class ComponentHighlighter extends Component<
 
 		if (!element) return;
 
-		const bitId = element.getAttribute('data-bit-id');
-		if (!bitId) return;
+		const bitId = element.getAttribute('data-bit-id') || undefined;
 
 		this.highlight(element, bitId);
 	};
 
-	// handleOut = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-	// 	const { target } = event;
-	// 	const element = target as HTMLElement;
-
-	// 	this.unHighlight(element);
-	// };
-
-	// currentTarget?: HTMLElement;
-	// popperInstance?: Instance;
-
-	popperRef = createRef();
+	destroyPopper = () => {
+		this.popperJsInstance && this.popperJsInstance.destroy();
+		this.popperJsInstance = undefined;
+		this.setState({ highlighting: undefined });
+	};
 
 	render() {
 		const { active, children, componentsDictionary, ...rest } = this.props;
@@ -93,17 +95,17 @@ export class ComponentHighlighter extends Component<
 				{...rest}
 				className={classNames(styles.componentHighlighter, active && styles.active)}
 				// "Both `onmouseenter` and `onmouseover` fire when the mouse enters the boundary of an element.
-				// However, `onmouseenter` doesn't fire again (does not bubble)
+				// However, `onmouseenter` doesn't fire again (does not bubble),
 				// if the mouse enters a child element within this first element."
 				// https://stackoverflow.com/a/1638929/9941961
 
 				// (this is perfect for this use case)
 				onMouseOver={this.handleEnter}
-				//TODO - mouseout
-				// onMouseOut={this.handleOut}
+				// triggers when mouse exists this element (and not its children)
+				onMouseLeave={this.destroyPopper}
 			>
 				{children}
-				<div ref={this.popperRef}>
+				<div ref={this.popperRef} data-ignore-component-highlight>
 					<ComponentTooltip
 						href={href}
 						className={classNames(

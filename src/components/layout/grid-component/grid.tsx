@@ -41,6 +41,6 @@ export class Grid extends PureComponent<GridProps> {
 		if (colXl !== undefined) classes.push(colGridXl[colXl]);
 		if (colXs !== undefined) classes.push(colGridXs[colXs]);
 
-		return <div {...rest} className={classNames(...classes)} />;
+		return <div {...rest} className={classNames(...classes)} data-bit-id="layout/grid" />;
 	}
 }

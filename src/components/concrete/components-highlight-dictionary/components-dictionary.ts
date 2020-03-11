@@ -38,4 +38,5 @@ export const componentDictionary: DictionaryOptions = {
 	'sections/reuse-landing-section': `${scopeUrl}/sections/reuse-landing-section`,
 	'sections/sync-section': `${scopeUrl}/sections/sync-section`,
 	'sections/talk-to-experts': `${scopeUrl}/sections/talk-to-experts`,
+	'layout/grid': `${scopeUrl}/layout/grid`,
 };
