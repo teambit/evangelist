@@ -86,7 +86,11 @@ export class ComponentHighlighter extends Component<
 		return (
 			<div
 				{...rest}
-				className={classNames(styles.componentHighlighter, active && styles.active)}
+				className={classNames(
+					styles.componentHighlighter,
+					active && styles.active,
+					highlightTargetId && styles.highlighting
+				)}
 				// "Both `onmouseenter` and `onmouseover` fire when the mouse enters the boundary of an element.
 				// However, `onmouseenter` doesn't fire again (does not bubble),
 				// if the mouse enters a child element within this first element."
@@ -102,8 +106,7 @@ export class ComponentHighlighter extends Component<
 				<ComponentTooltip
 					href={href}
 					className={classNames(
-						styles.tooltipWrapper,
-						highlightTargetId && styles.visible
+						styles.tooltip,
 					)}
 					targetElement={targetElement}
 				>
@@ -111,7 +114,7 @@ export class ComponentHighlighter extends Component<
 					{FormatVersion(version)}
 				</ComponentTooltip>
 
-				<OverlayBorder targetElement={targetElement} />
+				<OverlayBorder targetElement={targetElement} className={styles.border} />
 			</div>
 		);
 	}

@@ -8,6 +8,10 @@
 	text-decoration: none;
 
 	font-size: 12px;
-	background-color: var(--component-highlighter-bg, #ff0281);
+	background-color: var(--component-highlighter-bg, #F83D6C);
 	color: var(--component-highlighter-text, white);
+	
+	&:hover {
+		background-color: var(--component-highlighter-highlight, #ff0281);
+	}
 }

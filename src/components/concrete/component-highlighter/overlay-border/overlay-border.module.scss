@@ -1,5 +1,6 @@
 .overlayBorder {
-	border: 2px solid #F83D6C;
+	border: 2px solid var(--component-highlighter-border, #F83D6C);;
+
 	border-radius: 11px;
 	padding: 4px;
 

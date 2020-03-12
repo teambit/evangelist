@@ -1,23 +1,19 @@
 .componentHighlighter {
-	&.active {
-		// [data-bit-id] {
-		// 	outline-color: transparent;
+	&.active.highlighting {
+		.tooltip {
+			display: block;
+		}
 
-		// 	&:hover {
-		// 		outline: 1px solid var(--component-highlighter-bg, #ff0281);
-		// 	}
-		// }
-
-		.tooltipWrapper.visible {
+		.border {
 			display: block;
 		}
 	}
 
-	// .border {
-	// 	background: var(--component-highlighter-bg, #ff0281);
-	// }
+	.tooltip {
+		display: none;
+	}
 
-	.tooltipWrapper {
+	.border {
 		display: none;
 	}
 }
