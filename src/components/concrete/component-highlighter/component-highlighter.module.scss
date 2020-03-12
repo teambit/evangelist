@@ -11,9 +11,11 @@
 
 	.tooltip {
 		display: none;
+		transition: all 180ms;
 	}
 
 	.border {
 		display: none;
+		transition: all 180ms;
 	}
 }

@@ -17,8 +17,6 @@ export interface ComponentBorderProps extends React.HTMLAttributes<HTMLDivElemen
 }
 
 export class OverlayBorder extends Component<ComponentBorderProps> {
-	// private popperRef = createRef();
-	// private popperInstance?: Instance;
 	private popperInstance?: Instance;
 	private ref = createRef();
 
@@ -35,9 +33,6 @@ export class OverlayBorder extends Component<ComponentBorderProps> {
 	}
 
 	private reposition = (targetElement?: HTMLElement) => {
-		// if (temp) return;
-		// temp = true;
-
 		if (!targetElement) {
 			this.destroy();
 			return;
@@ -91,28 +86,7 @@ export class OverlayBorder extends Component<ComponentBorderProps> {
 				{...rest}
 				className={classNames(className, styles.overlayBorder)}
 				ref={this.ref}
-			>
-				{/* <div
-					className={styles.border}
-					ref={this.borderRefs.top}
-					data-ignore-component-highlight
-				></div>
-				<div
-					className={styles.border}
-					ref={this.borderRefs.right}
-					data-ignore-component-highlight
-				></div>
-				<div
-					className={styles.border}
-					ref={this.borderRefs.bot}
-					data-ignore-component-highlight
-				></div>
-				<div
-					className={styles.border}
-					ref={this.borderRefs.left}
-					data-ignore-component-highlight
-				></div> */}
-			</div>
+			></div>
 		);
 	}
 }
