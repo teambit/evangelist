@@ -363,7 +363,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/component-highlighter@0.0.4": {
+    "bit.marketing/concrete/component-highlighter@0.0.5": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -379,6 +379,21 @@
                 "relativePath": "src/components/concrete/component-highlighter/index.ts",
                 "test": false,
                 "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/component-highlighter/overlay-border/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/component-highlighter/overlay-border/overlay-border.module.scss",
+                "test": false,
+                "name": "overlay-border.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/component-highlighter/overlay-border/overlay-border.tsx",
+                "test": false,
+                "name": "overlay-border.tsx"
             },
             {
                 "relativePath": "src/components/concrete/component-highlighter/tooltip/component-tooltip.module.scss",
@@ -401,7 +416,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/components-highlight-dictionary@0.0.1": {
+    "bit.marketing/concrete/components-highlight-dictionary@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/components-highlight-dictionary/components-dictionary.ts",
@@ -1368,23 +1383,41 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "concrete/components-highlight-dictionary@0.0.1": {
+    "bit.marketing/utils/popper-js/ignore-popper-size@0.0.1": {
         "files": [
             {
-                "relativePath": "src/components/concrete/components-highlight-dictionary/components-dictionary.ts",
+                "relativePath": "src/utils/popper-js/ignore-popper-size/ignore-popper-size.tsx",
                 "test": false,
-                "name": "components-dictionary.ts"
+                "name": "ignore-popper-size.tsx"
             },
             {
-                "relativePath": "src/components/concrete/components-highlight-dictionary/index.ts",
+                "relativePath": "src/utils/popper-js/ignore-popper-size/index.ts",
                 "test": false,
                 "name": "index.ts"
             }
         ],
-        "mainFile": "src/components/concrete/components-highlight-dictionary/index.ts",
-        "trackDir": "src/components/concrete/components-highlight-dictionary",
+        "mainFile": "src/utils/popper-js/ignore-popper-size/index.ts",
+        "trackDir": "src/utils/popper-js/ignore-popper-size",
         "origin": "AUTHORED",
-        "exported": false
+        "exported": true
+    },
+    "bit.marketing/utils/popper-js/resize-to-match-reference@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/utils/popper-js/resize-to-match-reference/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/utils/popper-js/resize-to-match-reference/resize-to-match-reference.tsx",
+                "test": false,
+                "name": "resize-to-match-reference.tsx"
+            }
+        ],
+        "mainFile": "src/utils/popper-js/resize-to-match-reference/index.ts",
+        "trackDir": "src/utils/popper-js/resize-to-match-reference",
+        "origin": "AUTHORED",
+        "exported": true
     },
     "version": "14.7.6"
 }
