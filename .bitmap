@@ -363,7 +363,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/component-highlighter@0.1.0": {
+    "bit.marketing/concrete/component-highlighter@0.1.3": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -421,7 +421,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/components-highlight-dictionary@0.1.0": {
+    "bit.marketing/concrete/components-highlight-dictionary@0.1.3": {
         "files": [
             {
                 "relativePath": "src/components/concrete/components-highlight-dictionary/components-dictionary.ts",
