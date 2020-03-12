@@ -10,7 +10,11 @@ type LabelProps = {
 
 export function Label({ children, color, className }: LabelProps) {
 	return (
-		<div className={classNames(styles.label, className)} style={{ background: color }} data-bit-id="label">
+		<div
+			className={classNames(styles.label, className)}
+			style={{ background: color }}
+			data-bit-id="base/label"
+		>
 			{children}
 		</div>
 	);

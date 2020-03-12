@@ -16,7 +16,11 @@ import { textColumn } from '../../components/layout/grid';
 
 export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} className={classNames(props.className)} data-bit-id="buildSection">
+		<div
+			{...props}
+			className={classNames(props.className)}
+			data-bit-id="sections/build-section"
+		>
 			<Label className={styles.ctaLabel}>Build</Label>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.md}>Hyper fast Incrementall component builds</H2>

@@ -19,7 +19,7 @@ export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(styles.deploySection, props.className)}
-			data-bit-id="deploySection"
+			data-bit-id="sections/deploy-section"
 		>
 			<Label className={styles.ctaLabel}>Deploy</Label>
 			<div className={classNames(textColumn, marginCenter)}>

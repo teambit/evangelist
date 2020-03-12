@@ -24,7 +24,7 @@ export function TwitterLink({ className, href, ...rest }: TwitterLinkProps) {
 			{...rest}
 			href={href}
 			className={classNames(styles.twitterLink, className)}
-			data-bit-id="twitterLink"
+			data-bit-id="community-links/twitter-link"
 		>
 			<Icon of="twitter-logo" className={classNames(styles.icon)} />
 			<span>@bitdev_</span>

@@ -19,7 +19,7 @@ export function Heading(props: HeadingProps) {
   const { element, className, size, ...rest } = props;
   const Element = element || "h1";
   
-  return <Element {...rest} className={className} data-bit-id="heading" />;
+  return <Element {...rest} className={className} data-bit-id="base/heading" />;
 }
 
 Heading.defaultProps = {

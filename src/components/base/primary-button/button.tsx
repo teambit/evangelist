@@ -24,7 +24,7 @@ export function PrimaryButton({ className, elevation = "none", ...rest }: Button
         elevations[elevation],
         className
       )}
-      data-bit-id="primaryButton"
+      data-bit-id="base/primary-button"
       {...rest}
     ></BaseButton>
   );

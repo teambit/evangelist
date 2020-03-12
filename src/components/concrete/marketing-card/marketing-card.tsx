@@ -21,13 +21,13 @@ type MarketingCardProps = {
 export const MarketingCard = (props: MarketingCardProps) => {
 	const { title, children, className, ctaColor, label, to, linkText } = props;
 	const accentColor = { [styles.accentVar]: ctaColor } as CSSProperties;
-  
+
 	return (
 		<Card
 			elevation="low"
 			className={classNames(styles.card, className)}
 			style={accentColor}
-			data-bit-id="marketingCard"
+			data-bit-id="concrete/marketing-card"
 		>
 			<Label className={styles.ctaLabel}>{label}</Label>
 			<H1 element="h5" size={PossibleSizes.xs}>
@@ -35,7 +35,7 @@ export const MarketingCard = (props: MarketingCardProps) => {
 			</H1>
 			<Paragraph className={classNames(styles.text)}>{children}</Paragraph>
 			<CommunityLink className={styles.ctaLink} href={to || '#'}>
-				{linkText} <Icon of='right_arrow' className={styles.icon} />
+				{linkText} <Icon of="right_arrow" className={styles.icon} />
 			</CommunityLink>
 		</Card>
 	);

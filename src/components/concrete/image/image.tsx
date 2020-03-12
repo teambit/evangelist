@@ -31,7 +31,7 @@ export function Image({ alt, src, fullWidth, className, ...rest }: ImageProps) {
 			alt={alt}
 			src={`${staticStorageUrl}/${src}`}
 			className={classNames(fullWidth && styles.fullWidth, className)}
-			data-bit-id="image"
+			data-bit-id="concrete/image"
 		/>
 	);
 }

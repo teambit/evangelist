@@ -3,26 +3,32 @@ import classNames from 'classnames';
 import styles from './image.module.scss';
 
 export type BaseImageProps = {
-    /**
-     * alt text
-     */
-    alt: string;
-    /**
-     * src of image
-     */
-    src: string;
-    /**
-     * className for styles overrides
-     */
-    className?: string;
-} & React.HTMLAttributes<HTMLImageElement>
+	/**
+	 * alt text
+	 */
+	alt: string;
+	/**
+	 * src of image
+	 */
+	src: string;
+	/**
+	 * className for styles overrides
+	 */
+	className?: string;
+} & React.HTMLAttributes<HTMLImageElement>;
 
 /**
- * 
+ *
  * Image component - base image
  */
-export function BaseImage({alt, src, className, ...rest}: BaseImageProps) {
-    return (
-        <img alt={alt} src={src} {...rest} className={classNames(styles.image, className)} />
-    )
+export function BaseImage({ alt, src, className, ...rest }: BaseImageProps) {
+	return (
+		<img
+			alt={alt}
+			src={src}
+			{...rest}
+			className={classNames(styles.image, className)}
+			data-bit-id="base/image"
+		/>
+	);
 }

@@ -22,7 +22,7 @@ export function Paragraph({ className, size, element: Element, ...rest }: Paragr
 	return (
 		<Element
 			className={classNames(styles[size], className)}
-			data-bit-id="paragraph"
+			data-bit-id="base/paragraph"
 			{...rest}
 		/>
 	);

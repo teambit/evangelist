@@ -32,7 +32,7 @@ export function CtaSection(props: CtaProps) {
 				text.center,
 				text.sm.left
 			)}
-			data-bit-id="ctaSection"
+			data-bit-id="sections/cta"
 		>
 			<div>
 				<H2 size={PossibleSizes.xs}>Ready to try Bit?</H2>

@@ -16,7 +16,7 @@ export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(styles.autoSection, text.center, props.className)}
-			data-bit-id="autoSection"
+			data-bit-id="sections/dev-section"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.md}>Empower autonomous teams to build together</H2>
