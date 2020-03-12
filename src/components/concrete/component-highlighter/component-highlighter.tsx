@@ -1,13 +1,15 @@
 import React, { Component, HTMLAttributes } from 'react';
 //@ts-ignore
-import createRef from 'react-create-ref';
+// import createRef from 'react-create-ref';
 import classNames from 'classnames';
-import { createPopper, Instance } from '@popperjs/core';
+// import { Modifier } from '@popperjs/core';
 
 import debounce from 'lodash.debounce';
 
 import styles from './component-highlighter.module.scss';
 import { ComponentTooltip } from './tooltip/component-tooltip';
+// import { ComponentBorder } from './border/border';
+import { OverlayBorder } from './overlay-border';
 
 export interface ComponentHighlighterProps extends HTMLAttributes<HTMLDivElement> {
 	active?: boolean;
@@ -16,17 +18,18 @@ export interface ComponentHighlighterProps extends HTMLAttributes<HTMLDivElement
 
 interface ComponentHighlighterState {
 	highlighting?: string;
+	targetElement?: HTMLElement;
 }
 
 export class ComponentHighlighter extends Component<
 	ComponentHighlighterProps,
 	ComponentHighlighterState
 > {
-	private popperJsInstance?: Instance;
-	private popperRef = createRef();
+	// private borderRef = createRef();
 
 	state: ComponentHighlighterState = {
 		highlighting: undefined,
+		targetElement: undefined,
 	};
 
 	componentDidUpdate(prevProps: ComponentHighlighterProps) {
@@ -38,35 +41,24 @@ export class ComponentHighlighter extends Component<
 		}
 	}
 
+	componentWillUnmount() {
+		this.highlight.cancel();
+	}
+
 	_highlight = (targetElement: HTMLElement, value?: string) => {
 		const { componentsDictionary } = this.props;
-		const tooltip: HTMLElement = this.popperRef.current;
-		if (!tooltip) return;
 
 		if (targetElement.hasAttribute('data-ignore-component-highlight')) return;
 
 		if (!value || !componentsDictionary[value]) {
-			this.destroyPopper();
+			this.setState({ targetElement: undefined, highlighting: undefined });
 			return;
 		}
 
-		this.setState({ highlighting: value });
-
-		this.popperJsInstance = createPopper(targetElement, tooltip, {
-			placement: 'top',
-			modifiers: [
-				{
-					name: 'flip',
-					enabled: false,
-				},
-			],
-		});
+		this.setState({ targetElement: targetElement, highlighting: value });
 	};
 
-	highlight = debounce(this._highlight, 180, {
-		maxWait: 180,
-	});
-
+	highlight = debounce(this._highlight, 180);
 
 	handleEnter = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 		const { target } = event;
@@ -80,14 +72,12 @@ export class ComponentHighlighter extends Component<
 	};
 
 	destroyPopper = () => {
-		this.popperJsInstance && this.popperJsInstance.destroy();
-		this.popperJsInstance = undefined;
-		this.setState({ highlighting: undefined });
+		this.setState({ highlighting: undefined, targetElement: undefined });
 	};
 
 	render() {
 		const { active, children, componentsDictionary, ...rest } = this.props;
-		const { highlighting } = this.state;
+		const { highlighting, targetElement } = this.state;
 		const href = highlighting ? componentsDictionary[highlighting] : undefined;
 
 		return (
@@ -105,17 +95,27 @@ export class ComponentHighlighter extends Component<
 				onMouseLeave={this.destroyPopper}
 			>
 				{children}
-				<div ref={this.popperRef} data-ignore-component-highlight>
-					<ComponentTooltip
-						href={href}
-						className={classNames(
-							styles.tooltipWrapper,
-							highlighting && styles.visible
-						)}
-					>
-						{highlighting}
-					</ComponentTooltip>
-				</div>
+
+				<ComponentTooltip
+					href={href}
+					className={classNames(
+						styles.tooltipWrapper,
+						highlighting && styles.visible
+					)}
+					targetElement={targetElement}
+				>
+					{highlighting}
+				</ComponentTooltip>
+
+				<OverlayBorder targetElement={targetElement} />
+				{/* <ComponentBorder targetElement={targetElement}/> */}
+				{/*  */}
+				{/* </ComponentBorder> */}
+				{/* </div> */}
+
+				{/* <div ref={this.borderRef} className={styles.border}>
+					stretcher
+				</div> */}
 			</div>
 		);
 	}
