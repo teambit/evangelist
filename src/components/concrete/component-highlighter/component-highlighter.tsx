@@ -1,23 +1,21 @@
 import React, { Component, HTMLAttributes } from 'react';
-//@ts-ignore
-// import createRef from 'react-create-ref';
 import classNames from 'classnames';
-// import { Modifier } from '@popperjs/core';
 
 import debounce from 'lodash.debounce';
 
 import styles from './component-highlighter.module.scss';
 import { ComponentTooltip } from './tooltip/component-tooltip';
-// import { ComponentBorder } from './border/border';
 import { OverlayBorder } from './overlay-border';
+import { ComponentHighlightDictionary, VersionMap } from './content-type';
 
 export interface ComponentHighlighterProps extends HTMLAttributes<HTMLDivElement> {
 	active?: boolean;
-	componentsDictionary: { [id: string]: string };
+	componentsDictionary: ComponentHighlightDictionary;
+	versionMap?: VersionMap;
 }
 
 interface ComponentHighlighterState {
-	highlighting?: string;
+	highlightTargetId?: string;
 	targetElement?: HTMLElement;
 }
 
@@ -25,10 +23,8 @@ export class ComponentHighlighter extends Component<
 	ComponentHighlighterProps,
 	ComponentHighlighterState
 > {
-	// private borderRef = createRef();
-
 	state: ComponentHighlighterState = {
-		highlighting: undefined,
+		highlightTargetId: undefined,
 		targetElement: undefined,
 	};
 
@@ -45,22 +41,22 @@ export class ComponentHighlighter extends Component<
 		this.highlight.cancel();
 	}
 
-	_highlight = (targetElement: HTMLElement, value?: string) => {
+	private _highlight = (targetElement: HTMLElement, value?: string) => {
 		const { componentsDictionary } = this.props;
 
 		if (targetElement.hasAttribute('data-ignore-component-highlight')) return;
 
 		if (!value || !componentsDictionary[value]) {
-			this.setState({ targetElement: undefined, highlighting: undefined });
+			this.setState({ targetElement: undefined, highlightTargetId: undefined });
 			return;
 		}
 
-		this.setState({ targetElement: targetElement, highlighting: value });
+		this.setState({ targetElement: targetElement, highlightTargetId: value });
 	};
 
-	highlight = debounce(this._highlight, 180);
+	private highlight = debounce(this._highlight, 180);
 
-	handleEnter = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+	private handleEnter = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 		const { target } = event;
 		const element = target as HTMLElement;
 
@@ -71,14 +67,21 @@ export class ComponentHighlighter extends Component<
 		this.highlight(element, bitId);
 	};
 
-	destroyPopper = () => {
-		this.setState({ highlighting: undefined, targetElement: undefined });
+	private destroyPopper = () => {
+		this.setState({ highlightTargetId: undefined, targetElement: undefined });
 	};
 
 	render() {
-		const { active, children, componentsDictionary, ...rest } = this.props;
-		const { highlighting, targetElement } = this.state;
-		const href = highlighting ? componentsDictionary[highlighting] : undefined;
+		const { active, children, componentsDictionary, versionMap = {}, ...rest } = this.props;
+		const { highlightTargetId, targetElement } = this.state;
+
+		const componentDetails = highlightTargetId
+			? componentsDictionary[highlightTargetId]
+			: { url: undefined };
+		const explicitVersion = highlightTargetId && versionMap[highlightTargetId];
+
+		const { url: href, displayName = highlightTargetId } = componentDetails;
+		const version = explicitVersion || componentDetails.version;
 
 		return (
 			<div
@@ -100,23 +103,22 @@ export class ComponentHighlighter extends Component<
 					href={href}
 					className={classNames(
 						styles.tooltipWrapper,
-						highlighting && styles.visible
+						highlightTargetId && styles.visible
 					)}
 					targetElement={targetElement}
 				>
-					{highlighting}
+					{displayName}
+					{FormatVersion(version)}
 				</ComponentTooltip>
 
 				<OverlayBorder targetElement={targetElement} />
-				{/* <ComponentBorder targetElement={targetElement}/> */}
-				{/*  */}
-				{/* </ComponentBorder> */}
-				{/* </div> */}
-
-				{/* <div ref={this.borderRef} className={styles.border}>
-					stretcher
-				</div> */}
 			</div>
 		);
 	}
+}
+
+function FormatVersion(version?: string) {
+	if (!version) return '';
+
+	return `@${version}`;
 }
