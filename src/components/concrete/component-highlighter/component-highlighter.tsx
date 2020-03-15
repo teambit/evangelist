@@ -41,17 +41,23 @@ export class ComponentHighlighter extends Component<
 		this.highlight.cancel();
 	}
 
-	private _highlight = (targetElement: HTMLElement, value?: string) => {
+	private _highlight = (targetElement: HTMLElement | null) => {
 		const { componentsDictionary } = this.props;
 
-		if (targetElement.hasAttribute('data-ignore-component-highlight')) return;
+		for (let elem = targetElement; !!elem; elem = elem.parentElement) {
+			if (elem.hasAttribute('data-ignore-component-highlight')) {
+				return; //ignore
+			}
 
-		if (!value || !componentsDictionary[value]) {
-			this.setState({ targetElement: undefined, highlightTargetId: undefined });
-			return;
+			const value = elem.getAttribute('data-bit-id');
+			if (value && componentsDictionary[value]) {
+				this.setState({ targetElement: elem, highlightTargetId: value });
+				return; //success!
+			}
 		}
 
-		this.setState({ targetElement: targetElement, highlightTargetId: value });
+		this.setState({ targetElement: undefined, highlightTargetId: undefined });
+		return; //default - highlight none
 	};
 
 	private highlight = debounce(this._highlight, 180);
@@ -62,9 +68,7 @@ export class ComponentHighlighter extends Component<
 
 		if (!element) return;
 
-		const bitId = element.getAttribute('data-bit-id') || undefined;
-
-		this.highlight(element, bitId);
+		this.highlight(element);
 	};
 
 	private destroyPopper = () => {
@@ -105,9 +109,7 @@ export class ComponentHighlighter extends Component<
 
 				<ComponentTooltip
 					href={href}
-					className={classNames(
-						styles.tooltip,
-					)}
+					className={styles.tooltip}
 					targetElement={targetElement}
 				>
 					{displayName}

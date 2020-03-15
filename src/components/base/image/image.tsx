@@ -24,11 +24,11 @@ export type BaseImageProps = {
 export function BaseImage({ alt, src, className, ...rest }: BaseImageProps) {
 	return (
 		<img
+			data-bit-id="base/image"
 			alt={alt}
 			src={src}
 			{...rest}
 			className={classNames(styles.image, className)}
-			data-bit-id="base/image"
 		/>
 	);
 }

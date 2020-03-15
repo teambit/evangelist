@@ -7,10 +7,7 @@ import { Instance, createPopper } from '@popperjs/core';
 
 import styles from './overlay-border.module.scss';
 import { ignorePopperSize } from '../../../../utils/popper-js/ignore-popper-size';
-import {
-	ResizeToMatchReferenceOptions,
-	resizeToMatchReference,
-} from '../../../../utils/popper-js/resize-to-match-reference';
+import { resizeToMatchReference } from '../../../../utils/popper-js/resize-to-match-reference';
 
 export interface ComponentBorderProps extends React.HTMLAttributes<HTMLDivElement> {
 	targetElement?: HTMLElement;
@@ -62,12 +59,6 @@ export class OverlayBorder extends Component<ComponentBorderProps> {
 					options: {
 						offset: [-6, 6],
 					},
-				},
-				{
-					name: 'matchPopperSize',
-					options: {
-						offset: [0, 0],
-					} as ResizeToMatchReferenceOptions,
 				},
 			],
 		});

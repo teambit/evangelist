@@ -36,6 +36,10 @@ export const componentDictionary: ComponentHighlightDictionary = {
 		displayName: 'base/heading',
 		url: `${scopeUrl}/base/heading`,
 	},
+	'concrete/heading': {
+		displayName: 'concrete/heading',
+		url: `${scopeUrl}/concrete/heading`,
+	},
 	'concrete/image': {
 		displayName: 'concrete/image',
 		url: `${scopeUrl}/concrete/image`,
