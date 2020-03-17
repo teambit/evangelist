@@ -12,7 +12,7 @@ import { fourGrid } from '../../components/layout/grid-definition/four-grid';
 import { Image } from '../../components/concrete/image';
 
 import styles from './buildSection.module.scss';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 
 export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (

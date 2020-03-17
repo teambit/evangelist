@@ -13,7 +13,7 @@ import { H2, H3 } from '../../components/concrete/heading';
 
 import { text, alignItems, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 
 export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 	return (

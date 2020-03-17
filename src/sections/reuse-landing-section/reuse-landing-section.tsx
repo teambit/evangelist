@@ -8,13 +8,11 @@ import { text, marginCenter } from '../../components/layout/align';
 
 import { Paragraph } from '../../components/base/paragraph';
 import { H1 } from '../../components/concrete/heading';
-import { PrimaryButton } from '../../components/base/primary-button';
-import { CtaButton } from '../../components/concrete/cta-button';
 import { IconLine } from '../../components/concrete/icon-line';
 import { PrimaryLink } from '../../components/concrete/primary-link';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 import { EvaButton } from '../../components/concrete/eva-button';
 
 const iconsArray = [

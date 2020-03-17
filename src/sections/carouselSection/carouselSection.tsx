@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { PossibleSizes } from '../../constants/sizes';
 import { H2 } from '../../components/concrete/heading';
 import styles from './carouselSection.module.scss';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 import { marginCenter } from '../../components/layout/align';
 
 import CommentCarousel from '../../components/concrete/comment-carousel/comment-carousel';

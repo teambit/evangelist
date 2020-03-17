@@ -9,7 +9,7 @@ import { text, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
 import styles from './autoSection.module.scss';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 
 export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (

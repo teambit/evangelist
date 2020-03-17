@@ -9,7 +9,7 @@ import { PossibleSizes } from '../../constants/sizes';
 import { marginCenter } from '../../components/layout/align';
 
 import styles from './booking-breakdown.module.scss';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 
 export function BookingBreakdown(props: HTMLAttributes<HTMLDivElement>) {
 	return (

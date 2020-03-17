@@ -11,7 +11,7 @@ import { CommunitySection } from '../../sections/community';
 import { CtaSection } from '../../sections/cta';
 import { ReuseSection } from '../../sections/reuse';
 import { SummaryCards } from '../../sections/summary-cards';
-import { centerColumn, wideColumn } from '../../components/layout/grid';
+import { centerColumn, wideColumn } from '../../components/layout/page-frame';
 import { Separator } from '../../components/base/separator';
 
 import styles from './homepage.module.scss';

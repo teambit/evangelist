@@ -10,7 +10,7 @@ import { Image } from '../../components/concrete/image';
 import { Grid } from '../../components/layout/grid-component';
 
 import styles from './reuse-section.module.scss';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 import { marginCenter } from '../../components/layout/align';
 
 export function ReuseSection(props: React.HTMLAttributes<HTMLDivElement>) {

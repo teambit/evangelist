@@ -5,7 +5,7 @@ import styles from './reuse-page.module.scss';
 
 import { CarouselSection } from '../../sections/carouselSection';
 import { CtaSection } from '../../sections/cta';
-import { centerColumn, wideColumn } from '../../components/layout/grid';
+import { centerColumn, wideColumn } from '../../components/layout/page-frame';
 import { Separator } from '../../components/base/separator';
 
 import { ReuseLandingSection } from '../../sections/reuse-landing-section';

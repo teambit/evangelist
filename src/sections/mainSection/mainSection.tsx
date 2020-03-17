@@ -6,8 +6,6 @@ import { Paragraph } from '../../components/base/paragraph';
 import { Image } from '../../components/concrete/image';
 import { IconLine } from '../../components/concrete/icon-line';
 import { H1 } from '../../components/concrete/heading';
-import { PrimaryButton } from '../../components/base/primary-button';
-import { CtaButton } from '../../components/concrete/cta-button';
 
 import { marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';

@@ -7,10 +7,6 @@ export const componentDictionary: ComponentHighlightDictionary = {
 		displayName: 'bit.marketing/base/paragraph',
 		url: `${scopeUrl}/base/paragraph`,
 	},
-	'base/primary-button': {
-		displayName: 'bit.marketing/base/primary-button',
-		url: `${scopeUrl}/base/primary-button`,
-	},
 	'base/label': {
 		displayName: 'bit.marketing/base/label',
 		url: `${scopeUrl}/base/label`,
@@ -48,10 +44,6 @@ export const componentDictionary: ComponentHighlightDictionary = {
 	'concrete/image': {
 		displayName: 'bit.marketing/concrete/image',
 		url: `${scopeUrl}/concrete/image`,
-	},
-	'concrete/cta-button': {
-		displayName: 'bit.marketing/concrete/cta-button',
-		url: `${scopeUrl}/concrete/cta-button`,
 	},
 	'concrete/icon-line': {
 		displayName: 'bit.marketing/concrete/icon-line',

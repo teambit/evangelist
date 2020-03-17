@@ -12,7 +12,7 @@ import { Grid } from '../../components/layout/grid-component';
 
 import styles from './devSection.module.scss';
 import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 // TODO - use label color through class instead of accentColor
 
 export function DevSection(props: HTMLAttributes<HTMLDivElement>) {

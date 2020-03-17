@@ -12,7 +12,7 @@ import { zGrid } from '../../components/layout/grid-definition/z-grid';
 import { text, alignItems, marginCenter } from '../../components/layout/align';
 
 import styles from './deploySection.module.scss';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 
 export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 	return (

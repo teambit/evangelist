@@ -5,7 +5,6 @@ import styles from './talk-to-experts.module.scss';
 
 import { H2 } from '../../components/concrete/heading';
 import { PossibleSizes } from '../../constants/sizes';
-import { CtaButton } from '../../components/concrete/cta-button';
 import { Paragraph } from '../../components/base/paragraph';
 import { justifyItems, alignItems, text, marginCenter } from '../../components/layout/align';
 import { PrimaryLink } from '../../components/concrete/primary-link';

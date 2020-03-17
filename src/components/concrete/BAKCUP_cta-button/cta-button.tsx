@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { PrimaryButton, ButtonProps } from '../../base/primary-button';
+import { PrimaryButton, ButtonProps } from '../../base/BACKUP_primary-button';
 
 import styles from './cta-button.module.scss';
 

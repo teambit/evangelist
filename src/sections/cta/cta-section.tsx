@@ -5,7 +5,6 @@ import styles from './cta-section.module.scss';
 
 import { H2 } from '../../components/concrete/heading';
 import { PossibleSizes } from '../../constants/sizes';
-import { CtaButton } from '../../components/concrete/cta-button';
 import { Paragraph } from '../../components/base/paragraph';
 import { Grid } from '../../components/layout/grid-component';
 import { justifyItems, alignItems, text } from '../../components/layout/align';
