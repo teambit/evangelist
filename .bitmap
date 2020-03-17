@@ -363,7 +363,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/comment-carousel@0.0.1": {
+    "bit.marketing/concrete/comment-carousel@0.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/comment-carousel/carousel.module.scss",
@@ -391,7 +391,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/component-highlighter@0.1.5": {
+    "bit.marketing/concrete/component-highlighter@0.1.7": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -449,7 +449,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/components-highlight-dictionary@0.1.6": {
+    "bit.marketing/concrete/components-highlight-dictionary@0.1.9": {
         "files": [
             {
                 "relativePath": "src/components/concrete/components-highlight-dictionary/components-dictionary.ts",
@@ -849,7 +849,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/homepage@0.0.24": {
+    "bit.marketing/pages/homepage@0.0.25": {
         "files": [
             {
                 "name": "homepage.module.scss",
@@ -872,7 +872,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.30": {
+    "bit.marketing/pages/hybrid-homepage@0.0.31": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -987,7 +987,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/carousel-section@0.0.15": {
+    "bit.marketing/sections/carousel-section@0.0.16": {
         "files": [
             {
                 "name": "carouselSection.module.scss",
@@ -1332,7 +1332,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/brand-colorsmodule@0.0.2": {
+    "bit.marketing/theme/brand-colors@0.0.1": {
         "files": [
             {
                 "relativePath": "src/themes/brand-colors.module.scss",
@@ -1344,7 +1344,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/brand-definitionmodule@0.0.4": {
+    "bit.marketing/theme/brand-definition@0.0.1": {
         "files": [
             {
                 "relativePath": "src/themes/brand-definition.module.scss",
@@ -1404,7 +1404,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/shadow-definitionmodule@0.0.3": {
+    "bit.marketing/theme/shadow-definition@0.0.1": {
         "files": [
             {
                 "relativePath": "src/themes/shadow-definition.module.scss",
@@ -1416,7 +1416,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/size-definitionmodule@0.0.2": {
+    "bit.marketing/theme/size-definition@0.0.1": {
         "files": [
             {
                 "relativePath": "src/themes/size-definition.module.scss",
@@ -1440,7 +1440,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/theme/theme-provider@0.0.7": {
+    "bit.marketing/theme/theme-provider@0.0.8": {
         "files": [
             {
                 "name": "index.tsx",

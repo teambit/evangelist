@@ -99,11 +99,39 @@
       "concrete/comment-carousel": {
         "devDependencies": {
           "@types/lodash.debounce": "+"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "tsconfig": {
+                  "compilerOptions": {
+                    "target": "ES5",
+                    "module": "CommonJS"
+                  }
+                }
+              }
+            }
+          }
         }
       },
       "sections/carousel-section": {
         "devDependencies": {
           "@types/lodash.debounce": "+"
+        },
+        "env": {
+          "compiler": {
+            "bit.envs/compilers/react-typescript@3.1.43": {
+              "rawConfig": {
+                "tsconfig": {
+                  "compilerOptions": {
+                    "target": "ES5",
+                    "module": "CommonJS"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
