@@ -60,6 +60,10 @@ export const componentDictionary: ComponentHighlightDictionary = {
 		displayName: 'concrete/twitter-card',
 		url: `${scopeUrl}/concrete/twitter-card`,
 	},
+	'concrete/comment-carousel': {
+		displayName: 'concrete/comment-carousel',
+		url: `${scopeUrl}/concrete/comment-carousel`,
+	},
 
 	'community-links/slack-link': {
 		displayName: 'community-links/slack-link',

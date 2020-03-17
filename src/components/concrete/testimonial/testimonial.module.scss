@@ -1,0 +1,43 @@
+.box {
+	// react slick add 'display: inline-block;
+	// https://github.com/akiran/react-slick/issues/1180
+	display: flex !important; 
+	justify-content: space-between;
+	flex-direction: column;
+
+	margin: 0 auto;
+
+	opacity: 0.5;
+	cursor: pointer;
+
+	&[data-active] {
+		cursor: unset;
+		opacity: 1;
+	}
+}
+
+.bottom {
+	display: flex;
+	align-items: center;
+}
+
+.quote {
+	font-size: 25px;
+	margin-bottom: 46px;
+}
+
+.image {
+	margin-right: 20px;
+	max-width: 50px;
+	max-height: 50px;
+}
+
+.name {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.description {
+	font-size: 14px;
+}

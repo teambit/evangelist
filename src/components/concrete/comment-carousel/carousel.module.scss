@@ -1,0 +1,27 @@
+@import '../../layout/breakpoints';
+
+.carouselWrapper {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    
+    //'dots' will be positioned in this padding:
+    padding-bottom: 20px;
+}
+.carousel {
+    //space between carousel and 'dots'
+    padding-bottom: 20px;
+    
+    @media screen and (min-width: $br-l) {
+        width: 120%;
+        margin-left: -10%;
+    }
+    @media screen and (min-width: $br-xl) {
+        width: unset;
+        margin: 0 auto;
+    }
+}
+
+.testimonial {
+    max-width: 370px;
+}

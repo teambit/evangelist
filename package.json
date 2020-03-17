@@ -26,9 +26,7 @@
   "dependencies": {
     "@bit/bit.gui.atoms.base-icon": "^0.0.3",
     "@bit/bit.gui.base.button": "^0.0.9",
-    "@bit/bit.web.components.comment-carousel": "^0.2.0",
     "@bit/bit.web.config.links": "^0.0.2",
-    "@bit/bit.web.content.testimonials": "^0.0.1",
     "@popperjs/core": "^2.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -41,7 +39,9 @@
     "react-create-ref": "^1.0.1",
     "react-dom": "^16.x.x",
     "react-scripts": "3.4.0",
+    "react-slick": "^0.25.2",
     "reset-css": "^5.0.1",
+    "resize-observer-polyfill": "^1.5.1",
     "typescript": "~3.7.2"
   },
   "devDependencies": {
