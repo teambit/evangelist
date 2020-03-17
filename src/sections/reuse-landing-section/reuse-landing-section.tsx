@@ -31,56 +31,48 @@ interface ReuseLandingProps extends HTMLAttributes<HTMLDivElement> {
 
 export function ReuseLandingSection(props: ReuseLandingProps) {
 	return (
-		<Grid
-			{...props}
-			colL={2}
-			className={classNames(
-				styles.reuseLandingSection,
-				text.center,
-				text.l.left,
-				props.className
-			)}
-			data-bit-id="sections/reuse-landing-section"
-		>
-			<div>
+		<div data-bit-id="sections/reuse-landing-section" {...props}>
+			<Grid colL={2} className={classNames(styles.mainGrid, text.center, text.l.left)}>
 				<div>
-					<H1 size={PossibleSizes.sm} className={styles.headline}>
-						A better way to build
-						<br />
-						with modern components
-					</H1>
+					<div>
+						<H1 size={PossibleSizes.sm} className={styles.headline}>
+							A better way to build
+							<br />
+							with modern components
+						</H1>
+						<Paragraph
+							size={PossibleSizes.lg}
+							className={classNames(styles.paragraph, textColumn, marginCenter)}
+						>
+							Bit is a scalable and collaborative way to build and reuse
+							components. It’s everything you need from local development to
+							cross-project collaboration. Try it for free.
+						</Paragraph>
+					</div>
+
 					<Paragraph
-						size={PossibleSizes.lg}
-						className={classNames(styles.paragraph, textColumn, marginCenter)}
+						size={PossibleSizes.sm}
+						element="div"
+						className={classNames(styles.buttons)}
 					>
-						Bit is a scalable and collaborative way to build and reuse components.
-						It’s everything you need from local development to cross-project
-						collaboration. Try it for free.
+						<PrimaryLink href="https://bit.dev/signup">
+							<CtaButton elevation="medium">Get Started</CtaButton>
+						</PrimaryLink>
+						<div className={styles.spacer} />
+						<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">
+							<PrimaryButton elevation="medium">Learn more</PrimaryButton>
+						</PrimaryLink>
 					</Paragraph>
+					<IconLine icons={iconsArray} className={styles.icons} />
 				</div>
 
-				<Paragraph
-					size={PossibleSizes.sm}
-					element="div"
-					className={classNames(styles.buttons)}
-				>
-					<PrimaryLink href="https://bit.dev/signup">
-						<CtaButton elevation="medium">Get Started</CtaButton>
-					</PrimaryLink>
-					<div className={styles.spacer} />
-					<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">
-						<PrimaryButton elevation="medium">Learn more</PrimaryButton>
-					</PrimaryLink>
-				</Paragraph>
-				<IconLine icons={iconsArray} className={styles.icons} />
-			</div>
-
-			<Image
-				src="homepage-bit/flying-man-01.svg"
-				className={marginCenter}
-				alt="illustration"
-				fullWidth
-			/>
-		</Grid>
+				<Image
+					src="homepage-bit/flying-man-01.svg"
+					className={marginCenter}
+					alt="illustration"
+					fullWidth
+				/>
+			</Grid>
+		</div>
 	);
 }
