@@ -9,6 +9,7 @@ import styles from './component-tooltip.module.scss';
 
 export interface ComponentTooltipProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 	targetElement?: HTMLElement;
+	containerClass?: string;
 }
 
 export class ComponentTooltip extends Component<ComponentTooltipProps> {
@@ -61,11 +62,11 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 	}
 
 	render() {
-		const { children, className, targetElement, ...rest } = this.props; //TODO
+		const { children, className, targetElement, containerClass, ...rest } = this.props; //TODO
 		return (
 			<div
 				ref={this.ref}
-				className={styles.tooltipWrapper}
+				className={classNames(styles.tooltipWrapper, containerClass)}
 				data-ignore-component-highlight
 			>
 				<a

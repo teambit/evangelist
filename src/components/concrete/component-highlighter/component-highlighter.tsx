@@ -109,7 +109,7 @@ export class ComponentHighlighter extends Component<
 
 				<ComponentTooltip
 					href={href}
-					className={styles.tooltip}
+					containerClass={styles.tooltip}
 					targetElement={targetElement}
 				>
 					{displayName}
