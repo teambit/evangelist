@@ -76,10 +76,10 @@
         "devDependencies": {
           "@types/chai": "^4.2.8",
           "@types/sinon": "^7.5.1",
+          "@types/mocha": "^7.0.1",
           "chai": "^4.2.0",
           "eslint-plugin-chai-friendly": "^0.5.0",
-          "sinon": "^8.1.1",
-          "@types/mocha": "^7.0.1"
+          "sinon": "^8.1.1"
         },
         "env": {
           "compiler": {
@@ -94,6 +94,16 @@
               }
             }
           }
+        }
+      },
+      "concrete/comment-carousel": {
+        "devDependencies": {
+          "@types/lodash.debounce": "+"
+        }
+      },
+      "sections/carousel-section": {
+        "devDependencies": {
+          "@types/lodash.debounce": "+"
         }
       }
     }

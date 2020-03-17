@@ -363,6 +363,34 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/concrete/comment-carousel@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/comment-carousel/carousel.module.scss",
+                "test": false,
+                "name": "carousel.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/comment-carousel/comment-carousel.tsx",
+                "test": false,
+                "name": "comment-carousel.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/comment-carousel/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/comment-carousel/slick-slider.module.scss",
+                "test": false,
+                "name": "slick-slider.module.scss"
+            }
+        ],
+        "mainFile": "src/components/concrete/comment-carousel/index.ts",
+        "trackDir": "src/components/concrete/comment-carousel",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/concrete/component-highlighter@0.1.5": {
         "files": [
             {
@@ -421,7 +449,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/components-highlight-dictionary@0.1.5": {
+    "bit.marketing/concrete/components-highlight-dictionary@0.1.6": {
         "files": [
             {
                 "relativePath": "src/components/concrete/components-highlight-dictionary/components-dictionary.ts",
@@ -592,6 +620,34 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.marketing/concrete/testimonial@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/components/concrete/testimonial/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/testimonial/testimonial-obj.tsx",
+                "test": false,
+                "name": "testimonial-obj.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/testimonial/testimonial.module.scss",
+                "test": false,
+                "name": "testimonial.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/testimonial/testimonial.tsx",
+                "test": false,
+                "name": "testimonial.tsx"
+            }
+        ],
+        "mainFile": "src/components/concrete/testimonial/index.ts",
+        "trackDir": "src/components/concrete/testimonial",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.marketing/concrete/twitter-card@0.0.17": {
         "files": [
             {
@@ -630,6 +686,24 @@
         ],
         "mainFile": "src/constants/storage/index.ts",
         "trackDir": "src/constants/storage",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.marketing/content/bit-testimonials@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/content/bit-testimonials/bit-testimonials.tsx",
+                "test": false,
+                "name": "bit-testimonials.tsx"
+            },
+            {
+                "relativePath": "src/content/bit-testimonials/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/content/bit-testimonials/bit-testimonials.tsx",
+        "trackDir": "src/content/bit-testimonials",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -775,7 +849,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/homepage@0.0.23": {
+    "bit.marketing/pages/homepage@0.0.24": {
         "files": [
             {
                 "name": "homepage.module.scss",
@@ -798,7 +872,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.29": {
+    "bit.marketing/pages/hybrid-homepage@0.0.30": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -913,7 +987,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/carousel-section@0.0.14": {
+    "bit.marketing/sections/carousel-section@0.0.15": {
         "files": [
             {
                 "name": "carouselSection.module.scss",
