@@ -46,8 +46,8 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 							className={classNames(styles.paragraph, textColumn, marginCenter)}
 						>
 							Bit is a scalable and collaborative way to build and reuse
-							components. It’s everything you need from local development to
-							cross-project collaboration. Try it for free.
+							components. It's everything you need from local development to
+							cross-project integrations. Try it for free
 						</Paragraph>
 					</div>
 
