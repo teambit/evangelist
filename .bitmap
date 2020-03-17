@@ -449,7 +449,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/concrete/components-highlight-dictionary@0.1.9": {
+    "bit.marketing/concrete/components-highlight-dictionary@0.1.10": {
         "files": [
             {
                 "relativePath": "src/components/concrete/components-highlight-dictionary/components-dictionary.ts",
@@ -849,7 +849,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/homepage@0.0.25": {
+    "bit.marketing/pages/homepage@0.0.26": {
         "files": [
             {
                 "name": "homepage.module.scss",
@@ -872,7 +872,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/pages/hybrid-homepage@0.0.32": {
+    "bit.marketing/pages/hybrid-homepage@0.0.33": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -1056,7 +1056,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/cta@0.0.17": {
+    "bit.marketing/sections/cta@0.0.18": {
         "files": [
             {
                 "name": "cta-section.module.scss",
@@ -1194,7 +1194,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/main-section@0.0.21": {
+    "bit.marketing/sections/main-section@0.0.22": {
         "files": [
             {
                 "name": "index.tsx",
@@ -1217,7 +1217,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/reuse-landing-section@0.0.23": {
+    "bit.marketing/sections/reuse-landing-section@0.0.24": {
         "files": [
             {
                 "name": "index.tsx",
@@ -1309,7 +1309,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.marketing/sections/talk-to-experts@0.0.10": {
+    "bit.marketing/sections/talk-to-experts@0.0.11": {
         "files": [
             {
                 "relativePath": "src/sections/talk-to-experts/index.ts",
@@ -1498,7 +1498,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "concrete/eva-button": {
+    "concrete/eva-button@0.0.1": {
         "files": [
             {
                 "relativePath": "src/components/concrete/eva-button/elevations.module.scss",
