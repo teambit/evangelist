@@ -46,7 +46,7 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 				{
 					name: 'offset',
 					options: {
-						offset: [0, 9],
+						// offset: [0, 9],
 					},
 				},
 			],
@@ -63,16 +63,20 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 	render() {
 		const { children, className, targetElement, ...rest } = this.props; //TODO
 		return (
-			<a
-				{...rest}
+			<div
 				ref={this.ref}
-				rel="noopener"
-				target="_blank"
+				className={styles.tooltipWrapper}
 				data-ignore-component-highlight
-				className={classNames(className, styles.componentTooltip)}
 			>
-				{children}
-			</a>
+				<a
+					{...rest}
+					rel="noopener"
+					target="_blank"
+					className={classNames(className, styles.componentTooltip)}
+				>
+					{children}
+				</a>
+			</div>
 		);
 	}
 }

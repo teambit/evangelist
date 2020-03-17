@@ -60,7 +60,7 @@ export class ComponentHighlighter extends Component<
 		return; //default - highlight none
 	};
 
-	private highlight = debounce(this._highlight, 180);
+	private highlight = debounce(this._highlight, 50);
 
 	private handleEnter = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
 		const { target } = event;

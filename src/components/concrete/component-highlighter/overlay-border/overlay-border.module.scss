@@ -1,5 +1,7 @@
+@import '../../../../themes/colors.module.scss';
+
 .overlayBorder {
-	border: 2px solid var(--component-highlighter-border, #F83D6C);;
+	border: 2px solid var(--component-highlighter-border, $pink50);
 
 	border-radius: 11px;
 	padding: 4px;

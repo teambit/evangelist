@@ -1,6 +1,12 @@
-.componentTooltip {
-	display: block;
+@import '../../../../themes/colors.module.scss';
 
+.tooltipWrapper {
+	//provides an 'interactive border'
+	//where the user can mouse over without losing tooltip
+	padding: 4px 9px 9px 9px;
+}
+
+.componentTooltip {
 	box-sizing: border-box;
 	border-radius: 11px;
 	padding: 4px 11px;
@@ -8,10 +14,10 @@
 	text-decoration: none;
 
 	font-size: 12px;
-	background-color: var(--component-highlighter-bg, #F83D6C);
-	color: var(--component-highlighter-text, white);
-	
+	background-color: var(--component-highlighter-bg, $pink50);
+	color: var(--component-highlighter-text, $w10);
+
 	&:hover {
-		background-color: var(--component-highlighter-highlight, #ff0281);
+		background-color: var(--component-highlighter-highlight, $pink60);
 	}
 }

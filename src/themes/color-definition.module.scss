@@ -1,5 +1,5 @@
 @import './colors.module.scss';
-// todo - rename all colors!!!
+
 .primary {
     color: $d50;
     --base-color: #{$p50};
@@ -21,7 +21,6 @@
     --primary-label-width: 50px;
     --green: #{$g50};
     --blue: #{$b50};
-    --pink: #{$pink};
 }
 
 // .win {
