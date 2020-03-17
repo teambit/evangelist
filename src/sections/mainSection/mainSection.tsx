@@ -13,6 +13,7 @@ import { marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
 import styles from './mainSection.module.scss';
+import { EvaButton } from '../../components/concrete/eva-button';
 
 const iconsArray = [
 	'logo-react',
@@ -40,9 +41,11 @@ export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 					continuous delivery, infinite reuse and so much more.
 				</Paragraph>
 				<div className={styles.buttons}>
-					<CtaButton elevation="medium">Get started</CtaButton>
+					<EvaButton importance="cta" elevation="medium">
+						Get started
+					</EvaButton>
 					<div style={{ height: '20px', width: '20px' }} />
-					<PrimaryButton elevation="medium">Learn more</PrimaryButton>
+					<EvaButton elevation="medium">Learn more</EvaButton>
 				</div>
 				<IconLine icons={iconsArray} className={marginCenter} pre="BUILT WITH" />
 			</div>
