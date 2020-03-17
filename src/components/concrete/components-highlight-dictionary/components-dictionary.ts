@@ -36,6 +36,11 @@ export const componentDictionary: ComponentHighlightDictionary = {
 		displayName: 'bit.marketing/base/heading',
 		url: `${scopeUrl}/base/heading`,
 	},
+
+	'concrete/eva-button': {
+		displayName: 'bit.marketing/concrete/eva-button',
+		url: `${scopeUrl}/concrete/eva-button`,
+	},
 	'concrete/heading': {
 		displayName: 'bit.marketing/concrete/heading',
 		url: `${scopeUrl}/concrete/heading`,
@@ -154,10 +159,5 @@ export const componentDictionary: ComponentHighlightDictionary = {
 	'layout/grid': {
 		displayName: 'bit.marketing/layout/grid',
 		url: `${scopeUrl}/layout/grid`,
-	},
-
-	commentCarousel: {
-		displayName: 'bit.marketing/commentCarousel',
-		url: 'https://bit.dev/bit/web/components/comment-carousel',
 	},
 };

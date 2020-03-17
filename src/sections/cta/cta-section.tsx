@@ -10,6 +10,7 @@ import { Paragraph } from '../../components/base/paragraph';
 import { Grid } from '../../components/layout/grid-component';
 import { justifyItems, alignItems, text } from '../../components/layout/align';
 import { PrimaryLink } from '../../components/concrete/community-links/primary-link';
+import { EvaButton } from '../../components/concrete/eva-button';
 
 //don't abuse!! fork this component if you need to much customizations
 type CtaProps = {
@@ -41,7 +42,7 @@ export function CtaSection(props: CtaProps) {
 				</Paragraph>
 			</div>
 			<PrimaryLink href="https://bit.dev/signup">
-				<CtaButton>Start for free</CtaButton>
+				<EvaButton importance="cta">Start for free</EvaButton>
 			</PrimaryLink>
 		</Grid>
 	);

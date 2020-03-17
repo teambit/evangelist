@@ -15,6 +15,7 @@ import { PrimaryLink } from '../../components/concrete/primary-link';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
 import { textColumn } from '../../components/layout/grid';
+import { EvaButton } from '../../components/concrete/eva-button';
 
 const iconsArray = [
 	'logo-react',
@@ -56,11 +57,11 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 						className={classNames(styles.buttons)}
 					>
 						<PrimaryLink href="https://bit.dev/signup">
-							<CtaButton elevation="medium">Get Started</CtaButton>
+							<EvaButton importance="cta" elevation="medium">Get Started</EvaButton>
 						</PrimaryLink>
 						<div className={styles.spacer} />
 						<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">
-							<PrimaryButton elevation="medium">Learn more</PrimaryButton>
+							<EvaButton elevation="medium">Learn more</EvaButton>
 						</PrimaryLink>
 					</Paragraph>
 					<IconLine icons={iconsArray} className={styles.icons} />

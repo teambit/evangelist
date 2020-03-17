@@ -9,6 +9,7 @@ import { CtaButton } from '../../components/concrete/cta-button';
 import { Paragraph } from '../../components/base/paragraph';
 import { justifyItems, alignItems, text, marginCenter } from '../../components/layout/align';
 import { PrimaryLink } from '../../components/concrete/primary-link';
+import { EvaButton } from '../../components/concrete/eva-button';
 
 export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -35,8 +36,7 @@ export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 			</div>
 			<div>
 				<PrimaryLink href="https://bit.dev/contact-sales">
-					{/* pending final texts from Yoni */}
-					<CtaButton>Get in touch</CtaButton>
+					<EvaButton importance="cta">Get in touch</EvaButton>
 				</PrimaryLink>
 			</div>
 		</div>
