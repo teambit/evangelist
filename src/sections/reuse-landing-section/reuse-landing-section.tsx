@@ -30,7 +30,7 @@ interface ReuseLandingProps extends HTMLAttributes<HTMLDivElement> {
 
 export function ReuseLandingSection(props: ReuseLandingProps) {
 	return (
-		<div data-bit-id="sections/reuse-landing-section" {...props}>
+		<div data-bit-id="bit.evangelist/sections/reuse-landing-section" {...props}>
 			<Grid colL={2} className={classNames(styles.mainGrid, text.center, text.l.left)}>
 				<div>
 					<div>

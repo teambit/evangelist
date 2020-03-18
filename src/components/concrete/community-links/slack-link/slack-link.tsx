@@ -24,7 +24,7 @@ export function SlackLink({ className, href, ...rest }: SlackLinkProps) {
 			{...rest}
 			href={href}
 			className={classNames(styles.slackLink, className)}
-			data-bit-id="community-links/slack-link"
+			data-bit-id="bit.evangelist/atom/community-links/slack-link"
 		>
 			<Icon of="slack" className={classNames(styles.icon)} />
 			<span>bit-dev-community</span>

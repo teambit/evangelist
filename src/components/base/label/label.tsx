@@ -13,7 +13,7 @@ export function Label({ children, color, className }: LabelProps) {
 		<div
 			className={classNames(styles.label, className)}
 			style={{ background: color }}
-			data-bit-id="base/label"
+			data-bit-id="bit.base/atoms/label"
 		>
 			{children}
 		</div>

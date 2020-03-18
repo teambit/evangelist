@@ -20,7 +20,7 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(props.className, text.center)}
-			data-bit-id="sections/sync-section"
+			data-bit-id="bit.evangelist/sections/sync-section"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>

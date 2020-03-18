@@ -32,7 +32,7 @@ export function CtaSection(props: CtaProps) {
 				text.center,
 				text.sm.left
 			)}
-			data-bit-id="sections/cta"
+			data-bit-id="bit.evangelist/sections/cta"
 		>
 			<div>
 				<H2 size={PossibleSizes.xs}>Ready to try Bit?</H2>

@@ -18,7 +18,7 @@ export function ReuseSection(props: React.HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(styles.reuseSection, props.className)}
-			data-bit-id="sections/reuse"
+			data-bit-id="bit.evangelist/sections/reuse"
 		>
 			<Label className={styles.ctaLabel} color="hotpink">
 				Reuse

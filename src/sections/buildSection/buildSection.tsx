@@ -19,7 +19,7 @@ export function BuildSection(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(props.className)}
-			data-bit-id="sections/build-section"
+			data-bit-id="bit.evangelist/sections/build-section"
 		>
 			<Label className={styles.ctaLabel}>Build</Label>
 			<div className={classNames(textColumn, marginCenter)}>

@@ -19,7 +19,7 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(props.className, styles.autoDocs)}
-			data-bit-id="sections/auto-docs"
+			data-bit-id="bit.evangelist/sections/auto-docs"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm} className={text.center}>

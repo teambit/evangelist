@@ -27,7 +27,7 @@ export function CommunitySection(props: CommunitySectionProps) {
 			{...rest}
 			colL={2}
 			className={classnames(props.className, styles.communitySection, alignItems.center)}
-			data-bit-id="sections/community"
+			data-bit-id="bit.evangelist/sections/community"
 		>
 			<div className={styles.cta}>
 				<div className={classnames(textColumn, marginCenter)}>

@@ -22,7 +22,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 			{...props}
 			className={classNames(text.center, props.className)}
 			style={accentColor}
-			data-bit-id="sections/dev-section"
+			data-bit-id="bit.evangelist/sections/dev-section"
 		>
 			<Label className={classNames(styles.ctaLabel, marginCenter)}>Develop</Label>
 			<div className={classNames(textColumn, marginCenter)}>

@@ -20,7 +20,7 @@ export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(props.className)}
-			data-bit-id="sections/component-advantages"
+			data-bit-id="bit.evangelist/sections/component-advantages"
 		>
 			<Grid
 				colMd={12}

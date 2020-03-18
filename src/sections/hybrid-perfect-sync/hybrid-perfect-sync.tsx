@@ -20,7 +20,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(props.className, text.center)}
-			data-bit-id="sections/hybrid-perfect-sync"
+			data-bit-id="bit.evangelist/sections/hybrid-perfect-sync"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>Keep apps and teams in perfect sync</H2>

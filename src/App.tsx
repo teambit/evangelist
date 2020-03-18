@@ -10,7 +10,7 @@ import { EmbedIconSet } from './components/concrete/icon';
 // import { ReusePage } from './pages/reuse';
 import { HybridHomepage } from './pages/hybrid-homepage';
 import { ComponentHighlighter } from './components/concrete/component-highlighter';
-import { componentDictionary } from './components/concrete/components-highlight-dictionary';
+import { componentDictionary } from './content/components-highlight-dictionary';
 
 class App extends PureComponent {
 	render() {

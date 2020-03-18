@@ -1,155 +1,157 @@
 import { ComponentHighlightDictionary } from '../../components/concrete/component-highlighter';
 
-const scopeUrl = 'https://bit.dev/bit/marketing';
+const baseScopeUrl = 'https://bit.dev/bit/marketing';
+const evangelistUrl = 'https://bit.dev/bit/evangelist';
 
 export const componentDictionary: ComponentHighlightDictionary = {
-	'base/paragraph': {
-		displayName: 'bit.marketing/base/paragraph',
-		url: `${scopeUrl}/base/paragraph`,
+	'bit.base/atoms/paragraph': {
+		displayName: 'bit.base/atoms/paragraph',
+		url: `${baseScopeUrl}/base/paragraph`,
 	},
-	'base/label': {
-		displayName: 'bit.marketing/base/label',
-		url: `${scopeUrl}/base/label`,
+	'bit.base/atoms/label': {
+		displayName: 'bit.base/atoms/label',
+		url: `${baseScopeUrl}/base/label`,
 	},
-	'base/separator': {
-		displayName: 'bit.marketing/base/separator',
-		url: `${scopeUrl}/base/separator`,
+	'bit.base/atoms/separator': {
+		displayName: 'bit.base/atoms/separator',
+		url: `${baseScopeUrl}/base/separator`,
 	},
-	'base/link': {
-		displayName: 'bit.marketing/base/link',
-		url: `${scopeUrl}/base/link`,
+	'bit.base/atoms/link': {
+		displayName: 'bit.base/atoms/link',
+		url: `${baseScopeUrl}/base/link`,
 	},
-	'base/themed-text': {
-		displayName: 'bit.marketing/base/themed-text',
-		url: `${scopeUrl}/base/themed-text`,
+	'bit.base/atoms/themed-text': {
+		displayName: 'bit.base/atoms/themed-text',
+		url: `${baseScopeUrl}/base/themed-text`,
 	},
-	'base/image': {
-		displayName: 'bit.marketing/base/image',
-		url: `${scopeUrl}/base/image`,
-	},
-
-	'base/heading': {
-		displayName: 'bit.marketing/base/heading',
-		url: `${scopeUrl}/base/heading`,
+	'bit.base/atoms/image': {
+		displayName: 'bit.base/atoms/image',
+		url: `${baseScopeUrl}/base/image`,
 	},
 
-	'concrete/eva-button': {
-		displayName: 'bit.marketing/concrete/eva-button',
-		url: `${scopeUrl}/concrete/eva-button`,
-	},
-	'concrete/heading': {
-		displayName: 'bit.marketing/concrete/heading',
-		url: `${scopeUrl}/concrete/heading`,
-	},
-	'concrete/image': {
-		displayName: 'bit.marketing/concrete/image',
-		url: `${scopeUrl}/concrete/image`,
-	},
-	'concrete/icon-line': {
-		displayName: 'bit.marketing/concrete/icon-line',
-		url: `${scopeUrl}/concrete/icon-line`,
-	},
-	'concrete/marketing-card': {
-		displayName: 'bit.marketing/concrete/marketing-card',
-		url: `${scopeUrl}/concrete/marketing-card`,
-	},
-	'concrete/twitter-card': {
-		displayName: 'bit.marketing/concrete/twitter-card',
-		url: `${scopeUrl}/concrete/twitter-card`,
-	},
-	'concrete/comment-carousel': {
-		displayName: 'bit.marketing/concrete/comment-carousel',
-		url: `${scopeUrl}/concrete/comment-carousel`,
+	'bit.base/atoms/heading': {
+		displayName: 'bit.base/atoms/heading',
+		url: `${baseScopeUrl}/base/heading`,
 	},
 
-	'community-links/slack-link': {
-		displayName: 'bit.marketing/community-links/slack-link',
-		url: `${scopeUrl}/community-links/slack-link`,
-	},
-	'community-links/twitter-link': {
-		displayName: 'bit.marketing/community-links/twitter-link',
-		url: `${scopeUrl}/community-links/twitter-link`,
-	},
-	'community-links/github-link': {
-		displayName: 'bit.marketing/community-links/github-link',
-		url: `${scopeUrl}/community-links/github-link`,
+	'bit.base/layout/grid': {
+		displayName: 'bit.base/layout/grid',
+		url: `${baseScopeUrl}/layout/grid`,
 	},
 
-	'sections/main-section': {
-		displayName: 'bit.marketing/sections/main-section',
-		url: `${scopeUrl}/sections/main-section`,
+
+	'bit.evangelist/atom/eva-button': {
+		displayName: 'bit.evangelist/atom/eva-button',
+		url: `${evangelistUrl}/atoms/eva-button`,
 	},
-	'sections/summary-cards': {
-		displayName: 'bit.marketing/sections/summary-cards',
-		url: `${scopeUrl}/sections/summary-cards`,
+	'bit.evangelist/atom/headers': {
+		displayName: 'bit.evangelist/atom/headers',
+		url: `${evangelistUrl}/atoms/headers`,
 	},
-	'sections/dev-section': {
-		displayName: 'bit.marketing/sections/dev-section',
-		url: `${scopeUrl}/sections/dev-section`,
+	'bit.evangelist/atom/static-image': {
+		displayName: 'bit.evangelist/atom/static-image',
+		url: `${evangelistUrl}/atoms/static-image`,
 	},
-	'sections/auto-section': {
-		displayName: 'bit.marketing/sections/auto-section',
-		url: `${scopeUrl}/sections/auto-section`,
+	'bit.evangelist/atom/icon-line': {
+		displayName: 'bit.evangelist/atom/icon-line',
+		url: `${evangelistUrl}/atoms/icon-line`,
 	},
-	'sections/cta': {
-		displayName: 'bit.marketing/sections/cta',
-		url: `${scopeUrl}/sections/cta`,
+	'bit.evangelist/atom/marketing-card': {
+		displayName: 'bit.evangelist/atom/marketing-card',
+		url: `${evangelistUrl}/atoms/marketing-card`,
 	},
-	'sections/build-section': {
-		displayName: 'bit.marketing/sections/build-section',
-		url: `${scopeUrl}/sections/build-section`,
+	'bit.evangelist/atom/twitter-card': {
+		displayName: 'bit.evangelist/atom/twitter-card',
+		url: `${evangelistUrl}/atoms/twitter-card`,
 	},
-	'sections/deploy-section': {
-		displayName: 'bit.marketing/sections/deploy-section',
-		url: `${scopeUrl}/sections/deploy-section`,
-	},
-	'sections/reuse': {
-		displayName: 'bit.marketing/sections/reuse',
-		url: `${scopeUrl}/sections/reuse`,
-	},
-	'sections/community': {
-		displayName: 'bit.marketing/sections/community',
-		url: `${scopeUrl}/sections/community`,
-	},
-	'sections/auto-docs': {
-		displayName: 'bit.marketing/sections/auto-docs',
-		url: `${scopeUrl}/sections/auto-docs`,
-	},
-	'sections/booking-breakdown': {
-		displayName: 'bit.marketing/sections/booking-breakdown',
-		url: `${scopeUrl}/sections/booking-breakdown`,
-	},
-	'sections/component-advantages': {
-		displayName: 'bit.marketing/sections/component-advantages',
-		url: `${scopeUrl}/sections/component-advantages`,
-	},
-	'sections/enterprise-section': {
-		displayName: 'bit.marketing/sections/enterprise-section',
-		url: `${scopeUrl}/sections/enterprise-section`,
-	},
-	'sections/hybrid-perfect-sync': {
-		displayName: 'bit.marketing/sections/hybrid-perfect-sync',
-		url: `${scopeUrl}/sections/hybrid-perfect-sync`,
-	},
-	'sections/independent-teams': {
-		displayName: 'bit.marketing/sections/independent-teams',
-		url: `${scopeUrl}/sections/independent-teams`,
-	},
-	'sections/reuse-landing-section': {
-		displayName: 'bit.marketing/sections/reuse-landing-section',
-		url: `${scopeUrl}/sections/reuse-landing-section`,
-	},
-	'sections/sync-section': {
-		displayName: 'bit.marketing/sections/sync-section',
-		url: `${scopeUrl}/sections/sync-section`,
-	},
-	'sections/talk-to-experts': {
-		displayName: 'bit.marketing/sections/talk-to-experts',
-		url: `${scopeUrl}/sections/talk-to-experts`,
+	'bit.evangelist/atom/comment-carousel': {
+		displayName: 'bit.evangelist/atom/comment-carousel',
+		url: `${evangelistUrl}/atoms/comment-carousel`,
 	},
 
-	'layout/grid': {
-		displayName: 'bit.marketing/layout/grid',
-		url: `${scopeUrl}/layout/grid`,
+	'bit.evangelist/atom/community-links/slack-link': {
+		displayName: 'bit.evangelist/atom/community-links/slack-link',
+		url: `${evangelistUrl}/atom/community-links/slack-link`,
+	},
+	'bit.evangelist/atom/community-links/twitter-link': {
+		displayName: 'bit.evangelist/atom/community-links/twitter-link',
+		url: `${evangelistUrl}/atom/community-links/twitter-link`,
+	},
+	'bit.evangelist/atom/community-links/github-link': {
+		displayName: 'bit.evangelist/atom/community-links/github-link',
+		url: `${evangelistUrl}/atom/community-links/github-link`,
+	},
+
+	'bit.evangelist/sections/main-section': {
+		displayName: 'bit.evangelist/sections/main-section',
+		url: `${evangelistUrl}/sections/main-section`,
+	},
+	'bit.evangelist/sections/summary-cards': {
+		displayName: 'bit.evangelist/sections/summary-cards',
+		url: `${evangelistUrl}/sections/summary-cards`,
+	},
+	'bit.evangelist/sections/dev-section': {
+		displayName: 'bit.evangelist/sections/dev-section',
+		url: `${evangelistUrl}/sections/dev-section`,
+	},
+	'bit.evangelist/sections/auto-section': {
+		displayName: 'bit.evangelist/sections/auto-section',
+		url: `${evangelistUrl}/sections/auto-section`,
+	},
+	'bit.evangelist/sections/cta': {
+		displayName: 'bit.evangelist/sections/cta',
+		url: `${evangelistUrl}/sections/cta`,
+	},
+	'bit.evangelist/sections/build-section': {
+		displayName: 'bit.evangelist/sections/build-section',
+		url: `${evangelistUrl}/sections/build-section`,
+	},
+	'bit.evangelist/sections/deploy-section': {
+		displayName: 'bit.evangelist/sections/deploy-section',
+		url: `${evangelistUrl}/sections/deploy-section`,
+	},
+	'bit.evangelist/sections/reuse': {
+		displayName: 'bit.evangelist/sections/reuse',
+		url: `${evangelistUrl}/sections/reuse`,
+	},
+	'bit.evangelist/sections/community': {
+		displayName: 'bit.evangelist/sections/community',
+		url: `${evangelistUrl}/sections/community`,
+	},
+	'bit.evangelist/sections/auto-docs': {
+		displayName: 'bit.evangelist/sections/auto-docs',
+		url: `${evangelistUrl}/sections/auto-docs`,
+	},
+	'bit.evangelist/sections/booking-breakdown': {
+		displayName: 'bit.evangelist/sections/booking-breakdown',
+		url: `${evangelistUrl}/sections/booking-breakdown`,
+	},
+	'bit.evangelist/sections/component-advantages': {
+		displayName: 'bit.evangelist/sections/component-advantages',
+		url: `${evangelistUrl}/sections/component-advantages`,
+	},
+	'bit.evangelist/sections/enterprise-section': {
+		displayName: 'bit.evangelist/sections/enterprise-section',
+		url: `${evangelistUrl}/sections/enterprise-section`,
+	},
+	'bit.evangelist/sections/hybrid-perfect-sync': {
+		displayName: 'bit.evangelist/sections/hybrid-perfect-sync',
+		url: `${evangelistUrl}/sections/hybrid-perfect-sync`,
+	},
+	'bit.evangelist/sections/independent-teams': {
+		displayName: 'bit.evangelist/sections/independent-teams',
+		url: `${evangelistUrl}/sections/independent-teams`,
+	},
+	'bit.evangelist/sections/reuse-landing-section': {
+		displayName: 'bit.evangelist/sections/reuse-landing-section',
+		url: `${evangelistUrl}/sections/reuse-landing-section`,
+	},
+	'bit.evangelist/sections/sync-section': {
+		displayName: 'bit.evangelist/sections/sync-section',
+		url: `${evangelistUrl}/sections/sync-section`,
+	},
+	'bit.evangelist/sections/talk-to-experts': {
+		displayName: 'bit.evangelist/sections/talk-to-experts',
+		url: `${evangelistUrl}/sections/talk-to-experts`,
 	},
 };

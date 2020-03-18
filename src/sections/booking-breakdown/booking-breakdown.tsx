@@ -13,7 +13,7 @@ import { textColumn } from '../../components/layout/page-frame';
 
 export function BookingBreakdown(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} data-bit-id="sections/booking-breakdown">
+		<div {...props} data-bit-id="bit.evangelist/sections/booking-breakdown">
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>
 					Everything you need to build independent and reusable components

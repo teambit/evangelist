@@ -71,7 +71,7 @@ export default class CommentCarousel extends PureComponent<CommentCarouselProps>
 
 		return (
 			<div
-				data-bit-id="concrete/comment-carousel"
+				data-bit-id="bit.evangelist/atom/comment-carousel"
 				{...rest}
 				className={classNames(
 					styles.carouselWrapper,

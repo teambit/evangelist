@@ -24,7 +24,7 @@ export class GithubLink extends PureComponent<GithubLinkProps> {
 			<PrimaryLink
 				{...rest}
 				className={classNames(styles.githubLink, className)}
-				data-bit-id="community-links/github-link"
+				data-bit-id="bit.evangelist/atom/community-links/github-link"
 			>
 				<Icon of="github-logo" className={styles.icon} />
 				<span>teambit/bit</span>

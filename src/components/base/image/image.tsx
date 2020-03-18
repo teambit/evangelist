@@ -24,7 +24,7 @@ export type BaseImageProps = {
 export function BaseImage({ alt, src, className, ...rest }: BaseImageProps) {
 	return (
 		<img
-			data-bit-id="base/image"
+			data-bit-id="bit.base/atoms/image"
 			alt={alt}
 			src={src}
 			{...rest}

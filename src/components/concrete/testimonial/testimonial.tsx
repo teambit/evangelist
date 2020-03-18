@@ -15,7 +15,7 @@ export class Testimonial extends PureComponent<TestimonialProps> {
 
 		return (
 			<div
-				data-bit-id="concrete/testimonial"
+				data-bit-id="bit.evangelist/atom/testimonial"
 				{...rest}
 				className={classNames(styles.box, className)}
 				data-active={active || null}

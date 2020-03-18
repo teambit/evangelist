@@ -21,7 +21,7 @@ export function Separator({ layout, className, ...rest }: SeparatorProps) {
 		<div
 			{...rest}
 			className={classNames(styles.separator, styles[layout], className)}
-			data-bit-id="base/separator"
+			data-bit-id="bit.base/atoms/separator"
 		/>
 	);
 }

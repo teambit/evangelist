@@ -17,7 +17,7 @@ export function IconLine({ icons, className, pre }: IconLineProps) {
 	return (
 		<div
 			className={classNames(styles.iconLine, className)}
-			data-bit-id="concrete/icon-line"
+			data-bit-id="bit.evangelist/atom/icon-line"
 		>
 			{pre}
 			{icons.map((icon: string, index: number) => (

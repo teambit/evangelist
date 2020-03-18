@@ -24,6 +24,7 @@
     "extends": "react-app"
   },
   "dependencies": {
+    "@bit/joshk.react-spinners-css.ellipsis": "^1.1.7",
     "@popperjs/core": "^2.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -39,7 +40,7 @@
     "react-slick": "^0.25.2",
     "reset-css": "^5.0.1",
     "resize-observer-polyfill": "^1.5.1",
-    "typescript": "~3.7.2"
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@types/chai": "^4.2.8",
@@ -63,7 +64,7 @@
     },
     "componentsDefaultDirectory": "src/bit-components/{name}",
     "packageManager": "yarn",
-    "defaultScope": "bit.marketing",
+    "defaultScope": "bit.base",
     "overrides": {
       "*": {
         "dependencies": {

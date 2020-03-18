@@ -21,7 +21,7 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(text.center, props.className)}
-			data-bit-id="sections/enterprise-section"
+			data-bit-id="bit.evangelist/sections/enterprise-section"
 		>
 			<Grid
 				col={1}

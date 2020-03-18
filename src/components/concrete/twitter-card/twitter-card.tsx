@@ -30,7 +30,7 @@ export function TwitterCard(props: TwitterCardProps) {
 			{...rest}
 			className={classNames(styles.twitterCard, className)}
 			elevation="medium"
-			data-bit-id="concrete/twitter-card"
+			data-bit-id="bit.evangelist/atom/twitter-card"
 		>
 			<Image src={image} className={styles.avatar} alt="twitter avatar" />
 			<div>

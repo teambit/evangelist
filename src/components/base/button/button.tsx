@@ -40,6 +40,7 @@ export default class Button extends Component<ButtonProps> {
 
 		return (
 			<button
+				data-bit-id="bit.base/atoms/button"
 				{...rest}
 				onClick={this.handleClick}
 				className={classNames(className, styles.vanillaButton)}

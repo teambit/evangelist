@@ -28,7 +28,7 @@ export function MainSection(props: HTMLAttributes<HTMLDivElement>) {
 			{...props}
 			colL={2}
 			className={classNames(styles.mainSection, props.className)}
-			data-bit-id="sections/main-section"
+			data-bit-id="bit.evangelist/sections/main-section"
 		>
 			<div className={classNames(styles.mainSectionContent, marginCenter)}>
 				<H1 size={PossibleSizes.sm}>

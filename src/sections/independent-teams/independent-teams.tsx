@@ -17,7 +17,7 @@ export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 		<div
 			{...props}
 			className={classNames(props.className)}
-			data-bit-id="sections/independent-teams"
+			data-bit-id="bit.evangelist/sections/independent-teams"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm} className={text.center}>
