@@ -1079,7 +1079,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/hybrid-homepage@0.0.2": {
+    "bit.evangelist/pages/hybrid-homepage@1.0.3": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
