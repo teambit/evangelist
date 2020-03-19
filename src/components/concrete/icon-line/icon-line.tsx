@@ -1,8 +1,9 @@
 import React, { HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
-import styles from './icon-line.module.scss';
 import { Image } from '../image';
+
+import styles from './icon-line.module.scss';
 
 const staticPrefix = 'brands';
 

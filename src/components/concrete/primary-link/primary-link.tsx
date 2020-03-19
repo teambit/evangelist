@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link, LinkProps } from '../../base/link';
 import classNames from 'classnames';
+
+import { Link, LinkProps } from '../../base/link';
 
 import styles from './primary-link.module.scss';
 

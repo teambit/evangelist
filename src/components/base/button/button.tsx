@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component, ReactNode } from 'react';
 import classNames from 'classnames';
 
 //@ts-ignore
 import Spinner from '@bit/joshk.react-spinners-css.ellipsis';
 
 import styles from './button.module.scss';
-import { ButtonProps } from './button-props';
 
 const defaultSpinner = (
 	<Spinner color="#ffffff" size={18} style={{ verticalAlign: 'middle' }} />
 );
+
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+	loader?: ReactNode;
+	loading?: boolean;
+}
 
 export default class Button extends Component<ButtonProps> {
 	state = { isLoading: false };

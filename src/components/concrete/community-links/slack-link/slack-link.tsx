@@ -1,8 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
+
+import styles from './slack-link.module.scss';
+
 import { PrimaryLink } from '../primary-link';
 import { Icon } from '../../icon';
-import styles from './slack-link.module.scss';
+
 
 /**
  * concrete community link component - pill flavor for base link component

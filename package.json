@@ -64,7 +64,6 @@
     },
     "componentsDefaultDirectory": "src/bit-components/{name}",
     "packageManager": "yarn",
-    "defaultScope": "bit.base",
     "overrides": {
       "*": {
         "dependencies": {

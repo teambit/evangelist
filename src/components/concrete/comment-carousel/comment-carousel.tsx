@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import Slider, { Settings } from 'react-slick';
 import debounce from 'lodash.debounce';
 import ResizeObserver from 'resize-observer-polyfill';
+
 //@ts-ignore
 import createRef from 'react-create-ref';
 

@@ -1,8 +1,10 @@
 import React from 'react';
 import classNames from 'classnames';
+
+import styles from './twitter-link.module.scss';
+
 import { PrimaryLink } from '../primary-link';
 import { Icon } from '../../icon';
-import styles from './twitter-link.module.scss';
 
 /**
  * concrete community link component - pill flavor for base link component

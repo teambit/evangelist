@@ -1,13 +1,16 @@
 import React, { ReactNode, CSSProperties } from 'react';
 import classNames from 'classnames';
+
+import { PossibleSizes } from '../../../constants/sizes';
 import { Card } from '../../base/card';
-import { H1 } from '../heading';
 import { Paragraph } from '../../base/paragraph';
 import { Label } from '../../base/label';
-import { PossibleSizes } from '../../../constants/sizes';
 import { CommunityLink } from '../../base/community-link';
-import styles from './marketing-card.module.css';
+
+import { H1 } from '../heading';
 import { Icon } from '../icon';
+
+import styles from './marketing-card.module.css';
 
 type MarketingCardProps = {
 	title: ReactNode;

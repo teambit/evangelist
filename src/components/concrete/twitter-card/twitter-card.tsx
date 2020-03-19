@@ -5,8 +5,9 @@ import { PossibleSizes } from '../../../constants/sizes';
 
 import { Paragraph } from '../../base/paragraph';
 import { Card, CardProps } from '../../base/card';
+
 import { H3 } from '../heading';
-import { Image } from '../../concrete/image';
+import { Image } from '../image';
 
 import styles from './twitter-card.module.scss';
 

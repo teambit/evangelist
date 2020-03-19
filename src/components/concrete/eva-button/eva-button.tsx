@@ -1,7 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
-import styles from './eva-button.module.scss';
+
 import BaseButton, { ButtonProps as BaseProps } from '../../base/button';
+
+import styles from './eva-button.module.scss';
 import elevations from './elevations.module.scss';
 
 /**
@@ -12,7 +14,7 @@ export type ButtonProps = {
 	 * to control the shadow effect of a button.
 	 */
 	elevation?: 'none' | 'low' | 'medium' | 'high';
-	importance: 'normal' | 'cta';
+	importance?: 'normal' | 'cta';
 } & BaseProps;
 
 export function EvaButton({
@@ -27,11 +29,11 @@ export function EvaButton({
 			data-bit-id="bit.evangelist/atom/eva-button"
 			data-variation={importance}
 			{...rest}
-		></BaseButton>
+		/>
 	);
 }
 
-EvaButton.defaultProps = {
-	elevation: 'low',
-	importance: 'normal',
-};
+// EvaButton.defaultProps = {
+// 	elevation: 'low',
+// 	importance: 'normal',
+// };

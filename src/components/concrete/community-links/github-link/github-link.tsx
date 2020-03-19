@@ -3,11 +3,13 @@ import classNames from 'classnames';
 //@ts-ignore
 import numberAbbreviate from 'number-abbreviate';
 
+import styles from './github-link.module.scss';
+
+import { CommunityLinkProps } from '../../../base/community-link/community-link';
+
 import { PrimaryLink } from '../primary-link';
 import { Icon } from '../../icon';
 import { Image } from '../../image';
-import styles from './github-link.module.scss';
-import { CommunityLinkProps } from '../../../base/community-link/community-link';
 
 /**
  * concrete community link component - pill flavor for base link component

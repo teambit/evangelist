@@ -1,8 +1,8 @@
 import React, { PureComponent } from 'react';
 import classNames from 'classnames';
 
-import styles from './testimonial.module.scss';
 import { TestimonialObj } from './testimonial-obj';
+import styles from './testimonial.module.scss';
 
 export interface TestimonialProps extends React.HTMLAttributes<HTMLDivElement> {
 	active?: boolean;

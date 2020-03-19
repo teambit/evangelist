@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { BaseIcon } from '../../base/icon';
 
 const iconSetPrefix = 'bitcon';

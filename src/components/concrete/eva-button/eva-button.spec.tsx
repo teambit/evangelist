@@ -4,8 +4,6 @@ import { expect } from 'chai';
 
 import { EvaButton } from './eva-button';
 
-console.log('EvaButton', EvaButton);
-
 it('should render', () => {
 	const { getByText } = render(<EvaButton>I am primary button</EvaButton>);
 	const rendered = getByText('I am primary button');

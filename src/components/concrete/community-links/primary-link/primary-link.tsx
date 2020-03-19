@@ -1,10 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
+
+import styles from './primary-link.module.scss';
+
 import {
 	CommunityLink as BaseCommunityLink,
 	CommunityLinkProps,
 } from '../../../base/community-link';
-import styles from './primary-link.module.scss';
 
 /**
  * concrete community link component - pill flavor for base link component
