@@ -10,7 +10,7 @@ import { H2, H3 } from '../../components/concrete/heading';
 import { Image } from '../../components/concrete/image';
 
 import { Grid } from '../../components/layout/grid-component';
-import { zGrid, halfZGrid } from '../../components/layout/grid-definition/z-grid';
+import { zGrid, halfZGrid } from '../../components/layout/grid-presets/z-grid';
 import { text, alignItems, marginCenter } from '../../components/layout/align';
 import { textColumn } from '../../components/layout/page-frame';
 

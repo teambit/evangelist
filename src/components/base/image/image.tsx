@@ -8,7 +8,8 @@ export type BaseImageProps = {
 } & React.HTMLAttributes<HTMLImageElement>;
 
 /**
- * Template component for images. Accepts all the arguments of native html image.
+ * Template component for images.  
+ * Accepts all the arguments of native html image.
  * @name BaseImage
  * @param alt requires alt text
  * @param src requires image source

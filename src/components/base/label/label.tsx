@@ -12,10 +12,10 @@ export interface LabelProps extends React.HTMLAttributes<HTMLDivElement> {
  * @description Short text block with color.
  * 
  * Use the following CSS variables to style:
- * --base-color (background color)
- * --primary-label-text (text color)
- * --primary-label-width (max-width)
- * --primary-label-height (height)
+ * -   --base-color (background color)
+ * -   --primary-label-text (text color)
+ * -   --primary-label-width (max-width)
+ * -   --primary-label-height (height)
  */
 export function Label({ color, className, ...rest }: LabelProps) {
 	return (

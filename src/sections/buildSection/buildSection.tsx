@@ -8,7 +8,7 @@ import { H2, H3 } from '../../components/concrete/heading';
 import { Label } from '../../components/base/label';
 import { text, justifyItems, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
-import { fourGrid } from '../../components/layout/grid-definition/four-grid';
+import { fourGrid } from '../../components/layout/grid-presets/four-grid';
 import { Image } from '../../components/concrete/image';
 
 import styles from './buildSection.module.scss';

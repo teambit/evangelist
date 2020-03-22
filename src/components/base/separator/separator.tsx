@@ -8,11 +8,11 @@ export type SeparatorProps = {
 
 /**
  * @name Separator
- * @param layout set vertical / horizontal separator
+ * @param layout set as vertical / horizontal separator
  * @description Separating line.
  *
- * Use these implicit CSS variables to style:
- * --separator-color
+ * Use these implicit CSS variables to style:  
+ * -   `--separator-color`
  */
 export function Separator({ layout, className, ...rest }: SeparatorProps) {
 	return (

@@ -4,7 +4,8 @@ import classnames from 'classnames';
 export type BaseIconProps = { of: string } & React.HTMLAttributes<HTMLSpanElement>;
 
 /**
- * Template component for specific icon sets
+ * Base template component for icons.  
+ * Compose this class to make a specific icon component for a font-set
  * @name BaseIcon
  * @param {string} of ClassName identifying icon
  */

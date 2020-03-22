@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import styles from './sync-section.module.scss';
 
-import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
+import { fourWayGrid } from '../../components/layout/grid-presets/four-way-grid';
 
 import { PossibleSizes } from '../../constants/sizes';
 import { Image } from '../../components/concrete/image';

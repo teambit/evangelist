@@ -13,7 +13,7 @@ import { text, alignItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
 // import styles from './devSection.module.scss';
-import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
+import { fourWayGrid } from '../../components/layout/grid-presets/four-way-grid';
 
 export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 	return (
