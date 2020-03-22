@@ -788,7 +788,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/eva-button@1.0.1": {
+    "bit.evangelist/atom/eva-button@1.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/eva-button/elevations.module.scss",
@@ -1056,7 +1056,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/homepage@0.0.2": {
+    "bit.evangelist/pages/homepage@0.0.3": {
         "files": [
             {
                 "name": "homepage.module.scss",
@@ -1079,7 +1079,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/hybrid-homepage@1.0.3": {
+    "bit.evangelist/pages/hybrid-homepage@1.0.4": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -1263,7 +1263,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/cta@1.0.1": {
+    "bit.evangelist/sections/cta@1.0.2": {
         "files": [
             {
                 "name": "cta-section.module.scss",
@@ -1332,7 +1332,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-section@1.0.1": {
+    "bit.evangelist/sections/enterprise-section@1.0.2": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-section/enterprise-section.module.scss",
@@ -1401,7 +1401,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/main-section@1.0.1": {
+    "bit.evangelist/sections/main-section@1.0.2": {
         "files": [
             {
                 "name": "index.tsx",
@@ -1424,7 +1424,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/reuse-landing-section@1.0.1": {
+    "bit.evangelist/sections/reuse-landing-section@1.0.2": {
         "files": [
             {
                 "name": "index.tsx",
@@ -1516,7 +1516,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/talk-to-experts@1.0.1": {
+    "bit.evangelist/sections/talk-to-experts@1.0.2": {
         "files": [
             {
                 "relativePath": "src/sections/talk-to-experts/index.ts",
