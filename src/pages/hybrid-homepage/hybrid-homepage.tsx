@@ -8,7 +8,7 @@ import { CtaSection } from '../../sections/cta';
 import { centerColumn, wideColumn } from '../../components/layout/page-frame';
 
 import { ReuseLandingSection } from '../../sections/reuse-landing-section';
-import { EnterpriseSection } from '../../sections/enterprise-section/enterprise-section';
+import { EnterpriseSection } from '../../sections/enterprise-section';
 import { SyncSection } from '../../sections/sync-section';
 import { BookingBreakdown } from '../../sections/booking-breakdown';
 import { CommunitySection } from '../../sections/community';

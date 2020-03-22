@@ -20,7 +20,7 @@ export type ButtonProps = {
 export function EvaButton({
 	className,
 	importance = 'normal',
-	elevation = 'none',
+	elevation = 'low',
 	...rest
 }: ButtonProps) {
 	return (
@@ -32,8 +32,3 @@ export function EvaButton({
 		/>
 	);
 }
-
-// EvaButton.defaultProps = {
-// 	elevation: 'low',
-// 	importance: 'normal',
-// };
