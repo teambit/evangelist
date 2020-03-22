@@ -5,7 +5,7 @@ import { PossibleSizes } from '../../../constants/sizes';
 import { Card } from '../../base/card';
 import { Paragraph } from '../../base/paragraph';
 import { Label } from '../../base/label';
-import { CommunityLink } from '../../base/community-link';
+import { Link } from '../../base/link';
 
 import { H1 } from '../heading';
 import { Icon } from '../icon';
@@ -37,9 +37,9 @@ export const MarketingCard = (props: MarketingCardProps) => {
 				{title}
 			</H1>
 			<Paragraph className={classNames(styles.text)}>{children}</Paragraph>
-			<CommunityLink className={styles.ctaLink} href={to || '#'}>
+			<Link className={styles.ctaLink} href={to || '#'}>
 				{linkText} <Icon of="right_arrow" className={styles.icon} />
-			</CommunityLink>
+			</Link>
 		</Card>
 	);
 };

@@ -6,17 +6,23 @@ import BaseButton, { ButtonProps as BaseProps } from '../../base/button';
 import styles from './eva-button.module.scss';
 import elevations from './elevations.module.scss';
 
-/**
- * Button component
- */
-export type ButtonProps = {
-	/**
-	 * to control the shadow effect of a button.
-	 */
+export interface ButtonProps extends BaseProps {
 	elevation?: 'none' | 'low' | 'medium' | 'high';
 	importance?: 'normal' | 'cta';
-} & BaseProps;
+}
 
+/**
+ * @description
+ * Button component with click effect and built in loader.
+ * Supports all props from native htl button.
+ * @name EvaButton
+ * @param {string} elevation style the button with shadow and click effect. (Default)
+ * @param {string} importance style variance ('cta', 'normal')
+ * @param {boolean} loading (from BaseButton) replace content with loader
+ * @param {ReactNode} loader (from BaseButton) loader to show when loading={true}
+ * @example
+ * 	<EvaButton importance="cta" elevation="medium" loading loader={<Loader/>}>Click me!</EvaButton>
+ */
 export function EvaButton({
 	className,
 	importance = 'normal',

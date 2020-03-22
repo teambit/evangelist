@@ -15,6 +15,14 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 	loading?: boolean;
 }
 
+/**
+ * @name BaseButton
+ * @description
+ * Base button, with very basic styles. Receives all args of native html button.
+ * If onClick returns a promise, BaseButton will show a loader automatically until the promise is resolved or rejected.
+ * @param {boolean} loading force loader to show
+ * @param {ReactNode} loader element to show while loading
+ */
 export default class Button extends Component<ButtonProps> {
 	state = { isLoading: false };
 

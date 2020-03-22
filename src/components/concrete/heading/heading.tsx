@@ -2,12 +2,17 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { HeadingProps, Heading } from '../../base/heading';
+import { PossibleSizes } from '../../../constants/sizes';
 
 import sizeStyles from './heading-sizes.module.scss';
 import marginStyles from './heading-margins.module.scss';
 import styles from './heading.module.scss';
 
-export function H1(props: HeadingProps) {
+export interface HeaderProps extends HeadingProps {
+	size?: PossibleSizes;
+}
+
+export function H1(props: HeaderProps) {
 	return (
 		<Heading
 			data-bit-id="bit.evangelist/atom/headers"
@@ -22,7 +27,7 @@ export function H1(props: HeadingProps) {
 		/>
 	);
 }
-export function H2(props: HeadingProps) {
+export function H2(props: HeaderProps) {
 	return (
 		<Heading
 			data-bit-id="bit.evangelist/atom/headers"
@@ -37,7 +42,7 @@ export function H2(props: HeadingProps) {
 		/>
 	);
 }
-export function H3(props: HeadingProps) {
+export function H3(props: HeaderProps) {
 	return (
 		<Heading
 			data-bit-id="bit.evangelist/atom/headers"
@@ -52,7 +57,7 @@ export function H3(props: HeadingProps) {
 		/>
 	);
 }
-export function H4(props: HeadingProps) {
+export function H4(props: HeaderProps) {
 	return (
 		<Heading
 			data-bit-id="bit.evangelist/atom/headers"
@@ -67,7 +72,7 @@ export function H4(props: HeadingProps) {
 		/>
 	);
 }
-export function H5(props: HeadingProps) {
+export function H5(props: HeaderProps) {
 	return (
 		<Heading
 			data-bit-id="bit.evangelist/atom/headers"
@@ -82,7 +87,7 @@ export function H5(props: HeadingProps) {
 		/>
 	);
 }
-export function H6(props: HeadingProps) {
+export function H6(props: HeaderProps) {
 	return (
 		<Heading
 			data-bit-id="bit.evangelist/atom/headers"

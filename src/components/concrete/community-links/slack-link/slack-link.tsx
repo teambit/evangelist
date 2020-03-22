@@ -3,29 +3,16 @@ import classNames from 'classnames';
 
 import styles from './slack-link.module.scss';
 
-import { PrimaryLink } from '../primary-link';
+import { PrimaryLink, PrimaryLinkProps } from '../primary-link';
 import { Icon } from '../../icon';
 
+export type SlackLinkProps = PrimaryLinkProps;
 
-/**
- * concrete community link component - pill flavor for base link component
- */
-export type SlackLinkProps = {
-	/**
-	 * override className for styling
-	 */
-	className?: string;
-	/**
-	 * the link to refer to
-	 */
-	href: string;
-} & React.HTMLAttributes<HTMLAnchorElement>;
-
-export function SlackLink({ className, href, ...rest }: SlackLinkProps) {
+export function SlackLink({ className, ...rest }: SlackLinkProps) {
 	return (
 		<PrimaryLink
+			external
 			{...rest}
-			href={href}
 			className={classNames(styles.slackLink, className)}
 			data-bit-id="bit.evangelist/atom/community-links/slack-link"
 		>
