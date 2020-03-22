@@ -1,6 +1,21 @@
 //@HACK - fonts don't work with storage.cloud.google.com
 $staticStorageUrl: 'https://static.bit.dev';
 
+/**
+ * # Book fonts
+ * Circular Pro Book, +bold +italic.
+ * @example
+ * ```tsx
+ * import { bookFont } from '...'
+ * //...
+ *
+ * <body className={bookFont}>
+ *   <div>I'm using font!</div>
+ *   <div style={{ fontWeight: 'bold'}}>I am BOLD</div>
+ * </body>
+ * ```
+ */
+
 @font-face {
 	font-family: "CircularPro";
 	src: url($staticStorageUrl + '/fonts/CircularPro-Book.otf');

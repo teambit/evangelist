@@ -251,8 +251,13 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.base/layout/align@1.0.0": {
+    "bit.base/layout/align@1.0.1": {
         "files": [
+            {
+                "relativePath": "src/components/layout/align/README.md",
+                "test": false,
+                "name": "README.md"
+            },
             {
                 "name": "align.module.scss",
                 "relativePath": "src/components/layout/align/align.module.scss",
@@ -284,6 +289,11 @@
     "bit.base/layout/col-span@1.0.0": {
         "files": [
             {
+                "relativePath": "src/components/layout/col-span/README.md",
+                "test": false,
+                "name": "README.md"
+            },
+            {
                 "name": "col-span.module.scss",
                 "relativePath": "src/components/layout/col-span/col-span.module.scss",
                 "test": false
@@ -306,6 +316,11 @@
     },
     "bit.base/layout/grid-component@1.0.0": {
         "files": [
+            {
+                "relativePath": "src/components/layout/grid-component/README.md",
+                "test": false,
+                "name": "README.md"
+            },
             {
                 "name": "grid-template.module.scss",
                 "relativePath": "src/components/layout/grid-component/grid-template/grid-template.module.scss",
@@ -378,13 +393,18 @@
     "bit.base/layout/page-frame@1.0.0": {
         "files": [
             {
-                "name": "page-frame.module.scss",
-                "relativePath": "src/components/layout/page-frame/page-frame.module.scss",
-                "test": false
+                "relativePath": "src/components/layout/page-frame/README.md",
+                "test": false,
+                "name": "README.md"
             },
             {
                 "name": "index.ts",
                 "relativePath": "src/components/layout/page-frame/index.ts",
+                "test": false
+            },
+            {
+                "name": "page-frame.module.scss",
+                "relativePath": "src/components/layout/page-frame/page-frame.module.scss",
                 "test": false
             }
         ],
@@ -523,7 +543,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.base/utils/popper-js/ignore-popper-size@1.0.0": {
+    "bit.base/utils/popper-js/ignore-popper-size@1.0.1": {
         "files": [
             {
                 "relativePath": "src/utils/popper-js/ignore-popper-size/ignore-popper-size.tsx",
