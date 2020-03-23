@@ -24,6 +24,25 @@ type TwitterCardProps = {
 
 const twitterVerifiedIcon = 'homepage/join-fold/twitter_verified.png';
 
+/**
+ * @name TwitterCard
+ * @description Display a tweet
+ * @param {string} title Twitter username
+ * @param {string} image User avatar
+ * @param {boolean} verified adds a 'verified' logo, when true.
+ * @param {ReactNode} children main content
+ * @example
+ * ```tsx
+ * <TwitterCard
+ *	verified
+ *	title="@Sketch2R"
+ *	image={'homepage-bit/tweets/sketch2r.jpg'}
+ * >
+ *	Great news! We just published our first Stratos components to
+ *	http://bit.dev!
+ * </TwitterCard>
+ * ```
+ */
 export function TwitterCard(props: TwitterCardProps) {
 	const { title, className, children, image, verified, titleId, textId, ...rest } = props;
 	return (

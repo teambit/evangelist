@@ -9,6 +9,21 @@ export interface TestimonialProps extends React.HTMLAttributes<HTMLDivElement> {
 	data: TestimonialObj;
 }
 
+/**
+ * @name Testimonial
+ * @description A single testimonial element.
+ * @param active Highligh current Testimonial. Makes half transparent when false
+ * @param {ReactNode} data.content main text
+ * @param {string} data.avatar url to user's avatar
+ * @param {string} data.name owner name
+ * @param {string} data.description owner subtitle
+ * @example
+ * ```tsx
+ * <Testimonial active
+ * 	data={{ name: 'Barbra', description: 'head of barbering', content: 'Great scissors!', avatar: '...', }}
+ * />
+ * ```
+ */
 export class Testimonial extends PureComponent<TestimonialProps> {
 	render() {
 		const { data, active, className, ...rest } = this.props;

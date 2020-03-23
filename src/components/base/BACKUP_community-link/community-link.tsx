@@ -3,7 +3,18 @@ import classNames from 'classnames';
 import styles from './community-link.module.scss';
 
 /**
- * community link component - wraps children with an anchor tag
+ * @name PrimaryLink
+ * @description Base class for all community links, with basic styles.
+ * @example
+ * ```tsx
+ * function AcmeLink(props) {
+ *   return (
+ *     <PrimaryLink {...props} className={props.className + ' ' + styles.acmeLink}>
+ *       Bit at ACME!
+ *     </PrimaryLink>
+ *   )
+ * }
+ * ```
  */
 export interface CommunityLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {}
 

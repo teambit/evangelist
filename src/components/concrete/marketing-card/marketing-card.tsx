@@ -21,6 +21,31 @@ type MarketingCardProps = {
 	linkText?: string;
 	to?: string;
 };
+
+/**
+ * @name MarketingCard
+ * @description a concrete card, with label and link.
+ * @param {ReactNode} Title
+ * @param {ReactNode} children main content
+ * @param {label} label content
+ * @param {string} [ctaColor] color for label and link
+ * @param {string} [to] link target
+ * @param {string} [linkText] link content
+ * @example
+ * ```tsx
+ * <MarketingCard
+ * 	className={styles.marketingCard}
+ *	ctaColor={'#37b26c'}
+ *	linkText="learn more"
+ *	label="Build"
+ *	title="Empower autonomous teams to deliver"
+ * >
+ *	Empower every team to independently build their components in their own
+ *	codebase. Let each team integrate and deploy components
+ * </MarketingCard>
+ * ```
+ */
+
 export const MarketingCard = (props: MarketingCardProps) => {
 	const { title, children, className, ctaColor, label, to, linkText } = props;
 	const accentColor = { [styles.accentVar]: ctaColor } as CSSProperties;
