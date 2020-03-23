@@ -4,6 +4,14 @@ export type ResizeToMatchReferenceOptions = {
 	offset: [number, number];
 };
 
+/**
+ * @name resizeToMatchReference
+ * # Resize to match Reference
+ * A [Popper.js](https://popper.js.org/) plugin.
+ *
+ * Scales popper to be the same size as the reference element
+ */
+
 export const resizeToMatchReference: Modifier<ResizeToMatchReferenceOptions> = {
 	name: 'resizeToMatchReference',
 	enabled: true,

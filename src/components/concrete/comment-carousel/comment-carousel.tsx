@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import Slider, { Settings } from 'react-slick';
 import debounce from 'lodash.debounce';
 import ResizeObserver from 'resize-observer-polyfill';
+
 //@ts-ignore
 import createRef from 'react-create-ref';
 
@@ -16,6 +17,26 @@ interface CommentCarouselProps extends React.HTMLAttributes<HTMLDivElement> {
 	content: TestimonialObj[];
 	slider?: Settings;
 }
+
+/**
+ * @name CommentCarousel
+ * @description
+ * A responsive carousel based on `react-slick`, showing real user testimonials.
+ * Each testimonial should have this data:
+ * -   content - main txt
+ * -   avatar - url to user's image
+ * -   name - owner name to display
+ * -   description - owner sub title
+ * @param { Testimonials[] } content carousel content.
+ * @param { SliderProps } [slider] overrides for the ReactSlick carousel
+ * @example
+ * const bitTestimonials = [
+ * 		{ name: 'Barbra', description: 'head of barbering', content: 'Great scissors!', avatar: '...', }
+ * 		{ name: 'Roberto', description: 'Robber of Bertos', content: 'Easy to carry.', avatar: '...', }
+ * ];
+ *
+ * <CommentCarousel content={bitTestimonials} />
+ */
 
 export default class CommentCarousel extends PureComponent<CommentCarouselProps> {
 	state = { active: 0, slidesToShow: 3 };
@@ -71,7 +92,7 @@ export default class CommentCarousel extends PureComponent<CommentCarouselProps>
 
 		return (
 			<div
-				data-bit-id="concrete/comment-carousel"
+				data-bit-id="bit.evangelist/atom/comment-carousel"
 				{...rest}
 				className={classNames(
 					styles.carouselWrapper,

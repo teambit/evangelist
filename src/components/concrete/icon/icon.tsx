@@ -1,9 +1,23 @@
 import React from 'react';
-import {BaseIcon} from '@bit/bit.gui.atoms.base-icon';
+
+import { BaseIcon, BaseIconProps } from '../../base/icon';
 
 const iconSetPrefix = 'bitcon';
 
+export type IconProps = BaseIconProps;
 
-export function Icon({ className, of: iconName, ...rest }: any) {
+/**
+ * Icon element for Bit's icon font at IcoMoon.
+ * @name BitIcon
+ * @param {string} of icon name
+ * @example
+ * // Embed icon at the document root:
+ * <EmbedIconSet query="sdfj4k2d"/>
+ *
+ * // Then use icon anywhere in the document:
+ * <Icon of="spinner"/>
+ */
+
+export function Icon({ className, of: iconName, ...rest }: IconProps) {
 	return <BaseIcon of={`${iconSetPrefix}-${iconName}`} className={className} {...rest} />;
 }

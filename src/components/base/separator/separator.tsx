@@ -3,25 +3,23 @@ import classNames from 'classnames';
 import styles from './separator.module.scss';
 
 export type SeparatorProps = {
-	/**
-	 * separator should be horizontal or vertical.
-	 */
 	layout: 'vertical' | 'horizontal';
-	/**
-	 * override styles.
-	 */
-	className?: string;
 } & React.HTMLAttributes<HTMLDivElement>;
 
 /**
- * Separator component divides between different areas to improve readability.
+ * @name Separator
+ * @param layout set as vertical / horizontal separator
+ * @description Separating line.
+ *
+ * Use these implicit CSS variables to style:  
+ * -   `--separator-color`
  */
 export function Separator({ layout, className, ...rest }: SeparatorProps) {
 	return (
 		<div
 			{...rest}
 			className={classNames(styles.separator, styles[layout], className)}
-			data-bit-id="base/separator"
+			data-bit-id="bit.base/atoms/separator"
 		/>
 	);
 }

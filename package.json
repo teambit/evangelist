@@ -24,9 +24,7 @@
     "extends": "react-app"
   },
   "dependencies": {
-    "@bit/bit.gui.atoms.base-icon": "^0.0.3",
-    "@bit/bit.gui.base.button": "^0.0.9",
-    "@bit/bit.web.config.links": "^0.0.2",
+    "@bit/joshk.react-spinners-css.ellipsis": "^1.1.7",
     "@popperjs/core": "^2.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -42,7 +40,7 @@
     "react-slick": "^0.25.2",
     "reset-css": "^5.0.1",
     "resize-observer-polyfill": "^1.5.1",
-    "typescript": "~3.7.2"
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "@types/chai": "^4.2.8",
@@ -66,7 +64,6 @@
     },
     "componentsDefaultDirectory": "src/bit-components/{name}",
     "packageManager": "yarn",
-    "defaultScope": "bit.marketing",
     "overrides": {
       "*": {
         "dependencies": {
@@ -76,9 +73,8 @@
         "devDependencies": {
           "@types/chai": "^4.2.8",
           "@types/sinon": "^7.5.1",
-          "@types/mocha": "^7.0.1",
+          "@types/mocha": "^5.0.0",
           "chai": "^4.2.0",
-          "eslint-plugin-chai-friendly": "^0.5.0",
           "sinon": "^8.1.1"
         },
         "env": {

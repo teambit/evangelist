@@ -9,14 +9,14 @@ import { text, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
 import styles from './autoSection.module.scss';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 
 export function AutoSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
 			className={classNames(styles.autoSection, text.center, props.className)}
-			data-bit-id="sections/dev-section"
+			data-bit-id="bit.evangelist/sections/dev-section"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.md}>Empower autonomous teams to build together</H2>

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import styles from './hybrid-perfect-sync.module.scss';
 
-import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
+import { fourWayGrid } from '../../components/layout/grid-presets/four-way-grid';
 
 import { PossibleSizes } from '../../constants/sizes';
 import { Image } from '../../components/concrete/image';
@@ -13,14 +13,21 @@ import { H2, H3 } from '../../components/concrete/heading';
 
 import { text, alignItems, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
+
+/**
+ * @name HybridPerfectSync
+ * @description
+ * A section of static content, showing Bit's collaboration abilities.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
 
 export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
 			className={classNames(props.className, text.center)}
-			data-bit-id="sections/hybrid-perfect-sync"
+			data-bit-id="bit.evangelist/sections/hybrid-perfect-sync"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>Keep apps and teams in perfect sync</H2>
@@ -55,8 +62,8 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 					<H3 size={PossibleSizes.xs}>Per-component CI</H3>
 					<Paragraph>
 						Enjoy bulletproof updates with per-component CI that runs every
-						component in full isolation. Reduce build and CI time by building and testing
-						only your changed components.
+						component in full isolation. Reduce build and CI time by building and
+						testing only your changed components.
 					</Paragraph>
 				</div>
 				<Image alt="cloud code" src="homepage-bit/comp-build-flow.png" fullWidth />

@@ -8,18 +8,18 @@ import { Label } from '../../components/base/label';
 import { Image } from '../../components/concrete/image';
 
 import { Grid } from '../../components/layout/grid-component';
-import { zGrid } from '../../components/layout/grid-definition/z-grid';
+import { zGrid } from '../../components/layout/grid-presets/z-grid';
 import { text, alignItems, marginCenter } from '../../components/layout/align';
 
 import styles from './deploySection.module.scss';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 
 export function DeploySection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
 			className={classNames(styles.deploySection, props.className)}
-			data-bit-id="sections/deploy-section"
+			data-bit-id="bit.evangelist/sections/deploy-section"
 		>
 			<Label className={styles.ctaLabel}>Deploy</Label>
 			<div className={classNames(textColumn, marginCenter)}>

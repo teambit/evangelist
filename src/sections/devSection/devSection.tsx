@@ -11,8 +11,8 @@ import { marginCenter, text, alignItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
 import styles from './devSection.module.scss';
-import { fourWayGrid } from '../../components/layout/grid-definition/four-way-grid';
-import { textColumn } from '../../components/layout/grid';
+import { fourWayGrid } from '../../components/layout/grid-presets/four-way-grid';
+import { textColumn } from '../../components/layout/page-frame';
 // TODO - use label color through class instead of accentColor
 
 export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
@@ -22,7 +22,7 @@ export function DevSection(props: HTMLAttributes<HTMLDivElement>) {
 			{...props}
 			className={classNames(text.center, props.className)}
 			style={accentColor}
-			data-bit-id="sections/dev-section"
+			data-bit-id="bit.evangelist/sections/dev-section"
 		>
 			<Label className={classNames(styles.ctaLabel, marginCenter)}>Develop</Label>
 			<div className={classNames(textColumn, marginCenter)}>

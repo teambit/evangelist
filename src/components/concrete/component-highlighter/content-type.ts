@@ -5,9 +5,9 @@ export type ComponentHighlightDetails = {
 };
 
 export type ComponentHighlightDictionary = {
-	[key: string]: ComponentHighlightDetails;
+	[componentId: string]: ComponentHighlightDetails;
 };
 
 export type VersionMap = {
-	[key: string]: string;
+	[componentId: string]: string;
 };

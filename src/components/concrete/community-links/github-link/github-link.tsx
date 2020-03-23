@@ -3,16 +3,20 @@ import classNames from 'classnames';
 //@ts-ignore
 import numberAbbreviate from 'number-abbreviate';
 
-import { PrimaryLink } from '../primary-link';
+import styles from './github-link.module.scss';
+
+import { PrimaryLink, PrimaryLinkProps } from '../primary-link';
 import { Icon } from '../../icon';
 import { Image } from '../../image';
-import styles from './github-link.module.scss';
-import { CommunityLinkProps } from '../../../base/community-link/community-link';
 
 /**
- * concrete community link component - pill flavor for base link component
+ * @name GithubLink
+ * @param {number} [starCount] show github stars count inside the link.
+ * @description Concrete link to Github. Styled as a 'pill' button, with the Github logo
+ * @example
+ * <GithubLink href="https://github.com/teambit/bit" starCount={100000} />
  */
-export interface GithubLinkProps extends CommunityLinkProps {
+export interface GithubLinkProps extends PrimaryLinkProps {
 	starCount?: number;
 }
 
@@ -22,9 +26,10 @@ export class GithubLink extends PureComponent<GithubLinkProps> {
 
 		return (
 			<PrimaryLink
+				external
 				{...rest}
 				className={classNames(styles.githubLink, className)}
-				data-bit-id="community-links/github-link"
+				data-bit-id="bit.evangelist/atom/community-links/github-link"
 			>
 				<Icon of="github-logo" className={styles.icon} />
 				<span>teambit/bit</span>

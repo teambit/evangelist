@@ -1,9 +1,10 @@
 import React from 'react';
 import { GithubLink } from '../../components/concrete/community-links/github-link';
 import classnames from 'classnames';
-//@ts-ignore
-import { links } from '@bit/bit.web.config.links';
+
 import styles from './community-section.module.scss';
+
+import { links } from '../../content/links';
 import { SlackLink } from '../../components/concrete/community-links/slack-link';
 import { H2 } from '../../components/concrete/heading';
 import { PossibleSizes } from '../../constants/sizes';
@@ -12,11 +13,18 @@ import { TwitterCard } from '../../components/concrete/twitter-card';
 import { Paragraph } from '../../components/base/paragraph';
 import { Grid } from '../../components/layout/grid-component';
 import { alignItems, marginCenter } from '../../components/layout/align';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 
 interface CommunitySectionProps extends React.HTMLAttributes<HTMLDivElement> {
 	githubStars?: number;
 }
+
+/**
+ * @name CommunitySection
+ * @description
+ * A section providing links to various bit communities, such as Twitter, Slack and Github.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
 
 export function CommunitySection(props: CommunitySectionProps) {
 	const { githubStars, ...rest } = props;
@@ -26,7 +34,7 @@ export function CommunitySection(props: CommunitySectionProps) {
 			{...rest}
 			colL={2}
 			className={classnames(props.className, styles.communitySection, alignItems.center)}
-			data-bit-id="sections/community"
+			data-bit-id="bit.evangelist/sections/community"
 		>
 			<div className={styles.cta}>
 				<div className={classnames(textColumn, marginCenter)}>

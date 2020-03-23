@@ -5,10 +5,10 @@ import styles from './hybrid-homepage.module.scss';
 
 import { CarouselSection } from '../../sections/carouselSection';
 import { CtaSection } from '../../sections/cta';
-import { centerColumn, wideColumn } from '../../components/layout/grid';
+import { centerColumn, wideColumn } from '../../components/layout/page-frame';
 
 import { ReuseLandingSection } from '../../sections/reuse-landing-section';
-import { EnterpriseSection } from '../../sections/enterprise-section/enterprise-section';
+import { EnterpriseSection } from '../../sections/enterprise-section';
 import { SyncSection } from '../../sections/sync-section';
 import { BookingBreakdown } from '../../sections/booking-breakdown';
 import { CommunitySection } from '../../sections/community';
@@ -23,6 +23,14 @@ interface HybridHomepageProps extends HTMLAttributes<HTMLDivElement> {
 	mainCta?: ReactNode;
 	githubStars?: number;
 }
+
+/**
+ * @name HybridHomepage
+ * @description Full, responsive page, showing the many benefits of bit, and showcasing its usage on a simple application.
+ * @param {ReactNode} [mainCta] placeholder for content, at the bottom of the first purple background fold
+ * @param {ReactNode} [communityCollections] placeholder for content, after the first purple background fold.
+ * @param {number} [githubStars] show github star count at the community section
+ */
 
 export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 	render() {

@@ -1,0 +1,646 @@
+{
+  "bit.base/atoms/button": {
+  url: ,
+  },
+  "bit.base/atoms/card": {
+  url: ,
+  },
+  "bit.base/atoms/heading": {
+  url: ,
+  },
+  "bit.base/atoms/icon": {
+  url: ,
+  },
+  "bit.base/atoms/image": {
+  url: ,
+  },
+  "bit.base/atoms/label": {
+  url: ,
+  },
+  "bit.base/atoms/link": {
+  url: ,
+  },
+  "bit.base/atoms/paragraph": {
+  url: ,
+  },
+  "bit.base/atoms/separator": {
+  url: ,
+  },
+  "bit.base/constants/storage": {
+  url: ,
+  },
+  "bit.base/layout/align": {
+  url: ,
+  },
+  "bit.base/layout/breakpoints": {
+  url: ,
+  },
+  "bit.base/layout/col-span": {
+  url: ,
+  },
+  "bit.base/layout/grid-component": {
+  url: ,
+  },
+  "bit.base/layout/grid-presets/four-grid": {
+  url: ,
+  },
+  "bit.base/layout/grid-presets/four-way-grid": {
+  url: ,
+  },
+  "bit.base/layout/grid-presets/z-grid": {
+  url: ,
+  },
+  "bit.base/layout/page-frame": {
+  url: ,
+  },
+  "bit.base/theme/brand-colors": {
+  url: ,
+  },
+  "bit.base/theme/brand-definition": {
+  url: ,
+  },
+  "bit.base/theme/color-definition": {
+  url: ,
+  },
+  "bit.base/theme/colors": {
+  url: ,
+  },
+  "bit.base/theme/fonts/book": {
+  url: ,
+  },
+  "bit.base/theme/heading-margin-definition": {
+  url: ,
+  },
+  "bit.base/theme/shadow-definition": {
+  url: ,
+  },
+  "bit.base/theme/size-definition": {
+  url: ,
+  },
+  "bit.base/theme/sizes": {
+  url: ,
+  },
+  "bit.base/theme/theme-provider": {
+  url: ,
+  },
+  "bit.base/utils/popper-js/ignore-popper-size": {
+  url: ,
+  },
+  "bit.base/utils/popper-js/resize-to-match-reference": {
+  url: ,
+  },
+  "bit.evangelist/atom/bit-icon": {
+  url: ,
+  },
+  "bit.evangelist/atom/comment-carousel": {
+  url: ,
+  },
+  "bit.evangelist/atom/community-links/github-link": {
+  url: ,
+  },
+  "bit.evangelist/atom/community-links/primary-link": {
+  url: ,
+  },
+  "bit.evangelist/atom/community-links/slack-link": {
+  url: ,
+  },
+  "bit.evangelist/atom/community-links/twitter-link": {
+  url: ,
+  },
+  "bit.evangelist/atom/component-highlighter": {
+  url: ,
+  },
+  "bit.evangelist/atom/eva-button": {
+  url: ,
+  },
+  "bit.evangelist/atom/headers": {
+  url: ,
+  },
+  "bit.evangelist/atom/icon-line": {
+  url: ,
+  },
+  "bit.evangelist/atom/marketing-card": {
+  url: ,
+  },
+  "bit.evangelist/atom/primary-link": {
+  url: ,
+  },
+  "bit.evangelist/atom/static-image": {
+  url: ,
+  },
+  "bit.evangelist/atom/testimonial": {
+  url: ,
+  },
+  "bit.evangelist/atom/twitter-card": {
+  url: ,
+  },
+  "bit.evangelist/content/bit-testimonials": {
+  url: ,
+  },
+  "bit.evangelist/content/components-highlight-dictionary": {
+  url: ,
+  },
+  "bit.evangelist/content/links": {
+  url: ,
+  },
+  "bit.evangelist/pages/homepage": {
+  url: ,
+  },
+  "bit.evangelist/pages/hybrid-homepage": {
+  url: ,
+  },
+  "bit.evangelist/sections/auto-docs": {
+  url: ,
+  },
+  "bit.evangelist/sections/auto-section": {
+  url: ,
+  },
+  "bit.evangelist/sections/booking-breakdown": {
+  url: ,
+  },
+  "bit.evangelist/sections/build-section": {
+  url: ,
+  },
+  "bit.evangelist/sections/carousel-section": {
+  url: ,
+  },
+  "bit.evangelist/sections/community": {
+  url: ,
+  },
+  "bit.evangelist/sections/component-advantages": {
+  url: ,
+  },
+  "bit.evangelist/sections/cta": {
+  url: ,
+  },
+  "bit.evangelist/sections/deploy-section": {
+  url: ,
+  },
+  "bit.evangelist/sections/dev-section": {
+  url: ,
+  },
+  "bit.evangelist/sections/enterprise-section": {
+  url: ,
+  },
+  "bit.evangelist/sections/hybrid-perfect-sync": {
+  url: ,
+  },
+  "bit.evangelist/sections/independent-teams": {
+  url: ,
+  },
+  "bit.evangelist/sections/main-section": {
+  url: ,
+  },
+  "bit.evangelist/sections/reuse": {
+  url: ,
+  },
+  "bit.evangelist/sections/reuse-landing-section": {
+  url: ,
+  },
+  "bit.evangelist/sections/summary-cards": {
+  url: ,
+  },
+  "bit.evangelist/sections/sync-section": {
+  url: ,
+  },
+  "bit.evangelist/sections/talk-to-experts": {
+  url: ,
+  },
+}
+
+
+
+{
+  "id": "bit.base/atoms/button",
+  "localVersion": "1.0.4",
+  "deprecated": false,
+  "currentVersion": "1.0.4",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/atoms/card",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/atoms/heading",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/atoms/icon",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/atoms/image",
+  "localVersion": "1.0.4",
+  "deprecated": false,
+  "currentVersion": "1.0.4",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/atoms/label",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/atoms/link",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/atoms/paragraph",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/atoms/separator",
+  "localVersion": "1.0.3",
+  "deprecated": false,
+  "currentVersion": "1.0.3",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/constants/storage",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/layout/align",
+  "localVersion": "1.0.3",
+  "deprecated": false,
+  "currentVersion": "1.0.3",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/layout/breakpoints",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/layout/col-span",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/layout/grid-component",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/layout/grid-presets/four-grid",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/layout/grid-presets/four-way-grid",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/layout/grid-presets/z-grid",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/layout/page-frame",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/brand-colors",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/brand-definition",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/color-definition",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/colors",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/fonts/book",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/heading-margin-definition",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/shadow-definition",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/size-definition",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/sizes",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/theme/theme-provider",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/utils/popper-js/ignore-popper-size",
+  "localVersion": "1.0.3",
+  "deprecated": false,
+  "currentVersion": "1.0.3",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.base/utils/popper-js/resize-to-match-reference",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/bit-icon",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/comment-carousel",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/community-links/github-link",
+  "localVersion": "1.0.4",
+  "deprecated": false,
+  "currentVersion": "1.0.4",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/community-links/primary-link",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/community-links/slack-link",
+  "localVersion": "1.0.3",
+  "deprecated": false,
+  "currentVersion": "1.0.3",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/community-links/twitter-link",
+  "localVersion": "1.0.3",
+  "deprecated": false,
+  "currentVersion": "1.0.3",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/component-highlighter",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/eva-button",
+  "localVersion": "1.0.3",
+  "deprecated": false,
+  "currentVersion": "1.0.3",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/headers",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/icon-line",
+  "localVersion": "1.0.4",
+  "deprecated": false,
+  "currentVersion": "1.0.4",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/marketing-card",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/primary-link",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/static-image",
+  "localVersion": "1.0.3",
+  "deprecated": false,
+  "currentVersion": "1.0.3",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/testimonial",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/atom/twitter-card",
+  "localVersion": "1.0.3",
+  "deprecated": false,
+  "currentVersion": "1.0.3",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/content/bit-testimonials",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/content/components-highlight-dictionary",
+  "localVersion": "0.0.1",
+  "deprecated": false,
+  "currentVersion": "0.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/content/links",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/pages/hybrid-homepage",
+  "localVersion": "1.0.4",
+  "deprecated": false,
+  "currentVersion": "1.0.4",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/auto-docs",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/auto-section",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/booking-breakdown",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/carousel-section",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/community",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/component-advantages",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/cta",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/enterprise-section",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/hybrid-perfect-sync",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/independent-teams",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/reuse-landing-section",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/sync-section",
+  "localVersion": "1.0.1",
+  "deprecated": false,
+  "currentVersion": "1.0.1",
+  "remoteVersion": "N/A"
+},
+{
+  "id": "bit.evangelist/sections/talk-to-experts",
+  "localVersion": "1.0.2",
+  "deprecated": false,
+  "currentVersion": "1.0.2",
+  "remoteVersion": "N/A"
+}

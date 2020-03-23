@@ -9,11 +9,18 @@ import { PossibleSizes } from '../../constants/sizes';
 import { marginCenter } from '../../components/layout/align';
 
 import styles from './booking-breakdown.module.scss';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
+
+/**
+ * @name BookingBreakdown
+ * @description
+ * A section of static content, showing how Bit breaks down complicated websites.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
 
 export function BookingBreakdown(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props} data-bit-id="sections/booking-breakdown">
+		<div {...props} data-bit-id="bit.evangelist/sections/booking-breakdown">
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>
 					Everything you need to build independent and reusable components

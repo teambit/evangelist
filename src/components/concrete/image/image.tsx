@@ -1,37 +1,23 @@
 import React from 'react';
-import classNames from 'classnames';
-import styles from './image.module.scss';
-import { staticStorageUrl } from '../../../constants/storage';
-import { BaseImage, BaseImageProps } from '../../base/image';
 
-export type ImageProps = {
-	/**
-	 * alt text
-	 */
-	alt: string;
-	/**
-	 * src of image
-	 */
-	src: string;
-	/**
-	 * className for styles overrides
-	 */
-	className?: string;
-	fullWidth?: boolean;
-} & BaseImageProps;
+import { BaseImage, BaseImageProps } from '../../base/image';
+import { staticStorageUrl } from '../../../constants/storage';
+
+export type ImageProps = BaseImageProps;
 
 /**
- *
- * Image component - base image
+ * @name StaticImage
+ * @description Concrete image, using our Static Storage CDN.
+ * @param {string} src relative path to image
+ * @example
+ * <Image src="homepage-bit/map.png" alt="illustration" fullWidth />
  */
-export function Image({ alt, src, fullWidth, className, ...rest }: ImageProps) {
+export function Image({ src, ...rest }: ImageProps) {
 	return (
 		<BaseImage
 			{...rest}
-			alt={alt}
 			src={`${staticStorageUrl}/${src}`}
-			className={classNames(fullWidth && styles.fullWidth, className)}
-			data-bit-id="concrete/image"
+			data-bit-id="bit.evangelist/atom/static-image"
 		/>
 	);
 }

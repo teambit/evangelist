@@ -8,13 +8,11 @@ import { text, marginCenter } from '../../components/layout/align';
 
 import { Paragraph } from '../../components/base/paragraph';
 import { H1 } from '../../components/concrete/heading';
-import { PrimaryButton } from '../../components/base/primary-button';
-import { CtaButton } from '../../components/concrete/cta-button';
 import { IconLine } from '../../components/concrete/icon-line';
 import { PrimaryLink } from '../../components/concrete/primary-link';
 import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
-import { textColumn } from '../../components/layout/grid';
+import { textColumn } from '../../components/layout/page-frame';
 import { EvaButton } from '../../components/concrete/eva-button';
 
 const iconsArray = [
@@ -30,9 +28,16 @@ interface ReuseLandingProps extends HTMLAttributes<HTMLDivElement> {
 	mainCta?: ReactNode;
 }
 
+/**
+ * @name IndependentTeams
+ * @description
+ * The Main and first section the user sees as he enters the page.
+ * Assumes a dark purplish background behind it.
+ */
+
 export function ReuseLandingSection(props: ReuseLandingProps) {
 	return (
-		<div data-bit-id="sections/reuse-landing-section" {...props}>
+		<div data-bit-id="bit.evangelist/sections/reuse-landing-section" {...props}>
 			<Grid colL={2} className={classNames(styles.mainGrid, text.center, text.l.left)}>
 				<div>
 					<div>
@@ -47,7 +52,7 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 						>
 							Bit is a scalable and collaborative way to build and reuse
 							components. It's everything you need from local development to
-							cross-project integrations. Try it for free
+							cross-project integrations. Try it for free.
 						</Paragraph>
 					</div>
 

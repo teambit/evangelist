@@ -1,30 +1,26 @@
 import React from 'react';
 import classNames from 'classnames';
-import { PrimaryLink } from '../primary-link';
-import { Icon } from '../../icon';
+
 import styles from './slack-link.module.scss';
 
-/**
- * concrete community link component - pill flavor for base link component
- */
-export type SlackLinkProps = {
-	/**
-	 * override className for styling
-	 */
-	className?: string;
-	/**
-	 * the link to refer to
-	 */
-	href: string;
-} & React.HTMLAttributes<HTMLAnchorElement>;
+import { PrimaryLink, PrimaryLinkProps } from '../primary-link';
+import { Icon } from '../../icon';
 
-export function SlackLink({ className, href, ...rest }: SlackLinkProps) {
+export type SlackLinkProps = PrimaryLinkProps;
+
+/**
+ * @name SlackLink
+ * @description Concrete link to a Slack channel. Styled as a 'pill' button, with the Slack logo
+ * @example
+ * <SlackLink href="https://join.slack.com/..." />
+ */
+export function SlackLink({ className, ...rest }: SlackLinkProps) {
 	return (
 		<PrimaryLink
+			external
 			{...rest}
-			href={href}
 			className={classNames(styles.slackLink, className)}
-			data-bit-id="community-links/slack-link"
+			data-bit-id="bit.evangelist/atom/community-links/slack-link"
 		>
 			<Icon of="slack" className={classNames(styles.icon)} />
 			<span>bit-dev-community</span>

@@ -5,12 +5,17 @@ import styles from './talk-to-experts.module.scss';
 
 import { H2 } from '../../components/concrete/heading';
 import { PossibleSizes } from '../../constants/sizes';
-import { CtaButton } from '../../components/concrete/cta-button';
 import { Paragraph } from '../../components/base/paragraph';
 import { justifyItems, alignItems, text, marginCenter } from '../../components/layout/align';
 import { PrimaryLink } from '../../components/concrete/primary-link';
 import { EvaButton } from '../../components/concrete/eva-button';
 
+/**
+ * @name TalkToExperts
+ * @description
+ * A static section, calling users to contact us.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
 export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
@@ -23,7 +28,7 @@ export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 				text.center,
 				text.sm.left
 			)}
-			data-bit-id="sections/talk-to-experts"
+			data-bit-id="bit.evangelist/sections/talk-to-experts"
 		>
 			<div className={marginCenter}>
 				<H2 size={PossibleSizes.xs}>

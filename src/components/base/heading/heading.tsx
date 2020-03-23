@@ -1,25 +1,21 @@
 import React from 'react';
-import { PossibleSizes } from '../../../constants/sizes';
 
 export type HeadingProps = {
-	/**
-	 * the generated element.
-	 */
 	element?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
-	/**
-	 * heading font size.
-	 */
-	size?: PossibleSizes;
 } & React.HTMLAttributes<HTMLHeadingElement>;
 
 /**
- * Generates titles
+ * Title component
+ * @name Heading
+ * @param element underlying html element ("h1", "h2", etc)
+ * @example
+ * <Heading element="h3">This is a title</Heading>
  */
 export function Heading(props: HeadingProps) {
-	const { element, className, size, ...rest } = props;
+	const { element, ...rest } = props;
 	const Element = element || 'h1';
 
-	return <Element data-bit-id="base/heading" {...rest} className={className} />;
+	return <Element data-bit-id="bit.base/atoms/heading" {...rest} />;
 }
 
 Heading.defaultProps = {

@@ -19,6 +19,19 @@ interface ComponentHighlighterState {
 	targetElement?: HTMLElement;
 }
 
+/**
+ * @name ComponentHighlighter
+ * @description
+ * Identify components using a border and tooltip.
+ * It uses _onMouseOver_ to detect user interaction with any child element,
+ * and looks for the nearest parent with html attribute "data-bit-id".
+ * It then uses [Popper.js](https://popper.js.org/) directly to create a tooltip and overlay a border.
+ * @param {boolean} active enable highlighting
+ * @param componentsDictionary object containing all the details to show. Components missing from this dictionary will be ignored!
+ * Key is componentId, and value includes displayName, url (tooltip link), and version.
+ * @param versionMap override versions for specific components. As versions change rapidly consumers may want to specify them locally.
+ */
+
 export class ComponentHighlighter extends Component<
 	ComponentHighlighterProps,
 	ComponentHighlighterState

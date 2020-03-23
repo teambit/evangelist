@@ -9,7 +9,7 @@ export function ThemedText(props: ThemedTextProps) {
 		<span
 			{...props}
 			className={classNames(props.className, styles.themedText)}
-			data-bit-id="base/themed-text"
+			data-bit-id="bit.base/atoms/themed-text"
 		/>
 	);
 }

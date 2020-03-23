@@ -1,3 +1,18 @@
+/**
+* Preset breakpoints for the whole app.  
+* Use `(min-width: xxx)` (not `max-width`) to keep a consistent experience
+*	
+* ```tsx
+* $br-xs: 360px;
+* $br-sm: 480px; //mobile
+* $br-md: 768px;
+* $br-l: 920px; //tablet
+* $br-lg-new: 1200px; //this will replace $br-lg
+* $br-xl: 1440px;
+* $br-xxl: 1920px;
+* ```
+*/
+
 $br-xs: 360px;
 $br-sm: 480px; //mobile
 $br-md: 768px;
