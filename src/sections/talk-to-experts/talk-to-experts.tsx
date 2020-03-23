@@ -10,6 +10,12 @@ import { justifyItems, alignItems, text, marginCenter } from '../../components/l
 import { PrimaryLink } from '../../components/concrete/primary-link';
 import { EvaButton } from '../../components/concrete/eva-button';
 
+/**
+ * @name TalkToExperts
+ * @description
+ * A static section, calling users to contact us.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
 export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div

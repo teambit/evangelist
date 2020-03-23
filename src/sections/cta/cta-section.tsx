@@ -11,11 +11,14 @@ import { justifyItems, alignItems, text } from '../../components/layout/align';
 import { PrimaryLink } from '../../components/concrete/community-links/primary-link';
 import { EvaButton } from '../../components/concrete/eva-button';
 
-//don't abuse!! fork this component if you need to much customizations
-type CtaProps = {
-	title?: string;
-	buttonText?: string;
-} & React.HTMLAttributes<HTMLDivElement>;
+type CtaProps = React.HTMLAttributes<HTMLDivElement>;
+
+/**
+ * @name CtaSection
+ * @description
+ * Best section yet! Encourage the user to signup with a big and responsive call to action.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
 
 export function CtaSection(props: CtaProps) {
 	const { ...rest } = props;

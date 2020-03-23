@@ -19,6 +19,13 @@ interface CommunitySectionProps extends React.HTMLAttributes<HTMLDivElement> {
 	githubStars?: number;
 }
 
+/**
+ * @name CommunitySection
+ * @description
+ * A section providing links to various bit communities, such as Twitter, Slack and Github.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
+
 export function CommunitySection(props: CommunitySectionProps) {
 	const { githubStars, ...rest } = props;
 

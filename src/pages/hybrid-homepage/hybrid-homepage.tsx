@@ -14,7 +14,7 @@ import { BookingBreakdown } from '../../sections/booking-breakdown';
 import { CommunitySection } from '../../sections/community';
 import { ComponentsAdvantages } from '../../sections/component-advantages';
 import { HybridPerfectSync } from '../../sections/hybrid-perfect-sync';
-import { AutoDocs } from '../../sections/auto-docs'; 
+import { AutoDocs } from '../../sections/auto-docs';
 import { IndependentTeams } from '../../sections/independent-teams';
 import { TalkToExperts } from '../../sections/talk-to-experts';
 
@@ -23,6 +23,14 @@ interface HybridHomepageProps extends HTMLAttributes<HTMLDivElement> {
 	mainCta?: ReactNode;
 	githubStars?: number;
 }
+
+/**
+ * @name HybridHomepage
+ * @description Full, responsive page, showing the many benefits of bit, and showcasing its usage on a simple application.
+ * @param {ReactNode} [mainCta] placeholder for content, at the bottom of the first purple background fold
+ * @param {ReactNode} [communityCollections] placeholder for content, after the first purple background fold.
+ * @param {number} [githubStars] show github star count at the community section
+ */
 
 export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 	render() {

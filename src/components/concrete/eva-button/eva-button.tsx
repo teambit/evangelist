@@ -14,9 +14,9 @@ export interface ButtonProps extends BaseProps {
 /**
  * @description
  * Button component with click effect and built in loader.
- * Supports all props from native htl button.
+ * Supports all props from native html button.
  * @name EvaButton
- * @param {string} elevation style the button with shadow and click effect. (Default)
+ * @param {string} elevation style the button with shadow and click effect. (Default - 'low')
  * @param {string} importance style variance ('cta', 'normal')
  * @param {boolean} loading (from BaseButton) replace content with loader
  * @param {ReactNode} loader (from BaseButton) loader to show when loading={true}

@@ -6,7 +6,7 @@ import { staticStorageUrl } from '../../../constants/storage';
 export type ImageProps = BaseImageProps;
 
 /**
- * @name ConcreteImage
+ * @name StaticImage
  * @description Concrete image, using our Static Storage CDN.
  * @param {string} src relative path to image
  * @example

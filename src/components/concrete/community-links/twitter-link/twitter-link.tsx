@@ -10,9 +10,7 @@ import { Icon } from '../../icon';
  * @name TwitterLink
  * @description Concrete link to a Twitter account. Styled as a 'pill' button, with the Twitter logo
  * @example
- * ```tsx
  * <TwitterLink href="https://twitter.com/bitdev_" />
- * ```
  */
 export type TwitterLinkProps = PrimaryLinkProps;
 

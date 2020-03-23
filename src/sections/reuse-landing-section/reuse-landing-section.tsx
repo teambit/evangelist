@@ -28,6 +28,13 @@ interface ReuseLandingProps extends HTMLAttributes<HTMLDivElement> {
 	mainCta?: ReactNode;
 }
 
+/**
+ * @name IndependentTeams
+ * @description
+ * The Main and first section the user sees as he enters the page.
+ * Assumes a dark purplish background behind it.
+ */
+
 export function ReuseLandingSection(props: ReuseLandingProps) {
 	return (
 		<div data-bit-id="bit.evangelist/sections/reuse-landing-section" {...props}>
@@ -45,7 +52,7 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 						>
 							Bit is a scalable and collaborative way to build and reuse
 							components. It's everything you need from local development to
-							cross-project integrations. Try it for free
+							cross-project integrations. Try it for free.
 						</Paragraph>
 					</div>
 

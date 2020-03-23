@@ -14,9 +14,7 @@ import { Image } from '../../image';
  * @param {number} [starCount] show github stars count inside the link.
  * @description Concrete link to Github. Styled as a 'pill' button, with the Github logo
  * @example
- * ```tsx
  * <GithubLink href="https://github.com/teambit/bit" starCount={100000} />
- * ```
  */
 export interface GithubLinkProps extends PrimaryLinkProps {
 	starCount?: number;

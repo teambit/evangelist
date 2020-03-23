@@ -18,6 +18,12 @@ const desc5 = () => (
 	</div>
 );
 
+/**
+ * @name bitTestimonials
+ * @description
+ * Content for [CommentCarousel](https://bit.dev/bit/evangelist/atom/comment-carousel).
+ */
+
 export const bitTestimonials: TestimonialObj[] = [
 	{
 		content: "“I just found out about Bit and holy cow that's a cool product”",

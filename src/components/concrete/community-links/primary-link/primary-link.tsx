@@ -8,6 +8,8 @@ import { Link, LinkProps } from '../../../base/link';
 export type PrimaryLinkProps = LinkProps;
 
 /**
+ * @name PrimaryLink
+ * @description
  * concrete community link component - pill flavor for base link component
  */
 export function PrimaryLink({ className, href, ...rest }: PrimaryLinkProps) {

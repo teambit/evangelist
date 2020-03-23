@@ -15,6 +15,13 @@ import { text, alignItems, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 import { textColumn } from '../../components/layout/page-frame';
 
+/**
+ * @name HybridPerfectSync
+ * @description
+ * A section of static content, showing Bit's collaboration abilities.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
+
 export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
@@ -55,8 +62,8 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 					<H3 size={PossibleSizes.xs}>Per-component CI</H3>
 					<Paragraph>
 						Enjoy bulletproof updates with per-component CI that runs every
-						component in full isolation. Reduce build and CI time by building and testing
-						only your changed components.
+						component in full isolation. Reduce build and CI time by building and
+						testing only your changed components.
 					</Paragraph>
 				</div>
 				<Image alt="cloud code" src="homepage-bit/comp-build-flow.png" fullWidth />

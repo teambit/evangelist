@@ -10,6 +10,13 @@ import { marginCenter } from '../../components/layout/align';
 import CommentCarousel from '../../components/concrete/comment-carousel/comment-carousel';
 import { bitTestimonials } from '../../content/bit-testimonials';
 
+/**
+ * @name AutoDocs
+ * @description
+ * A section showing real users testimonials about the product.
+ * Using **CommentCarousel** (react-slick), and content from **bit-testimonials**.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
 export function CarouselSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div {...props} className={props.className}>
@@ -19,8 +26,6 @@ export function CarouselSection(props: HTMLAttributes<HTMLDivElement>) {
 				</H2>
 			</div>
 			<CommentCarousel content={bitTestimonials} />
-			{/* <div data-bit-id="commentCarousel"> */}
-			{/* </div> */}
 		</div>
 	);
 }

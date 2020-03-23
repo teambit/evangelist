@@ -12,6 +12,13 @@ import { Grid } from '../../components/layout/grid-component';
 import { text, marginCenter } from '../../components/layout/align';
 import { textColumn } from '../../components/layout/page-frame';
 
+/**
+ * @name IndependentTeams
+ * @description
+ * A section of static content, showing how different teams can collaborate together while still keeping a separation of concerns.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
+
 export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div

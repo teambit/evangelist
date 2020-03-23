@@ -16,6 +16,14 @@ import { Icon } from '../../components/concrete/icon';
 import { colSpanMd } from '../../components/layout/col-span';
 import { PrimaryLink } from '../../components/concrete/primary-link';
 
+
+/**
+ * @name EnterpriseSection
+ * @description
+ * A section of static content, presenting Bit's cloud platform.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
+
 export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div

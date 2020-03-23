@@ -12,9 +12,7 @@ import styles from './primary-link.module.scss';
  * -   --primary-link-color, or --base-color, for text color.
  * -   --primary-link-highlight, or --base-highlight, for text color on hover.
  * @example
- * ```tsx
  * <PrimaryLink href="https://google.com">look it up!</PrimaryLink>
- * ```
  */
 export function PrimaryLink(props: LinkProps) {
 	return <Link {...props} className={classNames(props.className, styles.primaryLink)} />;

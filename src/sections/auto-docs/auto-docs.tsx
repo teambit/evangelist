@@ -14,6 +14,13 @@ import { zGrid, halfZGrid } from '../../components/layout/grid-presets/z-grid';
 import { text, alignItems, marginCenter } from '../../components/layout/align';
 import { textColumn } from '../../components/layout/page-frame';
 
+/**
+ * @name AutoDocs
+ * @description
+ * A section of static content, detailing the Bit's documentation features.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
+
 export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div

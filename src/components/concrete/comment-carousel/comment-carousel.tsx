@@ -20,22 +20,22 @@ interface CommentCarouselProps extends React.HTMLAttributes<HTMLDivElement> {
 
 /**
  * @name CommentCarousel
- * @description A responsive carousel based on `react-slick`, showing real user testimonials.
- * @param { Testimonials[] } content carousel content. Each item of the array should have this data:
+ * @description
+ * A responsive carousel based on `react-slick`, showing real user testimonials.
+ * Each testimonial should have this data:
  * -   content - main txt
  * -   avatar - url to user's image
  * -   name - owner name to display
  * -   description - owner sub title
+ * @param { Testimonials[] } content carousel content.
  * @param { SliderProps } [slider] overrides for the ReactSlick carousel
  * @example
- * ```tsx
  * const bitTestimonials = [
  * 		{ name: 'Barbra', description: 'head of barbering', content: 'Great scissors!', avatar: '...', }
  * 		{ name: 'Roberto', description: 'Robber of Bertos', content: 'Easy to carry.', avatar: '...', }
  * ];
  *
  * <CommentCarousel content={bitTestimonials} />
- * ```
  */
 
 export default class CommentCarousel extends PureComponent<CommentCarouselProps> {

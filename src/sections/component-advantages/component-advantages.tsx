@@ -12,8 +12,14 @@ import { H3 } from '../../components/concrete/heading';
 import { text, alignItems } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 
-// import styles from './devSection.module.scss';
 import { fourWayGrid } from '../../components/layout/grid-presets/four-way-grid';
+
+/**
+ * @name ComponentsAdvantages
+ * @description
+ * A section detailing the advantages of components, their isolation, and interoperability between projects.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
 
 export function ComponentsAdvantages(props: HTMLAttributes<HTMLDivElement>) {
 	return (

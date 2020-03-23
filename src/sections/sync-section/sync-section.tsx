@@ -15,6 +15,12 @@ import { text, alignItems, marginCenter } from '../../components/layout/align';
 import { Grid } from '../../components/layout/grid-component';
 import { textColumn } from '../../components/layout/page-frame';
 
+/**
+ * @name SyncSection
+ * @description
+ * A static section, showing how bit can be used to share and sync code between projects and people.
+ * Assumes the consuming component to supply className with width and other styles.
+ */
 export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
@@ -23,11 +29,10 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 			data-bit-id="bit.evangelist/sections/sync-section"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
-				<H2 size={PossibleSizes.sm}>
-					Increase component reuse and consistency
-				</H2>
+				<H2 size={PossibleSizes.sm}>Increase component reuse and consistency</H2>
 				<Paragraph size={PossibleSizes.xl} className={classNames(styles.subtitle)}>
-					Keep components up-to-date across your codebase and drive component adoption.
+					Keep components up-to-date across your codebase and drive component
+					adoption.
 				</Paragraph>
 			</div>
 

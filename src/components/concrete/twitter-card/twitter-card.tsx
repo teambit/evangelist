@@ -32,7 +32,6 @@ const twitterVerifiedIcon = 'homepage/join-fold/twitter_verified.png';
  * @param {boolean} verified adds a 'verified' logo, when true.
  * @param {ReactNode} children main content
  * @example
- * ```tsx
  * <TwitterCard
  *	verified
  *	title="@Sketch2R"
@@ -41,7 +40,6 @@ const twitterVerifiedIcon = 'homepage/join-fold/twitter_verified.png';
  *	Great news! We just published our first Stratos components to
  *	http://bit.dev!
  * </TwitterCard>
- * ```
  */
 export function TwitterCard(props: TwitterCardProps) {
 	const { title, className, children, image, verified, titleId, textId, ...rest } = props;

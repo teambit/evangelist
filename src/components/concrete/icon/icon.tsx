@@ -11,15 +11,11 @@ export type IconProps = BaseIconProps;
  * @name BitIcon
  * @param {string} of icon name
  * @example
- * Embed icon at the document root:
- * ```tsx
+ * // Embed icon at the document root:
  * <EmbedIconSet query="sdfj4k2d"/>
- * ```
  *
- * Then use icon anywhere in the document:
- * ```tsx
+ * // Then use icon anywhere in the document:
  * <Icon of="spinner"/>
- * ```
  */
 
 export function Icon({ className, of: iconName, ...rest }: IconProps) {
