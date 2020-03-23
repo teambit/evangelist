@@ -26,6 +26,9 @@ Exported to [bit.base](https://bit.dev/bit/base)
 -   src/components/base - generic building blocks for concrete pages. They should not contain any texts or content.
 -   src/utils - pure logic and helpers. (no visual components)
 
-## Scripts
-* Setup - install packages with `yarn install`, and sync bit models using `bit import`.
-* 
+## Setup
+1. Clone the repository
+1. [Install bit](https://docs.bit.dev/docs/installation)
+1. Run `yarn install` or `npm install` to install all packages.
+1. Run `bit import` to sync components.
+1. Start hacking!
