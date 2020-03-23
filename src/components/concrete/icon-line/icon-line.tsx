@@ -19,9 +19,7 @@ type IconLineProps = {
  * @param {string[]} icons array of icon paths to load. Icons are expected to load from our Static Storage CDN, and not have full URL.
  * @param {ReactNode} [pre] Content to put before the images
  * @example
- * ```tsx
  * <IconLine icons=['logo-react', 'logo-vue', 'logo-angular'] />
- * ```
  */
 
 export function IconLine({ icons, className, pre }: IconLineProps) {

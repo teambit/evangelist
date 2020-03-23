@@ -18,11 +18,9 @@ export interface TestimonialProps extends React.HTMLAttributes<HTMLDivElement> {
  * @param {string} data.name owner name
  * @param {string} data.description owner subtitle
  * @example
- * ```tsx
  * <Testimonial active
  * 	data={{ name: 'Barbra', description: 'head of barbering', content: 'Great scissors!', avatar: '...', }}
  * />
- * ```
  */
 export class Testimonial extends PureComponent<TestimonialProps> {
 	render() {

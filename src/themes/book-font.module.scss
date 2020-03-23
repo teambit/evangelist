@@ -5,7 +5,6 @@ $staticStorageUrl: 'https://static.bit.dev';
  * # Book fonts
  * Circular Pro Book, including bold and italic.
  * @example
- * ```tsx
  * import { bookFont } from '...'
  * //...
  *
@@ -13,7 +12,6 @@ $staticStorageUrl: 'https://static.bit.dev';
  *   <div>I'm using font!</div>
  *   <div style={{ fontWeight: 'bold'}}>I am BOLD</div>
  * </body>
- * ```
  */
 
 @font-face {

@@ -10,9 +10,7 @@ export type ImageProps = BaseImageProps;
  * @description Concrete image, using our Static Storage CDN.
  * @param {string} src relative path to image
  * @example
- * ```tsx
  * <Image src="homepage-bit/map.png" alt="illustration" fullWidth />
- * ```
  */
 export function Image({ src, ...rest }: ImageProps) {
 	return (

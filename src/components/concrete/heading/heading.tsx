@@ -14,10 +14,8 @@ import styles from './heading.module.scss';
  * H1, H2, H3, H4, H5, H6
  * @param size font-size for the header. Default value per header (eg. H1 - 'xl')
  * @example
- * ```tsx
- * 	<H2 size="md">isn't this a lovely section?</H2>
- * 	<Paragraph>Lorem de ipsum de arimas</Paragraph>
- * ```
+ * <H2 size="md">isn't this a lovely section?</H2>
+ * <Paragraph>Lorem de ipsum de arimas</Paragraph>
  */
 
 export interface HeaderProps extends HeadingProps {

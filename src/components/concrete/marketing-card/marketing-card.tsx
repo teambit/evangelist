@@ -32,7 +32,6 @@ type MarketingCardProps = {
  * @param {string} [to] link target
  * @param {string} [linkText] link content
  * @example
- * ```tsx
  * <MarketingCard
  * 	className={styles.marketingCard}
  *	ctaColor={'#37b26c'}
@@ -43,7 +42,6 @@ type MarketingCardProps = {
  *	Empower every team to independently build their components in their own
  *	codebase. Let each team integrate and deploy components
  * </MarketingCard>
- * ```
  */
 
 export const MarketingCard = (props: MarketingCardProps) => {
