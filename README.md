@@ -11,6 +11,8 @@ A modern component-first website.
 -   App.tsx - project root
 
 ### Components specific to the homepage:
+[![bit components](https://img.shields.io/badge/dynamic/json.svg?color=6e3991&label=bit%20components&query=payload.totalComponents&url=https://api.bit.dev/scope/bit/evangelist)](https://bit.dev/bit/evangelist)
+
 Exported to [bit.evangelist](https://bit.dev/bit/evangelist)
 
 -   src/pages - full page with margins, backgrounds, and texts. (Currently, only hybrid-homepage is in use)
@@ -19,6 +21,8 @@ Exported to [bit.evangelist](https://bit.dev/bit/evangelist)
 -   src/concrete - components specific to this homepage. They are still abstract and should not contain texts and content.
 
 ### Base components, shared among projects
+[![bit components](https://img.shields.io/badge/dynamic/json.svg?color=6e3991&label=bit%20components&query=payload.totalComponents&url=https://api.bit.dev/scope/bit/base)](https://bit.dev/bit/base)
+
 Exported to [bit.base](https://bit.dev/bit/base)
 -   src/themes - all shared styles, colors, sizes, css variables, etc.
 -   src/constants - hard coded values, like storage url and enums.
