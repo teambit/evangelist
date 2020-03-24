@@ -1059,29 +1059,6 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/homepage@0.0.6": {
-        "files": [
-            {
-                "name": "homepage.module.scss",
-                "relativePath": "src/pages/homepage/homepage.module.scss",
-                "test": false
-            },
-            {
-                "name": "homepage.tsx",
-                "relativePath": "src/pages/homepage/homepage.tsx",
-                "test": false
-            },
-            {
-                "name": "index.ts",
-                "relativePath": "src/pages/homepage/index.ts",
-                "test": false
-            }
-        ],
-        "mainFile": "src/pages/homepage/index.ts",
-        "trackDir": "src/pages/homepage",
-        "origin": "AUTHORED",
-        "exported": true
-    },
     "bit.evangelist/pages/hybrid-homepage@1.0.7": {
         "files": [
             {
@@ -1128,29 +1105,6 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/auto-section@1.0.3": {
-        "files": [
-            {
-                "name": "autoSection.module.scss",
-                "relativePath": "src/sections/autoSection/autoSection.module.scss",
-                "test": false
-            },
-            {
-                "name": "autoSection.tsx",
-                "relativePath": "src/sections/autoSection/autoSection.tsx",
-                "test": false
-            },
-            {
-                "name": "index.tsx",
-                "relativePath": "src/sections/autoSection/index.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "src/sections/autoSection/index.tsx",
-        "trackDir": "src/sections/autoSection",
-        "origin": "AUTHORED",
-        "exported": true
-    },
     "bit.evangelist/sections/booking-breakdown@1.0.4": {
         "files": [
             {
@@ -1171,29 +1125,6 @@
         ],
         "mainFile": "src/sections/booking-breakdown/index.ts",
         "trackDir": "src/sections/booking-breakdown",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.evangelist/sections/build-section@1.0.3": {
-        "files": [
-            {
-                "name": "buildSection.module.scss",
-                "relativePath": "src/sections/buildSection/buildSection.module.scss",
-                "test": false
-            },
-            {
-                "name": "buildSection.tsx",
-                "relativePath": "src/sections/buildSection/buildSection.tsx",
-                "test": false
-            },
-            {
-                "name": "index.tsx",
-                "relativePath": "src/sections/buildSection/index.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "src/sections/buildSection/index.tsx",
-        "trackDir": "src/sections/buildSection",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -1289,52 +1220,6 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/deploy-section@1.0.3": {
-        "files": [
-            {
-                "name": "deploySection.module.scss",
-                "relativePath": "src/sections/deploySection/deploySection.module.scss",
-                "test": false
-            },
-            {
-                "name": "deploySection.tsx",
-                "relativePath": "src/sections/deploySection/deploySection.tsx",
-                "test": false
-            },
-            {
-                "name": "index.tsx",
-                "relativePath": "src/sections/deploySection/index.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "src/sections/deploySection/index.tsx",
-        "trackDir": "src/sections/deploySection",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.evangelist/sections/dev-section@1.0.3": {
-        "files": [
-            {
-                "name": "devSection.module.scss",
-                "relativePath": "src/sections/devSection/devSection.module.scss",
-                "test": false
-            },
-            {
-                "name": "devSection.tsx",
-                "relativePath": "src/sections/devSection/devSection.tsx",
-                "test": false
-            },
-            {
-                "name": "index.tsx",
-                "relativePath": "src/sections/devSection/index.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "src/sections/devSection/index.tsx",
-        "trackDir": "src/sections/devSection",
-        "origin": "AUTHORED",
-        "exported": true
-    },
     "bit.evangelist/sections/enterprise-section@1.0.5": {
         "files": [
             {
@@ -1404,29 +1289,6 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/main-section@1.0.5": {
-        "files": [
-            {
-                "name": "index.tsx",
-                "relativePath": "src/sections/mainSection/index.tsx",
-                "test": false
-            },
-            {
-                "name": "mainSection.module.scss",
-                "relativePath": "src/sections/mainSection/mainSection.module.scss",
-                "test": false
-            },
-            {
-                "name": "mainSection.tsx",
-                "relativePath": "src/sections/mainSection/mainSection.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "src/sections/mainSection/index.tsx",
-        "trackDir": "src/sections/mainSection",
-        "origin": "AUTHORED",
-        "exported": true
-    },
     "bit.evangelist/sections/reuse-landing-section@1.0.5": {
         "files": [
             {
@@ -1447,52 +1309,6 @@
         ],
         "mainFile": "src/sections/reuse-landing-section/index.tsx",
         "trackDir": "src/sections/reuse-landing-section",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.evangelist/sections/reuse@1.0.3": {
-        "files": [
-            {
-                "name": "index.ts",
-                "relativePath": "src/sections/reuse/index.ts",
-                "test": false
-            },
-            {
-                "name": "reuse-section.module.scss",
-                "relativePath": "src/sections/reuse/reuse-section.module.scss",
-                "test": false
-            },
-            {
-                "name": "reuse-section.tsx",
-                "relativePath": "src/sections/reuse/reuse-section.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "src/sections/reuse/index.ts",
-        "trackDir": "src/sections/reuse",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.evangelist/sections/summary-cards@1.0.4": {
-        "files": [
-            {
-                "name": "index.ts",
-                "relativePath": "src/sections/summary-cards/index.ts",
-                "test": false
-            },
-            {
-                "name": "summary-cards.module.scss",
-                "relativePath": "src/sections/summary-cards/summary-cards.module.scss",
-                "test": false
-            },
-            {
-                "name": "summary-cards.tsx",
-                "relativePath": "src/sections/summary-cards/summary-cards.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "src/sections/summary-cards/index.ts",
-        "trackDir": "src/sections/summary-cards",
         "origin": "AUTHORED",
         "exported": true
     },
