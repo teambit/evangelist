@@ -4,16 +4,22 @@ import styles from './card.module.scss';
 import elevations from './elevations.module.scss';
 
 export type CardProps = {
-	elevation?: 'none' | 'low' | 'medium' | 'high';
+	/**
+	 * Controls the shadow cast by the card, to generate a "stacking" effects.
+	 * For example, a modal floating over elements may have a 'high' elevation
+	 */
+	elevation: 'none' | 'low' | 'medium' | 'high';
 } & React.HTMLAttributes<HTMLDivElement>;
 
 /**
- * distinguishes a group of elements to improve readability
- * @name Card
- * @param {string} elevation controls shadow effect of the card
+ * A wrapper resembling a physical card, grouping elements and improve readability.
  */
-export function Card({ className, elevation = 'low', ...rest }: CardProps) {
+export function Card({ className, elevation, ...rest }: CardProps) {
 	return (
 		<div className={classNames(styles.card, elevations[elevation], className)} {...rest} />
 	);
 }
+
+Card.defaultProps = {
+	elevation: 'low',
+};

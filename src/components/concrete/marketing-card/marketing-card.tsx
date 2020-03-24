@@ -50,7 +50,6 @@ export const MarketingCard = (props: MarketingCardProps) => {
 
 	return (
 		<Card
-			elevation="low"
 			className={classNames(styles.card, className)}
 			style={accentColor}
 			data-bit-id="bit.evangelist/atom/marketing-card"
