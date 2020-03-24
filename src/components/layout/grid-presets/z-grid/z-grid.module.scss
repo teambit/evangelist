@@ -37,7 +37,7 @@
 		margin-bottom: 80px;
 	}
 
-	@media (min-width: $br-lg-new) {
+	@media (min-width: $br-lg) {
 		grid-template-areas:
 			"it1 it1 it1 it1 it1 im1 im1 im1 im1 im1 im1 im1"
 			"im2 im2 im2 im2 im2 im2 im2 it2 it2 it2 it2 it2";
@@ -65,7 +65,7 @@
 			"it1 it1 it1 it1 it1 it1 im1 im1 im1 im1 im1 im1";
 	}
 
-	@media (min-width: $br-lg-new) {
+	@media (min-width: $br-lg) {
 		grid-template-areas:
 			"it1 it1 it1 it1 it1 im1 im1 im1 im1 im1 im1 im1";
 	}
