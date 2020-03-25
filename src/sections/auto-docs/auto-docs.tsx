@@ -3,16 +3,17 @@ import classNames from 'classnames';
 
 import styles from './auto-docs.module.scss';
 
-import { PossibleSizes } from '../../constants/sizes';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+
+import { Grid } from '@bit/bit.base.layout.grid-component';
+import { zGrid, halfZGrid } from '@bit/bit.base.layout.grid-presets.z-grid';
+import { text, alignItems, marginCenter } from '@bit/bit.base.layout.align';
+import { textColumn } from '@bit/bit.base.layout.page-frame';
+
 
 import { Paragraph } from '../../components/base/paragraph';
 import { H2, H3 } from '../../components/concrete/heading';
 import { Image } from '../../components/concrete/image';
-
-import { Grid } from '../../components/layout/grid-component';
-import { zGrid, halfZGrid } from '../../components/layout/grid-presets/z-grid';
-import { text, alignItems, marginCenter } from '../../components/layout/align';
-import { textColumn } from '../../components/layout/page-frame';
 
 /**
  * @name AutoDocs

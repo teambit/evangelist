@@ -1,18 +1,19 @@
 import React, { HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
-import { PossibleSizes } from '../../constants/sizes';
 
 import styles from './reuse-landing-section.module.scss';
 
-import { text, marginCenter } from '../../components/layout/align';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+import { text, marginCenter } from '@bit/bit.base.layout.align';
 
-import { Paragraph } from '../../components/base/paragraph';
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+import { Grid } from '@bit/bit.base.layout.grid-component';
+import { textColumn } from '@bit/bit.base.layout.page-frame';
+
 import { H1 } from '../../components/concrete/heading';
 import { IconLine } from '../../components/concrete/icon-line';
 import { PrimaryLink } from '../../components/concrete/primary-link';
-import { Grid } from '../../components/layout/grid-component';
 import { Image } from '../../components/concrete/image';
-import { textColumn } from '../../components/layout/page-frame';
 import { EvaButton } from '../../components/concrete/eva-button';
 
 const iconsArray = [

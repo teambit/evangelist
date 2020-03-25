@@ -3,17 +3,17 @@ import classNames from 'classnames';
 
 import styles from './hybrid-perfect-sync.module.scss';
 
-import { fourWayGrid } from '../../components/layout/grid-presets/four-way-grid';
+import { fourWayGrid } from '@bit/bit.base.layout.grid-presets.four-way-grid';
 
-import { PossibleSizes } from '../../constants/sizes';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+
+import { text, alignItems, marginCenter } from '@bit/bit.base.layout.align';
+import { Grid } from '@bit/bit.base.layout.grid-component';
+import { textColumn } from '@bit/bit.base.layout.page-frame';
+
 import { Image } from '../../components/concrete/image';
-import { Paragraph } from '../../components/base/paragraph';
-
 import { H2, H3 } from '../../components/concrete/heading';
-
-import { text, alignItems, marginCenter } from '../../components/layout/align';
-import { Grid } from '../../components/layout/grid-component';
-import { textColumn } from '../../components/layout/page-frame';
 
 /**
  * @name HybridPerfectSync

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BaseIcon, BaseIconProps } from '../../base/icon';
+import { BaseIcon, BaseIconProps } from '@bit/bit.base.atoms.icon';
 
 const iconSetPrefix = 'bitcon';
 

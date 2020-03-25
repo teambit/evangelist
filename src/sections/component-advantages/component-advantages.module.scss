@@ -1,4 +1,4 @@
-@import "../../components/layout/_breakpoints.scss";
+@import "~@bit/bit.base.layout.breakpoints";
 
 .text {
 	@media screen and (min-width: $br-l) {

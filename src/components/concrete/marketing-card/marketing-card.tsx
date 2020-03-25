@@ -1,11 +1,11 @@
 import React, { ReactNode, CSSProperties } from 'react';
 import classNames from 'classnames';
 
-import { PossibleSizes } from '../../../constants/sizes';
-import { Card } from '../../base/card';
-import { Paragraph } from '../../base/paragraph';
-import { Label } from '../../base/label';
-import { Link } from '../../base/link';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+import { Card } from '@bit/bit.base.atoms.card';
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+import { Label } from '@bit/bit.base.atoms.label';
+import { Link } from '@bit/bit.base.atoms.link';
 
 import { H1 } from '../heading';
 import { Icon } from '../icon';

@@ -2,14 +2,15 @@ import React, { HTMLAttributes } from 'react';
 
 import classNames from 'classnames';
 
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+import { marginCenter } from '@bit/bit.base.layout.align';
+import { textColumn } from '@bit/bit.base.layout.page-frame';
+
 import { H2 } from '../../components/concrete/heading';
-import { Paragraph } from '../../components/base/paragraph';
 import { Image } from '../../components/concrete/image';
-import { PossibleSizes } from '../../constants/sizes';
-import { marginCenter } from '../../components/layout/align';
 
 import styles from './booking-breakdown.module.scss';
-import { textColumn } from '../../components/layout/page-frame';
 
 /**
  * @name BookingBreakdown

@@ -1,14 +1,16 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import { PossibleSizes } from '../../constants/sizes';
-import { H2 } from '../../components/concrete/heading';
-import styles from './carouselSection.module.scss';
-import { textColumn } from '../../components/layout/page-frame';
-import { marginCenter } from '../../components/layout/align';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+
+import { textColumn } from '@bit/bit.base.layout.page-frame';
+import { marginCenter } from '@bit/bit.base.layout.align';
 
 import CommentCarousel from '../../components/concrete/comment-carousel/comment-carousel';
 import { bitTestimonials } from '../../content/bit-testimonials';
+import { H2 } from '../../components/concrete/heading';
+
+import styles from './carouselSection.module.scss';
 
 /**
  * @name AutoDocs

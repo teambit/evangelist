@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import styles from './primary-link.module.scss';
 
-import { Link, LinkProps } from '../../../base/link';
+import { Link, LinkProps } from '@bit/bit.base.atoms.link';
 
 export type PrimaryLinkProps = LinkProps;
 

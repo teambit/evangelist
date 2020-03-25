@@ -4,10 +4,10 @@ import classNames from 'classnames';
 import styles from './cta-section.module.scss';
 
 import { H2 } from '../../components/concrete/heading';
-import { PossibleSizes } from '../../constants/sizes';
-import { Paragraph } from '../../components/base/paragraph';
-import { Grid } from '../../components/layout/grid-component';
-import { justifyItems, alignItems, text } from '../../components/layout/align';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+import { Grid } from '@bit/bit.base.layout.grid-component';
+import { justifyItems, alignItems, text } from '@bit/bit.base.layout.align';
 import { PrimaryLink } from '../../components/concrete/community-links/primary-link';
 import { EvaButton } from '../../components/concrete/eva-button';
 

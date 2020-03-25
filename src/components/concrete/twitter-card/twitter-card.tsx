@@ -1,10 +1,10 @@
 import React, { ReactNode, ReactChild } from 'react';
 import classNames from 'classnames';
 
-import { PossibleSizes } from '../../../constants/sizes';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
 
-import { Paragraph } from '../../base/paragraph';
-import { Card, CardProps } from '../../base/card';
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+import { Card, CardProps } from '@bit/bit.base.atoms.card';
 
 import { H3 } from '../heading';
 import { Image } from '../image';

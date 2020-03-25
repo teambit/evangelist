@@ -3,19 +3,17 @@ import classNames from 'classnames';
 
 import styles from './enterprise-section.module.scss';
 
-import { PossibleSizes } from '../../constants/sizes';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+
+import { text, alignItems } from '@bit/bit.base.layout.align';
+import { Grid } from '@bit/bit.base.layout.grid-component';
+import { colSpanMd } from '@bit/bit.base.layout.col-span';
+
 import { Image } from '../../components/concrete/image';
-import { Paragraph } from '../../components/base/paragraph';
-
 import { H2, H4 } from '../../components/concrete/heading';
-
-import { text, alignItems } from '../../components/layout/align';
-import { Grid } from '../../components/layout/grid-component';
-
 import { Icon } from '../../components/concrete/icon';
-import { colSpanMd } from '../../components/layout/col-span';
 import { PrimaryLink } from '../../components/concrete/primary-link';
-
 
 /**
  * @name EnterpriseSection
@@ -37,9 +35,7 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 				className={classNames(text.left, alignItems.center, styles.content)}
 			>
 				<div className={colSpanMd[7]}>
-					<H2 size={PossibleSizes.sm}>
-						Get your enterprise-grade component cloud
-					</H2>
+					<H2 size={PossibleSizes.sm}>Get your enterprise-grade component cloud</H2>
 					<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 						Meet the component cloud: where your team can host, share and
 						collaborate on all your components in one place. It’s everything you

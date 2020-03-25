@@ -1,19 +1,20 @@
 import React from 'react';
-import { GithubLink } from '../../components/concrete/community-links/github-link';
 import classnames from 'classnames';
 
 import styles from './community-section.module.scss';
 
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+import { Grid } from '@bit/bit.base.layout.grid-component';
+import { alignItems, marginCenter } from '@bit/bit.base.layout.align';
+import { textColumn } from '@bit/bit.base.layout.page-frame';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+
+import { GithubLink } from '../../components/concrete/community-links/github-link';
 import { links } from '../../content/links';
 import { SlackLink } from '../../components/concrete/community-links/slack-link';
 import { H2 } from '../../components/concrete/heading';
-import { PossibleSizes } from '../../constants/sizes';
 import { TwitterLink } from '../../components/concrete/community-links/twitter-link';
 import { TwitterCard } from '../../components/concrete/twitter-card';
-import { Paragraph } from '../../components/base/paragraph';
-import { Grid } from '../../components/layout/grid-component';
-import { alignItems, marginCenter } from '../../components/layout/align';
-import { textColumn } from '../../components/layout/page-frame';
 
 interface CommunitySectionProps extends React.HTMLAttributes<HTMLDivElement> {
 	githubStars?: number;

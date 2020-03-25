@@ -1,16 +1,16 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
-import { PossibleSizes } from '../../constants/sizes';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
 
 import styles from './independent-teams.module.scss';
 
-import { Paragraph } from '../../components/base/paragraph';
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+import { Grid } from '@bit/bit.base.layout.grid-component';
+import { text, marginCenter } from '@bit/bit.base.layout.align';
+import { textColumn } from '@bit/bit.base.layout.page-frame';
+
 import { H2, H5 } from '../../components/concrete/heading';
 import { Image } from '../../components/concrete/image';
-
-import { Grid } from '../../components/layout/grid-component';
-import { text, marginCenter } from '../../components/layout/align';
-import { textColumn } from '../../components/layout/page-frame';
 
 /**
  * @name IndependentTeams

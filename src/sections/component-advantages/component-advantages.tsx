@@ -3,16 +3,16 @@ import classNames from 'classnames';
 
 import styles from './component-advantages.module.scss';
 
-import { PossibleSizes } from '../../constants/sizes';
-import { Image } from '../../components/concrete/image';
-import { Paragraph } from '../../components/base/paragraph';
+import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+import { text, alignItems } from '@bit/bit.base.layout.align';
+import { Grid } from '@bit/bit.base.layout.grid-component';
+import { fourWayGrid } from '@bit/bit.base.layout.grid-presets.four-way-grid';
 
+import { Image } from '../../components/concrete/image';
 import { H3 } from '../../components/concrete/heading';
 
-import { text, alignItems } from '../../components/layout/align';
-import { Grid } from '../../components/layout/grid-component';
 
-import { fourWayGrid } from '../../components/layout/grid-presets/four-way-grid';
 
 /**
  * @name ComponentsAdvantages

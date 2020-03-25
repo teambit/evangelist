@@ -1,4 +1,4 @@
-@import '../../../../themes/colors.module.scss';
+@import '~@bit/bit.base.theme.colors';
 
 .overlayBorder {
 	border: 2px solid var(--component-highlighter-border, $pink50);
