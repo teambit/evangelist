@@ -8,13 +8,13 @@ export type CardProps = {
 	 * Controls the shadow cast by the card, to generate a "stacking" effects.
 	 * For example, a modal floating over elements may have a 'high' elevation
 	 */
-	elevation: 'none' | 'low' | 'medium' | 'high';
+	elevation?: 'none' | 'low' | 'medium' | 'high';
 } & React.HTMLAttributes<HTMLDivElement>;
 
 /**
  * A wrapper resembling a physical card, grouping elements and improve readability.
  */
-export function Card({ className, elevation, ...rest }: CardProps) {
+export function Card({ className, elevation = 'low', ...rest }: CardProps) {
 	return (
 		<div className={classNames(styles.card, elevations[elevation], className)} {...rest} />
 	);

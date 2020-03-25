@@ -2,20 +2,22 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './label.module.scss';
 
-export interface LabelProps extends React.HTMLAttributes<HTMLDivElement> {
+export type LabelProps = {
+	/**
+	 * override label background color
+	 */
 	color?: string;
-}
+} & React.HTMLAttributes<HTMLDivElement>;
 
 /**
- * @name Label
- * @param color override label background color
- * @description Short text block with color.
- * 
- * Use the following CSS variables to style:
- * -   --base-color (background color)
- * -   --primary-label-text (text color)
- * -   --primary-label-width (max-width)
- * -   --primary-label-height (height)
+ * Short text block with background.
+ *
+ * ### CSS variables:
+ * The following variables apply to this component
+ * -   `--base-color` (background color)
+ * -   `--primary-label-text` (text color)
+ * -   `--primary-label-width` (max-width)
+ * -   `--primary-label-height` (height)
  */
 export function Label({ color, className, ...rest }: LabelProps) {
 	return (

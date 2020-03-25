@@ -12,9 +12,9 @@ import texts from './texts.module.scss';
 /**
  * @name ThemeProvider
  * @description
- * Applies shared styles to all child components.
- * This includes:
+ * Applies shared styles to all child components.  
  *
+ * This includes:
  * - Colors
  * - Headers and paragraphs font-size, margins, etc
  * - Brand font

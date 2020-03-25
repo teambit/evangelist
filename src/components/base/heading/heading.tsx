@@ -1,13 +1,15 @@
 import React from 'react';
 
 export type HeadingProps = {
+	/**
+	 * underlying html element ("h1", "h2", etc)
+	 */
 	element?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 } & React.HTMLAttributes<HTMLHeadingElement>;
 
 /**
- * Title component
- * @name Heading
- * @param element underlying html element ("h1", "h2", etc)
+ * Base title component, to be styled by composing components.
+ * May have more logic in the future.
  * @example
  * <Heading element="h3">This is a title</Heading>
  */
@@ -19,6 +21,5 @@ export function Heading(props: HeadingProps) {
 }
 
 Heading.defaultProps = {
-	size: 'md',
 	element: 'h1',
 };

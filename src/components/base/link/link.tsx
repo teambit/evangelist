@@ -1,13 +1,17 @@
 import React from 'react';
 
-export interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+export type LinkProps = {
+	/**
+	 * opens link in a new tab
+	 */
 	external?: boolean;
-}
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 /**
- * Template components for links ('href')
- * @name Link
- * @param external open link in a new tab
+ * Base component for link, equivalent to a `<a/>` tag.
+ *
+ * This component is a placeholder for future implementations,
+ * where different applications can override this component with their underlying navigation system.
  */
 export function Link(props: LinkProps) {
 	const { external, children, ...rest } = props;

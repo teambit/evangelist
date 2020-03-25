@@ -1,8 +1,9 @@
 
 /**
- * A preset sizes used across the application
+ * Preset sizes enum, used across the application
  * @name PossibleSizes
  */
+
 export enum PossibleSizes {
   xxs = "xxs",
   xs = "xs",

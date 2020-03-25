@@ -2,7 +2,6 @@ import definitions from './_storage.module.scss';
 
 /**
  * Provides constant url for images CDN.
- * @name staticStorageUrl
  * @example
  * //in ts/js file:
  * <image src={staticStorageUrl + '/some/image.png'}/>
