@@ -9,9 +9,8 @@ import { Grid } from '@bit/bit.base.layout.grid-component';
 import { zGrid, halfZGrid } from '@bit/bit.base.layout.grid-presets.z-grid';
 import { text, alignItems, marginCenter } from '@bit/bit.base.layout.align';
 import { textColumn } from '@bit/bit.base.layout.page-frame';
+import { Paragraph } from '@bit/bit.base.atoms.paragraph';
 
-
-import { Paragraph } from '../../components/base/paragraph';
 import { H2, H3 } from '../../components/concrete/heading';
 import { Image } from '../../components/concrete/image';
 

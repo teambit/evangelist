@@ -3,11 +3,11 @@ import classNames from 'classnames';
 
 import styles from './reuse-page.module.scss';
 
+import { centerColumn } from '@bit/bit.base.layout.page-frame';
+import { Separator } from '@bit/bit.base.atoms.separator';
+
 import { CarouselSection } from '../../sections/carouselSection';
 import { CtaSection } from '../../sections/cta';
-import { centerColumn, wideColumn } from '../../components/layout/page-frame';
-import { Separator } from '../../components/base/separator';
-
 import { ReuseLandingSection } from '../../sections/reuse-landing-section';
 import { EnterpriseSection } from '../../sections/enterprise-section/enterprise-section';
 import { SyncSection } from '../../sections/sync-section';

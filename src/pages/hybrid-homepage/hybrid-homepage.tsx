@@ -5,7 +5,7 @@ import styles from './hybrid-homepage.module.scss';
 
 import { CarouselSection } from '../../sections/carouselSection';
 import { CtaSection } from '../../sections/cta';
-import { centerColumn, wideColumn } from '../../components/layout/page-frame';
+import { centerColumn, wideColumn } from '@bit/bit.base.layout.page-frame';
 
 import { ReuseLandingSection } from '../../sections/reuse-landing-section';
 import { EnterpriseSection } from '../../sections/enterprise-section';

@@ -2,7 +2,7 @@ import React, { PureComponent /* CSSProperties */ } from 'react';
 import 'reset-css';
 import './App.css';
 
-import { Theme } from './themes/theme-provider';
+import { Theme } from '@bit/bit.base.theme.theme-provider';
 
 import { EmbedIconSet } from './components/concrete/icon';
 
