@@ -283,7 +283,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/icon-line@1.0.5": {
+    "bit.evangelist/atom/icon-line@1.0.6": {
         "files": [
             {
                 "name": "icon-line.module.scss",
@@ -426,7 +426,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/content/bit-testimonials@1.0.3": {
+    "bit.evangelist/content/bit-testimonials@1.0.4": {
         "files": [
             {
                 "relativePath": "src/content/bit-testimonials/bit-testimonials.tsx",
@@ -480,7 +480,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/hybrid-homepage@1.0.7": {
+    "bit.evangelist/pages/hybrid-homepage@1.0.8": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -503,7 +503,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/auto-docs@1.0.4": {
+    "bit.evangelist/sections/auto-docs@1.0.5": {
         "files": [
             {
                 "name": "auto-docs.module.scss",
@@ -526,7 +526,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/booking-breakdown@1.0.4": {
+    "bit.evangelist/sections/booking-breakdown@1.0.5": {
         "files": [
             {
                 "name": "booking-breakdown.module.scss",
@@ -549,7 +549,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/carousel-section@1.0.4": {
+    "bit.evangelist/sections/carousel-section@1.0.5": {
         "files": [
             {
                 "name": "carouselSection.module.scss",
@@ -572,7 +572,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/community@1.0.4": {
+    "bit.evangelist/sections/community@1.0.5": {
         "files": [
             {
                 "name": "community-section.module.scss",
@@ -595,7 +595,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/component-advantages@1.0.4": {
+    "bit.evangelist/sections/component-advantages@1.0.5": {
         "files": [
             {
                 "relativePath": "src/sections/component-advantages/component-advantages.module.scss",
@@ -618,7 +618,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/cta@1.0.5": {
+    "bit.evangelist/sections/cta@1.0.6": {
         "files": [
             {
                 "name": "cta-section.module.scss",
@@ -641,7 +641,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-section@1.0.5": {
+    "bit.evangelist/sections/enterprise-section@1.0.6": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-section/enterprise-section.module.scss",
@@ -664,7 +664,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/hybrid-perfect-sync@1.0.4": {
+    "bit.evangelist/sections/hybrid-perfect-sync@1.0.5": {
         "files": [
             {
                 "name": "hybrid-perfect-sync.module.scss",
@@ -687,7 +687,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/independent-teams@1.0.4": {
+    "bit.evangelist/sections/independent-teams@1.0.5": {
         "files": [
             {
                 "relativePath": "src/sections/independent-teams/independent-teams.module.scss",
@@ -710,7 +710,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/reuse-landing-section@1.0.5": {
+    "bit.evangelist/sections/reuse-landing-section@1.0.6": {
         "files": [
             {
                 "name": "index.tsx",
@@ -733,7 +733,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/sync-section@1.0.4": {
+    "bit.evangelist/sections/sync-section@1.0.5": {
         "files": [
             {
                 "relativePath": "src/sections/sync-section/index.ts",
@@ -756,7 +756,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/talk-to-experts@1.0.5": {
+    "bit.evangelist/sections/talk-to-experts@1.0.6": {
         "files": [
             {
                 "relativePath": "src/sections/talk-to-experts/index.ts",
