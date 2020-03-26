@@ -1,0 +1,11 @@
+@import '~@bit/bit.base.theme.colors';
+
+.scopeColorDefinition {
+	&[data-current-scope="bit.evangelist"] {
+		--scope-color-bg: #{$p50};
+	}
+
+	&[data-current-scope="bit.base"] {
+		--scope-color-bg: #{$g50};
+	}
+}

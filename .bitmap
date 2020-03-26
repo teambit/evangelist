@@ -172,6 +172,11 @@
                 "name": "index.ts"
             },
             {
+                "relativePath": "src/components/concrete/component-highlighter/component-label/scope-colors.module.scss",
+                "test": false,
+                "name": "scope-colors.module.scss"
+            },
+            {
                 "relativePath": "src/components/concrete/component-highlighter/content-type.ts",
                 "test": false,
                 "name": "content-type.ts"
@@ -197,19 +202,19 @@
                 "name": "overlay-border.tsx"
             },
             {
-                "relativePath": "src/components/concrete/component-highlighter/tooltip/component-tooltip.module.scss",
-                "test": false,
-                "name": "component-tooltip.module.scss"
-            },
-            {
-                "relativePath": "src/components/concrete/component-highlighter/tooltip/component-tooltip.tsx",
-                "test": false,
-                "name": "component-tooltip.tsx"
-            },
-            {
-                "relativePath": "src/components/concrete/component-highlighter/tooltip/index.ts",
+                "relativePath": "src/components/concrete/component-highlighter/ref-tooltip/index.ts",
                 "test": false,
                 "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/component-highlighter/ref-tooltip/ref-tooltip.module.scss",
+                "test": false,
+                "name": "ref-tooltip.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/component-highlighter/ref-tooltip/ref-tooltip.tsx",
+                "test": false,
+                "name": "ref-tooltip.tsx"
             }
         ],
         "mainFile": "src/components/concrete/component-highlighter/index.ts",
@@ -441,24 +446,6 @@
         ],
         "mainFile": "src/content/bit-testimonials/bit-testimonials.tsx",
         "trackDir": "src/content/bit-testimonials",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.evangelist/content/components-highlight-dictionary@0.0.3": {
-        "files": [
-            {
-                "relativePath": "src/content/components-highlight-dictionary/components-dictionary.ts",
-                "test": false,
-                "name": "components-dictionary.ts"
-            },
-            {
-                "relativePath": "src/content/components-highlight-dictionary/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "src/content/components-highlight-dictionary/index.ts",
-        "trackDir": "src/content/components-highlight-dictionary",
         "origin": "AUTHORED",
         "exported": true
     },

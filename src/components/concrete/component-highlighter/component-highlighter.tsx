@@ -4,16 +4,25 @@ import classNames from 'classnames';
 import debounce from 'lodash.debounce';
 
 import styles from './component-highlighter.module.scss';
-import { ComponentTooltip } from './tooltip/component-tooltip';
+import { RefTooltip } from './ref-tooltip';
 import { OverlayBorder } from './overlay-border';
-import { ComponentHighlightDictionary, VersionMap } from './content-type';
+import { VersionMap } from './content-type';
 
 import { ComponentLabel } from './component-label';
 
 export interface ComponentHighlighterProps extends HTMLAttributes<HTMLDivElement> {
+	/**
+	 * Enable highlighting
+	 */
 	active?: boolean;
-	componentsDictionary: ComponentHighlightDictionary;
+	/*
+	 * override versions for specific components. As versions change rapidly consumers may want to specify them locally.
+	 */
 	versionMap?: VersionMap;
+	/*
+	 * list ids to ignore
+	 */
+	blacklist?: Set<string>;
 }
 
 interface ComponentHighlighterState {
@@ -22,16 +31,13 @@ interface ComponentHighlighterState {
 }
 
 /**
- * @name ComponentHighlighter
- * @description
  * Identify components using a border and tooltip.
- * It uses _onMouseOver_ to detect user interaction with any child element,
- * and looks for the nearest parent with html attribute "data-bit-id".
- * It then uses [Popper.js](https://popper.js.org/) directly to create a tooltip and overlay a border.
- * @param {boolean} active enable highlighting
- * @param componentsDictionary object containing all the details to show. Components missing from this dictionary will be ignored!
- * Key is componentId, and value includes displayName, url (tooltip link), and version.
- * @param versionMap override versions for specific components. As versions change rapidly consumers may want to specify them locally.
+ * The floating elements are positioned using [Popper.js](https://popper.js.org/), with some custom code.
+ *
+ * To select an element in the page, we listen to 'mouseOver' event for any user interaction with a child element,
+ * and then look for the first parent that has the html attribute "data-bit-id".
+ * Components with the 'data-ignore-component-highlight' attribute are completely ignored,
+ * to avoid changing target when interacting with the highlighter itself.
  */
 
 export class ComponentHighlighter extends Component<
@@ -43,12 +49,11 @@ export class ComponentHighlighter extends Component<
 		targetElement: undefined,
 	};
 
-	componentDidUpdate(prevProps: ComponentHighlighterProps) {
-		const nextProps = this.props;
+	componentWillReceiveProps(nextProps: ComponentHighlighterProps) {
+		const prevProps = this.props;
 
-		if (prevProps.active !== nextProps.active && !nextProps.active) {
-			//triggers state change, but should not change props.active
-			this.destroyPopper();
+		if (prevProps.active !== nextProps.active && nextProps.active !== true) {
+			this.setState({ highlightTargetId: undefined, targetElement: undefined });
 		}
 	}
 
@@ -57,7 +62,7 @@ export class ComponentHighlighter extends Component<
 	}
 
 	private _highlight = (targetElement: HTMLElement | null) => {
-		const { componentsDictionary } = this.props;
+		const { blacklist = new Set<string>() } = this.props;
 
 		for (let elem = targetElement; !!elem; elem = elem.parentElement) {
 			if (elem.hasAttribute('data-ignore-component-highlight')) {
@@ -65,7 +70,12 @@ export class ComponentHighlighter extends Component<
 			}
 
 			const value = elem.getAttribute('data-bit-id');
-			if (value && componentsDictionary[value]) {
+
+			if (value && blacklist.has(value)) {
+				continue; //skip
+			}
+
+			if (value) {
 				this.setState({ targetElement: elem, highlightTargetId: value });
 				return; //success!
 			}
@@ -86,21 +96,11 @@ export class ComponentHighlighter extends Component<
 		this.highlight(element);
 	};
 
-	private destroyPopper = () => {
-		this.setState({ highlightTargetId: undefined, targetElement: undefined });
-	};
-
 	render() {
-		const { active, children, componentsDictionary, versionMap = {}, ...rest } = this.props;
+		const { active, children, versionMap = {}, ...rest } = this.props;
 		const { highlightTargetId, targetElement } = this.state;
 
-		const componentDetails = highlightTargetId
-			? componentsDictionary[highlightTargetId]
-			: { url: undefined };
 		const explicitVersion = highlightTargetId && versionMap[highlightTargetId];
-
-		const { url: href, displayName = highlightTargetId } = componentDetails;
-		const version = explicitVersion || componentDetails.version;
 
 		return (
 			<div
@@ -117,21 +117,17 @@ export class ComponentHighlighter extends Component<
 
 				// (this is perfect for this use case)
 				onMouseOver={this.handleEnter}
-				// triggers when mouse exists this element (and not its children)
+				// triggers when mouse exits this element (and not its children)
 				// onMouseLeave={this.destroyPopper}
 			>
 				{children}
 
-				<ComponentTooltip className={styles.tooltip} targetElement={targetElement}>
-					<a
-						href={href}
-						className={styles.link}
-						rel="noopener noreferrer"
-						target="_blank"
-					>
-						<ComponentLabel href={href} bitId={displayName} version={version} />
-					</a>
-				</ComponentTooltip>
+				<RefTooltip className={styles.tooltip} targetElement={targetElement}>
+					<ComponentLabel
+						bitId={highlightTargetId}
+						versionOverride={explicitVersion}
+					/>
+				</RefTooltip>
 
 				<OverlayBorder targetElement={targetElement} className={styles.border} />
 			</div>

@@ -8,8 +8,9 @@ import { EmbedIconSet } from './components/concrete/icon';
 
 import { HybridHomepage } from './pages/hybrid-homepage';
 import { ComponentHighlighter } from './components/concrete/component-highlighter';
-import { componentDictionary } from './content/components-highlight-dictionary';
 import versionMap from './content/version-map/version-map';
+
+const highlightBlacklist = new Set(['bit.evangelist/atom/testimonial']);
 
 class App extends PureComponent {
 	render() {
@@ -17,8 +18,8 @@ class App extends PureComponent {
 			<Theme>
 				<ComponentHighlighter
 					active
-					componentsDictionary={componentDictionary}
 					versionMap={versionMap}
+					blacklist={highlightBlacklist}
 				>
 					<EmbedIconSet query="aqq93z" />
 					<HybridHomepage githubStars={10000} />

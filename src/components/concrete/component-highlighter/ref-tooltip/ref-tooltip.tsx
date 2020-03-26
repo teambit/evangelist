@@ -3,15 +3,26 @@ import classNames from 'classnames';
 
 //@ts-ignore
 import createRef from 'react-create-ref';
-import { createPopper, Instance } from '@popperjs/core';
+import { createPopper, Instance, Options } from '@popperjs/core';
 
-import styles from './component-tooltip.module.scss';
+import styles from './ref-tooltip.module.scss';
 
-export type ComponentTooltipProps = {
+export type RefTooltipProps = {
+	/**
+	 * dom element to attach to
+	 */
 	targetElement?: HTMLElement;
+	/**
+	 * options for the underlying Popper.js position engine
+	 */
+	popperOptions?: Partial<Options>;
 } & React.HTMLAttributes<HTMLDivElement>;
 
-export class ComponentTooltip extends Component<ComponentTooltipProps> {
+/**
+ * A [Popper.js](https://popper.js.org/) react wrapper that repositions children to be adjacent to a target element.  
+ * This component is a container only, with no visual styling.
+ */
+export class RefTooltip extends Component<RefTooltipProps> {
 	private ref = createRef();
 	private popperInstance?: Instance;
 
@@ -19,7 +30,7 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 		this.destroy();
 	}
 
-	componentDidUpdate(prevProps: ComponentTooltipProps) {
+	componentDidUpdate(prevProps: RefTooltipProps) {
 		const nextProps = this.props;
 
 		if (prevProps.targetElement !== nextProps.targetElement) {
@@ -28,6 +39,7 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 	}
 
 	private reposition = (targetElement?: HTMLElement) => {
+		const { popperOptions = popperDefaultOptions } = this.props;
 		const popperElement = this.ref.current;
 
 		if (!targetElement) {
@@ -36,15 +48,7 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 
 		if (!targetElement || !popperElement) return;
 
-		this.popperInstance = createPopper(targetElement, popperElement, {
-			placement: 'top',
-			modifiers: [
-				{
-					name: 'flip',
-					enabled: false,
-				},
-			],
-		});
+		this.popperInstance = createPopper(targetElement, popperElement, popperOptions);
 	};
 
 	private destroy() {
@@ -55,7 +59,7 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 	}
 
 	render() {
-		const { className, targetElement, ...rest } = this.props; //TODO
+		const { className, targetElement, ...rest } = this.props;
 		return (
 			<div
 				{...rest}
@@ -66,3 +70,13 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 		);
 	}
 }
+
+const popperDefaultOptions: Partial<Options> = {
+	placement: 'top',
+	modifiers: [
+		{
+			name: 'flip',
+			enabled: false,
+		},
+	],
+};
