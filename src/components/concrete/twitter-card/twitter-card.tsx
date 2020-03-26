@@ -12,8 +12,14 @@ import { Image } from '../image';
 import styles from './twitter-card.module.scss';
 
 type TwitterCardProps = {
+	/**
+	 * Twitter username
+	 */
 	title: ReactNode;
 	children: ReactChild;
+	/**
+	 * User avatar
+	 */
 	image: string;
 	verified: boolean;
 

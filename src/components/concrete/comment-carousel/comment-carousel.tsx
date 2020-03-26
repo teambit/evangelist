@@ -14,21 +14,23 @@ import styles from './carousel.module.scss';
 import sliderStyles from './slick-slider.module.scss';
 
 interface CommentCarouselProps extends React.HTMLAttributes<HTMLDivElement> {
+	/**
+	 *  Testimonials show in the carousel. They include:
+	 * -   content - main txt
+	 * -   avatar - url to user's image
+	 * -   name - owner name to display
+	 * -   description - owner sub title
+	 */
 	content: TestimonialObj[];
+	/**
+	 * Props override for the ReactSlick carousel
+	 */
 	slider?: Settings;
 }
 
 /**
- * @name CommentCarousel
- * @description
  * A responsive carousel based on `react-slick`, showing real user testimonials.
- * Each testimonial should have this data:
- * -   content - main txt
- * -   avatar - url to user's image
- * -   name - owner name to display
- * -   description - owner sub title
- * @param { Testimonials[] } content carousel content.
- * @param { SliderProps } [slider] overrides for the ReactSlick carousel
+ *
  * @example
  * const bitTestimonials = [
  * 		{ name: 'Barbra', description: 'head of barbering', content: 'Great scissors!', avatar: '...', }

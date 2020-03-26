@@ -9,16 +9,20 @@ import { PrimaryLink, PrimaryLinkProps } from '../primary-link';
 import { Icon } from '../../icon';
 import { Image } from '../../image';
 
-/**
- * @name GithubLink
- * @param {number} [starCount] show github stars count inside the link.
- * @description Concrete link to Github. Styled as a 'pill' button, with the Github logo
- * @example
- * <GithubLink href="https://github.com/teambit/bit" starCount={100000} />
- */
 export interface GithubLinkProps extends PrimaryLinkProps {
+	/**
+	 * Shows github stars count inside the link.
+	 */
 	starCount?: number;
 }
+
+/**
+ * Concrete link to a Github repository, with logo and star count.
+ *
+ * Automatically shortens long numbers into metric prefix, using [number-abbreviate](https://www.npmjs.com/package/number-abbreviate)
+ * @example
+ * <GithubLink href="https://github.com/teambit/bit" starCount={500000} />
+ */
 
 export class GithubLink extends PureComponent<GithubLinkProps> {
 	render() {

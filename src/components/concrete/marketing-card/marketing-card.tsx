@@ -2,7 +2,7 @@ import React, { ReactNode, CSSProperties } from 'react';
 import classNames from 'classnames';
 
 import { PossibleSizes } from '@bit/bit.base.theme.sizes';
-import { Card } from '@bit/bit.base.atoms.card';
+import { Card, CardProps } from '@bit/bit.base.atoms.card';
 import { Paragraph } from '@bit/bit.base.atoms.paragraph';
 import { Label } from '@bit/bit.base.atoms.label';
 import { Link } from '@bit/bit.base.atoms.link';
@@ -13,24 +13,32 @@ import { Icon } from '../icon';
 import styles from './marketing-card.module.css';
 
 type MarketingCardProps = {
+	/**
+	 * Controls the title content.
+	 */
 	title: ReactNode;
-	children: ReactNode;
-	className?: string;
+	/**
+	 * Color for label and link.
+	 */
 	ctaColor?: string;
+	/**
+	 * Text content for label.
+	 */
 	label: string;
+	/**
+	 * Text content for main link.
+	 */
 	linkText?: string;
+	/**
+	 * Link target.
+	 */
 	to?: string;
-};
+} & CardProps;
 
 /**
  * @name MarketingCard
- * @description a concrete card, with label and link.
- * @param {ReactNode} Title
- * @param {ReactNode} children main content
- * @param {label} label content
- * @param {string} [ctaColor] color for label and link
- * @param {string} [to] link target
- * @param {string} [linkText] link content
+ * A concrete card template, with a title, label, and a link.
+ *
  * @example
  * <MarketingCard
  * 	className={styles.marketingCard}

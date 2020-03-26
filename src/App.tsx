@@ -4,7 +4,7 @@ import './App.css';
 
 import { Theme } from '@bit/bit.base.theme.theme-provider';
 
-import { EmbedIconSet } from './components/concrete/icon';
+import { EvaIconFont } from './components/concrete/eva-icon-font';
 
 import { HybridHomepage } from './pages/hybrid-homepage';
 import { ComponentHighlighter } from './components/concrete/component-highlighter';
@@ -21,7 +21,7 @@ class App extends PureComponent {
 					versionMap={versionMap}
 					blacklist={highlightBlacklist}
 				>
-					<EmbedIconSet query="aqq93z" />
+					<EvaIconFont query="aqq93z" />
 					<HybridHomepage githubStars={10000} />
 				</ComponentHighlighter>
 			</Theme>

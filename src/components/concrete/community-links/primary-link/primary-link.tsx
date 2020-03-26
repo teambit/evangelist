@@ -8,9 +8,9 @@ import { Link, LinkProps } from '@bit/bit.base.atoms.link';
 export type PrimaryLinkProps = LinkProps;
 
 /**
- * @name PrimaryLink
- * @description
- * concrete community link component - pill flavor for base link component
+ * base 'community link' component.
+ * 
+ * Used as a template for Github-link, twitter-link, etc.
  */
 export function PrimaryLink({ className, href, ...rest }: PrimaryLinkProps) {
 	return (

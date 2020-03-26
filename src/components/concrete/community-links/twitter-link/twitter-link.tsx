@@ -7,8 +7,7 @@ import { PrimaryLink, PrimaryLinkProps } from '../primary-link';
 import { Icon } from '../../icon';
 
 /**
- * @name TwitterLink
- * @description Concrete link to a Twitter account. Styled as a 'pill' button, with the Twitter logo
+ * Concrete link to a Twitter account. Styled as a 'pill' button, with the Twitter logo
  * @example
  * <TwitterLink href="https://twitter.com/bitdev_" />
  */

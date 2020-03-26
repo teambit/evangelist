@@ -6,11 +6,12 @@ import { Link, LinkProps } from '@bit/bit.base.atoms.link';
 import styles from './primary-link.module.scss';
 
 /**
- * @name PrimaryLink
- * @description A concrete link, styled for Evangelist.
+ * A concrete link, styled for Evangelist, extending [base link](https://bit.dev/bit/base/atoms/link).
+ *
  * The link will use these css variables, when available:
  * -   --primary-link-color, or --base-color, for text color.
  * -   --primary-link-highlight, or --base-highlight, for text color on hover.
+ *
  * @example
  * <PrimaryLink href="https://google.com">look it up!</PrimaryLink>
  */

@@ -9,16 +9,20 @@ import marginStyles from './heading-margins.module.scss';
 import styles from './heading.module.scss';
 
 /**
- * @name header
- * @description a set of concrete headers for the Evangelist homepage.
- * H1, H2, H3, H4, H5, H6
- * @param size font-size for the header. Default value per header (eg. H1 - 'xl')
+ * A set of concrete headers for the Evangelist homepage.
+ * H1, H2, H3, H4, H5, H6.
+ *
+ * Each header comes with its equivalent html element, and default size.
+ *
  * @example
  * <H2 size="md">isn't this a lovely section?</H2>
  * <Paragraph>Lorem de ipsum de arimas</Paragraph>
  */
 
 export interface HeaderProps extends HeadingProps {
+	/**
+	 * font-size for the header
+	 */
 	size?: PossibleSizes;
 }
 

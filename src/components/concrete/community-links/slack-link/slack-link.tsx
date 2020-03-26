@@ -9,8 +9,7 @@ import { Icon } from '../../icon';
 export type SlackLinkProps = PrimaryLinkProps;
 
 /**
- * @name SlackLink
- * @description Concrete link to a Slack channel. Styled as a 'pill' button, with the Slack logo
+ * Concrete link to a Slack channel. Styled as a 'pill' button, with the Slack logo
  * @example
  * <SlackLink href="https://join.slack.com/..." />
  */

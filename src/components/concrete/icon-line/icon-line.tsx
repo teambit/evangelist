@@ -8,16 +8,19 @@ import styles from './icon-line.module.scss';
 const staticPrefix = 'brands';
 
 type IconLineProps = {
-	pre?: ReactNode;
+	/**
+	 * Array of icon urls to display.  
+	 * Icons are expected to load from our Static Storage CDN, and not have full URL.
+	 */
 	icons?: string[];
-	className?: string;
+	/**
+	 * Content to put before the images
+	 */
+	pre?: ReactNode;
 } & HTMLAttributes<HTMLDivElement>;
 
 /**
- * @name IconLine
- * @description a concrete line of icons.
- * @param {string[]} icons array of icon paths to load. Icons are expected to load from our Static Storage CDN, and not have full URL.
- * @param {ReactNode} [pre] Content to put before the images
+ * A concrete line of icons, used by the landing section.
  * @example
  * <IconLine icons=['logo-react', 'logo-vue', 'logo-angular'] />
  */

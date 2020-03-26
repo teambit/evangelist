@@ -6,9 +6,10 @@ import { staticStorageUrl } from '@bit/bit.base.constants.storage';
 export type ImageProps = BaseImageProps;
 
 /**
- * @name StaticImage
- * @description Concrete image, using our Static Storage CDN.
- * @param {string} src relative path to image
+ * Concrete image, using our Static Storage CDN.
+ *
+ * Treats src as relative paths on top of our image storage, and supports all other properties an html `<img>` would.
+ *
  * @example
  * <Image src="homepage-bit/map.png" alt="illustration" fullWidth />
  */

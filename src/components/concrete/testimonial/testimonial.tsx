@@ -5,18 +5,22 @@ import { TestimonialObj } from './testimonial-obj';
 import styles from './testimonial.module.scss';
 
 export interface TestimonialProps extends React.HTMLAttributes<HTMLDivElement> {
+	/**
+	 * Highlights current Testimonial. When `false`, testimonial will be half transparent.
+	 */
 	active?: boolean;
+	/**
+	 * Content of testimonial.
+	 * -   avatar - url to user's avatar
+	 * -   name - owner username
+	 * -   description owner subtitle
+	 */
 	data: TestimonialObj;
 }
 
 /**
- * @name Testimonial
- * @description A single testimonial element.
- * @param active Highligh current Testimonial. Makes half transparent when false
- * @param {ReactNode} data.content main text
- * @param {string} data.avatar url to user's avatar
- * @param {string} data.name owner name
- * @param {string} data.description owner subtitle
+ * User testimonial. Showing a quote, user avatar, and name.
+ * 
  * @example
  * <Testimonial active
  * 	data={{ name: 'Barbra', description: 'head of barbering', content: 'Great scissors!', avatar: '...', }}
