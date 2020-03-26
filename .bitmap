@@ -144,7 +144,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-highlighter@1.0.2": {
+    "bit.evangelist/atom/component-highlighter@1.0.3": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -155,6 +155,21 @@
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.tsx",
                 "test": false,
                 "name": "component-highlighter.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/component-highlighter/component-label/component-label.module.scss",
+                "test": false,
+                "name": "component-label.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/component-highlighter/component-label/component-label.tsx",
+                "test": false,
+                "name": "component-label.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/component-highlighter/component-label/index.ts",
+                "test": false,
+                "name": "index.ts"
             },
             {
                 "relativePath": "src/components/concrete/component-highlighter/content-type.ts",

@@ -1,4 +1,4 @@
-import React, { AnchorHTMLAttributes, Component } from 'react';
+import React, { Component } from 'react';
 import classNames from 'classnames';
 
 //@ts-ignore
@@ -7,10 +7,9 @@ import { createPopper, Instance } from '@popperjs/core';
 
 import styles from './component-tooltip.module.scss';
 
-export interface ComponentTooltipProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+export type ComponentTooltipProps = {
 	targetElement?: HTMLElement;
-	containerClass?: string;
-}
+} & React.HTMLAttributes<HTMLDivElement>;
 
 export class ComponentTooltip extends Component<ComponentTooltipProps> {
 	private ref = createRef();
@@ -44,12 +43,6 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 					name: 'flip',
 					enabled: false,
 				},
-				{
-					name: 'offset',
-					options: {
-						// offset: [0, 9],
-					},
-				},
 			],
 		});
 	};
@@ -62,22 +55,14 @@ export class ComponentTooltip extends Component<ComponentTooltipProps> {
 	}
 
 	render() {
-		const { children, className, targetElement, containerClass, ...rest } = this.props; //TODO
+		const { className, targetElement, ...rest } = this.props; //TODO
 		return (
 			<div
+				{...rest}
 				ref={this.ref}
-				className={classNames(styles.tooltipWrapper, containerClass)}
+				className={classNames(styles.tooltipWrapper, className)}
 				data-ignore-component-highlight
-			>
-				<a
-					{...rest}
-					rel="noopener"
-					target="_blank"
-					className={classNames(className, styles.componentTooltip)}
-				>
-					{children}
-				</a>
-			</div>
+			/>
 		);
 	}
 }

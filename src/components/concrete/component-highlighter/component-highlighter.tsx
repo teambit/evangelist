@@ -8,6 +8,8 @@ import { ComponentTooltip } from './tooltip/component-tooltip';
 import { OverlayBorder } from './overlay-border';
 import { ComponentHighlightDictionary, VersionMap } from './content-type';
 
+import { ComponentLabel } from './component-label';
+
 export interface ComponentHighlighterProps extends HTMLAttributes<HTMLDivElement> {
 	active?: boolean;
 	componentsDictionary: ComponentHighlightDictionary;
@@ -116,27 +118,23 @@ export class ComponentHighlighter extends Component<
 				// (this is perfect for this use case)
 				onMouseOver={this.handleEnter}
 				// triggers when mouse exists this element (and not its children)
-				onMouseLeave={this.destroyPopper}
+				// onMouseLeave={this.destroyPopper}
 			>
 				{children}
 
-				<ComponentTooltip
-					href={href}
-					containerClass={styles.tooltip}
-					targetElement={targetElement}
-				>
-					{displayName}
-					{FormatVersion(version)}
+				<ComponentTooltip className={styles.tooltip} targetElement={targetElement}>
+					<a
+						href={href}
+						className={styles.link}
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						<ComponentLabel href={href} bitId={displayName} version={version} />
+					</a>
 				</ComponentTooltip>
 
 				<OverlayBorder targetElement={targetElement} className={styles.border} />
 			</div>
 		);
 	}
-}
-
-function FormatVersion(version?: string) {
-	if (!version) return '';
-
-	return `@${version}`;
 }
