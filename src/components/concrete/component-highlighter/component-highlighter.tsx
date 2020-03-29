@@ -10,22 +10,22 @@ import { VersionMap } from './content-type';
 
 import { ComponentLabel } from './component-label';
 
-export interface ComponentHighlighterProps extends HTMLAttributes<HTMLDivElement> {
+export type ComponentHighlighterProps = {
 	/**
 	 * Enable highlighting
 	 */
 	active?: boolean;
-	/*
+	/**
 	 * override versions for specific components. As versions change rapidly consumers may want to specify them locally.
 	 */
 	versionMap?: VersionMap;
-	/*
+	/**
 	 * list ids to ignore
 	 */
 	blacklist?: Set<string>;
-}
+} & HTMLAttributes<HTMLDivElement>;
 
-interface ComponentHighlighterState {
+type ComponentHighlighterState = {
 	highlightTargetId?: string;
 	targetElement?: HTMLElement;
 }
@@ -38,6 +38,7 @@ interface ComponentHighlighterState {
  * and then look for the first parent that has the html attribute "data-bit-id".
  * Components with the 'data-ignore-component-highlight' attribute are completely ignored,
  * to avoid changing target when interacting with the highlighter itself.
+ * @name ComponentHighlighter
  */
 
 export class ComponentHighlighter extends Component<

@@ -7,7 +7,7 @@
 	border: none;
 
 	font-size: 12px;
-	background-color: var(--component-highlighter-bg, $pink50);
+
 	color: var(--component-highlighter-text, $w10);
 
 	line-height: 1.68;
@@ -21,37 +21,41 @@
 }
 
 .componentLabel {
-	padding: 0;
+	padding: 0; //reset card padding
 
-	filter: saturate(100%);
+	.separator {
+		margin: 0 4px;
+	}
+}
+
+.scopeName,
+.componentName {
+	transition: filter 300ms;
+
+	filter: saturate(100%) brightness(100%);
 
 	&:hover {
-		filter: saturate(138%);
-	}
-
-	.scopeName {
-		padding: 0 7px 0 11px;
-		border-right: 1px solid var(--component-highlighter-text, $w10);
-
-		background: var(--scope-color-bg, none);
-	}
-
-	.fullName {
-		padding: 0 4px 0 7px;
-	}
-
-	.version {
-		padding-left: 4px;
+		filter: saturate(109%) brightness(109%);
 	}
 }
 
-.componentLink {
-	padding-right: 11px;
+.scopeName {
+	border-radius: 4px 0 0 4px;
+
+	padding: 0 11px; // 0 11px;
+	margin-right: 2px;
+
+	background: var(--scope-color-bg, none);
 }
 
-.link,
-.componentLink {
+.componentName {
 	display: flex;
+	border-radius: 0 4px 4px 0;
+	padding: 0 11px;
+	background-color: var(--component-highlighter-bg, $pink50);
+}
+
+.link {
 	color: inherit;
 	text-decoration: none;
 }

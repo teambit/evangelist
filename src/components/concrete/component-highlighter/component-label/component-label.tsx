@@ -12,11 +12,19 @@ import scopeStyles from './scope-colors.module.scss';
 const BASE_URL = 'https://bit.dev';
 
 export type ComponentLabelProps = {
+	/**
+	 * Id of the component. Will show nothing if id is missing, and will show text only when id is not a valid bit-id
+	 */
 	bitId?: string;
+	/**
+	 * Explicitly set component version, and override any id that is part of the bit id.
+	 */
 	versionOverride?: string;
-	// href?: string;
 } & HTMLAttributes<HTMLDivElement>;
 
+/**
+ * Given a component id, shows a label for it and its scope, with a link to its bit.dev entry.
+ */
 export function ComponentLabel(props: ComponentLabelProps) {
 	const { bitId, versionOverride, className, ...rest } = props;
 
@@ -48,10 +56,10 @@ export function ComponentLabel(props: ComponentLabelProps) {
 			{...rest}
 			className={classNames(
 				className,
-				pillClass,
 				scopeStyles.scopeColorDefinition,
 				styles.componentLabel
 			)}
+			elevation="medium"
 			data-current-scope={scopeName}
 		>
 			{scopeName && (
@@ -61,18 +69,18 @@ export function ComponentLabel(props: ComponentLabelProps) {
 					rel="noopener noreferrer"
 					target="_blank"
 				>
-					<div className={styles.scopeName}>{scopeName}</div>
+					<div className={classNames(styles.scopeName)}>{scopeName}</div>
 				</a>
 			)}
 
 			<a
 				href={url}
-				className={classNames(styles.link, styles.componentLink)}
+				className={classNames(styles.link, styles.componentName)}
 				rel="noopener noreferrer"
 				target="_blank"
 			>
 				<div className={styles.fullName}>{fullName}</div>
-				{version && '|'}
+				{version && <span className={styles.separator}>|</span>}
 				{version && <div className={styles.version}>v{version}</div>}
 			</a>
 		</Card>

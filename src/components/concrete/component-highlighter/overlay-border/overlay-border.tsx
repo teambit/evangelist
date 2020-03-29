@@ -9,9 +9,9 @@ import styles from './overlay-border.module.scss';
 import { ignorePopperSize } from '@bit/bit.base.utils.popper-js.ignore-popper-size';
 import { resizeToMatchReference } from '@bit/bit.base.utils.popper-js.resize-to-match-reference';
 
-export interface ComponentBorderProps extends React.HTMLAttributes<HTMLDivElement> {
+export type ComponentBorderProps = {
 	targetElement?: HTMLElement;
-}
+} & React.HTMLAttributes<HTMLDivElement>;
 
 export class OverlayBorder extends Component<ComponentBorderProps> {
 	private popperInstance?: Instance;
