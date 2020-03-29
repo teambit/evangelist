@@ -16,9 +16,12 @@ import { H2 } from '../../components/concrete/heading';
 import { TwitterLink } from '../../components/concrete/community-links/twitter-link';
 import { TwitterCard } from '../../components/concrete/twitter-card';
 
-interface CommunitySectionProps extends React.HTMLAttributes<HTMLDivElement> {
+export type CommunitySectionProps = {
+	/**
+	 * Show Github star count next to the Repository link.
+	 */
 	githubStars?: number;
-}
+} & React.HTMLAttributes<HTMLDivElement>;
 
 /**
  * @name CommunitySection

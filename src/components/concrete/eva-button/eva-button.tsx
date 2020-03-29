@@ -6,7 +6,7 @@ import BaseButton, { ButtonProps as BaseProps } from '@bit/bit.base.atoms.button
 import styles from './eva-button.module.scss';
 import elevations from './elevations.module.scss';
 
-export interface ButtonProps extends BaseProps {
+export type ButtonProps = {
 	/**
 	 * style the button with shadow and click effect.
 	 */
@@ -15,7 +15,7 @@ export interface ButtonProps extends BaseProps {
 	 * style variance ('cta', 'normal')
 	 */
 	importance?: 'normal' | 'cta';
-}
+} & BaseProps;
 
 /**
  * Button component with click effect and built in loader.

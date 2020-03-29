@@ -25,9 +25,12 @@ const iconsArray = [
 	'logo-js',
 ];
 
-interface ReuseLandingProps extends HTMLAttributes<HTMLDivElement> {
+type ReuseLandingProps = {
+	/**
+	 * Placeholder for content, at the bottom of this section
+	 */
 	mainCta?: ReactNode;
-}
+} & HTMLAttributes<HTMLDivElement>;
 
 /**
  * @name IndependentTeams
@@ -63,7 +66,9 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 						className={classNames(styles.buttons)}
 					>
 						<PrimaryLink href="https://bit.dev/signup">
-							<EvaButton importance="cta" elevation="medium">Get Started</EvaButton>
+							<EvaButton importance="cta" elevation="medium">
+								Get Started
+							</EvaButton>
 						</PrimaryLink>
 						<div className={styles.spacer} />
 						<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">

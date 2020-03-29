@@ -1,4 +1,4 @@
-import React, { ReactNode, ReactChild } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 
 import { PossibleSizes } from '@bit/bit.base.theme.sizes';
@@ -15,28 +15,31 @@ type TwitterCardProps = {
 	/**
 	 * Twitter username
 	 */
-	title: ReactNode;
-	children: ReactChild;
+	title: string;
 	/**
 	 * User avatar
 	 */
 	image: string;
+	/**
+	 * shows user as 'verified'
+	 */
 	verified: boolean;
 
-	//ids:
+	/**
+	 * html id attached to title
+	 */
 	titleId?: string;
+	/**
+	 * html id attached to content
+	 */
 	textId?: string;
 } & CardProps;
 
 const twitterVerifiedIcon = 'homepage/join-fold/twitter_verified.png';
 
 /**
+ * Shows a single tweet, with username and avatar.
  * @name TwitterCard
- * @description Display a tweet
- * @param {string} title Twitter username
- * @param {string} image User avatar
- * @param {boolean} verified adds a 'verified' logo, when true.
- * @param {ReactNode} children main content
  * @example
  * <TwitterCard
  *	verified

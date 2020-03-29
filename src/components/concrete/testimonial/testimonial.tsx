@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { TestimonialObj } from './testimonial-obj';
 import styles from './testimonial.module.scss';
 
-export interface TestimonialProps extends React.HTMLAttributes<HTMLDivElement> {
+export type TestimonialProps = {
 	/**
 	 * Highlights current Testimonial. When `false`, testimonial will be half transparent.
 	 */
@@ -16,11 +16,11 @@ export interface TestimonialProps extends React.HTMLAttributes<HTMLDivElement> {
 	 * -   description owner subtitle
 	 */
 	data: TestimonialObj;
-}
+} & React.HTMLAttributes<HTMLDivElement>;
 
 /**
  * User testimonial. Showing a quote, user avatar, and name.
- * 
+ *
  * @example
  * <Testimonial active
  * 	data={{ name: 'Barbra', description: 'head of barbering', content: 'Great scissors!', avatar: '...', }}

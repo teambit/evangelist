@@ -19,12 +19,12 @@ import styles from './heading.module.scss';
  * <Paragraph>Lorem de ipsum de arimas</Paragraph>
  */
 
-export interface HeaderProps extends HeadingProps {
+export type HeaderProps = {
 	/**
 	 * font-size for the header
 	 */
 	size?: PossibleSizes;
-}
+} & HeadingProps;
 
 export function H1(props: HeaderProps) {
 	return (

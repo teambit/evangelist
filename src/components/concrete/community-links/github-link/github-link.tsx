@@ -9,15 +9,16 @@ import { PrimaryLink, PrimaryLinkProps } from '../primary-link';
 import { Icon } from '../../icon';
 import { Image } from '../../image';
 
-export interface GithubLinkProps extends PrimaryLinkProps {
+export type GithubLinkProps = {
 	/**
 	 * Shows github stars count inside the link.
 	 */
 	starCount?: number;
-}
+} & PrimaryLinkProps;
 
 /**
  * Concrete link to a Github repository, with logo and star count.
+ * @name GithubLink
  *
  * Automatically shortens long numbers into metric prefix, using [number-abbreviate](https://www.npmjs.com/package/number-abbreviate)
  * @example

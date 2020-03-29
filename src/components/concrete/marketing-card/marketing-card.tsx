@@ -16,7 +16,7 @@ type MarketingCardProps = {
 	/**
 	 * Controls the title content.
 	 */
-	title: ReactNode;
+	title: string;
 	/**
 	 * Color for label and link.
 	 */
@@ -53,11 +53,12 @@ type MarketingCardProps = {
  */
 
 export const MarketingCard = (props: MarketingCardProps) => {
-	const { title, children, className, ctaColor, label, to, linkText } = props;
+	const { title, children, className, ctaColor, label, to, linkText, ...rest } = props;
 	const accentColor = { [styles.accentVar]: ctaColor } as CSSProperties;
 
 	return (
 		<Card
+			{...rest}
 			className={classNames(styles.card, className)}
 			style={accentColor}
 			data-bit-id="bit.evangelist/atom/marketing-card"

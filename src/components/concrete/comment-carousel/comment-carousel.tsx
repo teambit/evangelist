@@ -13,7 +13,7 @@ import './slick-slider.module.scss';
 import styles from './carousel.module.scss';
 import sliderStyles from './slick-slider.module.scss';
 
-interface CommentCarouselProps extends React.HTMLAttributes<HTMLDivElement> {
+type CommentCarouselProps = {
 	/**
 	 *  Testimonials show in the carousel. They include:
 	 * -   content - main txt
@@ -26,7 +26,7 @@ interface CommentCarouselProps extends React.HTMLAttributes<HTMLDivElement> {
 	 * Props override for the ReactSlick carousel
 	 */
 	slider?: Settings;
-}
+} & React.HTMLAttributes<HTMLDivElement>;
 
 /**
  * A responsive carousel based on `react-slick`, showing real user testimonials.

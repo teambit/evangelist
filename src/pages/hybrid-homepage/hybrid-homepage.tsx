@@ -18,18 +18,27 @@ import { AutoDocs } from '../../sections/auto-docs';
 import { IndependentTeams } from '../../sections/independent-teams';
 import { TalkToExperts } from '../../sections/talk-to-experts';
 
-interface HybridHomepageProps extends HTMLAttributes<HTMLDivElement> {
+export type HybridHomepageProps = {
+	/**
+	 * placeholder for content, after the first purple background fold.
+	 */
 	communityCollections?: ReactNode;
+	/**
+	 * placeholder for content, at the bottom of the first purple background fold
+	 */
 	mainCta?: ReactNode;
+	/**
+	 * show github star count at the community section
+	 */
 	githubStars?: number;
-}
+} & HTMLAttributes<HTMLDivElement>;
 
 /**
+ * Full, responsive page, showing the many benefits of bit, in a simple application.
+ *
+ * Developing this component in isolation allowed us to use new technology not available in the consuming project,
+ * namely TypeScript and @testing-library/react.
  * @name HybridHomepage
- * @description Full, responsive page, showing the many benefits of bit, and showcasing its usage on a simple application.
- * @param {ReactNode} [mainCta] placeholder for content, at the bottom of the first purple background fold
- * @param {ReactNode} [communityCollections] placeholder for content, after the first purple background fold.
- * @param {number} [githubStars] show github star count at the community section
  */
 
 export class HybridHomepage extends PureComponent<HybridHomepageProps> {
