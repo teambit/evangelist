@@ -4,7 +4,7 @@
 
 # Evangelist - Marketing components of [bit.dev](https://bit.dev)
 
-This repo is a **component-based micro-frontend** with a set of independently-useful React components [exposed using Bit](https://bit.dev/bit/evangelist) and integrated with other external components (see [base-components)](https://github.com/teambit/base-ui) to build the [Bit.dev homepage](https://bit.dev).
+This repo is a **component-based micro-frontend** with a set of independently-useful React components, which are [exposed as a Bit component collection](https://bit.dev/bit/evangelist) and then integrated into the bit.dev platform and website (alongside other components such as [base-ui)](https://github.com/teambit/base-ui).
 
 [![screenshot](./docs/highlighter.png)](https://bit.dev)
 
