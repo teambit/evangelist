@@ -4,11 +4,11 @@ import classNames from 'classnames';
 import debounce from 'lodash.debounce';
 
 import styles from './component-highlighter.module.scss';
-import { RefTooltip } from './ref-tooltip';
+import { RefTooltip } from '@bit/bit.base.atoms.ref-tooltip';
 import { OverlayBorder } from './overlay-border';
 import { VersionMap } from './content-type';
 
-import { ComponentLabel } from './component-label';
+import { ComponentLabel } from '../component-label';
 
 export type ComponentHighlighterProps = {
 	/**
@@ -28,7 +28,7 @@ export type ComponentHighlighterProps = {
 type ComponentHighlighterState = {
 	highlightTargetId?: string;
 	targetElement?: HTMLElement;
-}
+};
 
 /**
  * Identify components using a border and tooltip.
