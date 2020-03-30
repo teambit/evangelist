@@ -2,17 +2,26 @@
 <a href="https://opensource.org/licenses/Apache-2.0"><img alt="apache" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
 <a href="https://github.com/teambit/example-templates/blob/master/README.md#contributing"><img alt="prs" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
 
-# Evangelist homepage
+# Evangelist - Marketing components of [bit.dev](https://bit.dev)
 
-A modern component-first webpage.  
+This repo is a **component-based micro-frontend** with a set of independently-useful React components [exposed using Bit](https://bit.dev/bit/evangelist) and integrated with other external components (see [base-components)](https://github.com/teambit/base-ui) to build the [Bit.dev homepage](https://bit.dev).
 
-![screenshot](./docs/highlighter.png)
+[![screenshot](./docs/highlighter.png)](https://bit.dev)
 
-## Structure
-See all of components [here](https://bit.dev/bit/evangelist)!  
-Some components are generic enough and may be 'upgraded' to _bit.base_ (I'm looking at you, [eva-button](https://bit.dev/bit/evangelist/atom/eva-button))
+## Component collection - choose and use
+
+All components in this frontned codebase were [contained and exposed using Bit](https://github.com/teambit/bit) as a set of independently-usable components. See the **[Enavgalist collection on bit.dev](https://bit.dev/bit/evangelist)** to explore and integrate any component into your project.
+
+- Install independent component with npm/yarn.
+- Use `bit import` to source and edit components locally for quick integration. Keep getting managed updates.
+- Try any component hands-on in a live playground.
 
 ![scope](./docs/scope-screenshot.png)
+
+
+Note: Some components are generic  and may be 'upgraded' to _bit.base_ (I'm looking at you, [eva-button](https://bit.dev/bit/evangelist/atom/eva-button)).
+
+## Key components
 
 ### Pages
 full pages with margins, backgrounds. Because of its size, _Page_ components should not contain granular content, and only set the layout for individual sections.
@@ -30,7 +39,7 @@ Components specific to this homepage. As atomic ui components, they are still ab
 ## Setup
 
 1. Clone the repository
-1. [Install bit](https://docs.bit.dev/docs/installation)
-1. Run `yarn install` or `npm install` to install all packages.
-1. Run `bit import` to sync components.
-1. Start hacking!
+2. [Install bit](https://docs.bit.dev/docs/installation)
+3. Run `yarn install` or `npm install` to install all packages.
+4. Run `bit import` to sync components.
+5. Start hacking!
