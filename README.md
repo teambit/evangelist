@@ -17,7 +17,7 @@ All components in this frontend codebase were [contained and exposed using Bit](
 - Use `bit import` to source and edit components locally for quick editing and integration.
 - Try any component hands-on in a live playground.
 
-![scope](./docs/scope-screenshot.png)
+[![scope](./docs/scope-screenshot.png)](https://bit.dev/bit/evangelist)
 
 
 ## This is a component-based micro-frontend
