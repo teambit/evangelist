@@ -24,6 +24,8 @@ export type ComponentLabelProps = {
 
 /**
  * Given a component id, shows a label for it and its scope, with a link to its bit.dev entry.
+ * @example
+ * <ComponentLabel bitId="kutorg.nerv/atoms/lcl" versionOverride="1.5.3" />
  */
 export function ComponentLabel(props: ComponentLabelProps) {
 	const { bitId, versionOverride, className, ...rest } = props;

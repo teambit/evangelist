@@ -139,7 +139,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-highlighter@2.0.3": {
+    "bit.evangelist/atom/component-highlighter@2.0.4": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -182,7 +182,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-label@1.0.1": {
+    "bit.evangelist/atom/component-label@1.0.3": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-label/component-label.module.scss",
@@ -210,7 +210,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/eva-button@1.0.7": {
+    "bit.evangelist/atom/eva-button@1.0.8": {
         "files": [
             {
                 "relativePath": "src/components/concrete/eva-button/elevations.module.scss",
@@ -261,7 +261,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/headers@1.0.6": {
+    "bit.evangelist/atom/headers@1.0.7": {
         "files": [
             {
                 "name": "heading-margins.module.scss",
@@ -386,7 +386,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/testimonial@1.0.5": {
+    "bit.evangelist/atom/testimonial@1.0.6": {
         "files": [
             {
                 "relativePath": "src/components/concrete/testimonial/index.ts",
@@ -772,5 +772,5 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "version": "14.7.6"
+    "version": "14.7.7-dev.2"
 }

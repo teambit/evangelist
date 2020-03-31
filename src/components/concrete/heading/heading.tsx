@@ -8,6 +8,7 @@ import sizeStyles from './heading-sizes.module.scss';
 import marginStyles from './heading-margins.module.scss';
 import styles from './heading.module.scss';
 
+
 /**
  * A set of concrete headers for the Evangelist homepage.
  * H1, H2, H3, H4, H5, H6.
@@ -20,9 +21,7 @@ import styles from './heading.module.scss';
  */
 
 export type HeaderProps = {
-	/**
-	 * font-size for the header
-	 */
+	/** font-size for the header */
 	size?: PossibleSizes;
 } & HeadingProps;
 

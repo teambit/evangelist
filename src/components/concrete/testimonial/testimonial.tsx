@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { TestimonialObj } from './testimonial-obj';
 import styles from './testimonial.module.scss';
 
+
 export type TestimonialProps = {
 	/**
 	 * Highlights current Testimonial. When `false`, testimonial will be half transparent.
