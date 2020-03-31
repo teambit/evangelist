@@ -80,8 +80,13 @@ export function ComponentLabel(props: ComponentLabelProps) {
 				target="_blank"
 			>
 				<div className={styles.fullName}>{fullName}</div>
-				{version && <span className={styles.separator}>|</span>}
-				{version && <div className={styles.version}>v{version}</div>}
+				{version && (
+					<div className={styles.version}>
+						<span className={styles.separator}>|</span>
+						<span className={styles.versionPrefix}>@</span>
+						{version}
+					</div>
+				)}
 			</a>
 		</Card>
 	);
