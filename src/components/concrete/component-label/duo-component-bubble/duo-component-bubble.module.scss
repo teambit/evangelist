@@ -1,0 +1,57 @@
+@import '~@bit/bit.base.theme.colors';
+
+.duoComponentBubble {
+	display: flex;
+
+	color: var(--component-highlighter-text, $w10);
+	font-size: 12px;
+
+	//reset styles from card:
+	padding: 0;
+	border: none;
+}
+
+.scopeBubble {
+	margin-right: 2px;
+}
+
+.scopeName,
+.componentName {
+	line-height: 1.68;
+
+	transition: filter 300ms;
+	transform: translateZ(0); //fix blurriness in Safari
+
+	filter: saturate(100%) brightness(100%);
+
+	&:hover {
+		filter: saturate(109%) brightness(109%);
+	}
+}
+
+.scopeName {
+	border-radius: 4px 0 0 4px;
+	padding: 0 11px;
+	background: var(--scope-color-bg, $pink50);
+}
+
+.componentName {
+	display: flex;
+	border-radius: 0 4px 4px 0;
+	padding: 0 11px;
+	background-color: var(--component-highlighter-bg, $pink50);
+}
+
+.separator {
+	margin: 0 4px;
+}
+
+.link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.versionPrefix {
+	//'@' looks a little big using the CircularPro font
+	font-size: 0.85em;
+}

@@ -139,7 +139,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-highlighter@2.0.4": {
+    "bit.evangelist/atom/component-highlighter@2.0.5": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -182,12 +182,32 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-label@1.0.3": {
+    "bit.evangelist/atom/component-label@1.0.4": {
         "files": [
             {
-                "relativePath": "src/components/concrete/component-label/component-label.module.scss",
+                "relativePath": "src/components/concrete/component-label/base-url.tsx",
                 "test": false,
-                "name": "component-label.module.scss"
+                "name": "base-url.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/compact-component-bubble/compact-component-bubble.module.scss",
+                "test": false,
+                "name": "compact-component-bubble.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/compact-component-bubble/compact-component-bubble.tsx",
+                "test": false,
+                "name": "compact-component-bubble.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/compact-component-bubble/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/compact-component-bubble/scope-colors.module.scss",
+                "test": false,
+                "name": "scope-colors.module.scss"
             },
             {
                 "relativePath": "src/components/concrete/component-label/component-label.tsx",
@@ -195,14 +215,49 @@
                 "name": "component-label.tsx"
             },
             {
+                "relativePath": "src/components/concrete/component-label/default-label/default-label.module.scss",
+                "test": false,
+                "name": "default-label.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/default-label/default-label.tsx",
+                "test": false,
+                "name": "default-label.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/default-label/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/duo-component-bubble/duo-component-bubble.module.scss",
+                "test": false,
+                "name": "duo-component-bubble.module.scss"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/duo-component-bubble/duo-component-bubble.tsx",
+                "test": false,
+                "name": "duo-component-bubble.tsx"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/duo-component-bubble/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/components/concrete/component-label/duo-component-bubble/scope-colors.module.scss",
+                "test": false,
+                "name": "scope-colors.module.scss"
+            },
+            {
                 "relativePath": "src/components/concrete/component-label/index.ts",
                 "test": false,
                 "name": "index.ts"
             },
             {
-                "relativePath": "src/components/concrete/component-label/scope-colors.module.scss",
+                "relativePath": "src/components/concrete/component-label/scope-color.module.scss",
                 "test": false,
-                "name": "scope-colors.module.scss"
+                "name": "scope-color.module.scss"
             }
         ],
         "mainFile": "src/components/concrete/component-label/index.ts",
