@@ -11,7 +11,7 @@ The reusable set of React components used to build the [bit.dev marketing websit
 
 ## Component collection - choose and use
 
-All components in this frontend codebase were [contained and exposed using Bit](https://github.com/teambit/bit) as a set of independently-usable components. See the **[Enavgalist collection on bit.dev](https://bit.dev/bit/evangelist)** to explore and integrate any component into your project.
+All components in this frontend codebase were [contained and exposed using Bit](https://github.com/teambit/bit) as a set of independently-usable components. See the **[Evangelist collection on bit.dev](https://bit.dev/bit/evangelist)** to explore and integrate any component into your project.
 
 - Install independent components with npm/yarn.
 - Use `bit import` to source and edit components locally for quick editing and integration.

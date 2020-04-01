@@ -13,7 +13,7 @@ import './slick-slider.module.scss';
 import styles from './carousel.module.scss';
 import sliderStyles from './slick-slider.module.scss';
 
-type CommentCarouselProps = {
+export type CommentCarouselProps = {
 	/**
 	 *  Testimonials show in the carousel. They include:
 	 * -   content - main txt
@@ -22,9 +22,7 @@ type CommentCarouselProps = {
 	 * -   description - owner sub title
 	 */
 	content: TestimonialObj[];
-	/**
-	 * Props override for the ReactSlick carousel
-	 */
+	/** Props override for the ReactSlick carousel */
 	slider?: Settings;
 } & React.HTMLAttributes<HTMLDivElement>;
 
@@ -39,11 +37,9 @@ type CommentCarouselProps = {
  *
  * <CommentCarousel content={bitTestimonials} />
  */
-
 export default class CommentCarousel extends PureComponent<CommentCarouselProps> {
 	state = { active: 0, slidesToShow: 3 };
-
-	private elemRef = createRef();
+	elemRef: any = createRef();
 
 	componentDidMount() {
 		if (this.elemRef.current) {
@@ -80,15 +76,6 @@ export default class CommentCarousel extends PureComponent<CommentCarouselProps>
 		this.setState({ active: nextSlide });
 	};
 
-	private sliderOptions: Settings = {
-		dots: true,
-		infinite: true,
-		centerMode: true,
-		centerPadding: '0',
-		focusOnSelect: true,
-		speed: 500,
-	};
-
 	render() {
 		const { content, slider, className, ...rest } = this.props;
 
@@ -104,14 +91,11 @@ export default class CommentCarousel extends PureComponent<CommentCarouselProps>
 				ref={this.elemRef}
 			>
 				<Slider
-					{...this.sliderOptions}
+					{...sliderOptions}
 					{...slider}
 					beforeChange={this.handleSlideChange}
 					slidesToShow={this.state.slidesToShow}
-					className={classNames(
-						styles.carousel,
-						this.sliderOptions && this.sliderOptions.className
-					)}
+					className={classNames(styles.carousel, slider && slider.className)}
 				>
 					{content.map((x, index) => (
 						<Testimonial
@@ -126,3 +110,12 @@ export default class CommentCarousel extends PureComponent<CommentCarouselProps>
 		);
 	}
 }
+
+const sliderOptions: Settings = {
+	dots: true,
+	infinite: true,
+	centerMode: true,
+	centerPadding: '0',
+	focusOnSelect: true,
+	speed: 500,
+};

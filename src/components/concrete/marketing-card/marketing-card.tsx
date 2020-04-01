@@ -36,8 +36,8 @@ type MarketingCardProps = {
 } & CardProps;
 
 /**
- * @name MarketingCard
  * A concrete card template, with a title, label, and a link.
+ * @name MarketingCard
  *
  * @example
  * <MarketingCard
@@ -51,16 +51,15 @@ type MarketingCardProps = {
  *	codebase. Let each team integrate and deploy components
  * </MarketingCard>
  */
-
-export const MarketingCard = (props: MarketingCardProps) => {
+export function MarketingCard(props: MarketingCardProps) {
 	const { title, children, className, ctaColor, label, to, linkText, ...rest } = props;
-	const accentColor = { [styles.accentVar]: ctaColor } as CSSProperties;
+	// const accentColor = {};// [styles.accentVar]: ctaColor };
 
 	return (
 		<Card
 			{...rest}
 			className={classNames(styles.card, className)}
-			style={accentColor}
+			// style={accentColor}
 			data-bit-id="bit.evangelist/atom/marketing-card"
 		>
 			<Label className={styles.ctaLabel}>{label}</Label>
@@ -73,6 +72,5 @@ export const MarketingCard = (props: MarketingCardProps) => {
 			</Link>
 		</Card>
 	);
-};
+}
 
-export default MarketingCard;
