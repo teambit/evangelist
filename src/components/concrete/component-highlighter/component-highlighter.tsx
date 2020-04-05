@@ -11,17 +11,13 @@ import { VersionMap } from './content-type';
 import { ComponentLabel } from '../component-label';
 
 export type ComponentHighlighterProps = {
-	/**
-	 * Enable highlighting
-	 */
+	/** enable highlighting */
 	active?: boolean;
-	/**
-	 * override versions for specific components. As versions change rapidly consumers may want to specify them locally.
-	 */
+	/** show full scope name, including owner */
+	fullScopeName?: boolean;
+	/** override versions for specific components. As versions change rapidly consumers may want to specify them locally. */
 	versionMap?: VersionMap;
-	/**
-	 * list ids to ignore
-	 */
+	/** list ids to ignore */
 	blacklist?: Set<string>;
 } & HTMLAttributes<HTMLDivElement>;
 
@@ -48,6 +44,10 @@ export class ComponentHighlighter extends Component<
 	state: ComponentHighlighterState = {
 		highlightTargetId: undefined,
 		targetElement: undefined,
+	};
+
+	static defaultProps = {
+		fullScopeName: true,
 	};
 
 	componentWillReceiveProps(nextProps: ComponentHighlighterProps) {
@@ -98,7 +98,7 @@ export class ComponentHighlighter extends Component<
 	};
 
 	render() {
-		const { active, children, versionMap = {}, ...rest } = this.props;
+		const { active, children, fullScopeName, versionMap = {}, ...rest } = this.props;
 		const { highlightTargetId, targetElement } = this.state;
 
 		const explicitVersion = highlightTargetId && versionMap[highlightTargetId];
@@ -127,6 +127,7 @@ export class ComponentHighlighter extends Component<
 					<ComponentLabel
 						bitId={highlightTargetId}
 						versionOverride={explicitVersion}
+						fullScopeName={fullScopeName}
 					/>
 				</RefTooltip>
 

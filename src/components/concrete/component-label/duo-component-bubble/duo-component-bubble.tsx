@@ -11,13 +11,24 @@ import styles from './duo-component-bubble.module.scss';
 
 type DuoComponentBubbleProps = {
 	bitId: BitNameId;
+	fullScopeName?: boolean;
 } & CardProps;
+
+type ScopeBubbleProps = {
+	bitId: BitNameId;
+	fullScopeName?: boolean;
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 type ComponentBubbleProps = {
 	bitId: BitNameId;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
-export function DuoComponentBubble({ bitId, className, ...rest }: DuoComponentBubbleProps) {
+export function DuoComponentBubble({
+	bitId,
+	fullScopeName,
+	className,
+	...rest
+}: DuoComponentBubbleProps) {
 	return (
 		<Card
 			{...rest}
@@ -27,15 +38,21 @@ export function DuoComponentBubble({ bitId, className, ...rest }: DuoComponentBu
 				styles.duoComponentBubble
 			)}
 		>
-			<ScopeBubble bitId={bitId} className={styles.scopeBubble} />
+			<ScopeBubble
+				bitId={bitId}
+				fullScopeName={fullScopeName}
+				className={styles.scopeBubble}
+			/>
 			<ComponentBubble bitId={bitId} />
 		</Card>
 	);
 }
 
-export function ScopeBubble({ bitId, className, ...rest }: ComponentBubbleProps) {
-	const scopeName = bitId.getFullScopeName();
+export function ScopeBubble({ bitId, fullScopeName, className, ...rest }: ScopeBubbleProps) {
+	const fullName = bitId.getFullScopeName();
+	const name = bitId.scope;
 	const scopeUrl = `${BASE_URL}/${bitId.getFullScopeName('/')}`;
+
 	return (
 		<a
 			href={scopeUrl}
@@ -44,8 +61,8 @@ export function ScopeBubble({ bitId, className, ...rest }: ComponentBubbleProps)
 			target="_blank"
 			{...rest}
 		>
-			<div className={classNames(styles.scopeName)} data-current-scope={scopeName}>
-				{scopeName}
+			<div className={classNames(styles.scopeName)} data-current-scope={fullName}>
+				{fullScopeName ? fullName : name}
 			</div>
 		</a>
 	);

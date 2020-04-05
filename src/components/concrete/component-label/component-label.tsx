@@ -17,6 +17,10 @@ export type ComponentLabelProps = {
 	 * Explicitly set component version, and override any id that is part of the bit id.
 	 */
 	versionOverride?: string;
+	/**
+	 * Show full scope name, including owner
+	 */
+	fullScopeName?: boolean;
 } & HTMLAttributes<HTMLDivElement>;
 
 /**
@@ -25,7 +29,7 @@ export type ComponentLabelProps = {
  * <ComponentLabel bitId="kutorg.nerv/atoms/lcl" versionOverride="1.5.3" />
  */
 export function ComponentLabel(props: ComponentLabelProps) {
-	const { bitId, versionOverride, className, ...rest } = props;
+	const { bitId, versionOverride, fullScopeName, className, ...rest } = props;
 
 	if (!bitId) return null;
 
@@ -47,7 +51,12 @@ export function ComponentLabel(props: ComponentLabelProps) {
 			bitId={parsed}
 			elevation="medium"
 			className={classNames(className)}
+			fullScopeName={fullScopeName}
 			{...rest}
 		/>
 	);
 }
+
+ComponentLabel.defaultProps = {
+	fullScopeName: true,
+};

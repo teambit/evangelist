@@ -20,6 +20,7 @@ class App extends PureComponent {
 					active
 					versionMap={versionMap}
 					blacklist={highlightBlacklist}
+					fullScopeName={false}
 				>
 					<EvaIconFont query="aqq93z" />
 					<HybridHomepage githubStars={10000} />

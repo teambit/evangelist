@@ -139,7 +139,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-highlighter@2.0.5": {
+    "bit.evangelist/atom/component-highlighter@2.1.0": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -182,7 +182,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-label@1.0.4": {
+    "bit.evangelist/atom/component-label@1.1.0": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-label/base-url.tsx",
