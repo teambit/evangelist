@@ -29,6 +29,8 @@ export function DuoComponentBubble({
 	className,
 	...rest
 }: DuoComponentBubbleProps) {
+	const scopeFullName = bitId.getFullScopeName();
+
 	return (
 		<Card
 			{...rest}
@@ -37,6 +39,7 @@ export function DuoComponentBubble({
 				scopeStyles.scopeColorDefinition,
 				styles.duoComponentBubble
 			)}
+			data-current-scope={scopeFullName}
 		>
 			<ScopeBubble
 				bitId={bitId}
@@ -61,7 +64,7 @@ export function ScopeBubble({ bitId, fullScopeName, className, ...rest }: ScopeB
 			target="_blank"
 			{...rest}
 		>
-			<div className={classNames(styles.scopeName)} data-current-scope={fullName}>
+			<div className={classNames(styles.scopeName)}>
 				{fullScopeName ? fullName : name}
 			</div>
 		</a>
