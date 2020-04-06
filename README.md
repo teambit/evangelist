@@ -29,7 +29,7 @@ Instead, it's built from **[components maintained in different codebases](https:
 
 ### Show me an example!
 
-Take a look at the [bit.dev homepage](https://bit.dev/).  
+Take a look at the [bit.dev homepage](https://bit.dev/).  
 
 You will notice that it's built from components that live in different front-end codebases:
 
@@ -41,7 +41,7 @@ You will notice that it's built from components that live in different front-end
 We use [Bit](https://github.com/teambit/bit) to contain and expose components from any codebase as a set of APIs in [bit.dev](https://bit.dev) that can be integrated into different pages and applications. For example:
 
 - Exposed evangelist components on bit.dev.
-- Exposed [base-ui components on bit.dev](https://bit.dev/bit/base).
+- Exposed [base-ui components on bit.dev](https://bit.dev/bit/base-ui).
 
 
 ## Key components
