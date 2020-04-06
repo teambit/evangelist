@@ -3,14 +3,14 @@ import classNames from 'classnames';
 
 import styles from './hybrid-perfect-sync.module.scss';
 
-import { fourWayGrid } from '@bit/bit.base.layout.grid-presets.four-way-grid';
+import { fourWayGrid } from '@bit/bit.base-ui.layout.grid-presets.four-way-grid';
 
-import { PossibleSizes } from '@bit/bit.base.theme.sizes';
-import { Paragraph } from '@bit/bit.base.atoms.paragraph';
+import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
 
-import { text, alignItems, marginCenter } from '@bit/bit.base.layout.align';
-import { Grid } from '@bit/bit.base.layout.grid-component';
-import { textColumn } from '@bit/bit.base.layout.page-frame';
+import { text, alignItems, marginCenter } from '@bit/bit.base-ui.layout.align';
+import { Grid } from '@bit/bit.base-ui.layout.grid-component';
+import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { Image } from '../../components/concrete/image';
 import { H2, H3 } from '../../components/concrete/heading';

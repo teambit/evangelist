@@ -2,7 +2,7 @@ import React, { PureComponent /* CSSProperties */ } from 'react';
 import 'reset-css';
 import './App.css';
 
-import { Theme } from '@bit/bit.base.theme.theme-provider';
+import { Theme } from '@bit/bit.base-ui.theme.theme-provider';
 
 import { EvaIconFont } from './components/concrete/eva-icon-font';
 

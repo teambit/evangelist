@@ -3,11 +3,11 @@ import classNames from 'classnames';
 
 import styles from './component-advantages.module.scss';
 
-import { PossibleSizes } from '@bit/bit.base.theme.sizes';
-import { Paragraph } from '@bit/bit.base.atoms.paragraph';
-import { text, alignItems } from '@bit/bit.base.layout.align';
-import { Grid } from '@bit/bit.base.layout.grid-component';
-import { fourWayGrid } from '@bit/bit.base.layout.grid-presets.four-way-grid';
+import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { text, alignItems } from '@bit/bit.base-ui.layout.align';
+import { Grid } from '@bit/bit.base-ui.layout.grid-component';
+import { fourWayGrid } from '@bit/bit.base-ui.layout.grid-presets.four-way-grid';
 
 import { Image } from '../../components/concrete/image';
 import { H3 } from '../../components/concrete/heading';

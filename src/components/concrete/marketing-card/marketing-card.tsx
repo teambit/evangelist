@@ -1,11 +1,11 @@
 import React, { ReactNode, CSSProperties } from 'react';
 import classNames from 'classnames';
 
-import { PossibleSizes } from '@bit/bit.base.theme.sizes';
-import { Card, CardProps } from '@bit/bit.base.atoms.card';
-import { Paragraph } from '@bit/bit.base.atoms.paragraph';
-import { Label } from '@bit/bit.base.atoms.label';
-import { Link } from '@bit/bit.base.atoms.link';
+import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { Card, CardProps } from '@bit/bit.base-ui.atoms.card';
+import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { Label } from '@bit/bit.base-ui.atoms.label';
+import { Link } from '@bit/bit.base-ui.atoms.link';
 
 import { H1 } from '../heading';
 import { Icon } from '../icon';

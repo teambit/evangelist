@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Card, CardProps } from '@bit/bit.base.atoms.card';
-import { pillClass } from '@bit/bit.base.atoms.pill';
+import { Card, CardProps } from '@bit/bit.base-ui.atoms.card';
+import { pillClass } from '@bit/bit.base-ui.atoms.pill';
 
 import styles from './default-label.module.scss';
 

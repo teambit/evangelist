@@ -3,12 +3,12 @@ import classNames from 'classnames';
 
 import styles from './reuse-landing-section.module.scss';
 
-import { PossibleSizes } from '@bit/bit.base.theme.sizes';
-import { text, marginCenter } from '@bit/bit.base.layout.align';
+import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
 
-import { Paragraph } from '@bit/bit.base.atoms.paragraph';
-import { Grid } from '@bit/bit.base.layout.grid-component';
-import { textColumn } from '@bit/bit.base.layout.page-frame';
+import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { Grid } from '@bit/bit.base-ui.layout.grid-component';
+import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { H1 } from '../../components/concrete/heading';
 import { IconLine } from '../../components/concrete/icon-line';

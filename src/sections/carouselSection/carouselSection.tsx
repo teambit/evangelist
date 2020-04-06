@@ -1,10 +1,10 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import { PossibleSizes } from '@bit/bit.base.theme.sizes';
+import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 
-import { textColumn } from '@bit/bit.base.layout.page-frame';
-import { marginCenter } from '@bit/bit.base.layout.align';
+import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
+import { marginCenter } from '@bit/bit.base-ui.layout.align';
 
 import CommentCarousel from '../../components/concrete/comment-carousel/comment-carousel';
 import { bitTestimonials } from '../../content/bit-testimonials';

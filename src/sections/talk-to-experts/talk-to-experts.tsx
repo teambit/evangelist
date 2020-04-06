@@ -3,9 +3,9 @@ import classNames from 'classnames';
 
 import styles from './talk-to-experts.module.scss';
 
-import { PossibleSizes } from '@bit/bit.base.theme.sizes';
-import { Paragraph } from '@bit/bit.base.atoms.paragraph';
-import { justifyItems, alignItems, text, marginCenter } from '@bit/bit.base.layout.align';
+import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { justifyItems, alignItems, text, marginCenter } from '@bit/bit.base-ui.layout.align';
 
 import { H2 } from '../../components/concrete/heading';
 import { PrimaryLink } from '../../components/concrete/primary-link';

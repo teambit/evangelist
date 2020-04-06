@@ -6,8 +6,8 @@ import createRef from 'react-create-ref';
 import { Instance, createPopper } from '@popperjs/core';
 
 import styles from './overlay-border.module.scss';
-import { ignorePopperSize } from '@bit/bit.base.utils.popper-js.ignore-popper-size';
-import { resizeToMatchReference } from '@bit/bit.base.utils.popper-js.resize-to-match-reference';
+import { ignorePopperSize } from '@bit/bit.base-ui.utils.popper-js.ignore-popper-size';
+import { resizeToMatchReference } from '@bit/bit.base-ui.utils.popper-js.resize-to-match-reference';
 
 export type ComponentBorderProps = {
 	targetElement?: HTMLElement;

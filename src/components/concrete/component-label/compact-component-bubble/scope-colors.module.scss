@@ -1,11 +1,11 @@
-@import '~@bit/bit.base.theme.colors';
+@import '~@bit/bit.base-ui.theme.colors';
 
 .scopeColorDefinition {
 	&[data-current-scope="bit.evangelist"] {
 		--scope-color-bg: #{$pink50};
 	}
 
-	&[data-current-scope="bit.base"] {
+	&[data-current-scope="bit.base-ui"] {
 		--scope-color-bg: #{$r60};
 	}
 }

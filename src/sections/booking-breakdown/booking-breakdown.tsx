@@ -2,10 +2,10 @@ import React, { HTMLAttributes } from 'react';
 
 import classNames from 'classnames';
 
-import { Paragraph } from '@bit/bit.base.atoms.paragraph';
-import { PossibleSizes } from '@bit/bit.base.theme.sizes';
-import { marginCenter } from '@bit/bit.base.layout.align';
-import { textColumn } from '@bit/bit.base.layout.page-frame';
+import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { marginCenter } from '@bit/bit.base-ui.layout.align';
+import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { H2 } from '../../components/concrete/heading';
 import { Image } from '../../components/concrete/image';

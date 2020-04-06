@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Link, LinkProps } from '@bit/bit.base.atoms.link';
+import { Link, LinkProps } from '@bit/bit.base-ui.atoms.link';
 
 import styles from './primary-link.module.scss';
 
