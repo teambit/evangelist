@@ -31,7 +31,7 @@ export function BookingBreakdown(props: HTMLAttributes<HTMLDivElement>) {
 					and version independent and reusable components. And, it makes it more fun.
 				</Paragraph>
 			</div>
-			<Image alt="bit" src="homepage-bit/2-build.png" fullWidth />
+			<Image alt="bit" src="homepage-bit/assets/booking-breakdown.png" fullWidth />
 		</div>
 	);
 }

@@ -39,7 +39,7 @@ export function IndependentTeams(props: HTMLAttributes<HTMLDivElement>) {
 
 			<Image
 				alt="teams breakdown"
-				src="homepage-bit/3-empower.png"
+				src="homepage-bit/assets/multi-scope.png"
 				fullWidth
 				className={styles.mainImage}
 			/>

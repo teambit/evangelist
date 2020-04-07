@@ -56,7 +56,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 						nothing else.
 					</Paragraph>
 				</div>
-				<Image alt="multi packagers" src="homepage-bit/example-010.png" fullWidth />
+				<Image alt="multi packagers" src="homepage-bit/assets/component-versions.png" fullWidth />
 
 				<div className={styles.text}>
 					<H3 size={PossibleSizes.xs}>Per-component CI</H3>
@@ -77,7 +77,7 @@ export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 				<Image
 					alt="cloud components"
-					src="homepage-bit/automated-GitHub-Updates.png"
+					src="homepage-bit/assets/automated-github.png"
 					fullWidth
 				/>
 
