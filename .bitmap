@@ -139,7 +139,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-highlighter@3.0.1": {
+    "bit.evangelist/atom/component-highlighter@3.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -182,7 +182,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-label@2.0.1": {
+    "bit.evangelist/atom/component-label@2.0.2": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-label/base-url.tsx",
@@ -523,7 +523,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/hybrid-homepage@2.0.1": {
+    "bit.evangelist/pages/hybrid-homepage@2.0.3": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -569,7 +569,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/booking-breakdown@2.0.1": {
+    "bit.evangelist/sections/booking-breakdown@2.0.2": {
         "files": [
             {
                 "name": "booking-breakdown.module.scss",
@@ -638,7 +638,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/component-advantages@2.0.1": {
+    "bit.evangelist/sections/component-advantages@2.0.2": {
         "files": [
             {
                 "relativePath": "src/sections/component-advantages/component-advantages.module.scss",
@@ -707,7 +707,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/hybrid-perfect-sync@2.0.1": {
+    "bit.evangelist/sections/hybrid-perfect-sync@2.0.2": {
         "files": [
             {
                 "name": "hybrid-perfect-sync.module.scss",
@@ -730,7 +730,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/independent-teams@2.0.1": {
+    "bit.evangelist/sections/independent-teams@2.0.2": {
         "files": [
             {
                 "relativePath": "src/sections/independent-teams/independent-teams.module.scss",
