@@ -139,7 +139,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-highlighter@3.0.0": {
+    "bit.evangelist/atom/component-highlighter@3.0.1": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-highlighter/component-highlighter.module.scss",
@@ -182,7 +182,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/atom/component-label@2.0.0": {
+    "bit.evangelist/atom/component-label@2.0.1": {
         "files": [
             {
                 "relativePath": "src/components/concrete/component-label/base-url.tsx",
@@ -253,11 +253,6 @@
                 "relativePath": "src/components/concrete/component-label/index.ts",
                 "test": false,
                 "name": "index.ts"
-            },
-            {
-                "relativePath": "src/components/concrete/component-label/scope-color.module.scss",
-                "test": false,
-                "name": "scope-color.module.scss"
             }
         ],
         "mainFile": "src/components/concrete/component-label/index.ts",
