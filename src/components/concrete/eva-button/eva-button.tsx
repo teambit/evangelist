@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import BaseButton, { ButtonProps as BaseProps } from '@bit/bit.base-ui.atoms.button';
+import BaseButton, { ButtonProps as BaseProps } from '@bit/bit.base-ui.input.button';
 
 import styles from './eva-button.module.scss';
 import elevations from './elevations.module.scss';

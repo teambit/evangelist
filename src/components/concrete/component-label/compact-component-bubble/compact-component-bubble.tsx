@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Card, CardProps } from '@bit/bit.base-ui.atoms.card';
+import { Card, CardProps } from '@bit/bit.base-ui.surfaces.card';
 //@ts-ignore
 import BitNameId from '@bit/bit.javascript.component.id';
 

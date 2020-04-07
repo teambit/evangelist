@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BaseImage, BaseImageProps } from '@bit/bit.base-ui.atoms.image';
+import { BaseImage, BaseImageProps } from '@bit/bit.base-ui.elements.image';
 import { staticStorageUrl } from '@bit/bit.base-ui.constants.storage';
 
 export type ImageProps = BaseImageProps;

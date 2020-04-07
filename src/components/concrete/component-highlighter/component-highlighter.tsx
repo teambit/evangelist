@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import debounce from 'lodash.debounce';
 
 import styles from './component-highlighter.module.scss';
-import { RefTooltip } from '@bit/bit.base-ui.atoms.ref-tooltip';
+import { RefTooltip } from '@bit/bit.base-ui.placement.ref-tooltip';
 import { OverlayBorder } from './overlay-border';
 import { VersionMap } from './content-type';
 

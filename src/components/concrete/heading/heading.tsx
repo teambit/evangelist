@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { HeadingProps, Heading } from '@bit/bit.base-ui.atoms.heading';
+import { HeadingProps, Heading } from '@bit/bit.base-ui.text.heading';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 
 import sizeStyles from './heading-sizes.module.scss';
