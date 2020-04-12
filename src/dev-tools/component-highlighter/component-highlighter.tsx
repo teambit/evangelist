@@ -106,7 +106,6 @@ export class ComponentHighlighter extends Component<
 		return (
 			<div
 				{...rest}
-				data-ignore-component-highlight
 				className={classNames(
 					styles.componentHighlighter,
 					active && styles.active,
@@ -129,10 +128,15 @@ export class ComponentHighlighter extends Component<
 						bitId={highlightTargetId}
 						versionOverride={explicitVersion}
 						fullScopeName={fullScopeName}
+						data-ignore-component-highlight
 					/>
 				</RefTooltip>
 
-				<OverlayBorder targetElement={targetElement} className={styles.border} />
+				<OverlayBorder
+					targetElement={targetElement}
+					className={styles.border}
+					data-ignore-component-highlight
+				/>
 			</div>
 		);
 	}

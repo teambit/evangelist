@@ -37,7 +37,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/dev-tools/component-highlighter@1.0.1": {
+    "bit.evangelist/dev-tools/component-highlighter@1.0.2": {
         "files": [
             {
                 "relativePath": "src/dev-tools/component-highlighter/component-highlighter.module.scss",
