@@ -4,12 +4,12 @@ import classNames from 'classnames';
 import styles from './talk-to-experts.module.scss';
 
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
-import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { justifyItems, alignItems, text, marginCenter } from '@bit/bit.base-ui.layout.align';
 
-import { H2 } from '../../components/concrete/heading';
-import { PrimaryLink } from '../../components/concrete/primary-link';
-import { EvaButton } from '../../components/concrete/eva-button';
+import { H2 } from '../../elements/heading';
+import { PrimaryLink } from '../../elements/link';
+import { Button } from '../../elements/button';
 
 /**
  * @name TalkToExperts
@@ -42,7 +42,7 @@ export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 			</div>
 			<div>
 				<PrimaryLink href="https://bit.dev/contact-sales">
-					<EvaButton importance="cta">Get in touch</EvaButton>
+					<Button importance="cta">Get in touch</Button>
 				</PrimaryLink>
 			</div>
 		</div>

@@ -3,18 +3,18 @@ import classnames from 'classnames';
 
 import styles from './community-section.module.scss';
 
-import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { alignItems, marginCenter } from '@bit/bit.base-ui.layout.align';
 import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 
-import { GithubLink } from '../../components/concrete/community-links/github-link';
+import { GithubLink } from '../../marketing/community-links/github-link';
 import { links } from '../../content/links';
-import { SlackLink } from '../../components/concrete/community-links/slack-link';
-import { H2 } from '../../components/concrete/heading';
-import { TwitterLink } from '../../components/concrete/community-links/twitter-link';
-import { TwitterCard } from '../../components/concrete/twitter-card';
+import { SlackLink } from '../../marketing/community-links/slack-link';
+import { H2 } from '../../elements/heading';
+import { TwitterLink } from '../../marketing/community-links/twitter-link';
+import { TwitterCard } from '../../marketing/twitter-card';
 
 export type CommunitySectionProps = {
 	/**

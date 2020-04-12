@@ -9,10 +9,10 @@ import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { zGrid, halfZGrid } from '@bit/bit.base-ui.layout.grid-presets.z-grid';
 import { text, alignItems, marginCenter } from '@bit/bit.base-ui.layout.align';
 import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
-import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 
-import { H2, H3 } from '../../components/concrete/heading';
-import { Image } from '../../components/concrete/image';
+import { H2, H3 } from '../../elements/heading';
+import { Image } from '../../elements/image';
 
 /**
  * @name AutoDocs

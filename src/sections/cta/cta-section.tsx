@@ -3,13 +3,13 @@ import classNames from 'classnames';
 
 import styles from './cta-section.module.scss';
 
-import { H2 } from '../../components/concrete/heading';
+import { H2 } from '../../elements/heading';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
-import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { justifyItems, alignItems, text } from '@bit/bit.base-ui.layout.align';
-import { PrimaryLink } from '../../components/concrete/community-links/primary-link';
-import { EvaButton } from '../../components/concrete/eva-button';
+import { PrimaryLink } from '../../marketing/community-links/community-link';
+import { Button } from '../../elements/button';
 
 type CtaProps = React.HTMLAttributes<HTMLDivElement>;
 
@@ -44,7 +44,7 @@ export function CtaSection(props: CtaProps) {
 				</Paragraph>
 			</div>
 			<PrimaryLink href="https://bit.dev/signup">
-				<EvaButton importance="cta">Start for free</EvaButton>
+				<Button importance="cta">Start for free</Button>
 			</PrimaryLink>
 		</Grid>
 	);

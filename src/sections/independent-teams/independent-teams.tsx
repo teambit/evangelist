@@ -4,13 +4,13 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 
 import styles from './independent-teams.module.scss';
 
-import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
 import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
-import { H2, H5 } from '../../components/concrete/heading';
-import { Image } from '../../components/concrete/image';
+import { H2, H5 } from '../../elements/heading';
+import { Image } from '../../elements/image';
 
 /**
  * @name IndependentTeams

@@ -6,15 +6,15 @@ import styles from './reuse-landing-section.module.scss';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
 
-import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
-import { H1 } from '../../components/concrete/heading';
-import { IconLine } from '../../components/concrete/icon-line';
-import { PrimaryLink } from '../../components/concrete/primary-link';
-import { Image } from '../../components/concrete/image';
-import { EvaButton } from '../../components/concrete/eva-button';
+import { H1 } from '../../elements/heading';
+import { IconLine } from '../../elements/icon-line';
+import { PrimaryLink } from '../../elements/link';
+import { Image } from '../../elements/image';
+import { Button } from '../../elements/button';
 
 const iconsArray = [
 	'logo-react',
@@ -66,13 +66,13 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 						className={classNames(styles.buttons)}
 					>
 						<PrimaryLink href="https://bit.dev/signup">
-							<EvaButton importance="cta" elevation="medium">
+							<Button importance="cta" elevation="medium">
 								Get Started
-							</EvaButton>
+							</Button>
 						</PrimaryLink>
 						<div className={styles.spacer} />
 						<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">
-							<EvaButton elevation="medium">Learn more</EvaButton>
+							<Button elevation="medium">Learn more</Button>
 						</PrimaryLink>
 					</Paragraph>
 					<IconLine icons={iconsArray} className={styles.icons} />

@@ -4,13 +4,13 @@ import './App.css';
 
 import { Theme } from '@bit/bit.base-ui.theme.theme-provider';
 
-import { EvaIconFont } from './components/concrete/eva-icon-font';
+import { EvaIconFont } from './theme/icon-font';
 
 import { HybridHomepage } from './pages/hybrid-homepage';
-import { ComponentHighlighter } from './components/concrete/component-highlighter';
+import { ComponentHighlighter } from './debugging/component-highlighter';
 import versionMap from './content/version-map/version-map';
 
-const highlightBlacklist = new Set(['bit.evangelist/atom/testimonial']);
+const highlightBlacklist = new Set(['bit.evangelist/marketing/testimonial']);
 
 class App extends PureComponent {
 	render() {

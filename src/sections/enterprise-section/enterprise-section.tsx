@@ -4,16 +4,16 @@ import classNames from 'classnames';
 import styles from './enterprise-section.module.scss';
 
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
-import { Paragraph } from '@bit/bit.base-ui.atoms.paragraph';
+import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 
 import { text, alignItems } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { colSpanMd } from '@bit/bit.base-ui.layout.col-span';
 
-import { Image } from '../../components/concrete/image';
-import { H2, H4 } from '../../components/concrete/heading';
-import { Icon } from '../../components/concrete/icon';
-import { PrimaryLink } from '../../components/concrete/primary-link';
+import { Image } from '../../elements/image';
+import { H2, H4 } from '../../elements/heading';
+import { Icon } from '../../elements/icon';
+import { PrimaryLink } from '../../elements/link';
 
 /**
  * @name EnterpriseSection
