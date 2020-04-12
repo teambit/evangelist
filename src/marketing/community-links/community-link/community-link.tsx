@@ -9,15 +9,15 @@ export type PrimaryLinkProps = LinkProps;
 
 /**
  * base 'community link' component.
- * 
+ *
  * Used as a template for Github-link, twitter-link, etc.
  */
-export function PrimaryLink({ className, href, ...rest }: PrimaryLinkProps) {
+export function PrimaryLink({ className, ...rest }: PrimaryLinkProps) {
 	return (
 		<Link
-			{...rest}
-			href={href}
+			data-bit-id="bit.evangelist/marketing/community-links/community-link"
 			className={classNames(styles.primaryLink, className)}
+			{...rest}
 		></Link>
 	);
 }

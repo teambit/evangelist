@@ -30,7 +30,7 @@ export function IconLine({ icons, className, pre }: IconLineProps) {
 	return (
 		<div
 			className={classNames(styles.iconLine, className)}
-			data-bit-id="bit.evangelist/elementsents/icon-line"
+			data-bit-id="bit.evangelist/elements/icon-line"
 		>
 			{pre}
 			{icons.map((icon: string, index: number) => (

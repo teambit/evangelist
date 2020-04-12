@@ -34,8 +34,8 @@ export class Testimonial extends PureComponent<TestimonialProps> {
 		return (
 			<div
 				data-bit-id="bit.evangelist/marketing/testimonial"
-				{...rest}
 				className={classNames(styles.box, className)}
+				{...rest}
 				data-active={active || null}
 			>
 				<div className={styles.quote}>{data.content}</div>

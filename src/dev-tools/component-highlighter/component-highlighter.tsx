@@ -106,6 +106,7 @@ export class ComponentHighlighter extends Component<
 		return (
 			<div
 				{...rest}
+				data-ignore-component-highlight
 				className={classNames(
 					styles.componentHighlighter,
 					active && styles.active,

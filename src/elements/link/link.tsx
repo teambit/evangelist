@@ -16,5 +16,11 @@ import styles from './link.module.scss';
  * <PrimaryLink href="https://google.com">look it up!</PrimaryLink>
  */
 export function PrimaryLink(props: LinkProps) {
-	return <Link {...props} className={classNames(props.className, styles.primaryLink)} />;
+	return (
+		<Link
+			data-bit-id="bit.evangelist/elements/link"
+			{...props}
+			className={classNames(props.className, styles.primaryLink)}
+		/>
+	);
 }

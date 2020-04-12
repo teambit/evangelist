@@ -54,10 +54,10 @@ export function TwitterCard(props: TwitterCardProps) {
 	const { title, className, children, image, verified, titleId, textId, ...rest } = props;
 	return (
 		<Card
-			{...rest}
+			data-bit-id="bit.evangelist/marketing/twitter-card"
 			className={classNames(styles.twitterCard, className)}
 			elevation="medium"
-			data-bit-id="bit.evangelist/marketing/twitter-card"
+			{...rest}
 		>
 			<Image src={image} className={styles.avatar} alt="twitter avatar" />
 			<div>

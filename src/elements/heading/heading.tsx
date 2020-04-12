@@ -10,7 +10,7 @@ import styles from './heading.module.scss';
 
 
 /**
- * A set of concrete headers for the Evangelist homepage.
+ * A set of concrete heading for the Evangelist homepage.
  * H1, H2, H3, H4, H5, H6.
  *
  * Each header comes with its equivalent html element, and default size.
@@ -28,7 +28,7 @@ export type HeaderProps = {
 export function H1(props: HeaderProps) {
 	return (
 		<Heading
-			data-bit-id="bit.evangelist/elements/headers"
+			data-bit-id="bit.evangelist/elements/heading"
 			element="h1"
 			{...props}
 			className={classNames(
@@ -43,7 +43,7 @@ export function H1(props: HeaderProps) {
 export function H2(props: HeaderProps) {
 	return (
 		<Heading
-			data-bit-id="bit.evangelist/elements/headers"
+			data-bit-id="bit.evangelist/elements/heading"
 			element="h2"
 			{...props}
 			className={classNames(
@@ -58,7 +58,7 @@ export function H2(props: HeaderProps) {
 export function H3(props: HeaderProps) {
 	return (
 		<Heading
-			data-bit-id="bit.evangelist/elements/headers"
+			data-bit-id="bit.evangelist/elements/heading"
 			element="h3"
 			{...props}
 			className={classNames(
@@ -73,7 +73,7 @@ export function H3(props: HeaderProps) {
 export function H4(props: HeaderProps) {
 	return (
 		<Heading
-			data-bit-id="bit.evangelist/elements/headers"
+			data-bit-id="bit.evangelist/elements/heading"
 			element="h4"
 			{...props}
 			className={classNames(
@@ -88,7 +88,7 @@ export function H4(props: HeaderProps) {
 export function H5(props: HeaderProps) {
 	return (
 		<Heading
-			data-bit-id="bit.evangelist/elements/headers"
+			data-bit-id="bit.evangelist/elements/heading"
 			element="h5"
 			{...props}
 			className={classNames(
@@ -103,7 +103,7 @@ export function H5(props: HeaderProps) {
 export function H6(props: HeaderProps) {
 	return (
 		<Heading
-			data-bit-id="bit.evangelist/elements/headers"
+			data-bit-id="bit.evangelist/elements/heading"
 			element="h6"
 			{...props}
 			className={classNames(

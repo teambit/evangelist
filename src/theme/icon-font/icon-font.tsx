@@ -23,5 +23,11 @@ export type EvaIconFontProps = {
  */
 export function EvaIconFont(props: EvaIconFontProps) {
 	const { query = 'dqaogs' } = props;
-	return <link rel="stylesheet" href={`${EMBED_LINK}?${query}`} />;
+	return (
+		<link
+			data-bit-id="bit.evangelist/theme/icon-font"
+			rel="stylesheet"
+			href={`${EMBED_LINK}?${query}`}
+		/>
+	);
 }

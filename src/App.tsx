@@ -7,7 +7,7 @@ import { Theme } from '@bit/bit.base-ui.theme.theme-provider';
 import { EvaIconFont } from './theme/icon-font';
 
 import { HybridHomepage } from './pages/hybrid-homepage';
-import { ComponentHighlighter } from './debugging/component-highlighter';
+import { ComponentHighlighter } from './dev-tools/component-highlighter';
 import versionMap from './content/version-map/version-map';
 
 const highlightBlacklist = new Set(['bit.evangelist/marketing/testimonial']);

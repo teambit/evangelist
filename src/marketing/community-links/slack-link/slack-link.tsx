@@ -17,9 +17,9 @@ export function SlackLink({ className, ...rest }: SlackLinkProps) {
 	return (
 		<PrimaryLink
 			external
-			{...rest}
-			className={classNames(styles.slackLink, className)}
 			data-bit-id="bit.evangelist/marketing/community-links/slack-link"
+			className={classNames(styles.slackLink, className)}
+			{...rest}
 		>
 			<Icon of="slack" className={classNames(styles.icon)} />
 			<span>bit-dev-community</span>

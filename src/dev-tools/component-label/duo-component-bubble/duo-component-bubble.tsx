@@ -40,6 +40,7 @@ export function DuoComponentBubble({
 				styles.duoComponentBubble
 			)}
 			data-current-scope={scopeFullName}
+			data-ignore-component-highlight
 		>
 			<ScopeBubble
 				bitId={bitId}

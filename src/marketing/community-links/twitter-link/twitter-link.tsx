@@ -13,14 +13,13 @@ import { Icon } from '../../../elements/icon';
  */
 export type TwitterLinkProps = PrimaryLinkProps;
 
-export function TwitterLink({ className, href, ...rest }: TwitterLinkProps) {
+export function TwitterLink({ className, ...rest }: TwitterLinkProps) {
 	return (
 		<PrimaryLink
 			external
-			{...rest}
-			href={href}
-			className={classNames(styles.twitterLink, className)}
 			data-bit-id="bit.evangelist/marketing/community-links/twitter-link"
+			className={classNames(styles.twitterLink, className)}
+			{...rest}
 		>
 			<Icon of="twitter-logo" className={classNames(styles.icon)} />
 			<span>@bitdev_</span>
