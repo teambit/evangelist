@@ -36,7 +36,6 @@ export function SyncSection(props: HTMLAttributes<HTMLDivElement>) {
 			</div>
 
 			<Grid
-				colMd={12}
 				className={classNames(
 					text.center,
 					text.sm.left,

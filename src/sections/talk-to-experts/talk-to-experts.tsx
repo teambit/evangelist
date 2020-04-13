@@ -8,7 +8,7 @@ import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { justifyItems, alignItems, text, marginCenter } from '@bit/bit.base-ui.layout.align';
 
 import { H2 } from '../../elements/heading';
-import { PrimaryLink } from '../../elements/link';
+import { Link } from '../../elements/link';
 import { Button } from '../../elements/button';
 
 /**
@@ -41,9 +41,9 @@ export function TalkToExperts(props: React.HTMLAttributes<HTMLDivElement>) {
 				</Paragraph>
 			</div>
 			<div>
-				<PrimaryLink href="https://bit.dev/contact-sales">
+				<Link href="/contact-sales">
 					<Button importance="cta">Get in touch</Button>
-				</PrimaryLink>
+				</Link>
 			</div>
 		</div>
 	);

@@ -1,6 +1,6 @@
 /**
+ * A set a of commonly used links, for a consistent experience across the system.
  * @name links
- * @description constant list of links, to be used throughout the system.
  */
 
 export const links = {

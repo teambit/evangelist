@@ -28,13 +28,13 @@ export type CommentCarouselProps = {
 
 /**
  * A responsive carousel based on `react-slick`, showing real user testimonials.
- *
+ * @name CommentCarousel
  * @example
  * const bitTestimonials = [
- * 		{ name: 'Barbra', description: 'head of barbering', content: 'Great scissors!', avatar: '...', }
- * 		{ name: 'Roberto', description: 'Robber of Bertos', content: 'Easy to carry.', avatar: '...', }
+ * 	{ name: 'Barbra', description: 'Quality assurance', content: 'Better than 4/5 of the market', avatar: '...', }
+ * 	{ name: 'Roberto', description: 'Upper middle management', content: 'Easy to carry, nice for meetings', avatar: '...', }
  * ];
- *
+ * 
  * <CommentCarousel content={bitTestimonials} />
  */
 export default class CommentCarousel extends PureComponent<CommentCarouselProps> {

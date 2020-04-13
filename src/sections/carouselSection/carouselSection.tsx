@@ -13,7 +13,7 @@ import { H2 } from '../../elements/heading';
 import styles from './carouselSection.module.scss';
 
 /**
- * @name AutoDocs
+ * @name CarouselSection
  * @description
  * A section showing real users testimonials about the product.
  * Using **CommentCarousel** (react-slick), and content from **bit-testimonials**.

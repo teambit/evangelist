@@ -5,7 +5,7 @@ import debounce from 'lodash.debounce';
 
 import styles from './component-highlighter.module.scss';
 import { RefTooltip } from '@bit/bit.base-ui.placement.ref-tooltip';
-import { OverlayBorder } from './overlay-border';
+import { OverlayBorder } from '../overlay-border';
 import { VersionMap } from './content-type';
 
 import { ComponentLabel } from '../component-label';
@@ -20,7 +20,7 @@ export type ComponentHighlighterProps = {
 	/** list ids to ignore */
 	blacklist?: Set<string>;
 } & HTMLAttributes<HTMLDivElement>;
-
+ 
 type ComponentHighlighterState = {
 	highlightTargetId?: string;
 	targetElement?: HTMLElement;
@@ -98,7 +98,7 @@ export class ComponentHighlighter extends Component<
 	};
 
 	render() {
-		const { active, children, fullScopeName, versionMap = {}, ...rest } = this.props;
+		const { active, children, fullScopeName, versionMap = {}, blacklist, ...rest } = this.props;
 		const { highlightTargetId, targetElement } = this.state;
 
 		const explicitVersion = highlightTargetId && versionMap[highlightTargetId];
@@ -106,6 +106,7 @@ export class ComponentHighlighter extends Component<
 		return (
 			<div
 				{...rest}
+				data-ignore-component-highlight
 				className={classNames(
 					styles.componentHighlighter,
 					active && styles.active,

@@ -21,6 +21,7 @@ type IconLineProps = {
 
 /**
  * A concrete line of icons, used by the landing section.
+ * @name IconLine
  * @example
  * <IconLine icons=['logo-react', 'logo-vue', 'logo-angular'] />
  */

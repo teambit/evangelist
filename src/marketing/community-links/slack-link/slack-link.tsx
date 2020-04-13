@@ -3,19 +3,20 @@ import classNames from 'classnames';
 
 import styles from './slack-link.module.scss';
 
-import { PrimaryLink, PrimaryLinkProps } from '../community-link';
+import { CommunityLink, PrimaryLinkProps } from '../community-link';
 import { Icon } from '../../../elements/icon';
 
 export type SlackLinkProps = PrimaryLinkProps;
 
 /**
  * Concrete link to a Slack channel. Styled as a 'pill' button, with the Slack logo
+ * @name SlackLink
  * @example
  * <SlackLink href="https://join.slack.com/..." />
  */
 export function SlackLink({ className, ...rest }: SlackLinkProps) {
 	return (
-		<PrimaryLink
+		<CommunityLink
 			external
 			data-bit-id="bit.evangelist/marketing/community-links/slack-link"
 			className={classNames(styles.slackLink, className)}
@@ -23,6 +24,6 @@ export function SlackLink({ className, ...rest }: SlackLinkProps) {
 		>
 			<Icon of="slack" className={classNames(styles.icon)} />
 			<span>bit-dev-community</span>
-		</PrimaryLink>
+		</CommunityLink>
 	);
 }

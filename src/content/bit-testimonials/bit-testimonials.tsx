@@ -21,7 +21,7 @@ const desc5 = () => (
 /**
  * @name bitTestimonials
  * @description
- * Content for [CommentCarousel](https://bit.dev/bit/evangelist/atom/comment-carousel).
+ * Content for [CommentCarousel](https://bit.dev/bit/evangelist/marketing/comment-carousel).
  */
 
 export const bitTestimonials: TestimonialObj[] = [

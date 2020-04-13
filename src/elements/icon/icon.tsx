@@ -7,11 +7,10 @@ const iconSetPrefix = 'bitcon';
 export type IconProps = BaseIconProps;
 
 /**
- * Placeholder for an icon from Bit's icon font.
+ * Placeholder for an icon, from Bit.dev's icon font.
  *
- * Make sure the page contains [iconFont](https://bit.dev/bit/evangelist/atom/eva-icon-font), or else icons will not load.
- * @name BitIcon
- * @param {string} of icon name
+ * (Make sure [IconFont](https://bit.dev/bit/evangelist/theme/icon-font) is present in the page, for the icons to load).
+ * @name Icon
  * @example
  * // Embed icon at the document root:
  * <EvaIconFont query="sdfj4k2d"/>

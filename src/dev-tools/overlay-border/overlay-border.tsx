@@ -10,9 +10,22 @@ import { ignorePopperSize } from '@bit/bit.base-ui.utils.popper-js.ignore-popper
 import { resizeToMatchReference } from '@bit/bit.base-ui.utils.popper-js.resize-to-match-reference';
 
 export type ComponentBorderProps = {
+	/** DOM element to highlight */
 	targetElement?: HTMLElement;
 } & React.HTMLAttributes<HTMLDivElement>;
-
+ 
+/**
+ * Highlight a component using a border.<br/>
+ * The border is positioned at the top left of the component using [Popper.js](https://popper.js.org/),
+ * and covers the element from edge to edge. The border does not interfere with normal user flow,
+ * using `pointer-events: none; user-select: none;`.
+ *
+ * @name OverlayBorder
+ * @example
+ * this.elementRef = react.createRef();
+ * //...
+ * <OverlayBorder targetElement={this.elementRef.current} />
+ */
 export class OverlayBorder extends Component<ComponentBorderProps> {
 	private popperInstance?: Instance;
 	private ref = createRef();
@@ -51,7 +64,8 @@ export class OverlayBorder extends Component<ComponentBorderProps> {
 				{
 					name: 'computeStyles',
 					options: {
-						adaptive: false, // true by default
+						// do not update coordinates continuously, and ignore popper size
+						adaptive: false,
 					},
 				},
 				{
@@ -71,7 +85,7 @@ export class OverlayBorder extends Component<ComponentBorderProps> {
 	}
 
 	render() {
-		const { children, className, targetElement, ...rest } = this.props; //TODO
+		const { className, targetElement, ...rest } = this.props;
 		return (
 			<div
 				{...rest}

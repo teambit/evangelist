@@ -12,26 +12,15 @@ import { Image } from '../../elements/image';
 import styles from './twitter-card.module.scss';
 
 type TwitterCardProps = {
-	/**
-	 * Twitter username
-	 */
+	/** Twitter username */
 	title: string;
-	/**
-	 * User avatar
-	 */
+	/** User avatar */
 	image: string;
-	/**
-	 * shows user as 'verified'
-	 */
+	/** shows user as 'verified' */
 	verified: boolean;
-
-	/**
-	 * html id attached to title
-	 */
+	/** html id attached to title */
 	titleId?: string;
-	/**
-	 * html id attached to content
-	 */
+	/** html id attached to content */
 	textId?: string;
 } & CardProps;
 

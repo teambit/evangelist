@@ -5,7 +5,7 @@ import numberAbbreviate from 'number-abbreviate';
 
 import styles from './github-link.module.scss';
 
-import { PrimaryLink, PrimaryLinkProps } from '../community-link';
+import { CommunityLink, PrimaryLinkProps } from '../community-link';
 import { Icon } from '../../../elements/icon';
 import { Image } from '../../../elements/image';
 
@@ -17,10 +17,9 @@ export type GithubLinkProps = {
 } & PrimaryLinkProps;
 
 /**
- * Concrete link to a Github repository, with logo and star count.
+ * Concrete link to a Github repository, with logo and star count.<br/>
+ * Star count automatically shortens into metric prefix, using [number-abbreviate](https://www.npmjs.com/package/number-abbreviate).
  * @name GithubLink
- *
- * Automatically shortens long numbers into metric prefix, using [number-abbreviate](https://www.npmjs.com/package/number-abbreviate)
  * @example
  * <GithubLink href="https://github.com/teambit/bit" starCount={500000} />
  */
@@ -30,7 +29,7 @@ export class GithubLink extends PureComponent<GithubLinkProps> {
 		const { className, starCount, ...rest } = this.props;
 
 		return (
-			<PrimaryLink
+			<CommunityLink
 				external
 				data-bit-id="bit.evangelist/marketing/community-links/github-link"
 				className={classNames(styles.githubLink, className)}
@@ -42,7 +41,7 @@ export class GithubLink extends PureComponent<GithubLinkProps> {
 					<Image alt="star" src="homepage/star.svg" className={styles.star} />
 				)}
 				{starCount && <span>{numberAbbreviate(starCount)}</span>}
-			</PrimaryLink>
+			</CommunityLink>
 		);
 	}
 }

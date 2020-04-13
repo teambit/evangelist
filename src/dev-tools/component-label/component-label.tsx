@@ -6,25 +6,19 @@ import BitNameId from '@bit/bit.javascript.component.id';
 
 import { DuoComponentBubble } from './duo-component-bubble';
 import { DefaultLabel } from './default-label';
-// import { CompactComponentBubble } from './compact-component-bubble';
 
 export type ComponentLabelProps = {
-	/**
-	 * Id of the component. Will show nothing if id is missing, and will show text only when id is not a valid bit-id
-	 */
+	/** Id of the component. Will show nothing if id is missing, and will show text only when id is not a valid bit-id */
 	bitId?: string;
-	/**
-	 * Explicitly set component version, and override any id that is part of the bit id.
-	 */
+	/** Explicitly set component version, and override any id that is part of the bit id. */
 	versionOverride?: string;
-	/**
-	 * Show full scope name, including owner
-	 */
+	/** Show full scope name, including owner */
 	fullScopeName?: boolean;
 } & HTMLAttributes<HTMLDivElement>;
 
 /**
  * Given a component id, shows a label for it and its scope, with a link to its bit.dev entry.
+ * @name ComponentLabel
  * @example
  * <ComponentLabel bitId="kutorg.nerv/atoms/lcl" versionOverride="1.5.3" />
  */

@@ -17,8 +17,8 @@ import { Image } from '../../elements/image';
 /**
  * @name AutoDocs
  * @description
- * A section of static content, detailing the Bit's documentation features.
- * Assumes the consuming component to supply className with width and other styles.
+ * A section of static content, detailing the Bit's documentation features.  
+ * Assumes the consuming component to supply a className, with width and other styles.
  */
 
 export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {

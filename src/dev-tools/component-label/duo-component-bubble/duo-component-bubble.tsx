@@ -1,27 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Card, CardProps } from '@bit/bit.base-ui.surfaces.card';
-//@ts-ignore
-import BitNameId from '@bit/bit.javascript.component.id';
+import { Card } from '@bit/bit.base-ui.surfaces.card';
 
 import scopeStyles from './scope-colors.module.scss';
 import { BASE_URL } from '../base-url';
 
+import { DuoComponentBubbleProps, ScopeBubbleProps, ComponentBubbleProps } from './duo-component-types';
 import styles from './duo-component-bubble.module.scss';
-
-type DuoComponentBubbleProps = {
-	bitId: BitNameId;
-	fullScopeName?: boolean;
-} & CardProps;
-
-type ScopeBubbleProps = {
-	bitId: BitNameId;
-	fullScopeName?: boolean;
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
-
-type ComponentBubbleProps = {
-	bitId: BitNameId;
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export function DuoComponentBubble({
 	bitId,
@@ -52,7 +37,7 @@ export function DuoComponentBubble({
 	);
 }
 
-export function ScopeBubble({ bitId, fullScopeName, className, ...rest }: ScopeBubbleProps) {
+function ScopeBubble({ bitId, fullScopeName, className, ...rest }: ScopeBubbleProps) {
 	const fullName = bitId.getFullScopeName();
 	const name = bitId.scope;
 	const scopeUrl = `${BASE_URL}/${bitId.getFullScopeName('/')}`;
@@ -72,7 +57,7 @@ export function ScopeBubble({ bitId, fullScopeName, className, ...rest }: ScopeB
 	);
 }
 
-export function ComponentBubble({ bitId, className, ...rest }: ComponentBubbleProps) {
+function ComponentBubble({ bitId, className, ...rest }: ComponentBubbleProps) {
 	const version = bitId.version;
 	const fullName = bitId.getFullName();
 	const componentQuery = bitId.toQueryParams();

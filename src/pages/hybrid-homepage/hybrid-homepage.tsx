@@ -19,17 +19,11 @@ import { IndependentTeams } from '../../sections/independent-teams';
 import { TalkToExperts } from '../../sections/talk-to-experts';
 
 export type HybridHomepageProps = {
-	/**
-	 * placeholder for content, after the first purple background fold.
-	 */
+	/** placeholder for content, after the first purple background fold. */
 	communityCollections?: ReactNode;
-	/**
-	 * placeholder for content, at the bottom of the first purple background fold
-	 */
+	/** placeholder for content, at the bottom of the first purple background fold */
 	mainCta?: ReactNode;
-	/**
-	 * show github star count at the community section
-	 */
+	/** show github star count at the community section */
 	githubStars?: number;
 } & HTMLAttributes<HTMLDivElement>;
 

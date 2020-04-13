@@ -21,7 +21,7 @@ export type TestimonialProps = {
 
 /**
  * User testimonial. Showing a quote, user avatar, and name.
- *
+ * @name Testimonial
  * @example
  * <Testimonial active
  * 	data={{ name: 'Barbra', description: 'head of barbering', content: 'Great scissors!', avatar: '...', }}

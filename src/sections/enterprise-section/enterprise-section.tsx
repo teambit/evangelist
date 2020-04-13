@@ -13,7 +13,7 @@ import { colSpanMd } from '@bit/bit.base-ui.layout.col-span';
 import { Image } from '../../elements/image';
 import { H2, H4 } from '../../elements/heading';
 import { Icon } from '../../elements/icon';
-import { PrimaryLink } from '../../elements/link';
+import { Link } from '../../elements/link';
 
 /**
  * @name EnterpriseSection
@@ -42,10 +42,10 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 						need and more. Try it for free.
 					</Paragraph>
 					<Paragraph size={PossibleSizes.sm}>
-						<PrimaryLink className={styles.ctaLink} href="https://bit.dev/pricing">
+						<Link className={styles.ctaLink} href="/pricing">
 							See plans and pricing
 							<Icon of="right_arrow" className={styles.linkArrow} />
-						</PrimaryLink>
+						</Link>
 					</Paragraph>
 				</div>
 				<div className={colSpanMd[5]}>

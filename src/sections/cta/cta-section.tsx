@@ -8,7 +8,7 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { justifyItems, alignItems, text } from '@bit/bit.base-ui.layout.align';
-import { PrimaryLink } from '../../marketing/community-links/community-link';
+import { Link } from '../../elements/link';
 import { Button } from '../../elements/button';
 
 type CtaProps = React.HTMLAttributes<HTMLDivElement>;
@@ -43,9 +43,9 @@ export function CtaSection(props: CtaProps) {
 					Empower your team to build faster together.
 				</Paragraph>
 			</div>
-			<PrimaryLink href="https://bit.dev/signup">
+			<Link href="/signup">
 				<Button importance="cta">Start for free</Button>
-			</PrimaryLink>
+			</Link>
 		</Grid>
 	);
 }

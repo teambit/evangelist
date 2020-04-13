@@ -10,9 +10,10 @@ import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
+import { links } from '../../content/links';
 import { H1 } from '../../elements/heading';
 import { IconLine } from '../../elements/icon-line';
-import { PrimaryLink } from '../../elements/link';
+import { Link } from '../../elements/link';
 import { Image } from '../../elements/image';
 import { Button } from '../../elements/button';
 
@@ -65,15 +66,15 @@ export function ReuseLandingSection(props: ReuseLandingProps) {
 						element="div"
 						className={classNames(styles.buttons)}
 					>
-						<PrimaryLink href="https://bit.dev/signup">
+						<Link href="/signup">
 							<Button importance="cta" elevation="medium">
 								Get Started
 							</Button>
-						</PrimaryLink>
+						</Link>
 						<div className={styles.spacer} />
-						<PrimaryLink external href="https://docs.bit.dev/docs/quick-start">
+						<Link external href={`${links.docs}/docs/quick-start`}>
 							<Button elevation="medium">Learn more</Button>
-						</PrimaryLink>
+						</Link>
 					</Paragraph>
 					<IconLine icons={iconsArray} className={styles.icons} />
 				</div>
