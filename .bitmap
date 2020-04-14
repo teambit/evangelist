@@ -37,7 +37,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/dev-tools/component-highlighter@1.0.5": {
+    "bit.evangelist/dev-tools/component-highlighter@1.0.6": {
         "files": [
             {
                 "relativePath": "src/dev-tools/component-highlighter/component-highlighter.module.scss",
@@ -797,5 +797,5 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "version": "14.7.6"
+    "version": "14.7.7-dev.3"
 }
