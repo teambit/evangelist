@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 
-import classNames from 'classnames';
+import classNames from 'classnames'; 
 
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';

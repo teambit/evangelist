@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import styles from './build-together.module.scss';
+import styles from './build-together.module.scss'; 
 
 import { fourWayGrid } from '@bit/bit.base-ui.layout.grid-presets.four-way-grid';
 

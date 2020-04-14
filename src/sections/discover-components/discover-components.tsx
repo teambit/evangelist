@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import styles from './discover-components.module.scss';
+import styles from './discover-components.module.scss'; 
 
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 

@@ -480,7 +480,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/hybrid-homepage@2.0.11": {
+    "bit.evangelist/pages/hybrid-homepage@2.0.12": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -503,7 +503,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/build-together@0.0.2": {
+    "bit.evangelist/sections/build-together@1.0.0": {
         "files": [
             {
                 "relativePath": "src/sections/build-together/build-together.module.scss",
@@ -618,7 +618,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/develop-components@0.0.1": {
+    "bit.evangelist/sections/develop-components@1.0.0": {
         "files": [
             {
                 "relativePath": "src/sections/develop-components/develop-components.module.scss",
@@ -641,7 +641,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/discover-components@0.0.1": {
+    "bit.evangelist/sections/discover-components@1.0.0": {
         "files": [
             {
                 "relativePath": "src/sections/discover-components/discover-components.module.scss",
@@ -687,7 +687,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/hero@0.0.1": {
+    "bit.evangelist/sections/hero@1.0.0": {
         "files": [
             {
                 "relativePath": "src/sections/hero/hero.module.scss",
@@ -733,7 +733,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/reuse-components@0.0.1": {
+    "bit.evangelist/sections/reuse-components@1.0.0": {
         "files": [
             {
                 "relativePath": "src/sections/reuse-components/index.ts",
