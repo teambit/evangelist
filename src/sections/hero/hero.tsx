@@ -1,7 +1,7 @@
 import React, { HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
-import styles from './reuse-landing-section.module.scss';
+import styles from './hero.module.scss';
 
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
@@ -34,15 +34,15 @@ type ReuseLandingProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 /**
- * @name IndependentTeams
+ * @name Hero
  * @description
  * The Main and first section the user sees as he enters the page.
  * Assumes a dark purplish background behind it.
  */
 
-export function ReuseLandingSection(props: ReuseLandingProps) {
+export function Hero(props: ReuseLandingProps) {
 	return (
-		<div data-bit-id="bit.evangelist/sections/reuse-landing-section" {...props}>
+		<div data-bit-id="bit.evangelist/sections/hero" {...props}>
 			<Grid colL={2} className={classNames(styles.mainGrid, text.center, text.l.left)}>
 				<div>
 					<div>

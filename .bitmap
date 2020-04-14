@@ -480,7 +480,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/hybrid-homepage@2.0.9": {
+    "bit.evangelist/pages/hybrid-homepage@2.0.11": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -503,49 +503,26 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/auto-docs@2.0.5": {
+    "bit.evangelist/sections/build-together@0.0.2": {
         "files": [
             {
-                "name": "auto-docs.module.scss",
-                "relativePath": "src/sections/auto-docs/auto-docs.module.scss",
-                "test": false
+                "relativePath": "src/sections/build-together/build-together.module.scss",
+                "test": false,
+                "name": "build-together.module.scss"
             },
             {
-                "name": "auto-docs.tsx",
-                "relativePath": "src/sections/auto-docs/auto-docs.tsx",
-                "test": false
+                "relativePath": "src/sections/build-together/build-together.tsx",
+                "test": false,
+                "name": "build-together.tsx"
             },
             {
-                "name": "index.tsx",
-                "relativePath": "src/sections/auto-docs/index.tsx",
-                "test": false
+                "relativePath": "src/sections/build-together/index.ts",
+                "test": false,
+                "name": "index.ts"
             }
         ],
-        "mainFile": "src/sections/auto-docs/index.tsx",
-        "trackDir": "src/sections/auto-docs",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.evangelist/sections/booking-breakdown@2.0.6": {
-        "files": [
-            {
-                "name": "booking-breakdown.module.scss",
-                "relativePath": "src/sections/booking-breakdown/booking-breakdown.module.scss",
-                "test": false
-            },
-            {
-                "name": "booking-breakdown.tsx",
-                "relativePath": "src/sections/booking-breakdown/booking-breakdown.tsx",
-                "test": false
-            },
-            {
-                "name": "index.ts",
-                "relativePath": "src/sections/booking-breakdown/index.ts",
-                "test": false
-            }
-        ],
-        "mainFile": "src/sections/booking-breakdown/index.ts",
-        "trackDir": "src/sections/booking-breakdown",
+        "mainFile": "src/sections/build-together/index.ts",
+        "trackDir": "src/sections/build-together",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -641,6 +618,52 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.evangelist/sections/develop-components@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/develop-components/develop-components.module.scss",
+                "test": false,
+                "name": "develop-components.module.scss"
+            },
+            {
+                "relativePath": "src/sections/develop-components/develop-components.tsx",
+                "test": false,
+                "name": "develop-components.tsx"
+            },
+            {
+                "relativePath": "src/sections/develop-components/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/sections/develop-components/index.ts",
+        "trackDir": "src/sections/develop-components",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.evangelist/sections/discover-components@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/sections/discover-components/discover-components.module.scss",
+                "test": false,
+                "name": "discover-components.module.scss"
+            },
+            {
+                "relativePath": "src/sections/discover-components/discover-components.tsx",
+                "test": false,
+                "name": "discover-components.tsx"
+            },
+            {
+                "relativePath": "src/sections/discover-components/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "src/sections/discover-components/index.tsx",
+        "trackDir": "src/sections/discover-components",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.evangelist/sections/enterprise-section@2.0.5": {
         "files": [
             {
@@ -664,26 +687,26 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/hybrid-perfect-sync@2.0.7": {
+    "bit.evangelist/sections/hero@0.0.1": {
         "files": [
             {
-                "name": "hybrid-perfect-sync.module.scss",
-                "relativePath": "src/sections/hybrid-perfect-sync/hybrid-perfect-sync.module.scss",
-                "test": false
+                "relativePath": "src/sections/hero/hero.module.scss",
+                "test": false,
+                "name": "hero.module.scss"
             },
             {
-                "name": "hybrid-perfect-sync.tsx",
-                "relativePath": "src/sections/hybrid-perfect-sync/hybrid-perfect-sync.tsx",
-                "test": false
+                "relativePath": "src/sections/hero/hero.tsx",
+                "test": false,
+                "name": "hero.tsx"
             },
             {
-                "name": "index.ts",
-                "relativePath": "src/sections/hybrid-perfect-sync/index.ts",
-                "test": false
+                "relativePath": "src/sections/hero/index.tsx",
+                "test": false,
+                "name": "index.tsx"
             }
         ],
-        "mainFile": "src/sections/hybrid-perfect-sync/index.ts",
-        "trackDir": "src/sections/hybrid-perfect-sync",
+        "mainFile": "src/sections/hero/index.tsx",
+        "trackDir": "src/sections/hero",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -710,49 +733,26 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/reuse-landing-section@2.0.6": {
+    "bit.evangelist/sections/reuse-components@0.0.1": {
         "files": [
             {
-                "name": "index.tsx",
-                "relativePath": "src/sections/reuse-landing-section/index.tsx",
-                "test": false
-            },
-            {
-                "name": "reuse-landing-section.module.scss",
-                "relativePath": "src/sections/reuse-landing-section/reuse-landing-section.module.scss",
-                "test": false
-            },
-            {
-                "name": "reuse-landing-section.tsx",
-                "relativePath": "src/sections/reuse-landing-section/reuse-landing-section.tsx",
-                "test": false
-            }
-        ],
-        "mainFile": "src/sections/reuse-landing-section/index.tsx",
-        "trackDir": "src/sections/reuse-landing-section",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "bit.evangelist/sections/sync-section@2.0.6": {
-        "files": [
-            {
-                "relativePath": "src/sections/sync-section/index.ts",
+                "relativePath": "src/sections/reuse-components/index.ts",
                 "test": false,
                 "name": "index.ts"
             },
             {
-                "relativePath": "src/sections/sync-section/sync-section.module.scss",
+                "relativePath": "src/sections/reuse-components/reuse-components.module.scss",
                 "test": false,
-                "name": "sync-section.module.scss"
+                "name": "reuse-components.module.scss"
             },
             {
-                "relativePath": "src/sections/sync-section/sync-section.tsx",
+                "relativePath": "src/sections/reuse-components/reuse-components.tsx",
                 "test": false,
-                "name": "sync-section.tsx"
+                "name": "reuse-components.tsx"
             }
         ],
-        "mainFile": "src/sections/sync-section/index.ts",
-        "trackDir": "src/sections/sync-section",
+        "mainFile": "src/sections/reuse-components/index.ts",
+        "trackDir": "src/sections/reuse-components",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -797,5 +797,5 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "version": "14.7.7-dev.3"
+    "version": "14.7.7"
 }

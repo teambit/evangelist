@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import styles from './auto-docs.module.scss';
+import styles from './discover-components.module.scss';
 
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 
@@ -15,18 +15,18 @@ import { H2, H3 } from '../../elements/heading';
 import { Image } from '../../elements/image';
 
 /**
- * @name AutoDocs
+ * @name DiscoverComponents
  * @description
- * A section of static content, detailing the Bit's documentation features.  
+ * A section of static content, detailing the Bit's documentation features.
  * Assumes the consuming component to supply a className, with width and other styles.
  */
 
-export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
+export function DiscoverComponents(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
-			className={classNames(props.className, styles.autoDocs)}
-			data-bit-id="bit.evangelist/sections/auto-docs"
+			className={classNames(props.className)}
+			data-bit-id="bit.evangelist/sections/discover-components"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm} className={text.center}>
@@ -66,7 +66,15 @@ export function AutoDocs(props: HTMLAttributes<HTMLDivElement>) {
 				</div>
 				<Image src="homepage-bit/button-docs.png" alt="generated docs" fullWidth />
 			</Grid>
-			<Grid colMd={12} className={classNames(text.left, halfZGrid, alignItems.center, styles.singleGrid)}>
+			<Grid
+				colMd={12}
+				className={classNames(
+					text.left,
+					halfZGrid,
+					alignItems.center,
+					styles.singleGrid
+				)}
+			>
 				<div>
 					<H3 size={PossibleSizes.xs}>Play with examples hands-on</H3>
 					<Paragraph>

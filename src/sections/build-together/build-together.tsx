@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import styles from './hybrid-perfect-sync.module.scss';
+import styles from './build-together.module.scss';
 
 import { fourWayGrid } from '@bit/bit.base-ui.layout.grid-presets.four-way-grid';
 
@@ -16,18 +16,18 @@ import { Image } from '../../elements/image';
 import { H2, H3 } from '../../elements/heading';
 
 /**
- * @name HybridPerfectSync
+ * @name BuildTogether
  * @description
  * A section of static content, showing Bit's collaboration abilities.
  * Assumes the consuming component to supply className with width and other styles.
  */
 
-export function HybridPerfectSync(props: HTMLAttributes<HTMLDivElement>) {
+export function BuildTogether(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div
 			{...props}
 			className={classNames(props.className, text.center)}
-			data-bit-id="bit.evangelist/sections/hybrid-perfect-sync"
+			data-bit-id="bit.evangelist/sections/build-together"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>Keep apps and teams in perfect sync</H2>

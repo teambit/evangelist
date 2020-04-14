@@ -7,16 +7,16 @@ import { CarouselSection } from '../../sections/carouselSection';
 import { CtaSection } from '../../sections/cta';
 import { centerColumn, wideColumn } from '@bit/bit.base-ui.layout.page-frame';
 
-import { ReuseLandingSection } from '../../sections/reuse-landing-section';
 import { EnterpriseSection } from '../../sections/enterprise-section';
-import { SyncSection } from '../../sections/sync-section';
-import { BookingBreakdown } from '../../sections/booking-breakdown';
 import { CommunitySection } from '../../sections/community';
 import { ComponentsAdvantages } from '../../sections/component-advantages';
-import { HybridPerfectSync } from '../../sections/hybrid-perfect-sync';
-import { AutoDocs } from '../../sections/auto-docs';
 import { IndependentTeams } from '../../sections/independent-teams';
 import { TalkToExperts } from '../../sections/talk-to-experts';
+import { Hero } from '../../sections/hero';
+import { DevelopComponents } from '../../sections/develop-components';
+import { ReuseComponents } from '../../sections/reuse-components';
+import { BuildTogether } from '../../sections/build-together';
+import { DiscoverComponents } from '../../sections/discover-components';
 
 export type HybridHomepageProps = {
 	/** placeholder for content, after the first purple background fold. */
@@ -48,9 +48,7 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 						styles.margin180
 					)}
 				>
-					<ReuseLandingSection
-						className={classNames(styles.landingSection, centerColumn)}
-					/>
+					<Hero className={classNames(styles.landingSection, centerColumn)} />
 
 					{mainCta}
 				</div>
@@ -70,12 +68,14 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 						styles.foldMargin
 					)}
 				>
-					<BookingBreakdown className={classNames(centerColumn, styles.foldMargin)} />
+					<DevelopComponents
+						className={classNames(centerColumn, styles.foldMargin)}
+					/>
 
 					<ComponentsAdvantages className={classNames(centerColumn)} />
 				</div>
 
-				<SyncSection className={classNames(centerColumn, styles.foldMargin)} />
+				<ReuseComponents className={classNames(centerColumn, styles.foldMargin)} />
 
 				<TalkToExperts className={classNames(centerColumn, styles.foldMargin)} />
 
@@ -86,10 +86,10 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 						styles.foldMargin
 					)}
 				>
-					<HybridPerfectSync className={classNames(centerColumn)} />
+					<BuildTogether className={classNames(centerColumn)} />
 				</div>
 
-				<AutoDocs className={classNames(centerColumn, styles.foldMargin)} />
+				<DiscoverComponents className={classNames(centerColumn, styles.foldMargin)} />
 
 				<div
 					className={classNames(
