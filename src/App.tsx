@@ -6,7 +6,8 @@ import { Theme } from '@bit/bit.base-ui.theme.theme-provider';
 
 import { EvaIconFont } from './theme/icon-font';
 
-import { HybridHomepage } from './pages/hybrid-homepage';
+// import { HybridHomepage } from './pages/hybrid-homepage';
+import { EnterpriseOffering } from './pages/enterprise-offering';
 import { ComponentHighlighter } from './dev-tools/component-highlighter';
 import versionMap from './content/version-map/version-map';
 
@@ -17,13 +18,14 @@ class App extends PureComponent {
 		return (
 			<Theme>
 				<ComponentHighlighter
-					active
+					// active
 					versionMap={versionMap}
 					blacklist={highlightBlacklist}
 					fullScopeName={false}
 				>
 					<EvaIconFont query="aqq93z" />
-					<HybridHomepage githubStars={10000} />
+					{/* <HybridHomepage githubStars={10000} /> */}
+					<EnterpriseOffering/>
 				</ComponentHighlighter>
 			</Theme>
 		);
