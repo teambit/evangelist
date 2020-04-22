@@ -1,3 +1,5 @@
+@import '~@bit/bit.base-ui.theme.colors';
+
 .integrationBadges {
 	gap: 0;
 
@@ -7,4 +9,25 @@
 	:nth-child(odd) {
 		margin-bottom: 40px;
 	}
+}
+
+.fullWidth {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.eveInput {
+	padding: 11px 18px;
+	font-size: inherit;
+
+	// width: 370px;
+	// height: 46px;
+	border-radius: 7px;
+	border: solid 1px $w20; //TODO - rename to D10
+	// TODO - new color W20 'cloud'
+	background-color: #f6f6f6;
+}
+
+textarea.eveInput {
+	resize: vertical;
 }

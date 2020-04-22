@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import { BaseImage } from '@bit/bit.base-ui.elements.image';
-// import { Separator } from '@bit/bit.base-ui.elements.separator';
+import { Separator } from '@bit/bit.base-ui.elements.separator';
 import { centerColumn, textColumn, wideColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { Card } from '@bit/bit.base-ui.surfaces.card';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
@@ -529,22 +529,47 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 	>
 		<Card
 			style={{
-				height: '553px',
-				width: '490px',
 				margin: 'auto',
 				background: 'white',
+				width: '490px',
 			}}
 		>
-			<H3 size={PossibleSizes.xxs}>Contact our sales team</H3>
-			<MutedText>Our expert team will get in touch with you shortly!</MutedText>
-			<form>
-				<input placeholder="Company email" />
+			<form
+				onSubmit={(e) => e.preventDefault()}
+				style={{
+					fontSize: '14px',
+					display: 'flex',
+					flexDirection: 'column',
+					height: '553px',
+				}}
+			>
+				<H3 size={PossibleSizes.xs}>Contact our sales team</H3>
+				<MutedText style={{ marginBottom: '40px' }}>
+					Our expert team will get in touch with you shortly!
+				</MutedText>
+				<EvaInput
+					className={styles.fullWidth}
+					placeholder="Company email"
+					style={{ marginBottom: '18px' }}
+				/>
 				<br />
-				<input placeholder="..." />
+				<EvaTextArea
+					className={styles.fullWidth}
+					placeholder="..."
+					style={{ marginBottom: '18px', flexGrow: 1 }}
+				/>
 				<br />
-				<Button importance="cta">Contact Sales</Button>
-				<TextfulSeparator>OR</TextfulSeparator>
-				<Button>Book intro</Button>
+				<Button
+					importance="cta"
+					className={styles.fullWidth}
+					style={{ marginBottom: '18px' }}
+				>
+					Contact Sales
+				</Button>
+				<TextfulSeparator style={{ marginBottom: '18px' }}>
+					<MutedText style={{ padding: '0 11px' }}>OR</MutedText>
+				</TextfulSeparator>
+				<Button className={styles.fullWidth}>Book intro</Button>
 			</form>
 		</Card>
 		<div style={{ width: '490px', margin: 'auto', position: 'relative' }}>
@@ -602,6 +627,7 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 				style={{
 					background: 'url(/enterprise-img/7-support/support-circuits-bg.svg)',
 					backgroundRepeat: 'no-repeat',
+					backgroundPosition: 'center 0',
 				}}
 			>
 				<ExpertSupport
@@ -622,8 +648,27 @@ function Bullet(props: any) {
 	return <div {...props} />;
 }
 
-function TextfulSeparator(props: any) {
-	return <div {...props} />;
+function EvaInput(props: React.InputHTMLAttributes<HTMLInputElement>) {
+	const { className, ...rest } = props;
+
+	return <input {...rest} className={classNames(className, styles.eveInput)} />;
+}
+
+function EvaTextArea(props: React.InputHTMLAttributes<HTMLTextAreaElement>) {
+	const { className, ...rest } = props;
+
+	return <textarea {...rest} className={classNames(className, styles.eveInput)} />;
+}
+
+function TextfulSeparator(props: React.HTMLAttributes<HTMLDivElement>) {
+	const { children } = props;
+	return (
+		<div {...props} style={{ display: 'flex', alignItems: 'center', ...props.style }}>
+			<Separator style={{ borderStyle: 'dashed' }} />
+			{children}
+			<Separator style={{ borderStyle: 'dashed' }} />
+		</div>
+	);
 }
 
 //css component
