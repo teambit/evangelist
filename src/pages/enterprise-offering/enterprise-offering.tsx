@@ -10,7 +10,7 @@ import { ThemedText } from '@bit/bit.base-ui.text.themed-text';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 
 import { Button } from '../../elements/button';
-import { H1, H2, H3 } from '../../elements/heading';
+import { H1, H2, H3, H4 } from '../../elements/heading';
 import { Icon } from '../../elements/icon';
 import { baseColor } from './theme-color';
 import { themedText } from './themed-text';
@@ -465,10 +465,22 @@ function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 
 const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 	<Section {...props}>
-		<H2 size={PossibleSizes.md}>Enjoy world-class support and hands-on experts</H2>
-		<Card style={{ background: 'white', margin: '17px 0' }}>
-			<MutedText>10:30</MutedText>
-			<H3 size={PossibleSizes.xxs}>Response-time SLA</H3>
+		<H2 size={PossibleSizes.md} style={{ marginBottom: '60px' }}>
+			Enjoy world-class support and hands-on experts
+		</H2>
+
+		<Card
+			style={{
+				background: 'white',
+				marginBottom: '17px',
+				padding: '24px',
+				borderRadius: '20px',
+			}}
+		>
+			<div style={{ marginBottom: '8px' }}>
+				<MutedText>10:30</MutedText>
+			</div>
+			<H4 size={PossibleSizes.xxs}>Response-time SLA</H4>
 			<Paragraph>
 				<MutedText>
 					Enjoy industry-leading response times and availability through multiple
@@ -477,17 +489,35 @@ const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 				</MutedText>
 			</Paragraph>
 		</Card>
-		<Card style={{ background: 'white', margin: '17px 0' }}>
-			<MutedText>10:31</MutedText>
-			<H3 size={PossibleSizes.xxs}>Named contacts with escalation paths</H3>
+		<Card
+			style={{
+				background: 'white',
+				marginBottom: '17px',
+				padding: '24px',
+				borderRadius: '20px',
+			}}
+		>
+			<div style={{ marginBottom: '8px' }}>
+				<MutedText>10:31</MutedText>
+			</div>
+			<H4 size={PossibleSizes.xxs}>Named contacts with escalation paths</H4>
 			<MutedText>
 				Get named Bit experts with your success as their personal goal, and enjoy
 				multiple escalation paths vis email, chat and phone.
 			</MutedText>
 		</Card>
-		<Card style={{ background: 'white', margin: '17px 0' }}>
-			<MutedText>10:32</MutedText>
-			<H3 size={PossibleSizes.xxs}>Expert review and training</H3>
+		<Card
+			style={{
+				background: 'white',
+				marginBottom: '17px',
+				padding: '24px',
+				borderRadius: '20px',
+			}}
+		>
+			<div style={{ marginBottom: '8px' }}>
+				<MutedText>10:32</MutedText>
+			</div>
+			<H4 size={PossibleSizes.xxs}>Expert review and training</H4>
 			<MutedText>
 				Get architectural-level consultation from industry-leading experts and enjoy
 				hands-on team training and onboarding with best practices and personalized
@@ -532,6 +562,8 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 				margin: 'auto',
 				background: 'white',
 				width: '490px',
+				height: '553px',
+				padding: '40px 61px 55px',
 			}}
 		>
 			<form
@@ -540,10 +572,10 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 					fontSize: '14px',
 					display: 'flex',
 					flexDirection: 'column',
-					height: '553px',
+					height: '100%',
 				}}
 			>
-				<H3 size={PossibleSizes.xs}>Contact our sales team</H3>
+				<H4 size={PossibleSizes.xs}>Contact our sales team</H4>
 				<MutedText style={{ marginBottom: '40px' }}>
 					Our expert team will get in touch with you shortly!
 				</MutedText>
@@ -552,13 +584,11 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 					placeholder="Company email"
 					style={{ marginBottom: '18px' }}
 				/>
-				<br />
 				<EvaTextArea
 					className={styles.fullWidth}
 					placeholder="..."
 					style={{ marginBottom: '18px', flexGrow: 1 }}
 				/>
-				<br />
 				<Button
 					importance="cta"
 					className={styles.fullWidth}
@@ -590,7 +620,8 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 
 export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div {...props}>
+		//TODO
+		<div {...props} style={{ ['--separator-color' as any]: '#ededed' }}>
 			<div
 				style={{
 					// background: 'url(enterprise-img/1-hero-section/hero-bg.svg)',
@@ -628,11 +659,12 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 					background: 'url(/enterprise-img/7-support/support-circuits-bg.svg)',
 					backgroundRepeat: 'no-repeat',
 					backgroundPosition: 'center 0',
+					paddingTop: '284px',
 				}}
 			>
 				<ExpertSupport
 					className={classNames(textColumn, marginCenter)}
-					style={{ padding: '200px' }}
+					style={{ marginBottom: '311px' }}
 				/>
 				<ContactSales className={classNames(marginCenter)} />
 			</div>
@@ -660,13 +692,14 @@ function EvaTextArea(props: React.InputHTMLAttributes<HTMLTextAreaElement>) {
 	return <textarea {...rest} className={classNames(className, styles.eveInput)} />;
 }
 
+// TODO - make base component
 function TextfulSeparator(props: React.HTMLAttributes<HTMLDivElement>) {
 	const { children } = props;
 	return (
 		<div {...props} style={{ display: 'flex', alignItems: 'center', ...props.style }}>
-			<Separator style={{ borderStyle: 'dashed' }} />
+			<Separator style={{ borderStyle: 'dashed', borderBottomWidth: '2px' }} />
 			{children}
-			<Separator style={{ borderStyle: 'dashed' }} />
+			<Separator style={{ borderStyle: 'dashed', borderBottomWidth: '2px' }} />
 		</div>
 	);
 }
