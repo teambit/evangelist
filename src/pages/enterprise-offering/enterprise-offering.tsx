@@ -2,8 +2,8 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import { BaseImage } from '@bit/bit.base-ui.elements.image';
-import { Separator } from '@bit/bit.base-ui.elements.separator';
-import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
+// import { Separator } from '@bit/bit.base-ui.elements.separator';
+import { centerColumn, textColumn, wideColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { Card } from '@bit/bit.base-ui.surfaces.card';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { ThemedText } from '@bit/bit.base-ui.text.themed-text';
@@ -14,31 +14,48 @@ import { H1, H2, H3 } from '../../elements/heading';
 import { Icon } from '../../elements/icon';
 import { baseColor } from './theme-color';
 import { themedText } from './themed-text';
-import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
+import { text, marginCenter, alignItems } from '@bit/bit.base-ui.layout.align';
+import { Grid } from '@bit/bit.base-ui.layout.grid-component';
+
+import styles from './enterprise-offering.module.scss';
 
 function Hero(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<Section {...props}>
-			<H1 size={PossibleSizes.sm}>
-				<ThemedText>The Enterprise component platform</ThemedText>
-			</H1>
-			<Paragraph size={PossibleSizes.lg}>
-				Speed delivery of applications, features, and projects while reducing costs and
-				time to market. Enjoy industry-leading security, performance, and scalability
-				with world-class support.
-			</Paragraph>
-			<Button importance="cta">Contact Sales</Button> <Button>Book intro</Button>
+		<Grid
+			colL={2}
+			{...props}
+			className={classNames(props.className, text.center, text.l.left)}
+			style={{ gridGap: '74px', alignItems: 'center' }}
+		>
+			<div>
+				<H1 size={PossibleSizes.sm}>
+					<ThemedText>The Enterprise component platform</ThemedText>
+				</H1>
+				<Paragraph size={PossibleSizes.lg}>
+					Speed delivery of applications, features, and projects while reducing costs
+					and time to market. Enjoy industry-leading security, performance, and
+					scalability with world-class support.
+				</Paragraph>
+				<Button importance="cta">Contact Sales</Button> <Button>Book intro</Button>
+			</div>
 			<BaseImage
 				alt="compartmentalized corporate ui"
 				src={'/enterprise-img/1-hero-section/hero-enterprise.svg'}
-				fullWidth
+				className={marginCenter}
+				style={{ height: '550px' }}
+				// fullWidth
 			/>
-		</Section>
+		</Grid>
 	);
 }
 
 const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
-	<Section {...props}>
+	<Grid
+		colMd={2}
+		{...props}
+		className={classNames(props.className, text.center, text.l.left)}
+		style={{ alignItems: 'center' }}
+	>
 		<div
 			className={text.center}
 			style={{ display: 'grid', gridTemplate: '1fr 1fr / 1fr 1fr' }}
@@ -76,42 +93,51 @@ const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 			</div>
 		</div>
 
-		<Separator />
+		{/* <Separator /> */}
 
-		<H2 size={PossibleSizes.sm}>Powering enterprise app delivery</H2>
-		<Paragraph>
-			<MutedText>
-				Bit powers your organization to build and manage reusable components to speed
-				dev velocity, save costs and deliver a better user experience.
-			</MutedText>
-		</Paragraph>
-	</Section>
+		<div className={textColumn}>
+			<H2 size={PossibleSizes.sm}>Powering enterprise app delivery</H2>
+			<Paragraph>
+				<MutedText>
+					Bit powers your organization to build and manage reusable components to
+					speed dev velocity, save costs and deliver a better user experience.
+				</MutedText>
+			</Paragraph>
+		</div>
+	</Grid>
 );
 
 const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 	<Section {...props}>
-		<H2 size={PossibleSizes.sm}>Bit enterprise</H2>
-		<Paragraph size={PossibleSizes.lg}>
-			<MutedText>
-				Choose the best solution, features, and pricing for your enterprise. Get a plan
-				tailored for your specific needs, to boost delivery.
-			</MutedText>
-		</Paragraph>
+		<div className={classNames(textColumn, marginCenter, text.center)}>
+			<H2 size={PossibleSizes.sm}>Bit enterprise</H2>
+			<Paragraph size={PossibleSizes.lg}>
+				<MutedText>
+					Choose the best solution, features, and pricing for your enterprise.
+					<br />
+					Get a plan tailored for your specific needs, to boost delivery.
+				</MutedText>
+			</Paragraph>
+		</div>
 
-		<div
+		<Grid
+			colMd={2}
 			style={{
 				background: 'url(/enterprise-img/3-bit-enterprise/particles.svg)',
 				backgroundRepeat: 'no-repeat',
 				padding: '90px 78px',
+				gap: '40px',
 			}}
 		>
 			<Card
 				className={baseColor.neutral.default}
-				style={{ margin: '29px', background: 'white' }}
+				style={{ background: 'white', padding: '48px' }}
 			>
-				<H3 size={PossibleSizes.xs}>Security and compliance</H3>
+				<H3 size={PossibleSizes.xs} className={themedText}>
+					Security and compliance
+				</H3>
 				<Paragraph size={PossibleSizes.sm}>
-					<div>
+					<div style={{ marginBottom: '40px' }}>
 						Build with industry-leading security and compliance standards. Get tools
 						to control everything from identities to advanced audit-logging.
 					</div>
@@ -145,11 +171,13 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 			</Card>
 			<Card
 				className={baseColor.secondary}
-				style={{ margin: '29px', background: 'white' }}
+				style={{ background: 'white', padding: '48px' }}
 			>
-				<H3 size={PossibleSizes.xs}>Dedicated support</H3>
+				<H3 size={PossibleSizes.xs} className={themedText}>
+					Dedicated support
+				</H3>
 				<Paragraph size={PossibleSizes.sm}>
-					<div>
+					<div style={{ marginBottom: '40px' }}>
 						Get engineering-level support from core maintainers with named contacts,
 						quick response times and multiple escalation channels.
 					</div>
@@ -181,10 +209,12 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				</Paragraph>
 				<Button importance="cta">Contact Sales</Button>
 			</Card>
-			<Card style={{ margin: '29px', background: 'white' }}>
-				<H3 size={PossibleSizes.xs}>Power to build</H3>
+			<Card style={{ background: 'white', padding: '48px' }}>
+				<H3 size={PossibleSizes.xs} className={themedText}>
+					Power to build
+				</H3>
 				<Paragraph size={PossibleSizes.sm}>
-					<div>
+					<div style={{ marginBottom: '40px' }}>
 						Make sure you have the resources and performance to build for global
 						scale. Never stop delivery, no matter what.
 					</div>
@@ -214,13 +244,18 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				</Paragraph>
 				<Button importance="cta">Contact Sales</Button>
 			</Card>
-			<Card className={baseColor.impulse} style={{ margin: '29px', background: 'white' }}>
-				<H3 size={PossibleSizes.xs}>Expert consultation</H3>
-				<Paragraph size={PossibleSizes.sm}>
-					<div>
-						Get architectural-level review from world-class experts to review, plan
-						and build your A+ component infrastructure.
-					</div>
+			<Card
+				className={baseColor.impulse}
+				style={{ background: 'white', padding: '48px' }}
+			>
+				<H3 size={PossibleSizes.xs} className={themedText}>
+					Expert consultation
+				</H3>
+				<Paragraph size={PossibleSizes.sm} style={{ marginBottom: '40px' }}>
+					Get architectural-level review from world-class experts to review, plan and
+					build your A+ component infrastructure.
+				</Paragraph>
+				<div>
 					<div>
 						<Icon of="billing-checkmark" className={themedText} />
 						Architectural review by component experts.
@@ -241,48 +276,51 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 						<Icon of="billing-checkmark" className={themedText} /> Custom extensions
 						and integrations.
 					</div>
-				</Paragraph>
+				</div>
 				<Button importance="cta">Contact Sales</Button>
 			</Card>
-		</div>
+		</Grid>
 	</Section>
 );
 
 const ReliableAndSecure = (props: HTMLAttributes<HTMLDivElement>) => (
-	<Section {...props}>
-		<H2 size={PossibleSizes.sm}>Always reliable and secured</H2>
-		<Bullet>
-			<BaseImage src="/enterprise-img/4-secured-section/design.svg" alt="designed" />
-			<H3 size={PossibleSizes.xs}>Reliable by design</H3>
-			<MutedText>
-				Build with auto-scaling resources that never block you, while ensuring
-				impeccable availability with a Google-grade multi-zone architecture.
-			</MutedText>
-		</Bullet>
-		<Bullet>
-			<BaseImage src="/enterprise-img/4-secured-section/shield.svg" alt="shield" />
-			<H3 size={PossibleSizes.xs}>Always secured</H3>
-			<MutedText>
-				Keep your code private and secured with the highest and most advanced security
-				and information standards, policies, and practices.
-			</MutedText>
-		</Bullet>
-		<Bullet>
-			<BaseImage src="/enterprise-img/4-secured-section/trusted.svg" alt="trusted" />
-			<H3 size={PossibleSizes.xs}>Trusted by the best</H3>
-			<MutedText>
-				Bit’s platform is trusted by many global teams from regulated industries with
-				the highest possible information security standards.
-			</MutedText>
-		</Bullet>
+	<Grid colMd={2} {...props}>
+		<div>
+			<H2 size={PossibleSizes.sm}>Always reliable and secured</H2>
+			<Bullet>
+				<BaseImage src="/enterprise-img/4-secured-section/design.svg" alt="designed" />
+				<H3 size={PossibleSizes.xs}>Reliable by design</H3>
+				<MutedText>
+					Build with auto-scaling resources that never block you, while ensuring
+					impeccable availability with a Google-grade multi-zone architecture.
+				</MutedText>
+			</Bullet>
+			<Bullet>
+				<BaseImage src="/enterprise-img/4-secured-section/shield.svg" alt="shield" />
+				<H3 size={PossibleSizes.xs}>Always secured</H3>
+				<MutedText>
+					Keep your code private and secured with the highest and most advanced
+					security and information standards, policies, and practices.
+				</MutedText>
+			</Bullet>
+			<Bullet>
+				<BaseImage src="/enterprise-img/4-secured-section/trusted.svg" alt="trusted" />
+				<H3 size={PossibleSizes.xs}>Trusted by the best</H3>
+				<MutedText>
+					Bit’s platform is trusted by many global teams from regulated industries
+					with the highest possible information security standards.
+				</MutedText>
+			</Bullet>
+		</div>
 		<BaseImage
 			src="/enterprise-img/4-secured-section/sphere-enterprise.png"
-			alt="nightosphere"
+			alt="corporosphere"
+			style={{ width: '500px' }}
 		/>
-	</Section>
+	</Grid>
 );
 
-const IntegrationsSection = (props: HTMLAttributes<HTMLDivElement>) => {
+const EcoSystem = (props: HTMLAttributes<HTMLDivElement>) => {
 	return (
 		<Section {...props}>
 			<H2 size={PossibleSizes.sm}>Rooted in your ecosystem</H2>
@@ -292,104 +330,136 @@ const IntegrationsSection = (props: HTMLAttributes<HTMLDivElement>) => {
 					euismod. Suspendisse dictum sed nulla in pretium.
 				</MutedText>
 			</Paragraph>
-
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-asana.svg"
-				alt="asana"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-jenkins.svg"
-				alt="jenkins"
-			/>
-			<BaseImage src="/enterprise-img/5-ecosystem-section/logos/logo-aws.svg" alt="aws" />
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-azure.svg"
-				alt="azure"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-bitbucket.svg"
-				alt="bitbucket"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-circle.svg"
-				alt="circle"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-confluence.svg"
-				alt="confluence"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-github.svg"
-				alt="github"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-gitlub.svg"
-				alt="gitlub"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-google.svg"
-				alt="google"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-jira.svg"
-				alt="jira"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-netlify.svg"
-				alt="netlify"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-slack.svg"
-				alt="slack"
-			/>
-			<BaseImage
-				src="/enterprise-img/5-ecosystem-section/logos/logo-tavis.svg"
-				alt="tavis"
-			/>
 		</Section>
 	);
 };
 
+function Integrations(props: HTMLAttributes<HTMLDivElement>) {
+	return (
+		<Grid
+			col={3}
+			colMd={5}
+			colLg={7}
+			{...props}
+			className={classNames(props.className, styles.integrationBadges)}
+		>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-asana.svg"
+				alt="asana"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-jenkins.svg"
+				alt="jenkins"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-aws.svg"
+				alt="aws"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-azure.svg"
+				alt="azure"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-bitbucket.svg"
+				alt="bitbucket"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-circle.svg"
+				alt="circle"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-confluence.svg"
+				alt="confluence"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-github.svg"
+				alt="github"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-gitlub.svg"
+				alt="gitlub"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-google.svg"
+				alt="google"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-jira.svg"
+				alt="jira"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-netlify.svg"
+				alt="netlify"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-slack.svg"
+				alt="slack"
+				fullWidth
+			/>
+			<BaseImage
+				src="/enterprise-img/5-ecosystem-section/logos/logo-tavis.svg"
+				alt="tavis"
+				fullWidth
+			/>
+		</Grid>
+	);
+}
+
 function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<Section {...props}>
-			<H2 size={PossibleSizes.sm}>Advanced component usage</H2>
-			<MutedText>
-				em ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta tempor
-				euismod. Suspendisse dictum sed nulla in pretium.
-			</MutedText>
-			<div className={baseColor.success}>
-				<div>
-					<ThemedText>
-						<Icon of="billing-checkmark" className={themedText} />
-					</ThemedText>{' '}
-					Verify best-standard components for adoption
-				</div>
-				<div>
-					<ThemedText>
-						<Icon of="billing-checkmark" className={themedText} />
-					</ThemedText>{' '}
-					Track components and their status in every project
-				</div>
-				<div>
-					<ThemedText>
-						<Icon of="billing-checkmark" className={themedText} />
-					</ThemedText>{' '}
-					Get analytics and reports to control your codebase
-				</div>
-				<div>
-					<ThemedText>
-						<Icon of="billing-checkmark" className={themedText} />
-					</ThemedText>{' '}
-					Drive cross-team adoption of your design system
+		<Grid colSm={2} {...props} className={classNames(alignItems.center)}>
+			<div>
+				<H2 size={PossibleSizes.sm}>Advanced component usage analytics</H2>
+				<MutedText>
+					em ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta tempor
+					euismod. Suspendisse dictum sed nulla in pretium.
+				</MutedText>
+				<div className={baseColor.success}>
+					<div>
+						<ThemedText>
+							<Icon of="billing-checkmark" className={themedText} />
+						</ThemedText>{' '}
+						Verify best-standard components for adoption
+					</div>
+					<div>
+						<ThemedText>
+							<Icon of="billing-checkmark" className={themedText} />
+						</ThemedText>{' '}
+						Track components and their status in every project
+					</div>
+					<div>
+						<ThemedText>
+							<Icon of="billing-checkmark" className={themedText} />
+						</ThemedText>{' '}
+						Get analytics and reports to control your codebase
+					</div>
+					<div>
+						<ThemedText>
+							<Icon of="billing-checkmark" className={themedText} />
+						</ThemedText>{' '}
+						Drive cross-team adoption of your design system
+					</div>
 				</div>
 			</div>
 
 			<BaseImage
 				src="/enterprise-img/6-analytics/graphs-enterprise.svg"
 				alt="analytics"
+				fullWidth
 			/>
-		</Section>
+		</Grid>
 	);
 }
 
@@ -454,7 +524,7 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 			backgroundRepeat: 'no-repeat',
 			padding: '50px 0',
 			backgroundSize: '100% 100%',
-			width: '692px',
+			maxWidth: '692px',
 		}}
 	>
 		<Card
@@ -501,6 +571,7 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 					// background: 'url(enterprise-img/1-hero-section/hero-bg.svg)',
 					background: '#0c0c0c', //$d70
 					color: '#eceaff',
+					padding: '136px 0',
 				}}
 			>
 				<Hero className={centerColumn} />
@@ -523,7 +594,8 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 			</div>
 			<div>
 				[ gray background ]
-				<IntegrationsSection className={centerColumn} />
+				<EcoSystem className={centerColumn} />
+				<Integrations className={wideColumn} />
 				<ComponentAnalytics className={centerColumn} />
 			</div>
 			<div
