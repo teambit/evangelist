@@ -1,0 +1,33 @@
+@import '~@bit/bit.base-ui.theme.colors';
+
+.primary {
+	--base-color: #{$p50};
+}
+
+.secondary {
+	--base-color: #{$b50};
+}
+
+.complementary {
+	--base-color: #{$pink50};
+}
+
+.impulsive {
+	--base-color: #{$r50};
+}
+
+.hungry {
+	--base-color: #{$y50};
+}
+
+.success {
+	--base-color: #{$g50};
+}
+
+.neutral {
+	--base-color: #{$d50};
+}
+
+.muted {
+	--base-color: #{$d40};
+}

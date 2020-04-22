@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" width="1921" height="1168">
+	<defs>
+		<radialGradient cx="50%" cy="88.0568025%" fx="50%" fy="88.0568025%" r="112.091678%" gradientTransform="translate(0.500000,0.880568),scale(0.608017,1.000000),rotate(-90.000000),scale(1.000000,2.110467),translate(-0.500000,-0.880568)" id="A">
+			<stop offset="0%"/>
+			<stop stop-color="#232323" offset="100%"/>
+		</radialGradient>
+		<path id="B" d="M0 0h1921v1168H0z"/>
+	</defs>
+	<use fill="url(#A)" fill-rule="nonzero" xlink:href="#B" transform="translate(.005)"/>
+</svg>
