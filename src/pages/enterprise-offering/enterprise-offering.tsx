@@ -2,7 +2,6 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import { BaseImage } from '@bit/bit.base-ui.elements.image';
-import { Separator } from '@bit/bit.base-ui.elements.separator';
 import { centerColumn, textColumn, wideColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { Card } from '@bit/bit.base-ui.surfaces.card';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
@@ -12,12 +11,15 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { Button } from '../../elements/button';
 import { H1, H2, H3, H4 } from '../../elements/heading';
 import { Icon } from '../../elements/icon';
-import { baseColor } from './theme-color';
-import { themedText } from './themed-text';
+import { colorPalette } from '@bit/bit.base-ui.theme.color-palette';
+import { themedText } from '@bit/bit.base-ui.text.themed-text';
 import { text, marginCenter, alignItems } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 
 import styles from './enterprise-offering.module.scss';
+import { MutedText } from '@bit/bit.base-ui.text.muted-text';
+import { TextSeparator } from '@bit/bit.base-ui.text.text-separator';
+import { Input, TextArea } from '../../input/input';
 
 function Hero(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -67,13 +69,13 @@ const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 			}}
 		>
 			<div>
-				<div style={{ fontSize: '60px', fontWeight: 'bold' }}>50%</div>
+				<div style={{ fontSize: '60px', lineHeight: '76px', fontWeight: 800 }}>50%</div>
 				<MutedText>Cost Reduction</MutedText>
 			</div>
 			<div>
 				<div
-					className={classNames(baseColor.secondary, themedText)}
-					style={{ fontSize: '60px', fontWeight: 'bold' }}
+					className={classNames(colorPalette.secondary, themedText)}
+					style={{ fontSize: '60px', lineHeight: '76px', fontWeight: 800 }}
 				>
 					10x
 				</div>
@@ -81,8 +83,8 @@ const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 			</div>
 			<div>
 				<div
-					className={classNames(baseColor.primary, themedText)}
-					style={{ fontSize: '60px', fontWeight: 'bold' }}
+					className={classNames(colorPalette.primary, themedText)}
+					style={{ fontSize: '60px', lineHeight: '76px', fontWeight: 800 }}
 				>
 					30x
 				</div>
@@ -90,8 +92,8 @@ const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 			</div>
 			<div>
 				<div
-					className={classNames(baseColor.complementary, themedText)}
-					style={{ fontSize: '80px', lineHeight: '73.8px', fontWeight: 'bold' }}
+					className={classNames(colorPalette.complementary, themedText)}
+					style={{ fontSize: '80px', lineHeight: '76px', fontWeight: 800 }}
 				>
 					∞
 				</div>
@@ -112,7 +114,7 @@ const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 );
 
 const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
-	<Section {...props}>
+	<div {...props}>
 		<div className={classNames(textColumn, marginCenter, text.center)}>
 			<H2 size={PossibleSizes.sm}>Bit enterprise</H2>
 			<Paragraph size={PossibleSizes.lg}>
@@ -134,10 +136,10 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 			}}
 		>
 			<Card
-				className={baseColor.neutral.default}
+				className={colorPalette.neutral}
 				style={{
 					background: 'white',
-					padding: '48px',
+					padding: '46px',
 					display: 'flex',
 					flexDirection: 'column',
 				}}
@@ -181,10 +183,10 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				</Button>
 			</Card>
 			<Card
-				className={baseColor.secondary}
+				className={colorPalette.secondary}
 				style={{
 					background: 'white',
-					padding: '48px',
+					padding: '46px',
 					display: 'flex',
 					flexDirection: 'column',
 				}}
@@ -233,7 +235,7 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 			<Card
 				style={{
 					background: 'white',
-					padding: '48px',
+					padding: '46px',
 					display: 'flex',
 					flexDirection: 'column',
 				}}
@@ -279,10 +281,10 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				</Button>
 			</Card>
 			<Card
-				className={baseColor.impulse}
+				className={colorPalette.impulse}
 				style={{
 					background: 'white',
-					padding: '48px',
+					padding: '46px',
 					display: 'flex',
 					flexDirection: 'column',
 				}}
@@ -324,37 +326,37 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				</Button>
 			</Card>
 		</Grid>
-	</Section>
+	</div>
 );
 
 const ReliableAndSecure = (props: HTMLAttributes<HTMLDivElement>) => (
 	<Grid colMd={2} {...props}>
 		<div>
 			<H2 size={PossibleSizes.sm}>Always reliable and secured</H2>
-			<Bullet>
+			<div>
 				<BaseImage src="/enterprise-img/4-secured-section/design.svg" alt="designed" />
 				<H3 size={PossibleSizes.xs}>Reliable by design</H3>
 				<MutedText>
 					Build with auto-scaling resources that never block you, while ensuring
 					impeccable availability with a Google-grade multi-zone architecture.
 				</MutedText>
-			</Bullet>
-			<Bullet>
+			</div>
+			<div>
 				<BaseImage src="/enterprise-img/4-secured-section/shield.svg" alt="shield" />
 				<H3 size={PossibleSizes.xs}>Always secured</H3>
 				<MutedText>
 					Keep your code private and secured with the highest and most advanced
 					security and information standards, policies, and practices.
 				</MutedText>
-			</Bullet>
-			<Bullet>
+			</div>
+			<div>
 				<BaseImage src="/enterprise-img/4-secured-section/trusted.svg" alt="trusted" />
 				<H3 size={PossibleSizes.xs}>Trusted by the best</H3>
 				<MutedText>
 					Bit’s platform is trusted by many global teams from regulated industries
 					with the highest possible information security standards.
 				</MutedText>
-			</Bullet>
+			</div>
 		</div>
 		<BaseImage
 			src="/enterprise-img/4-secured-section/sphere-enterprise.png"
@@ -366,7 +368,7 @@ const ReliableAndSecure = (props: HTMLAttributes<HTMLDivElement>) => (
 
 const EcoSystem = (props: HTMLAttributes<HTMLDivElement>) => {
 	return (
-		<Section {...props}>
+		<div {...props}>
 			<H2 size={PossibleSizes.sm}>Rooted in your ecosystem</H2>
 			<Paragraph>
 				<MutedText>
@@ -374,7 +376,7 @@ const EcoSystem = (props: HTMLAttributes<HTMLDivElement>) => {
 					euismod. Suspendisse dictum sed nulla in pretium.
 				</MutedText>
 			</Paragraph>
-		</Section>
+		</div>
 	);
 };
 
@@ -463,14 +465,14 @@ function Integrations(props: HTMLAttributes<HTMLDivElement>) {
 
 function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<Grid colSm={2} {...props} className={classNames(alignItems.center)}>
+		<Grid colSm={2} {...props} className={classNames(alignItems.center, props.className)}>
 			<div>
 				<H2 size={PossibleSizes.sm}>Advanced component usage analytics</H2>
 				<MutedText>
 					em ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta tempor
 					euismod. Suspendisse dictum sed nulla in pretium.
 				</MutedText>
-				<div className={baseColor.success}>
+				<div className={colorPalette.success}>
 					<div>
 						<ThemedText>
 							<Icon of="billing-checkmark" className={themedText} />
@@ -508,7 +510,7 @@ function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 }
 
 const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
-	<Section {...props}>
+	<div {...props}>
 		<H2 size={PossibleSizes.md} style={{ marginBottom: '60px' }}>
 			Enjoy world-class support and hands-on experts
 		</H2>
@@ -516,12 +518,12 @@ const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 		<Card
 			style={{
 				background: 'white',
-				marginBottom: '17px',
+				marginBottom: '18px',
 				padding: '24px',
 				borderRadius: '20px',
 			}}
 		>
-			<div style={{ marginBottom: '8px' }}>
+			<div style={{ marginBottom: '7px' }}>
 				<MutedText>10:30</MutedText>
 			</div>
 			<H4 size={PossibleSizes.xxs}>Response-time SLA</H4>
@@ -536,12 +538,12 @@ const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 		<Card
 			style={{
 				background: 'white',
-				marginBottom: '17px',
+				marginBottom: '18px',
 				padding: '24px',
 				borderRadius: '20px',
 			}}
 		>
-			<div style={{ marginBottom: '8px' }}>
+			<div style={{ marginBottom: '7px' }}>
 				<MutedText>10:31</MutedText>
 			</div>
 			<H4 size={PossibleSizes.xxs}>Named contacts with escalation paths</H4>
@@ -553,12 +555,12 @@ const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 		<Card
 			style={{
 				background: 'white',
-				marginBottom: '17px',
+				marginBottom: '18px',
 				padding: '24px',
 				borderRadius: '20px',
 			}}
 		>
-			<div style={{ marginBottom: '8px' }}>
+			<div style={{ marginBottom: '7px' }}>
 				<MutedText>10:32</MutedText>
 			</div>
 			<H4 size={PossibleSizes.xxs}>Expert review and training</H4>
@@ -587,11 +589,11 @@ const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 			src="/enterprise-img/7-support/characters/character-6.svg"
 			alt="we can fix it!"
 		/>
-	</Section>
+	</div>
 );
 
 const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
-	<Section
+	<div
 		{...props}
 		style={{
 			background: 'url(/enterprise-img/8-form-section/particles-form.svg)',
@@ -605,6 +607,7 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 			style={{
 				margin: 'auto',
 				background: 'white',
+				//specific
 				width: '490px',
 				height: '553px',
 				padding: '40px 61px 55px',
@@ -623,12 +626,12 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 				<MutedText style={{ marginBottom: '40px' }}>
 					Our expert team will get in touch with you shortly!
 				</MutedText>
-				<EvaInput
+				<Input
 					className={styles.fullWidth}
 					placeholder="Company email"
 					style={{ marginBottom: '18px' }}
 				/>
-				<EvaTextArea
+				<TextArea
 					className={styles.fullWidth}
 					placeholder="..."
 					style={{ marginBottom: '18px', flexGrow: 1 }}
@@ -640,9 +643,9 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 				>
 					Contact Sales
 				</Button>
-				<TextfulSeparator style={{ marginBottom: '18px' }}>
-					<MutedText style={{ padding: '0 11px' }}>OR</MutedText>
-				</TextfulSeparator>
+				<TextSeparator style={{ marginBottom: '18px' }}>
+					<MutedText>OR</MutedText>
+				</TextSeparator>
 				<Button importance="muted" className={styles.fullWidth}>
 					Book intro
 				</Button>
@@ -661,7 +664,7 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 				}}
 			/>
 		</div>
-	</Section>
+	</div>
 );
 
 export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
@@ -714,48 +717,5 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 				<ContactSales className={classNames(marginCenter)} />
 			</div>
 		</div>
-	);
-}
-
-function Section(props: any) {
-	return <div {...props} />;
-}
-
-function Bullet(props: any) {
-	return <div {...props} />;
-}
-
-function EvaInput(props: React.InputHTMLAttributes<HTMLInputElement>) {
-	const { className, ...rest } = props;
-
-	return <input {...rest} className={classNames(className, styles.eveInput)} />;
-}
-
-function EvaTextArea(props: React.InputHTMLAttributes<HTMLTextAreaElement>) {
-	const { className, ...rest } = props;
-
-	return <textarea {...rest} className={classNames(className, styles.eveInput)} />;
-}
-
-// TODO - make base component
-function TextfulSeparator(props: React.HTMLAttributes<HTMLDivElement>) {
-	const { children } = props;
-	return (
-		<div {...props} style={{ display: 'flex', alignItems: 'center', ...props.style }}>
-			<Separator style={{ borderStyle: 'dashed', borderBottomWidth: '2px' }} />
-			{children}
-			<Separator style={{ borderStyle: 'dashed', borderBottomWidth: '2px' }} />
-		</div>
-	);
-}
-
-//css component
-function MutedText(props: any) {
-	//TODO
-	return (
-		<ThemedText
-			{...props}
-			className={classNames(baseColor.neutral.muted, props.className)}
-		/>
 	);
 }

@@ -797,5 +797,28 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "input/input": {
+        "files": [
+            {
+                "relativePath": "src/input/input/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/input/input/input.module.scss",
+                "test": false,
+                "name": "input.module.scss"
+            },
+            {
+                "relativePath": "src/input/input/input.tsx",
+                "test": false,
+                "name": "input.tsx"
+            }
+        ],
+        "mainFile": "src/input/input/index.ts",
+        "trackDir": "src/input/input",
+        "origin": "AUTHORED",
+        "exported": false
+    },
     "version": "14.7.7"
 }

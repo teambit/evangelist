@@ -1,0 +1,16 @@
+@import '~@bit/bit.base-ui.theme.colors';
+
+.evaInput {
+	padding: 11px 18px;
+	font-size: inherit;
+
+	border-radius: 7px;
+	border: solid 1px $d10;
+	background-color: $w10;
+}
+
+textarea.evaInput {
+	// TODO - give more control over resizing
+	// resize: vertical;
+	resize: none;
+}
