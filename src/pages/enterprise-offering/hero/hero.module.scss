@@ -1,0 +1,32 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+.mainGrid {
+	gap: 76px;
+	align-items: center;
+}
+
+.spacer {
+	width: 20px;
+	height: 20px;
+}
+
+.paragraph {
+	margin-bottom: 24px;
+}
+
+.buttons {
+	margin: 0 auto 46px;
+
+	@media screen and (min-width: $br-sm) {
+		display: flex;
+		justify-content: center;
+	}
+
+	@media screen and (min-width: $br-l) {
+		justify-content: left;
+	}
+
+	button {
+		width: 199px;
+	}
+}

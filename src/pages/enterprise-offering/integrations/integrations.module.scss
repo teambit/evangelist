@@ -1,0 +1,10 @@
+.integrationBadges {
+	gap: 0;
+
+	:nth-child(even) {
+		margin-top: 40px;
+	}
+	:nth-child(odd) {
+		margin-bottom: 40px;
+	}
+}

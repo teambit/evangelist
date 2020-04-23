@@ -1,0 +1,9 @@
+@import '~@bit/bit.base-ui.constants.storage/_storage.module.scss';
+
+.particlesBg {
+	background-image: url($staticStorageUrl + '/enterprise-offering-v1/8-form-section/particles-form.svg');
+	background-repeat: no-repeat;
+	padding: 50px 0;
+	background-size: 100% 100%;
+	max-width: 692px;
+}
