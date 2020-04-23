@@ -31,7 +31,7 @@ function Hero(props: HTMLAttributes<HTMLDivElement>) {
 				<H1 size={PossibleSizes.sm}>
 					<ThemedText>The Enterprise component platform</ThemedText>
 				</H1>
-				<Paragraph size={PossibleSizes.lg}>
+				<Paragraph size={PossibleSizes.lg} style={{ marginBottom: '24px' }}>
 					Speed delivery of applications, features, and projects while reducing costs
 					and time to market. Enjoy industry-leading security, performance, and
 					scalability with world-class support.
@@ -58,7 +58,13 @@ const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 	>
 		<div
 			className={text.center}
-			style={{ display: 'grid', gridTemplate: '1fr 1fr / 1fr 1fr' }}
+			style={{
+				display: 'grid',
+				gridTemplate: '1fr 1fr / 1fr 1fr',
+				boxShadow: 'inset -2px 0 0 0 #6c5ce7',
+				height: '280px',
+				alignItems: 'center',
+			}}
 		>
 			<div>
 				<div style={{ fontSize: '60px', fontWeight: 'bold' }}>50%</div>
@@ -92,8 +98,6 @@ const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 				<MutedText>Scale</MutedText>
 			</div>
 		</div>
-
-		{/* <Separator /> */}
 
 		<div className={textColumn}>
 			<H2 size={PossibleSizes.sm}>Powering enterprise app delivery</H2>
@@ -131,94 +135,122 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 		>
 			<Card
 				className={baseColor.neutral.default}
-				style={{ background: 'white', padding: '48px' }}
+				style={{
+					background: 'white',
+					padding: '48px',
+					display: 'flex',
+					flexDirection: 'column',
+				}}
 			>
-				<H3 size={PossibleSizes.xs} className={themedText}>
+				<H4 size={PossibleSizes.xs} className={themedText}>
 					Security and compliance
-				</H3>
-				<Paragraph size={PossibleSizes.sm}>
-					<div style={{ marginBottom: '40px' }}>
-						Build with industry-leading security and compliance standards. Get tools
-						to control everything from identities to advanced audit-logging.
-					</div>
-
+				</H4>
+				<Paragraph size={PossibleSizes.sm} style={{ marginBottom: '40px' }}>
+					Build with industry-leading security and compliance standards. Get tools to
+					control everything from identities to advanced audit-logging.
+				</Paragraph>
+				<Paragraph
+					size={PossibleSizes.sm}
+					style={{ flexGrow: 1, marginBottom: '46px', lineHeight: 2 }}
+				>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						99.9% Uptime SLA
-					</div>
-					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						SSO SAML
+						<Icon of="billing-checkmark" className={themedText} /> 99.9% Uptime SLA
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Advanced Audit logs
+						<Icon of="billing-checkmark" className={themedText} /> SSO SAML
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Role-based access control
+						<Icon of="billing-checkmark" className={themedText} /> Advanced Audit
+						logs
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Multiple-backups for everything
+						<Icon of="billing-checkmark" className={themedText} /> Role-based access
+						control
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Advanced platform and network security
+						<Icon of="billing-checkmark" className={themedText} /> Multiple-backups
+						for everything
+					</div>
+					<div>
+						<Icon of="billing-checkmark" className={themedText} /> Advanced platform
+						and network security
 					</div>
 				</Paragraph>
-				<Button importance="cta">Contact Sales</Button>
+				<Button importance="cta" className={styles.fullWidth}>
+					Contact Sales
+				</Button>
 			</Card>
 			<Card
 				className={baseColor.secondary}
-				style={{ background: 'white', padding: '48px' }}
+				style={{
+					background: 'white',
+					padding: '48px',
+					display: 'flex',
+					flexDirection: 'column',
+				}}
 			>
-				<H3 size={PossibleSizes.xs} className={themedText}>
+				<H4 size={PossibleSizes.xs} className={themedText}>
 					Dedicated support
-				</H3>
+				</H4>
 				<Paragraph size={PossibleSizes.sm}>
 					<div style={{ marginBottom: '40px' }}>
 						Get engineering-level support from core maintainers with named contacts,
 						quick response times and multiple escalation channels.
 					</div>
-
+				</Paragraph>
+				<Paragraph
+					size={PossibleSizes.sm}
+					style={{ flexGrow: 1, marginBottom: '46px', lineHeight: 2 }}
+				>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Dedicated, named Bit experts
+						<Icon of="billing-checkmark" className={themedText} /> Dedicated, named
+						Bit experts
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						24/7 support with 5 hour response time
+						<Icon of="billing-checkmark" className={themedText} /> 24/7 support with
+						5 hour response time
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Joint Slack
+						<Icon of="billing-checkmark" className={themedText} /> Joint Slack
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Escalation paths via phone, slack or email
+						<Icon of="billing-checkmark" className={themedText} /> Escalation paths
+						via phone, slack or email
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						SLA with 99.95% uptime
+						<Icon of="billing-checkmark" className={themedText} /> SLA with 99.95%
+						uptime
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Engineering-level support from core maintainers
+						<Icon of="billing-checkmark" className={themedText} /> Engineering-level
+						support from core maintainers
 					</div>
 				</Paragraph>
-				<Button importance="cta">Contact Sales</Button>
+				<Button importance="cta" className={styles.fullWidth}>
+					Contact Sales
+				</Button>
 			</Card>
-			<Card style={{ background: 'white', padding: '48px' }}>
-				<H3 size={PossibleSizes.xs} className={themedText}>
+			<Card
+				style={{
+					background: 'white',
+					padding: '48px',
+					display: 'flex',
+					flexDirection: 'column',
+				}}
+			>
+				<H4 size={PossibleSizes.xs} className={themedText}>
 					Power to build
-				</H3>
+				</H4>
 				<Paragraph size={PossibleSizes.sm}>
 					<div style={{ marginBottom: '40px' }}>
 						Make sure you have the resources and performance to build for global
 						scale. Never stop delivery, no matter what.
 					</div>
-
+				</Paragraph>
+				<Paragraph
+					size={PossibleSizes.sm}
+					style={{ flexGrow: 1, marginBottom: '46px', lineHeight: 2 }}
+				>
 					<div>
 						<Icon of="billing-checkmark" className={themedText} /> Auto-scaling
 						concurrent builds to fit your scale
@@ -242,27 +274,37 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 						<Icon of="billing-checkmark" className={themedText} /> Bit.dev web hooks
 					</div>
 				</Paragraph>
-				<Button importance="cta">Contact Sales</Button>
+				<Button importance="cta" className={styles.fullWidth}>
+					Contact Sales
+				</Button>
 			</Card>
 			<Card
 				className={baseColor.impulse}
-				style={{ background: 'white', padding: '48px' }}
+				style={{
+					background: 'white',
+					padding: '48px',
+					display: 'flex',
+					flexDirection: 'column',
+				}}
 			>
-				<H3 size={PossibleSizes.xs} className={themedText}>
+				<H4 size={PossibleSizes.xs} className={themedText}>
 					Expert consultation
-				</H3>
+				</H4>
 				<Paragraph size={PossibleSizes.sm} style={{ marginBottom: '40px' }}>
 					Get architectural-level review from world-class experts to review, plan and
 					build your A+ component infrastructure.
 				</Paragraph>
-				<div>
+				<Paragraph
+					size={PossibleSizes.sm}
+					style={{ flexGrow: 1, marginBottom: '46px', lineHeight: 2 }}
+				>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Architectural review by component experts.
+						<Icon of="billing-checkmark" className={themedText} /> Architectural
+						review by component experts.
 					</div>
 					<div>
-						<Icon of="billing-checkmark" className={themedText} />
-						Hands-on Z-A team onboarding.
+						<Icon of="billing-checkmark" className={themedText} /> Hands-on Z-A team
+						onboarding.
 					</div>
 					<div>
 						<Icon of="billing-checkmark" className={themedText} /> Training for
@@ -276,8 +318,10 @@ const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 						<Icon of="billing-checkmark" className={themedText} /> Custom extensions
 						and integrations.
 					</div>
-				</div>
-				<Button importance="cta">Contact Sales</Button>
+				</Paragraph>
+				<Button importance="cta" className={styles.fullWidth}>
+					Contact Sales
+				</Button>
 			</Card>
 		</Grid>
 	</Section>
@@ -599,7 +643,9 @@ const ContactSales = (props: HTMLAttributes<HTMLDivElement>) => (
 				<TextfulSeparator style={{ marginBottom: '18px' }}>
 					<MutedText style={{ padding: '0 11px' }}>OR</MutedText>
 				</TextfulSeparator>
-				<Button className={styles.fullWidth}>Book intro</Button>
+				<Button importance="muted" className={styles.fullWidth}>
+					Book intro
+				</Button>
 			</form>
 		</Card>
 		<div style={{ width: '490px', margin: 'auto', position: 'relative' }}>
@@ -632,7 +678,7 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 			>
 				<Hero className={centerColumn} />
 			</div>
-			<div>
+			<div style={{ margin: '137px 0' }}>
 				<PoweringEnterprise className={centerColumn} />
 			</div>
 			<div
@@ -649,7 +695,6 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 				<ReliableAndSecure className={centerColumn} />
 			</div>
 			<div>
-				[ gray background ]
 				<EcoSystem className={centerColumn} />
 				<Integrations className={wideColumn} />
 				<ComponentAnalytics className={centerColumn} />

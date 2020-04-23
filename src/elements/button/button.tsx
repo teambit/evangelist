@@ -6,7 +6,6 @@ import BaseButton, { ButtonProps as BaseProps } from '@bit/bit.base-ui.input.but
 import styles from './button.module.scss';
 import elevations from './elevations.module.scss';
 
-
 export type ButtonProps = {
 	/**
 	 * style the button with shadow and click effect.
@@ -15,7 +14,7 @@ export type ButtonProps = {
 	/**
 	 * style variance ('cta', 'normal')
 	 */
-	importance?: 'normal' | 'cta';
+	importance?: 'normal' | 'cta' | 'muted';
 } & BaseProps;
 
 /**

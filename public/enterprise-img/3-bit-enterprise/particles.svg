@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg version="1.1" viewBox="0 0 1049 1330" xmlns="http://www.w3.org/2000/svg">
-<title>particles</title>
-<desc>Created with Sketch.</desc>
-<g fill="none" fill-rule="evenodd">
-<g transform="translate(-415 -1463)" fill-rule="nonzero">
-<g transform="translate(-1 1262)">
-<g transform="translate(416 201)">
-<rect id="container" x="35" y="237" width="57" height="60" rx="1.9" fill="#2B2B2B" fill-opacity=".7"/>
-<rect id="container" x="69" y="315" width="23" height="24" rx="1.9" fill="#2B2B2B" fill-opacity=".7"/>
-<rect id="container" x="946" y="105" width="50" height="53" rx="1.9" fill="#3D5AFE" fill-opacity=".7"/>
-<rect id="container" x="52" y="1148" width="24" height="25" rx="1.9" fill="#6C5CE7" fill-opacity=".7"/>
-<rect id="container" x="1032" y="1089" width="12" height="12" rx="1.9" fill="#F83D6C" fill-opacity=".7"/>
-<rect id="container" x="1025" y="80" width="24" height="25" rx="1.9" fill="#6C5CE7" fill-opacity=".7"/>
-<rect id="container" x="92" y="1245" width="36" height="38" rx="1.9" fill="#6C5CE7" fill-opacity=".7"/>
-<rect id="container" x="980" y="1245" width="36" height="38" rx="1.9" fill="#F83D6C" fill-opacity=".7"/>
-<rect id="container" y="1205" width="24" height="26" rx="1.9" fill="#6C5CE7" fill-opacity=".7"/>
-<rect id="a" x="955" width="50" height="53" rx="1.9" fill="#fff" fill-opacity=".05"/>
-<rect x="595" y="1277" width="50" height="53" rx="1.9" fill="#fff" fill-opacity=".05"/>
-</g>
-</g>
-</g>
-</g>
+<svg version="1.1" viewBox="0 0 1049 1330" 
+	xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+	<title>particles</title>
+	<desc>Created with Sketch.</desc>
+	<g fill="none" fill-rule="evenodd">
+		<rect id="container" x="35" y="237" width="57" height="60" rx="1.9" fill="#2B2B2B" fill-opacity=".7"/>
+		<rect id="container" x="69" y="315" width="23" height="24" rx="1.9" fill="#2B2B2B" fill-opacity=".7"/>
+		<rect id="container" x="946" y="105" width="50" height="53" rx="1.9" fill="#3D5AFE" fill-opacity=".7"/>
+		<rect id="container" x="52" y="1148" width="24" height="25" rx="1.9" fill="#6C5CE7" fill-opacity=".7"/>
+		<rect id="container" x="1032" y="1089" width="12" height="12" rx="1.9" fill="#F83D6C" fill-opacity=".7"/>
+		<rect id="container" x="1025" y="80" width="24" height="25" rx="1.9" fill="#6C5CE7" fill-opacity=".7"/>
+		<rect id="container" x="92" y="1245" width="36" height="38" rx="1.9" fill="#6C5CE7" fill-opacity=".7"/>
+		<rect id="container" x="980" y="1245" width="36" height="38" rx="1.9" fill="#F83D6C" fill-opacity=".7"/>
+		<rect id="container" y="1205" width="24" height="26" rx="1.9" fill="#6C5CE7" fill-opacity=".7"/>
+		<rect id="a" x="955" width="50" height="53" rx="1.9" fill="#fff" fill-opacity=".05"/>
+		<rect x="595" y="1277" width="50" height="53" rx="1.9" fill="#fff" fill-opacity=".05"/>
+	</g>
 </svg>

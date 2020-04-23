@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Notifications/approved</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.80533836,2.98304859 C10.1540464,2.62713297 10.7312561,2.61553181 11.0945725,2.95713667 C11.4578888,3.29874152 11.4697312,3.86419358 11.1210232,4.2201092 L5.44157246,10.0169512 C5.09380801,10.3719038 4.5185232,10.3845454 4.15486131,10.0452262 L1.90795098,7.94871886 C1.5433024,7.60847901 1.52925044,7.0430755 1.87656506,6.68585478 C2.22387967,6.32863405 2.80103988,6.31486834 3.16568846,6.65510819 L4.75486687,8.13791068 L9.80533836,2.98304859 Z" id="path-1"></path>
+    </defs>
+    <g id="design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="enterprise-design-(13Apr2020)-1921px(SENT)" transform="translate(-459.000000, -5351.000000)">
+            <g id="sections---ecesystem+designed" transform="translate(0.000000, 3945.000000)">
+                <g id="section-designed" transform="translate(0.000000, 997.000000)">
+                    <g id="bullet" transform="translate(457.000000, 407.000000)">
+                        <g id="Notifications/approved">
+                            <circle id="container" fill="#37B26C" fill-rule="nonzero" cx="13" cy="13" r="10.8333333"></circle>
+                            <g id="Notifications/Tick-Green" transform="translate(6.500000, 6.500000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="checkmark" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

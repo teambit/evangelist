@@ -11,7 +11,19 @@
 	background-color: var(--primary-button-bg, white);
 	color: var(--primary-button-text, var(--base-color, #6c5ce7));
 
-	&[data-variation="cta"] {
+	&[data-variation='muted'] {
+		border: 1px solid var(--muted-bg-color, #eceaff); //$p20
+		background-color: var(--muted-bg-color, #eceaff);
+		color: var(--muted-color, #6c707c); //$d40, --muted-color //TODO - add to color-definitions
+
+		&:hover {
+			border: 1px solid var(--muted-highlight, #c9c3f6); //$p30 //TODO - add to color-definitions
+			background-color: var(--muted-highlight, #c9c3f6);
+			color: var(--text-color, #414141); //$d50, //TODO - add to color-definitions
+		}
+	}
+
+	&[data-variation='cta'] {
 		border: 1px solid var(--cta-color, var(--base-color, #6c5ce7));
 		background-color: var(--cta-color, var(--base-color, #6c5ce7));
 		color: var(--cta-button-text, white);
