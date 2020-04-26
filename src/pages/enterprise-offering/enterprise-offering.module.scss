@@ -1,3 +1,4 @@
+@import '~@bit/bit.base-ui.theme.colors';
 @import '~@bit/bit.base-ui.constants.storage/_storage.module.scss';
 
 .supportCirclesBg {
@@ -6,4 +7,24 @@
 	background-position: center 0;
 	padding-top: 284px;
 	padding-bottom: 100px;
+}
+
+.intersectingBorder {
+	display: block;
+
+	width: 100%;
+	height: 100px;
+}
+
+.gradient00 {
+	background-image: radial-gradient(circle at 50% 88%, #000000, $d60 93%);
+	color: #eceaff;
+}
+
+.gradient01 {
+	background-image: linear-gradient(to bottom, rgba(256, 256, 256, 0), $w20);
+}
+
+.gradient02 {
+	background-image: linear-gradient(to top, rgba(256, 256, 256, 0), $w20);
 }

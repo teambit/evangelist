@@ -1,0 +1,47 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+// $breakpoints: //name val
+// xs $br-xs,
+// sm $br-sm,
+// md $br-md,
+// l $br-l,
+// lg $br-lg,
+// xl $br-xl;
+
+// $spacings:
+// 30px,
+// 50px,
+// 80px,
+// 130px;
+
+// @each $s in $spacings {
+// 	@each $breakpoint in $breakpoints {
+// 		@media only screen and (min-width: $brVal) {
+// 			.margin {
+// 				&-#{$s} {
+// 					margin-bottom: $s;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+.margin30 {
+	margin-bottom: 30px;
+}
+
+.margin50 {
+	margin-bottom: 50px;
+}
+
+.margin80 {
+	margin-bottom: 80px;
+}
+
+.margin130 {
+	margin-bottom: 130px;
+}
+
+.margin180 {
+	margin-bottom: 180px;
+}

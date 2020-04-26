@@ -2,7 +2,8 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import { centerColumn, textColumn, wideColumn } from '@bit/bit.base-ui.layout.page-frame';
-import { marginCenter } from '@bit/bit.base-ui.layout.align';
+import { marginCenter, text } from '@bit/bit.base-ui.layout.align';
+import { CurvePeek } from '@bit/bit.base-ui.geometry.curve-peek';
 
 import { Hero } from './hero/hero';
 import { PoweringEnterprise } from './powering-enterprise/powering-enterprise';
@@ -13,41 +14,40 @@ import { Integrations } from './integrations/integrations';
 import { ComponentAnalytics } from './component-analytics/component-analytics';
 import { ExpertSupport } from './experts-support/expert-support';
 import { SalesCta } from './sales-cta';
+import { margin } from './spacing';
 
 import styles from './enterprise-offering.module.scss';
 
 export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div {...props}>
-			<div
-				style={{
-					// background: 'url(enterprise-img/1-hero-section/hero-bg.svg)',
-					background: '#0c0c0c', //$d70
-					color: '#eceaff',
-					padding: '136px 0',
-				}}
-			>
-				<Hero className={centerColumn} />
+			<div className={styles.gradient00} style={{ paddingTop: '130px' }}>
+				<Hero className={classNames(centerColumn, margin[130])} />
+
+				<CurvePeek
+					filling="white"
+					className={classNames(styles.intersectingBorder, margin[30])}
+				/>
 			</div>
-			<div style={{ margin: '137px 0' }}>
-				<PoweringEnterprise className={centerColumn} />
+
+			<PoweringEnterprise className={classNames(centerColumn, margin[130])} />
+
+			<div className={styles.gradient01}>
+				<AdvantageCards className={classNames(centerColumn, margin[30])} />
+
+				<CurvePeek filling="white" className={styles.intersectingBorder} />
 			</div>
-			<div
-				style={{
-					// background: '#ededed' //$w20
-					// background: 'url(/enterprise-img/3-bit-enterprise/bg-container.svg)',
-					backgroundSize: 'auto 100%',
-					paddingBottom: '166px',
-				}}
-			>
-				<AdvantageCards className={centerColumn} />
-			</div>
-			<div>
-				<Reliability className={centerColumn} />
-			</div>
-			<div>
-				<EcoSystem className={centerColumn} />
-				<Integrations className={wideColumn} />
+
+			<Reliability
+				className={centerColumn}
+				style={{ paddingTop: '130px', marginBottom: '180px' }}
+			/>
+
+			<CurvePeek filling="cloud" className={styles.intersectingBorder} />
+
+			<div className={styles.gradient02} style={{ paddingTop: '80px' }}>
+				<EcoSystem className={classNames(centerColumn, text.center)} />
+				<Integrations className={classNames(wideColumn, margin[130])} />
 				<ComponentAnalytics className={centerColumn} />
 			</div>
 			<div className={styles.supportCirclesBg}>

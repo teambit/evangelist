@@ -31,6 +31,7 @@
     "@bit/bit.base-ui.elements.label": "^1.0.1",
     "@bit/bit.base-ui.elements.link": "^1.0.1",
     "@bit/bit.base-ui.elements.separator": "^1.0.2",
+    "@bit/bit.base-ui.geometry.curve-peek": "^0.0.1",
     "@bit/bit.base-ui.input.button": "^1.0.2",
     "@bit/bit.base-ui.layout.align": "^1.1.0",
     "@bit/bit.base-ui.layout.breakpoints": "^1.0.6",

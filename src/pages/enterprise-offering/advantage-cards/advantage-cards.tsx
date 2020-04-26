@@ -39,6 +39,7 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 					Build with industry-leading security and compliance standards. Get tools to
 					control everything from identities to advanced audit-logging.
 				</Paragraph>
+
 				<Paragraph size={PossibleSizes.sm} className={styles.bullets}>
 					<div>
 						<Icon of="billing-checkmark" className={themedText} /> 99.9% Uptime SLA
@@ -67,6 +68,7 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 					Contact Sales
 				</Button>
 			</Card>
+
 			<Card className={classNames(colorPalette.secondary, styles.card)}>
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Dedicated support
@@ -77,6 +79,7 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 						quick response times and multiple escalation channels.
 					</div>
 				</Paragraph>
+
 				<Paragraph size={PossibleSizes.sm} className={styles.bullets}>
 					<div>
 						<Icon of="billing-checkmark" className={themedText} /> Dedicated, named
@@ -106,6 +109,7 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 					Contact Sales
 				</Button>
 			</Card>
+
 			<Card className={classNames(colorPalette.primary, styles.card)}>
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Power to build
@@ -116,6 +120,7 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 						scale. Never stop delivery, no matter what.
 					</div>
 				</Paragraph>
+
 				<Paragraph size={PossibleSizes.sm} className={styles.bullets}>
 					<div>
 						<Icon of="billing-checkmark" className={themedText} /> Auto-scaling
@@ -144,6 +149,7 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 					Contact Sales
 				</Button>
 			</Card>
+
 			<Card className={classNames(colorPalette.impulse, styles.card)}>
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Expert consultation
