@@ -14,7 +14,7 @@ export const Reliability = (props: HTMLAttributes<HTMLDivElement>) => (
 		<div>
 			<H2 size={PossibleSizes.sm}>Always reliable and secured</H2>
 
-			<ul>
+			<ul className={styles.bulletList}>
 				<li>
 					<Image
 						src="enterprise-offering-v1/4-secured-section/design.svg"
