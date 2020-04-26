@@ -19,7 +19,6 @@ export function Hero(props: HTMLAttributes<HTMLDivElement>) {
 			colL={2}
 			{...props}
 			className={classNames(props.className, text.center, text.l.left, styles.mainGrid)}
-			// style={{ gridGap: '74px', alignItems: 'center' }}
 		>
 			<div>
 				<H1 size={PossibleSizes.sm} className={themedText}>
@@ -41,7 +40,7 @@ export function Hero(props: HTMLAttributes<HTMLDivElement>) {
 				src="enterprise-offering-v1/1-hero-section/hero-enterprise.svg"
 				alt="compartmentalized corporate ui"
 				className={marginCenter}
-				style={{ height: '550px' }}
+				style={{ maxHeight: '550px' }}
 			/>
 		</Grid>
 	);

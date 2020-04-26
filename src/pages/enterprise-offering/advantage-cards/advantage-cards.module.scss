@@ -17,8 +17,16 @@
 .bullets {
 	flex-grow: 1;
 	margin-bottom: 49px;
+	font-size: 15px;
 
-	> * {
+	li {
+		display: flex;
 		margin-bottom: 7px;
+
+		//icon
+		> span {
+			line-height: inherit;
+			margin-right: 8px;
+		}
 	}
 }

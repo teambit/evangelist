@@ -20,7 +20,7 @@ export const SalesCta = (props: HTMLAttributes<HTMLDivElement>) => (
 				margin: 'auto',
 				background: 'white',
 				//specific
-				width: '490px',
+				maxWidth: '490px',
 				height: '553px',
 				padding: '40px 61px 55px',
 			}}
@@ -62,7 +62,7 @@ export const SalesCta = (props: HTMLAttributes<HTMLDivElement>) => (
 				</Button>
 			</form>
 		</Card>
-		<div style={{ width: '490px', margin: 'auto', position: 'relative' }}>
+		<div style={{ maxWidth: '490px', margin: 'auto', position: 'relative' }}>
 			<div
 				style={{
 					width: '36px',

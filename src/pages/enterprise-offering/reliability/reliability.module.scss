@@ -6,11 +6,13 @@
 }
 
 .bullet {
+	flex: none;
 	width: 46px;
 	height: 46px;
 	margin-right: 24px;
 }
 
 .corposphere {
-	width: 500px;
+	max-width: 500px;
+	width: 100%;
 }

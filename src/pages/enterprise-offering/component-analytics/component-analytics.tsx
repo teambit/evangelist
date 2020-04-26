@@ -50,7 +50,7 @@ export function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 			</div>
 
 			<Image
-				src="enterprise-offering-v1/6-analytics/graphs-enterprise.svg"
+				src="enterprise-offering-v1/6-analytics/graphs-enterprise.svg?v=2"
 				alt="analytics"
 				fullWidth
 			/>

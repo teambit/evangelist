@@ -40,30 +40,31 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 					control everything from identities to advanced audit-logging.
 				</Paragraph>
 
-				<Paragraph size={PossibleSizes.sm} className={styles.bullets}>
-					<div>
-						<Icon of="billing-checkmark" className={themedText} /> 99.9% Uptime SLA
-					</div>
-					<div>
+				<ul className={styles.bullets}>
+					<li>
+						<Icon of="billing-checkmark" className={themedText} />{' '}
+						<span>99.9% Uptime SLA</span>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> SSO SAML
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Advanced Audit
 						logs
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Role-based access
 						control
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Multiple-backups
 						for everything
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Advanced platform
 						and network security
-					</div>
-				</Paragraph>
+					</li>
+				</ul>
 				<Button importance="cta" className={fullWidth}>
 					Contact Sales
 				</Button>
@@ -80,31 +81,31 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 					</div>
 				</Paragraph>
 
-				<Paragraph size={PossibleSizes.sm} className={styles.bullets}>
-					<div>
+				<ul className={styles.bullets}>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Dedicated, named
 						Bit experts
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> 24/7 support with
 						5 hour response time
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Joint Slack
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Escalation paths
 						via phone, slack or email
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> SLA with 99.95%
 						uptime
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Engineering-level
 						support from core maintainers
-					</div>
-				</Paragraph>
+					</li>
+				</ul>
 				<Button importance="cta" className={fullWidth}>
 					Contact Sales
 				</Button>
@@ -121,30 +122,30 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 					</div>
 				</Paragraph>
 
-				<Paragraph size={PossibleSizes.sm} className={styles.bullets}>
-					<div>
+				<ul className={styles.bullets}>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Auto-scaling
 						concurrent builds to fit your scale
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Build minutes
 						that won’t ever block your workflow
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> 99.9% Uptime SLA
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Advanced
 						integrations to GitHub and Slack
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> SLA with 99.95%
 						uptime
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Bit.dev web hooks
-					</div>
-				</Paragraph>
+					</li>
+				</ul>
 				<Button importance="cta" className={fullWidth}>
 					Contact Sales
 				</Button>
@@ -158,28 +159,28 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 					Get architectural-level review from world-class experts to review, plan and
 					build your A+ component infrastructure.
 				</Paragraph>
-				<Paragraph size={PossibleSizes.sm} className={styles.bullets}>
-					<div>
+				<ul className={styles.bullets}>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Architectural
 						review by component experts.
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Hands-on Z-A team
 						onboarding.
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Training for
 						teams and leadership.
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Implementing best
 						practices and workflows.
-					</div>
-					<div>
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Custom extensions
 						and integrations.
-					</div>
-				</Paragraph>
+					</li>
+				</ul>
 				<Button importance="cta" className={fullWidth}>
 					Contact Sales
 				</Button>
