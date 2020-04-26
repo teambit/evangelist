@@ -14,6 +14,8 @@ import { ComponentAnalytics } from './component-analytics/component-analytics';
 import { ExpertSupport } from './experts-support/expert-support';
 import { SalesCta } from './sales-cta';
 
+import styles from './enterprise-offering.module.scss';
+
 export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div {...props}>
@@ -48,14 +50,7 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 				<Integrations className={wideColumn} />
 				<ComponentAnalytics className={centerColumn} />
 			</div>
-			<div
-				style={{
-					// background: 'url(/enterprise-img/7-support/support-circuits-bg.svg)',
-					backgroundRepeat: 'no-repeat',
-					backgroundPosition: 'center 0',
-					paddingTop: '284px',
-				}}
-			>
+			<div className={styles.supportCirclesBg}>
 				<ExpertSupport
 					className={classNames(textColumn, marginCenter)}
 					style={{ marginBottom: '311px' }}

@@ -1,17 +1,9 @@
-@import '~@bit/bit.base-ui.theme.colors';
+@import '~@bit/bit.base-ui.constants.storage/_storage.module.scss';
 
-// .integrationBadges {
-// 	gap: 0;
-
-// 	:nth-child(even) {
-// 		margin-top: 40px;
-// 	}
-// 	:nth-child(odd) {
-// 		margin-bottom: 40px;
-// 	}
-// }
-
-// .fullWidth {
-// 	width: 100%;
-// 	box-sizing: border-box;
-// }
+.supportCirclesBg {
+	background-image: url($staticStorageUrl + '/enterprise-offering-v1/7-support/support-circuits-bg.svg');
+	background-repeat: no-repeat;
+	background-position: center 0;
+	padding-top: 284px;
+	padding-bottom: 100px;
+}
