@@ -12,6 +12,7 @@ import { H1 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
 
 import styles from './hero.module.scss';
+import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 export function Hero(props: HTMLAttributes<HTMLDivElement>) {
 	return (
@@ -20,7 +21,7 @@ export function Hero(props: HTMLAttributes<HTMLDivElement>) {
 			{...props}
 			className={classNames(props.className, text.center, text.l.left, styles.mainGrid)}
 		>
-			<div>
+			<div className={classNames(textColumn, marginCenter)}>
 				<H1 size={PossibleSizes.sm} className={themedText}>
 					The Enterprise component platform
 				</H1>
@@ -39,7 +40,7 @@ export function Hero(props: HTMLAttributes<HTMLDivElement>) {
 			<Image
 				src="enterprise-offering-v1/1-hero-section/hero-enterprise.svg"
 				alt="compartmentalized corporate ui"
-				className={marginCenter}
+				className={classNames(marginCenter, styles.image)}
 				style={{ maxHeight: '550px' }}
 			/>
 		</Grid>

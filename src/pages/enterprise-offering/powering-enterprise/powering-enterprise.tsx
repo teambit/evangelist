@@ -7,7 +7,6 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { colorPalette } from '@bit/bit.base-ui.theme.color-palette';
 import { themedText } from '@bit/bit.base-ui.text.themed-text';
 import { text } from '@bit/bit.base-ui.layout.align';
-import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { MutedText } from '@bit/bit.base-ui.text.muted-text';
 
 import { H2 } from '../../../elements/heading';
@@ -15,45 +14,13 @@ import { H2 } from '../../../elements/heading';
 import styles from './powering-enterprise.module.scss';
 
 export const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
-	<Grid
-		colMd={2}
+	<div
 		{...props}
-		className={classNames(props.className, text.center, text.l.left)}
-		style={{ alignItems: 'center' }}
+		className={classNames(props.className, text.center, text.l.left, styles.poweringEnterprise)}
 	>
-		<div className={classNames(text.center, styles.grid, styles.separator)}>
-			<div>
-				<div style={{ fontSize: '60px', lineHeight: '76px', fontWeight: 800 }}>50%</div>
-				<MutedText>Cost Reduction</MutedText>
-			</div>
-			<div>
-				<div
-					className={classNames(colorPalette.secondary, themedText)}
-					style={{ fontSize: '60px', lineHeight: '76px', fontWeight: 800 }}
-				>
-					10x
-				</div>
-				<MutedText>App Delivery</MutedText>
-			</div>
-			<div>
-				<div
-					className={classNames(colorPalette.primary, themedText)}
-					style={{ fontSize: '60px', lineHeight: '76px', fontWeight: 800 }}
-				>
-					30x
-				</div>
-				<MutedText>Team Releases</MutedText>
-			</div>
-			<div>
-				<div
-					className={classNames(colorPalette.complementary, themedText)}
-					style={{ fontSize: '80px', lineHeight: '76px', fontWeight: 800 }}
-				>
-					∞
-				</div>
-				<MutedText>Scale</MutedText>
-			</div>
-		</div>
+		<CrunchTheNumbers />
+
+		<div className={styles.separator}></div>
 
 		<div className={textColumn}>
 			<H2 size={PossibleSizes.sm}>Deliver scalable apps, fast.</H2>
@@ -64,5 +31,63 @@ export const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 				</MutedText>
 			</Paragraph>
 		</div>
-	</Grid>
+	</div>
 );
+
+function CrunchTheNumbers() {
+	return (
+		<div className={classNames(text.center, styles.crunchTheNumbers)}>
+			<div>
+				<div
+					style={{
+						fontSize: '60px',
+						lineHeight: '76px',
+						fontWeight: 800,
+					}}
+				>
+					50%
+				</div>
+				<MutedText>Cost Reduction</MutedText>
+			</div>
+			<div>
+				<div
+					className={classNames(colorPalette.secondary, themedText)}
+					style={{
+						fontSize: '60px',
+						lineHeight: '76px',
+						fontWeight: 800,
+					}}
+				>
+					10x
+				</div>
+				<MutedText>App Delivery</MutedText>
+			</div>
+			<div>
+				<div
+					className={classNames(colorPalette.primary, themedText)}
+					style={{
+						fontSize: '60px',
+						lineHeight: '76px',
+						fontWeight: 800,
+					}}
+				>
+					30x
+				</div>
+				<MutedText>Team Releases</MutedText>
+			</div>
+			<div>
+				<div
+					className={classNames(colorPalette.complementary, themedText)}
+					style={{
+						fontSize: '80px',
+						lineHeight: '76px',
+						fontWeight: 800,
+					}}
+				>
+					∞
+				</div>
+				<MutedText>Scale</MutedText>
+			</div>
+		</div>
+	);
+}

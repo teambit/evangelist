@@ -1,8 +1,12 @@
 @import '~@bit/bit.base-ui.layout.breakpoints';
 
 .mainGrid {
-	gap: 76px;
+	gap: 46px;
 	align-items: center;
+
+	@media screen and (min-width: $br-sm) {
+		gap: 76px;
+	}
 }
 
 .spacer {
@@ -11,12 +15,14 @@
 }
 
 .paragraph {
-	margin-bottom: 24px;
+	margin-bottom: 30px;
+}
+
+.image {
+	max-width: 500px;
 }
 
 .buttons {
-	margin: 0 auto 46px;
-
 	@media screen and (min-width: $br-sm) {
 		display: flex;
 		justify-content: center;
@@ -27,6 +33,10 @@
 	}
 
 	button {
-		width: 199px;
+		width: 100%;
+
+		@media screen and (min-width: $br-sm) {
+			width: 199px;
+		}
 	}
 }

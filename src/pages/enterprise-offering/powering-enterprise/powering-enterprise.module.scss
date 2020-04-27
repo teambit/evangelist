@@ -1,17 +1,27 @@
 @import '~@bit/bit.base-ui.layout.breakpoints';
 
-.grid {
+.poweringEnterprise {
+	display: grid;
+	grid-template: auto 2px auto / 1fr;
+	align-items: center;
+	gap: 40px;
+
+	@media screen and (min-width: $br-md) {
+		grid-template: 1fr / 1fr 2px 1fr;
+	}
+}
+
+.crunchTheNumbers {
 	display: grid;
 	grid-template: 1fr 1fr / 1fr 1fr;
 	align-items: center;
 
-	min-height: 280px;
+	height: 280px;
 }
 
 .separator {
-	box-shadow: 0 2px 0 0 #6c5ce7;
-
-	@media screen and (min-width: $br-md) {
-		box-shadow: 2px 0 0 0 #6c5ce7;
-	}
+	height: 100%;
+	width: 100%;
+	background: #6c5ce7;
+	border-radius: 2px;
 }

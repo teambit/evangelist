@@ -5,7 +5,7 @@ import { Card } from '@bit/bit.base-ui.surfaces.card';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { MutedText } from '@bit/bit.base-ui.text.muted-text';
 import { TextSeparator } from '@bit/bit.base-ui.text.text-separator';
-import { fullWidth } from '@bit/bit.base-ui.layout.align';
+import { fullWidth, marginCenter } from '@bit/bit.base-ui.layout.align';
 
 import { Button } from '../../../elements/button';
 import { H4 } from '../../../elements/heading';
@@ -15,16 +15,7 @@ import styles from './sales-cta.module.scss';
 
 export const SalesCta = (props: HTMLAttributes<HTMLDivElement>) => (
 	<div {...props} className={classNames(styles.particlesBg, props.className)}>
-		<Card
-			style={{
-				margin: 'auto',
-				background: 'white',
-				//specific
-				maxWidth: '490px',
-				height: '553px',
-				padding: '40px 61px 55px',
-			}}
-		>
+		<Card className={classNames(styles.formCard, marginCenter)}>
 			<form
 				onSubmit={(e) => e.preventDefault()}
 				style={{
@@ -62,18 +53,8 @@ export const SalesCta = (props: HTMLAttributes<HTMLDivElement>) => (
 				</Button>
 			</form>
 		</Card>
-		<div style={{ maxWidth: '490px', margin: 'auto', position: 'relative' }}>
-			<div
-				style={{
-					width: '36px',
-					height: '36px',
-					background: 'rgba(248, 61, 108, 0.7)',
-					borderRadius: '2px',
-					position: 'absolute',
-					bottom: '-18px',
-					right: '-18px',
-				}}
-			/>
+		<div className={styles.particlesContainer}>
+			<div className={styles.redParticle} />
 		</div>
 	</div>
 );

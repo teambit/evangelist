@@ -5,7 +5,7 @@ import { marginCenter, text, fullWidth } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { Card } from '@bit/bit.base-ui.surfaces.card';
-import { MutedText } from '@bit/bit.base-ui.text.muted-text';
+import { mutedText } from '@bit/bit.base-ui.text.muted-text';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { themedText } from '@bit/bit.base-ui.text.themed-text';
 import { colorPalette } from '@bit/bit.base-ui.theme.color-palette';
@@ -18,24 +18,37 @@ import { Icon } from '../../../elements/icon';
 import styles from './advantage-cards.module.scss';
 
 export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
-	<div {...props}>
-		<div className={classNames(textColumn, marginCenter, text.center)}>
-			<H2 size={PossibleSizes.sm}>Get Bit enterprise</H2>
-			<Paragraph size={PossibleSizes.lg}>
-				<MutedText>
-					Choose the best solution, features, and pricing for your enterprise.
-					<br />
-					Get a plan tailored for your specific needs, to boost delivery.
-				</MutedText>
-			</Paragraph>
-		</div>
+	<div {...props} className={classNames(props.className)}>
+		<H2
+			size={PossibleSizes.sm}
+			className={classNames(textColumn, marginCenter, text.center)}
+		>
+			Get Bit enterprise
+		</H2>
 
+		<div className={styles.particlesBg}>
+			<Paragraph
+				size={PossibleSizes.lg}
+				className={classNames(mutedText, textColumn, marginCenter, text.center)}
+			>
+				Choose the best solution, features, and pricing for your enterprise.
+				<br />
+				Get a plan tailored for your specific needs, to boost delivery.
+			</Paragraph>
+
+			<Cards />
+		</div>
+	</div>
+);
+
+function Cards() {
+	return (
 		<Grid colMd={2} className={styles.cardsGrid}>
 			<Card className={classNames(colorPalette.neutral, styles.card)}>
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Security and compliance
 				</H4>
-				<Paragraph size={PossibleSizes.sm} style={{ marginBottom: '40px' }}>
+				<Paragraph size={PossibleSizes.sm} className={styles.subtitle}>
 					Build with industry-leading security and compliance standards. Get tools to
 					control everything from identities to advanced audit-logging.
 				</Paragraph>
@@ -74,7 +87,7 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Dedicated support
 				</H4>
-				<Paragraph size={PossibleSizes.sm} style={{ marginBottom: '40px' }}>
+				<Paragraph size={PossibleSizes.sm} className={styles.subtitle}>
 					Get engineering-level support from core maintainers with named contacts,
 					quick response times and multiple escalation channels.
 				</Paragraph>
@@ -113,7 +126,7 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Power to build
 				</H4>
-				<Paragraph size={PossibleSizes.sm} style={{ marginBottom: '40px' }}>
+				<Paragraph size={PossibleSizes.sm} className={styles.subtitle}>
 					Make sure you have the resources and performance to build for global scale.
 					Never stop delivery, no matter what.
 				</Paragraph>
@@ -151,7 +164,7 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Expert consultation
 				</H4>
-				<Paragraph size={PossibleSizes.sm} style={{ marginBottom: '40px' }}>
+				<Paragraph size={PossibleSizes.sm} className={styles.subtitle}>
 					Get architectural-level review from world-class experts to review, plan and
 					build your A+ component infrastructure.
 				</Paragraph>
@@ -182,5 +195,5 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				</Button>
 			</Card>
 		</Grid>
-	</div>
-);
+	);
+}

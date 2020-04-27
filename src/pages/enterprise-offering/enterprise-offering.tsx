@@ -21,8 +21,8 @@ import styles from './enterprise-offering.module.scss';
 export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div {...props}>
-			<div className={styles.gradient00} style={{ paddingTop: '130px' }}>
-				<Hero className={classNames(centerColumn, margin[130])} />
+			<div className={classNames(styles.gradient00, styles.paddingTop130)}>
+				<Hero className={classNames(centerColumn, styles.foldMargin)} />
 
 				<CurvePeek
 					filling="white"
@@ -55,7 +55,7 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 					className={classNames(textColumn, marginCenter)}
 					style={{ marginBottom: '311px' }}
 				/>
-				<SalesCta className={classNames(marginCenter)} />
+				<SalesCta className={classNames(marginCenter, centerColumn)} />
 			</div>
 		</div>
 	);

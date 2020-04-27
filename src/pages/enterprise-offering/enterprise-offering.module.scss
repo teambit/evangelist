@@ -1,4 +1,5 @@
 @import '~@bit/bit.base-ui.theme.colors';
+@import '~@bit/bit.base-ui.layout.breakpoints';
 @import '~@bit/bit.base-ui.constants.storage/_storage.module.scss';
 
 .supportCirclesBg {
@@ -13,7 +14,29 @@
 	display: block;
 
 	width: 100%;
-	height: 100px;
+	height: 30px;
+
+	@media screen and (min-width: $br-sm) {
+		height: 50px;
+		display: block;
+	}
+
+	@media screen and (min-width: $br-l) {
+		height: 100px;
+	}
+}
+
+.foldMargin {
+	margin-bottom: 80px;
+
+	@media screen and (min-width: $br-l) {
+		margin-bottom: 130px;
+	}
+}
+
+//TODO
+.paddingTop130 {
+	padding-top: 130px;
 }
 
 .gradient00 {

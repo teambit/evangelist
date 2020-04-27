@@ -1,7 +1,23 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+.reverseGrid {
+	align-items: end;
+	gap: 40px;
+
+	@media screen and (min-width: $br-l) {
+		> img {
+			order: -1;
+		}
+	}
+}
+
 .bulletList {
-	li {
-		display: flex;
+	> li {
 		margin-bottom: 60px;
+
+		@media screen and (min-width: $br-md) {
+			display: flex;
+		}
 	}
 }
 
@@ -13,6 +29,5 @@
 }
 
 .corposphere {
-	max-width: 500px;
-	width: 100%;
+	max-width: 100%;
 }

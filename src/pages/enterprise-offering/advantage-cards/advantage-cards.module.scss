@@ -1,23 +1,42 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
 @import '~@bit/bit.base-ui.constants.storage/_storage.module.scss';
 
 .cardsGrid {
-	background-image: url($staticStorageUrl + '/enterprise-offering-v1/3-bit-enterprise/particles.svg');
-	background-repeat: no-repeat;
-	padding: 90px 78px;
-	gap: 40px;
+	gap: 40px 20px;
+	padding: 80px 0;
+
+	@media screen and (min-width: $br-l) {
+		padding: 90px 78px;
+		gap: 40px;
+	}
+}
+
+.particlesBg {
+	@media screen and (min-width: $br-l) {
+		background-image: url($staticStorageUrl + '/enterprise-offering-v1/3-bit-enterprise/particles.svg');
+		background-repeat: no-repeat;
+	}
 }
 
 .card {
 	background: white;
-	padding: 46px;
+	padding: 35px 29px;
 	display: flex;
 	flex-direction: column;
+
+	box-shadow: 0 26px 72px 0 rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+	height: 100px;
 }
 
 .bullets {
 	flex-grow: 1;
-	margin-bottom: 49px;
+	margin-bottom: 40px;
 	font-size: 15px;
+
+	padding-left: 8px;
 
 	li {
 		display: flex;
