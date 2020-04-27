@@ -34,7 +34,7 @@ export const SalesCta = (props: HTMLAttributes<HTMLDivElement>) => (
 					height: '100%',
 				}}
 			>
-				<H4 size={PossibleSizes.xs}>Contact our sales team</H4>
+				<H4 size={PossibleSizes.xs}>Get in touch</H4>
 				<MutedText style={{ marginBottom: '40px' }}>
 					Our expert team will get in touch with you shortly!
 				</MutedText>

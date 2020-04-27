@@ -20,7 +20,7 @@ import styles from './advantage-cards.module.scss';
 export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 	<div {...props}>
 		<div className={classNames(textColumn, marginCenter, text.center)}>
-			<H2 size={PossibleSizes.sm}>Bit enterprise</H2>
+			<H2 size={PossibleSizes.sm}>Get Bit enterprise</H2>
 			<Paragraph size={PossibleSizes.lg}>
 				<MutedText>
 					Choose the best solution, features, and pricing for your enterprise.
@@ -74,11 +74,9 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Dedicated support
 				</H4>
-				<Paragraph size={PossibleSizes.sm}>
-					<div style={{ marginBottom: '40px' }}>
-						Get engineering-level support from core maintainers with named contacts,
-						quick response times and multiple escalation channels.
-					</div>
+				<Paragraph size={PossibleSizes.sm} style={{ marginBottom: '40px' }}>
+					Get engineering-level support from core maintainers with named contacts,
+					quick response times and multiple escalation channels.
 				</Paragraph>
 
 				<ul className={styles.bullets}>
@@ -115,11 +113,9 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Power to build
 				</H4>
-				<Paragraph size={PossibleSizes.sm}>
-					<div style={{ marginBottom: '40px' }}>
-						Make sure you have the resources and performance to build for global
-						scale. Never stop delivery, no matter what.
-					</div>
+				<Paragraph size={PossibleSizes.sm} style={{ marginBottom: '40px' }}>
+					Make sure you have the resources and performance to build for global scale.
+					Never stop delivery, no matter what.
 				</Paragraph>
 
 				<ul className={styles.bullets}>

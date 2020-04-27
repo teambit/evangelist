@@ -1,0 +1,17 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+.grid {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	align-items: center;
+
+	min-height: 280px;
+}
+
+.separator {
+	box-shadow: 0 2px 0 0 #6c5ce7;
+
+	@media screen and (min-width: $br-md) {
+		box-shadow: 2px 0 0 0 #6c5ce7;
+	}
+}

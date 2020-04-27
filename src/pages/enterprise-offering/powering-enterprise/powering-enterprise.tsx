@@ -12,6 +12,8 @@ import { MutedText } from '@bit/bit.base-ui.text.muted-text';
 
 import { H2 } from '../../../elements/heading';
 
+import styles from './powering-enterprise.module.scss';
+
 export const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 	<Grid
 		colMd={2}
@@ -19,16 +21,7 @@ export const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 		className={classNames(props.className, text.center, text.l.left)}
 		style={{ alignItems: 'center' }}
 	>
-		<div
-			className={text.center}
-			style={{
-				display: 'grid',
-				gridTemplate: '1fr 1fr / 1fr 1fr',
-				boxShadow: 'inset -2px 0 0 0 #6c5ce7',
-				height: '280px',
-				alignItems: 'center',
-			}}
-		>
+		<div className={classNames(text.center, styles.grid, styles.separator)}>
 			<div>
 				<div style={{ fontSize: '60px', lineHeight: '76px', fontWeight: 800 }}>50%</div>
 				<MutedText>Cost Reduction</MutedText>
@@ -63,7 +56,7 @@ export const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 		</div>
 
 		<div className={textColumn}>
-			<H2 size={PossibleSizes.sm}>Powering enterprise app delivery</H2>
+			<H2 size={PossibleSizes.sm}>Deliver scalable apps, fast.</H2>
 			<Paragraph>
 				<MutedText>
 					Bit powers your organization to build and manage reusable components to

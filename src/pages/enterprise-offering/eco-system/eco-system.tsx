@@ -14,8 +14,8 @@ export const EcoSystem = (props: HTMLAttributes<HTMLDivElement>) => {
 		<div {...props}>
 			<H2 size={PossibleSizes.sm}>Rooted in your ecosystem</H2>
 			<Paragraph className={classNames(mutedText, textColumn, marginCenter)}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta tempor
-				euismod. Suspendisse dictum sed nulla in pretium.
+				Bit integrates into your software-building toolchain and plays with your
+				ecosystem. Get advanced and custom integrations to boost delivery.
 			</Paragraph>
 		</div>
 	);
