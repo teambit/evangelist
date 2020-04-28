@@ -1,5 +1,48 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+.scrollPreventer {
+	overflow: hidden;
+	// "what could possibly go wrong?", he said,
+	// knowing at least 3 points of failure
+}
+
+.fixedLeftColumn {
+	grid-template: auto auto / 100%;
+
+	@media screen and (min-width: $br-sm) {
+		grid-template: 740px / 460px 1fr;
+	}
+}
+
+.imgContainer {
+	position: relative;
+	height: 100%;
+
+	img {
+		width: 100%;
+
+		@media screen and (min-width: $br-sm) {
+			position: absolute;
+			width: fit-content;
+			top: 0;
+		}
+	}
+}
+
 .list {
-	> li{
+	list-style-type: none;
+	margin-bottom: 40px;
+
+	> li {
+		display: flex;
+		align-items: center;
 		margin-bottom: 11px;
+
+		// icon
+		> span {
+			font-size: 22px;
+			margin-right: 0.38em;
+			line-height: inherit;
+		}
 	}
 }

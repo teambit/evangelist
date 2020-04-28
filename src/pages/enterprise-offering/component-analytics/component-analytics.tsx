@@ -17,40 +17,48 @@ import styles from './component-analytics.module.scss';
 
 export function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<Grid colSm={2} {...props} className={classNames(alignItems.center, props.className)}>
-			<div>
-				<H2 size={PossibleSizes.sm}>Advanced component usage analytics</H2>
-				<Paragraph className={mutedText} style={{ marginBottom: '30px' }}>
-					Take control over components across the enterprise codebase. Get reports and
-					analytics to track and learn about the usage and status of
-					componentscomponent across projects.
-				</Paragraph>
+		<div className={styles.scrollPreventer}>
+			<Grid
+				// colSm={2}
+				{...props}
+				className={classNames(alignItems.center, props.className, styles.fixedLeftColumn)}
+			>
+				<div>
+					<H2 size={PossibleSizes.sm}>Advanced component usage analytics</H2>
+					<Paragraph className={mutedText} style={{ marginBottom: '30px' }}>
+						Take control over components across the enterprise codebase. Get reports
+						and analytics to track and learn about the usage and status of
+						componentscomponent across projects.
+					</Paragraph>
 
-				<ul className={classNames(colorPalette.success, styles.list)}>
-					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Verify
-						best-standard components for adoption
-					</li>
-					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Track components
-						and their status in every project
-					</li>
-					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Get analytics and
-						reports to control your codebase
-					</li>
-					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Drive cross-team
-						adoption of your design system
-					</li>
-				</ul>
-			</div>
+					<ul className={classNames(colorPalette.success, styles.list)}>
+						<li>
+							<Icon of="billing-checkmark" className={themedText} />
+							Verify best-standard components for adoption
+						</li>
+						<li>
+							<Icon of="billing-checkmark" className={themedText} />
+							Track components and their status in every project
+						</li>
+						<li>
+							<Icon of="billing-checkmark" className={themedText} />
+							Get analytics and reports to control your codebase
+						</li>
+						<li>
+							<Icon of="billing-checkmark" className={themedText} />
+							Drive cross-team adoption of your design system
+						</li>
+					</ul>
+				</div>
 
-			<Image
-				src="enterprise-offering-v1/6-analytics/graphs-enterprise.svg?v=2"
-				alt="analytics"
-				fullWidth
-			/>
-		</Grid>
+				<div className={styles.imgContainer}>
+					<Image
+						src="enterprise-offering-v1/6-analytics/graphs-enterprise.svg?v=2"
+						alt="analytics"
+						// fullWidth
+					/>
+				</div>
+			</Grid>
+		</div>
 	);
 }
