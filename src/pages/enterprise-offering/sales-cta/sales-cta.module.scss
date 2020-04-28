@@ -1,3 +1,4 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
 @import '~@bit/bit.base-ui.theme.colors';
 @import '~@bit/bit.base-ui.constants.storage/_storage.module.scss';
 
@@ -6,7 +7,7 @@
 	background-repeat: no-repeat;
 	background-size: 692px 100%;
 	background-position: center;
-	
+
 	padding: 50px 20px;
 	box-sizing: content-box; //HACK - don't clip bg in low res
 
@@ -15,11 +16,44 @@
 }
 
 .formCard {
+	display: flex;
+	flex-direction: column;
 	background: $w10;
 	height: 553px;
-	max-width: 490px; //TODO - make column
-	padding: 40px 61px 55px;
+	max-width: 490px;
+	padding: 29px 18px;
 	box-sizing: border-box;
+
+	@media screen and (min-width: $br-sm) {
+		padding: 40px 60px;
+	}
+
+	form {
+		font-size: 14px;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		flex: 1;
+	}
+
+	input,
+	textarea,
+	button,
+	.separator {
+		margin-bottom: 18px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	textarea {
+		flex: 1 0;
+	}
+
+	.separator {
+		--separator-color: #ededed; //TODO
+	}
 }
 
 .particlesContainer {

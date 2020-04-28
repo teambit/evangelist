@@ -34,12 +34,12 @@
 	margin-bottom: 40px;
 
 	> li {
-		display: flex;
 		align-items: center;
 		margin-bottom: 11px;
 
 		// icon
 		> span {
+			float: left;
 			font-size: 22px;
 			margin-right: 0.38em;
 			line-height: inherit;

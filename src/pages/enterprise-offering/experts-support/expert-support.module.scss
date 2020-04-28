@@ -1,0 +1,70 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+.preventOverflow {
+	overflow: hidden;
+}
+
+.mainContent {
+	max-width: 490px;
+}
+
+.container {
+	position: relative;
+}
+
+.card {
+	background: white;
+	margin-bottom: 18px;
+	padding: 24px;
+	border-radius: 20px;
+}
+
+.timestamp {
+	display: block;
+	margin-bottom: 7px;
+}
+
+.chatHeads {
+	display: none;
+
+	@media screen and (min-width: $br-l) {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		> * {
+			position: absolute;
+		}
+	}
+
+	:nth-child(1) {
+		left: -444px;
+		top: -245px;
+	}
+
+	:nth-child(2) {
+		left: -367px;
+		top: -18px;
+	}
+
+	:nth-child(3) {
+		left: -398px;
+		top: 230px;
+	}
+
+	:nth-child(4) {
+		left: 332px;
+		top: -169px;
+	}
+
+	:nth-child(5) {
+		left: 275px;
+		top: 18px;
+	}
+
+	:nth-child(6) {
+		left: 350px;
+		top: 199px;
+	}
+}
