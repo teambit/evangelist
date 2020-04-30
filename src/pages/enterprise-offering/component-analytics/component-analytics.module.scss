@@ -6,7 +6,7 @@
 	// knowing at least 3 points of failure
 }
 
-.fixedLeftColumn {
+.customGrid {
 	grid-template: auto auto / 100%;
 
 	@media screen and (min-width: $br-sm) {

@@ -14,21 +14,24 @@ import { Image } from '../../../elements/image';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 
 import styles from './component-analytics.module.scss';
+import { margin } from '../spacing';
 
 export function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 	return (
 		<div className={styles.scrollPreventer}>
 			<Grid
-				// colSm={2}
 				{...props}
-				className={classNames(alignItems.center, props.className, styles.fixedLeftColumn)}
+				className={classNames(alignItems.center, props.className, styles.customGrid)}
 			>
 				<div>
 					<H2 size={PossibleSizes.sm}>Advanced component usage analytics</H2>
-					<Paragraph className={mutedText} style={{ marginBottom: '30px' }}>
+					<Paragraph
+						className={classNames(mutedText, margin[30])}
+						size={PossibleSizes.lg}
+					>
 						Take control over components across the enterprise codebase. Get reports
 						and analytics to track and learn about the usage and status of
-						componentscomponent across projects.
+						components across projects.
 					</Paragraph>
 
 					<ul className={classNames(colorPalette.success, styles.list)}>

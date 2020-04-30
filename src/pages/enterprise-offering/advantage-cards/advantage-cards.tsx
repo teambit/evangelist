@@ -19,31 +19,26 @@ import styles from './advantage-cards.module.scss';
 
 export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 	<div {...props} className={classNames(props.className)}>
-		<H2
-			size={PossibleSizes.sm}
-			className={classNames(textColumn, marginCenter, text.center)}
-		>
-			Get Bit enterprise
-		</H2>
+		<div className={classNames(textColumn, marginCenter, text.center)}>
+			<H2 size={PossibleSizes.sm}>Get Bit enterprise</H2>
 
-		<div className={styles.particlesBg}>
 			<Paragraph
 				size={PossibleSizes.lg}
-				className={classNames(mutedText, textColumn, marginCenter, text.center)}
+				className={classNames(styles.paragraph, mutedText)}
 			>
 				Choose the best solution, features, and pricing for your enterprise.
 				<br />
 				Get a plan tailored for your specific needs, to boost delivery.
 			</Paragraph>
-
-			<Cards />
 		</div>
+
+		<Cards />
 	</div>
 );
 
 function Cards() {
 	return (
-		<Grid colMd={2} className={styles.cardsGrid}>
+		<Grid colMd={2} className={styles.particlesBg}>
 			<Card className={classNames(colorPalette.neutral, styles.card)}>
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Security and compliance

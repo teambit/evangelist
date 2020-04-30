@@ -7,7 +7,7 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { colorPalette } from '@bit/bit.base-ui.theme.color-palette';
 import { themedText } from '@bit/bit.base-ui.text.themed-text';
 import { text } from '@bit/bit.base-ui.layout.align';
-import { MutedText } from '@bit/bit.base-ui.text.muted-text';
+import { MutedText, mutedText } from '@bit/bit.base-ui.text.muted-text';
 
 import { H2 } from '../../../elements/heading';
 
@@ -16,7 +16,12 @@ import styles from './powering-enterprise.module.scss';
 export const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 	<div
 		{...props}
-		className={classNames(props.className, text.center, text.l.left, styles.poweringEnterprise)}
+		className={classNames(
+			props.className,
+			text.center,
+			text.l.left,
+			styles.poweringEnterprise
+		)}
 	>
 		<CrunchTheNumbers />
 
@@ -24,11 +29,9 @@ export const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 
 		<div className={textColumn}>
 			<H2 size={PossibleSizes.sm}>Deliver scalable apps, fast.</H2>
-			<Paragraph>
-				<MutedText>
-					Bit powers your organization to build and manage reusable components to
-					speed dev velocity, save costs and deliver a better user experience.
-				</MutedText>
+			<Paragraph size={PossibleSizes.xl} className={mutedText}>
+				Bit powers your organization to build and manage reusable components to speed
+				dev velocity, save costs and deliver a better user experience.
 			</Paragraph>
 		</div>
 	</div>

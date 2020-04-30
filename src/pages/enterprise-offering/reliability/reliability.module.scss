@@ -13,7 +13,7 @@
 
 .bulletList {
 	> li {
-		margin-bottom: 60px;
+		margin-bottom: 64px;
 
 		@media screen and (min-width: $br-md) {
 			display: flex;
@@ -23,9 +23,9 @@
 
 .bullet {
 	flex: none;
-	width: 46px;
-	height: 46px;
-	margin-right: 24px;
+	width: 43px;
+	height: 43px;
+	margin: 0 24px 16px;
 }
 
 .corposphere {

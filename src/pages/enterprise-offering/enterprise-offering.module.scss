@@ -40,7 +40,9 @@
 }
 
 .gradient00 {
-	background-image: radial-gradient(circle at 50% 88%, #000000, $d60 93%);
+	background-image:
+		url($staticStorageUrl + '/enterprise-offering-v1/1-hero-section/spray-bg.svg'),
+		radial-gradient(circle at 50% 88%, #000000, #232323 106%);
 	color: #eceaff;
 }
 
