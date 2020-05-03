@@ -27,6 +27,11 @@
 .chatHeads {
 	display: none;
 
+	//fix - override for styles from containing application :(
+	> img {
+		max-width: fit-content;
+	}
+
 	@media screen and (min-width: $br-l) {
 		display: block;
 		position: absolute;
