@@ -34,11 +34,7 @@
 	}
 }
 
-//TODO
-.paddingTop130 {
-	padding-top: 130px;
-}
-
+//gradients:
 .gradient00 {
 	background-image:
 		url($staticStorageUrl + '/enterprise-offering-v1/1-hero-section/spray-bg.svg'),
@@ -52,4 +48,19 @@
 
 .gradient02 {
 	background-image: linear-gradient(to top, rgba(256, 256, 256, 0), $w20);
+}
+
+
+// sections specifics:
+.expertSupport {
+	margin-bottom: 311px;
+}
+
+//TODO
+.paddingTop80 {
+	padding-top: 80px;
+}
+
+.paddingTop130 {
+	padding-top: 130px;
 }

@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import { centerColumn, textColumn, wideColumn } from '@bit/bit.base-ui.layout.page-frame';
+import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { marginCenter, text } from '@bit/bit.base-ui.layout.align';
 import { CurvePeek } from '@bit/bit.base-ui.geometry.curve-peek';
 
@@ -39,21 +39,19 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 			</div>
 
 			<Reliability
-				className={centerColumn}
-				style={{ paddingTop: '130px', marginBottom: '180px' }}
+				className={classNames(centerColumn, margin[180], styles.paddingTop80)}
 			/>
 
 			<CurvePeek filling="cloud" className={styles.intersectingBorder} />
 
-			<div className={styles.gradient02} style={{ paddingTop: '80px' }}>
+			<div className={classNames(styles.gradient02, styles.paddingTop80)}>
 				<EcoSystem className={classNames(centerColumn, text.center)} />
-				<Integrations className={classNames(wideColumn, margin[130])} />
+				<Integrations className={classNames(margin[130])} />
 				<ComponentAnalytics className={centerColumn} />
 			</div>
 			<div className={styles.supportCirclesBg}>
 				<ExpertSupport
-					className={classNames(textColumn, marginCenter)}
-					style={{ marginBottom: '311px' }}
+					className={classNames(textColumn, marginCenter, styles.expertSupport)}
 				/>
 				<SalesCta className={classNames(marginCenter, centerColumn)} />
 			</div>
