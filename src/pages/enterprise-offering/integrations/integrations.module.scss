@@ -1,20 +1,37 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+$shadow-y: 26px;
+$shadowSpread: 74px;
+
 .integrationBadges {
-	overflow: hidden;
+	overflow-x: hidden;
+	padding-top: 130px;
+	padding-bottom: $shadow-y + $shadowSpread;
 }
 
 .logos {
 	animation: conveyerBelt 156s linear infinite; //aka 2.6minutes
-	display: inline-block;
+	display: flex;
 	width: fit-content;
 	white-space: nowrap;
 
 	> * {
-		width: 253px;
-		height: 253px;
+		width: 115px;
+		height: 115px;
+
+		border-radius: 100%; //prevent 'square' shadow
+		box-shadow: 0 $shadow-y $shadowSpread 0 rgba(0, 0, 0, 0.1);
 
 		image-rendering: optimizeSpeed;
 		backface-visibility: hidden;
 		transform: translateZ(0);
+
+		margin-left: 40px;
+		margin-right: 40px;
+		@media screen and (min-width: $br-lg) {
+			margin-left: 80px;
+			margin-right: 80px;
+		}
 	}
 
 	> :nth-child(even) {
