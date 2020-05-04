@@ -14,7 +14,11 @@ import { Image } from '../../../elements/image';
 import styles from './hero.module.scss';
 import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
-export function Hero(props: HTMLAttributes<HTMLDivElement>) {
+type HeroProps = {
+	onBookMeeting?: () => any | Promise<any>;
+} & HTMLAttributes<HTMLDivElement>;
+
+export function Hero(props: HeroProps) {
 	return (
 		<Grid
 			colL={2}
@@ -34,14 +38,13 @@ export function Hero(props: HTMLAttributes<HTMLDivElement>) {
 				<div className={styles.buttons}>
 					<Button importance="cta">Contact Sales</Button>
 					<div className={styles.spacer} />
-					<Button>Book intro</Button>
+					<Button onClick={props.onBookMeeting}>Book intro</Button>
 				</div>
 			</div>
 			<Image
 				src="enterprise-offering-v1/1-hero-section/hero-enterprise.svg"
 				alt="compartmentalized corporate ui"
 				className={classNames(marginCenter, styles.image)}
-				style={{ maxHeight: '550px' }}
 			/>
 		</Grid>
 	);

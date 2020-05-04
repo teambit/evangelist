@@ -11,6 +11,10 @@
 	background-color: var(--primary-button-bg, white);
 	color: var(--primary-button-text, var(--base-color, #6c5ce7));
 
+	&:disabled {
+		filter: saturate(0.38);
+	}
+
 	&[data-variation='muted'] {
 		border: 1px solid var(--muted-color, #eceaff);
 		background-color: var(--muted-color, #eceaff);

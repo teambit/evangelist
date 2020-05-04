@@ -13,16 +13,23 @@ import { EcoSystem } from './eco-system/eco-system';
 import { Integrations } from './integrations/integrations';
 import { ComponentAnalytics } from './component-analytics/component-analytics';
 import { ExpertSupport } from './experts-support/expert-support';
-import { SalesCta } from './sales-cta';
+import { SalesCta, ContactData } from './sales-cta';
 import { margin } from './spacing';
 
 import styles from './enterprise-offering.module.scss';
 
-export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
+export type EnterpriseOfferingProps = {
+	onSubmitCta?: (values: ContactData) => Promise<any>;
+	onBookMeeting?: () => any | Promise<any>;
+} & HTMLAttributes<HTMLDivElement>;
+
+export function EnterpriseOffering(props: EnterpriseOfferingProps) {
+	const { onBookMeeting, onSubmitCta, ...rest } = props;
+
 	return (
-		<div {...props}>
+		<div {...rest}>
 			<div className={classNames(styles.gradient00, styles.paddingTop130)}>
-				<Hero className={classNames(centerColumn, styles.foldMargin)} />
+				<Hero onBookMeeting={onBookMeeting} className={classNames(centerColumn, styles.foldMargin)} />
 
 				<CurvePeek
 					filling="white"
@@ -53,7 +60,11 @@ export function EnterpriseOffering(props: HTMLAttributes<HTMLDivElement>) {
 				<ExpertSupport
 					className={classNames(textColumn, marginCenter, styles.expertSupport)}
 				/>
-				<SalesCta className={classNames(marginCenter, centerColumn)} />
+				<SalesCta
+					onSubmitCta={onSubmitCta}
+					onBookMeeting={onBookMeeting}
+					className={classNames(marginCenter, centerColumn)}
+				/>
 			</div>
 		</div>
 	);

@@ -1,0 +1,28 @@
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	flex: 1;
+
+	> div {
+		display: flex;
+		flex-direction: column;
+	}
+
+	> * {
+		margin-bottom: 18px;
+	}
+
+	textarea {
+		flex: 1 0;
+	}
+}
+
+.grow {
+	flex: 1 0;
+}
+
+.error {
+	padding: 4px;
+}
+

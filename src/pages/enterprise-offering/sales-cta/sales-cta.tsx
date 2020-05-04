@@ -9,36 +9,35 @@ import { fullWidth, marginCenter } from '@bit/bit.base-ui.layout.align';
 
 import { Button } from '../../../elements/button';
 import { H4 } from '../../../elements/heading';
-import { Input, TextArea } from '../../../input/input';
 
 import styles from './sales-cta.module.scss';
 import { margin } from '../spacing';
+import { ContactForm, ContactData } from './contact-form';
 
-export const SalesCta = (props: HTMLAttributes<HTMLDivElement>) => (
+export type { ContactData } from './contact-form';
+
+export type EnterpriseCtaProps = {
+	onSubmitCta?: (values: ContactData) => Promise<any>;
+	onBookMeeting?: () => any;
+} & HTMLAttributes<HTMLDivElement>;
+
+export const SalesCta = (props: EnterpriseCtaProps) => (
 	<div {...props} className={classNames(styles.particlesBg, props.className)}>
 		<Card className={classNames(styles.formCard, marginCenter)}>
-			<form onSubmit={(e) => e.preventDefault()}>
-				<H4 size={PossibleSizes.xs}>Get in touch</H4>
-				<MutedText className={margin[30]}>
-					Our expert team will get in touch with you shortly!
-				</MutedText>
+			<H4 size={PossibleSizes.xs}>Get in touch</H4>
+			<MutedText className={margin[30]}>
+				Our expert team will get in touch with you shortly!
+			</MutedText>
 
-				<Input className={fullWidth} placeholder="Company email" />
+			<ContactForm onSubmit={props.onSubmitCta} />
 
-				<TextArea className={fullWidth} placeholder="..." />
+			<TextSeparator className={classNames(mutedText, styles.margin, styles.separator)}>
+				OR
+			</TextSeparator>
 
-				<Button importance="cta" className={fullWidth}>
-					Contact Sales
-				</Button>
-
-				<TextSeparator className={classNames(mutedText, styles.separator)}>
-					OR
-				</TextSeparator>
-
-				<Button importance="muted" className={fullWidth}>
-					Book intro
-				</Button>
-			</form>
+			<Button importance="muted" onClick={props.onBookMeeting} className={fullWidth}>
+				Book intro
+			</Button>
 		</Card>
 
 		<div className={styles.particlesContainer}>

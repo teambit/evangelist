@@ -25,7 +25,13 @@ class App extends PureComponent {
 				>
 					<EvaIconFont query="aqq93z" />
 					{/* <HybridHomepage githubStars={10000} /> */}
-					<EnterpriseOffering/>
+					<EnterpriseOffering
+						onBookMeeting={() => alert('book meeting')}
+						onSubmitCta={(values) => {
+							alert(JSON.stringify(values));
+							return Promise.resolve();
+						}}
+					/>
 				</ComponentHighlighter>
 			</Theme>
 		);

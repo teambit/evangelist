@@ -59,7 +59,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/yup": "^0.28.0",
     "classnames": "^2.2.6",
+    "formik": "^2.1.4",
     "lodash.debounce": "^4.0.8",
     "node-sass": "^4.13.1",
     "number-abbreviate": "^2.0.0",
@@ -70,7 +72,8 @@
     "react-slick": "^0.25.2",
     "reset-css": "^5.0.1",
     "resize-observer-polyfill": "^1.5.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "yup": "^0.28.5"
   },
   "devDependencies": {
     "@types/chai": "^4.2.8",
