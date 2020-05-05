@@ -12,10 +12,11 @@ import { H4 } from '../../../elements/heading';
 
 import styles from './sales-cta.module.scss';
 import { margin } from '../spacing';
-import { ContactForm, ContactValues } from './contact-form';
+import { ContactForm } from './contact-form';
+import { ContactValues } from './contact-values';
 
 export type EnterpriseCtaProps = {
-	onSubmitCta?: (values: ContactValues) => Promise<any>;
+	onSubmitCta?: (values: ContactValues) => any | Promise<any>;
 	onBookMeeting?: () => any;
 } & HTMLAttributes<HTMLDivElement>;
 
@@ -27,7 +28,7 @@ export const SalesCta = (props: EnterpriseCtaProps) => (
 				Drop a message below and we’ll get back to you shortly.
 			</MutedText>
 
-			<ContactForm onSubmit={props.onSubmitCta} />
+			<ContactForm onSubmitMessage={props.onSubmitCta} />
 
 			<TextSeparator className={classNames(mutedText, styles.margin, styles.separator)}>
 				OR
