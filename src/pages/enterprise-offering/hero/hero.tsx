@@ -39,7 +39,7 @@ export function Hero(props: HeroProps) {
 						<Button importance="cta">Contact Sales</Button>
 					</a>
 					<div className={styles.spacer} />
-					<Button onClick={props.onBookMeeting}>Book intro</Button>
+					<Button onClick={props.onBookMeeting}>Book Intro</Button>
 				</div>
 			</div>
 			<Image

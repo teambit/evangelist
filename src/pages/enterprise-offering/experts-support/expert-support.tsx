@@ -43,7 +43,7 @@ export const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 					<H4 size={PossibleSizes.xxs}>Expert review and training</H4>
 					<Paragraph className={mutedText}>
 						Get architectural-level consultation from industry leading experts and
-						enjoy hands-on training for best practices and personalized workflows.
+						hands-on training for best practices and personalized workflows.
 					</Paragraph>
 				</Card>
 			</div>

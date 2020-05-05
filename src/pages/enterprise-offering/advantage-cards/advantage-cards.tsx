@@ -27,9 +27,8 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 				size={PossibleSizes.lg}
 				className={classNames(styles.paragraph, mutedText)}
 			>
-				Choose the best solution, features, and pricing for your enterprise.
-				<br />
-				Get a plan tailored for your specific needs, to boost delivery.
+				Everything you need to develop and ship component-driven applications at
+				enterprise scale and standards.
 			</Paragraph>
 		</div>
 

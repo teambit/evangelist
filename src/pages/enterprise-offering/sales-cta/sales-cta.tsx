@@ -35,7 +35,7 @@ export const SalesCta = (props: EnterpriseCtaProps) => (
 			</TextSeparator>
 
 			<Button importance="muted" onClick={props.onBookMeeting} className={fullWidth}>
-				Book intro
+				Book Intro
 			</Button>
 		</Card>
 
