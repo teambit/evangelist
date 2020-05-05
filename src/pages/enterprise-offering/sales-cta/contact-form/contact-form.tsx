@@ -4,20 +4,16 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 
 import { fullWidth } from '@bit/bit.base-ui.layout.align';
+import { Error } from '@bit/bit.base-ui.input.error';
 
 import { Button } from '../../../../elements/button';
 import { Input, TextArea } from '../../../../input/input';
-import { Error } from '../../../../elements/error';
 
 import styles from './contact-form.module.scss';
-
-export type ContactData = {
-	email: string;
-	message: string;
-};
+import { ContactValues } from '../contact-values';
 
 export type ContactFormProps = {
-	onSubmit?: (values: ContactData) => Promise<any>;
+	onSubmit?: (values: ContactValues) => Promise<any>;
 };
 
 const formValidation = Yup.object({
@@ -29,7 +25,7 @@ const noop = () => Promise.resolve();
 
 export function ContactForm(props: ContactFormProps) {
 	return (
-		<Formik<ContactData>
+		<Formik<ContactValues>
 			initialValues={{ email: '', message: '' }}
 			validationSchema={formValidation}
 			onSubmit={props.onSubmit || noop}
@@ -39,7 +35,7 @@ export function ContactForm(props: ContactFormProps) {
 					<div className={styles.field}>
 						<Input
 							className={fullWidth}
-							placeholder="Company email"
+							placeholder="Work email"
 							name="email"
 							value={formik.values.email}
 							onChange={formik.handleChange}
@@ -53,7 +49,7 @@ export function ContactForm(props: ContactFormProps) {
 					<div className={styles.grow}>
 						<TextArea
 							className={fullWidth}
-							placeholder="..."
+							placeholder="Tell us what you need..."
 							name="message"
 							value={formik.values.message}
 							onChange={formik.handleChange}

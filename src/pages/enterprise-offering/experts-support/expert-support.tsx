@@ -18,33 +18,32 @@ export const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 		<div {...props} className={classNames(styles.container, props.className)}>
 			<div className={classNames(styles.mainContent, marginCenter)}>
 				<H2 size={PossibleSizes.md} className={classNames(text.center, margin[50])}>
-					Enjoy world-class support and hands-on experts
+					World-class support by hands-on experts
 				</H2>
 
 				<Card className={styles.card}>
 					<MutedText className={styles.timestamp}>10:30</MutedText>
 					<H4 size={PossibleSizes.xxs}>Response-time SLA</H4>
 					<Paragraph className={mutedText}>
-						Enjoy industry-leading response times and availability through multiple
-						support channels including named contacts, joint Slack and more. Never
-						slow down.
+						Guarantee fast response times and availability through personal support
+						channels to ensure your team never slows down delivery.
 					</Paragraph>
 				</Card>
 				<Card className={styles.card}>
 					<MutedText className={styles.timestamp}>10:31</MutedText>
-					<H4 size={PossibleSizes.xxs}>Named contacts with escalation paths</H4>
+					<H4 size={PossibleSizes.xxs}>Named contacts and escalation paths</H4>
 					<Paragraph className={mutedText}>
-						Get named Bit experts with your success as their personal goal, and
-						enjoy multiple escalation paths vis email, chat and phone.
+						Enjoy personal support from dedicated experts that you can reach anytime
+						you need. And, add multiple escalation paths to your arsenal just in
+						case.
 					</Paragraph>
 				</Card>
 				<Card className={styles.card}>
 					<MutedText className={styles.timestamp}>10:32</MutedText>
 					<H4 size={PossibleSizes.xxs}>Expert review and training</H4>
 					<Paragraph className={mutedText}>
-						Get architectural-level consultation from industry-leading experts and
-						enjoy hands-on team training and onboarding with best practices and
-						personalized workflows.
+						Get architectural-level consultation from industry leading experts and
+						enjoy hands-on training for best practices and personalized workflows.
 					</Paragraph>
 				</Card>
 			</div>

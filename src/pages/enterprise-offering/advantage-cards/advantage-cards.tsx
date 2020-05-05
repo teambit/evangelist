@@ -14,13 +14,14 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { Button } from '../../../elements/button';
 import { H2, H4 } from '../../../elements/heading';
 import { Icon } from '../../../elements/icon';
+import { Link } from '../../../elements/link';
 
 import styles from './advantage-cards.module.scss';
 
 export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 	<div {...props} className={classNames(props.className)}>
 		<div className={classNames(textColumn, marginCenter, text.center)}>
-			<H2 size={PossibleSizes.sm}>Get Bit enterprise</H2>
+			<H2 size={PossibleSizes.sm}>Bit enterprise</H2>
 
 			<Paragraph
 				size={PossibleSizes.lg}
@@ -41,41 +42,41 @@ function Cards() {
 		<Grid colMd={2} className={styles.particlesBg}>
 			<Card className={classNames(colorPalette.neutral, styles.card)}>
 				<H4 size={PossibleSizes.xs} className={themedText}>
-					Security and compliance
+					Security and control
 				</H4>
 				<Paragraph size={PossibleSizes.sm} className={styles.subtitle}>
-					Build with industry-leading security and compliance standards. Get tools to
-					control everything from identities to advanced audit-logging.
+					Keep your source-code and information secured with the highest standards.
+					Get everything you need to stay in control.
 				</Paragraph>
 
 				<ul className={styles.bullets}>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} />{' '}
-						<span>99.9% Uptime SLA</span>
-					</li>
-					<li>
 						<Icon of="billing-checkmark" className={themedText} /> SSO SAML
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Advanced Audit
-						logs
+						<Icon of="billing-checkmark" className={themedText} /> Audit logs
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Role-based access
-						control
+						<Icon of="billing-checkmark" className={themedText} /> Source-code
+						encryption at rest
+					</li>
+					<li>
+						<Icon of="billing-checkmark" className={themedText} /> Role-based
+						permissions control
 					</li>
 					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Multiple-backups
 						for everything
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Advanced platform
-						and network security
+						<Icon of="billing-checkmark" className={themedText} /> 99.9% Uptime SLA
 					</li>
 				</ul>
-				<Button importance="cta" className={fullWidth}>
-					Contact Sales
-				</Button>
+				<Link href="/contact-sales">
+					<Button importance="cta" className={fullWidth}>
+						Contact Sales
+					</Button>
+				</Link>
 			</Card>
 
 			<Card className={classNames(colorPalette.secondary, styles.card)}>
@@ -83,8 +84,8 @@ function Cards() {
 					Dedicated support
 				</H4>
 				<Paragraph size={PossibleSizes.sm} className={styles.subtitle}>
-					Get engineering-level support from core maintainers with named contacts,
-					quick response times and multiple escalation channels.
+					Enjoy personalized support from core Bit experts and engineers, that will
+					make sure your delivery is never slowed down.
 				</Paragraph>
 
 				<ul className={styles.bullets}>
@@ -93,28 +94,25 @@ function Cards() {
 						Bit experts
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> 24/7 support with
-						5 hour response time
+						<Icon of="billing-checkmark" className={themedText} /> Engineering-level
+						support by core maintainers
 					</li>
 					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Joint Slack
 					</li>
 					<li>
+						<Icon of="billing-checkmark" className={themedText} /> Response-time SLA
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Escalation paths
-						via phone, slack or email
-					</li>
-					<li>
-						<Icon of="billing-checkmark" className={themedText} /> SLA with 99.95%
-						uptime
-					</li>
-					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Engineering-level
-						support from core maintainers
+						via phone, chat and email
 					</li>
 				</ul>
-				<Button importance="cta" className={fullWidth}>
-					Contact Sales
-				</Button>
+				<Link href="/contact-sales">
+					<Button importance="cta" className={fullWidth}>
+						Contact Sales
+					</Button>
+				</Link>
 			</Card>
 
 			<Card className={classNames(colorPalette.primary, styles.card)}>
@@ -122,37 +120,37 @@ function Cards() {
 					Power to build
 				</H4>
 				<Paragraph size={PossibleSizes.sm} className={styles.subtitle}>
-					Make sure you have the resources and performance to build for global scale.
-					Never stop delivery, no matter what.
+					Get the resources and performance to build at global scale. Integrate Bit
+					with your toolchain to boost delivery and time to market.
 				</Paragraph>
 
 				<ul className={styles.bullets}>
 					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Auto-scaling
-						concurrent builds to fit your scale
+						concurrent builds
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Build minutes
-						that won’t ever block your workflow
+						<Icon of="billing-checkmark" className={themedText} /> CI minutes that
+						never block you
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> 99.9% Uptime SLA
+						<Icon of="billing-checkmark" className={themedText} /> Webhook
+						integrations
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Advanced
-						integrations to GitHub and Slack
+						<Icon of="billing-checkmark" className={themedText} /> Advanced GitHub
+						and Slack integrations
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> SLA with 99.95%
-						uptime
-					</li>
-					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Bit.dev web hooks
+						<Icon of="billing-checkmark" className={themedText} /> Custom extensions
+						and integrations
 					</li>
 				</ul>
-				<Button importance="cta" className={fullWidth}>
-					Contact Sales
-				</Button>
+				<Link href="/contact-sales">
+					<Button importance="cta" className={fullWidth}>
+						Contact Sales
+					</Button>
+				</Link>
 			</Card>
 
 			<Card className={classNames(colorPalette.impulse, styles.card)}>
@@ -160,34 +158,36 @@ function Cards() {
 					Expert consultation
 				</H4>
 				<Paragraph size={PossibleSizes.sm} className={styles.subtitle}>
-					Get architectural-level review from world-class experts to review, plan and
-					build your A+ component infrastructure.
+					Our architects help the world’s best teams drive development through
+					components. We’d love to do the same for you.
 				</Paragraph>
 				<ul className={styles.bullets}>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Architectural
-						review by component experts.
-					</li>
-					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Hands-on Z-A team
-						onboarding.
-					</li>
-					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Training for
-						teams and leadership.
+						<Icon of="billing-checkmark" className={themedText} /> Industry-experts
+						architectural review
 					</li>
 					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Implementing best
-						practices and workflows.
+						practices
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Custom extensions
-						and integrations.
+						<Icon of="billing-checkmark" className={themedText} /> Personalized
+						workflows
+					</li>
+					<li>
+						<Icon of="billing-checkmark" className={themedText} /> Hands-on Z-A
+						onboarding
+					</li>
+					<li>
+						<Icon of="billing-checkmark" className={themedText} /> Training for
+						teams and leadership
 					</li>
 				</ul>
-				<Button importance="cta" className={fullWidth}>
-					Contact Sales
-				</Button>
+				<Link href="/contact-sales">
+					<Button importance="cta" className={fullWidth}>
+						Contact Sales
+					</Button>
+				</Link>
 			</Card>
 		</Grid>
 	);

@@ -12,21 +12,19 @@ import { H4 } from '../../../elements/heading';
 
 import styles from './sales-cta.module.scss';
 import { margin } from '../spacing';
-import { ContactForm, ContactData } from './contact-form';
-
-export type { ContactData } from './contact-form';
+import { ContactForm, ContactValues } from './contact-form';
 
 export type EnterpriseCtaProps = {
-	onSubmitCta?: (values: ContactData) => Promise<any>;
+	onSubmitCta?: (values: ContactValues) => Promise<any>;
 	onBookMeeting?: () => any;
 } & HTMLAttributes<HTMLDivElement>;
 
 export const SalesCta = (props: EnterpriseCtaProps) => (
 	<div {...props} className={classNames(styles.particlesBg, props.className)}>
 		<Card className={classNames(styles.formCard, marginCenter)}>
-			<H4 size={PossibleSizes.xs}>Get in touch</H4>
+			<H4 size={PossibleSizes.xs}>Let’s talk </H4>
 			<MutedText className={margin[30]}>
-				Our expert team will get in touch with you shortly!
+				Drop a message below and we’ll get back to you shortly.
 			</MutedText>
 
 			<ContactForm onSubmit={props.onSubmitCta} />

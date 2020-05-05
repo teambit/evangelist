@@ -29,27 +29,27 @@ export function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 						className={classNames(mutedText, margin[30])}
 						size={PossibleSizes.lg}
 					>
-						Take control over components across the enterprise codebase. Get reports
-						and analytics to track and learn about the usage and status of
-						components across projects.
+						Track and learn exactly which components are used, in which version, in
+						which project. Take control over components across the enterprise
+						codebase.
 					</Paragraph>
 
 					<ul className={classNames(colorPalette.success, styles.list)}>
 						<li>
 							<Icon of="billing-checkmark" className={themedText} />
-							Verify best-standard components for adoption
+							Track component usage across projects and teams
 						</li>
 						<li>
 							<Icon of="billing-checkmark" className={themedText} />
-							Track components and their status in every project
+							Drive and monitor the adoption of changes
 						</li>
 						<li>
 							<Icon of="billing-checkmark" className={themedText} />
-							Get analytics and reports to control your codebase
+							Verify and distribute best-standard components
 						</li>
 						<li>
 							<Icon of="billing-checkmark" className={themedText} />
-							Drive cross-team adoption of your design system
+							Ensure visual consistency
 						</li>
 					</ul>
 				</div>

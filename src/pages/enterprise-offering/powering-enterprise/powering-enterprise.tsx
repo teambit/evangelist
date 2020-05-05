@@ -28,10 +28,10 @@ export const PoweringEnterprise = (props: HTMLAttributes<HTMLDivElement>) => (
 		<div className={styles.separator}></div>
 
 		<div className={textColumn}>
-			<H2 size={PossibleSizes.sm}>Deliver scalable apps, fast.</H2>
+			<H2 size={PossibleSizes.sm}>Powering application delivery at scale</H2>
 			<Paragraph size={PossibleSizes.xl} className={mutedText}>
-				Bit powers your organization to build and manage reusable components to speed
-				dev velocity, save costs and deliver a better user experience.
+				Bit enterprise lets you build and ship modern web applications at scale. It
+				empowers global teams to build faster and better with components.
 			</Paragraph>
 		</div>
 	</div>
@@ -48,7 +48,7 @@ function CrunchTheNumbers() {
 						fontWeight: 800,
 					}}
 				>
-					50%
+					35%
 				</div>
 				<MutedText>Cost Reduction</MutedText>
 			</div>
@@ -63,7 +63,7 @@ function CrunchTheNumbers() {
 				>
 					10x
 				</div>
-				<MutedText>App Delivery</MutedText>
+				<MutedText>Feature delivery</MutedText>
 			</div>
 			<div>
 				<div

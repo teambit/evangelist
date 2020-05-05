@@ -27,16 +27,17 @@ export function Hero(props: HeroProps) {
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H1 size={PossibleSizes.sm} className={themedText}>
-					The Enterprise component platform
+					The enterprise component platform
 				</H1>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
-					Speed delivery of applications, features, and projects while reducing costs
-					and time to market. Enjoy industry-leading security, performance, and
-					scalability with world-class support.
+					Let your components drive web application delivery at global scale. Enjoy
+					world-class performance, security and support every step of the way.
 				</Paragraph>
 
 				<div className={styles.buttons}>
-					<Button importance="cta">Contact Sales</Button>
+					<a href="/contact-sales">
+						<Button importance="cta">Contact Sales</Button>
+					</a>
 					<div className={styles.spacer} />
 					<Button onClick={props.onBookMeeting}>Book intro</Button>
 				</div>

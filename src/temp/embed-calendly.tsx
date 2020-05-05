@@ -54,9 +54,3 @@ function createCalendlyStylesheet() {
 
 	return scriptTag;
 }
-
-// function calendlyInstance() {
-// 	//@ts-ignore
-// 	const calendly = window.Calendly;
-// 	return calendly;
-// }

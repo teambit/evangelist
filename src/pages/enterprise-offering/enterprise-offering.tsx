@@ -13,13 +13,13 @@ import { EcoSystem } from './eco-system/eco-system';
 import { Integrations } from './integrations/integrations';
 import { ComponentAnalytics } from './component-analytics/component-analytics';
 import { ExpertSupport } from './experts-support/expert-support';
-import { SalesCta, ContactData } from './sales-cta';
+import { SalesCta, ContactValues } from './sales-cta';
 import { margin } from './spacing';
 
 import styles from './enterprise-offering.module.scss';
 
 export type EnterpriseOfferingProps = {
-	onSubmitCta?: (values: ContactData) => Promise<any>;
+	onSubmitCta?: (values: ContactValues) => Promise<any>;
 	onBookMeeting?: () => any | Promise<any>;
 } & HTMLAttributes<HTMLDivElement>;
 

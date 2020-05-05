@@ -10,6 +10,7 @@ import { Image } from '../../../elements/image';
 
 import styles from './reliability.module.scss';
 import { marginCenter, text } from '@bit/bit.base-ui.layout.align';
+import { Link } from '../../../elements/link';
 
 export const Reliability = (props: HTMLAttributes<HTMLDivElement>) => (
 	<Grid
@@ -18,7 +19,7 @@ export const Reliability = (props: HTMLAttributes<HTMLDivElement>) => (
 		className={classNames(props.className, styles.reverseGrid, text.center, text.md.left)}
 	>
 		<div>
-			<H2 size={PossibleSizes.sm}>Always reliable and secured</H2>
+			<H2 size={PossibleSizes.sm}>Reliable and secured</H2>
 
 			<AdvantageList />
 		</div>
@@ -55,8 +56,11 @@ const AdvantageList = () => (
 			<div>
 				<H3 size={PossibleSizes.xs}>Always secured</H3>
 				<MutedText>
-					Keep your code private and secured with the highest and most advanced
-					security and information standards, policies, and practices.
+					Keep your source-code and information secured with the highest-standards
+					measures, policies, and practices.{' '}
+					<Link external href="/resources/security">
+						Learn more
+					</Link>
 				</MutedText>
 			</div>
 		</li>
@@ -69,8 +73,8 @@ const AdvantageList = () => (
 			<div>
 				<H3 size={PossibleSizes.xs}>Trusted by the best</H3>
 				<MutedText>
-					Bit’s platform is trusted by many global teams from regulated industries
-					with the highest possible information security standards.
+					Bit is trusted by over 100,000 developers and teams from the world’s leading
+					companies from various industry sectors.
 				</MutedText>
 			</div>
 		</li>
