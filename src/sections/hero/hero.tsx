@@ -73,7 +73,7 @@ export function Hero(props: ReuseLandingProps) {
 						</Link>
 						<div className={styles.spacer} />
 						<Link external href={`${links.docs}/docs/quick-start`}>
-							<Button elevation="medium">Learn more</Button>
+							<Button elevation="medium">Learn More</Button>
 						</Link>
 					</Paragraph>
 					<IconLine icons={iconsArray} className={styles.icons} />
