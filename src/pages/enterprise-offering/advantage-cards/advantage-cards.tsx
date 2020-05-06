@@ -174,7 +174,7 @@ function Cards() {
 						workflows
 					</li>
 					<li>
-						<Icon of="billing-checkmark" className={themedText} /> Hands-on Z-A
+						<Icon of="billing-checkmark" className={themedText} /> Hands-on A-Z
 						onboarding
 					</li>
 					<li>

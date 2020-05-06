@@ -7,6 +7,11 @@
 	border-radius: 7px;
 	border: solid 1px $d10;
 	background-color: $w20;
+
+	&[data-error] {
+		background: $r20; //TODO
+		border: 1px solid var(--error-color, #e62e5c);
+	}
 }
 
 textarea.evaInput {

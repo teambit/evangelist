@@ -20,27 +20,32 @@ export type EnterpriseCtaProps = {
 	onBookMeeting?: () => any;
 } & HTMLAttributes<HTMLDivElement>;
 
-export const SalesCta = (props: EnterpriseCtaProps) => (
-	<div {...props} className={classNames(styles.particlesBg, props.className)}>
-		<Card className={classNames(styles.formCard, marginCenter)}>
-			<H4 size={PossibleSizes.xs}>Let’s talk </H4>
-			<MutedText className={margin[30]}>
-				Drop a message below and we’ll get back to you shortly.
-			</MutedText>
+export const SalesCta = (props: EnterpriseCtaProps) => {
+	const { onSubmitCta, onBookMeeting, className, ...rest } = props;
+	return (
+		<div {...rest} className={classNames(styles.particlesBg, className)}>
+			<Card className={classNames(styles.formCard, marginCenter)}>
+				<H4 size={PossibleSizes.xs}>Let’s talk </H4>
+				<MutedText className={margin[30]}>
+					Drop a message below and we’ll get back to you shortly.
+				</MutedText>
 
-			<ContactForm onSubmitMessage={props.onSubmitCta} />
+				<ContactForm onSubmitMessage={onSubmitCta} />
 
-			<TextSeparator className={classNames(mutedText, styles.margin, styles.separator)}>
-				OR
-			</TextSeparator>
+				<TextSeparator
+					className={classNames(mutedText, styles.margin, styles.separator)}
+				>
+					OR
+				</TextSeparator>
 
-			<Button importance="muted" onClick={props.onBookMeeting} className={fullWidth}>
-				Book Intro
-			</Button>
-		</Card>
+				<Button importance="muted" onClick={onBookMeeting} className={fullWidth}>
+					Book Intro
+				</Button>
+			</Card>
 
-		<div className={styles.particlesContainer}>
-			<div className={styles.redParticle} />
+			<div className={styles.particlesContainer}>
+				<div className={styles.redParticle} />
+			</div>
 		</div>
-	</div>
-);
+	);
+};

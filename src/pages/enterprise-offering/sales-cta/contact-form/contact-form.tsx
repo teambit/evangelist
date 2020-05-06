@@ -34,7 +34,7 @@ export class ContactForm extends Component<ContactFormProps> {
 	};
 
 	render() {
-		const { onSubmit, className, ...rest } = this.props;
+		const { className, onSubmitMessage, onSubmit, ...rest } = this.props;
 
 		return (
 			<Formik<ContactValues>
@@ -56,10 +56,11 @@ export class ContactForm extends Component<ContactFormProps> {
 								value={formik.values.email}
 								onChange={formik.handleChange}
 								onBlur={formik.handleBlur}
+								error={!!(formik.touched.email && formik.errors.email)}
 							/>
-							{formik.touched.email && formik.errors.email ? (
+							{formik.touched.email && formik.errors.email && (
 								<Error className={styles.error}>{formik.errors.email}</Error>
-							) : null}
+							)}
 						</div>
 
 						<div className={styles.grow}>
@@ -70,10 +71,11 @@ export class ContactForm extends Component<ContactFormProps> {
 								value={formik.values.message}
 								onChange={formik.handleChange}
 								onBlur={formik.handleBlur}
+								error={!!(formik.touched.message && formik.errors.message)}
 							/>
-							{formik.touched.message && formik.errors.message ? (
+							{formik.touched.message && formik.errors.message && (
 								<Error className={styles.error}>{formik.errors.message}</Error>
-							) : null}
+							)}
 						</div>
 
 						<Button
