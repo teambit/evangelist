@@ -19,7 +19,9 @@ export const Reliability = (props: HTMLAttributes<HTMLDivElement>) => (
 		className={classNames(props.className, styles.reverseGrid, text.center, text.md.left)}
 	>
 		<div>
-			<H2 size={PossibleSizes.sm}>Reliable and secured</H2>
+			<H2 size={PossibleSizes.sm} className={styles.title}>
+				Reliable and secured
+			</H2>
 
 			<AdvantageList />
 		</div>
