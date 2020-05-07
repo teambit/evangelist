@@ -56,9 +56,8 @@ export function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 
 				<div className={styles.imgContainer}>
 					<Image
-						src="enterprise-offering-v1/6-analytics/graphs-enterprise.svg?v=2"
+						src="enterprise-offering-v1/6-analytics/graphs-enterprise.svg?v=4"
 						alt="analytics"
-						// fullWidth
 					/>
 				</div>
 			</Grid>
