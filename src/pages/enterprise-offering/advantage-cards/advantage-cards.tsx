@@ -36,6 +36,13 @@ export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
 	</div>
 );
 
+const subjects = {
+	security: encodeURIComponent('security and control'),
+	support: encodeURIComponent('dedicated support'),
+	build: encodeURIComponent('power to build'),
+	experts: encodeURIComponent('expert consultation'),
+};
+
 function Cards() {
 	return (
 		<Grid colMd={2} className={styles.particlesBg}>
@@ -71,7 +78,7 @@ function Cards() {
 						<Icon of="billing-checkmark" className={themedText} /> 99.9% Uptime SLA
 					</li>
 				</ul>
-				<Link href="/contact-sales">
+				<Link href={`/contact-sales?redirectUri=%2F~enterprise&${subjects.security}`}>
 					<Button importance="cta" className={fullWidth}>
 						Contact Sales
 					</Button>
@@ -107,7 +114,7 @@ function Cards() {
 						via phone, chat and email
 					</li>
 				</ul>
-				<Link href="/contact-sales">
+				<Link href={`/contact-sales?redirectUri=%2F~enterprise&${subjects.support}`}>
 					<Button importance="cta" className={fullWidth}>
 						Contact Sales
 					</Button>
@@ -145,7 +152,7 @@ function Cards() {
 						and integrations
 					</li>
 				</ul>
-				<Link href="/contact-sales">
+				<Link href={`/contact-sales?redirectUri=%2F~enterprise&${subjects.build}`}>
 					<Button importance="cta" className={fullWidth}>
 						Contact Sales
 					</Button>
@@ -182,7 +189,7 @@ function Cards() {
 						teams and leadership
 					</li>
 				</ul>
-				<Link href="/contact-sales">
+				<Link href={`/contact-sales?redirectUri=%2F~enterprise&${subjects.experts}`}>
 					<Button importance="cta" className={fullWidth}>
 						Contact Sales
 					</Button>
