@@ -43,10 +43,20 @@ const subjects = {
 	experts: encodeURIComponent('expert consultation'),
 };
 
+const redirects = {
+	security: encodeURIComponent('/~enterprise#contact-security'),
+	support: encodeURIComponent('/~enterprise#contact-support'),
+	build: encodeURIComponent('/~enterprise#contact-build'),
+	experts: encodeURIComponent('/~enterprise#contact-experts'),
+};
+
 function Cards() {
 	return (
-		<Grid colMd={2} className={styles.particlesBg}>
-			<Card className={classNames(colorPalette.neutral, styles.card)}>
+		<Grid colMd={2} className={classNames(styles.particlesBg, styles.grid)}>
+			<Card
+				id="contact-security"
+				className={classNames(colorPalette.neutral, styles.card)}
+			>
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Security and control
 				</H4>
@@ -78,14 +88,19 @@ function Cards() {
 						<Icon of="billing-checkmark" className={themedText} /> 99.9% Uptime SLA
 					</li>
 				</ul>
-				<Link href={`/contact-sales?redirectUri=%2F~enterprise&${subjects.security}`}>
+				<Link
+					href={`/contact-sales?redirectUri=${redirects.security}&subject=${subjects.security}`}
+				>
 					<Button importance="cta" className={fullWidth}>
 						Contact Sales
 					</Button>
 				</Link>
 			</Card>
 
-			<Card className={classNames(colorPalette.secondary, styles.card)}>
+			<Card
+				id="contact-support"
+				className={classNames(colorPalette.secondary, styles.card)}
+			>
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Dedicated support
 				</H4>
@@ -114,14 +129,16 @@ function Cards() {
 						via phone, chat and email
 					</li>
 				</ul>
-				<Link href={`/contact-sales?redirectUri=%2F~enterprise&${subjects.support}`}>
+				<Link
+					href={`/contact-sales?redirectUri=${redirects.support}&subject=${subjects.support}`}
+				>
 					<Button importance="cta" className={fullWidth}>
 						Contact Sales
 					</Button>
 				</Link>
 			</Card>
 
-			<Card className={classNames(colorPalette.primary, styles.card)}>
+			<Card id="contact-build" className={classNames(colorPalette.primary, styles.card)}>
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Power to build
 				</H4>
@@ -152,14 +169,17 @@ function Cards() {
 						and integrations
 					</li>
 				</ul>
-				<Link href={`/contact-sales?redirectUri=%2F~enterprise&${subjects.build}`}>
+				<Link href={`/contact-sales?redirectUri=${redirects.build}&subject=${subjects.build}`}>
 					<Button importance="cta" className={fullWidth}>
 						Contact Sales
 					</Button>
 				</Link>
 			</Card>
 
-			<Card className={classNames(colorPalette.impulse, styles.card)}>
+			<Card
+				id="contact-experts"
+				className={classNames(colorPalette.impulse, styles.card)}
+			>
 				<H4 size={PossibleSizes.xs} className={themedText}>
 					Expert consultation
 				</H4>
@@ -189,7 +209,9 @@ function Cards() {
 						teams and leadership
 					</li>
 				</ul>
-				<Link href={`/contact-sales?redirectUri=%2F~enterprise&${subjects.experts}`}>
+				<Link
+					href={`/contact-sales?redirectUri=${redirects.experts}&subject=${subjects.experts}`}
+				>
 					<Button importance="cta" className={fullWidth}>
 						Contact Sales
 					</Button>

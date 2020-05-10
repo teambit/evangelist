@@ -24,7 +24,7 @@ export const SalesCta = (props: EnterpriseCtaProps) => {
 	const { onSubmitCta, onBookMeeting, className, ...rest } = props;
 	return (
 		<div {...rest} className={classNames(styles.particlesBg, className)}>
-			<Card className={classNames(styles.formCard, marginCenter)}>
+			<Card id="lets-talk" className={classNames(styles.formCard, marginCenter)}>
 				<H4 size={PossibleSizes.xs}>Let’s talk </H4>
 				<MutedText className={margin[30]}>
 					Drop a message below and we’ll get back to you shortly.
