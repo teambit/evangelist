@@ -16,13 +16,31 @@
 	}
 }
 
+.grid {
+	gap: 20px;
+
+	@media screen and (min-width: $br-l) {
+		gap: 40px;
+	}
+}
+
 .card {
 	background: white;
+	min-height: 500px;
 	padding: 35px 29px;
 	display: flex;
 	flex-direction: column;
 
 	box-shadow: 0 26px 72px 0 rgba(0, 0, 0, 0.1);
+
+	button {
+		height: 38px;
+		font-size: 14px;
+	}
+
+	@media screen and (min-width: $br-l) {
+		padding: 46px 42px;
+	}
 }
 
 .subtitle {

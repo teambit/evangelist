@@ -6,6 +6,10 @@
 
 .mainContent {
 	max-width: 490px;
+	
+	> h2 {
+		margin-bottom: 60px;
+	}
 }
 
 .container {

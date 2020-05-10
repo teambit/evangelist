@@ -41,54 +41,19 @@ function CrunchTheNumbers() {
 	return (
 		<div className={classNames(text.center, styles.crunchTheNumbers)}>
 			<div>
-				<div
-					style={{
-						fontSize: '60px',
-						lineHeight: '76px',
-						fontWeight: 800,
-					}}
-				>
-					35%
-				</div>
+				<div className={styles.emphasized}>35%</div>
 				<MutedText>Cost Reduction</MutedText>
 			</div>
-			<div>
-				<div
-					className={classNames(colorPalette.secondary, themedText)}
-					style={{
-						fontSize: '60px',
-						lineHeight: '76px',
-						fontWeight: 800,
-					}}
-				>
-					10x
-				</div>
+			<div className={colorPalette.secondary}>
+				<div className={classNames(themedText, styles.emphasized)}>10x</div>
 				<MutedText>Feature delivery</MutedText>
 			</div>
-			<div>
-				<div
-					className={classNames(colorPalette.primary, themedText)}
-					style={{
-						fontSize: '60px',
-						lineHeight: '76px',
-						fontWeight: 800,
-					}}
-				>
-					30x
-				</div>
+			<div className={colorPalette.primary}>
+				<div className={classNames(themedText, styles.emphasized)}>30x</div>
 				<MutedText>Team Releases</MutedText>
 			</div>
-			<div>
-				<div
-					className={classNames(colorPalette.complementary, themedText)}
-					style={{
-						fontSize: '80px',
-						lineHeight: '76px',
-						fontWeight: 800,
-					}}
-				>
-					∞
-				</div>
+			<div className={colorPalette.complementary}>
+				<div className={classNames(themedText, styles.xtraEmpthasized)}>∞</div>
 				<MutedText>Scale</MutedText>
 			</div>
 		</div>

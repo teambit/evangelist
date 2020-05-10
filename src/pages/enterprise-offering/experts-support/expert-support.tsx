@@ -4,12 +4,11 @@ import classNames from 'classnames';
 import { Card } from '@bit/bit.base-ui.surfaces.card';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
-import { MutedText, mutedText } from '@bit/bit.base-ui.text.muted-text';
+import { mutedText } from '@bit/bit.base-ui.text.muted-text';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
 
 import { H2, H4 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
-import { margin } from '../spacing';
 
 import styles from './expert-support.module.scss';
 
@@ -17,31 +16,46 @@ export const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 	<div className={styles.preventOverflow}>
 		<div {...props} className={classNames(styles.container, props.className)}>
 			<div className={classNames(styles.mainContent, marginCenter)}>
-				<H2 size={PossibleSizes.md} className={classNames(text.center, margin[50])}>
+				<H2 size={PossibleSizes.md} className={classNames(text.center, styles.title)}>
 					World-class support by hands-on experts
 				</H2>
 
 				<Card className={styles.card}>
-					<MutedText className={styles.timestamp}>10:30</MutedText>
+					<Paragraph
+						className={classNames(mutedText, styles.timestamp)}
+						size={PossibleSizes.lg}
+					>
+						10:30
+					</Paragraph>
 					<H4 size={PossibleSizes.xxs}>Response-time SLA</H4>
-					<Paragraph className={mutedText}>
+					<Paragraph className={mutedText} size={PossibleSizes.sm}>
 						Guarantee fast response times and availability through personal support
 						channels to ensure your team never slows down delivery.
 					</Paragraph>
 				</Card>
 				<Card className={styles.card}>
-					<MutedText className={styles.timestamp}>10:31</MutedText>
+					<Paragraph
+						className={classNames(mutedText, styles.timestamp)}
+						size={PossibleSizes.lg}
+					>
+						10:31
+					</Paragraph>
 					<H4 size={PossibleSizes.xxs}>Named contacts and escalation paths</H4>
-					<Paragraph className={mutedText}>
+					<Paragraph className={mutedText} size={PossibleSizes.sm}>
 						Enjoy personal support from dedicated experts that you can reach anytime
 						you need. And, add multiple escalation paths to your arsenal just in
 						case.
 					</Paragraph>
 				</Card>
 				<Card className={styles.card}>
-					<MutedText className={styles.timestamp}>10:32</MutedText>
+					<Paragraph
+						className={classNames(mutedText, styles.timestamp)}
+						size={PossibleSizes.lg}
+					>
+						10:32
+					</Paragraph>
 					<H4 size={PossibleSizes.xxs}>Expert review and training</H4>
-					<Paragraph className={mutedText}>
+					<Paragraph className={mutedText} size={PossibleSizes.sm}>
 						Get architectural-level consultation from industry leading experts and
 						hands-on training for best practices and personalized workflows.
 					</Paragraph>

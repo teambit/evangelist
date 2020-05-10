@@ -35,13 +35,15 @@
 	margin-bottom: 40px;
 
 	> li {
-		align-items: center;
+		display: flex;
+		align-items: flex-start;
 		margin-bottom: 11px;
+		line-height: 23px;
 
 		// icon
 		> span {
-			float: left;
 			font-size: 22px;
+			line-height: 1;
 			margin-right: 0.38em;
 			line-height: inherit;
 		}

@@ -40,13 +40,13 @@ export function EnterpriseOffering(props: EnterpriseOfferingProps) {
 			<PoweringEnterprise className={classNames(centerColumn, margin[130])} />
 
 			<div className={styles.gradient01}>
-				<AdvantageCards className={classNames(centerColumn, margin[30])} />
+				<AdvantageCards className={classNames(centerColumn, margin[130])} />
 
 				<CurvePeek filling="white" className={styles.intersectingBorder} />
 			</div>
 
 			<Reliability
-				className={classNames(centerColumn, margin[180], styles.paddingTop80)}
+				className={classNames(centerColumn, margin[180], styles.paddingTop130)}
 			/>
 
 			<CurvePeek filling="cloud" className={styles.intersectingBorder} />

@@ -1,14 +1,26 @@
+@import '~@bit/bit.base-ui.constants.storage/_storage.module.scss';
 @import '~@bit/bit.base-ui.layout.breakpoints';
 
-.reverseGrid {
-	align-items: end;
-	gap: 40px;
-
-	@media screen and (min-width: $br-l) {
-		> img {
-			order: -1;
-		}
+@media screen and (min-width: $br-l) {
+	.content {
+		margin-left: 50%;
 	}
+	.corpoBg {
+		background: url($staticStorageUrl + '/enterprise-offering-v1/4-secured-section/sphere-enterprise.png')
+			no-repeat;
+		background-position: calc(50% - 340px) 60px;
+		background-size: 565px 690px;
+	}
+
+	.corposphere {
+		display: none;
+	}
+}
+
+.corposphere {
+	width: 100%;
+	padding: 0 10px;
+	box-sizing: border-box;
 }
 
 .bulletList {
@@ -30,8 +42,4 @@ h2.title {
 	width: 43px;
 	height: 43px;
 	margin: 0 24px 16px;
-}
-
-.corposphere {
-	max-width: 100%;
 }

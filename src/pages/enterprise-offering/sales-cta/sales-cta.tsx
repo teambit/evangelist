@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import { Card } from '@bit/bit.base-ui.surfaces.card';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
-import { MutedText, mutedText } from '@bit/bit.base-ui.text.muted-text';
+import { mutedText } from '@bit/bit.base-ui.text.muted-text';
 import { TextSeparator } from '@bit/bit.base-ui.text.text-separator';
 import { fullWidth, marginCenter } from '@bit/bit.base-ui.layout.align';
 
@@ -14,6 +14,7 @@ import styles from './sales-cta.module.scss';
 import { margin } from '../spacing';
 import { ContactForm } from './contact-form';
 import { ContactValues } from './contact-values';
+import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 
 export type EnterpriseCtaProps = {
 	onSubmitCta?: (values: ContactValues) => any | Promise<any>;
@@ -26,9 +27,9 @@ export const SalesCta = (props: EnterpriseCtaProps) => {
 		<div {...rest} className={classNames(styles.particlesBg, className)}>
 			<Card id="lets-talk" className={classNames(styles.formCard, marginCenter)}>
 				<H4 size={PossibleSizes.xs}>Let’s talk </H4>
-				<MutedText className={margin[30]}>
-					Drop a message below and we’ll get back to you shortly.
-				</MutedText>
+				<Paragraph className={classNames(margin[30], mutedText)}>
+					Drop a message and we’ll get back to you shortly.
+				</Paragraph>
 
 				<ContactForm onSubmitMessage={onSubmitCta} />
 
