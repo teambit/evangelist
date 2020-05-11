@@ -21,7 +21,7 @@
 	position: relative;
 }
 
-.redParticle {
+.redParticle {	
 	position: absolute;
 	bottom: -18px;
 	right: -18px;
@@ -32,6 +32,11 @@
 	background: $pink50;
 	opacity: 0.7;
 	border-radius: 2px;
+	
+	display: none;
+	@media screen and (min-width: $br-sm) {
+		display: block;
+	}
 }
 
 .formCard {

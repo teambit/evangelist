@@ -23,7 +23,7 @@ export const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
 				<Card className={styles.card}>
 					<Paragraph
 						className={classNames(mutedText, styles.timestamp)}
-						size={PossibleSizes.lg}
+						size={PossibleSizes.md}
 					>
 						10:30
 					</Paragraph>

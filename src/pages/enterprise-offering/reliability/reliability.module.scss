@@ -1,33 +1,40 @@
 @import '~@bit/bit.base-ui.constants.storage/_storage.module.scss';
 @import '~@bit/bit.base-ui.layout.breakpoints';
 
-@media screen and (min-width: $br-l) {
-	.content {
+.content {
+	@media screen and (min-width: $br-l) {
 		margin-left: 50%;
 	}
-	.corpoBg {
+}
+.corpoBg {
+	@media screen and (min-width: $br-l) {
 		background: url($staticStorageUrl + '/enterprise-offering-v1/4-secured-section/sphere-enterprise.png')
 			no-repeat;
-		background-position: calc(50% - 340px) 60px;
+		background-position: calc(50% - 340px) 0px;
 		background-size: 565px 690px;
-	}
-
-	.corposphere {
-		display: none;
+		padding-bottom: 30px;
 	}
 }
 
 .corposphere {
+	display: block;
 	width: 100%;
+	max-width: 565px;
+	margin: 0 auto;
 	padding: 0 10px;
 	box-sizing: border-box;
+
+	@media screen and (min-width: $br-l) {
+		display: none;
+	}
 }
 
 .bulletList {
 	> li {
-		margin-bottom: 64px;
+		margin-bottom: 40px;
 
 		@media screen and (min-width: $br-md) {
+			margin-bottom: 64px;
 			display: flex;
 		}
 	}

@@ -3,7 +3,6 @@ import classNames from 'classnames';
 
 import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { marginCenter, text } from '@bit/bit.base-ui.layout.align';
-import { CurvePeek } from '@bit/bit.base-ui.geometry.curve-peek';
 
 import { Hero } from './hero/hero';
 import { PoweringEnterprise } from './powering-enterprise/powering-enterprise';
@@ -28,35 +27,35 @@ export function EnterpriseOffering(props: EnterpriseOfferingProps) {
 
 	return (
 		<div {...rest}>
-			<div className={classNames(styles.gradient00, styles.paddingTop130)}>
-				<Hero onBookMeeting={onBookMeeting} className={classNames(centerColumn, styles.foldMargin)} />
-
-				<CurvePeek
-					filling="white"
-					className={classNames(styles.intersectingBorder, margin[30])}
+			<div className={classNames(styles.gradient00)}>
+				<Hero
+					onBookMeeting={onBookMeeting}
+					className={classNames(centerColumn, styles.foldMargin)}
 				/>
+
+				<div className={classNames(styles.curveWhite, styles.curveMargin)} />
 			</div>
 
-			<PoweringEnterprise className={classNames(centerColumn, margin[130])} />
+			<PoweringEnterprise className={classNames(centerColumn, margin[180])} />
 
 			<div className={styles.gradient01}>
-				<AdvantageCards className={classNames(centerColumn, margin[130])} />
+				<AdvantageCards className={classNames(centerColumn, styles.foldMarginPlus)} />
 
-				<CurvePeek filling="white" className={styles.intersectingBorder} />
+				<div className={classNames(styles.curveWhite, styles.curveMargin)} />
 			</div>
 
 			<Reliability
-				className={classNames(centerColumn, margin[180], styles.paddingTop130)}
+				className={classNames(centerColumn, styles.foldMargin, styles.paddingTop30)}
 			/>
 
-			<CurvePeek filling="cloud" className={styles.intersectingBorder} />
+			<div className={classNames(styles.curveCloud, styles.curveMargin)} />
 
-			<div className={classNames(styles.gradient02, styles.paddingTop80)}>
+			<div className={classNames(styles.gradient02, styles.paddingTop30)}>
 				<EcoSystem className={classNames(centerColumn, text.center)} />
-				<Integrations className={classNames(margin[130])} />
+				<Integrations className={classNames(margin[80])} />
 				<ComponentAnalytics className={centerColumn} />
 			</div>
-			<div className={styles.supportCirclesBg}>
+			<div className={classNames(styles.supportCirclesBg, styles.circlesMargin)}>
 				<ExpertSupport
 					className={classNames(textColumn, marginCenter, styles.expertSupport)}
 				/>

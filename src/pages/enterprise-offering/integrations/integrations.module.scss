@@ -5,7 +5,7 @@ $shadowSpread: 74px;
 
 .integrationBadges {
 	overflow-x: hidden;
-	padding-top: 130px;
+	padding-top: $shadow-y + $shadowSpread;
 	padding-bottom: $shadow-y + $shadowSpread;
 }
 
@@ -29,6 +29,9 @@ $shadowSpread: 74px;
 		margin-left: 40px;
 		margin-right: 40px;
 		@media screen and (min-width: $br-lg) {
+			width: 130px;
+			height: 130px;
+			
 			margin-left: 80px;
 			margin-right: 80px;
 		}
