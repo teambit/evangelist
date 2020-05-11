@@ -44,10 +44,10 @@ const subjects = {
 };
 
 const redirects = {
-	security: encodeURIComponent('/~enterprise#contact-security'),
-	support: encodeURIComponent('/~enterprise#contact-support'),
-	build: encodeURIComponent('/~enterprise#contact-build'),
-	experts: encodeURIComponent('/~enterprise#contact-experts'),
+	security: encodeURIComponent('/enterprise#contact-security'),
+	support: encodeURIComponent('/enterprise#contact-support'),
+	build: encodeURIComponent('/enterprise#contact-build'),
+	experts: encodeURIComponent('/enterprise#contact-experts'),
 };
 
 function Cards() {
