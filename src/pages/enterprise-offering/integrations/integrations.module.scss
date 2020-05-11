@@ -10,7 +10,7 @@ $shadowSpread: 74px;
 }
 
 .logos {
-	animation: conveyerBelt 156s linear infinite; //aka 2.6minutes
+	animation: conveyerBelt 156s linear infinite forwards; //aka 2.6minutes
 	display: flex;
 	width: fit-content;
 	white-space: nowrap;
