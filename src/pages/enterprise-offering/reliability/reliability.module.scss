@@ -5,6 +5,11 @@
 	@media screen and (min-width: $br-l) {
 		margin-left: 50%;
 	}
+	
+	// @specificity-war - 2 level selector to fight bit.dev :(
+	.corposphere {
+		max-width: 565px;
+	}
 }
 .corpoBg {
 	@media screen and (min-width: $br-l) {
@@ -19,7 +24,6 @@
 .corposphere {
 	display: block;
 	width: 100%;
-	max-width: 565px;
 	margin: 0 auto;
 	padding: 0 10px;
 	box-sizing: border-box;
