@@ -27,7 +27,7 @@ export function EnterpriseOffering(props: EnterpriseOfferingProps) {
 
 	return (
 		<div {...rest}>
-			<div className={classNames(styles.gradient00)}>
+			<div className={classNames(styles.gradient00, styles.paddingTop130)}>
 				<Hero
 					onBookMeeting={onBookMeeting}
 					className={classNames(centerColumn, styles.foldMargin)}
