@@ -3,15 +3,22 @@
 .mainGrid {
 	gap: 46px;
 	align-items: center;
+}
 
-	@media screen and (min-width: $br-sm) {
-		gap: 76px;
+.content {
+	margin: 0 auto;
+	max-width: 700px;
+
+	@media screen and (min-width: $br-l) {
+		margin: 0 auto 0 0;
+		max-width: 420px;
 	}
 }
 
 .spacer {
-	width: 20px;
-	height: 20px;
+	flex: none;
+	width: 14px;
+	height: 24px;
 }
 
 .paragraph {
@@ -30,14 +37,18 @@
 	}
 
 	@media screen and (min-width: $br-l) {
+		max-width: 320px;
 		justify-content: left;
 	}
 
+	a,
 	button {
 		width: 100%;
+		flex: 0 1 50%;
 
-		@media screen and (min-width: $br-sm) {
+		@media screen and (min-width: $br-sm) and (max-width: $br-l) {
 			width: 199px;
+			flex: none;
 		}
 	}
 }

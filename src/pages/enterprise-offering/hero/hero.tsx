@@ -12,7 +12,6 @@ import { H1 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
 
 import styles from './hero.module.scss';
-import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 type HeroProps = {
 	onBookMeeting?: () => any | Promise<any>;
@@ -25,7 +24,7 @@ export function Hero(props: HeroProps) {
 			{...props}
 			className={classNames(props.className, text.center, text.l.left, styles.mainGrid)}
 		>
-			<div className={classNames(textColumn, marginCenter)}>
+			<div className={classNames(styles.content)}>
 				<H1 size={PossibleSizes.sm} className={themedText}>
 					The enterprise component platform
 				</H1>
