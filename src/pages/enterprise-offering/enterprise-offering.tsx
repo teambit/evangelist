@@ -23,10 +23,10 @@ export type EnterpriseOfferingProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 export function EnterpriseOffering(props: EnterpriseOfferingProps) {
-	const { onBookMeeting, onSubmitCta, ...rest } = props;
+	const { onBookMeeting, onSubmitCta, className, ...rest } = props;
 
 	return (
-		<div {...rest}>
+		<div {...rest} className={classNames(styles.enterpriseOffering, className)}>
 			<div className={classNames(styles.gradient00, styles.paddingTop130)}>
 				<Hero
 					onBookMeeting={onBookMeeting}

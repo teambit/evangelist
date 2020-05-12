@@ -5,6 +5,13 @@
 $metallicCloud: #f7f9fc;
 $metallicCloudEscaped: '%23f7f9fc';
 
+.enterpriseOffering {
+	h1,
+	h2 {
+		color: var(--text-highlight, inherit);
+	}
+}
+
 .supportCirclesBg {
 	background-image: url($staticStorageUrl + '/enterprise-offering-v1/7-support/support-circuits-bg.svg');
 	background-repeat: no-repeat;
