@@ -5,12 +5,8 @@
 	@media screen and (min-width: $br-l) {
 		margin-left: 50%;
 	}
-	
-	// @specificity-war - 2 level selector to fight bit.dev :(
-	.corposphere {
-		max-width: 565px;
-	}
 }
+
 .corpoBg {
 	@media screen and (min-width: $br-l) {
 		background: url($staticStorageUrl + '/enterprise-offering-v1/4-secured-section/sphere-enterprise.png')
@@ -18,6 +14,11 @@
 		background-position: calc(50% - 340px) 0px;
 		background-size: 565px 690px;
 		padding-bottom: 30px;
+	}
+
+	// @specificity-war - 2 level selector to fight bit.dev :(
+	.corposphere {
+		max-width: 565px;
 	}
 }
 

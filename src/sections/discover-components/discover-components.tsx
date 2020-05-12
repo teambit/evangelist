@@ -30,7 +30,7 @@ export function DiscoverComponents(props: HTMLAttributes<HTMLDivElement>) {
 		>
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm} className={text.center}>
-					Keep everything organized.
+					Keep components organized.
 					<br />
 					Documentation? Don’t sweat it.
 				</H2>
