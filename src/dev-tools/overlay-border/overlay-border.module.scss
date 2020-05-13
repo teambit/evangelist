@@ -1,12 +1,18 @@
 @import '~@bit/bit.base-ui.theme.colors';
 
+$border: 2;
+$padding: 4;
+
 .overlayBorder {
-	border: 2px solid var(--component-highlighter-border, $pink50);
+	border: $border * 1px solid var(--component-highlighter-border, $pink50);
 
 	border-radius: 11px;
-	padding: 4px;
+	padding: $padding * 1px;
 
 	pointer-events: none;
 	user-select: none;
 }
 
+:export {
+	offset: -$border - $padding;
+}

@@ -20,7 +20,7 @@ export type ComponentHighlighterProps = {
 	/** list ids to ignore */
 	blacklist?: Set<string>;
 } & HTMLAttributes<HTMLDivElement>;
- 
+
 type ComponentHighlighterState = {
 	highlightTargetId?: string;
 	targetElement?: HTMLElement;
@@ -97,8 +97,19 @@ export class ComponentHighlighter extends Component<
 		this.highlight(element);
 	};
 
+	private handleLeave = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+		this.highlight(null);
+	};
+
 	render() {
-		const { active, children, fullScopeName, versionMap = {}, blacklist, ...rest } = this.props;
+		const {
+			active,
+			children,
+			fullScopeName,
+			versionMap = {},
+			blacklist,
+			...rest
+		} = this.props;
 		const { highlightTargetId, targetElement } = this.state;
 
 		const explicitVersion = highlightTargetId && versionMap[highlightTargetId];
@@ -121,11 +132,15 @@ export class ComponentHighlighter extends Component<
 				// (this is perfect for this use case)
 				onMouseOver={this.handleEnter}
 				// triggers when mouse exits this element (and not its children)
-				// onMouseLeave={this.destroyPopper}
+				onMouseLeave={this.handleLeave}
 			>
 				{children}
 
-				<RefTooltip className={styles.tooltip} targetElement={targetElement}>
+				<RefTooltip
+					className={styles.tooltip}
+					targetElement={targetElement}
+					motionTracking
+				>
 					<ComponentLabel
 						bitId={highlightTargetId}
 						versionOverride={explicitVersion}
@@ -137,6 +152,7 @@ export class ComponentHighlighter extends Component<
 				<OverlayBorder
 					targetElement={targetElement}
 					className={styles.border}
+					motionTracking
 					data-ignore-component-highlight
 				/>
 			</div>

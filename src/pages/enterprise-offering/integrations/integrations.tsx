@@ -12,72 +12,58 @@ export function Integrations(props: HTMLAttributes<HTMLDivElement>) {
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/asana.svg"
 					alt="asana"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/jenkins.svg"
 					alt="jenkins"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/aws.svg"
 					alt="aws"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/azure.svg"
 					alt="azure"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/bitbucket.svg"
 					alt="bitbucket"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/circle.svg"
 					alt="circle"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/confluence.svg"
 					alt="confluence"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/github.svg"
 					alt="github"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/gitlab.svg"
 					alt="gitlab"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/google-cloud.svg"
 					alt="google"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/jira.svg"
 					alt="jira"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/netlify.svg"
 					alt="netlify"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/slack.svg"
 					alt="slack"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/tavis.svg"
 					alt="tavis"
-					data-ignore-component-highlight
 				/>
 
 				{/* SECOND LOOP (for infinite animation) */}
@@ -85,72 +71,58 @@ export function Integrations(props: HTMLAttributes<HTMLDivElement>) {
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/asana.svg"
 					alt="asana"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/jenkins.svg"
 					alt="jenkins"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/aws.svg"
 					alt="aws"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/azure.svg"
 					alt="azure"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/bitbucket.svg"
 					alt="bitbucket"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/circle.svg"
 					alt="circle"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/confluence.svg"
 					alt="confluence"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/github.svg"
 					alt="github"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/gitlab.svg"
 					alt="gitlab"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/google.svg"
 					alt="google"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/jira.svg"
 					alt="jira"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/netlify.svg"
 					alt="netlify"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/slack.svg"
 					alt="slack"
-					data-ignore-component-highlight
 				/>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/tavis.svg"
 					alt="tavis"
-					data-ignore-component-highlight
 				/>
 			</div>
 		</div>

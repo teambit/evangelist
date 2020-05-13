@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, RefObject } from 'react';
 import classNames from 'classnames';
 
 //@ts-ignore
@@ -9,11 +9,15 @@ import styles from './overlay-border.module.scss';
 import { ignorePopperSize } from '@bit/bit.base-ui.utils.popper-js.ignore-popper-size';
 import { resizeToMatchReference } from '@bit/bit.base-ui.utils.popper-js.resize-to-match-reference';
 
+const BASE_OFFSET = +styles.offset;
+
 export type ComponentBorderProps = {
 	/** DOM element to highlight */
 	targetElement?: HTMLElement;
+	/** Actively recalculate position, to support moving elements  */
+	motionTracking?: boolean;
 } & React.HTMLAttributes<HTMLDivElement>;
- 
+
 /**
  * Highlight a component using a border.<br/>
  * The border is positioned at the top left of the component using [Popper.js](https://popper.js.org/),
@@ -28,7 +32,14 @@ export type ComponentBorderProps = {
  */
 export class OverlayBorder extends Component<ComponentBorderProps> {
 	private popperInstance?: Instance;
-	private ref = createRef();
+	private ref: RefObject<HTMLDivElement> = createRef();
+
+	componentDidMount() {
+		const { targetElement } = this.props;
+		if (targetElement) {
+			this.reposition(targetElement);
+		}
+	}
 
 	componentWillUnmount() {
 		this.destroy();
@@ -48,34 +59,22 @@ export class OverlayBorder extends Component<ComponentBorderProps> {
 			return;
 		}
 
-		const overlayElem: HTMLDivElement = this.ref.current;
-
+		const overlayElem = this.ref.current;
 		if (!overlayElem) return;
 
 		this.popperInstance = createPopper(targetElement, overlayElem, {
 			placement: 'top-start',
-			modifiers: [
-				ignorePopperSize,
-				resizeToMatchReference,
-				{
-					name: 'flip',
-					enabled: false,
-				},
-				{
-					name: 'computeStyles',
-					options: {
-						// do not update coordinates continuously, and ignore popper size
-						adaptive: false,
-					},
-				},
-				{
-					name: 'offset',
-					options: {
-						offset: [-6, 6],
-					},
-				},
-			],
+			modifiers: popperModifiers,
 		});
+
+		window.requestAnimationFrame(this.step);
+	};
+
+	private step = () => {
+		if (!this.popperInstance || !this.props.motionTracking) return;
+
+		this.popperInstance.update();
+		window.requestAnimationFrame(this.step);
 	};
 
 	private destroy() {
@@ -91,7 +90,24 @@ export class OverlayBorder extends Component<ComponentBorderProps> {
 				{...rest}
 				className={classNames(className, styles.overlayBorder)}
 				ref={this.ref}
-			></div>
+			/>
 		);
 	}
 }
+
+const popperModifiers = [
+	ignorePopperSize,
+	resizeToMatchReference,
+	{
+		name: 'flip',
+		enabled: false,
+	},
+	{
+		name: 'offset',
+		options: {
+			// move box from above the target ('top-start')
+			// to directly cover the target.
+			offset: ({ reference }: any) => [BASE_OFFSET, BASE_OFFSET - reference.height],
+		},
+	},
+];
