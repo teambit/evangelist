@@ -19,6 +19,8 @@ export type ComponentHighlighterProps = {
 	versionMap?: VersionMap;
 	/** list ids to ignore */
 	blacklist?: Set<string>;
+	/** Actively recalculate position, to support moving elements  */
+	motionTracking?: boolean;
 } & HTMLAttributes<HTMLDivElement>;
 
 type ComponentHighlighterState = {
@@ -108,6 +110,7 @@ export class ComponentHighlighter extends Component<
 			fullScopeName,
 			versionMap = {},
 			blacklist,
+			motionTracking,
 			...rest
 		} = this.props;
 		const { highlightTargetId, targetElement } = this.state;
@@ -139,7 +142,7 @@ export class ComponentHighlighter extends Component<
 				<RefTooltip
 					className={styles.tooltip}
 					targetElement={targetElement}
-					motionTracking
+					motionTracking={motionTracking}
 				>
 					<ComponentLabel
 						bitId={highlightTargetId}
@@ -152,7 +155,7 @@ export class ComponentHighlighter extends Component<
 				<OverlayBorder
 					targetElement={targetElement}
 					className={styles.border}
-					motionTracking
+					motionTracking={motionTracking}
 					data-ignore-component-highlight
 				/>
 			</div>
