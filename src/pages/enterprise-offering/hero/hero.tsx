@@ -18,10 +18,12 @@ type HeroProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 export function Hero(props: HeroProps) {
+	const { onBookMeeting, ...rest } = props;
+	
 	return (
 		<Grid
 			colL={2}
-			{...props}
+			{...rest}
 			className={classNames(props.className, text.center, text.l.left, styles.mainGrid)}
 		>
 			<div className={classNames(styles.content)}>

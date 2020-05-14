@@ -18,10 +18,11 @@ class App extends PureComponent {
 		return (
 			<Theme>
 				<ComponentHighlighter
-					// active
+					active
 					versionMap={versionMap}
 					blacklist={highlightBlacklist}
 					fullScopeName={false}
+					motionTracking
 				>
 					<EvaIconFont query="aqq93z" />
 					{/* <HybridHomepage githubStars={10000} /> */}

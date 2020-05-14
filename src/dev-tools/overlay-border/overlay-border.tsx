@@ -84,7 +84,7 @@ export class OverlayBorder extends Component<ComponentBorderProps> {
 	}
 
 	render() {
-		const { className, targetElement, ...rest } = this.props;
+		const { className, targetElement, motionTracking, ...rest } = this.props;
 		return (
 			<div
 				{...rest}

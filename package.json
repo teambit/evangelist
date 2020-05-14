@@ -41,7 +41,7 @@
     "@bit/bit.base-ui.layout.grid-presets.four-way-grid": "^1.0.5",
     "@bit/bit.base-ui.layout.grid-presets.z-grid": "^1.0.6",
     "@bit/bit.base-ui.layout.page-frame": "^1.0.4",
-    "@bit/bit.base-ui.placement.ref-tooltip": "^1.1.0",
+    "@bit/bit.base-ui.placement.ref-tooltip": "^1.1.1",
     "@bit/bit.base-ui.surfaces.card": "^1.0.1",
     "@bit/bit.base-ui.text.heading": "^1.0.1",
     "@bit/bit.base-ui.text.muted-text": "^0.1.0",
