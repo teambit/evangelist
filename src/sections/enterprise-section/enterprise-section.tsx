@@ -64,9 +64,9 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 						alt="private"
 						src="homepage-bit/reuse-page/private.svg"
 					/>
-					<H4 size={PossibleSizes.xxs}>Private and secured</H4>
+					<H4 size={PossibleSizes.xxs}>Private and secure</H4>
 					<Paragraph>
-						Keep your code private and secured with the highest standards.
+						Keep your code private and secure with the highest standards.
 					</Paragraph>
 				</div>
 
@@ -88,7 +88,7 @@ export function EnterpriseSection(props: HTMLAttributes<HTMLDivElement>) {
 						alt="vendor"
 						src="homepage-bit/reuse-page/vendor.svg"
 					/>
-					<H4 size={PossibleSizes.xxs}>No vendor locking</H4>
+					<H4 size={PossibleSizes.xxs}>No vendor lock-in</H4>
 					<Paragraph>
 						Move components to any other server any time you choose.
 					</Paragraph>
