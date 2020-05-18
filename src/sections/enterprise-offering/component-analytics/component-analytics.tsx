@@ -23,9 +23,12 @@ import { margin } from '../../../layout/spacing';
  */
 export function ComponentAnalytics(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div className={styles.scrollPreventer}>
+		<div
+			className={styles.scrollPreventer}
+		>
 			<Grid
 				{...props}
+				data-bit-id="bit.evangelist/sections/enterprise-offering/component-analytics"
 				className={classNames(alignItems.center, props.className, styles.customGrid)}
 			>
 				<div>

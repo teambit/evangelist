@@ -19,7 +19,10 @@ import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
  */
 export const Reliability = (props: HTMLAttributes<HTMLDivElement>) => (
 	<div className={styles.corpoBg}>
-		<div className={classNames(props.className, text.center, text.md.left)}>
+		<div
+			className={classNames(props.className, text.center, text.md.left)}
+			data-bit-id="bit.evangelist/sections/enterprise-offering/reliability"
+		>
 			<div className={styles.content}>
 				<H2 size={PossibleSizes.sm} className={styles.title}>
 					Reliable and secure

@@ -15,10 +15,13 @@ import styles from './expert-support.module.scss';
 /**
  * A section showing 3 "chat messages", detailing our dedicated dev support team.<br/>
  * Floating chat heads are positioned on both sides, for desktop resolutions.
- * @name EcoSystem
+ * @name ExpertSupport
  */
 export const ExpertSupport = (props: HTMLAttributes<HTMLDivElement>) => (
-	<div className={styles.preventOverflow}>
+	<div
+		className={styles.preventOverflow}
+		data-bit-id="bit.evangelist/sections/enterprise-offering/experts-support"
+	>
 		<div {...props} className={classNames(styles.container, props.className)}>
 			<div className={classNames(styles.mainContent, marginCenter)}>
 				<H2 size={PossibleSizes.md} className={classNames(text.center, styles.title)}>

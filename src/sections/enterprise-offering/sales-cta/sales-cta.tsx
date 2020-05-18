@@ -31,7 +31,11 @@ export type EnterpriseCtaProps = {
 export const SalesCta = (props: EnterpriseCtaProps) => {
 	const { onSubmitCta, onBookMeeting, className, ...rest } = props;
 	return (
-		<div {...rest} className={classNames(styles.particlesBg, className)}>
+		<div
+			{...rest}
+			className={classNames(styles.particlesBg, className)}
+			data-bit-id="bit.evangelist/sections/enterprise-offering/sales-cta"
+		>
 			<Card id="lets-talk" className={classNames(styles.formCard, marginCenter)}>
 				<H4 size={PossibleSizes.xs}>Let’s talk </H4>
 				<Paragraph className={classNames(margin[30], mutedText)}>

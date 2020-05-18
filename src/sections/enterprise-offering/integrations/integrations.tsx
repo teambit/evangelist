@@ -12,7 +12,10 @@ import styles from './integrations.module.scss';
  */
 export function Integrations(props: HTMLAttributes<HTMLDivElement>) {
 	return (
-		<div className={classNames(props.className, styles.integrationBadges)}>
+		<div
+			className={classNames(props.className, styles.integrationBadges)}
+			data-bit-id="bit.evangelist/sections/enterprise-offering/integrations"
+		>
 			<div className={styles.logos}>
 				<Image
 					src="enterprise-offering-v1/5-ecosystem-section/logos/asana.svg"

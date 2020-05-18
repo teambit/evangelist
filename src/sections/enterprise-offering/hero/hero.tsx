@@ -24,11 +24,12 @@ type HeroProps = {
  */
 export function Hero(props: HeroProps) {
 	const { onBookMeeting, ...rest } = props;
-	
+
 	return (
 		<Grid
 			colL={2}
 			{...rest}
+			data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
 			className={classNames(props.className, text.center, text.l.left, styles.mainGrid)}
 		>
 			<div className={classNames(styles.content)}>

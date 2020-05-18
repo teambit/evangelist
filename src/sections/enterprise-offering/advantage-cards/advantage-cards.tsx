@@ -24,7 +24,11 @@ import styles from './advantage-cards.module.scss';
  * @name AdvantageCards
  */
 export const AdvantageCards = (props: HTMLAttributes<HTMLDivElement>) => (
-	<div {...props} className={classNames(props.className)}>
+	<div
+		{...props}
+		className={classNames(props.className)}
+		data-bit-id="bit.evangelist/sections/enterprise-offering/advantage-cards"
+	>
 		<div className={classNames(textColumn, marginCenter, text.center)}>
 			<H2 size={PossibleSizes.sm}>Bit enterprise</H2>
 
@@ -66,8 +70,8 @@ function Cards() {
 					Security and control
 				</H4>
 				<Paragraph size={PossibleSizes.sm} className={styles.subtitle}>
-					Keep your source-code and information secure with the highest standards.
-					Get everything you need to stay in control.
+					Keep your source-code and information secure with the highest standards. Get
+					everything you need to stay in control.
 				</Paragraph>
 
 				<ul className={styles.bullets}>

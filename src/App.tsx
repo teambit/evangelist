@@ -11,8 +11,6 @@ import { EnterpriseOffering } from './pages/enterprise-offering';
 import { ComponentHighlighter } from './dev-tools/component-highlighter';
 import versionMap from './content/version-map/version-map';
 
-// const highlightBlacklist = new Set(['bit.evangelist/marketing/testimonial']);
-
 class App extends PureComponent {
 	render() {
 		return (
@@ -20,7 +18,6 @@ class App extends PureComponent {
 				<ComponentHighlighter
 					active
 					versionMap={versionMap}
-					// blacklist={highlightBlacklist}
 					fullScopeName={false}
 					motionTracking
 				>
