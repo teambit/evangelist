@@ -4,24 +4,30 @@ import classNames from 'classnames';
 import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { marginCenter, text } from '@bit/bit.base-ui.layout.align';
 
-import { Hero } from './hero/hero';
-import { PoweringEnterprise } from './powering-enterprise/powering-enterprise';
-import { AdvantageCards } from './advantage-cards';
-import { Reliability } from './reliability/reliability';
-import { EcoSystem } from './eco-system/eco-system';
-import { Integrations } from './integrations/integrations';
-import { ComponentAnalytics } from './component-analytics/component-analytics';
-import { ExpertSupport } from './experts-support/expert-support';
-import { SalesCta, ContactValues } from './sales-cta';
-import { margin } from './spacing';
+import { Hero } from '../../sections/enterprise-offering/hero/hero';
+import { PoweringEnterprise } from '../../sections/enterprise-offering/powering-enterprise/powering-enterprise';
+import { AdvantageCards } from '../../sections/enterprise-offering/advantage-cards';
+import { Reliability } from '../../sections/enterprise-offering/reliability/reliability';
+import { EcoSystem } from '../../sections/enterprise-offering/eco-system/eco-system';
+import { Integrations } from '../../sections/enterprise-offering/integrations/integrations';
+import { ComponentAnalytics } from '../../sections/enterprise-offering/component-analytics/component-analytics';
+import { ExpertSupport } from '../../sections/enterprise-offering/experts-support/expert-support';
+import { SalesCta, ContactValues } from '../../sections/enterprise-offering/sales-cta';
+import { margin } from '../../layout/spacing';
 
 import styles from './enterprise-offering.module.scss';
 
 export type EnterpriseOfferingProps = {
-	onSubmitCta?: (values: ContactValues) => Promise<any>;
+	/** handles "contact us" form submission. Return a promise to show loader */
+	onSubmitCta?: (values: ContactValues) => any | Promise<any>;
+	/** handles meeting call to action. Return a promise to show loader */
 	onBookMeeting?: () => any | Promise<any>;
 } & HTMLAttributes<HTMLDivElement>;
 
+/**
+ * A full, responsive page, detailing Bit's offering for enterprises.
+ * @name EnterpriseOffering
+ */
 export function EnterpriseOffering(props: EnterpriseOfferingProps) {
 	const { onBookMeeting, onSubmitCta, className, ...rest } = props;
 

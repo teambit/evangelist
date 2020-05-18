@@ -3,20 +3,20 @@ import classNames from 'classnames';
 
 import styles from './hybrid-homepage.module.scss';
 
-import { CarouselSection } from '../../sections/carouselSection';
-import { CtaSection } from '../../sections/cta';
+import { CarouselSection } from '../../sections/hybrid-homepage/carouselSection';
+import { CtaSection } from '../../sections/hybrid-homepage/cta';
 import { centerColumn, wideColumn } from '@bit/bit.base-ui.layout.page-frame';
 
-import { EnterpriseSection } from '../../sections/enterprise-section';
-import { CommunitySection } from '../../sections/community';
-import { ComponentsAdvantages } from '../../sections/component-advantages';
-import { IndependentTeams } from '../../sections/independent-teams';
-import { TalkToExperts } from '../../sections/talk-to-experts';
-import { Hero } from '../../sections/hero';
-import { DevelopComponents } from '../../sections/develop-components';
-import { ReuseComponents } from '../../sections/reuse-components';
-import { BuildTogether } from '../../sections/build-together';
-import { DiscoverComponents } from '../../sections/discover-components';
+import { EnterpriseSection } from '../../sections/hybrid-homepage/enterprise-section';
+import { CommunitySection } from '../../sections/hybrid-homepage/community';
+import { ComponentsAdvantages } from '../../sections/hybrid-homepage/component-advantages';
+import { IndependentTeams } from '../../sections/hybrid-homepage/independent-teams';
+import { TalkToExperts } from '../../sections/hybrid-homepage/talk-to-experts';
+import { Hero } from '../../sections/hybrid-homepage/hero';
+import { DevelopComponents } from '../../sections/hybrid-homepage/develop-components';
+import { ReuseComponents } from '../../sections/hybrid-homepage/reuse-components';
+import { BuildTogether } from '../../sections/hybrid-homepage/build-together';
+import { DiscoverComponents } from '../../sections/hybrid-homepage/discover-components';
 
 export type HybridHomepageProps = {
 	/** placeholder for content, after the first purple background fold. */

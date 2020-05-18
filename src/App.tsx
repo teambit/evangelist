@@ -6,12 +6,12 @@ import { Theme } from '@bit/bit.base-ui.theme.theme-provider';
 
 import { EvaIconFont } from './theme/icon-font';
 
-// import { HybridHomepage } from './pages/hybrid-homepage';
+import { HybridHomepage } from './pages/hybrid-homepage';
 import { EnterpriseOffering } from './pages/enterprise-offering';
 import { ComponentHighlighter } from './dev-tools/component-highlighter';
 import versionMap from './content/version-map/version-map';
 
-const highlightBlacklist = new Set(['bit.evangelist/marketing/testimonial']);
+// const highlightBlacklist = new Set(['bit.evangelist/marketing/testimonial']);
 
 class App extends PureComponent {
 	render() {
@@ -20,12 +20,12 @@ class App extends PureComponent {
 				<ComponentHighlighter
 					active
 					versionMap={versionMap}
-					blacklist={highlightBlacklist}
+					// blacklist={highlightBlacklist}
 					fullScopeName={false}
 					motionTracking
 				>
 					<EvaIconFont query="aqq93z" />
-					{/* <HybridHomepage githubStars={10000} /> */}
+					<HybridHomepage githubStars={10000} />
 					<EnterpriseOffering
 						onBookMeeting={() => alert('book meeting')}
 						onSubmitCta={(values) => {
