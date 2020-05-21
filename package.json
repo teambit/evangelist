@@ -6,7 +6,8 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "setup": "bit init && bit import -e && bit build"
   },
   "browserslist": {
     "production": [
