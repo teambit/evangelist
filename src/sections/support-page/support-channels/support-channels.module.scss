@@ -1,0 +1,37 @@
+.wrapper {
+    margin-bottom: 30px;
+}
+.mainParagraph {
+    margin-bottom: 30px;
+    color: var(--text-muted, #6c707c);
+}
+.link {
+    text-decoration: none;
+}
+
+.paragraph {
+    margin-bottom: 15px;
+    color: var(--text-muted, #6c707c);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-text, white);
+    height: 38px;
+    width: 180px;
+
+    > span {
+        margin-right: 5px;
+    }
+}
+.slack {
+    background-color: var(--slack-bg, #4a154b);
+}
+.email {
+    background-color: #6c5ce7;
+}
+.github {
+    background-color: var(--github-bg, #4a154b);
+}

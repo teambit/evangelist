@@ -1,0 +1,15 @@
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    :first-child {
+        margin-right: 10px;
+    }
+    .button {
+        height: 38px;
+        width: 200px;
+    }
+}
+.mainGrid {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

@@ -1,0 +1,30 @@
+.topSection {
+    margin-bottom: 50px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.title {
+    margin-bottom: unset;
+}
+.paragraph {
+    margin-bottom: 50px;
+}
+.image {
+    margin-right: 10px;
+}
+
+.spacer {
+    width: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    .button {
+        width: 200px;
+    }
+}
