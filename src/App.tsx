@@ -10,6 +10,7 @@ import { HybridHomepage } from './pages/hybrid-homepage';
 import { EnterpriseOffering } from './pages/enterprise-offering';
 import { ComponentHighlighter } from './dev-tools/component-highlighter';
 import versionMap from './content/version-map/version-map';
+import { SupportPage } from './pages/support';
 
 class App extends PureComponent {
 	render() {
@@ -30,6 +31,7 @@ class App extends PureComponent {
 							return Promise.resolve();
 						}}
 					/>
+					<SupportPage />
 				</ComponentHighlighter>
 			</Theme>
 		);
