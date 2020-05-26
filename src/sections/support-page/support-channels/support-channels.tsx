@@ -31,7 +31,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 	const channelsData = [
 		{
 			title: 'Slack',
-			text: 'Chat with the team and the community on Slack.',
+			subTitle: 'Chat with the team and the community on Slack.',
 			icon: 'slack',
 			buttonsText: 'Slack',
 			link: 'https://join.slack.com/t/bit-dev-community/shared_invite/enQtNzM2NzQ3MTQzMTg3LWI2YmFmZjQwMTkxNmFmNTVkYzU2MGI2YjgwMmJlZDdkNWVhOGIzZDFlYjg4MGRmOTM4ODAxNTIxMTMwNWVhMzg',
@@ -39,7 +39,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 		},
 		{
 			title: 'Email',
-			text: 'Open a support ticket and we’ll respond quickly.',
+			subTitle: 'Open a support ticket and we’ll respond quickly.',
 			icon: 'email',
 			buttonsText: 'Contact',
 			link: '/support',
@@ -47,7 +47,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 		},
 		{
 			title: 'GitHub',
-			text: 'Open an issue or contribute OSS on GitHub.',
+			subTitle: 'Open an issue or contribute OSS on GitHub.',
 			icon: 'github-logo',
 			buttonsText: 'GitHub',
 			link: `${links.github}/issues`,
@@ -82,7 +82,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 						<ChannelButton
 							title={channel.title}
 							key={index}
-							text={channel.text}
+							subTitle={channel.subTitle}
 							icon={channel.icon}
 							buttonsText={channel.buttonsText}
 							buttonFlavor={channel.buttonFlavor}
@@ -103,7 +103,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 
 type ChannelButtonProps = {
 	title?: string;
-	text?: string;
+	subTitle?: string;
 	icon: string;
 	buttonsText?: string;
 	className?: string;
@@ -113,17 +113,17 @@ type ChannelButtonProps = {
 
 export function ChannelButton({
 	title,
-	text,
+	subTitle,
 	icon,
 	buttonsText,
 	buttonFlavor,
 	link,
 }: ChannelButtonProps) {
 	return (
-		<div className={styles.wrapper}>
+		<div className={classNames(styles.wrapper)}>
 			<H6 size={PossibleSizes.xxs}>{title}</H6>
 			<Paragraph size={PossibleSizes.md} className={styles.paragraph}>
-				{text}
+				{subTitle}
 			</Paragraph>
 			<Link external href={link} className={styles.link}>
 				<Button className={classNames(styles.button, buttonFlavor)}>

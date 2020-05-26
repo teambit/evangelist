@@ -2,12 +2,11 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
-import { themedText } from '@bit/bit.base-ui.text.themed-text';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
 import { Card } from '@bit/bit.base-ui.surfaces.card';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
-import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
+import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { Button } from '../../../elements/button';
 import { H1, H5 } from '../../../elements/heading';
@@ -70,7 +69,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 
 				<div className={styles.buttons}>
 					<Link href="/contact-sales?redirectUri=%2Fenterprise">
-						<Button className={styles.button} importance="cta">
+						<Button className={styles.button} importance="cta" elevation="medium">
 							Contact Sales
 						</Button>
 					</Link>
@@ -80,6 +79,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 						<Button
 							className={styles.button}
 							importance="normal"
+							elevation="medium"
 						>
 							Bit enterprise
 						</Button>
@@ -94,8 +94,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 					props.className,
 					text.center,
 					text.l.left,
-					styles.mainGrid,
-					centerColumn
+					styles.mainGrid
 				)}
 			>
 				{cards.map((card, index) => (
@@ -128,7 +127,7 @@ export function GlobalEnterpriseCard({
 	className,
 }: GlobalEnterpriseCardProps) {
 	return (
-		<Card elevation="high" className={classNames(className)}>
+		<Card elevation="medium" className={classNames(styles.card, className)}>
 			<div className={styles.top}>
 				<Image alt={alt} src={iconUrl} className={styles.image} />
 				<H5 className={styles.title}>{title}</H5>

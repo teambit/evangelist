@@ -5,7 +5,10 @@
 .wrapper {
     margin-bottom: 150px;
 }
-
+.card {
+    border: none;
+    border-radius: 10px;
+}
 .top {
     display: flex;
     align-items: center;
@@ -15,7 +18,8 @@
     margin-bottom: unset;
 }
 .paragraph {
-    margin-bottom: 50px;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
 }
 .image {
     margin-right: 10px;

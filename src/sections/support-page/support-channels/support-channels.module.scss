@@ -31,7 +31,9 @@
     display: flex;
     justify-content: center;
     width: fit-content;
+    margin: auto;
     @media screen and (min-width: $br-md) {
+        margin: unset;
         justify-content: flex-start;
     }
 }

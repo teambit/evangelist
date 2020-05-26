@@ -2,13 +2,12 @@ import React, { HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
-import { themedText } from '@bit/bit.base-ui.text.themed-text';
-import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
-import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
-import { Grid } from '@bit/bit.base-ui.layout.grid-component';
-import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
-import { Button } from '../../../elements/button';
+import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
+import { text } from '@bit/bit.base-ui.layout.align';
+import { Grid } from '@bit/bit.base-ui.layout.grid-component';
+import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
+
 import { H1, H5 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
 
@@ -31,28 +30,28 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 	const cards = [
 		{
 			iconUrl: 'support-page/tool.svg',
-			title: 'By core maintainers.',
+			title: 'By core maintainers',
 			text:
 				'With Bit, support is a core responsibility of every team building a product. Get support by the developers, architects and industry experts actually building your tools.',
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/support.svg',
-			title: 'We respond fast.',
+			title: 'We respond fast',
 			text:
 				'When you contact us, in any channel, our teams gets on the clock to respond with a solution as fast as possible. And, it’s not over until we see things through.',
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/eye.svg',
-			title: 'We see things through.',
+			title: 'We see things through',
 			text:
 				'Your problem is our problem. Our work is not done until your problem is solved, fixed and won’t happen again. Put together with expert-level support, we got you covered.',
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/book.svg',
-			title: 'With extensive resources.',
+			title: 'With extensive resources',
 			text: (
 				<span>
 					We maintain an ever-growing rich{' '}
@@ -83,7 +82,6 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 					props.className,
 					text.center,
 					styles.grid,
-					centerColumn
 				)}
 			>
 				{cards.map((card, index) => (
