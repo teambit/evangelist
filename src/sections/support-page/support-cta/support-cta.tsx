@@ -5,9 +5,8 @@ import styles from './support-cta.module.scss';
 
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
-import { justifyItems, alignItems, text, marginCenter } from '@bit/bit.base-ui.layout.align';
-import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
-
+import { alignItems, text} from '@bit/bit.base-ui.layout.align';
+import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { H2 } from '../../../elements/heading';
 import { Link } from '../../../elements/link';
@@ -23,30 +22,33 @@ import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 export function SupportCta(props: React.HTMLAttributes<HTMLDivElement>) {
 	return (
 		<Grid
-			colL={2}
+			colMd={2}
 			// {...rest}
 			data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
 			className={classNames(
 				props.className,
 				text.center,
-				text.l.left,
+				text.md.left,
 				centerColumn,
-				styles.mainGrid,
+				styles.mainGrid
 			)}
 		>
 			<div>
-				<H2 size={PossibleSizes.xs}>
-				Need support?
-				</H2>
-				<Paragraph size={PossibleSizes.xl}>
-				Don’t hesitate to let us know!
-				</Paragraph>
+				<H2 size={PossibleSizes.xs}>Need support?</H2>
+				<Paragraph size={PossibleSizes.xl}>Reach out to our team.</Paragraph>
 			</div>
 			<div className={classNames(styles.buttons, alignItems.center)}>
 				<Link href="/contact-sales">
-					<Button className={styles.button} elevation="high" importance="cta">Contact support</Button>
+					<Button className={styles.button} elevation="high" importance="cta">
+						Contact support
+					</Button>
 				</Link>
-				<Button elevation="high" className={styles.button} importance="normal">View plans</Button>
+				<div className={styles.spacer} />
+				<Link href="/pricing">
+					<Button elevation="high" className={styles.button} importance="normal">
+					Upgrade support
+					</Button>
+				</Link>
 			</div>
 		</Grid>
 	);

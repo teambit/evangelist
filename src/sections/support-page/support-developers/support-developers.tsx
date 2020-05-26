@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
@@ -13,6 +13,8 @@ import { H1, H5 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
 
 import styles from './support-developers.module.scss';
+import { Link } from '../../../elements/link';
+import { links } from '../../../content/links';
 
 type SupportDevelopersProps = {
 	/** handles 'book meeting' call to action */
@@ -51,33 +53,37 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 		{
 			iconUrl: 'support-page/book.svg',
 			title: 'With extensive resources.',
-			text:
-				'We maintain an ever-growing rich [documentation](https://docs.bit.dev/) for every angle or use case of working with our technology. Always one click away.',
+			text: (
+				<span>
+					We maintain an ever-growing rich{' '}
+					<Link external href={links.docs}>
+						documentation
+					</Link>{' '}
+					for every angle or use case of working with our technology. Always one click
+					away.
+				</span>
+			),
 			alt: '',
 		},
 	];
 
 	return (
-		<div>
+		<div className={classNames(centerColumn, styles.wrapper)}>
 			<div className={classNames(styles.content, text.center)}>
-				<H1 size={PossibleSizes.sm}>
-					We support developers.
-				</H1>
+				<H1 size={PossibleSizes.sm}>We support developers</H1>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 					We provide the support we would like to get as developers.
 				</Paragraph>
-
 			</div>
 			<Grid
-				colL={2}
+				colMd={2}
 				{...rest}
 				data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
 				className={classNames(
 					props.className,
 					text.center,
-					text.l.left,
-					styles.mainGrid,
-					centerColumn,
+					styles.grid,
+					centerColumn
 				)}
 			>
 				{cards.map((card, index) => (
@@ -99,7 +105,7 @@ type SupportDevelopersCardProps = {
 	iconUrl: string;
 	alt: string;
 	title?: string;
-	text?: string;
+	text?: string | ReactNode;
 	className?: string;
 } & HTMLAttributes<HTMLDivElement>;
 

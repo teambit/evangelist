@@ -1,12 +1,39 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
 .wrapper {
     margin-bottom: 30px;
 }
+
+.mainWrapper {
+    margin-bottom: 150px;
+}
+
+.mainGrid {
+	gap: 20px;
+	align-items: center;
+}
+
+.image {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    margin: 0 auto;
+}
+
 .mainParagraph {
     margin-bottom: 30px;
     color: var(--text-muted, #6c707c);
 }
 .link {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    @media screen and (min-width: $br-md) {
+        justify-content: flex-start;
+    }
 }
 
 .paragraph {

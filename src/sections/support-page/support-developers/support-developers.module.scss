@@ -1,13 +1,15 @@
 @import '~@bit/bit.base-ui.layout.breakpoints';
 
 .grid {
-	gap: 20px;
+	gap: 40px;
 
-	@media screen and (min-width: $br-l) {
+	@media screen and (min-width: $br-md) {
 		gap: 40px;
 	}
 }
-
+.wrapper {
+	margin-bottom: 150px;
+}
 .supportCard {
 	max-width: 400px;
     margin: 50px auto;

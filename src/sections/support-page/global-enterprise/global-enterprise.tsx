@@ -14,6 +14,7 @@ import { H1, H5 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
 
 import styles from './global-enterprise.module.scss';
+import { Link } from '../../../elements/link';
 
 type GlobalEnterpriseProps = {
 	/** handles 'book meeting' call to action */
@@ -30,49 +31,59 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 	const cards = [
 		{
 			iconUrl: 'support-page/support.svg',
-			title: 'We respond fast.',
+			title: 'Response time SLA',
 			text:
-				'When you contact us, in any channel, our teams gets on the clock to respond with a solution as fast as possible. And, it’s not over until we see things through.',
+				'Enjoy industry-leading response times and availability through multiple support channels including named contacts, joint Slack and more. Never slow down.',
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/bulb.svg',
-			title: 'By core maintainers.',
+			title: 'Expert consultation',
 			text:
-				'With Bit, support is a core responsibility of every team building a product. Get support by the developers, architects and industry experts actually building your tools.',
+				'Get architectural-level consultation from dedicated component experts to review, plan, design and build your frontend infrastructure. We worked with hundreds of teams.',
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/team.svg',
-			title: 'We see things through.',
+			title: 'Team on-boarding',
 			text:
-				'Your problem is our problem. Our work is not done until your problem is solved, fixed and won’t happen again. Put together with expert-level support, we got you covered.',
+				'Our experts will provide everything your organization needs to get from zero to hero, including hands-on team training, personalized workflows, and integrations.',
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/extensions.svg',
-			title: 'With extensive resources.',
+			title: 'Custom extensions, integrations',
 			text:
-				'We maintain an ever-growing rich [documentation](https://docs.bit.dev/) for every angle or use case of working with our technology. Always one click away.',
+				'We’ll design and provide the workflows and solutions you need to fit your team’s needs, tools and ecosystem.',
 			alt: '',
 		},
 	];
 
 	return (
-		<div>
+		<div className={classNames(centerColumn, styles.wrapper)}>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
-				<H1 size={PossibleSizes.sm}>We support developers.</H1>
+				<H1 size={PossibleSizes.sm}>We support global enterprises</H1>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
-					We provide the support we would like to get as developers.
+					Bit enterprise helps global teams to speed up and standardize modern web
+					development. We’re here to help hands-on every step of the way.
 				</Paragraph>
 
 				<div className={styles.buttons}>
-					<a href="/contact-sales?redirectUri=%2Fenterprise">
-						<Button className={styles.button} importance="cta">Contact Sales</Button>
-					</a>
-					
+					<Link href="/contact-sales?redirectUri=%2Fenterprise">
+						<Button className={styles.button} importance="cta">
+							Contact Sales
+						</Button>
+					</Link>
+
 					<div className={styles.spacer} />
-					<Button className={styles.button} importance="normal" onClick={props.onBookMeeting}>Book Intro</Button>
+					<Link href="/enterprise?redirectUri=%2Fenterprise">
+						<Button
+							className={styles.button}
+							importance="normal"
+						>
+							Bit enterprise
+						</Button>
+					</Link>
 				</div>
 			</div>
 			<Grid

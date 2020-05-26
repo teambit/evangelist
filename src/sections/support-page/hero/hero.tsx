@@ -7,6 +7,9 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { mutedText } from '@bit/bit.base-ui.text.muted-text';
+import { links } from '../../../content/links';
+import { IconLine } from '../../../elements/icon-line';
+import { Link } from '../../../elements/link';
 
 import { Button } from '../../../elements/button';
 import { H1 } from '../../../elements/heading';
@@ -28,26 +31,33 @@ export function Hero(props: HeroProps) {
 
 	return (
 		<Grid
-			colL={2}
+			colMd={2}
 			{...rest}
 			data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
-			className={classNames(props.className, text.center, text.l.left, styles.mainGrid)}
+			className={classNames(props.className, text.center, text.md.left, styles.mainGrid)}
 		>
 			<div className={classNames(styles.content)}>
-				<H1 size={PossibleSizes.sm}>
-					Support
-				</H1>
-				<Paragraph size={PossibleSizes.lg} className={classNames(styles.paragraph, mutedText)}>
-					Let your components drive web application delivery at global scale. Enjoy
-					world-class performance, security and support every step of the way.
+				<H1 size={PossibleSizes.sm}>Support</H1>
+				<Paragraph
+					size={PossibleSizes.lg}
+					className={classNames(styles.paragraph, mutedText)}
+				>
+					As developers, we know what it means to get great support at the right time.
+					We got you covered.
 				</Paragraph>
 
 				<div className={styles.buttons}>
-					<a href="/contact-sales?redirectUri=%2Fenterprise">
-						<Button className={styles.button} importance="cta">Contact Sales</Button>
-					</a>
+					<Link href="/contact-sales?redirectUri=%2Fenterprise">
+						<Button className={styles.button} importance="cta">
+							Get support
+						</Button>
+					</Link>
 					<div className={styles.spacer} />
-					<Button className={styles.button} onClick={props.onBookMeeting}>Book Intro</Button>
+					<Link external href={`${links.docs}`}>
+						<Button className={styles.button}>
+							View docs
+						</Button>
+					</Link>
 				</div>
 			</div>
 			<Image

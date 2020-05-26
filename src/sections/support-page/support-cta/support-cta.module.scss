@@ -1,12 +1,18 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
 .buttons {
     display: flex;
+    justify-content: center;
+    @media screen and (min-width: $br-md) {
     justify-content: flex-end;
-    :first-child {
-        margin-right: 10px;
     }
     .button {
         height: 38px;
         width: 200px;
+    }
+    .spacer {
+        width: 10px;
+        height: 10px;
     }
 }
 .mainGrid {

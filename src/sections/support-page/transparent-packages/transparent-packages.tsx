@@ -23,30 +23,16 @@ type TransparentPackagesProps = {
 export function TransparentPackages(props: TransparentPackagesProps) {
 	const { children, ...rest } = props;
 
-	if(!children) return null;
+	if (!children) return null;
 	return (
-		<div>
+		<div className={classNames(centerColumn, styles.wrapper)}>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
-				<H1 size={PossibleSizes.sm}>Simple transparent packages.</H1>
+				<H1 size={PossibleSizes.sm}>Simple transparent packages</H1>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
-				Compare support packages below to choose the right one for your needs.
+					Compare our support plans below to quickly choose the right one.
 				</Paragraph>
 			</div>
-			<Grid
-				colL={2}
-				{...rest}
-				data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
-				className={classNames(
-					props.className,
-					text.center,
-					text.l.left,
-					styles.mainGrid,
-					centerColumn
-				)}
-			>
-				{children}
-			</Grid>
+			{children}
 		</div>
 	);
 }
-
