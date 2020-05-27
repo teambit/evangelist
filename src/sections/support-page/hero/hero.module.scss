@@ -6,10 +6,9 @@
 }
 
 .content {
-	margin: 0 auto;
-
+	margin: 0 auto 25px auto;
 	@media screen and (min-width: $br-md) {
-		margin: 0;
+		margin: 0 0 65px 0;
 	}
 }
 
@@ -20,7 +19,7 @@
 .buttons {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 25px;
+	
 	@media screen and (min-width: $br-md) {
 		justify-content: flex-start;
 	}
