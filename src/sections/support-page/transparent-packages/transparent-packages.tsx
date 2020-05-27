@@ -26,7 +26,7 @@ export function TransparentPackages(props: TransparentPackagesProps) {
 	return (
 		<div className={classNames(centerColumn, styles.wrapper)}>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
-				<H2 size={PossibleSizes.sm}>Simple transparent packages</H2>
+				<H2 size={PossibleSizes.sm}>Simple transparent plans</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 					Compare our support plans below to quickly choose the right one.
 				</Paragraph>

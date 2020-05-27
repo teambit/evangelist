@@ -32,7 +32,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 			iconUrl: 'support-page/support.svg',
 			title: 'Response time SLA',
 			text:
-				'Enjoy industry-leading response times and availability through multiple support channels including named contacts, joint Slack and more. Never slow down.',
+				"We'll respond quick and with effective solutions to make sure you never slow down.",
 			alt: '',
 		},
 		{
@@ -46,14 +46,14 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 			iconUrl: 'support-page/team.svg',
 			title: 'Team on-boarding',
 			text:
-				'Our experts will provide everything your organization needs to get from zero to hero, including hands-on team training, personalized workflows, and integrations.',
+			"We'll get your team up and running with Bit components from zero to hero.",
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/extensions.svg',
 			title: 'Custom extensions, integrations',
 			text:
-				'We’ll design and provide the workflows and solutions you need to fit your team’s needs, tools and ecosystem.',
+				'We’ll design and provide the solutions to root Bit into your enterprise ecosystem.',
 			alt: '',
 		},
 	];
@@ -68,7 +68,10 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 				</Paragraph>
 
 				<div className={styles.buttons}>
-					<Link className={styles.link} href="/contact-sales?redirectUri=%2Fenterprise">
+					<Link
+						className={styles.link}
+						href="/contact-sales?redirectUri=%2Fenterprise"
+					>
 						<Button className={styles.button} importance="cta" elevation="medium">
 							Contact Sales
 						</Button>
@@ -127,10 +130,12 @@ function GlobalEnterpriseCard({
 	...rest
 }: GlobalEnterpriseCardProps) {
 	return (
-		<Card elevation="medium" className={classNames(styles.card, className)} {...rest} >
+		<Card elevation="medium" className={classNames(styles.card, className)} {...rest}>
 			<div className={styles.top}>
 				<Image alt={alt} src={iconUrl} className={styles.image} />
-				<H3 size={PossibleSizes.xs} className={styles.title}>{title}</H3>
+				<H3 size={PossibleSizes.xs} className={styles.title}>
+					{title}
+				</H3>
 			</div>
 			<Paragraph>{text}</Paragraph>
 		</Card>

@@ -2,17 +2,21 @@
 
 .grid {
 	gap: 40px;
-
 	@media screen and (min-width: $br-md) {
 		gap: 40px;
+		max-width: 800px;
+		margin: auto;
 	}
 }
 .wrapper {
 	margin-bottom: 150px;
 }
+.content {
+	margin-bottom: 50px;
+}
 .supportCard {
 	max-width: 400px;
-    margin: 50px auto;
+    margin: 10px auto;
 }
 
 .cardIcon {

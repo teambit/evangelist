@@ -32,21 +32,21 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 			iconUrl: 'support-page/tool.svg',
 			title: 'By core maintainers',
 			text:
-				'With Bit, support is a core responsibility of every team building a product. Get support by the developers, architects and industry experts actually building your tools.',
+				'Get support from the core developers who actually build the tools you work with.',
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/support.svg',
 			title: 'We respond fast',
 			text:
-				'When you contact us, in any channel, our teams gets on the clock to respond with a solution as fast as possible. And, it’s not over until we see things through.',
+				'We always do our best to make sure you never have to wait for support when you need it.',
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/eye.svg',
 			title: 'We see things through',
 			text:
-				'Your problem is our problem. Our work is not done until your problem is solved, fixed and won’t happen again. Put together with expert-level support, we got you covered.',
+				'Work is not done until the problem is solved and everyone are happy with the result.',
 			alt: '',
 		},
 		{
@@ -54,12 +54,11 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 			title: 'With extensive resources',
 			text: (
 				<span>
-					We maintain an ever-growing rich{' '}
+					We constantly write{' '}
 					<Link external href={links.docs}>
 						documentation
-					</Link>{' '}
-					for every angle or use case of working with our technology. Always one click
-					away.
+					</Link>,{' '}
+					tutorials and guides to support every use case.
 				</span>
 			),
 			alt: '',
@@ -78,11 +77,7 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 				colMd={2}
 				{...rest}
 				data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
-				className={classNames(
-					props.className,
-					text.center,
-					styles.grid,
-				)}
+				className={classNames(props.className, text.center, styles.grid)}
 			>
 				{cards.map((card, index) => (
 					<SupportDevelopersCard
@@ -116,7 +111,9 @@ export function SupportDevelopersCard({
 	return (
 		<div className={classNames(className)}>
 			<Image alt={alt} src={iconUrl} className={styles.cardIcon} />
-			<H3 size={PossibleSizes.xs} className={styles.cardTitle}>{title}</H3>
+			<H3 size={PossibleSizes.xs} className={styles.cardTitle}>
+				{title}
+			</H3>
 			<Paragraph>{text}</Paragraph>
 		</div>
 	);

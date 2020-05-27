@@ -7,7 +7,6 @@
 
 .content {
 	margin: 0 auto;
-	// max-width: 40%;
 
 	@media screen and (min-width: $br-md) {
 		margin: 0;
@@ -21,6 +20,7 @@
 .buttons {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 25px;
 	@media screen and (min-width: $br-md) {
 		justify-content: flex-start;
 	}
@@ -33,6 +33,7 @@
 	.button {
 		height: 38px;
 		width: 100%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 		@media screen and (min-width: $br-sm) {
 			width: 180px;
 		}
@@ -40,8 +41,12 @@
 }
 
 .spacer {
-	width: 10px;
-	height: 10px;
+	width: 24px;
+	min-width: 24px;
+	@media screen and (min-width: $br-md) {
+		width: 10px;
+		min-width: 10px;
+	}
 }
 
 .paragraph {
