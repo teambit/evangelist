@@ -24,8 +24,8 @@ export type SupportPageProps = {
  */
 export function SupportPage(props: SupportPageProps) {
 	return (
-		<div>
-			<div className={classNames(styles.supportCirclesBg, styles.paddingTop140)}>
+		<div className={styles.supportPageStyles}>
+			<div className={classNames(styles.supportCirclesBg)}>
 				<Hero className={classNames(centerColumn, styles.foldMargin)} />
 			</div>
 			<SupportDevelopers />

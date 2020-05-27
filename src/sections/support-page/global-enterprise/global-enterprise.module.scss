@@ -1,38 +1,49 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
 .topSection {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .wrapper {
-    margin-bottom: 150px;
+	margin-bottom: 150px;
 }
 .card {
-    border: none;
-    border-radius: 10px;
+	border: none;
+	border-radius: 10px;
+    padding: 30px;
+    text-align: start;
 }
 .top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
 }
 .title {
-    margin-bottom: unset;
+	margin-bottom: unset;
 }
 .paragraph {
-    max-width: 600px;
-    margin: 0 auto 50px auto;
+	max-width: 600px;
+	margin: 0 auto 50px auto;
 }
 .image {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .spacer {
-    width: 20px;
+	width: 20px;
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    .button {
-        width: 200px;
-    }
+	display: flex;
+	justify-content: center;
+	.link {
+		width: 100%;
+		@media screen and (min-width: $br-sm) {
+			width: 200px;
+		}
+	}
+	.button {
+		width: 100%;
+		// max-width: 200px;
+	}
 }

@@ -9,7 +9,7 @@ import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { Button } from '../../../elements/button';
-import { H1, H5, H6 } from '../../../elements/heading';
+import { H6, H2 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
 import { Icon } from '../../../elements/icon';
 
@@ -71,7 +71,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 			)}
 		>
 			<div className={classNames(styles.content)}>
-				<H1 size={PossibleSizes.sm}>Any way you choose</H1>
+				<H2 size={PossibleSizes.sm}>Any way you choose</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.mainParagraph}>
 					Get help quickly in Slack, Email, GitHub or any other way. Our team is here
 					to help you any way you choose.

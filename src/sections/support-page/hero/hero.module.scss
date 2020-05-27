@@ -19,12 +19,16 @@
 }
 
 .buttons {
-	@media screen and (min-width: $br-sm) {
-		display: flex;
-		justify-content: center;
-	}
+	display: flex;
+	justify-content: center;
 	@media screen and (min-width: $br-md) {
 		justify-content: flex-start;
+	}
+	.link {
+		width: 100%;
+		@media screen and (min-width: $br-sm) {
+			width: unset;
+		}
 	}
 	.button {
 		height: 38px;

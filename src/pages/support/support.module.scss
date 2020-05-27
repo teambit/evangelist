@@ -6,25 +6,20 @@
 .supportCirclesBg {
 	background: url($staticStorageUrl + '/support-page/hero-background/support-hero-strips.svg'), url($staticStorageUrl + '/support-page/hero-background/support-hero-bg.svg');
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center bottom;
 	margin-bottom: 100px;
 }
 
-
-.paddingTop140 {
-	padding-top: 140px;
+.supportPageStyles {
+	h1, h2, h3 {
+		color: var(--text-highlight, inherit);
+	}
 }
 
 
-.curveMargin {
-	height: 80px;
-	background-size: 1921px 200px;
-
-	@media screen and (min-width: $br-l) {
-		height: 200px;
-	}
-
-	@media screen and (min-width: $br-xxl) {
-		background-size: 100% 100%;
+.foldMargin {
+	transform: translateY(90px);
+	@media screen and (min-width: $br-md) {
+		transform: translateY(60px);
 	}
 }

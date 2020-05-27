@@ -1,21 +1,27 @@
 @import '~@bit/bit.base-ui.layout.breakpoints';
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    @media screen and (min-width: $br-md) {
-    justify-content: flex-end;
+	display: flex;
+	justify-content: center;
+	@media screen and (min-width: $br-md) {
+		justify-content: flex-end;
     }
-    .button {
-        height: 38px;
-        width: 200px;
+    .link {
+        width: 100%;
+        @media screen and (min-width: $br-sm) {
+            width: 200px;
+        }
     }
-    .spacer {
-        width: 10px;
-        height: 10px;
-    }
+	.button {
+		height: 46px;
+		width: 100%;
+	}
+	.spacer {
+		width: 20px;
+		height: 20px;
+	}
 }
 .mainGrid {
-    margin-top: 100px;
-    margin-bottom: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }

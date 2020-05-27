@@ -44,13 +44,13 @@ export function Hero(props: HeroProps) {
 				</Paragraph>
 
 				<div className={styles.buttons}>
-					<Link href="/support?redirectUri=%2Fsupport-plans">
+					<Link className={styles.link} href="/support?redirectUri=%2Fsupport-plans">
 						<Button className={styles.button} importance="cta">
 							Get support
 						</Button>
 					</Link>
 					<div className={styles.spacer} />
-					<Link href="/contact-sales?redirectUri=%2Fsupport-plans">
+					<Link className={styles.link} href="/contact-sales?redirectUri=%2Fsupport-plans">
 						<Button className={styles.button} elevation="medium">
 							Contact sales
 						</Button>

@@ -4,12 +4,12 @@ import classNames from 'classnames';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
-import { Card } from '@bit/bit.base-ui.surfaces.card';
+import { Card, CardProps } from '@bit/bit.base-ui.surfaces.card';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { Button } from '../../../elements/button';
-import { H1, H5 } from '../../../elements/heading';
+import { H3, H2 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
 
 import styles from './global-enterprise.module.scss';
@@ -61,21 +61,21 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 	return (
 		<div className={classNames(centerColumn, styles.wrapper)}>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
-				<H1 size={PossibleSizes.sm}>We support global enterprises</H1>
+				<H2 size={PossibleSizes.sm}>We support global enterprises</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 					Bit enterprise helps global teams to speed up and standardize modern web
 					development. We’re here to help hands-on every step of the way.
 				</Paragraph>
 
 				<div className={styles.buttons}>
-					<Link href="/contact-sales?redirectUri=%2Fenterprise">
+					<Link className={styles.link} href="/contact-sales?redirectUri=%2Fenterprise">
 						<Button className={styles.button} importance="cta" elevation="medium">
 							Contact Sales
 						</Button>
 					</Link>
 
 					<div className={styles.spacer} />
-					<Link href="/enterprise?redirectUri=%2Fenterprise">
+					<Link className={styles.link} href="/enterprise?redirectUri=%2Fenterprise">
 						<Button
 							className={styles.button}
 							importance="normal"
@@ -116,21 +116,21 @@ type GlobalEnterpriseCardProps = {
 	alt: string;
 	title?: string;
 	text?: string;
-	className?: string;
-} & HTMLAttributes<HTMLDivElement>;
+} & CardProps;
 
-export function GlobalEnterpriseCard({
+function GlobalEnterpriseCard({
 	iconUrl,
 	title,
 	text,
 	alt,
 	className,
+	...rest
 }: GlobalEnterpriseCardProps) {
 	return (
-		<Card elevation="medium" className={classNames(styles.card, className)}>
+		<Card elevation="medium" className={classNames(styles.card, className)} {...rest} >
 			<div className={styles.top}>
 				<Image alt={alt} src={iconUrl} className={styles.image} />
-				<H5 className={styles.title}>{title}</H5>
+				<H3 size={PossibleSizes.xs} className={styles.title}>{title}</H3>
 			</div>
 			<Paragraph>{text}</Paragraph>
 		</Card>

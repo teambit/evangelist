@@ -8,7 +8,7 @@ import { text } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
-import { H1, H5 } from '../../../elements/heading';
+import { H3, H2 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
 
 import styles from './support-developers.module.scss';
@@ -69,7 +69,7 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 	return (
 		<div className={classNames(centerColumn, styles.wrapper)}>
 			<div className={classNames(styles.content, text.center)}>
-				<H1 size={PossibleSizes.sm}>We support developers</H1>
+				<H2 size={PossibleSizes.sm}>We support developers</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 					We provide the support we would like to get as developers.
 				</Paragraph>
@@ -104,7 +104,6 @@ type SupportDevelopersCardProps = {
 	alt: string;
 	title?: string;
 	text?: string | ReactNode;
-	className?: string;
 } & HTMLAttributes<HTMLDivElement>;
 
 export function SupportDevelopersCard({
@@ -116,8 +115,8 @@ export function SupportDevelopersCard({
 }: SupportDevelopersCardProps) {
 	return (
 		<div className={classNames(className)}>
-			<Image alt={alt} src={iconUrl} />
-			<H5>{title}</H5>
+			<Image alt={alt} src={iconUrl} className={styles.cardIcon} />
+			<H3 size={PossibleSizes.xs} className={styles.cardTitle}>{title}</H3>
 			<Paragraph>{text}</Paragraph>
 		</div>
 	);

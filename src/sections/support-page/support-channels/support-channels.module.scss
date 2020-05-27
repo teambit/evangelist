@@ -16,6 +16,10 @@
 .image {
     max-width: 100%;
     margin: 0 auto;
+    display: none;
+    @media screen and (min-width: $br-md) {
+        display: unset;
+    }
 }
 
 .content {
