@@ -2,32 +2,30 @@ import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
-import { themedText } from '@bit/bit.base-ui.text.themed-text';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
-import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
+import { text } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
-import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
+import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { Button } from '../../../elements/button';
 import { H6, H2 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
 import { Icon } from '../../../elements/icon';
-
-import styles from './support-channels.module.scss';
 import { Link } from '../../../elements/link';
 import { links } from '../../../content/links';
 
+import styles from './support-channels.module.scss';
+
 type SupportChannelsProps = {
-	/** handles 'book meeting' call to action */
-	onBookMeeting?: () => any | Promise<any>;
+	
 } & HTMLAttributes<HTMLElement>;
 
 /**
- * Opening section for the Enterprise offering page.
- * @name EcoSystem
+ * Support channels section for specifying all the ways to contact Bit's support.
+ * @name SupportChannels
  */
 export function SupportChannels(props: SupportChannelsProps) {
-	const { onBookMeeting, ...rest } = props;
+	const { className, ...rest } = props;
 	const channelsData = [
 		{
 			title: 'Slack',
@@ -56,18 +54,16 @@ export function SupportChannels(props: SupportChannelsProps) {
 	];
 
 	return (
-		// <div>
 		<Grid
 			colMd={2}
 			{...rest}
 			data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
 			className={classNames(
-				props.className,
+				className,
 				text.center,
 				text.md.left,
 				styles.mainGrid,
 				centerColumn,
-				styles.mainWrapper
 			)}
 		>
 			<div className={classNames(styles.content)}>
@@ -77,7 +73,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 					to help you any way you choose.
 				</Paragraph>
 
-				<div className={styles.buttons}>
+				<div>
 					{channelsData.map((channel, index) => (
 						<ChannelButton
 							title={channel.title}
@@ -97,7 +93,6 @@ export function SupportChannels(props: SupportChannelsProps) {
 				src={'support-page/Illustrations/channels-section.svg'}
 			/>
 		</Grid>
-		// </div>
 	);
 }
 

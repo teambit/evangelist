@@ -11,7 +11,7 @@
 	border: none;
 	border-radius: 10px;
     padding: 30px;
-    text-align: start;
+	text-align: start;
 }
 .top {
 	display: flex;
@@ -20,6 +20,7 @@
 }
 .title {
 	margin-bottom: unset;
+	line-height: 1;
 }
 .paragraph {
 	max-width: 600px;

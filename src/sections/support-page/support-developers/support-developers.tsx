@@ -16,16 +16,15 @@ import { Link } from '../../../elements/link';
 import { links } from '../../../content/links';
 
 type SupportDevelopersProps = {
-	/** handles 'book meeting' call to action */
-	onBookMeeting?: () => any | Promise<any>;
+	
 } & HTMLAttributes<HTMLElement>;
 
 /**
- * Opening section for the Enterprise offering page.
- * @name EcoSystem
+ * Support section elaborating on the benefits of our support packages 
+ * @name SupportDevelopers
  */
 export function SupportDevelopers(props: SupportDevelopersProps) {
-	const { onBookMeeting, ...rest } = props;
+	const { className, ...rest } = props;
 
 	const cards = [
 		{
@@ -57,8 +56,8 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 					We constantly write{' '}
 					<Link external href={links.docs}>
 						documentation
-					</Link>,{' '}
-					tutorials and guides to support every use case.
+					</Link>
+					, tutorials and guides to support every use case.
 				</span>
 			),
 			alt: '',
@@ -66,16 +65,15 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 	];
 
 	return (
-		<div className={classNames(centerColumn, styles.wrapper)}>
+		<div className={classNames(centerColumn, styles.wrapper, className)} {...rest}>
 			<div className={classNames(styles.content, text.center)}>
-				<H2 size={PossibleSizes.sm}>We support developers</H2>
+				<H2 size={PossibleSizes.sm}>We got you covered</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 					We provide the support we would like to get as developers.
 				</Paragraph>
 			</div>
 			<Grid
 				colMd={2}
-				{...rest}
 				data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
 				className={classNames(props.className, text.center, styles.grid)}
 			>

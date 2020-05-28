@@ -15,18 +15,13 @@ import { Image } from '../../../elements/image';
 import styles from './global-enterprise.module.scss';
 import { Link } from '../../../elements/link';
 
-type GlobalEnterpriseProps = {
-	/** handles 'book meeting' call to action */
-	onBookMeeting?: () => any | Promise<any>;
-} & HTMLAttributes<HTMLElement>;
+type GlobalEnterpriseProps = {} & HTMLAttributes<HTMLElement>;
 
 /**
- * Opening section for the Enterprise offering page.
+ * Opening section for the Support offering page.
  * @name EcoSystem
  */
 export function GlobalEnterprise(props: GlobalEnterpriseProps) {
-	const { onBookMeeting, ...rest } = props;
-
 	const cards = [
 		{
 			iconUrl: 'support-page/support.svg',
@@ -39,14 +34,13 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 			iconUrl: 'support-page/bulb.svg',
 			title: 'Expert consultation',
 			text:
-				'Get architectural-level consultation from dedicated component experts to review, plan, design and build your frontend infrastructure. We worked with hundreds of teams.',
+				"We'll review and consult on building a great front-end infrastructure and design-system.",
 			alt: '',
 		},
 		{
 			iconUrl: 'support-page/team.svg',
 			title: 'Team on-boarding',
-			text:
-			"We'll get your team up and running with Bit components from zero to hero.",
+			text: "We'll get your team up and running with Bit components from zero to hero.",
 			alt: '',
 		},
 		{
@@ -59,7 +53,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 	];
 
 	return (
-		<div className={classNames(centerColumn, styles.wrapper)}>
+		<div className={classNames(centerColumn, styles.wrapper)} {...props}>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
 				<H2 size={PossibleSizes.sm}>We support global enterprises</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
@@ -70,7 +64,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 				<div className={styles.buttons}>
 					<Link
 						className={styles.link}
-						href="/contact-sales?redirectUri=%2Fenterprise"
+						href="/contact-sales?redirectUri=%2support-plans"
 					>
 						<Button className={styles.button} importance="cta" elevation="medium">
 							Contact Sales
@@ -78,7 +72,10 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 					</Link>
 
 					<div className={styles.spacer} />
-					<Link className={styles.link} href="/enterprise?redirectUri=%2Fenterprise">
+					<Link
+						className={styles.link}
+						href="/enterprise?redirectUri=%2support-plans"
+					>
 						<Button
 							className={styles.button}
 							importance="normal"
@@ -91,14 +88,8 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 			</div>
 			<Grid
 				colL={2}
-				{...rest}
 				data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
-				className={classNames(
-					props.className,
-					text.center,
-					text.l.left,
-					styles.mainGrid
-				)}
+				className={classNames(text.center, text.l.left, styles.mainGrid)}
 			>
 				{cards.map((card, index) => (
 					<GlobalEnterpriseCard

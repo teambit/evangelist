@@ -1,9 +1,7 @@
 import React, { HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
-import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
-import { marginCenter, text } from '@bit/bit.base-ui.layout.align';
-import { margin } from '../../layout/spacing';
+import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { Hero } from '../../sections/support-page/hero';
 
@@ -19,7 +17,7 @@ export type SupportPageProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 /**
- * A full, responsive page, detailing Bit's offering for support page.
+ * A full, responsive page, detailing Bit's offering for support.
  * @name SupportPage
  */
 export function SupportPage(props: SupportPageProps) {

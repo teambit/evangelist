@@ -6,7 +6,6 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 import { mutedText } from '@bit/bit.base-ui.text.muted-text';
-import { links } from '../../../content/links';
 import { Link } from '../../../elements/link';
 
 import { Button } from '../../../elements/button';
@@ -16,12 +15,12 @@ import { Image } from '../../../elements/image';
 import styles from './hero.module.scss';
 
 type HeroProps = {
-	className: string;
+
 } & HTMLAttributes<HTMLDivElement>;
 
 /**
- * Opening section for the Support offering page.
- * @name EcoSystem
+ * Opening hero section for the Support offering page.
+ * @name Hero
  */
 export function Hero(props: HeroProps) {
 	const { className, ...rest } = props;
@@ -34,7 +33,7 @@ export function Hero(props: HeroProps) {
 			className={classNames(className, text.center, text.md.left, styles.mainGrid)}
 		>
 			<div className={classNames(styles.content)}>
-				<H1 size={PossibleSizes.sm}>Support</H1>
+				<H1 size={PossibleSizes.sm}>We support developers</H1>
 				<Paragraph
 					size={PossibleSizes.lg}
 					className={classNames(styles.paragraph, mutedText)}
