@@ -10,17 +10,28 @@
 .card {
 	border: none;
 	border-radius: 10px;
-    padding: 30px;
+	padding: 30px;
 	text-align: start;
+	@media screen and (min-width: $br-l) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 170px;
+	}
 }
 .top {
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
+	@media screen and (min-width: $br-l) {
+		margin-bottom: unset;
+	}
 }
 .title {
 	margin-bottom: unset;
-	line-height: 1;
+	@media screen and (min-width: $br-l) {
+		line-height: 1;
+	}
 }
 .paragraph {
 	max-width: 600px;
