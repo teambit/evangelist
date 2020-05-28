@@ -39,7 +39,7 @@ export function SupportCta(props: React.HTMLAttributes<HTMLDivElement>) {
 				<Paragraph size={PossibleSizes.xl}>Reach out to our team.</Paragraph>
 			</div>
 			<div className={classNames(styles.buttons, alignItems.center)}>
-				<Link className={styles.link} href="/contact-sales">
+				<Link className={styles.link} href="/support">
 					<Button className={styles.button} elevation="medium" importance="cta">
 						Contact support
 					</Button>

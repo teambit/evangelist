@@ -43,7 +43,7 @@ export function Hero(props: HeroProps) {
 				</Paragraph>
 
 				<div className={styles.buttons}>
-					<Link className={styles.link} href="/support?redirectUri=%2Fsupport-plans">
+					<Link className={styles.link} href="/support">
 						<Button className={styles.button} importance="cta">
 							Get support
 						</Button>
