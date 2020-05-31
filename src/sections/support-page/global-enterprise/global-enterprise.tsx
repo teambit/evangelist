@@ -74,7 +74,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 					<div className={styles.spacer} />
 					<Link
 						className={styles.link}
-						href="/enterprise?redirectUri=%2support-plans"
+						href="/enterprise"
 					>
 						<Button
 							className={styles.button}
