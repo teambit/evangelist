@@ -64,7 +64,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 				<div className={styles.buttons}>
 					<Link
 						className={styles.link}
-						href="/contact-sales?redirectUri=%2support-plans"
+						href="/contact-sales?redirectUri=%2Fsupport-plans"
 					>
 						<Button className={styles.button} importance="cta" elevation="medium">
 							Contact Sales
