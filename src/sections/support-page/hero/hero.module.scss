@@ -25,6 +25,7 @@
 	}
 	.link {
 		width: 100%;
+		flex-shrink: 1;
 		@media screen and (min-width: $br-sm) {
 			width: unset;
 		}
@@ -41,10 +42,9 @@
 
 .spacer {
 	width: 24px;
-	min-width: 24px;
+	flex-shrink: 0;
 	@media screen and (min-width: $br-md) {
 		width: 10px;
-		min-width: 10px;
 	}
 }
 
