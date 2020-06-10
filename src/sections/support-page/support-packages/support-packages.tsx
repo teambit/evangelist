@@ -8,18 +8,18 @@ import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { H2 } from '../../../elements/heading';
 
-import styles from './transparent-packages.module.scss';
+import styles from './support-packages.module.scss';
 
-type TransparentPackagesProps = {
+type SupportPackagesProps = {
 	children?: ReactNode;
 } & HTMLAttributes<HTMLElement>;
 
 /**
  * A section with support comparison table to specify differences between plans
  * Assumes a table is passed as `children`, otherwise the entire section will not show.
- * @name TransparentPackages
+ * @name SupportPackages
  */
-export function TransparentPackages(props: TransparentPackagesProps) {
+export function SupportPackages(props: SupportPackagesProps) {
 	const { children, ...rest } = props;
 
 	if (!children) return null;

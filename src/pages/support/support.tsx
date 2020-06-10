@@ -10,7 +10,7 @@ import { SupportDevelopers } from '../../sections/support-page/support-developer
 import { SupportChannels } from '../../sections/support-page/support-channels';
 import { GlobalEnterprise } from '../../sections/support-page/global-enterprise';
 import { SupportCta } from '../../sections/support-page/support-cta';
-import { TransparentPackages } from '../../sections/support-page/transparent-packages';
+import { SupportPackages } from '../../sections/support-page/support-packages';
 
 export type SupportPageProps = {
 	table?: ReactNode;
@@ -28,7 +28,7 @@ export function SupportPage(props: SupportPageProps) {
 			</div>
 			<SupportDevelopers />
 			<SupportChannels />
-			<TransparentPackages>{props.table}</TransparentPackages>
+			<SupportPackages>{props.table}</SupportPackages>
 			<GlobalEnterprise />
 			<SupportCta />
 		</div>
