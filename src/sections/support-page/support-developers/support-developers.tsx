@@ -6,7 +6,6 @@ import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
-import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { H3, H2 } from '../../../elements/heading';
 import { Image } from '../../../elements/image';
@@ -75,18 +74,18 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 	];
 
 	return (
-		<div className={className} {...rest}>
+		<div
+			className={className}
+			{...rest}
+			data-bit-id="bit.evangelist/sections/support-offering/support-developers"
+		>
 			<div className={classNames(styles.content, text.center)}>
 				<H2 size={PossibleSizes.sm}>We got you covered</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
 					We provide the support we would like to get as developers.
 				</Paragraph>
 			</div>
-			<Grid
-				colMd={2}
-				data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
-				className={classNames(props.className, text.center, styles.grid)}
-			>
+			<Grid colMd={2} className={classNames(props.className, text.center, styles.grid)}>
 				{cards.map((card, index) => (
 					<SupportDevelopersCard
 						key={index}

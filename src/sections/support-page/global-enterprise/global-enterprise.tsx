@@ -6,7 +6,6 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
 import { Card, CardProps } from '@bit/bit.base-ui.surfaces.card';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
-import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { Button } from '../../../elements/button';
 import { H3, H2 } from '../../../elements/heading';
@@ -21,7 +20,7 @@ type GlobalEnterpriseProps = {} & HTMLAttributes<HTMLElement>;
  * Opening section for the Support offering page.
  * @name EcoSystem
  */
-export function GlobalEnterprise({className, ...rest}: GlobalEnterpriseProps) {
+export function GlobalEnterprise({ className, ...rest }: GlobalEnterpriseProps) {
 	const cards = [
 		{
 			iconUrl: 'support-page/support.svg',
@@ -53,7 +52,11 @@ export function GlobalEnterprise({className, ...rest}: GlobalEnterpriseProps) {
 	];
 
 	return (
-		<div className={className} {...rest}>
+		<div
+			className={className}
+			{...rest}
+			data-bit-id="bit.evangelist/sections/support-offering/global-enterprise"
+		>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
 				<H2 size={PossibleSizes.sm}>We support global enterprises</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
@@ -83,11 +86,7 @@ export function GlobalEnterprise({className, ...rest}: GlobalEnterpriseProps) {
 					</Link>
 				</div>
 			</div>
-			<Grid
-				colL={2}
-				data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
-				className={classNames(text.center, text.l.left, styles.mainGrid)}
-			>
+			<Grid colL={2} className={classNames(text.center, text.l.left, styles.mainGrid)}>
 				{cards.map((card, index) => (
 					<GlobalEnterpriseCard
 						key={index}

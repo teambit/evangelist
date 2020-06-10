@@ -5,7 +5,6 @@ import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
-import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { mutedText } from '@bit/bit.base-ui.text.muted-text';
 
 import { H2 } from '../../../elements/heading';
@@ -55,7 +54,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 		<Grid
 			colMd={2}
 			{...rest}
-			data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
+			data-bit-id="bit.evangelist/sections/support-offering/support-channels"
 			className={classNames(
 				className,
 				text.center,

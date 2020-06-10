@@ -5,7 +5,6 @@ import classNames from 'classnames';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { alignItems, text} from '@bit/bit.base-ui.layout.align';
-import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 
 import { H2 } from '../../../elements/heading';
@@ -25,7 +24,7 @@ export function SupportCta(props: React.HTMLAttributes<HTMLDivElement>) {
 		<Grid
 			colMd={2}
 			{...rest}
-			data-bit-id="bit.evangelist/sections/enterprise-offering/hero"
+			data-bit-id="bit.evangelist/sections/support-offering/support-cta"
 			className={classNames(
 				className,
 				text.center,

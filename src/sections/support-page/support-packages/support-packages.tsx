@@ -24,7 +24,11 @@ export function SupportPackages(props: SupportPackagesProps) {
 
 	if (!children) return null;
 	return (
-		<div className={className} {...rest}>
+		<div
+			className={className}
+			{...rest}
+			data-bit-id="bit.evangelist/sections/support-offering/support-packages"
+		>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
 				<H2 size={PossibleSizes.sm}>Simple transparent plans</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
