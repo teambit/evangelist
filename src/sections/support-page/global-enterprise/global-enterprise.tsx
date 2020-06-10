@@ -21,7 +21,7 @@ type GlobalEnterpriseProps = {} & HTMLAttributes<HTMLElement>;
  * Opening section for the Support offering page.
  * @name EcoSystem
  */
-export function GlobalEnterprise(props: GlobalEnterpriseProps) {
+export function GlobalEnterprise({className, ...rest}: GlobalEnterpriseProps) {
 	const cards = [
 		{
 			iconUrl: 'support-page/support.svg',
@@ -53,7 +53,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 	];
 
 	return (
-		<div className={classNames(centerColumn, styles.wrapper)} {...props}>
+		<div className={className} {...rest}>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
 				<H2 size={PossibleSizes.sm}>We support global enterprises</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>

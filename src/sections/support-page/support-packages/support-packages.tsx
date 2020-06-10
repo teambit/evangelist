@@ -20,11 +20,11 @@ type SupportPackagesProps = {
  * @name SupportPackages
  */
 export function SupportPackages(props: SupportPackagesProps) {
-	const { children, ...rest } = props;
+	const { children, className, ...rest } = props;
 
 	if (!children) return null;
 	return (
-		<div className={classNames(centerColumn, styles.wrapper)} {...rest}>
+		<div className={className} {...rest}>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
 				<H2 size={PossibleSizes.sm}>Simple transparent plans</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>

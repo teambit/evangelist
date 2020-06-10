@@ -26,11 +26,11 @@ export function SupportPage({table, ...rest}: SupportPageProps) {
 			<div className={classNames(styles.supportCirclesBg)}>
 				<Hero className={classNames(centerColumn, styles.foldMargin)} />
 			</div>
-			<SupportDevelopers className={classNames(centerColumn, styles.supportDevelopers)} />
-			<SupportChannels />
-			<SupportPackages>{table}</SupportPackages>
-			<GlobalEnterprise />
-			<SupportCta />
+			<SupportDevelopers className={classNames(centerColumn, styles.marginBottom150)} />
+			<SupportChannels className={classNames(centerColumn, styles.marginBottom150)} />
+			<SupportPackages className={classNames(centerColumn, styles.marginBottom150)} >{table}</SupportPackages>
+			<GlobalEnterprise className={classNames(centerColumn, styles.marginBottom150)}/>
+			<SupportCta className={classNames(centerColumn, styles.supportCta)}/>
 		</div>
 	);
 }

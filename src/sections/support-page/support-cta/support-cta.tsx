@@ -30,7 +30,6 @@ export function SupportCta(props: React.HTMLAttributes<HTMLDivElement>) {
 				className,
 				text.center,
 				text.md.left,
-				centerColumn,
 				styles.mainGrid
 			)}
 		>

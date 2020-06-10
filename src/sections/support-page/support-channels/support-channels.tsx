@@ -61,7 +61,6 @@ export function SupportChannels(props: SupportChannelsProps) {
 				text.center,
 				text.md.left,
 				styles.mainGrid,
-				centerColumn
 			)}
 		>
 			<div className={classNames(styles.content)}>
