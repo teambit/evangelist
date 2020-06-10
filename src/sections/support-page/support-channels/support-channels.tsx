@@ -31,7 +31,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 		{
 			title: 'Slack',
 			subTitle: 'Chat with the team and the community on Slack.',
-			button: <SlackLink className={styles.channelButton} href={links.slack}>Slack</SlackLink>,
+			button: <SlackLink className={styles.channelButton} href={links.slack} />,
 		},
 		{
 			title: 'Email',
@@ -40,7 +40,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 			button: (
 				<CommunityLink className={classNames(styles.channelButton, styles.email)} href="/support">
 					<Icon of="email" className={styles.emailIcon} />
-					Email
+					Contact support
 				</CommunityLink>
 			),
 		},
