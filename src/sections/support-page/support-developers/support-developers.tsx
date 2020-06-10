@@ -75,7 +75,7 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 	];
 
 	return (
-		<div className={classNames(centerColumn, styles.wrapper, className)} {...rest}>
+		<div className={className} {...rest}>
 			<div className={classNames(styles.content, text.center)}>
 				<H2 size={PossibleSizes.sm}>We got you covered</H2>
 				<Paragraph size={PossibleSizes.lg} className={styles.paragraph}>
