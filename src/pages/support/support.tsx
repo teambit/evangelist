@@ -20,15 +20,15 @@ export type SupportPageProps = {
  * A full, responsive page, detailing Bit's offering for support.
  * @name SupportPage
  */
-export function SupportPage(props: SupportPageProps) {
+export function SupportPage({table, ...rest}: SupportPageProps) {
 	return (
-		<div className={styles.supportPageStyles}>
+		<div className={styles.supportPageStyles} {...rest}>
 			<div className={classNames(styles.supportCirclesBg)}>
 				<Hero className={classNames(centerColumn, styles.foldMargin)} />
 			</div>
 			<SupportDevelopers />
 			<SupportChannels />
-			<SupportPackages>{props.table}</SupportPackages>
+			<SupportPackages>{table}</SupportPackages>
 			<GlobalEnterprise />
 			<SupportCta />
 		</div>
