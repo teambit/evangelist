@@ -28,27 +28,27 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 			title: 'Response time SLA',
 			text:
 				"We'll respond quick and with effective solutions to make sure you never slow down.",
-			alt: '',
+			alt: 'Bit - support time',
 		},
 		{
 			iconUrl: 'support-page/bulb.svg',
 			title: 'Expert consultation',
 			text:
 				"We'll review and consult on building a great front-end infrastructure and design-system.",
-			alt: '',
+			alt: 'Bit - support consultation',
 		},
 		{
 			iconUrl: 'support-page/team.svg',
 			title: 'Team on-boarding',
 			text: "We'll get your team up and running with Bit components from zero to hero.",
-			alt: '',
+			alt: 'Bit - support team on-boarding',
 		},
 		{
 			iconUrl: 'support-page/extensions.svg',
 			title: 'Custom extensions, integrations',
 			text:
 				'We’ll design and provide the solutions to root Bit into your enterprise ecosystem.',
-			alt: '',
+			alt: 'Bit - custom extensions and integrations',
 		},
 	];
 
@@ -72,10 +72,7 @@ export function GlobalEnterprise(props: GlobalEnterpriseProps) {
 					</Link>
 
 					<div className={styles.spacer} />
-					<Link
-						className={styles.link}
-						href="/enterprise"
-					>
+					<Link className={styles.link} href="/enterprise">
 						<Button
 							className={styles.button}
 							importance="normal"
