@@ -70,7 +70,7 @@ export function GlobalEnterprise({ className, ...rest }: GlobalEnterpriseProps) 
 						href="/contact-sales?redirectUri=%2Fsupport-plans"
 					>
 						<Button className={styles.button} importance="cta" elevation="medium">
-							Contact Sales
+							Contact sales
 						</Button>
 					</Link>
 
