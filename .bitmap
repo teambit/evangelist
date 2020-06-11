@@ -151,7 +151,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/elements/button@1.2.1": {
+    "bit.evangelist/elements/button@1.3.0": {
         "files": [
             {
                 "relativePath": "src/elements/button/button.module.scss",
@@ -521,7 +521,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/enterprise-offering@1.0.1": {
+    "bit.evangelist/pages/enterprise-offering@1.0.2": {
         "files": [
             {
                 "relativePath": "src/pages/enterprise-offering/enterprise-offering.module.scss",
@@ -544,7 +544,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/hybrid-homepage@2.0.18": {
+    "bit.evangelist/pages/hybrid-homepage@2.0.19": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -659,7 +659,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/cta@2.0.9": {
+    "bit.evangelist/sections/cta@2.0.10": {
         "files": [
             {
                 "name": "cta-section.module.scss",
@@ -728,7 +728,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-offering/advantage-cards@1.0.1": {
+    "bit.evangelist/sections/enterprise-offering/advantage-cards@1.0.2": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-offering/advantage-cards/advantage-cards.module.scss",
@@ -815,7 +815,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-offering/hero@1.0.1": {
+    "bit.evangelist/sections/enterprise-offering/hero@1.0.2": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-offering/hero/hero.module.scss",
@@ -907,7 +907,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-offering/sales-cta@1.0.1": {
+    "bit.evangelist/sections/enterprise-offering/sales-cta@1.0.2": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-offering/sales-cta/contact-form/contact-form.module.scss",
@@ -973,7 +973,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/hero@1.0.5": {
+    "bit.evangelist/sections/hero@1.0.6": {
         "files": [
             {
                 "relativePath": "src/sections/hybrid-homepage/hero/hero.module.scss",
@@ -1042,7 +1042,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/talk-to-experts@2.0.9": {
+    "bit.evangelist/sections/talk-to-experts@2.0.10": {
         "files": [
             {
                 "relativePath": "src/sections/hybrid-homepage/talk-to-experts/index.ts",
