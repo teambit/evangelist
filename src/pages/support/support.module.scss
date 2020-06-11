@@ -1,0 +1,36 @@
+@import '~@bit/bit.base-ui.theme.colors';
+@import '~@bit/bit.base-ui.layout.breakpoints';
+@import '~@bit/bit.base-ui.constants.storage/_storage.module.scss';
+
+
+.supportCirclesBg {
+	background: url($staticStorageUrl + '/support-page/hero-background/support-hero-strips.svg'), url($staticStorageUrl + '/support-page/hero-background/support-hero-bg.svg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	margin-bottom: 150px;
+	@media screen and (min-width: $br-md) {
+		margin-bottom: 100px;
+	}
+}
+
+.supportPageStyles {
+	h1, h2, h3 {
+		color: var(--text-highlight, inherit);
+	}
+}
+
+
+.foldMargin {
+	transform: translateY(90px);
+	@media screen and (min-width: $br-md) {
+		transform: translateY(60px);
+	}
+}
+
+.marginBottom150 {
+	margin-bottom: 150px;
+}
+
+.supportCta {
+	margin-bottom: 250px;
+}

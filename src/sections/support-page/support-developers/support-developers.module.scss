@@ -1,0 +1,25 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+.grid {
+	gap: 40px;
+	@media screen and (min-width: $br-md) {
+		max-width: 800px;
+		margin: auto;
+	}
+}
+
+.content {
+	margin-bottom: 50px;
+}
+.supportCard {
+	max-width: 400px;
+    margin: 10px auto;
+}
+
+.cardIcon {
+	margin-bottom: 24px;
+}
+
+.cardTitle {
+	margin-bottom: 14px;
+}

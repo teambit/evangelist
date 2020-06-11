@@ -1,0 +1,52 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+.mainGrid {
+	gap: 20px;
+	align-items: center;
+}
+
+.content {
+	margin: 0 auto 25px auto;
+	@media screen and (min-width: $br-md) {
+		margin: 0 0 65px 0;
+	}
+}
+
+.image {
+	max-width: 100%;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	
+	@media screen and (min-width: $br-md) {
+		justify-content: flex-start;
+	}
+	.link {
+		width: 100%;
+		flex-shrink: 1;
+		@media screen and (min-width: $br-sm) {
+			width: unset;
+		}
+	}
+	.button {
+		width: 100%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+		@media screen and (min-width: $br-sm) {
+			width: 180px;
+		}
+	}
+}
+
+.spacer {
+	width: 24px;
+	flex-shrink: 0;
+	@media screen and (min-width: $br-md) {
+		width: 10px;
+	}
+}
+
+.paragraph {
+	margin-bottom: 40px;
+}

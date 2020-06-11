@@ -14,7 +14,7 @@ export type SlackLinkProps = PrimaryLinkProps;
  * @example
  * <SlackLink href="https://join.slack.com/..." />
  */
-export function SlackLink({ className, ...rest }: SlackLinkProps) {
+export function SlackLink({ className, children, ...rest }: SlackLinkProps) {
 	return (
 		<CommunityLink
 			external
@@ -23,7 +23,11 @@ export function SlackLink({ className, ...rest }: SlackLinkProps) {
 			{...rest}
 		>
 			<Icon of="slack" className={classNames(styles.icon)} />
-			<span>bit-dev-community</span>
+			{children}
 		</CommunityLink>
 	);
+}
+
+SlackLink.defaultProps = {
+	children: <span>bit-dev-community</span>
 }

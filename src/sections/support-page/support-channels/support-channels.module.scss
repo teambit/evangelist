@@ -1,0 +1,52 @@
+@import '~@bit/bit.base-ui.layout.breakpoints';
+
+.mainGrid {
+	gap: 20px;
+    align-items: center;
+}
+
+.image {
+    max-width: 100%;
+    margin: 0 auto;
+    display: none;
+    @media screen and (min-width: $br-md) {
+        display: unset;
+    }
+}
+
+.content {
+    margin: 0 auto;
+}
+
+.mainParagraph {
+    margin-bottom: 30px;
+}
+.link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    @media screen and (min-width: $br-md) {
+        margin: unset;
+        justify-content: flex-start;
+    }
+}
+
+.channelButton {
+    width: 170px;
+    justify-content: center;
+}
+.slack {
+    background-color: var(--slack-bg, #4a154b);
+}
+.email {
+    background-color: var(--cta-color, var(--base-color, #6c5ce7));
+    color: var(--brand-text, white);
+    .emailIcon {
+        margin-right: 10px;
+    }
+}
+.github {
+    background-color: var(--github-bg, #4a154b);
+}
