@@ -94,7 +94,7 @@
   },
   "bit": {
     "env": {
-      "compiler": "bit.envs/compilers/react-typescript@3.1.43",
+      "compiler": "bit.envs/compilers/react-typescript@3.1.53",
       "tester": "bit.envs/testers/mocha@5.0.2"
     },
     "componentsDefaultDirectory": "src/bit-components/{name}",
@@ -115,12 +115,15 @@
         },
         "env": {
           "compiler": {
-            "bit.envs/compilers/react-typescript@3.1.43": {
+            "bit.envs/compilers/react-typescript@3.1.53": {
               "rawConfig": {
                 "tsconfig": {
                   "compilerOptions": {
                     "target": "ES5",
-                    "module": "CommonJS"
+                    "module": "CommonJS",
+                    "inlineSourceMap": true, 
+                    "removeComments": false,
+                    "experimentalDecorators": true
                   }
                 }
               }
@@ -134,12 +137,15 @@
         },
         "env": {
           "compiler": {
-            "bit.envs/compilers/react-typescript@3.1.43": {
+            "bit.envs/compilers/react-typescript@3.1.53": {
               "rawConfig": {
                 "tsconfig": {
                   "compilerOptions": {
                     "target": "ES5",
-                    "module": "CommonJS"
+                    "module": "CommonJS",
+                    "inlineSourceMap": true, 
+                    "removeComments": false,
+                    "experimentalDecorators": true
                   }
                 }
               }
@@ -153,12 +159,15 @@
         },
         "env": {
           "compiler": {
-            "bit.envs/compilers/react-typescript@3.1.43": {
+            "bit.envs/compilers/react-typescript@3.1.53": {
               "rawConfig": {
                 "tsconfig": {
                   "compilerOptions": {
                     "target": "ES5",
-                    "module": "CommonJS"
+                    "module": "CommonJS",
+                    "inlineSourceMap": true, 
+                    "removeComments": false,
+                    "experimentalDecorators": true
                   }
                 }
               }
