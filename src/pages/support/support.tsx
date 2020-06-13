@@ -20,7 +20,7 @@ export type SupportPageProps = {
  * A full, responsive page, detailing Bit's offering for support.
  * @name SupportPage
  */
-export function SupportPage({table, ...rest}: SupportPageProps) {
+export function SupportPage({ table, ...rest }: SupportPageProps) {
 	return (
 		<div className={styles.supportPageStyles} {...rest}>
 			<div className={classNames(styles.supportCirclesBg)}>
@@ -28,9 +28,11 @@ export function SupportPage({table, ...rest}: SupportPageProps) {
 			</div>
 			<SupportDevelopers className={classNames(centerColumn, styles.marginBottom150)} />
 			<SupportChannels className={classNames(centerColumn, styles.marginBottom150)} />
-			<SupportPackages className={classNames(centerColumn, styles.marginBottom150)} >{table}</SupportPackages>
-			<GlobalEnterprise className={classNames(centerColumn, styles.marginBottom150)}/>
-			<SupportCta className={classNames(centerColumn, styles.supportCta)}/>
+			<SupportPackages className={classNames(centerColumn, styles.marginBottom150)}>
+				{table}
+			</SupportPackages>
+			<GlobalEnterprise className={classNames(centerColumn, styles.marginBottom150)} />
+			<SupportCta className={classNames(centerColumn, styles.supportCta)} />
 		</div>
 	);
 }

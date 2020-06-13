@@ -5,13 +5,13 @@
 	justify-content: center;
 	@media screen and (min-width: $br-md) {
 		justify-content: flex-end;
-    }
-    .link {
-        width: 100%;
-        @media screen and (min-width: $br-sm) {
-            width: 200px;
-        }
-    }
+	}
+	.link {
+		width: 100%;
+		@media screen and (min-width: $br-sm) {
+			width: 200px;
+		}
+	}
 	.button {
 		height: 46px;
 		width: 100%;

@@ -55,7 +55,7 @@ export function GlobalEnterprise({ className, ...rest }: GlobalEnterpriseProps) 
 		<div
 			className={className}
 			{...rest}
-			data-bit-id="bit.evangelist/sections/support-offering/global-enterprise"
+			data-bit-id="bit.evangelist/sections/support-page/global-enterprise"
 		>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
 				<H2 size={PossibleSizes.sm}>We support global enterprises</H2>
@@ -69,7 +69,7 @@ export function GlobalEnterprise({ className, ...rest }: GlobalEnterpriseProps) 
 						className={styles.link}
 						href="/contact-sales?redirectUri=%2Fsupport-plans"
 					>
-						<Button className={styles.button} importance="cta" elevation="medium">
+						<Button className={styles.button} importance="cta">
 							Contact sales
 						</Button>
 					</Link>
@@ -114,7 +114,12 @@ function GlobalEnterpriseCard({
 	...rest
 }: GlobalEnterpriseCardProps) {
 	return (
-		<Card elevation="medium" className={classNames(styles.card, className)} {...rest}>
+		<Card
+			elevation="low"
+			roundness="medium"
+			className={classNames(styles.card, className)}
+			{...rest}
+		>
 			<div className={styles.top}>
 				<Image alt={alt} src={iconUrl} className={styles.image} />
 				<H3 size={PossibleSizes.xs} className={styles.title}>

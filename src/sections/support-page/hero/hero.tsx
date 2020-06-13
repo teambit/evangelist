@@ -29,7 +29,7 @@ export function Hero(props: HeroProps) {
 		<Grid
 			colMd={2}
 			{...rest}
-			data-bit-id="bit.evangelist/sections/support-offering/hero"
+			data-bit-id="bit.evangelist/sections/support-page/hero"
 			className={classNames(className, text.center, text.md.left, styles.mainGrid)}
 		>
 			<div className={classNames(styles.content)}>
