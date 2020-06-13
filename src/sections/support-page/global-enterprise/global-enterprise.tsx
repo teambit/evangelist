@@ -75,12 +75,9 @@ export function GlobalEnterprise({ className, ...rest }: GlobalEnterpriseProps) 
 					</Link>
 
 					<div className={styles.spacer} />
+
 					<Link className={styles.link} href="/enterprise">
-						<Button
-							className={styles.button}
-							importance="normal"
-							elevation="medium"
-						>
+						<Button className={styles.button}>
 							Bit enterprise
 						</Button>
 					</Link>

@@ -38,15 +38,11 @@ export function SupportCta(props: React.HTMLAttributes<HTMLDivElement>) {
 			</div>
 			<div className={classNames(styles.buttons, alignItems.center)}>
 				<Link className={styles.link} href="/support">
-					<Button className={styles.button} elevation="medium" importance="cta">
-						Contact support
-					</Button>
+					<Button importance="cta">Contact support</Button>
 				</Link>
 				<div className={styles.spacer} />
 				<Link className={styles.link} href="/pricing">
-					<Button elevation="medium" className={styles.button} importance="normal">
-					Upgrade support
-					</Button>
+					<Button importance="normal">Upgrade support</Button>
 				</Link>
 			</div>
 		</Grid>

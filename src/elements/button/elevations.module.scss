@@ -1,27 +1,28 @@
 // elevations only
+
 .low {
-	box-shadow: var(--elevation-low, initial);
+	box-shadow: var(--shadow-hover-low, initial);
 
 	&:active {
-		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: var(--shadow-resting, initial);
 		transform: translateY(2px);
 	}
 }
 
 .medium {
-	box-shadow: var(--elevation-medium, initial);
+	box-shadow: var(--shadow-hover-medium, initial);
 
 	&:active {
-		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: var(--shadow-resting, initial);
 		transform: translateY(2px);
 	}
 }
 
 .high {
-	box-shadow: var(--elevation-high, initial);
+	box-shadow: var(--shadow-hover-high, initial);
 
 	&:active {
-		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: var(--shadow-resting, initial);
 		transform: translateY(11px);
 	}
 }
