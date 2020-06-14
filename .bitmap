@@ -567,6 +567,29 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.evangelist/pages/support@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/pages/support/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/pages/support/support.module.scss",
+                "test": false,
+                "name": "support.module.scss"
+            },
+            {
+                "relativePath": "src/pages/support/support.tsx",
+                "test": false,
+                "name": "support.tsx"
+            }
+        ],
+        "mainFile": "src/pages/support/index.ts",
+        "trackDir": "src/pages/support",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.evangelist/sections/build-together@1.1.0": {
         "files": [
             {
@@ -1042,6 +1065,159 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.evangelist/sections/support-page/global-enterprise@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/sections/support-page/global-enterprise/global-enterprise.module.scss",
+                "test": false,
+                "name": "global-enterprise.module.scss"
+            },
+            {
+                "relativePath": "src/sections/support-page/global-enterprise/global-enterprise.tsx",
+                "test": false,
+                "name": "global-enterprise.tsx"
+            },
+            {
+                "relativePath": "src/sections/support-page/global-enterprise/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/sections/support-page/global-enterprise/index.ts",
+        "trackDir": "src/sections/support-page/global-enterprise",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.evangelist/sections/support-page/hero@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/sections/support-page/hero/hero.module.scss",
+                "test": false,
+                "name": "hero.module.scss"
+            },
+            {
+                "relativePath": "src/sections/support-page/hero/hero.tsx",
+                "test": false,
+                "name": "hero.tsx"
+            },
+            {
+                "relativePath": "src/sections/support-page/hero/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/sections/support-page/hero/index.ts",
+        "trackDir": "src/sections/support-page/hero",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.evangelist/sections/support-page/support-channels@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/sections/support-page/support-channels/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-channels/support-channel-cta/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-channels/support-channel-cta/support-channel-cta.module.scss",
+                "test": false,
+                "name": "support-channel-cta.module.scss"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-channels/support-channel-cta/support-channel-cta.tsx",
+                "test": false,
+                "name": "support-channel-cta.tsx"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-channels/support-channels.module.scss",
+                "test": false,
+                "name": "support-channels.module.scss"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-channels/support-channels.tsx",
+                "test": false,
+                "name": "support-channels.tsx"
+            }
+        ],
+        "mainFile": "src/sections/support-page/support-channels/index.ts",
+        "trackDir": "src/sections/support-page/support-channels",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.evangelist/sections/support-page/support-cta@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/sections/support-page/support-cta/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-cta/support-cta.module.scss",
+                "test": false,
+                "name": "support-cta.module.scss"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-cta/support-cta.tsx",
+                "test": false,
+                "name": "support-cta.tsx"
+            }
+        ],
+        "mainFile": "src/sections/support-page/support-cta/index.ts",
+        "trackDir": "src/sections/support-page/support-cta",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.evangelist/sections/support-page/support-developers@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/sections/support-page/support-developers/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-developers/support-developers.module.scss",
+                "test": false,
+                "name": "support-developers.module.scss"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-developers/support-developers.tsx",
+                "test": false,
+                "name": "support-developers.tsx"
+            }
+        ],
+        "mainFile": "src/sections/support-page/support-developers/index.ts",
+        "trackDir": "src/sections/support-page/support-developers",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.evangelist/sections/support-page/support-packages@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/sections/support-page/support-packages/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-packages/support-packages.module.scss",
+                "test": false,
+                "name": "support-packages.module.scss"
+            },
+            {
+                "relativePath": "src/sections/support-page/support-packages/support-packages.tsx",
+                "test": false,
+                "name": "support-packages.tsx"
+            }
+        ],
+        "mainFile": "src/sections/support-page/support-packages/index.ts",
+        "trackDir": "src/sections/support-page/support-packages",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.evangelist/sections/talk-to-experts@2.1.0": {
         "files": [
             {
@@ -1082,182 +1258,6 @@
         "trackDir": "src/theme/icon-font",
         "origin": "AUTHORED",
         "exported": true
-    },
-    "pages/support@1.0.0": {
-        "files": [
-            {
-                "relativePath": "src/pages/support/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "src/pages/support/support.module.scss",
-                "test": false,
-                "name": "support.module.scss"
-            },
-            {
-                "relativePath": "src/pages/support/support.tsx",
-                "test": false,
-                "name": "support.tsx"
-            }
-        ],
-        "mainFile": "src/pages/support/index.ts",
-        "trackDir": "src/pages/support",
-        "origin": "AUTHORED",
-        "exported": false
-    },
-    "sections/support-page/global-enterprise@1.0.0": {
-        "files": [
-            {
-                "relativePath": "src/sections/support-page/global-enterprise/global-enterprise.module.scss",
-                "test": false,
-                "name": "global-enterprise.module.scss"
-            },
-            {
-                "relativePath": "src/sections/support-page/global-enterprise/global-enterprise.tsx",
-                "test": false,
-                "name": "global-enterprise.tsx"
-            },
-            {
-                "relativePath": "src/sections/support-page/global-enterprise/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "src/sections/support-page/global-enterprise/index.ts",
-        "trackDir": "src/sections/support-page/global-enterprise",
-        "origin": "AUTHORED",
-        "exported": false
-    },
-    "sections/support-page/hero@1.0.0": {
-        "files": [
-            {
-                "relativePath": "src/sections/support-page/hero/hero.module.scss",
-                "test": false,
-                "name": "hero.module.scss"
-            },
-            {
-                "relativePath": "src/sections/support-page/hero/hero.tsx",
-                "test": false,
-                "name": "hero.tsx"
-            },
-            {
-                "relativePath": "src/sections/support-page/hero/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "src/sections/support-page/hero/index.ts",
-        "trackDir": "src/sections/support-page/hero",
-        "origin": "AUTHORED",
-        "exported": false
-    },
-    "sections/support-page/support-channels@1.0.0": {
-        "files": [
-            {
-                "relativePath": "src/sections/support-page/support-channels/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-channels/support-channel-cta/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-channels/support-channel-cta/support-channel-cta.module.scss",
-                "test": false,
-                "name": "support-channel-cta.module.scss"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-channels/support-channel-cta/support-channel-cta.tsx",
-                "test": false,
-                "name": "support-channel-cta.tsx"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-channels/support-channels.module.scss",
-                "test": false,
-                "name": "support-channels.module.scss"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-channels/support-channels.tsx",
-                "test": false,
-                "name": "support-channels.tsx"
-            }
-        ],
-        "mainFile": "src/sections/support-page/support-channels/index.ts",
-        "trackDir": "src/sections/support-page/support-channels",
-        "origin": "AUTHORED",
-        "exported": false
-    },
-    "sections/support-page/support-cta@1.0.0": {
-        "files": [
-            {
-                "relativePath": "src/sections/support-page/support-cta/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-cta/support-cta.module.scss",
-                "test": false,
-                "name": "support-cta.module.scss"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-cta/support-cta.tsx",
-                "test": false,
-                "name": "support-cta.tsx"
-            }
-        ],
-        "mainFile": "src/sections/support-page/support-cta/index.ts",
-        "trackDir": "src/sections/support-page/support-cta",
-        "origin": "AUTHORED",
-        "exported": false
-    },
-    "sections/support-page/support-developers@1.0.0": {
-        "files": [
-            {
-                "relativePath": "src/sections/support-page/support-developers/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-developers/support-developers.module.scss",
-                "test": false,
-                "name": "support-developers.module.scss"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-developers/support-developers.tsx",
-                "test": false,
-                "name": "support-developers.tsx"
-            }
-        ],
-        "mainFile": "src/sections/support-page/support-developers/index.ts",
-        "trackDir": "src/sections/support-page/support-developers",
-        "origin": "AUTHORED",
-        "exported": false
-    },
-    "sections/support-page/support-packages@1.0.0": {
-        "files": [
-            {
-                "relativePath": "src/sections/support-page/support-packages/index.ts",
-                "test": false,
-                "name": "index.ts"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-packages/support-packages.module.scss",
-                "test": false,
-                "name": "support-packages.module.scss"
-            },
-            {
-                "relativePath": "src/sections/support-page/support-packages/support-packages.tsx",
-                "test": false,
-                "name": "support-packages.tsx"
-            }
-        ],
-        "mainFile": "src/sections/support-page/support-packages/index.ts",
-        "trackDir": "src/sections/support-page/support-packages",
-        "origin": "AUTHORED",
-        "exported": false
     },
     "version": "14.7.7"
 }
