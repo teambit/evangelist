@@ -6,7 +6,8 @@
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "setup": "bit init && bit import -e && bit build"
   },
   "browserslist": {
     "production": [
@@ -24,37 +25,37 @@
     "extends": "react-app"
   },
   "dependencies": {
-    "@bit/bit.base-ui.constants.storage": "^1.0.4",
-    "@bit/bit.base-ui.css-components.pill": "^1.0.0",
-    "@bit/bit.base-ui.elements.icon": "^1.0.1",
-    "@bit/bit.base-ui.elements.image": "^1.0.1",
-    "@bit/bit.base-ui.elements.label": "^1.0.1",
-    "@bit/bit.base-ui.elements.link": "^1.0.1",
-    "@bit/bit.base-ui.elements.separator": "^1.0.2",
-    "@bit/bit.base-ui.geometry.curve-peek": "^1.0.0",
-    "@bit/bit.base-ui.input.button": "^1.0.2",
-    "@bit/bit.base-ui.input.error": "^1.0.0",
-    "@bit/bit.base-ui.layout.align": "^1.1.0",
-    "@bit/bit.base-ui.layout.breakpoints": "^1.0.6",
-    "@bit/bit.base-ui.layout.col-span": "^1.0.6",
-    "@bit/bit.base-ui.layout.grid-component": "^1.0.10",
-    "@bit/bit.base-ui.layout.grid-presets.four-way-grid": "^1.0.5",
-    "@bit/bit.base-ui.layout.grid-presets.z-grid": "^1.0.6",
-    "@bit/bit.base-ui.layout.page-frame": "^1.0.4",
-    "@bit/bit.base-ui.placement.ref-tooltip": "^1.1.1",
-    "@bit/bit.base-ui.surfaces.card": "^1.0.1",
-    "@bit/bit.base-ui.text.heading": "^1.0.1",
-    "@bit/bit.base-ui.text.muted-text": "^1.0.0",
-    "@bit/bit.base-ui.text.paragraph": "^1.0.1",
-    "@bit/bit.base-ui.text.text-separator": "^1.0.0",
-    "@bit/bit.base-ui.text.themed-text": "^1.0.2",
-    "@bit/bit.base-ui.theme.color-palette": "^1.0.1",
-    "@bit/bit.base-ui.theme.colors": "1.1.0",
-    "@bit/bit.base-ui.theme.fonts.book": "^1.1.0",
-    "@bit/bit.base-ui.theme.sizes": "^1.0.3",
-    "@bit/bit.base-ui.theme.theme-provider": "^1.1.0",
-    "@bit/bit.base-ui.utils.popper-js.ignore-popper-size": "^1.0.5",
-    "@bit/bit.base-ui.utils.popper-js.resize-to-match-reference": "^1.0.4",
+    "@bit/bit.base-ui.constants.storage": "^1.0.5",
+    "@bit/bit.base-ui.css-components.pill": "^1.0.1",
+    "@bit/bit.base-ui.elements.icon": "^1.0.2",
+    "@bit/bit.base-ui.elements.image": "^1.0.2",
+    "@bit/bit.base-ui.elements.label": "^1.0.2",
+    "@bit/bit.base-ui.elements.link": "^1.0.2",
+    "@bit/bit.base-ui.elements.separator": "^1.0.3",
+    "@bit/bit.base-ui.geometry.curve-peek": "^1.0.1",
+    "@bit/bit.base-ui.input.button": "^1.1.1",
+    "@bit/bit.base-ui.input.error": "^1.0.1",
+    "@bit/bit.base-ui.layout.align": "^1.1.1",
+    "@bit/bit.base-ui.layout.breakpoints": "^1.0.7",
+    "@bit/bit.base-ui.layout.col-span": "^1.0.7",
+    "@bit/bit.base-ui.layout.grid-component": "^1.0.11",
+    "@bit/bit.base-ui.layout.grid-presets.four-way-grid": "^1.0.6",
+    "@bit/bit.base-ui.layout.grid-presets.z-grid": "^1.0.7",
+    "@bit/bit.base-ui.layout.page-frame": "^1.0.5",
+    "@bit/bit.base-ui.placement.ref-tooltip": "^1.1.2",
+    "@bit/bit.base-ui.surfaces.card": "^2.0.0",
+    "@bit/bit.base-ui.text.heading": "^1.0.2",
+    "@bit/bit.base-ui.text.muted-text": "^1.0.1",
+    "@bit/bit.base-ui.text.paragraph": "^1.0.2",
+    "@bit/bit.base-ui.text.text-separator": "^1.0.1",
+    "@bit/bit.base-ui.text.themed-text": "^1.0.3",
+    "@bit/bit.base-ui.theme.color-palette": "^1.0.2",
+    "@bit/bit.base-ui.theme.colors": "1.1.1",
+    "@bit/bit.base-ui.theme.fonts.book": "^1.1.1",
+    "@bit/bit.base-ui.theme.sizes": "^1.0.4",
+    "@bit/bit.base-ui.theme.theme-provider": "^2.0.1",
+    "@bit/bit.base-ui.utils.popper-js.ignore-popper-size": "^1.0.6",
+    "@bit/bit.base-ui.utils.popper-js.resize-to-match-reference": "^1.0.5",
     "@bit/bit.bit-dev-utils.time-ago": "^0.0.4",
     "@bit/bit.javascript.component.id": "^1.1.5",
     "@popperjs/core": "~2.3.3",
@@ -96,7 +97,7 @@
   },
   "bit": {
     "env": {
-      "compiler": "bit.envs/compilers/react-typescript@3.1.43",
+      "compiler": "bit.envs/compilers/react-typescript@3.1.53",
       "tester": "bit.envs/testers/mocha@5.0.2"
     },
     "componentsDefaultDirectory": "src/bit-components/{name}",
@@ -117,12 +118,15 @@
         },
         "env": {
           "compiler": {
-            "bit.envs/compilers/react-typescript@3.1.43": {
+            "bit.envs/compilers/react-typescript@3.1.53": {
               "rawConfig": {
                 "tsconfig": {
                   "compilerOptions": {
                     "target": "ES5",
-                    "module": "CommonJS"
+                    "module": "CommonJS",
+                    "inlineSourceMap": true, 
+                    "removeComments": false,
+                    "experimentalDecorators": true
                   }
                 }
               }
@@ -136,12 +140,15 @@
         },
         "env": {
           "compiler": {
-            "bit.envs/compilers/react-typescript@3.1.43": {
+            "bit.envs/compilers/react-typescript@3.1.53": {
               "rawConfig": {
                 "tsconfig": {
                   "compilerOptions": {
                     "target": "ES5",
-                    "module": "CommonJS"
+                    "module": "CommonJS",
+                    "inlineSourceMap": true, 
+                    "removeComments": false,
+                    "experimentalDecorators": true
                   }
                 }
               }
@@ -155,12 +162,15 @@
         },
         "env": {
           "compiler": {
-            "bit.envs/compilers/react-typescript@3.1.43": {
+            "bit.envs/compilers/react-typescript@3.1.53": {
               "rawConfig": {
                 "tsconfig": {
                   "compilerOptions": {
                     "target": "ES5",
-                    "module": "CommonJS"
+                    "module": "CommonJS",
+                    "inlineSourceMap": true, 
+                    "removeComments": false,
+                    "experimentalDecorators": true
                   }
                 }
               }

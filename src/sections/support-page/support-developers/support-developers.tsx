@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, ReactNode } from 'react';
+import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
@@ -77,7 +77,7 @@ export function SupportDevelopers(props: SupportDevelopersProps) {
 		<div
 			className={className}
 			{...rest}
-			data-bit-id="bit.evangelist/sections/support-offering/support-developers"
+			data-bit-id="bit.evangelist/sections/support-page/support-developers"
 		>
 			<div className={classNames(styles.content, text.center)}>
 				<H2 size={PossibleSizes.sm}>We got you covered</H2>

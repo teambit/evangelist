@@ -5,14 +5,14 @@
 	justify-content: center;
 	@media screen and (min-width: $br-md) {
 		justify-content: flex-end;
-    }
-    .link {
-        width: 100%;
-        @media screen and (min-width: $br-sm) {
-            width: 200px;
-        }
-    }
-	.button {
+	}
+	.link {
+		width: 100%;
+		@media screen and (min-width: $br-sm) {
+			width: 200px;
+		}
+	}
+	button {
 		height: 46px;
 		width: 100%;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);

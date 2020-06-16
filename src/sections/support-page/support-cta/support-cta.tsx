@@ -1,10 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
-import { alignItems, text} from '@bit/bit.base-ui.layout.align';
+import { alignItems, text } from '@bit/bit.base-ui.layout.align';
 import { Grid } from '@bit/bit.base-ui.layout.grid-component';
 
 import { H2 } from '../../../elements/heading';
@@ -24,13 +23,8 @@ export function SupportCta(props: React.HTMLAttributes<HTMLDivElement>) {
 		<Grid
 			colMd={2}
 			{...rest}
-			data-bit-id="bit.evangelist/sections/support-offering/support-cta"
-			className={classNames(
-				className,
-				text.center,
-				text.md.left,
-				styles.mainGrid
-			)}
+			data-bit-id="bit.evangelist/sections/support-page/support-cta"
+			className={classNames(className, text.center, text.md.left, styles.mainGrid)}
 		>
 			<div className={styles.topSection}>
 				<H2 size={PossibleSizes.xs}>Need support?</H2>
@@ -38,15 +32,11 @@ export function SupportCta(props: React.HTMLAttributes<HTMLDivElement>) {
 			</div>
 			<div className={classNames(styles.buttons, alignItems.center)}>
 				<Link className={styles.link} href="/support">
-					<Button className={styles.button} elevation="medium" importance="cta">
-						Contact support
-					</Button>
+					<Button importance="cta">Contact support</Button>
 				</Link>
 				<div className={styles.spacer} />
 				<Link className={styles.link} href="/pricing">
-					<Button elevation="medium" className={styles.button} importance="normal">
-					Upgrade support
-					</Button>
+					<Button importance="normal">Upgrade support</Button>
 				</Link>
 			</div>
 		</Grid>

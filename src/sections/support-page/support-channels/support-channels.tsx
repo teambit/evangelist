@@ -54,7 +54,7 @@ export function SupportChannels(props: SupportChannelsProps) {
 		<Grid
 			colMd={2}
 			{...rest}
-			data-bit-id="bit.evangelist/sections/support-offering/support-channels"
+			data-bit-id="bit.evangelist/sections/support-page/support-channels"
 			className={classNames(
 				className,
 				text.center,

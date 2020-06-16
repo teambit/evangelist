@@ -45,7 +45,7 @@ export function TwitterCard(props: TwitterCardProps) {
 		<Card
 			data-bit-id="bit.evangelist/marketing/twitter-card"
 			className={classNames(styles.twitterCard, className)}
-			elevation="medium"
+			elevation="low"
 			{...rest}
 		>
 			<Image src={image} className={styles.avatar} alt="twitter avatar" />

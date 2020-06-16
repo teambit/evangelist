@@ -14,7 +14,7 @@ export type ButtonProps = {
 	/**
 	 * style variance ('cta', 'normal')
 	 */
-	importance?: 'normal' | 'cta' | 'muted';
+	importance?: 'normal' | 'ghost' | 'cta' | 'muted';
 } & BaseProps;
 
 /**
@@ -41,6 +41,6 @@ export function Button({
 }
 
 Button.defaultProps = {
-	importance: 'normal',
+	importance: 'normal', //TODO
 	elevation: 'low',
 };

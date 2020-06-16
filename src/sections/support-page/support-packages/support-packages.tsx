@@ -4,7 +4,6 @@ import classNames from 'classnames';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
-import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { H2 } from '../../../elements/heading';
 
@@ -27,7 +26,7 @@ export function SupportPackages(props: SupportPackagesProps) {
 		<div
 			className={className}
 			{...rest}
-			data-bit-id="bit.evangelist/sections/support-offering/support-packages"
+			data-bit-id="bit.evangelist/sections/support-page/support-packages"
 		>
 			<div className={classNames(styles.topSection, marginCenter, text.center)}>
 				<H2 size={PossibleSizes.sm}>Simple transparent plans</H2>
