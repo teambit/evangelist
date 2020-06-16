@@ -11,6 +11,7 @@ import { EnterpriseOffering } from './pages/enterprise-offering';
 import { ComponentHighlighter } from './dev-tools/component-highlighter';
 import versionMap from './content/version-map/version-map';
 import { SupportPage } from './pages/support';
+import { WorkSpacePage } from './pages/workspace-page';
 
 class App extends PureComponent {
 	render() {
@@ -23,7 +24,7 @@ class App extends PureComponent {
 					motionTracking
 				>
 					<EvaIconFont query="aqq93z" />
-					<HybridHomepage githubStars={10000} />
+					{/* <HybridHomepage githubStars={10000} />
 					<EnterpriseOffering
 						onBookMeeting={() => alert('book meeting')}
 						onSubmitCta={(values) => {
@@ -31,7 +32,8 @@ class App extends PureComponent {
 							return Promise.resolve();
 						}}
 					/>
-					<SupportPage />
+					<SupportPage /> */}
+					<WorkSpacePage />
 				</ComponentHighlighter>
 			</Theme>
 		);
