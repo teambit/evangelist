@@ -4,7 +4,6 @@ import classNames from 'classnames';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { text, marginCenter } from '@bit/bit.base-ui.layout.align';
-// import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { H2 } from '../../../elements/heading';
 
