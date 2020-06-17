@@ -1,17 +1,18 @@
 import React from 'react';
 import classNames from 'classnames';
 import styles from './status.module.scss';
+import colors from './status-colors.module.scss';
+import {JobStatus} from '../../pages/workspace-page/change-log.data';
 
 type StatusProps = {
-	text: string;
-	color: string;
+	status: JobStatus;
 } & React.HTMLAttributes<HTMLSpanElement>;
 
-export function Status({ text, color, className }: StatusProps) {
+export function Status({ status, className, ...rest }: StatusProps) {
 	return (
-		<span className={classNames(styles.status, className)}>
-			<span className={styles.text}>{text}</span>
-			<div className={styles.dot} style={{ backgroundColor: color }}></div>
+		<span className={classNames(styles.status, className)} {...rest}>
+			<span className={styles.text}>{status}</span>
+			<div className={classNames(styles.dot, colors[status])}></div>
 		</span>
 	);
 }

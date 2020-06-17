@@ -4,7 +4,7 @@
 	background: #f6f6f6;
 	border: 1px solid #ededed;
 	display: flex;
-	width: fit-content;
+	justify-content: space-between;
 	
 	padding: 4px 11px;
 
@@ -17,7 +17,6 @@
 	}
 
 	> button {
-		float: right;
 		line-height: inherit;
 		box-sizing: border-box;
 		border: none;
