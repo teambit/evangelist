@@ -14,7 +14,7 @@ import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 
 import { MiddleDot } from '../../../workspace-components/middle-dot';
 import { mutedText } from '@bit/bit.base-ui.text.muted-text';
-import Avatar from '../../../workspace-components/av/Avatar';
+import Avatar from '../../../workspace-components/Avatar';
 
 
 
@@ -51,12 +51,4 @@ export function VersionBlock({version, className, ...rest}: VersionBlockProps) {
 			<Paragraph>{version.message}</Paragraph>
 		</div>
 	);
-}
-
-
-function getText() {
-	var text = "Hello `@James P. Pauli`, How r `you`.";
-	text = text.replace(/`(.*?)`/g, '<code>$1</code>');
-	console.log(text);
-	return text
 }

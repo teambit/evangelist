@@ -7,12 +7,12 @@ import { H5 } from '../../elements/heading';
 import { CopyBox } from '../copy-box';
 
 
-type InstallMethodsData = {
+export type InstallMethodsData = {
 	title: string;
 	content: string;
 };
 
-type InstallMethodsProps = {
+export type InstallMethodsProps = {
 	data: InstallMethodsData[];
 };
 export function InstallMethods({ data }: InstallMethodsProps) {
