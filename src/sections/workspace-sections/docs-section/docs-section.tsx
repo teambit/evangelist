@@ -13,7 +13,10 @@ import { mutedText } from '@bit/bit.base-ui.text.muted-text';
 import { LabelList } from '../../../workspace-components/label';
 import { Separator } from '../../../workspace-components/separator';
 
-import { InstallMethods } from '../../../workspace-components/install-methods';
+import {
+	InstallMethods,
+	InstallMethodsData,
+} from '../../../workspace-components/install-methods';
 
 function getText(text: Bla) {
 	// var text = 'Hello `@James P. Pauli`, How r `you`.';
@@ -43,35 +46,32 @@ export type DocsSectionProps = {
 	title: string;
 	subTitle: string;
 	labels?: string[];
+	installMethods: InstallMethodsData[];
 } & HTMLAttributes<HTMLDivElement>;
 /**
  * change log section
  * @name DocsSection
  */
-export function DocsSection({ title, subTitle, labels, className, ...rest }: DocsSectionProps) {
+export function DocsSection({
+	title,
+	subTitle,
+	labels,
+	installMethods,
+	className,
+	...rest
+}: DocsSectionProps) {
 	return (
 		<div className={classNames(styles.docsMainBlock, className)} {...rest}>
 			<div className={styles.topRow}>
 				<H1 className={classNames(styles.heading, styles.marginRight)}>{title}</H1>
 				<VersionTag className={styles.marginRight}>Latest</VersionTag>
 			</div>
-			<Paragraph
-				className={classNames(mutedText, className)}
-				size={PossibleSizes.xxl}
-			>
+			<Paragraph className={classNames(mutedText, className)} size={PossibleSizes.xxl}>
 				{subTitle}
 			</Paragraph>
 			<LabelList>{labels}</LabelList>
 			<Separator />
-			<InstallMethods
-				data={[
-					{ title: 'install package', content: '@google.material-ui/radio' },
-					{
-						title: 'Import from CDN',
-						content: 'https://esm.bit.dev/@google/material-ui/radio/',
-					},
-				]}
-			/>
+			<InstallMethods data={installMethods} />
 			<Paragraph>
 				You can set the type of the choice to be either a radio or a checkbox. Using
 				radio type allows you to use Choice component inside Google’s Choice Group.
