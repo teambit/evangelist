@@ -1,29 +1,32 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import {Version} from '../../../pages/workspace-page/change-log.data';
-import styles from './change-log.module.scss';
+import styles from './version-block.module.scss';
 import { Icon } from '../../../elements/icon';
 
 import { H2, H3, H5 } from '../../../elements/heading';
 import { VersionTag } from '../../../workspace-components/version-tag';
 import { TimeAgo } from '../../../workspace-components/time-ago';
 import { Status } from '../../../workspace-components/status';
-import { Avatar } from '../../../workspace-components/avatar';
+// import { Avatar } from '../../../workspace-components/avatar';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 
 import { MiddleDot } from '../../../workspace-components/middle-dot';
 import { mutedText } from '@bit/bit.base-ui.text.muted-text';
+import Avatar from '../../../workspace-components/av/Avatar';
 
 
-export type ChangeLogProps = {
+
+export type VersionBlockProps = {
 	version: Version;
 } & HTMLAttributes<HTMLDivElement>;
 /**
  * change log section
- * @name ChangeLog
+ * @name VersionBlock
  */
-export function ChangeLog({version, className, ...rest}: ChangeLogProps) {
+export function VersionBlock({version, className, ...rest}: VersionBlockProps) {
+	
 	return (
 		<div className={classNames(styles.versionBlock, className)} {...rest}>
 			<div className={styles.topRow}>
@@ -36,9 +39,10 @@ export function ChangeLog({version, className, ...rest}: ChangeLogProps) {
 				<Status className={styles.marginRight} status={version.testStatus} />
 				<Avatar
 					className={styles.marginRight}
-					src={version.contributors.profileImage}
-					name={version.contributors.name} 
-					alt=""
+					account={version.contributors}
+					size={30}
+					// name={version.contributors.name} 
+					// alt=""
 				/>
 				<Icon of="arrow_right"/>
 			</div>
@@ -47,4 +51,12 @@ export function ChangeLog({version, className, ...rest}: ChangeLogProps) {
 			<Paragraph>{version.message}</Paragraph>
 		</div>
 	);
+}
+
+
+function getText() {
+	var text = "Hello `@James P. Pauli`, How r `you`.";
+	text = text.replace(/`(.*?)`/g, '<code>$1</code>');
+	console.log(text);
+	return text
 }
