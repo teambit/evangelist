@@ -15,6 +15,7 @@ import { margin } from '../../../layout/spacing';
 import { ContactForm } from './contact-form';
 import { ContactValues } from './contact-values';
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
+import { colorPalette } from '@bit/bit.base-ui.theme.color-palette';
 
 export type EnterpriseCtaProps = {
 	/** handles form submission, with user input as a single object parameter. Return a promise to show loader */
@@ -50,7 +51,7 @@ export const SalesCta = (props: EnterpriseCtaProps) => {
 					OR
 				</TextSeparator>
 
-				<Button importance="muted" onClick={onBookMeeting} className={fullWidth}>
+				<Button importance="normal" onClick={onBookMeeting} className={classNames(fullWidth, colorPalette.muted)}>
 					Book Intro
 				</Button>
 			</Card>
