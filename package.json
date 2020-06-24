@@ -54,7 +54,7 @@
     "@bit/bit.base-ui.theme.colors": "1.1.1",
     "@bit/bit.base-ui.theme.fonts.book": "^1.1.1",
     "@bit/bit.base-ui.theme.sizes": "^1.0.4",
-    "@bit/bit.base-ui.theme.theme-provider": "^2.1.0",
+    "@bit/bit.base-ui.theme.theme-provider": "^2.1.2",
     "@bit/bit.base-ui.utils.popper-js.ignore-popper-size": "^1.0.6",
     "@bit/bit.base-ui.utils.popper-js.resize-to-match-reference": "^1.0.5",
     "@bit/bit.javascript.component.id": "^1.1.5",

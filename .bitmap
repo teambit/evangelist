@@ -37,7 +37,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/dev-tools/component-highlighter@1.2.1": {
+    "bit.evangelist/dev-tools/component-highlighter@1.2.2": {
         "files": [
             {
                 "relativePath": "src/dev-tools/component-highlighter/component-highlighter.module.scss",
@@ -65,7 +65,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/dev-tools/component-label@1.1.1": {
+    "bit.evangelist/dev-tools/component-label@1.1.2": {
         "files": [
             {
                 "relativePath": "src/dev-tools/component-label/base-url.tsx",
