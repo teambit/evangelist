@@ -6,11 +6,11 @@
 	font-family: inherit;
 
 	border-radius: 7px;
-	border: solid 1px $d10;
-	background-color: $w20;
+	border: solid 1px var(--border-color, #ededed);
+	background-color: var(--bg-dent, #f6f6f6);
 
 	&[data-error] {
-		background: $r20; //TODO
+		background: var(--bg-error, #fdeff2); //TODO
 		border: 1px solid var(--error-color, #e62e5c);
 	}
 }

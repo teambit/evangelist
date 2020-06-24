@@ -2,6 +2,7 @@ import React, { HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
 import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
+import { bedrockClass } from '@bit/bit.base-ui.surfaces.bedrock';
 
 import { Hero } from '../../sections/support-page/hero';
 
@@ -20,9 +21,12 @@ export type SupportPageProps = {
  * A full, responsive page, detailing Bit's offering for support.
  * @name SupportPage
  */
-export function SupportPage({ table, ...rest }: SupportPageProps) {
+export function SupportPage({ table, className, ...rest }: SupportPageProps) {
 	return (
-		<div className={styles.supportPageStyles} {...rest}>
+		<div
+			className={classNames(styles.supportPageStyles, bedrockClass, className)}
+			{...rest}
+		>
 			<div className={classNames(styles.supportCirclesBg)}>
 				<Hero className={classNames(centerColumn, styles.foldMargin)} />
 			</div>

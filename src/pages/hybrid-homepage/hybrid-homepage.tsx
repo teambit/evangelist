@@ -3,10 +3,11 @@ import classNames from 'classnames';
 
 import styles from './hybrid-homepage.module.scss';
 
-import { CarouselSection } from '../../sections/hybrid-homepage/carouselSection';
-import { CtaSection } from '../../sections/hybrid-homepage/cta';
+import { bedrockClass } from '@bit/bit.base-ui.surfaces.bedrock';
 import { centerColumn, wideColumn } from '@bit/bit.base-ui.layout.page-frame';
 
+import { CarouselSection } from '../../sections/hybrid-homepage/carouselSection';
+import { CtaSection } from '../../sections/hybrid-homepage/cta';
 import { EnterpriseSection } from '../../sections/hybrid-homepage/enterprise-section';
 import { CommunitySection } from '../../sections/hybrid-homepage/community';
 import { ComponentsAdvantages } from '../../sections/hybrid-homepage/component-advantages';
@@ -37,10 +38,16 @@ export type HybridHomepageProps = {
 
 export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 	render() {
-		const { communityCollections = null, mainCta, githubStars, ...rest } = this.props;
+		const {
+			communityCollections = null,
+			mainCta,
+			githubStars,
+			className,
+			...rest
+		} = this.props;
 
 		return (
-			<div {...rest}>
+			<div {...rest} className={classNames(bedrockClass, className)}>
 				<div
 					className={classNames(
 						styles.purpleBackground,

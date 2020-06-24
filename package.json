@@ -43,6 +43,7 @@
     "@bit/bit.base-ui.layout.grid-presets.z-grid": "^1.0.7",
     "@bit/bit.base-ui.layout.page-frame": "^1.0.5",
     "@bit/bit.base-ui.placement.ref-tooltip": "^1.1.2",
+    "@bit/bit.base-ui.surfaces.bedrock": "^0.0.2",
     "@bit/bit.base-ui.surfaces.card": "^2.0.1",
     "@bit/bit.base-ui.text.heading": "^1.0.2",
     "@bit/bit.base-ui.text.muted-text": "^1.0.1",
