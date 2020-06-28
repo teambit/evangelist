@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import { centerColumn, textColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { marginCenter, text } from '@bit/bit.base-ui.layout.align';
-import { bedrockClass } from '@bit/bit.base-ui.surfaces.bedrock';
+import { backgrounds } from '@bit/bit.base-ui.surfaces.background';
 
 import { Hero } from '../../sections/enterprise-offering/hero/hero';
 import { PoweringEnterprise } from '../../sections/enterprise-offering/powering-enterprise/powering-enterprise';
@@ -35,7 +35,7 @@ export function EnterpriseOffering(props: EnterpriseOfferingProps) {
 	return (
 		<div
 			{...rest}
-			className={classNames(styles.enterpriseOffering, bedrockClass, className)}
+			className={classNames(styles.enterpriseOffering, backgrounds.bedrock, className)}
 		>
 			<div className={classNames(styles.gradient00, styles.paddingTop130)}>
 				<Hero

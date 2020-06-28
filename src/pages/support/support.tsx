@@ -2,7 +2,7 @@ import React, { HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 
 import { centerColumn } from '@bit/bit.base-ui.layout.page-frame';
-import { bedrockClass } from '@bit/bit.base-ui.surfaces.bedrock';
+import { backgrounds } from '@bit/bit.base-ui.surfaces.background';
 
 import { Hero } from '../../sections/support-page/hero';
 
@@ -24,7 +24,7 @@ export type SupportPageProps = {
 export function SupportPage({ table, className, ...rest }: SupportPageProps) {
 	return (
 		<div
-			className={classNames(styles.supportPageStyles, bedrockClass, className)}
+			className={classNames(styles.supportPageStyles, backgrounds.bedrock, className)}
 			{...rest}
 		>
 			<div className={classNames(styles.supportCirclesBg)}>

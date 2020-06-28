@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import styles from './hybrid-homepage.module.scss';
 
-import { bedrockClass } from '@bit/bit.base-ui.surfaces.bedrock';
+import { backgrounds } from '@bit/bit.base-ui.surfaces.background';
 import { centerColumn, wideColumn } from '@bit/bit.base-ui.layout.page-frame';
 
 import { CarouselSection } from '../../sections/hybrid-homepage/carouselSection';
@@ -47,7 +47,7 @@ export class HybridHomepage extends PureComponent<HybridHomepageProps> {
 		} = this.props;
 
 		return (
-			<div {...rest} className={classNames(bedrockClass, className)}>
+			<div {...rest} className={classNames(backgrounds.bedrock, className)}>
 				<div
 					className={classNames(
 						styles.purpleBackground,
