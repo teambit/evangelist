@@ -1,0 +1,15 @@
+.arrow {
+	position: absolute;
+	margin: 0 auto;
+
+	&::before {
+		content: '';
+		transform: rotate(45deg);
+		display: block;
+
+		width: 10px;
+		height: 10px;
+
+		background: var(--bg-crust);
+	}
+}

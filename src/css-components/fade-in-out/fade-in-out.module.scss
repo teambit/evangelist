@@ -1,0 +1,11 @@
+.fadeInOut {
+	transition: all 180ms;
+
+	opacity: 0;
+	transform: scale(0.61);
+
+	[data-open='true'] > & {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,25 @@
+$arrowSize: 5px;
+
+.top {
+	left: calc(50% - #{$arrowSize});
+}
+
+.bottom {
+	left: calc(50% - #{$arrowSize});
+}
+
+.right {
+	top: calc(50% - #{$arrowSize});
+}
+
+.left {
+	top: calc(50% - #{$arrowSize});
+}
+
+.cover {
+	display: none;
+}
+
+.none {
+	display: none;
+}
