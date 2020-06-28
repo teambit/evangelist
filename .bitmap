@@ -37,7 +37,25 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/dev-tools/component-highlighter@1.2.2": {
+    "bit.evangelist/css-components/fade-in-out@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/css-components/fade-in-out/fade-in-out.module.scss",
+                "test": false,
+                "name": "fade-in-out.module.scss"
+            },
+            {
+                "relativePath": "src/css-components/fade-in-out/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/css-components/fade-in-out/index.ts",
+        "trackDir": "src/css-components/fade-in-out",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.evangelist/dev-tools/component-highlighter@1.2.3": {
         "files": [
             {
                 "relativePath": "src/dev-tools/component-highlighter/component-highlighter.module.scss",
@@ -65,7 +83,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/dev-tools/component-label@1.1.2": {
+    "bit.evangelist/dev-tools/component-label@1.1.3": {
         "files": [
             {
                 "relativePath": "src/dev-tools/component-label/base-url.tsx",
@@ -498,7 +516,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/marketing/twitter-card@1.1.1": {
+    "bit.evangelist/marketing/twitter-card@1.1.2": {
         "files": [
             {
                 "relativePath": "src/marketing/twitter-card/index.ts",
@@ -521,7 +539,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/enterprise-offering@1.1.1": {
+    "bit.evangelist/pages/enterprise-offering@1.1.2": {
         "files": [
             {
                 "relativePath": "src/pages/enterprise-offering/enterprise-offering.module.scss",
@@ -544,7 +562,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/hybrid-homepage@2.1.1": {
+    "bit.evangelist/pages/hybrid-homepage@2.1.2": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -567,7 +585,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/support@1.0.1": {
+    "bit.evangelist/pages/support@1.0.2": {
         "files": [
             {
                 "relativePath": "src/pages/support/index.ts",
@@ -636,7 +654,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/community@2.1.1": {
+    "bit.evangelist/sections/community@2.1.2": {
         "files": [
             {
                 "name": "community-section.module.scss",
@@ -751,7 +769,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-offering/advantage-cards@1.1.1": {
+    "bit.evangelist/sections/enterprise-offering/advantage-cards@1.1.2": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-offering/advantage-cards/advantage-cards.module.scss",
@@ -815,7 +833,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-offering/experts-support@1.1.1": {
+    "bit.evangelist/sections/enterprise-offering/experts-support@1.1.2": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-offering/experts-support/expert-support.module.scss",
@@ -930,7 +948,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-offering/sales-cta@1.1.1": {
+    "bit.evangelist/sections/enterprise-offering/sales-cta@1.1.2": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-offering/sales-cta/contact-form/contact-form.module.scss",
@@ -1065,7 +1083,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/support-page/global-enterprise@1.0.1": {
+    "bit.evangelist/sections/support-page/global-enterprise@1.0.2": {
         "files": [
             {
                 "relativePath": "src/sections/support-page/global-enterprise/global-enterprise.module.scss",
@@ -1238,6 +1256,92 @@
         ],
         "mainFile": "src/sections/hybrid-homepage/talk-to-experts/index.ts",
         "trackDir": "src/sections/hybrid-homepage/talk-to-experts",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.evangelist/surfaces/dropdown@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/surfaces/dropdown/dropdown.module.scss",
+                "test": false,
+                "name": "dropdown.module.scss"
+            },
+            {
+                "relativePath": "src/surfaces/dropdown/dropdown.tsx",
+                "test": false,
+                "name": "dropdown.tsx"
+            },
+            {
+                "relativePath": "src/surfaces/dropdown/index.ts",
+                "test": false,
+                "name": "index.ts"
+            }
+        ],
+        "mainFile": "src/surfaces/dropdown/index.ts",
+        "trackDir": "src/surfaces/dropdown",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "bit.evangelist/surfaces/tooltip@0.0.1": {
+        "files": [
+            {
+                "relativePath": "src/surfaces/tooltip/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-arrow/arrow-position.module.scss",
+                "test": false,
+                "name": "arrow-position.module.scss"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-arrow/arrow-shadow.module.scss",
+                "test": false,
+                "name": "arrow-shadow.module.scss"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-arrow/arrow.module.scss",
+                "test": false,
+                "name": "arrow.module.scss"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-arrow/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-arrow/tooltip-arrow.tsx",
+                "test": false,
+                "name": "tooltip-arrow.tsx"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-card/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-card/tooltip-card.module.scss",
+                "test": false,
+                "name": "tooltip-card.module.scss"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-card/tooltip-card.tsx",
+                "test": false,
+                "name": "tooltip-card.tsx"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-drawer.module.scss",
+                "test": false,
+                "name": "tooltip-drawer.module.scss"
+            },
+            {
+                "relativePath": "src/surfaces/tooltip/tooltip-drawer.tsx",
+                "test": false,
+                "name": "tooltip-drawer.tsx"
+            }
+        ],
+        "mainFile": "src/surfaces/tooltip/index.ts",
+        "trackDir": "src/surfaces/tooltip",
         "origin": "AUTHORED",
         "exported": true
     },
