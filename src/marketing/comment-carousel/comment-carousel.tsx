@@ -37,7 +37,7 @@ export type CommentCarouselProps = {
  * 
  * <CommentCarousel content={bitTestimonials} />
  */
-export default class CommentCarousel extends PureComponent<CommentCarouselProps> {
+export class CommentCarousel extends PureComponent<CommentCarouselProps> {
 	state = { active: 0, slidesToShow: 3 };
 	elemRef: any = createRef();
 

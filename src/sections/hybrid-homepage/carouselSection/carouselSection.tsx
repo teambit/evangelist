@@ -6,7 +6,7 @@ import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
 import { textColumn } from '@bit/bit.base-ui.layout.page-frame';
 import { marginCenter } from '@bit/bit.base-ui.layout.align';
 
-import CommentCarousel from '../../../marketing/comment-carousel/comment-carousel';
+import { CommentCarousel } from '../../../marketing/comment-carousel/comment-carousel';
 import { bitTestimonials } from '../../../content/bit-testimonials';
 import { H2 } from '../../../elements/heading';
 
