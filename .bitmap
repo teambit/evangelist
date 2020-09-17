@@ -488,6 +488,29 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "bit.evangelist/marketing/privacy-disclaimer@0.0.2": {
+        "files": [
+            {
+                "relativePath": "src/marketing/privacy-disclaimer/index.ts",
+                "test": false,
+                "name": "index.ts"
+            },
+            {
+                "relativePath": "src/marketing/privacy-disclaimer/privacy-disclaimer.module.scss",
+                "test": false,
+                "name": "privacy-disclaimer.module.scss"
+            },
+            {
+                "relativePath": "src/marketing/privacy-disclaimer/privacy-disclaimer.tsx",
+                "test": false,
+                "name": "privacy-disclaimer.tsx"
+            }
+        ],
+        "mainFile": "src/marketing/privacy-disclaimer/index.ts",
+        "trackDir": "src/marketing/privacy-disclaimer",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "bit.evangelist/marketing/testimonial@1.1.0": {
         "files": [
             {
@@ -539,7 +562,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/enterprise-offering@1.1.2": {
+    "bit.evangelist/pages/enterprise-offering@1.1.5": {
         "files": [
             {
                 "relativePath": "src/pages/enterprise-offering/enterprise-offering.module.scss",
@@ -948,7 +971,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-offering/sales-cta@1.1.2": {
+    "bit.evangelist/sections/enterprise-offering/sales-cta@1.1.5": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-offering/sales-cta/contact-form/contact-form.module.scss",
@@ -1363,5 +1386,5 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "version": "14.7.7"
+    "version": "14.8.8"
 }
