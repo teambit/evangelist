@@ -9,6 +9,7 @@ import { fullWidth, marginCenter } from '@bit/bit.base-ui.layout.align';
 
 import { Button } from '../../../elements/button';
 import { H4 } from '../../../elements/heading';
+import { PrivacyDisclaimer } from '../../../marketing/privacy-disclaimer';
 
 import styles from './sales-cta.module.scss';
 import { margin } from '../../../layout/spacing';
@@ -51,9 +52,14 @@ export const SalesCta = (props: EnterpriseCtaProps) => {
 					OR
 				</TextSeparator>
 
-				<Button importance="normal" onClick={onBookMeeting} className={classNames(fullWidth, colorPalette.muted)}>
+				<Button
+					importance="normal"
+					onClick={onBookMeeting}
+					className={classNames(fullWidth, colorPalette.muted)}
+				>
 					Book Intro
 				</Button>
+				<PrivacyDisclaimer />
 			</Card>
 
 			<div className={styles.particlesContainer}>
