@@ -11,6 +11,8 @@ export const links = {
 		'https://join.slack.com/t/bit-dev-community/shared_invite/enQtNzM2NzQ3MTQzMTg3LWI2YmFmZjQwMTkxNmFmNTVkYzU2MGI2YjgwMmJlZDdkNWVhOGIzZDFlYjg4MGRmOTM4ODAxNTIxMTMwNWVhMzg',
 	mailTeam: 'team@bit.dev',
 	mailPrivacy: 'privacy@bit.dev',
+	mailSecurity: 'security@bit.dev',
+	mailSales: 'sales@bit.dev',
 	blog: 'https://blog.bitsrc.io',
 	twitter: 'https://twitter.com/bitdev_',
 	bitRegistry: 'https://node.bit.dev',

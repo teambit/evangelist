@@ -79,6 +79,9 @@ function Cards() {
 						<Icon of="billing-checkmark" className={themedText} /> SSO SAML
 					</li>
 					<li>
+						<Icon of="billing-checkmark" className={themedText} /> SOC2 Certified
+					</li>
+					<li>
 						<Icon of="billing-checkmark" className={themedText} /> Audit logs
 					</li>
 					<li>

@@ -19,7 +19,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/content/links@1.1.0": {
+    "bit.evangelist/content/links@1.1.1": {
         "files": [
             {
                 "relativePath": "src/content/links/index.ts",
@@ -562,7 +562,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/enterprise-offering@1.1.5": {
+    "bit.evangelist/pages/enterprise-offering@1.1.6": {
         "files": [
             {
                 "relativePath": "src/pages/enterprise-offering/enterprise-offering.module.scss",
@@ -585,7 +585,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/hybrid-homepage@2.1.3": {
+    "bit.evangelist/pages/hybrid-homepage@2.1.4": {
         "files": [
             {
                 "name": "hybrid-homepage.module.scss",
@@ -608,7 +608,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/pages/support@1.0.2": {
+    "bit.evangelist/pages/support@1.0.3": {
         "files": [
             {
                 "relativePath": "src/pages/support/index.ts",
@@ -677,7 +677,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/community@2.1.2": {
+    "bit.evangelist/sections/community@2.1.3": {
         "files": [
             {
                 "name": "community-section.module.scss",
@@ -746,7 +746,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/develop-components@1.1.0": {
+    "bit.evangelist/sections/develop-components@1.1.1": {
         "files": [
             {
                 "relativePath": "src/sections/hybrid-homepage/develop-components/develop-components.module.scss",
@@ -792,7 +792,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/enterprise-offering/advantage-cards@1.1.2": {
+    "bit.evangelist/sections/enterprise-offering/advantage-cards@1.1.3": {
         "files": [
             {
                 "relativePath": "src/sections/enterprise-offering/advantage-cards/advantage-cards.module.scss",
@@ -1037,7 +1037,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/hero@1.1.1": {
+    "bit.evangelist/sections/hero@1.1.2": {
         "files": [
             {
                 "relativePath": "src/sections/hybrid-homepage/hero/hero.module.scss",
@@ -1083,7 +1083,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/reuse-components@1.1.0": {
+    "bit.evangelist/sections/reuse-components@1.1.1": {
         "files": [
             {
                 "relativePath": "src/sections/hybrid-homepage/reuse-components/index.ts",
@@ -1152,7 +1152,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/support-page/support-channels@1.0.0": {
+    "bit.evangelist/sections/support-page/support-channels@1.0.1": {
         "files": [
             {
                 "relativePath": "src/sections/support-page/support-channels/index.ts",
@@ -1213,7 +1213,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "bit.evangelist/sections/support-page/support-developers@1.0.0": {
+    "bit.evangelist/sections/support-page/support-developers@1.0.1": {
         "files": [
             {
                 "relativePath": "src/sections/support-page/support-developers/index.ts",

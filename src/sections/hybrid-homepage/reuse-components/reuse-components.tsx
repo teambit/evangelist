@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react';
 import classNames from 'classnames';
 
-import styles from './reuse-components.module.scss'; 
+import styles from './reuse-components.module.scss';
 
 import { fourWayGrid } from '@bit/bit.base-ui.layout.grid-presets.four-way-grid';
 
@@ -28,10 +28,10 @@ export function ReuseComponents(props: HTMLAttributes<HTMLDivElement>) {
 			data-bit-id="bit.evangelist/sections/reuse-components"
 		>
 			<div className={classNames(textColumn, marginCenter)}>
-				<H2 size={PossibleSizes.sm}>Increase component reuse and consistency</H2>
+				<H2 size={PossibleSizes.sm}>Reuse everything to max speed and consistency</H2>
 				<Paragraph size={PossibleSizes.xl} className={classNames(styles.subtitle)}>
-					Keep components up-to-date across your codebase and drive component
-					adoption.
+					Easily share and reuse every components across projects and teams.
+					Accelerate development and ensure consistency at every touchpoint.
 				</Paragraph>
 			</div>
 

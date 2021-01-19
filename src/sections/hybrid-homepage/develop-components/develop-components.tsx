@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react';
 
-import classNames from 'classnames'; 
+import classNames from 'classnames';
 
 import { Paragraph } from '@bit/bit.base-ui.text.paragraph';
 import { PossibleSizes } from '@bit/bit.base-ui.theme.sizes';
@@ -24,11 +24,11 @@ export function DevelopComponents(props: HTMLAttributes<HTMLDivElement>) {
 		<div {...props} data-bit-id="bit.evangelist/sections/develop-components">
 			<div className={classNames(textColumn, marginCenter)}>
 				<H2 size={PossibleSizes.sm}>
-					Everything you need to build independent and reusable components
+					Develop modular applications with independent components
 				</H2>
 				<Paragraph size={PossibleSizes.lg} className={classNames(styles.subtitle)}>
-					Bit provides the most powerful tools and experience to develop, build, test
-					and version independent and reusable components. And, it makes it more fun.
+					Break the web monolith! Develop and compose modular apps together in a fast
+					and scalable way, with an amazing dev experience at every step.
 				</Paragraph>
 			</div>
 			<Image alt="bit" src="homepage-bit/assets/booking-breakdown.png" fullWidth />
