@@ -11,11 +11,11 @@ The reusable set of React components used to build the [bit.dev marketing websit
 
 ## Component collection - choose and use
 
-All components in this frontend codebase were [contained and exposed using Bit](https://github.com/teambit/bit) as a set of independently-usable components. See the **[Evangelist collection on bit.dev](https://bit.dev/bit/evangelist)** to explore and integrate any component into your project.
+All components in this frontend codebase were [authored and exposed using Bit](https://github.com/teambit/bit) as a set of independently-usable components. See the **[Evangelist scope on bit.dev](https://bit.dev/teambit/evangelist)** to explore and integrate any component into your project.
 
-- Install independent components with npm/yarn.
-- Use `bit import` to source and edit components locally for quick editing and integration.
-- Try any component hands-on in a live playground.
+- Install independent components with `bbit install`
+- Use `bbit import` to explore components in your local workspace and modify them to your own needs.
+- Try any component hands-on in the docs' live playground and in the 'compositions' page.
 
 [![scope](./docs/scope-screenshot.png)](https://bit.dev/bit/evangelist)
 
@@ -25,7 +25,7 @@ All components in this frontend codebase were [contained and exposed using Bit](
 Wait.. what?
 
 The entire bit.dev platform and website **isn't built as one monolithic application**.
-Instead, it's built from **[components maintained in different codebases](https://docs.bit.dev/docs/workflows/microfrontends)** which are separately developed, then exposed and integrated together using [Bit](https://github.com/teambit/bit).
+Instead, it's built from **[components maintained in different codebases](https://blog.bitsrc.io/how-we-build-micro-front-ends-d3eeeac0acfc)** which are separately developed, then exposed and integrated together using [Bit](https://github.com/teambit/bit).
 
 ### Show me an example!
 
@@ -41,7 +41,7 @@ You will notice that it's built from components that live in different front-end
 We use [Bit](https://github.com/teambit/bit) to contain and expose components from any codebase as a set of APIs in [bit.dev](https://bit.dev) that can be integrated into different pages and applications. For example:
 
 - Exposed evangelist components on bit.dev.
-- Exposed [base-ui components on bit.dev](https://bit.dev/bit/base-ui).
+- Exposed [base-ui components on bit.dev](https://bit.dev/teambit/base-ui).
 
 
 ## Key components
@@ -57,12 +57,12 @@ Individual areas containing most of the content, and can be reused between pages
 Raw data objects for visual components (like MVC's model). A single ui component can use many _Content_ components at different places, and _Content_ may be presented differently in different ui components.
 
 ### Atom / 'concrete'
-Components that are specific to this homepage. As atomic ui components, they are still abstract and should not contain texts and content.  
+Components that are specific to this homepage. As atomic UI components, they are still abstract and should not contain texts and content.  
 
 ## Setup
-
-1. Clone the repository
-2. [Install bit](https://docs.bit.dev/docs/installation)
-3. Run `yarn install` or `npm install` to install all packages.
-4. Run `bit import` to sync components.
-5. Start hacking!
+1. Install Bit: `npm install @teambit/bit --global`
+2. Clone this Bit Workspace: `git clone https://github.com/teambit/evangelist.git evangelist`
+3. Go to the workspace directory: `cd evangelist`
+4. Install all packages and import all components: `bbit install` 
+5. Run the Workspace UI to explore the Evangalist components: `bbit start` and go to https://localhost:3000
+6. Enjoy!
