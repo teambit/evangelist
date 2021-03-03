@@ -17,7 +17,7 @@ All components in this frontend codebase were [authored and exposed using Bit](h
 - Use `bbit import` to explore components in your local workspace and modify them to your own needs.
 - Try any component hands-on in the docs' live playground and in the 'compositions' page.
 
-[![scope](./docs/scope-screenshot.png)](https://bit.dev/bit/evangelist)
+[![scope](./docs/scope-screenshot.png)](https://bit.dev/teambit/evangelist)
 
 
 ## This is a component-based micro-frontend
